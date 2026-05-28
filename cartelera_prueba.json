@@ -39,7 +39,7 @@
     "horarios": ["17:00", "22:00"],
     "seccion": "cartelera",
     "poster": "https://images.unsplash.com/photo-1536440136628-849c177e76a1?q=80&w=400",
-    "sinopsis": "Un ladrón prófugo, experto en el arte de apropiarse de los secretos del subconsciente ajeno durante el sueño, busca limpiar su historial implantando una idea en la mente de un poderoso CEO."
+    "sinopsis": "Un thief prófugo, experto en el arte de apropiarse de los secretos del subconsciente ajeno durante el sueño, busca implantar una idea en la mente de un poderoso CEO."
   },
   {
     "id_funcion": "f4",
@@ -53,7 +53,63 @@
     "horarios": ["15:30", "20:00"],
     "seccion": "cartelera",
     "poster": "https://images.unsplash.com/photo-1536440136628-849c177e76a1?q=80&w=400",
-    "sinopsis": "Un ladrón prófugo, experto en el arte de apropiarse de los secretos del subconsciente ajeno durante el sueño, busca limpiar su historial implantando una idea en la mente de un poderoso CEO."
+    "sinopsis": "Un thief prófugo, experto en el arte de apropiarse de los secretos del subconsciente ajeno durante el sueño, busca implantar una idea en la mente de un poderoso CEO."
+  },
+  {
+    "id_funcion": "f5",
+    "titulo": "El Gran Truco",
+    "director": "Christopher Nolan",
+    "duracion": 130,
+    "cine": "Cine B",
+    "ciudad": "Quilmes",
+    "fecha": "Jueves",
+    "idioma": "Subtitulada",
+    "horarios": ["19:00", "21:30"],
+    "seccion": "cartelera",
+    "poster": "https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?q=80&w=400",
+    "sinopsis": "En el siglo XIX, dos magos rivales en Londres se enfrentan en una batalla intensa por la supremacía llena de obsesión, engaños y celos profesionales con consecuencias fatales."
+  },
+  {
+    "id_funcion": "f6",
+    "titulo": "El Gran Truco",
+    "director": "Christopher Nolan",
+    "duracion": 130,
+    "cine": "Cine D",
+    "ciudad": "Ramos Mejía",
+    "fecha": "Viernes",
+    "idioma": "Doblada",
+    "horarios": ["18:00", "22:15"],
+    "seccion": "cartelera",
+    "poster": "https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?q=80&w=400",
+    "sinopsis": "En el siglo XIX, dos magos rivales en Londres se enfrentan en una batalla intensa por la supremacía llena de obsesión, engaños y celos profesionales con consecuencias fatales."
+  },
+  {
+    "id_funcion": "f7",
+    "titulo": "Memento",
+    "director": "Christopher Nolan",
+    "duracion": 113,
+    "cine": "Cine C",
+    "ciudad": "Lanús",
+    "fecha": "Lunes",
+    "idioma": "Subtitulada",
+    "horarios": ["16:00", "20:30"],
+    "seccion": "cartelera",
+    "poster": "https://images.unsplash.com/photo-1440404653325-ab127d49abc1?q=80&w=400",
+    "sinopsis": "Un hombre con amnesia anterógrada intenta descubrir al asesino de su esposa utilizando notas, fotos instantáneas y tatuajes para rastrear la información que olvida."
+  },
+  {
+    "id_funcion": "f8",
+    "titulo": "Dunkerque",
+    "director": "Christopher Nolan",
+    "duracion": 106,
+    "cine": "Cine D",
+    "ciudad": "Ramos Mejía",
+    "fecha": "Jueves",
+    "idioma": "Doblada",
+    "horarios": ["15:00", "18:30"],
+    "seccion": "cartelera",
+    "poster": "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?q=80&w=400",
+    "sinopsis": "Evacuación médica e histórica de cientos de miles de soldados aliados de las tropas de la Alemania nazi en las playas francesas durante la Segunda Guerra Mundial."
   },
   {
     "id_funcion": "p1",
@@ -82,5 +138,47 @@
     "seccion": "proximos",
     "poster": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=400",
     "sinopsis": "Un programador de computación descubre que el mundo en el que vive es en realidad una simulación virtual controlada por inteligencia artificial y se une a la resistencia para liberar a la humanidad."
+  },
+  {
+    "id_funcion": "p3",
+    "titulo": "Tenet",
+    "director": "Christopher Nolan",
+    "duracion": 150,
+    "cine": "",
+    "ciudad": "",
+    "fecha": "",
+    "idioma": "",
+    "horarios": [],
+    "seccion": "proximos",
+    "poster": "https://images.unsplash.com/photo-1509281373149-e957c6296406?q=80&w=400",
+    "sinopsis": "Armado con una sola palabra, Tenet, el protagonista debe luchar por la supervivencia del mundo entero en una misión que se despliega más allá del tiempo real."
+  },
+  {
+    "id_funcion": "p4",
+    "titulo": "Oppenheimer",
+    "director": "Christopher Nolan",
+    "duracion": 180,
+    "cine": "",
+    "ciudad": "",
+    "fecha": "",
+    "idioma": "",
+    "horarios": [],
+    "seccion": "proximos",
+    "poster": "https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?q=80&w=400",
+    "sinopsis": "La historia del físico estadounidense J. Robert Oppenheimer, al frente del Laboratorio de Los Álamos y del proyecto Manhattan que lideró el desarrollo de la bomba atómica."
+  },
+  {
+    "id_funcion": "p5",
+    "titulo": "Blade Runner 2049",
+    "director": "Denis Villeneuve",
+    "duracion": 164,
+    "cine": "",
+    "ciudad": "",
+    "fecha": "",
+    "idioma": "",
+    "horarios": [],
+    "seccion": "proximos",
+    "poster": "https://images.unsplash.com/photo-1484589065579-248adc018627?q=80&w=400",
+    "sinopsis": "Un nuevo blade runner, el oficial K del departamento de policía de Los Ángeles, descubre un secreto oculto que podría sembrar el caos en lo que queda de la sociedad."
   }
 ]
