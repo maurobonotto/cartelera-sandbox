@@ -3,13 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cine Sandbox</title>
+    <title>Cine Sandbox - Horarios CABA</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
     <header class="main-header">
-        <h1 id="site-title" style="cursor: pointer;">Cine Sandbox</h1>
+        <h1 id="site-title" style="cursor: pointer;">
+            Cine Sandbox
+            <span class="site-subtitle">Horarios centralizados de cines de CABA</span>
+        </h1>
     </header>
 
     <main id="home-view">
@@ -42,19 +45,16 @@
 
         <section class="movies-section">
             <h2>En Cartelera</h2>
-            <div id="cartelera-grid" class="movies-mosaic">
-                </div>
+            <div id="cartelera-grid" class="movies-mosaic"></div>
         </section>
 
         <section class="movies-section">
             <h2>Próximos Estrenos</h2>
-            <div id="proximos-grid" class="movies-mosaic">
-                </div>
+            <div id="proximos-grid" class="movies-mosaic"></div>
         </section>
     </main>
 
     <main id="detail-view" class="hidden">
-        
         <section class="movie-presentation">
             <div class="poster-column">
                 <img id="detail-poster" src="" alt="Póster de la película">
@@ -65,6 +65,11 @@
                 <p><strong>Duración:</strong> <span id="detail-duracion"></span> min</p>
                 <p><strong>Sinopsis:</strong></p>
                 <p id="detail-sinopsis" class="sinopsis-text"></p>
+
+                <!-- Contenedor del botón de tráiler (se muestra solo si existe link) -->
+                <div id="trailer-container" class="trailer-container hidden">
+                    <a id="trailer-link" href="#" target="_blank" rel="noopener noreferrer" class="trailer-btn">▶ Ver tráiler oficial</a>
+                </div>
             </div>
         </section>
 
@@ -102,9 +107,8 @@
         </section>
 
         <section class="showtimes-section">
-            <h3>Funciones Disponibles</h3>
-            <div id="showtimes-container">
-                </div>
+            <h3>Funciones disponibles</h3>
+            <div id="showtimes-container"></div>
         </section>
     </main>
 

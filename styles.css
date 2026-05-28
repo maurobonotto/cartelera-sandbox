@@ -44,6 +44,16 @@ body {
     display: inline-block;
 }
 
+/* Subtítulo: misma tipografía, sin negrita, sin mayúsculas (excepto H y CABA) */
+.site-subtitle {
+    font-weight: 400;
+    text-transform: none;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    margin-left: 12px;
+    letter-spacing: normal;
+}
+
 .filters-section, .detail-filters-section {
     background-color: var(--bg-panel);
     padding: 16px var(--content-pad);
@@ -165,9 +175,12 @@ body {
     padding: 48px var(--content-pad);
 }
 
+/* Póster con proporción 9:16 fija */
 .poster-column img {
     display: block;
     width: 260px;
+    aspect-ratio: 9 / 16;
+    object-fit: cover;
     border-radius: 7px;
     border: 1px solid var(--border);
     box-shadow: 0 10px 30px rgba(0,0,0,0.6);
@@ -205,6 +218,7 @@ body {
     min-width: 70px;
 }
 
+/* Sinopsis con ancho adaptado al contenido */
 .sinopsis-text {
     margin-top: 16px;
     background-color: var(--bg-panel);
@@ -213,6 +227,33 @@ body {
     color: #aaaaaa;
     font-size: 13px;
     line-height: 1.7;
+    width: fit-content;
+    max-width: 100%;
+}
+
+/* Botón de tráiler */
+.trailer-container {
+    margin-top: 24px;
+}
+
+.trailer-btn {
+    display: inline-block;
+    background-color: transparent;
+    border: 1px solid var(--accent);
+    color: var(--accent);
+    padding: 8px 18px;
+    font-size: 12px;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.trailer-btn:hover {
+    background-color: var(--accent);
+    color: #ffffff;
+    border-color: var(--accent);
 }
 
 .detail-filters-section {
@@ -221,7 +262,7 @@ body {
 }
 
 .showtimes-section {
-    padding: 0 var(--content-pad) 64px;
+    padding: 48px var(--content-pad) 64px;  /* Margen superior aumentado */
 }
 
 .showtimes-section h3 {
@@ -235,11 +276,14 @@ body {
     margin-bottom: 20px;
 }
 
+/* Cada bloque de cine se adapta al contenido */
 .cine-block {
     background-color: var(--bg-card);
     border-radius: 4px;
     padding: 15px;
     margin-bottom: 20px;
+    width: fit-content;
+    max-width: 100%;
 }
 
 .cine-block h4 {
@@ -249,16 +293,47 @@ body {
     font-size: 14px;
 }
 
-#showtimes-container span {
-    background-color: var(--accent) !important;
-    color: #ffffff !important;
-    font-family: monospace;
-    font-size: 12px;
-    padding: 6px 12px !important;
-    border-radius: 3px !important;
-    display: inline-block;
+/* Contenedor de función individual */
+.funcion-item {
+    margin-bottom: 16px;
 }
 
+.funcion-fecha-idioma {
+    font-size: 0.85rem;
+    margin-bottom: 6px;
+    color: var(--text-muted);
+}
+
+.funcion-fecha-idioma strong {
+    color: var(--text-bright);
+}
+
+/* Horarios: etiquetas limpias, sin rectángulo azul enorme */
+.horarios-lista {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 5px;
+}
+
+.horario-tag {
+    background: transparent;
+    border: 1px solid var(--border-strong);
+    color: var(--text-main);
+    font-family: monospace;
+    font-size: 12px;
+    padding: 4px 10px;
+    border-radius: 20px;
+    display: inline-block;
+    transition: all 0.2s;
+}
+
+.horario-tag:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+}
+
+/* Scrollbar */
 ::-webkit-scrollbar { width: 8px; height: 8px; }
 ::-webkit-scrollbar-track { background: transparent; }
 ::-webkit-scrollbar-thumb { background-color: rgba(255, 255, 255, 0.1); border-radius: 4px; }

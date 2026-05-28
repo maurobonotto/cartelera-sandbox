@@ -11,7 +11,8 @@
     "horarios": ["18:00", "21:00"],
     "seccion": "cartelera",
     "poster": "https://images.unsplash.com/photo-1478760329108-5c3ed9d495a0?q=80&w=400",
-    "sinopsis": "Batman se enfrenta al Joker, un genio criminal que desata el caos en Gotham City y pone a prueba la delgada línea entre el héroe y el vigilante."
+    "sinopsis": "Batman se enfrenta al Joker, un genio criminal que desata el caos en Gotham City y pone a prueba la delgada línea entre el héroe y el vigilante.",
+    "linkTrailer": "https://www.youtube.com/watch?v=EXeTwQWrcwY"
   },
   {
     "id_funcion": "f2",
@@ -25,7 +26,8 @@
     "horarios": ["16:00", "19:00"],
     "seccion": "cartelera",
     "poster": "https://images.unsplash.com/photo-1478760329108-5c3ed9d495a0?q=80&w=400",
-    "sinopsis": "Batman se enfrenta al Joker, un genio criminal que desata el caos en Gotham City y pone a prueba la delgada línea entre el héroe y el vigilante."
+    "sinopsis": "Batman se enfrenta al Joker, un genio criminal que desata el caos en Gotham City y pone a prueba la delgada línea entre el héroe y el vigilante.",
+    "linkTrailer": "https://www.youtube.com/watch?v=EXeTwQWrcwY"
   },
   {
     "id_funcion": "f3",
@@ -39,7 +41,8 @@
     "horarios": ["17:00", "22:00"],
     "seccion": "cartelera",
     "poster": "https://images.unsplash.com/photo-1536440136628-849c177e76a1?q=80&w=400",
-    "sinopsis": "Un thief prófugo, experto en el arte de apropiarse de los secretos del subconsciente ajeno durante el sueño, busca implantar una idea en la mente de un poderoso CEO."
+    "sinopsis": "Un ladrón prófugo, experto en el arte de apropiarse de los secretos del subconsciente ajeno durante el sueño, busca implantar una idea en la mente de un poderoso CEO.",
+    "linkTrailer": "https://www.youtube.com/watch?v=YoHD9XEInc0"
   },
   {
     "id_funcion": "f4",
@@ -53,7 +56,8 @@
     "horarios": ["15:30", "20:00"],
     "seccion": "cartelera",
     "poster": "https://images.unsplash.com/photo-1536440136628-849c177e76a1?q=80&w=400",
-    "sinopsis": "Un thief prófugo, experto en el arte de apropiarse de los secretos del subconsciente ajeno durante el sueño, busca implantar una idea en la mente de un poderoso CEO."
+    "sinopsis": "Un ladrón prófugo, experto en el arte de apropiarse de los secretos del subconsciente ajeno durante el sueño, busca implantar una idea en la mente de un poderoso CEO.",
+    "linkTrailer": "https://www.youtube.com/watch?v=YoHD9XEInc0"
   },
   {
     "id_funcion": "f5",
@@ -67,7 +71,8 @@
     "horarios": ["19:00", "21:30"],
     "seccion": "cartelera",
     "poster": "https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?q=80&w=400",
-    "sinopsis": "En el siglo XIX, dos magos rivales en Londres se enfrentan en una batalla intensa por la supremacía llena de obsesión, engaños y celos profesionales con consecuencias fatales."
+    "sinopsis": "En el siglo XIX, dos magos rivales en Londres se enfrentan en una batalla intensa por la supremacía llena de obsesión, engaños y celos profesionales con consecuencias fatales.",
+    "linkTrailer": "https://www.youtube.com/watch?v=o4gHCmTQDVI"
   },
   {
     "id_funcion": "f6",
@@ -81,7 +86,8 @@
     "horarios": ["18:00", "22:15"],
     "seccion": "cartelera",
     "poster": "https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?q=80&w=400",
-    "sinopsis": "En el siglo XIX, dos magos rivales en Londres se enfrentan en una batalla intensa por la supremacía llena de obsesión, engaños y celos profesionales con consecuencias fatales."
+    "sinopsis": "En el siglo XIX, dos magos rivales en Londres se enfrentan en una batalla intensa por la supremacía llena de obsesión, engaños y celos profesionales con consecuencias fatales.",
+    "linkTrailer": "https://www.youtube.com/watch?v=o4gHCmTQDVI"
   },
   {
     "id_funcion": "f7",
@@ -95,7 +101,8 @@
     "horarios": ["16:00", "20:30"],
     "seccion": "cartelera",
     "poster": "https://images.unsplash.com/photo-1440404653325-ab127d49abc1?q=80&w=400",
-    "sinopsis": "Un hombre con amnesia anterógrada intenta descubrir al asesino de su esposa utilizando notas, fotos instantáneas y tatuajes para rastrear la información que olvida."
+    "sinopsis": "Un hombre con amnesia anterógrada intenta descubrir al asesino de su esposa utilizando notas, fotos instantáneas y tatuajes para rastrear la información que olvida.",
+    "linkTrailer": "https://www.youtube.com/watch?v=0vS0E9bBSL0"
   },
   {
     "id_funcion": "f8",
@@ -109,7 +116,8 @@
     "horarios": ["15:00", "18:30"],
     "seccion": "cartelera",
     "poster": "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?q=80&w=400",
-    "sinopsis": "Evacuación médica e histórica de cientos de miles de soldados aliados de las tropas de la Alemania nazi en las playas francesas durante la Segunda Guerra Mundial."
+    "sinopsis": "Evacuación médica e histórica de cientos de miles de soldados aliados de las tropas de la Alemania nazi en las playas francesas durante la Segunda Guerra Mundial.",
+    "linkTrailer": "https://www.youtube.com/watch?v=F-eMt3SrfFU"
   },
   {
     "id_funcion": "p1",
@@ -123,7 +131,8 @@
     "horarios": [],
     "seccion": "proximos",
     "poster": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=400",
-    "sinopsis": "Un grupo de científicos y exploradores espaciales se embarcan en un viaje épico a través de un agujero de gusano para encontrar un nuevo hogar para la humanidad."
+    "sinopsis": "Un grupo de científicos y exploradores espaciales se embarcan en un viaje épico a través de un agujero de gusano para encontrar un nuevo hogar para la humanidad.",
+    "linkTrailer": "https://www.youtube.com/watch?v=zSWdZVtXT7E"
   },
   {
     "id_funcion": "p2",
@@ -137,7 +146,8 @@
     "horarios": [],
     "seccion": "proximos",
     "poster": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=400",
-    "sinopsis": "Un programador de computación descubre que el mundo en el que vive es en realidad una simulación virtual controlada por inteligencia artificial y se une a la resistencia para liberar a la humanidad."
+    "sinopsis": "Un programador de computación descubre que el mundo en el que vive es en realidad una simulación virtual controlada por inteligencia artificial y se une a la resistencia para liberar a la humanidad.",
+    "linkTrailer": "https://www.youtube.com/watch?v=vKQi3bBA1y8"
   },
   {
     "id_funcion": "p3",
@@ -151,7 +161,8 @@
     "horarios": [],
     "seccion": "proximos",
     "poster": "https://images.unsplash.com/photo-1509281373149-e957c6296406?q=80&w=400",
-    "sinopsis": "Armado con una sola palabra, Tenet, el protagonista debe luchar por la supervivencia del mundo entero en una misión que se despliega más allá del tiempo real."
+    "sinopsis": "Armado con una sola palabra, Tenet, el protagonista debe luchar por la supervivencia del mundo entero en una misión que se despliega más allá del tiempo real.",
+    "linkTrailer": "https://www.youtube.com/watch?v=LdOM0x0XDMo"
   },
   {
     "id_funcion": "p4",
@@ -165,7 +176,8 @@
     "horarios": [],
     "seccion": "proximos",
     "poster": "https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?q=80&w=400",
-    "sinopsis": "La historia del físico estadounidense J. Robert Oppenheimer, al frente del Laboratorio de Los Álamos y del proyecto Manhattan que lideró el desarrollo de la bomba atómica."
+    "sinopsis": "La historia del físico estadounidense J. Robert Oppenheimer, al frente del Laboratorio de Los Álamos y del proyecto Manhattan que lideró el desarrollo de la bomba atómica.",
+    "linkTrailer": "https://www.youtube.com/watch?v=bK6ldnjE3Y0"
   },
   {
     "id_funcion": "p5",
@@ -179,6 +191,7 @@
     "horarios": [],
     "seccion": "proximos",
     "poster": "https://images.unsplash.com/photo-1484589065579-248adc018627?q=80&w=400",
-    "sinopsis": "Un nuevo blade runner, el oficial K del departamento de policía de Los Ángeles, descubre un secreto oculto que podría sembrar el caos en lo que queda de la sociedad."
+    "sinopsis": "Un nuevo blade runner, el oficial K del departamento de policía de Los Ángeles, descubre un secreto oculto que podría sembrar el caos en lo que queda de la sociedad.",
+    "linkTrailer": "https://www.youtube.com/watch?v=gCcx85zbxz4"
   }
 ]
