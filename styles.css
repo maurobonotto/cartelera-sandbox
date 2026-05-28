@@ -1,69 +1,246 @@
-/* Paleta VS Code Dark Theme */
+/* ==========================================================================
+   VISUAL STUDIO CODE - DARK THEME 2026 (Core Variables)
+   ========================================================================== */
 :root {
-    --bg-main: #1e1e1e;
-    --bg-panel: #252526;
-    --bg-card: #2d2d2d;
-    --text-main: #ffffff;
-    --text-sec: #cccccc;
-    --accent: #007acc;
+    --vscode-bg-editor: #1e1e1e;
+    --vscode-bg-sidebar: #252526;
+    --vscode-bg-titlebar: #3c3c3c;
+    --vscode-bg-badge: #007acc;
+    --vscode-bg-input: #3c3c3c;
+    --vscode-border-input: #6b6b6b;
+    
+    /* Syntax Highlighting Colors for Text */
+    --vscode-text-normal: #d4d4d4;
+    --vscode-text-keyword: #569cd6;   /* Azul VS Code */
+    --vscode-text-string: #ce9178;    /* Naranja/Marrón de texto */
+    --vscode-text-comment: #6a9955;   /* Verde comentario */
+    --vscode-text-number: #b5cea8;    /* Verde claro números */
+    --vscode-text-class: #4ec9b0;     /* Turquesa clases */
 }
 
+/* Base de la Aplicación */
 body {
-    background-color: var(--bg-main);
-    color: var(--text-main);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--vscode-bg-editor);
+    color: var(--vscode-text-normal);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     margin: 0;
     padding: 0;
+    -webkit-font-smoothing: antialiased;
 }
 
+/* 1. Cabecera estilo Barra de Títulos de VS Code */
 .main-header {
-    background-color: var(--bg-panel);
-    padding: 1rem 2rem;
-    border-bottom: 1px solid #333;
+    background-color: var(--vscode-bg-sidebar);
+    padding: 12px 24px;
+    border-bottom: 1px solid #2d2d2d;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
 }
 
-/* Filtros */
+#site-title {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    color: var(--vscode-text-keyword);
+    display: inline-block;
+    font-family: "SF Mono", Monaco, Menlo, Consolas, "Ubuntu Mono", monospace;
+}
+
+#site-title::before {
+    content: "{} ";
+    color: var(--vscode-text-string);
+    font-weight: bold;
+}
+
+/* 2. Barra de Control y Filtros (Estilo Panel de Preferencias) */
 .filters-section, .detail-filters-section {
-    background-color: var(--bg-panel);
-    padding: 1rem 2rem;
+    background-color: var(--vscode-bg-sidebar);
+    border-bottom: 1px solid #2d2d2d;
+    padding: 16px 32px;
     display: flex;
-    gap: 20px;
-    margin-bottom: 20px;
+    flex-wrap: wrap;
+    gap: 24px;
 }
 
-.filter-group { display: flex; flex-direction: column; }
+.filter-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
 
-/* Mosaico de tarjetas */
+.filter-group label {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    color: var(--vscode-text-comment);
+    font-weight: 600;
+}
+
+.filter-group select {
+    background-color: var(--vscode-bg-input);
+    color: var(--vscode-text-normal);
+    border: 1px solid var(--vscode-border-input);
+    padding: 6px 12px;
+    font-size: 0.85rem;
+    border-radius: 2px;
+    outline: none;
+    min-width: 160px;
+    cursor: pointer;
+    transition: border-color 0.15s ease;
+}
+
+.filter-group select:focus {
+    border-color: var(--vscode-bg-badge);
+}
+
+/* 3. Secciones de Películas y Mosaico (Grid) */
+.movies-section {
+    padding: 24px 32px 0 32px;
+}
+
+.movies-section h2 {
+    font-size: 1.3rem;
+    font-weight: 400;
+    border-bottom: 1px solid #3c3c3c;
+    padding-bottom: 8px;
+    margin-bottom: 24px;
+    color: var(--vscode-text-class);
+}
+
 .movies-mosaic {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 20px;
-    padding: 0 2rem 2rem;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 28px;
+    padding-bottom: 40px;
 }
 
+/* Tarjetas de Películas */
 .movie-card {
-    background-color: var(--bg-card);
+    background-color: var(--vscode-bg-sidebar);
+    border: 1px solid #2d2d2d;
     border-radius: 4px;
     overflow: hidden;
     cursor: pointer;
-    transition: transform 0.2s;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    transition: all 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
-.movie-card:hover { transform: scale(1.03); border: 1px solid var(--accent); }
+.movie-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--vscode-bg-badge);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+}
 
-.movie-card img { width: 100%; height: 300px; object-fit: cover; }
+.movie-card img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    border-bottom: 1px solid #2d2d2d;
+}
 
-.movie-card-info { padding: 10px; }
+.movie-card-info {
+    padding: 16px;
+}
 
-/* Vista detalle */
+.movie-card-info h3 {
+    margin: 0 0 8px 0;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.4;
+    color: var(--vscode-text-string);
+}
+
+.movie-card-info p {
+    margin: 4px 0;
+    font-size: 0.85rem;
+}
+
+.movie-card-info .director {
+    color: var(--vscode-text-comment);
+}
+
+.movie-card-info .duration {
+    color: var(--vscode-text-number);
+}
+
+/* ==========================================================================
+   PANTALLA VISTA DETALLE
+   ========================================================================== */
 .movie-presentation {
     display: flex;
+    flex-wrap: wrap;
     gap: 40px;
-    padding: 2rem;
+    padding: 32px;
 }
 
-.poster-column img { width: 300px; border-radius: 4px; }
+.poster-column img {
+    width: 280px;
+    border-radius: 4px;
+    border: 1px solid #3c3c3c;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.5);
+}
 
-.hidden { display: none; }
+.info-column {
+    flex: 1;
+    min-width: 300px;
+}
 
-.sinopsis-text { color: var(--text-sec); line-height: 1.6; }
+.info-column h2 {
+    margin: 0 0 16px 0;
+    font-size: 2rem;
+    color: var(--vscode-text-string);
+    border-bottom: 1px solid #3c3c3c;
+    padding-bottom: 12px;
+}
+
+.info-column p {
+    margin: 10px 0;
+    font-size: 0.95rem;
+}
+
+.info-column strong {
+    color: var(--vscode-text-keyword);
+}
+
+.sinopsis-text {
+    color: #b8b8b8;
+    line-height: 1.7;
+    background-color: var(--vscode-bg-sidebar);
+    padding: 16px;
+    border-left: 3px solid var(--vscode-bg-badge);
+    border-radius: 2px;
+    margin-top: 8px;
+}
+
+/* Sección de resultados de horarios */
+.showtimes-section {
+    padding: 0 32px 40px 32px;
+}
+
+.showtimes-section h3 {
+    font-size: 1.2rem;
+    color: var(--vscode-text-class);
+    border-bottom: 1px solid #3c3c3c;
+    padding-bottom: 8px;
+}
+
+/* Botones de Horarios del listado */
+#showtimes-container span {
+    background-color: var(--vscode-bg-badge) !important;
+    color: #ffffff !important;
+    font-weight: 500;
+    padding: 6px 14px !important;
+    border-radius: 3px !important;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    transition: background-color 0.1s ease;
+    display: inline-block;
+}
+
+#showtimes-container span:hover {
+    background-color: #0062a3 !important;
+}
+
+/* Utilidades */
+.hidden {
+    display: none !important;
+}
