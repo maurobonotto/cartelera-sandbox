@@ -1,1 +1,317 @@
-adfasf
+/* ==========================================================================
+   CARTELERA · VS Code Dark — Versión Sincronizada y Corregida
+   ========================================================================== */
+
+/* ── Variables de Color Estilo VS Code ───────────────────────────────────── */
+:root {
+    --bg-body:        #111111;   /* Negro profundo de fondo */
+    --bg-chrome:      #181818;   /* Encabezados y barras de control */
+    --bg-panel:       #1c1c1c;   /* Paneles internos de información */
+    --bg-card:        #1e1e1e;   /* Fondo de tarjetas de películas */
+    --bg-input:       #242424;   /* Fondo de selectores de filtros */
+    --bg-hover:       #252525;   /* Estado de selección o pasaje de mouse */
+    --accent:         #007acc;   /* Azul clásico de VS Code (Único acento) */
+
+    /* Bordes sutiles */
+    --border:         rgba(255, 255, 255, 0.07);
+    --border-strong:  rgba(255, 255, 255, 0.12);
+
+    /* Textos */
+    --text-bright:    #cccccc;   /* Texto estándar legible */
+    --text-muted:     #858585;   /* Texto secundario o etiquetas */
+}
+
+/* ── Estilos Globales y Reset ────────────────────────────────────────────── */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-body);
+    color: var(--text-bright);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.4;
+}
+
+/* Clase utilitaria para alternar pantallas */
+.hidden {
+    display: none !important;
+}
+
+/* ── Encabezado Principal ────────────────────────────────────────────────── */
+.main-header {
+    background-color: var(--bg-chrome);
+    border-bottom: 1px solid var(--border-strong);
+    padding: 16px 24px;
+}
+
+#site-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #ffffff;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    user-select: none;
+}
+
+.site-subtitle {
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--text-muted);
+}
+
+/* ── Contenedores de Vistas ──────────────────────────────────────────────── */
+#vista-catalogo, #vista-detalle {
+    padding: 24px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* ── Barra de Filtros ────────────────────────────────────────────────────── */
+.filters-section, .detail-filters-section {
+    background-color: var(--bg-chrome);
+    border: 1px solid var(--border-strong);
+    border-radius: 4px;
+    padding: 16px;
+    margin-bottom: 24px;
+    display: flex;
+    gap: 20px;
+}
+
+.filter-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.filter-group label {
+    font-size: 11px;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.filter-group select {
+    background-color: var(--bg-input);
+    color: var(--text-bright);
+    border: 1px solid var(--border-strong);
+    padding: 6px 12px;
+    border-radius: 3px;
+    font-family: inherit;
+    font-size: 13px;
+    outline: none;
+    min-width: 180px;
+}
+
+.filter-group select:focus {
+    border-color: var(--accent);
+}
+
+/* ── Grilla de Películas (Mosaico) ───────────────────────────────────────── */
+.movies-section h2 {
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 8px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    letter-spacing: 0.5px;
+}
+
+.movies-mosaic {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 24px;
+}
+
+/* ── Tarjeta de Película Individual ──────────────────────────────────────── */
+.movie-card {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.2s ease, border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.movie-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--accent);
+    background-color: var(--bg-hover);
+}
+
+.movie-card img {
+    width: 100%;
+    aspect-ratio: 9 / 16;
+    object-fit: cover;
+    border-bottom: 1px solid var(--border);
+    display: block;
+}
+
+.movie-card-info {
+    padding: 12px;
+}
+
+.movie-card-info h3 {
+    margin: 0 0 6px 0;
+    font-size: 14px;
+    font-weight: 600;
+    color: #ffffff;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.movie-card-info p {
+    margin: 2px 0;
+    font-size: 12px;
+    color: var(--text-muted);
+}
+
+/* ── Vista Detalle de Película ───────────────────────────────────────────── */
+.movie-presentation {
+    display: flex;
+    gap: 32px;
+    margin-bottom: 40px;
+}
+
+@media (max-width: 768px) {
+    .movie-presentation {
+        flex-direction: column;
+    }
+}
+
+.poster-column {
+    flex-shrink: 0;
+    width: 240px;
+}
+
+.poster-column img {
+    width: 100%;
+    aspect-ratio: 9 / 16;
+    object-fit: cover;
+    border-radius: 6px;
+    border: 1px solid var(--border-strong);
+}
+
+.info-column {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.info-column h2 {
+    margin: 0 0 8px 0;
+    font-size: 28px;
+    color: #ffffff;
+}
+
+.info-column p {
+    margin: 0;
+    font-size: 13px;
+}
+
+.info-column p strong {
+    color: var(--text-muted);
+    font-weight: 500;
+}
+
+/* Contenedores con ajuste dinámico al contenido escrito */
+.sinopsis-text {
+    width: fit-content;
+    max-width: 800px;
+    background-color: var(--bg-panel);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 16px;
+    margin-top: 16px;
+    font-size: 13px;
+    line-height: 1.6;
+    color: var(--text-bright);
+}
+
+.trailer-btn {
+    width: fit-content;
+    background-color: var(--accent);
+    color: #ffffff;
+    text-decoration: none;
+    padding: 8px 16px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 3px;
+    margin-top: 12px;
+    display: inline-block;
+    transition: background-color 0.1s ease;
+}
+
+.trailer-btn:hover {
+    background-color: #0062a3;
+}
+
+/* ── Sección de Horarios y Complejos de Cine ───────────────────────────────── */
+.showtimes-section {
+    margin-top: 48px;
+    border-top: 1px solid var(--border-strong);
+    padding-top: 24px;
+}
+
+.showtimes-section h3 {
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin-top: 0;
+    margin-bottom: 20px;
+    letter-spacing: 0.5px;
+}
+
+#showtimes-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.cine-block {
+    width: fit-content;
+    background-color: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 16px 20px;
+}
+
+.cine-block h4 {
+    margin: 0 0 12px 0;
+    font-size: 13px;
+    font-weight: 600;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Formato limpio y moderno para las horas individuales */
+.cine-block span {
+    display: inline-block;
+    background-color: transparent;
+    border: 1px solid var(--border-strong);
+    color: var(--text-bright);
+    padding: 4px 10px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    border-radius: 3px;
+    font-size: 12px;
+    font-variant-numeric: tabular-nums;
+    transition: border-color 0.15s ease, color 0.15s ease;
+}
+
+.cine-block span:hover {
+    border-color: var(--accent);
+    color: #ffffff;
+}
