@@ -1,85 +1,68 @@
-/* ==========================================================================
-   CARTELERA · VS Code Dark — Versión Sincronizada y Corregida
-   ========================================================================== */
-
-/* ── Variables de Color Estilo VS Code ───────────────────────────────────── */
 :root {
-    --bg-body:        #111111;   /* Negro profundo de fondo */
-    --bg-chrome:      #181818;   /* Encabezados y barras de control */
-    --bg-panel:       #1c1c1c;   /* Paneles internos de información */
-    --bg-card:        #1e1e1e;   /* Fondo de tarjetas de películas */
-    --bg-input:       #242424;   /* Fondo de selectores de filtros */
-    --bg-hover:       #252525;   /* Estado de selección o pasaje de mouse */
-    --accent:         #007acc;   /* Azul clásico de VS Code (Único acento) */
-
-    /* Bordes sutiles */
-    --border:         rgba(255, 255, 255, 0.07);
-    --border-strong:  rgba(255, 255, 255, 0.12);
-
-    /* Textos */
-    --text-bright:    #cccccc;   /* Texto estándar legible */
-    --text-muted:     #858585;   /* Texto secundario o etiquetas */
+    --bg-main: #111111;
+    --bg-panel: #181818;
+    --bg-card: #1c1c1c;
+    --text-main: #cccccc;
+    --text-bright: #ffffff;
+    --text-muted: #888888;
+    --accent: #007acc;
+    --border: rgba(255, 255, 255, 0.07);
+    --border-strong: rgba(255, 255, 255, 0.12);
+    --content-pad: max(48px, 12vw);
 }
 
-/* ── Estilos Globales y Reset ────────────────────────────────────────────── */
-* {
-    box-sizing: border-box;
+*, *::before, *::after { 
+    box-sizing: border-box; 
+    margin: 0; 
+    padding: 0; 
 }
 
 body {
-    background-color: var(--bg-body);
-    color: var(--text-bright);
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.4;
+    background-color: var(--bg-main);
+    color: var(--text-main);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    min-height: 100vh;
+    overflow-y: auto;
+    -webkit-font-smoothing: antialiased;
 }
 
-/* Clase utilitaria para alternar pantallas */
-.hidden {
-    display: none !important;
-}
-
-/* ── Encabezado Principal ────────────────────────────────────────────────── */
 .main-header {
-    background-color: var(--bg-chrome);
-    border-bottom: 1px solid var(--border-strong);
-    padding: 16px 24px;
+    background-color: var(--bg-panel);
+    padding: 18px var(--content-pad);
+    border-bottom: 1px solid var(--border);
+    position: sticky;
+    top: 0;
+    z-index: 200;
+    display: flex;
+    align-items: center;
 }
 
 #site-title {
-    font-size: 18px;
+    color: var(--text-bright);
+    font-size: 15px;
     font-weight: 600;
-    color: #ffffff;
+    text-transform: uppercase;
     cursor: pointer;
     display: flex;
-    flex-direction: column;
-    gap: 4px;
-    user-select: none;
+    align-items: baseline;
+    gap: 8px;
 }
 
+/* El estilo específico para el nuevo texto del título */
 .site-subtitle {
-    font-size: 12px;
-    font-weight: 400;
     color: var(--text-muted);
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: none;
 }
 
-/* ── Contenedores de Vistas ──────────────────────────────────────────────── */
-#vista-catalogo, #vista-detalle {
-    padding: 24px;
-    max-width: 1400px;
-    margin: 0 auto;
-}
-
-/* ── Barra de Filtros ────────────────────────────────────────────────────── */
 .filters-section, .detail-filters-section {
-    background-color: var(--bg-chrome);
-    border: 1px solid var(--border-strong);
-    border-radius: 4px;
-    padding: 16px;
-    margin-bottom: 24px;
+    background-color: var(--bg-panel);
+    padding: 16px var(--content-pad);
     display: flex;
-    gap: 20px;
+    flex-wrap: wrap;
+    gap: 24px;
+    border-bottom: 1px solid var(--border);
 }
 
 .filter-group {
@@ -91,227 +74,252 @@ body {
 .filter-group label {
     font-size: 11px;
     text-transform: uppercase;
+    letter-spacing: 0.8px;
     color: var(--text-muted);
     font-weight: 600;
-    letter-spacing: 0.5px;
 }
 
 .filter-group select {
-    background-color: var(--bg-input);
-    color: var(--text-bright);
+    background-color: #242424;
+    color: var(--text-main);
     border: 1px solid var(--border-strong);
     padding: 6px 12px;
+    font-size: 11px;
     border-radius: 3px;
-    font-family: inherit;
-    font-size: 13px;
     outline: none;
-    min-width: 180px;
+    min-width: 150px;
+    cursor: pointer;
 }
 
 .filter-group select:focus {
     border-color: var(--accent);
 }
 
-/* ── Grilla de Películas (Mosaico) ───────────────────────────────────────── */
+.movies-section {
+    padding: 48px var(--content-pad) 0;
+}
+
 .movies-section h2 {
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 600;
+    letter-spacing: 0.25em;
     text-transform: uppercase;
-    color: var(--text-muted);
-    border-bottom: 1px solid var(--border);
-    padding-bottom: 8px;
-    margin-top: 0;
-    margin-bottom: 20px;
-    letter-spacing: 0.5px;
+    color: var(--text-bright);
+    border-bottom: 1px solid var(--border-strong);
+    padding-bottom: 12px;
+    margin-bottom: 32px;
 }
 
 .movies-mosaic {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 24px;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 32px;
+    padding-bottom: 50px;
 }
 
-/* ── Tarjeta de Película Individual ──────────────────────────────────────── */
 .movie-card {
     background-color: var(--bg-card);
     border: 1px solid var(--border);
-    border-radius: 6px;
+    border-radius: 7px;
     overflow: hidden;
     cursor: pointer;
-    transition: transform 0.2s ease, border-color 0.2s ease, background-color 0.2s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+    transition: transform 0.2s, border-color 0.2s;
 }
 
 .movie-card:hover {
-    transform: translateY(-4px);
-    border-color: var(--accent);
-    background-color: var(--bg-hover);
+    transform: translateY(-5px);
+    border-color: var(--border-strong);
 }
 
+/* Acá se fuerza la proporción 9:16 en la tarjeta de la grilla */
 .movie-card img {
+    display: block;
     width: 100%;
     aspect-ratio: 9 / 16;
     object-fit: cover;
-    border-bottom: 1px solid var(--border);
-    display: block;
+    filter: saturate(0.85) brightness(0.95);
+}
+
+.movie-card:hover img {
+    filter: saturate(1) brightness(1);
 }
 
 .movie-card-info {
-    padding: 12px;
+    padding: 18px;
 }
 
 .movie-card-info h3 {
-    margin: 0 0 6px 0;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 600;
-    color: #ffffff;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    text-transform: uppercase;
+    color: var(--text-bright);
+    margin-bottom: 8px;
+    letter-spacing: 0.04em;
 }
 
 .movie-card-info p {
-    margin: 2px 0;
     font-size: 12px;
+    margin-bottom: 4px;
+}
+
+.movie-card-info .director {
     color: var(--text-muted);
 }
 
-/* ── Vista Detalle de Película ───────────────────────────────────────────── */
+.movie-card-info .duration {
+    color: #888888 !important;
+}
+
 .movie-presentation {
     display: flex;
-    gap: 32px;
-    margin-bottom: 40px;
+    flex-wrap: wrap;
+    gap: 48px;
+    padding: 48px var(--content-pad);
 }
 
-@media (max-width: 768px) {
-    .movie-presentation {
-        flex-direction: column;
-    }
-}
-
-.poster-column {
-    flex-shrink: 0;
-    width: 240px;
-}
-
+/* Acá se fuerza la proporción 9:16 en la vista de detalle */
 .poster-column img {
-    width: 100%;
+    display: block;
+    width: 260px;
     aspect-ratio: 9 / 16;
     object-fit: cover;
-    border-radius: 6px;
-    border: 1px solid var(--border-strong);
+    border-radius: 7px;
+    border: 1px solid var(--border);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.6);
 }
 
 .info-column {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
+    flex: 1;
+    min-width: 300px;
 }
 
 .info-column h2 {
-    margin: 0 0 8px 0;
-    font-size: 28px;
-    color: #ffffff;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--text-bright);
+    border-bottom: 1px solid var(--border-strong);
+    padding-bottom: 16px;
+    margin-bottom: 20px;
 }
 
 .info-column p {
-    margin: 0;
     font-size: 13px;
+    color: var(--text-main);
+    margin: 10px 0;
+    display: flex;
+    gap: 8px;
 }
 
-.info-column p strong {
-    color: var(--text-muted);
-    font-weight: 500;
-}
-
-/* Contenedores con ajuste dinámico al contenido escrito */
-.sinopsis-text {
-    width: fit-content;
-    max-width: 800px;
-    background-color: var(--bg-panel);
-    border: 1px solid var(--border);
-    border-radius: 4px;
-    padding: 16px;
-    margin-top: 16px;
-    font-size: 13px;
-    line-height: 1.6;
-    color: var(--text-bright);
-}
-
-.trailer-btn {
-    width: fit-content;
-    background-color: var(--accent);
-    color: #ffffff;
-    text-decoration: none;
-    padding: 8px 16px;
-    font-size: 12px;
+.info-column strong {
+    font-size: 11px;
     font-weight: 600;
     text-transform: uppercase;
-    border-radius: 3px;
-    margin-top: 12px;
+    color: var(--text-muted);
+    min-width: 70px;
+}
+
+/* Estilo para el botón de tráiler */
+.trailer-btn {
     display: inline-block;
-    transition: background-color 0.1s ease;
+    margin-top: 15px;
+    padding: 8px 16px;
+    background-color: transparent;
+    color: var(--accent);
+    border: 1px solid var(--accent);
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 4px;
+    transition: all 0.2s;
 }
 
 .trailer-btn:hover {
-    background-color: #0062a3;
+    background-color: var(--accent);
+    color: #ffffff;
 }
 
-/* ── Sección de Horarios y Complejos de Cine ───────────────────────────────── */
+/* La sinopsis ahora se adapta al texto (fit-content) */
+.sinopsis-text {
+    margin-top: 16px;
+    background-color: var(--bg-panel);
+    border-left: 2px solid var(--accent);
+    padding: 16px;
+    color: #aaaaaa;
+    font-size: 13px;
+    line-height: 1.7;
+    width: fit-content;
+    max-width: 100%;
+}
+
+.detail-filters-section {
+    margin: 0;
+    border-top: none;
+}
+
+/* Margen superior agregado para separar "Funciones disponibles" */
 .showtimes-section {
-    margin-top: 48px;
-    border-top: 1px solid var(--border-strong);
-    padding-top: 24px;
+    padding: 0 var(--content-pad) 64px;
+    margin-top: 48px; 
 }
 
 .showtimes-section h3 {
-    font-size: 14px;
-    font-weight: 400;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.2em;
     text-transform: uppercase;
-    color: var(--text-muted);
-    margin-top: 0;
-    margin-bottom: 20px;
-    letter-spacing: 0.5px;
+    color: var(--text-bright);
+    border-bottom: 1px solid var(--border-strong);
+    padding-bottom: 12px;
+    margin-bottom: 24px;
 }
 
-#showtimes-container {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-}
-
+/* Las cajas de los cines ahora se adaptan al contenido */
 .cine-block {
-    width: fit-content;
     background-color: var(--bg-card);
     border: 1px solid var(--border);
-    border-radius: 4px;
-    padding: 16px 20px;
+    border-radius: 6px;
+    padding: 18px;
+    margin-bottom: 20px;
+    width: fit-content;
+    max-width: 100%;
 }
 
 .cine-block h4 {
-    margin: 0 0 12px 0;
-    font-size: 13px;
+    margin-top: 0;
+    margin-bottom: 16px;
+    color: var(--text-bright);
+    font-size: 14px;
     font-weight: 600;
-    color: #ffffff;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
 }
 
-/* Formato limpio y moderno para las horas individuales */
-.cine-block span {
-    display: inline-block;
-    background-color: transparent;
+/* Rediseño de los horarios: chau rectángulos celestes */
+#showtimes-container span {
+    background-color: transparent !important;
+    color: var(--text-main) !important;
     border: 1px solid var(--border-strong);
-    color: var(--text-bright);
-    padding: 4px 10px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 6px 12px !important;
+    border-radius: 4px !important;
+    display: inline-block;
     margin-right: 8px;
     margin-bottom: 8px;
-    border-radius: 3px;
-    font-size: 12px;
-    font-variant-numeric: tabular-nums;
-    transition: border-color 0.15s ease, color 0.15s ease;
+    transition: border-color 0.2s, background-color 0.2s;
+    cursor: pointer;
 }
 
-.cine-block span:hover {
+#showtimes-container span:hover {
     border-color: var(--accent);
-    color: #ffffff;
+    background-color: rgba(0, 122, 204, 0.1) !important;
+    color: var(--text-bright) !important;
 }
+
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background-color: rgba(255, 255, 255, 0.1); border-radius: 4px; }
+* { scrollbar-width: thin; scrollbar-color: rgba(255,255,255,0.1) transparent; }
+.hidden { display: none !important; }
