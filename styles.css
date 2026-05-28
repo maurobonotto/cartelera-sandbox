@@ -1,547 +1,130 @@
-/* ==========================================================================
-   CARTELERA · VS Code Dark — Versión Pro Unificada
-   Negro profundo · Columna centralizada · Jerarquías estilizadas
-   ========================================================================== */
-
-/* ── Variables ─────────────────────────────────────────────────────────── */
-:root {
-    /* Fondos */
-    --bg-body:        #111111; /* Negro profundo de portfolio */
-    --bg-chrome:      #181818; /* Title bar, activity bar */
-    --bg-panel:       #1c1c1c; /* Sidebar panel, editor tabs */
-    --bg-card:        #1e1e1e; /* Tarjetas de películas */
-    --bg-input:       #242424; /* Inputs de filtro */
-    --bg-hover:       #252525; /* Hover general */
-    --bg-selected:    #0d3c5a; /* Ítem activo */
-    --accent:         #007acc; /* Azul clásico de VS Code */
-
-    /* Bordes */
-    --border:         rgba(255, 255, 255, 0.07);
-    --border-strong:  rgba(255, 255, 255, 0.12);
-
-    /* Tipografías — Escala monocromática */
-    --t-white:        #ffffff;
-    --t-bright:       #e8e8e8;
-    --t-primary:      #c8c8c8;
-    --t-secondary:    #888888;
-    --t-muted:        #555555;
-    --t-menu:         #bbbbbb;
-    --t-explorer:     #999999;
-
-    /* Diseño y Estructura */
-    --content-pad:    max(48px, 12vw); /* Amplios márgenes laterales para crear la columna central */
-    --card-radius:    7px;
+{
+  "peliculas": [
+    {
+      "id": "p1",
+      "titulo": "Película Estreno 1",
+      "director": "Director Alfa",
+      "duracion": "120 min",
+      "seccion": "cartelera",
+      "poster": "https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?w=500",
+      "sinopsis": "Sinopsis de la Película Estreno 1. Acción continua y suspenso garantizado para toda la semana.",
+      "funciones": [
+        { "cine": "Cine A", "ciudad": "CABA", "fecha": "2026-05-28", "idioma": "Doblada", "horarios": ["15:00", "17:30"], "url_compra": "https://entradas.cinea.com/p1" },
+        { "cine": "Cine A", "ciudad": "CABA", "fecha": "2026-05-28", "idioma": "Subtitulada", "horarios": ["20:00", "22:30"], "url_compra": "https://entradas.cinea.com/p1" },
+        { "cine": "Cine B", "ciudad": "Quilmes", "fecha": "2026-05-28", "idioma": "Doblada", "horarios": ["16:00"], "url_compra": null },
+        { "cine": "Cine B", "ciudad": "Quilmes", "fecha": "2026-05-28", "idioma": "Subtitulada", "horarios": ["21:00"], "url_compra": null },
+        { "cine": "Cine A", "ciudad": "CABA", "fecha": "2026-06-01", "idioma": "Doblada", "horarios": ["15:00"], "url_compra": "https://entradas.cinea.com/p1" },
+        { "cine": "Cine B", "ciudad": "Quilmes", "fecha": "2026-06-01", "idioma": "Subtitulada", "horarios": ["21:00"], "url_compra": null },
+        { "cine": "Cine A", "ciudad": "CABA", "fecha": "2026-06-02", "idioma": "Doblada", "horarios": ["15:00"], "url_compra": "https://entradas.cinea.com/p1" },
+        { "cine": "Cine B", "ciudad": "Quilmes", "fecha": "2026-06-02", "idioma": "Subtitulada", "horarios": ["21:00"], "url_compra": null }
+      ]
+    },
+    {
+      "id": "p2",
+      "titulo": "Película Estreno 2",
+      "director": "Director Beta",
+      "duracion": "110 min",
+      "seccion": "cartelera",
+      "poster": "https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=500",
+      "sinopsis": "Sinopsis de la Película Estreno 2. Un drama profundo que explora las relaciones humanas en la gran ciudad.",
+      "funciones": [
+        { "cine": "Cine A", "ciudad": "CABA", "fecha": "2026-05-28", "idioma": "Doblada", "horarios": ["14:00"], "url_compra": "https://entradas.cinea.com/p2" },
+        { "cine": "Cine A", "ciudad": "CABA", "fecha": "2026-05-28", "idioma": "Subtitulada", "horarios": ["19:00"], "url_compra": "https://entradas.cinea.com/p2" },
+        { "cine": "Cine B", "ciudad": "Quilmes", "fecha": "2026-05-28", "idioma": "Doblada", "horarios": ["15:30"], "url_compra": null },
+        { "cine": "Cine B", "ciudad": "Quilmes", "fecha": "2026-05-28", "idioma": "Subtitulada", "horarios": ["20:30"], "url_compra": null },
+        { "cine": "Cine A", "ciudad": "CABA", "fecha": "2026-06-02", "idioma": "Subtitulada", "horarios": ["19:00"], "url_compra": "https://entradas.cinea.com/p2" },
+        { "cine": "Cine B", "ciudad": "Quilmes", "fecha": "2026-06-02", "idioma": "Doblada", "horarios": ["15:30"], "url_compra": null }
+      ]
+    },
+    {
+      "id": "p3",
+      "titulo": "Película Estreno 3",
+      "director": "Director Gamma",
+      "duracion": "140 min",
+      "seccion": "cartelera",
+      "poster": "https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?w=500",
+      "sinopsis": "Sinopsis de la Película Estreno 3. Una comedia hilarante que arrasa en todos los complejos del país.",
+      "funciones": [
+        { "cine": "Cine A", "ciudad": "CABA", "fecha": "2026-05-28", "idioma": "Doblada", "horarios": ["18:00"], "url_compra": "https://entradas.cinea.com/p3" },
+        { "cine": "Cine B", "ciudad": "Quilmes", "fecha": "2026-05-28", "idioma": "Subtitulada", "horarios": ["22:00"], "url_compra": null },
+        { "cine": "Cine C", "ciudad": "CABA", "fecha": "2026-05-28", "idioma": null, "horarios": ["17:00", "20:00"], "url_compra": "https://entradas.cinec.com/p3" },
+        { "cine": "Cine A", "ciudad": "CABA", "fecha": "2026-06-02", "idioma": "Doblada", "horarios": ["18:00"], "url_compra": "https://entradas.cinea.com/p3" },
+        { "cine": "Cine B", "ciudad": "Quilmes", "fecha": "2026-06-02", "idioma": "Subtitulada", "horarios": ["22:00"], "url_compra": null },
+        { "cine": "Cine C", "ciudad": "CABA", "fecha": "2026-06-02", "idioma": null, "horarios": ["20:00"], "url_compra": "https://entradas.cinec.com/p3" }
+      ]
+    },
+    {
+      "id": "p4",
+      "titulo": "Película Estreno 4",
+      "director": "Director Delta",
+      "duracion": "95 min",
+      "seccion": "cartelera",
+      "poster": "https://images.unsplash.com/photo-1478720143033-6a972678da30?w=500",
+      "sinopsis": "Sinopsis de la Película Estreno 4. Función especial exclusiva del día martes.",
+      "funciones": [
+        { "cine": "Cine A", "ciudad": "CABA", "fecha": "2026-06-02", "idioma": "Doblada", "horarios": ["21:00"], "url_compra": "https://entradas.cinea.com/p4" },
+        { "cine": "Cine C", "ciudad": "CABA", "fecha": "2026-06-02", "idioma": null, "horarios": ["21:00"], "url_compra": "https://entradas.cinec.com/p4" }
+      ]
+    },
+    {
+      "id": "p5",
+      "titulo": "Película Estreno 5",
+      "director": "Director Epsilon",
+      "duracion": "105 min",
+      "seccion": "cartelera",
+      "poster": "https://images.unsplash.com/photo-1440404653325-ab127d49abc1?w=500",
+      "sinopsis": "Sinopsis de la Película Estreno 5. Ciencia ficción de culto proyectada únicamente lunes y martes.",
+      "funciones": [
+        { "cine": "Cine A", "ciudad": "CABA", "fecha": "2026-06-01", "idioma": "Subtitulada", "horarios": ["19:30", "22:00"], "url_compra": "https://entradas.cinea.com/p5" },
+        { "cine": "Cine C", "ciudad": "CABA", "fecha": "2026-06-01", "idioma": null, "horarios": ["19:30", "22:00"], "url_compra": "https://entradas.cinec.com/p5" },
+        { "cine": "Cine A", "ciudad": "CABA", "fecha": "2026-06-02", "idioma": "Subtitulada", "horarios": ["19:30", "22:00"], "url_compra": "https://entradas.cinea.com/p5" },
+        { "cine": "Cine C", "ciudad": "CABA", "fecha": "2026-06-02", "idioma": null, "horarios": ["19:30", "22:00"], "url_compra": "https://entradas.cinec.com/p5" }
+      ]
+    },
+    {
+      "id": "p6",
+      "titulo": "Próximo Estreno 6",
+      "director": "Director Seis",
+      "duracion": "Por determinar",
+      "seccion": "proximos",
+      "poster": "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?w=500",
+      "sinopsis": "El gran evento cinematográfico que llegará próximamente a Cine A, Cine B y Cine C."
+    },
+    {
+      "id": "p7",
+      "titulo": "Próximo Estreno 7",
+      "director": "Director Siete",
+      "duracion": "Por determinar",
+      "seccion": "proximos",
+      "poster": "https://images.unsplash.com/photo-1594909122845-11baa439b7bf?w=500",
+      "sinopsis": "Próximo lanzamiento exclusivo para complejos seleccionados Cine A y Cine B."
+    },
+    {
+      "id": "p8",
+      "titulo": "Próximo Estreno 8",
+      "director": "Director Ocho",
+      "duracion": "Por determinar",
+      "seccion": "proximos",
+      "poster": "https://images.unsplash.com/photo-1478720143033-6a972678da30?w=500",
+      "sinopsis": "Un thriller psicológico muy esperado que se estrenará pronto en Cine A y Cine B."
+    },
+    {
+      "id": "p9",
+      "titulo": "Próximo Estreno 9",
+      "director": "Director Nueve",
+      "duracion": "Por determinar",
+      "seccion": "proximos",
+      "poster": "https://images.unsplash.com/photo-1515621061946-eff1c2a352bd?w=500",
+      "sinopsis": "Aventura familiar animada para disfrutar en las salas de Cine A y Cine B."
+    },
+    {
+      "id": "p10",
+      "titulo": "Próximo Estreno 10",
+      "director": "Director Diez",
+      "duracion": "Por determinar",
+      "seccion": "proximos",
+      "poster": "https://images.unsplash.com/photo-1535498730771-e735b998cd64?w=500",
+      "sinopsis": "Acción futurista que llegará próximamente a las pantallas de Cine A y Cine B."
+    }
+  ]
 }
-
-/* ── Reset & Configuración Base ────────────────────────────────────────── */
-*, *::before, *::after { 
-    box-sizing: border-box; 
-    margin: 0; 
-    padding: 0; 
-}
-
-html, body { 
-    height: 100%; 
-}
-
-body {
-    background-color: var(--bg-body);
-    color: var(--t-primary);
-    font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
-    font-size: 13px;
-    line-height: 1.5;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-}
-
-/* ══════════════════════════════════════════════════════════════════════════
-   1. TITLE BAR (Encabezado principal optimizado)
-   ══════════════════════════════════════════════════════════════════════════ */
-.main-header {
-    position: sticky;
-    top: 0;
-    z-index: 200;
-    background-color: var(--bg-chrome);
-    border-bottom: 1px solid var(--border);
-    display: flex;
-    align-items: center;
-    padding: 18px var(--content-pad); /* Fila más ancha alineada con la columna central */
-    user-select: none;
-    flex-shrink: 0;
-}
-
-#site-title {
-    font-size: 15px; /* Letra más grande que los filtros */
-    font-weight: 600;
-    color: var(--t-white);
-    padding: 4px 10px;
-    border-radius: 3px;
-    cursor: pointer;
-    transition: background-color 0.12s;
-    white-space: nowrap;
-}
-
-#site-title:hover { 
-    background-color: rgba(255, 255, 255, 0.08); 
-}
-
-/* Nav del menú de desarrollo */
-.nav-menu {
-    display: flex;
-    align-items: center;
-    list-style: none;
-    height: 100%;
-    margin-left: 12px;
-}
-
-.nav-menu li a,
-.nav-menu li span {
-    display: flex;
-    align-items: center;
-    height: 100%;
-    padding: 4px 10px;
-    font-size: 12px;
-    color: var(--t-menu);
-    text-decoration: none;
-    cursor: pointer;
-    border-radius: 3px;
-    transition: background-color 0.12s;
-    white-space: nowrap;
-}
-
-.nav-menu li a:hover,
-.nav-menu li span:hover { 
-    background-color: rgba(255, 255, 255, 0.08); 
-}
-
-/* ══════════════════════════════════════════════════════════════════════════
-   2. LAYOUT IDE (Estructura de Tres Paneles)
-   ══════════════════════════════════════════════════════════════════════════ */
-.app-layout {
-    display: flex;
-    flex: 1;
-    overflow: hidden;
-}
-
-/* Activity Bar */
-.activity-bar {
-    width: 48px;
-    flex-shrink: 0;
-    background-color: var(--bg-chrome);
-    border-right: 1px solid var(--border);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 4px;
-}
-
-.activity-icon {
-    position: relative;
-    width: 48px;
-    height: 48px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    color: var(--t-muted);
-    transition: color 0.12s;
-}
-
-.activity-icon:hover { color: var(--t-primary); }
-.activity-icon.active { color: var(--t-white); }
-
-.activity-icon.active::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 2px;
-    height: 22px;
-    background-color: var(--t-white);
-}
-
-.activity-icon svg {
-    width: 22px;
-    height: 22px;
-    fill: none;
-    stroke: currentColor;
-    stroke-width: 1.5;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-}
-
-/* Sidebar / Explorador de Archivos */
-.sidebar {
-    width: 260px;
-    flex-shrink: 0;
-    background-color: var(--bg-panel);
-    border-right: 1px solid var(--border);
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-}
-
-.sidebar-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 14px 6px;
-    flex-shrink: 0;
-}
-
-.sidebar-header-title {
-    font-size: 11px;
-    font-weight: 700;
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
-    color: var(--t-explorer);
-}
-
-.sidebar-content { 
-    flex: 1; 
-    overflow-y: auto; 
-    overflow-x: hidden; 
-}
-
-.explorer-section-header {
-    display: flex;
-    align-items: center;
-    padding: 6px var(--content-pad) 6px 14px;
-    gap: 5px;
-    cursor: pointer;
-    user-select: none;
-}
-
-.explorer-section-header::before {
-    content: "›";
-    font-size: 16px;
-    color: var(--t-muted);
-    display: inline-block;
-    transform: rotate(90deg);
-    width: 12px;
-    text-align: center;
-}
-
-.explorer-section-header span {
-    font-size: 11px;
-    font-weight: 700;
-    letter-spacing: 0.8px;
-    text-transform: uppercase;
-    color: var(--t-bright);
-}
-
-.tree-item {
-    display: flex;
-    align-items: center;
-    padding: 4px 14px 4px 32px;
-    font-size: 13px;
-    color: var(--t-primary);
-    cursor: pointer;
-    gap: 6px;
-}
-
-.tree-item:hover { background-color: var(--bg-hover); }
-.tree-item.active { background-color: var(--bg-selected); color: var(--t-white); }
-
-/* Área de Edición Central */
-.editor-area {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    min-width: 0;
-    background-color: var(--bg-body);
-}
-
-/* Tabs */
-.editor-tabs {
-    display: flex;
-    background-color: var(--bg-panel);
-    border-bottom: 1px solid var(--border);
-    overflow-x: auto;
-    flex-shrink: 0;
-    scrollbar-width: none;
-}
-
-.editor-tab {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    padding: 8px 18px;
-    font-size: 12px;
-    color: var(--t-muted);
-    cursor: pointer;
-    border-right: 1px solid var(--border);
-    white-space: nowrap;
-}
-
-.editor-tab.active {
-    color: var(--t-primary);
-    background-color: var(--bg-body);
-    border-top: 1px solid var(--accent);
-    padding-top: 7px;
-}
-
-.editor-content { 
-    flex: 1; 
-    overflow-y: auto; 
-}
-
-/* ══════════════════════════════════════════════════════════════════════════
-   3. FILTROS (Compactos y discretos)
-   ══════════════════════════════════════════════════════════════════════════ */
-.filters-section,
-.detail-filters-section {
-    background-color: var(--bg-panel);
-    border-bottom: 1px solid var(--border);
-    padding: 12px var(--content-pad); /* Perfectamente alineados con los márgenes de la columna */
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 20px;
-    flex-shrink: 0;
-}
-
-.filter-group {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
-
-.filter-group label {
-    font-size: 11px;
-    font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 0.7px;
-    color: var(--t-muted);
-}
-
-.filter-group select {
-    background-color: var(--bg-input);
-    color: var(--t-primary);
-    border: 1px solid var(--border-strong);
-    padding: 4px 10px;
-    height: 28px;
-    font-size: 11px;
-    border-radius: 3px;
-    min-width: 140px;
-    cursor: pointer;
-    outline: none;
-    transition: border-color 0.12s;
-}
-
-.filter-group select:focus {
-    border-color: var(--accent);
-}
-
-/* ══════════════════════════════════════════════════════════════════════════
-   4. SECCIÓN DE PELÍCULAS Y GRILLA (Estilo Portfolio Centrado)
-   ══════════════════════════════════════════════════════════════════════════ */
-.movies-section {
-    padding: 40px var(--content-pad) 0;
-}
-
-.movies-section h2 {
-    font-size: 14px;
-    font-weight: 600;
-    letter-spacing: 0.25em;
-    text-transform: uppercase;
-    color: var(--t-white);
-    padding-bottom: 14px;
-    margin-bottom: 32px;
-    border-bottom: 1px solid var(--border-strong);
-}
-
-.movies-mosaic {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-    gap: 32px;
-    padding-bottom: 48px;
-}
-
-/* ══════════════════════════════════════════════════════════════════════════
-   5. TARJETAS ELEVADAS
-   ══════════════════════════════════════════════════════════════════════════ */
-.movie-card {
-    background-color: var(--bg-card);
-    border: 1px solid var(--border);
-    border-radius: var(--card-radius);
-    overflow: hidden;
-    cursor: pointer;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
-    transition: transform 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94), box-shadow 0.2s ease, border-color 0.2s ease;
-}
-
-.movie-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 14px 45px rgba(0, 0, 0, 0.8);
-    border-color: var(--border-strong);
-}
-
-.movie-card img {
-    display: block;
-    width: 100%;
-    height: 290px;
-    object-fit: cover;
-    filter: saturate(0.85) brightness(0.95);
-    transition: filter 0.2s ease;
-}
-
-.movie-card:hover img {
-    filter: saturate(1) brightness(1);
-}
-
-.movie-card-info {
-    padding: 18px;
-}
-
-.movie-card-info h3 {
-    font-size: 13px;
-    font-weight: 600;
-    letter-spacing: 0.04em;
-    line-height: 1.4;
-    color: var(--t-white);
-    margin-bottom: 8px;
-    text-transform: uppercase; /* MODIFICACIÓN B: Siempre Mayúsculas */
-}
-
-.movie-card-info p {
-    font-size: 12px;
-    line-height: 1.5;
-}
-
-.movie-card-info .director { 
-    color: var(--t-secondary); 
-}
-
-.movie-card-info .duration { 
-    color: #888888 !important; /* MODIFICACIÓN C: Color plano y sólido sin degradés */
-    background: transparent !important;
-    -webkit-text-fill-color: #888888 !important;
-}
-
-/* ══════════════════════════════════════════════════════════════════════════
-   6. VISTA DETALLE Y HORARIOS
-   ══════════════════════════════════════════════════════════════════════════ */
-.movie-presentation {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 48px;
-    padding: 40px var(--content-pad);
-}
-
-.poster-column img {
-    display: block;
-    width: 240px;
-    border-radius: var(--card-radius);
-    border: 1px solid var(--border);
-    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.7);
-}
-
-.info-column {
-    flex: 1;
-    min-width: 280px;
-}
-
-.info-column h2 {
-    font-size: 20px;
-    font-weight: 500;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: var(--t-white);
-    border-bottom: 1px solid var(--border-strong);
-    padding-bottom: 16px;
-    margin-bottom: 20px;
-}
-
-.info-column p {
-    font-size: 13px;
-    color: var(--t-primary);
-    margin: 10px 0;
-    display: flex;
-    gap: 8px;
-}
-
-.info-column strong {
-    font-size: 11px;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.06em;
-    color: var(--t-secondary);
-    min-width: 70px;
-}
-
-.sinopsis-text {
-    margin-top: 16px;
-    background-color: var(--bg-panel);
-    border-left: 2px solid var(--accent);
-    padding: 16px;
-    border-radius: 0 var(--card-radius) var(--card-radius) 0;
-    color: var(--t-secondary);
-    font-size: 13px;
-    line-height: 1.7;
-}
-
-.detail-filters-section {
-    margin: 0 var(--content-pad);
-    padding: 16px 0;
-    background: none;
-    border-top: none;
-}
-
-.showtimes-section {
-    padding: 0 var(--content-pad) 64px;
-}
-
-.showtimes-section h3 {
-    font-size: 13px;
-    font-weight: 600;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    color: var(--t-bright);
-    border-bottom: 1px solid var(--border-strong);
-    padding-bottom: 12px;
-    margin-bottom: 20px;
-}
-
-#showtimes-container span {
-    background-color: var(--accent) !important;
-    color: #ffffff !important;
-    font-family: "SF Mono", Menlo, Monaco, Consolas, monospace;
-    font-size: 12px;
-    font-weight: 500;
-    padding: 6px 14px !important;
-    border-radius: 3px !important;
-    cursor: pointer;
-    display: inline-block !important;
-}
-
-/* ══════════════════════════════════════════════════════════════════════════
-   7. STATUS BAR (Barra Inferior de Sistema)
-   ══════════════════════════════════════════════════════════════════════════ */
-.status-bar {
-    height: 22px;
-    background-color: var(--accent);
-    display: flex;
-    align-items: center;
-    padding: 0 12px;
-    font-size: 12px;
-    color: #ffffff;
-    z-index: 200;
-    user-select: none;
-    flex-shrink: 0;
-}
-
-/* ── Scrollbars & Utilidades ────────────────────────────────────────────── */
-::-webkit-scrollbar { width: 8px; height: 8px; }
-::-webkit-scrollbar-track { background: transparent; }
-::-webkit-scrollbar-thumb {
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 4px;
-}
-* { scrollbar-width: thin; scrollbar-color: rgba(255,255,255,0.1) transparent; }
-.hidden { display: none !important; }
