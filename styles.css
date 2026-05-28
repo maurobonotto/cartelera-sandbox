@@ -33,6 +33,8 @@ body {
     position: sticky;
     top: 0;
     z-index: 200;
+    display: flex;
+    align-items: center;
 }
 
 #site-title {
@@ -41,7 +43,17 @@ body {
     font-weight: 600;
     text-transform: uppercase;
     cursor: pointer;
-    display: inline-block;
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+}
+
+/* El estilo específico para el nuevo texto del título */
+.site-subtitle {
+    color: var(--text-muted);
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: none;
 }
 
 .filters-section, .detail-filters-section {
@@ -120,10 +132,11 @@ body {
     border-color: var(--border-strong);
 }
 
+/* Acá se fuerza la proporción 9:16 en la tarjeta de la grilla */
 .movie-card img {
     display: block;
     width: 100%;
-    height: 320px;
+    aspect-ratio: 9 / 16;
     object-fit: cover;
     filter: saturate(0.85) brightness(0.95);
 }
@@ -165,9 +178,12 @@ body {
     padding: 48px var(--content-pad);
 }
 
+/* Acá se fuerza la proporción 9:16 en la vista de detalle */
 .poster-column img {
     display: block;
     width: 260px;
+    aspect-ratio: 9 / 16;
+    object-fit: cover;
     border-radius: 7px;
     border: 1px solid var(--border);
     box-shadow: 0 10px 30px rgba(0,0,0,0.6);
@@ -205,6 +221,27 @@ body {
     min-width: 70px;
 }
 
+/* Estilo para el botón de tráiler */
+.trailer-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 8px 16px;
+    background-color: transparent;
+    color: var(--accent);
+    border: 1px solid var(--accent);
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 4px;
+    transition: all 0.2s;
+}
+
+.trailer-btn:hover {
+    background-color: var(--accent);
+    color: #ffffff;
+}
+
+/* La sinopsis ahora se adapta al texto (fit-content) */
 .sinopsis-text {
     margin-top: 16px;
     background-color: var(--bg-panel);
@@ -213,6 +250,8 @@ body {
     color: #aaaaaa;
     font-size: 13px;
     line-height: 1.7;
+    width: fit-content;
+    max-width: 100%;
 }
 
 .detail-filters-section {
@@ -220,8 +259,10 @@ body {
     border-top: none;
 }
 
+/* Margen superior agregado para separar "Funciones disponibles" */
 .showtimes-section {
     padding: 0 var(--content-pad) 64px;
+    margin-top: 48px; 
 }
 
 .showtimes-section h3 {
@@ -232,36 +273,53 @@ body {
     color: var(--text-bright);
     border-bottom: 1px solid var(--border-strong);
     padding-bottom: 12px;
-    margin-bottom: 20px;
+    margin-bottom: 24px;
 }
 
+/* Las cajas de los cines ahora se adaptan al contenido */
 .cine-block {
     background-color: var(--bg-card);
-    border-radius: 4px;
-    padding: 15px;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 18px;
     margin-bottom: 20px;
+    width: fit-content;
+    max-width: 100%;
 }
 
 .cine-block h4 {
     margin-top: 0;
-    margin-bottom: 12px;
-    color: var(--accent);
+    margin-bottom: 16px;
+    color: var(--text-bright);
     font-size: 14px;
+    font-weight: 600;
 }
 
+/* Rediseño de los horarios: chau rectángulos celestes */
 #showtimes-container span {
-    background-color: var(--accent) !important;
-    color: #ffffff !important;
-    font-family: monospace;
+    background-color: transparent !important;
+    color: var(--text-main) !important;
+    border: 1px solid var(--border-strong);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     font-size: 12px;
+    font-weight: 500;
     padding: 6px 12px !important;
-    border-radius: 3px !important;
+    border-radius: 4px !important;
     display: inline-block;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    transition: border-color 0.2s, background-color 0.2s;
+    cursor: pointer;
+}
+
+#showtimes-container span:hover {
+    border-color: var(--accent);
+    background-color: rgba(0, 122, 204, 0.1) !important;
+    color: var(--text-bright) !important;
 }
 
 ::-webkit-scrollbar { width: 8px; height: 8px; }
 ::-webkit-scrollbar-track { background: transparent; }
 ::-webkit-scrollbar-thumb { background-color: rgba(255, 255, 255, 0.1); border-radius: 4px; }
 * { scrollbar-width: thin; scrollbar-color: rgba(255,255,255,0.1) transparent; }
-
 .hidden { display: none !important; }

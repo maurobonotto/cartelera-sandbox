@@ -3,111 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cine Sandbox</title>
+    <title>Estrenos de Cine CABA</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
     <header class="main-header">
-        <h1 id="site-title" style="cursor: pointer;">Cine Sandbox</h1>
+        <div id="site-title" onclick="volverInicio()">
+            Estrenos de Cine 
+            <span class="site-subtitle">Horarios centralizados de cines de CABA</span>
+        </div>
     </header>
 
-    <main id="home-view">
+    <div id="vista-catalogo">
         <section class="filters-section">
             <div class="filter-group">
-                <label for="home-filter-ciudad">Ciudad</label>
-                <select id="home-filter-ciudad">
-                    <option value="">Todas</option>
+                <label for="filtro-cine">Cine</label>
+                <select id="filtro-cine" onchange="filtrarPeliculas()">
+                    <option value="todos">Todos los cines</option>
                 </select>
             </div>
             <div class="filter-group">
-                <label for="home-filter-cine">Cine</label>
-                <select id="home-filter-cine">
-                    <option value="">Todos</option>
-                </select>
-            </div>
-            <div class="filter-group">
-                <label for="home-filter-dia">Día</label>
-                <select id="home-filter-dia">
-                    <option value="">Todos</option>
-                </select>
-            </div>
-            <div class="filter-group">
-                <label for="home-filter-horario">Horario</label>
-                <select id="home-filter-horario">
-                    <option value="">Todos</option>
+                <label for="filtro-dia">Día</label>
+                <select id="filtro-dia" onchange="filtrarPeliculas()">
+                    <option value="todos">Todos los días</option>
                 </select>
             </div>
         </section>
 
         <section class="movies-section">
-            <h2>En Cartelera</h2>
-            <div id="cartelera-grid" class="movies-mosaic">
+            <h2>Películas en Cartelera</h2>
+            <div class="movies-mosaic" id="contenedor-peliculas">
                 </div>
         </section>
+    </div>
 
-        <section class="movies-section">
-            <h2>Próximos Estrenos</h2>
-            <div id="proximos-grid" class="movies-mosaic">
-                </div>
-        </section>
-    </main>
-
-    <main id="detail-view" class="hidden">
-        
-        <section class="movie-presentation">
-            <div class="poster-column">
-                <img id="detail-poster" src="" alt="Póster de la película">
-            </div>
-            <div class="info-column">
-                <h2 id="detail-titulo">Título de la Película</h2>
-                <p><strong>Director:</strong> <span id="detail-director"></span></p>
-                <p><strong>Duración:</strong> <span id="detail-duracion"></span> min</p>
-                <p><strong>Sinopsis:</strong></p>
-                <p id="detail-sinopsis" class="sinopsis-text"></p>
-            </div>
-        </section>
-
+    <div id="vista-detalle" class="hidden">
         <section class="detail-filters-section">
             <div class="filter-group">
-                <label for="detail-filter-ciudad">Ciudad</label>
-                <select id="detail-filter-ciudad">
-                    <option value="">Todas</option>
-                </select>
-            </div>
-            <div class="filter-group">
-                <label for="detail-filter-cine">Cine</label>
-                <select id="detail-filter-cine">
-                    <option value="">Todos</option>
-                </select>
-            </div>
-            <div class="filter-group">
-                <label for="detail-filter-dia">Día</label>
-                <select id="detail-filter-dia">
-                    <option value="">Todos</option>
-                </select>
-            </div>
-            <div class="filter-group">
-                <label for="detail-filter-horario">Horario</label>
-                <select id="detail-filter-horario">
-                    <option value="">Todos</option>
-                </select>
-            </div>
-            <div class="filter-group">
-                <label for="detail-filter-idioma">Idioma</label>
-                <select id="detail-filter-idioma">
-                    <option value="">Todos</option>
-                </select>
+                <button onclick="volverInicio()" style="background: #242424; color: var(--text-bright); border: 1px solid var(--border-strong); padding: 6px 16px; border-radius: 3px; cursor: pointer; font-size: 11px; text-transform: uppercase; font-weight: 600;">
+                    ← Volver a la cartelera
+                </button>
             </div>
         </section>
 
+        <section class="movie-presentation" id="contenedor-info-pelicula">
+            </section>
+
         <section class="showtimes-section">
-            <h3>Funciones Disponibles</h3>
+            <h3>Funciones disponibles</h3>
             <div id="showtimes-container">
                 </div>
         </section>
-    </main>
+    </div>
 
-    <script src="app.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
