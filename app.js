@@ -1,15 +1,13 @@
-// Variable global para guardar las películas cargadas del JSON
+// app.js - Filtros en cascada en HOME y DETALLE
+
 let peliculas = [];
-// Variable para saber qué película se está mirando en la ventana de detalle
 let peliculaActualTitulo = "";
 
-// 1. INICIALIZACIÓN
 document.addEventListener("DOMContentLoaded", () => {
     cargarDatos();
     configurarNavegacionGlobal();
 });
 
-// 2. CARGA DE DATOS
 function cargarDatos() {
     fetch('cartelera_prueba.json')
         .then(response => response.json())
@@ -20,67 +18,99 @@ function cargarDatos() {
         .catch(error => console.error("Error cargando el JSON:", error));
 }
 
-// 3. LOGICA DEL HOME
+// ================================ HOME ================================
 function inicializarHome() {
-    configurarFiltrosHome();
+    const funcionesCartelera = peliculas.filter(p => p.seccion === "cartelera");
+    actualizarOpcionesFiltrosHome(funcionesCartelera);
     mostrarPeliculasHome(peliculas);
-    escucharFiltrosHome();
+
+    const filtrosIds = ['home-filter-ciudad', 'home-filter-cine', 'home-filter-dia', 'home-filter-horario'];
+    filtrosIds.forEach(id => {
+        document.getElementById(id).addEventListener('change', () => aplicarFiltrosHome());
+    });
 }
 
-function configurarFiltrosHome() {
+function aplicarFiltrosHome() {
+    let funcionesFiltradas = peliculas.filter(p => p.seccion === "cartelera");
+
+    const valCiudad = document.getElementById('home-filter-ciudad').value;
+    const valCine = document.getElementById('home-filter-cine').value;
+    const valDia = document.getElementById('home-filter-dia').value;
+    const valHorario = document.getElementById('home-filter-horario').value;
+
+    if (valCiudad) funcionesFiltradas = funcionesFiltradas.filter(p => p.ciudad === valCiudad);
+    if (valCine) funcionesFiltradas = funcionesFiltradas.filter(p => p.cine === valCine);
+    if (valDia) funcionesFiltradas = funcionesFiltradas.filter(p => p.fecha === valDia);
+    if (valHorario) funcionesFiltradas = funcionesFiltradas.filter(p => p.horarios && p.horarios.includes(valHorario));
+
+    actualizarOpcionesFiltrosHome(funcionesFiltradas);
+
+    // Películas únicas de cartelera que tienen al menos una función filtrada
+    const idsFunciones = new Set(funcionesFiltradas.map(f => f.id_funcion));
+    const pelisCartelera = peliculas.filter(p => p.seccion === "cartelera" && idsFunciones.has(p.id_funcion));
+    const pelisUnicasCartelera = [];
+    const titulosVistos = new Set();
+    for (const p of pelisCartelera) {
+        if (!titulosVistos.has(p.titulo)) {
+            titulosVistos.add(p.titulo);
+            pelisUnicasCartelera.push(p);
+        }
+    }
+    const pelisProximos = peliculas.filter(p => p.seccion === "proximos");
+    mostrarPeliculasHome([...pelisUnicasCartelera, ...pelisProximos]);
+}
+
+function actualizarOpcionesFiltrosHome(funcionesValidas) {
     const ciudades = new Set();
     const cines = new Set();
     const dias = new Set();
     const horarios = new Set();
 
-    peliculas.forEach(peli => {
-        if (peli.seccion === "cartelera") {
-            if (peli.ciudad) ciudades.add(peli.ciudad);
-            if (peli.cine) cines.add(peli.cine);
-            if (peli.fecha) dias.add(peli.fecha);
-            if (peli.horarios) peli.horarios.forEach(h => horarios.add(h));
-        }
+    funcionesValidas.forEach(f => {
+        if (f.ciudad) ciudades.add(f.ciudad);
+        if (f.cine) cines.add(f.cine);
+        if (f.fecha) dias.add(f.fecha);
+        if (f.horarios) f.horarios.forEach(h => horarios.add(h));
     });
 
-    llenarSelector('home-filter-ciudad', ciudades);
-    llenarSelector('home-filter-cine', cines);
-    llenarSelector('home-filter-dia', dias);
-    llenarSelector('home-filter-horario', Array.from(horarios).sort());
-}
+    const selectCiudad = document.getElementById('home-filter-ciudad');
+    const selectCine = document.getElementById('home-filter-cine');
+    const selectDia = document.getElementById('home-filter-dia');
+    const selectHorario = document.getElementById('home-filter-horario');
 
-function llenarSelector(idElemento, conjuntoOpciones) {
-    const selector = document.getElementById(idElemento);
-    selector.innerHTML = selector.options[0].outerHTML;
-    
-    conjuntoOpciones.forEach(opcion => {
-        const opt = document.createElement('option');
-        opt.value = opcion;
-        opt.textContent = opcion;
-        selector.appendChild(opt);
-    });
+    const currentCiudad = selectCiudad.value;
+    const currentCine = selectCine.value;
+    const currentDia = selectDia.value;
+    const currentHorario = selectHorario.value;
+
+    function rellenar(select, valoresSet, currentValue) {
+        const nuevoValor = currentValue && valoresSet.has(currentValue) ? currentValue : "";
+        select.innerHTML = `<option value="">Todos</option>`;
+        Array.from(valoresSet).sort().forEach(v => {
+            const opt = document.createElement('option');
+            opt.value = v;
+            opt.textContent = v;
+            if (v === nuevoValor) opt.selected = true;
+            select.appendChild(opt);
+        });
+    }
+
+    rellenar(selectCiudad, ciudades, currentCiudad);
+    rellenar(selectCine, cines, currentCine);
+    rellenar(selectDia, dias, currentDia);
+    rellenar(selectHorario, horarios, currentHorario);
 }
 
 function mostrarPeliculasHome(listaPeliculas) {
     const carteleraGrid = document.getElementById('cartelera-grid');
     const proximosGrid = document.getElementById('proximos-grid');
-
     carteleraGrid.innerHTML = '';
     proximosGrid.innerHTML = '';
 
-    const titulosDibujados = new Set();
-
     listaPeliculas.forEach(peli => {
-        if (peli.seccion === "cartelera") {
-            if (titulosDibujados.has(peli.titulo)) return;
-            const tarjeta = crearTarjetaPelicula(peli);
-            carteleraGrid.appendChild(tarjeta);
-            titulosDibujados.add(peli.titulo);
-        } else if (peli.seccion === "proximos") {
-            if (titulosDibujados.has(peli.titulo)) return;
-            const tarjeta = crearTarjetaPelicula(peli);
-            proximosGrid.appendChild(tarjeta);
-            titulosDibujados.add(peli.titulo);
-        }
+        const tarjeta = crearTarjetaPelicula(peli);
+        if (peli.seccion === "cartelera") carteleraGrid.appendChild(tarjeta);
+        else if (peli.seccion === "proximos") proximosGrid.appendChild(tarjeta);
     });
 }
 
@@ -88,7 +118,6 @@ function crearTarjetaPelicula(peli) {
     const tarjeta = document.createElement('div');
     tarjeta.className = 'movie-card';
     tarjeta.dataset.titulo = peli.titulo;
-
     tarjeta.innerHTML = `
         <img src="${peli.poster}" alt="Póster de ${peli.titulo}">
         <div class="movie-card-info">
@@ -97,59 +126,22 @@ function crearTarjetaPelicula(peli) {
             <p class="duration">Duración: ${peli.duracion} min</p>
         </div>
     `;
-
-    tarjeta.addEventListener('click', () => {
-        abrirDetallePelicula(peli.titulo);
-    });
-
+    tarjeta.addEventListener('click', () => abrirDetallePelicula(peli.titulo));
     return tarjeta;
 }
 
-function escucharFiltrosHome() {
-    const filtros = ['home-filter-ciudad', 'home-filter-cine', 'home-filter-dia', 'home-filter-horario'];
-    filtros.forEach(id => {
-        document.getElementById(id).addEventListener('change', aplicarFiltrosHome);
-    });
-}
-
-function aplicarFiltrosHome() {
-    const valCiudad = document.getElementById('home-filter-ciudad').value;
-    const valCine = document.getElementById('home-filter-cine').value;
-    const valDia = document.getElementById('home-filter-dia').value;
-    const valHorario = document.getElementById('home-filter-horario').value;
-
-    const funcionesFiltradas = peliculas.filter(peli => {
-        if (peli.seccion !== "cartelera") return false;
-        if (valCiudad && peli.ciudad !== valCiudad) return false;
-        if (valCine && peli.cine !== valCine) return false;
-        if (valDia && peli.fecha !== valDia) return false;
-        if (valHorario && !peli.horarios.includes(valHorario)) return false;
-        return true;
-    });
-
-    const peliculasAMostrar = peliculas.filter(peli => {
-        if (peli.seccion === "proximos") return true;
-        return funcionesFiltradas.some(f => f.id_funcion === peli.id_funcion);
-    });
-
-    mostrarPeliculasHome(peliculasAMostrar);
-}
-
-// 4. LÓGICA DE DETALLE
+// ================================ DETALLE (con cascada) ================================
 function abrirDetallePelicula(titulo) {
     peliculaActualTitulo = titulo;
-
     const datosFijos = peliculas.find(p => p.titulo === titulo);
     if (!datosFijos) return;
 
-    // Llenar datos generales
     document.getElementById('detail-poster').src = datosFijos.poster;
     document.getElementById('detail-titulo').textContent = datosFijos.titulo;
     document.getElementById('detail-director').textContent = datosFijos.director;
     document.getElementById('detail-duracion').textContent = datosFijos.duracion;
     document.getElementById('detail-sinopsis').textContent = datosFijos.sinopsis;
 
-    // Manejo del tráiler
     const trailerContainer = document.getElementById('trailer-container');
     const trailerLink = document.getElementById('trailer-link');
     if (datosFijos.linkTrailer && datosFijos.linkTrailer !== "") {
@@ -159,7 +151,7 @@ function abrirDetallePelicula(titulo) {
         trailerContainer.classList.add('hidden');
     }
 
-    configurarFiltrosDetalle(titulo);
+    inicializarFiltrosDetalle();
     aplicarFiltrosDetalle();
 
     document.getElementById('home-view').classList.add('hidden');
@@ -167,55 +159,99 @@ function abrirDetallePelicula(titulo) {
     window.scrollTo(0, 0);
 }
 
-function configurarFiltrosDetalle(titulo) {
-    const ciudades = new Set();
-    const cines = new Set();
-    const dias = new Set();
-    const horarios = new Set();
-    const idiomas = new Set();
+function inicializarFiltrosDetalle() {
+    // Obtener todas las funciones de la película actual
+    const funcionesPeli = peliculas.filter(p => p.titulo === peliculaActualTitulo && p.seccion === "cartelera");
+    actualizarOpcionesDetalle(funcionesPeli);
 
-    peliculas.forEach(p => {
-        if (p.titulo === titulo && p.seccion === "cartelera") {
-            if (p.ciudad) ciudades.add(p.ciudad);
-            if (p.cine) cines.add(p.cine);
-            if (p.fecha) dias.add(p.fecha);
-            if (p.idioma) idiomas.add(p.idioma);
-            if (p.horarios) p.horarios.forEach(h => horarios.add(h));
-        }
-    });
-
-    llenarSelector('detail-filter-ciudad', ciudades);
-    llenarSelector('detail-filter-cine', cines);
-    llenarSelector('detail-filter-dia', dias);
-    llenarSelector('detail-filter-idioma', idiomas);
-    llenarSelector('detail-filter-horario', Array.from(horarios).sort());
-
-    const filtrosInternos = ['detail-filter-ciudad', 'detail-filter-cine', 'detail-filter-dia', 'detail-filter-horario', 'detail-filter-idioma'];
-    filtrosInternos.forEach(id => {
+    const filtrosIds = ['detail-filter-ciudad', 'detail-filter-cine', 'detail-filter-dia', 'detail-filter-horario', 'detail-filter-idioma'];
+    filtrosIds.forEach(id => {
         const elemento = document.getElementById(id);
-        const elementoClon = elemento.cloneNode(true);
-        elemento.parentNode.replaceChild(elementoClon, elemento);
-        elementoClon.addEventListener('change', aplicarFiltrosDetalle);
+        // Remover listeners anteriores clonando
+        const nuevo = elemento.cloneNode(true);
+        elemento.parentNode.replaceChild(nuevo, elemento);
+        nuevo.addEventListener('change', () => aplicarFiltrosDetalle());
     });
 }
 
 function aplicarFiltrosDetalle() {
+    let funciones = peliculas.filter(p => p.titulo === peliculaActualTitulo && p.seccion === "cartelera");
+
     const valCiudad = document.getElementById('detail-filter-ciudad').value;
     const valCine = document.getElementById('detail-filter-cine').value;
     const valDia = document.getElementById('detail-filter-dia').value;
-    const valHorario = document.getElementById('detail-filter-horario').value;
     const valIdioma = document.getElementById('detail-filter-idioma').value;
+    const valHorario = document.getElementById('detail-filter-horario').value;
 
-    const funcionesFiltradas = peliculas.filter(p => {
-        if (p.titulo !== peliculaActualTitulo || p.seccion !== "cartelera") return false;
-        if (valCiudad && p.ciudad !== valCiudad) return false;
-        if (valCine && p.cine !== valCine) return false;
-        if (valDia && p.fecha !== valDia) return false;
-        if (valIdioma && p.idioma !== valIdioma) return false;
-        return true;
+    if (valCiudad) funciones = funciones.filter(p => p.ciudad === valCiudad);
+    if (valCine) funciones = funciones.filter(p => p.cine === valCine);
+    if (valDia) funciones = funciones.filter(p => p.fecha === valDia);
+    if (valIdioma) funciones = funciones.filter(p => p.idioma === valIdioma);
+
+    // Actualizar opciones de los selectores según las funciones filtradas actualmente
+    actualizarOpcionesDetalle(funciones);
+
+    // Volver a leer valores después de actualizar (por si algún selector perdió su valor)
+    const nuevoValCiudad = document.getElementById('detail-filter-ciudad').value;
+    const nuevoValCine = document.getElementById('detail-filter-cine').value;
+    const nuevoValDia = document.getElementById('detail-filter-dia').value;
+    const nuevoValIdioma = document.getElementById('detail-filter-idioma').value;
+    const nuevoValHorario = document.getElementById('detail-filter-horario').value;
+
+    // Re-aplicar filtros con los valores (que ya son coherentes)
+    let finalFunciones = peliculas.filter(p => p.titulo === peliculaActualTitulo && p.seccion === "cartelera");
+    if (nuevoValCiudad) finalFunciones = finalFunciones.filter(p => p.ciudad === nuevoValCiudad);
+    if (nuevoValCine) finalFunciones = finalFunciones.filter(p => p.cine === nuevoValCine);
+    if (nuevoValDia) finalFunciones = finalFunciones.filter(p => p.fecha === nuevoValDia);
+    if (nuevoValIdioma) finalFunciones = finalFunciones.filter(p => p.idioma === nuevoValIdioma);
+
+    renderizarFuncionesDetalle(finalFunciones, nuevoValHorario);
+}
+
+function actualizarOpcionesDetalle(funcionesValidas) {
+    const ciudades = new Set();
+    const cines = new Set();
+    const dias = new Set();
+    const idiomas = new Set();
+    const horarios = new Set();
+
+    funcionesValidas.forEach(f => {
+        if (f.ciudad) ciudades.add(f.ciudad);
+        if (f.cine) cines.add(f.cine);
+        if (f.fecha) dias.add(f.fecha);
+        if (f.idioma) idiomas.add(f.idioma);
+        if (f.horarios) f.horarios.forEach(h => horarios.add(h));
     });
 
-    renderizarFuncionesDetalle(funcionesFiltradas, valHorario);
+    const selectCiudad = document.getElementById('detail-filter-ciudad');
+    const selectCine = document.getElementById('detail-filter-cine');
+    const selectDia = document.getElementById('detail-filter-dia');
+    const selectIdioma = document.getElementById('detail-filter-idioma');
+    const selectHorario = document.getElementById('detail-filter-horario');
+
+    const currentCiudad = selectCiudad.value;
+    const currentCine = selectCine.value;
+    const currentDia = selectDia.value;
+    const currentIdioma = selectIdioma.value;
+    const currentHorario = selectHorario.value;
+
+    function rellenar(select, valoresSet, currentValue) {
+        const nuevoValor = currentValue && valoresSet.has(currentValue) ? currentValue : "";
+        select.innerHTML = `<option value="">Todos</option>`;
+        Array.from(valoresSet).sort().forEach(v => {
+            const opt = document.createElement('option');
+            opt.value = v;
+            opt.textContent = v;
+            if (v === nuevoValor) opt.selected = true;
+            select.appendChild(opt);
+        });
+    }
+
+    rellenar(selectCiudad, ciudades, currentCiudad);
+    rellenar(selectCine, cines, currentCine);
+    rellenar(selectDia, dias, currentDia);
+    rellenar(selectIdioma, idiomas, currentIdioma);
+    rellenar(selectHorario, horarios, currentHorario);
 }
 
 function renderizarFuncionesDetalle(funciones, filtroHorario) {
@@ -227,49 +263,58 @@ function renderizarFuncionesDetalle(funciones, filtroHorario) {
         return;
     }
 
-    const funcionesPorCine = {};
+    // Agrupar por cine
+    const porCine = {};
     funciones.forEach(f => {
-        if (!funcionesPorCine[f.cine]) funcionesPorCine[f.cine] = [];
-        funcionesPorCine[f.cine].push(f);
+        if (!porCine[f.cine]) porCine[f.cine] = [];
+        porCine[f.cine].push(f);
     });
 
-    for (const cine in funcionesPorCine) {
-        const cineBlock = document.createElement('div');
-        cineBlock.className = 'cine-block';
-
-        let htmlContenido = `<h4>${cine} (${funcionesPorCine[cine][0].ciudad})</h4>`;
-
-        funcionesPorCine[cine].forEach(f => {
-            const horariosAMostrar = filtroHorario ? f.horarios.filter(h => h === filtroHorario) : f.horarios;
-            if (horariosAMostrar.length === 0) return;
-
-            htmlContenido += `
+    for (const cine in porCine) {
+        const bloque = document.createElement('div');
+        bloque.className = 'cine-block';
+        let html = `<h4>${cine} (${porCine[cine][0].ciudad})</h4>`;
+        porCine[cine].forEach(f => {
+            const horariosMostrar = filtroHorario ? f.horarios.filter(h => h === filtroHorario) : f.horarios;
+            if (horariosMostrar.length === 0) return;
+            html += `
                 <div class="funcion-item">
-                    <div class="funcion-fecha-idioma">
-                        <strong>${f.fecha}</strong> · ${f.idioma}
-                    </div>
+                    <div class="funcion-fecha-idioma"><strong>${f.fecha}</strong> · ${f.idioma}</div>
                     <div class="horarios-lista">
-                        ${horariosAMostrar.map(h => `<span class="horario-tag">${h}</span>`).join('')}
+                        ${horariosMostrar.map(h => `<span class="horario-tag">${h}</span>`).join('')}
                     </div>
                 </div>
             `;
         });
-
-        cineBlock.innerHTML = htmlContenido;
-        contenedor.appendChild(cineBlock);
+        bloque.innerHTML = html;
+        contenedor.appendChild(bloque);
     }
 }
 
-// 5. NAVEGACIÓN GLOBAL
+// ================================ NAVEGACIÓN ================================
 function configurarNavegacionGlobal() {
     document.getElementById('site-title').addEventListener('click', () => {
+        // Resetear filtros home
         document.getElementById('home-filter-ciudad').value = "";
         document.getElementById('home-filter-cine').value = "";
         document.getElementById('home-filter-dia').value = "";
         document.getElementById('home-filter-horario').value = "";
-        
+        const todasCartelera = peliculas.filter(p => p.seccion === "cartelera");
+        actualizarOpcionesFiltrosHome(todasCartelera);
         mostrarPeliculasHome(peliculas);
         document.getElementById('detail-view').classList.add('hidden');
         document.getElementById('home-view').classList.remove('hidden');
+    });
+}
+
+// Helper (por si se necesita en otros lados)
+function llenarSelector(id, valoresSet) {
+    const selector = document.getElementById(id);
+    selector.innerHTML = `<option value="">Todos</option>`;
+    Array.from(valoresSet).sort().forEach(v => {
+        const opt = document.createElement('option');
+        opt.value = v;
+        opt.textContent = v;
+        selector.appendChild(opt);
     });
 }
