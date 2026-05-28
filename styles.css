@@ -1,0 +1,69 @@
+/* Paleta VS Code Dark Theme */
+:root {
+    --bg-main: #1e1e1e;
+    --bg-panel: #252526;
+    --bg-card: #2d2d2d;
+    --text-main: #ffffff;
+    --text-sec: #cccccc;
+    --accent: #007acc;
+}
+
+body {
+    background-color: var(--bg-main);
+    color: var(--text-main);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.main-header {
+    background-color: var(--bg-panel);
+    padding: 1rem 2rem;
+    border-bottom: 1px solid #333;
+}
+
+/* Filtros */
+.filters-section, .detail-filters-section {
+    background-color: var(--bg-panel);
+    padding: 1rem 2rem;
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.filter-group { display: flex; flex-direction: column; }
+
+/* Mosaico de tarjetas */
+.movies-mosaic {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 0 2rem 2rem;
+}
+
+.movie-card {
+    background-color: var(--bg-card);
+    border-radius: 4px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.movie-card:hover { transform: scale(1.03); border: 1px solid var(--accent); }
+
+.movie-card img { width: 100%; height: 300px; object-fit: cover; }
+
+.movie-card-info { padding: 10px; }
+
+/* Vista detalle */
+.movie-presentation {
+    display: flex;
+    gap: 40px;
+    padding: 2rem;
+}
+
+.poster-column img { width: 300px; border-radius: 4px; }
+
+.hidden { display: none; }
+
+.sinopsis-text { color: var(--text-sec); line-height: 1.6; }
