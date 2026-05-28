@@ -1,67 +1,74 @@
 /* ==========================================================================
-   CARTELERA · VS Code Dark Theme
-   Paleta 100% extraída de la UI de VS Code — sin colores de sintaxis
+   CARTELERA · VS Code Dark — Revisión 3
+   Negro profundo del portfolio · Bordes redondeados · Márgenes generosos
+   Paleta: solo grises + #007acc — sin colores de sintaxis
    ========================================================================== */
 
 /* ── Variables ─────────────────────────────────────────────────────────── */
 :root {
-    /* Backgrounds — de más oscuro a más claro, como VS Code */
-    --bg-0: #1e1e1e;          /* editor / body */
-    --bg-1: #252526;          /* sidebar, tarjetas */
-    --bg-2: #2d2d2d;          /* hover sutil */
-    --bg-3: #333333;          /* activity bar */
-    --bg-4: #3c3c3c;          /* title bar, inputs */
-    --bg-selected: #094771;   /* ítem activo en el explorador */
-    --accent: #007acc;        /* azul VS Code — único color de acento */
+    /* Fondos — del más oscuro al más claro */
+    --bg-body:        #111111;   /* negro profundo del portfolio */
+    --bg-chrome:      #181818;   /* title bar, activity bar, sidebar */
+    --bg-panel:       #1c1c1c;   /* sidebar panel, editor tabs */
+    --bg-card:        #1e1e1e;   /* tarjetas */
+    --bg-input:       #242424;   /* inputs de filtro */
+    --bg-hover:       #252525;   /* hover sobre ítems */
+    --bg-selected:    #0d3c5a;   /* ítem activo explorador */
+    --accent:         #007acc;   /* azul VS Code — único color de acento */
 
     /* Borders */
-    --border:       #2d2d2d;
-    --border-light: #3c3c3c;
+    --border:         rgba(255, 255, 255, 0.07);  /* sutilísimo */
+    --border-strong:  rgba(255, 255, 255, 0.12);
 
-    /* Text — escala monocromática, sin naranja/verde/teal */
-    --t-bright:     #e8e8e8;  /* sección names, títulos activos */
-    --t-primary:    #d4d4d4;  /* texto principal */
-    --t-secondary:  #a0a0a0;  /* metadata, info secundaria */
-    --t-muted:      #858585;  /* etiquetas, íconos inactivos */
-    --t-faint:      #5a5a5a;  /* divisores en texto, disabled */
-    --t-explorer:   #bbbbbb;  /* header "EXPLORER" */
-    --t-menu:       #cccccc;  /* ítems del menú en title bar */
-    --t-white:      #ffffff;  /* sobre fondos de acento */
+    /* Text — escala monocromática */
+    --t-white:      #ffffff;
+    --t-bright:     #e8e8e8;
+    --t-primary:    #c8c8c8;
+    --t-secondary:  #888888;
+    --t-muted:      #555555;
+    --t-faint:      #3a3a3a;
+    --t-menu:       #bbbbbb;
+    --t-explorer:   #999999;
+
+    /* Espaciado */
+    --content-pad:  48px;
+    --card-radius:  7px;
 }
 
 /* ── Reset & Base ──────────────────────────────────────────────────────── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
+html { height: 100%; }
+
 body {
-    background-color: var(--bg-0);
+    background-color: var(--bg-body);
     color: var(--t-primary);
-    font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+    font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
     font-size: 13px;
-    line-height: 1.45;
+    line-height: 1.5;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    min-height: 100%;
 }
 
 /* ══════════════════════════════════════════════════════════════════════════
-   1. TITLE BAR
-   30px · Reproduce exactamente la barra superior de VS Code
+   1. TITLE BAR  ·  VS Code chrome — 30px de altura
    ══════════════════════════════════════════════════════════════════════════ */
 .main-header {
     position: sticky;
     top: 0;
-    z-index: 100;
-    background-color: var(--bg-4);
+    z-index: 200;
     height: 30px;
+    background-color: var(--bg-chrome);
+    border-bottom: 1px solid var(--border);
     display: flex;
     align-items: center;
-    gap: 0;
-    padding: 0 6px;
-    border-bottom: 1px solid #2a2a2a;
+    padding: 0 8px;
     user-select: none;
     flex-shrink: 0;
 }
 
-/* Ícono — rombo azul simplificado del logo de VS Code */
+/* Logo SVG de VS Code — se asume marcado externo o inline SVG */
 .main-header-icon {
     width: 30px;
     height: 30px;
@@ -69,14 +76,27 @@ body {
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
+    margin-right: 2px;
 }
 
-.main-header-icon svg {
-    width: 18px;
-    height: 18px;
+.main-header-icon svg { width: 16px; height: 16px; }
+
+/* Nombre del sitio (primer ítem del menú) */
+#site-title {
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--t-menu);
+    padding: 3px 8px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.12s;
+    white-space: nowrap;
 }
 
-/* Ítems de menú: File · Edit · Selection… */
+#site-title:hover { background-color: rgba(255, 255, 255, 0.08); }
+#site-title::before { content: none; }
+
+/* Nav del menú (File · Edit · Selection…) */
 .nav-menu {
     display: flex;
     align-items: center;
@@ -84,11 +104,7 @@ body {
     height: 100%;
 }
 
-.nav-menu li {
-    height: 100%;
-    display: flex;
-    align-items: center;
-}
+.nav-menu li { height: 100%; display: flex; align-items: center; }
 
 .nav-menu li a,
 .nav-menu li span {
@@ -100,18 +116,16 @@ body {
     font-weight: 400;
     color: var(--t-menu);
     text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.12s;
     white-space: nowrap;
-    transition: background-color 0.1s;
 }
 
 .nav-menu li a:hover,
-.nav-menu li span:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-}
+.nav-menu li span:hover { background-color: rgba(255, 255, 255, 0.08); }
 
 /* ══════════════════════════════════════════════════════════════════════════
-   2. LAYOUT PRINCIPAL
-   Activity Bar · Sidebar · Editor Area
+   2. LAYOUT  ·  Activity Bar + Sidebar + Editor
    ══════════════════════════════════════════════════════════════════════════ */
 .app-layout {
     display: flex;
@@ -119,11 +133,11 @@ body {
     overflow: hidden;
 }
 
-/* ── Activity Bar ── */
+/* ── Activity Bar ────────────────────────────────────────────────────────── */
 .activity-bar {
     width: 48px;
     flex-shrink: 0;
-    background-color: var(--bg-3);
+    background-color: var(--bg-chrome);
     border-right: 1px solid var(--border);
     display: flex;
     flex-direction: column;
@@ -140,16 +154,12 @@ body {
     justify-content: center;
     cursor: pointer;
     color: var(--t-muted);
-    transition: color 0.1s;
+    transition: color 0.12s;
 }
 
 .activity-icon:hover { color: var(--t-primary); }
+.activity-icon.active { color: var(--t-white); }
 
-.activity-icon.active {
-    color: var(--t-white);
-}
-
-/* Indicador blanco vertical del ícono activo */
 .activity-icon.active::before {
     content: "";
     position: absolute;
@@ -157,25 +167,25 @@ body {
     top: 50%;
     transform: translateY(-50%);
     width: 2px;
-    height: 24px;
+    height: 22px;
     background-color: var(--t-white);
 }
 
 .activity-icon svg {
-    width: 24px;
-    height: 24px;
+    width: 22px;
+    height: 22px;
     fill: none;
     stroke: currentColor;
-    stroke-width: 1.6;
+    stroke-width: 1.5;
     stroke-linecap: round;
     stroke-linejoin: round;
 }
 
-/* ── Sidebar / Explorer ── */
+/* ── Sidebar / Explorer ──────────────────────────────────────────────────── */
 .sidebar {
     width: 260px;
     flex-shrink: 0;
-    background-color: var(--bg-1);
+    background-color: var(--bg-panel);
     border-right: 1px solid var(--border);
     display: flex;
     flex-direction: column;
@@ -207,21 +217,16 @@ body {
     padding: 2px 4px;
     border-radius: 3px;
     line-height: 1;
-    transition: background-color 0.1s, color 0.1s;
+    transition: background-color 0.12s, color 0.12s;
 }
 
 .sidebar-header-btn:hover {
-    background-color: var(--bg-2);
+    background-color: var(--bg-hover);
     color: var(--t-primary);
 }
 
-.sidebar-content {
-    flex: 1;
-    overflow-y: auto;
-    overflow-x: hidden;
-}
+.sidebar-content { flex: 1; overflow-y: auto; overflow-x: hidden; }
 
-/* Sección colapsable del explorador */
 .explorer-section { display: flex; flex-direction: column; }
 
 .explorer-section-header {
@@ -234,9 +239,8 @@ body {
     transition: background-color 0.1s;
 }
 
-.explorer-section-header:hover { background-color: var(--bg-2); }
+.explorer-section-header:hover { background-color: var(--bg-hover); }
 
-/* Chevron › */
 .explorer-section-header::before {
     content: "›";
     font-size: 16px;
@@ -260,7 +264,6 @@ body {
     color: var(--t-bright);
 }
 
-/* Ítem árbol */
 .tree-item {
     display: flex;
     align-items: center;
@@ -275,22 +278,23 @@ body {
     transition: background-color 0.1s;
 }
 
-.tree-item:hover  { background-color: var(--bg-2); }
+.tree-item:hover  { background-color: var(--bg-hover); }
 .tree-item.active { background-color: var(--bg-selected); color: var(--t-white); }
 
-/* ── Editor Area ── */
+/* ── Editor Area ─────────────────────────────────────────────────────────── */
 .editor-area {
     flex: 1;
     display: flex;
     flex-direction: column;
     overflow: hidden;
     min-width: 0;
+    background-color: var(--bg-body);
 }
 
-/* Tabs */
+/* Tabs de archivos */
 .editor-tabs {
     display: flex;
-    background-color: var(--bg-1);
+    background-color: var(--bg-panel);
     border-bottom: 1px solid var(--border);
     overflow-x: auto;
     flex-shrink: 0;
@@ -303,9 +307,9 @@ body {
     display: flex;
     align-items: center;
     gap: 8px;
-    padding: 8px 16px;
+    padding: 8px 18px;
     min-width: 110px;
-    font-size: 13px;
+    font-size: 12px;
     color: var(--t-muted);
     cursor: pointer;
     border-right: 1px solid var(--border);
@@ -316,61 +320,58 @@ body {
 
 .editor-tab.active {
     color: var(--t-primary);
-    background-color: var(--bg-0);
+    background-color: var(--bg-body);
     border-top: 1px solid var(--accent);
     padding-top: 7px;
 }
 
 .editor-tab:hover:not(.active) {
-    color: var(--t-primary);
-    background-color: var(--bg-2);
+    color: var(--t-bright);
+    background-color: var(--bg-hover);
 }
 
-/* Contenido scrollable */
-.editor-content {
-    flex: 1;
-    overflow-y: auto;
-}
+.editor-content { flex: 1; overflow-y: auto; }
 
 /* ══════════════════════════════════════════════════════════════════════════
-   3. FILTROS
-   Toolbar estilo panel de preferencias de VS Code
+   3. FILTROS  ·  Compactos y discretos — no compiten con el contenido
    ══════════════════════════════════════════════════════════════════════════ */
 .filters-section,
 .detail-filters-section {
-    background-color: var(--bg-1);
+    background-color: var(--bg-panel);
     border-bottom: 1px solid var(--border);
-    padding: 14px 32px;
+    padding: 10px var(--content-pad);
     display: flex;
     flex-wrap: wrap;
-    align-items: flex-end;
-    gap: 24px;
+    align-items: center;
+    gap: 16px;
     flex-shrink: 0;
 }
 
 .filter-group {
     display: flex;
-    flex-direction: column;
-    gap: 5px;
+    align-items: center;
+    gap: 7px;
 }
 
 .filter-group label {
     font-size: 11px;
-    font-weight: 600;
+    font-weight: 500;
     text-transform: uppercase;
-    letter-spacing: 0.9px;
+    letter-spacing: 0.7px;
     color: var(--t-muted);
+    white-space: nowrap;
 }
 
 .filter-group select {
-    background-color: var(--bg-4);
+    background-color: var(--bg-input);
     color: var(--t-primary);
-    border: 1px solid var(--border-light);
-    padding: 5px 10px;
-    font-size: 13px;
+    border: 1px solid var(--border-strong);
+    padding: 3px 8px;
+    height: 26px;
+    font-size: 11px;
     font-family: inherit;
-    border-radius: 2px;
-    min-width: 160px;
+    border-radius: 3px;
+    min-width: 130px;
     cursor: pointer;
     outline: none;
     transition: border-color 0.12s;
@@ -384,100 +385,93 @@ body {
 }
 
 /* ══════════════════════════════════════════════════════════════════════════
-   4. SECCIÓN DE PELÍCULAS
-   Encabezado estilo "CARTELERA-SANDBOX" del explorador
+   4. SECCIÓN DE PELÍCULAS  ·  Inspirada en el portfolio de referencia
    ══════════════════════════════════════════════════════════════════════════ */
 .movies-section {
-    padding: 28px 32px 0;
+    padding: 52px var(--content-pad) 0;
 }
 
-/* Título de sección — igual que los headers del explorador */
+/* Encabezado estilo "DOCUMENTALES" del portfolio:
+   uppercase, letter-spacing amplio, línea divisoria */
 .movies-section h2 {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    font-size: 11px;
-    font-weight: 700;
-    letter-spacing: 1.5px;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0.28em;
     text-transform: uppercase;
-    color: var(--t-explorer);
-    border-bottom: 1px solid var(--border);
-    padding-bottom: 10px;
-    margin-bottom: 28px;
+    color: var(--t-white);
+    padding-bottom: 16px;
+    margin-bottom: 36px;
+    border-bottom: 1px solid var(--border-strong);
 }
 
-.movies-section h2::before {
-    content: "›";
-    font-size: 16px;
-    color: var(--t-muted);
-    display: inline-block;
-    transform: rotate(90deg);
-    line-height: 1;
-}
+/* Sin chevron en el h2 — usamos el estilo del portfolio directamente */
+.movies-section h2::before { content: none; }
 
-/* Grid */
+/* Grid — 3 columnas como el portfolio, con gap generoso */
 .movies-mosaic {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
     gap: 24px;
-    padding-bottom: 48px;
+    padding-bottom: 64px;
 }
 
 /* ══════════════════════════════════════════════════════════════════════════
-   5. TARJETAS DE PELÍCULAS
-   Monocromáticas — solo grises + azul en hover
+   5. TARJETAS  ·  Redondeadas, oscuras, elegantes
+   Siguiendo exactamente el portfolio de referencia
    ══════════════════════════════════════════════════════════════════════════ */
 .movie-card {
-    background-color: var(--bg-1);
+    background-color: var(--bg-card);
     border: 1px solid var(--border);
-    border-radius: 2px;
+    border-radius: var(--card-radius);
     overflow: hidden;
     cursor: pointer;
+    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.4);
     transition:
-        transform     0.18s cubic-bezier(0.165, 0.84, 0.44, 1),
-        border-color  0.18s ease,
-        box-shadow    0.18s ease;
+        transform     0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+        box-shadow    0.2s ease,
+        border-color  0.2s ease;
 }
 
 .movie-card:hover {
-    transform: translateY(-3px);
-    border-color: var(--accent);
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.7);
+    border-color: var(--border-strong);
 }
 
 .movie-card img {
     display: block;
     width: 100%;
-    height: 300px;
+    height: 270px;
     object-fit: cover;
-    border-bottom: 1px solid var(--border);
-    filter: saturate(0.85) brightness(0.95); /* Leve desaturación para coherencia */
-    transition: filter 0.18s;
+    /* Leve desaturación en reposo — plena en hover, como en portfolios de cine */
+    filter: saturate(0.85) brightness(0.93);
+    transition: filter 0.25s ease;
 }
 
 .movie-card:hover img {
     filter: saturate(1) brightness(1);
 }
 
+/* Zona de texto de la tarjeta */
 .movie-card-info {
-    padding: 14px 16px 16px;
+    padding: 16px 18px 18px;
 }
 
 .movie-card-info h3 {
     font-size: 13px;
     font-weight: 600;
+    letter-spacing: 0.02em;
     line-height: 1.4;
-    color: var(--t-bright);
-    margin-bottom: 8px;
+    color: var(--t-white);
+    margin-bottom: 10px;
 }
 
 .movie-card-info p {
     font-size: 12px;
-    color: var(--t-secondary);
+    line-height: 1.5;
     margin-top: 3px;
 }
 
-/* Separador sutil entre director y duración */
 .movie-card-info .director { color: var(--t-secondary); }
 .movie-card-info .duration  { color: var(--t-muted); }
 
@@ -487,16 +481,16 @@ body {
 .movie-presentation {
     display: flex;
     flex-wrap: wrap;
-    gap: 40px;
-    padding: 32px;
+    gap: 48px;
+    padding: 52px var(--content-pad);
 }
 
 .poster-column img {
     display: block;
     width: 240px;
-    border-radius: 2px;
-    border: 1px solid var(--border-light);
-    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.6);
+    border-radius: var(--card-radius);
+    border: 1px solid var(--border);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.7);
 }
 
 .info-column {
@@ -505,83 +499,76 @@ body {
 }
 
 .info-column h2 {
-    font-size: 22px;
-    font-weight: 300;
-    letter-spacing: -0.3px;
-    color: var(--t-bright);
-    border-bottom: 1px solid var(--border-light);
-    padding-bottom: 14px;
-    margin-bottom: 16px;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--t-white);
+    border-bottom: 1px solid var(--border-strong);
+    padding-bottom: 16px;
+    margin-bottom: 20px;
 }
 
 .info-column p {
     font-size: 13px;
     color: var(--t-primary);
-    margin: 8px 0;
+    margin: 9px 0;
+    display: flex;
+    gap: 8px;
 }
 
-/* Etiqueta tipo keyword: "Director:", "Género:"… */
+/* Etiqueta "Dir.:" "Prod.:" — estilo metadata del portfolio */
 .info-column strong {
-    color: var(--t-secondary);
-    font-weight: 500;
     font-size: 11px;
+    font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: 0.7px;
-    display: inline-block;
-    min-width: 80px;
+    letter-spacing: 0.06em;
+    color: var(--t-secondary);
+    flex-shrink: 0;
+    padding-top: 1px;
+    min-width: 68px;
 }
 
-/* Bloque de sinopsis — borde izquierdo azul al estilo VS Code */
+/* Bloque de sinopsis */
 .sinopsis-text {
-    margin-top: 12px;
-    background-color: var(--bg-1);
+    margin-top: 16px;
+    background-color: var(--bg-panel);
     border-left: 2px solid var(--accent);
     padding: 14px 18px;
-    border-radius: 0 2px 2px 0;
+    border-radius: 0 var(--card-radius) var(--card-radius) 0;
     color: var(--t-secondary);
     font-size: 13px;
-    line-height: 1.7;
+    line-height: 1.75;
 }
 
-/* Sección de filtros de detalle */
+/* Filtros dentro del detalle */
 .detail-filters-section {
-    margin: 0 32px;
+    margin: 0 var(--content-pad);
     padding: 14px 0;
     background: none;
-    border-bottom: 1px solid var(--border);
     border-top: none;
 }
 
 /* ══════════════════════════════════════════════════════════════════════════
-   7. HORARIOS
-   Botones con tipografía monoespaciada al estilo token de código
+   7. HORARIOS  ·  Tokens monoespaciados sobre fondo de acento
    ══════════════════════════════════════════════════════════════════════════ */
 .showtimes-section {
-    padding: 0 32px 48px;
+    padding: 0 var(--content-pad) 64px;
 }
 
 .showtimes-section h3 {
-    font-size: 11px;
-    font-weight: 700;
-    letter-spacing: 1.5px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.22em;
     text-transform: uppercase;
-    color: var(--t-explorer);
-    border-bottom: 1px solid var(--border);
-    padding-bottom: 8px;
-    margin-bottom: 18px;
-    display: flex;
-    align-items: center;
-    gap: 6px;
+    color: var(--t-bright);
+    border-bottom: 1px solid var(--border-strong);
+    padding-bottom: 12px;
+    margin-bottom: 20px;
 }
 
-.showtimes-section h3::before {
-    content: "›";
-    font-size: 16px;
-    color: var(--t-muted);
-    display: inline-block;
-    transform: rotate(90deg);
-    line-height: 1;
-}
+/* Sin chevron en h3 — sigue estilo del portfolio */
+.showtimes-section h3::before { content: none; }
 
 #showtimes-container {
     display: flex;
@@ -591,26 +578,22 @@ body {
 
 #showtimes-container span {
     background-color: var(--accent) !important;
-    color: var(--t-white) !important;
-    font-family: "SF Mono", Menlo, Monaco, Consolas, "Courier New", monospace;
+    color: #ffffff !important;
+    font-family: "SF Mono", Menlo, Monaco, Consolas, monospace;
     font-size: 12px;
     font-weight: 500;
-    letter-spacing: 0.5px;
-    padding: 5px 13px !important;
-    border-radius: 2px !important;
+    letter-spacing: 0.04em;
+    padding: 5px 14px !important;
+    border-radius: 3px !important;
     cursor: pointer;
     display: inline-block !important;
-    box-shadow: none;
-    transition: background-color 0.1s, opacity 0.1s;
+    transition: background-color 0.12s;
 }
 
-#showtimes-container span:hover {
-    background-color: #005fa3 !important;
-}
+#showtimes-container span:hover { background-color: #005f99 !important; }
 
 /* ══════════════════════════════════════════════════════════════════════════
-   8. STATUS BAR
-   Barra inferior azul idéntica a la de VS Code
+   8. STATUS BAR  ·  Barra azul inferior de VS Code
    ══════════════════════════════════════════════════════════════════════════ */
 .status-bar {
     position: fixed;
@@ -623,10 +606,9 @@ body {
     align-items: center;
     padding: 0 8px;
     font-size: 12px;
-    color: var(--t-white);
-    z-index: 100;
+    color: #ffffff;
+    z-index: 200;
     user-select: none;
-    flex-shrink: 0;
 }
 
 .status-item {
@@ -640,37 +622,23 @@ body {
     transition: background-color 0.1s;
 }
 
-.status-item:hover {
-    background-color: rgba(255, 255, 255, 0.18);
-}
-
-.status-right {
-    margin-left: auto;
-    display: flex;
-    align-items: center;
-}
+.status-item:hover { background-color: rgba(255, 255, 255, 0.16); }
+.status-right { margin-left: auto; display: flex; align-items: center; }
 
 /* ══════════════════════════════════════════════════════════════════════════
-   9. SCROLLBARS
-   Estilo VS Code — casi invisibles, solo aparecen en hover
+   9. SCROLLBARS  ·  Casi invisibles, estilo VS Code
    ══════════════════════════════════════════════════════════════════════════ */
-::-webkit-scrollbar          { width: 10px; height: 10px; }
+::-webkit-scrollbar          { width: 8px; height: 8px; }
 ::-webkit-scrollbar-track    { background: transparent; }
 ::-webkit-scrollbar-thumb {
-    background-color: rgba(121, 121, 121, 0.3);
-    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
     border: 2px solid transparent;
     background-clip: content-box;
-    transition: background-color 0.15s;
 }
-
-::-webkit-scrollbar-thumb:hover { background-color: rgba(121, 121, 121, 0.6); }
+::-webkit-scrollbar-thumb:hover { background-color: rgba(255, 255, 255, 0.22); }
 ::-webkit-scrollbar-corner      { background: transparent; }
-
-* {
-    scrollbar-width: thin;
-    scrollbar-color: rgba(121, 121, 121, 0.3) transparent;
-}
+* { scrollbar-width: thin; scrollbar-color: rgba(255,255,255,0.1) transparent; }
 
 /* ══════════════════════════════════════════════════════════════════════════
    UTILIDADES
