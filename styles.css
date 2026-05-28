@@ -1,156 +1,134 @@
 /* ==========================================================================
-   VISUAL STUDIO CODE — DARK THEME 2026
-   Adaptado para coincidir con la referencia: title bar + activity bar +
-   explorer panel + editor area
+   CARTELERA · VS Code Dark Theme
+   Paleta 100% extraída de la UI de VS Code — sin colores de sintaxis
    ========================================================================== */
 
+/* ── Variables ─────────────────────────────────────────────────────────── */
 :root {
-    /* ── Backgrounds ─────────────────────────────────────────────────────── */
-    --bg-editor:         #1e1e1e;   /* área del editor / body */
-    --bg-sidebar:        #252526;   /* panel explorador */
-    --bg-activitybar:    #333333;   /* franja de íconos izquierda */
-    --bg-titlebar:       #3c3c3c;   /* barra de título con menú */
-    --bg-input:          #3c3c3c;
-    --bg-hover:          #2a2d2e;
-    --bg-selected:       #094771;
-    --bg-badge:          #007acc;   /* azul VS Code */
+    /* Backgrounds — de más oscuro a más claro, como VS Code */
+    --bg-0: #1e1e1e;          /* editor / body */
+    --bg-1: #252526;          /* sidebar, tarjetas */
+    --bg-2: #2d2d2d;          /* hover sutil */
+    --bg-3: #333333;          /* activity bar */
+    --bg-4: #3c3c3c;          /* title bar, inputs */
+    --bg-selected: #094771;   /* ítem activo en el explorador */
+    --accent: #007acc;        /* azul VS Code — único color de acento */
 
-    /* ── Borders ─────────────────────────────────────────────────────────── */
-    --border:            #2d2d2d;
-    --border-input:      #6b6b6b;
+    /* Borders */
+    --border:       #2d2d2d;
+    --border-light: #3c3c3c;
 
-    /* ── Text ────────────────────────────────────────────────────────────── */
-    --text-normal:       #d4d4d4;
-    --text-menu:         #cccccc;   /* menú titlebar */
-    --text-explorer-hd:  #bbbbbb;   /* "EXPLORER" header */
-    --text-section:      #e8e8e8;   /* items colapsables (OPEN EDITORS…) */
-    --text-muted:        #858585;
-    --text-keyword:      #569cd6;   /* azul – keywords */
-    --text-string:       #ce9178;   /* naranja – strings */
-    --text-comment:      #6a9955;   /* verde – comentarios */
-    --text-number:       #b5cea8;   /* verde claro – números */
-    --text-class:        #4ec9b0;   /* turquesa – clases */
+    /* Text — escala monocromática, sin naranja/verde/teal */
+    --t-bright:     #e8e8e8;  /* sección names, títulos activos */
+    --t-primary:    #d4d4d4;  /* texto principal */
+    --t-secondary:  #a0a0a0;  /* metadata, info secundaria */
+    --t-muted:      #858585;  /* etiquetas, íconos inactivos */
+    --t-faint:      #5a5a5a;  /* divisores en texto, disabled */
+    --t-explorer:   #bbbbbb;  /* header "EXPLORER" */
+    --t-menu:       #cccccc;  /* ítems del menú en title bar */
+    --t-white:      #ffffff;  /* sobre fondos de acento */
 }
 
-/* ── Reset ───────────────────────────────────────────────────────────────── */
-*, *::before, *::after { box-sizing: border-box; }
+/* ── Reset & Base ──────────────────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 body {
-    background-color: var(--bg-editor);
-    color: var(--text-normal);
+    background-color: var(--bg-0);
+    color: var(--t-primary);
     font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
     font-size: 13px;
-    margin: 0;
-    padding: 0;
+    line-height: 1.45;
     -webkit-font-smoothing: antialiased;
-    line-height: 1.4;
+    -moz-osx-font-smoothing: grayscale;
 }
 
-
-/* ==========================================================================
-   1. TITLE BAR  ·  Reproduce la barra superior con menú de VS Code
-   ========================================================================== */
-
+/* ══════════════════════════════════════════════════════════════════════════
+   1. TITLE BAR
+   30px · Reproduce exactamente la barra superior de VS Code
+   ══════════════════════════════════════════════════════════════════════════ */
 .main-header {
-    background-color: var(--bg-titlebar);
-    height: 30px;
-    padding: 0 8px;
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    border-bottom: 1px solid #2d2d2d;
     position: sticky;
     top: 0;
-    z-index: 200;
+    z-index: 100;
+    background-color: var(--bg-4);
+    height: 30px;
+    display: flex;
+    align-items: center;
+    gap: 0;
+    padding: 0 6px;
+    border-bottom: 1px solid #2a2a2a;
     user-select: none;
     flex-shrink: 0;
 }
 
-/* Ícono VS Code — forma de cuadrilátero azul */
-.main-header::before {
-    content: "";
+/* Ícono — rombo azul simplificado del logo de VS Code */
+.main-header-icon {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     flex-shrink: 0;
+}
+
+.main-header-icon svg {
     width: 18px;
     height: 18px;
-    background: var(--bg-badge);
-    /* Silueta simplificada del logo */
-    clip-path: polygon(
-        25% 0%, 75% 0%, 100% 25%, 100% 75%,
-        75% 100%, 25% 100%, 0% 75%, 0% 25%
-    );
-    margin-right: 4px;
 }
 
-/* Título / nombre del sitio (actúa como primer ítem del menú) */
-#site-title {
-    margin: 0;
-    font-size: 12px;
-    font-weight: 400;
-    color: var(--text-menu);
-    font-family: "Segoe UI", sans-serif;
-    letter-spacing: 0;
-    padding: 4px 8px;
-    border-radius: 3px;
-    cursor: pointer;
-    transition: background-color 0.12s;
-}
-
-#site-title::before { content: none; } /* quita el "{} " del original */
-
-#site-title:hover {
-    background-color: rgba(255, 255, 255, 0.12);
-}
-
-/* Lista de ítems del menú (File · Edit · Selection…) */
+/* Ítems de menú: File · Edit · Selection… */
 .nav-menu {
     display: flex;
     align-items: center;
     list-style: none;
-    margin: 0;
-    padding: 0;
-    gap: 0;
+    height: 100%;
 }
 
-.nav-menu li > * {
-    display: block;
-    padding: 4px 8px;
+.nav-menu li {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.nav-menu li a,
+.nav-menu li span {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0 8px;
     font-size: 12px;
-    color: var(--text-menu);
+    font-weight: 400;
+    color: var(--t-menu);
     text-decoration: none;
-    border-radius: 3px;
-    cursor: pointer;
-    transition: background-color 0.12s;
     white-space: nowrap;
+    transition: background-color 0.1s;
 }
 
-.nav-menu li > *:hover {
-    background-color: rgba(255, 255, 255, 0.12);
+.nav-menu li a:hover,
+.nav-menu li span:hover {
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
-
-/* ==========================================================================
-   2. LAYOUT  ·  Activity Bar + Sidebar + Editor (3 columnas)
-   ========================================================================== */
-
+/* ══════════════════════════════════════════════════════════════════════════
+   2. LAYOUT PRINCIPAL
+   Activity Bar · Sidebar · Editor Area
+   ══════════════════════════════════════════════════════════════════════════ */
 .app-layout {
     display: flex;
-    height: calc(100vh - 52px); /* 30px titlebar + 22px statusbar */
+    height: calc(100vh - 52px); /* 30 titlebar + 22 statusbar */
     overflow: hidden;
 }
 
-
-/* ── Activity Bar ─────────────────────────────────────────────────────────── */
-
+/* ── Activity Bar ── */
 .activity-bar {
     width: 48px;
     flex-shrink: 0;
-    background-color: var(--bg-activitybar);
+    background-color: var(--bg-3);
     border-right: 1px solid var(--border);
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 8px 0;
-    gap: 2px;
+    padding-top: 4px;
 }
 
 .activity-icon {
@@ -161,18 +139,17 @@ body {
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    color: var(--text-muted);
-    font-size: 22px;
-    transition: color 0.12s;
+    color: var(--t-muted);
+    transition: color 0.1s;
 }
 
-.activity-icon:hover { color: var(--text-normal); }
+.activity-icon:hover { color: var(--t-primary); }
 
 .activity-icon.active {
-    color: #ffffff;
+    color: var(--t-white);
 }
 
-/* Indicador azul en el borde izquierdo del ícono activo */
+/* Indicador blanco vertical del ícono activo */
 .activity-icon.active::before {
     content: "";
     position: absolute;
@@ -181,125 +158,115 @@ body {
     transform: translateY(-50%);
     width: 2px;
     height: 24px;
-    background-color: #ffffff;
-    border-radius: 0 1px 1px 0;
+    background-color: var(--t-white);
 }
 
-/* SVG icons inline (usa fill="currentColor") */
 .activity-icon svg {
     width: 24px;
     height: 24px;
     fill: none;
     stroke: currentColor;
-    stroke-width: 1.5;
+    stroke-width: 1.6;
     stroke-linecap: round;
     stroke-linejoin: round;
 }
 
-
-/* ── Sidebar / Explorer panel ─────────────────────────────────────────────── */
-
+/* ── Sidebar / Explorer ── */
 .sidebar {
     width: 260px;
     flex-shrink: 0;
-    background-color: var(--bg-sidebar);
+    background-color: var(--bg-1);
     border-right: 1px solid var(--border);
     display: flex;
     flex-direction: column;
     overflow: hidden;
 }
 
-/* "EXPLORER" + botón "···" */
-.sidebar-title-bar {
+.sidebar-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 9px 14px 5px;
-    user-select: none;
+    padding: 10px 14px 6px;
+    flex-shrink: 0;
 }
 
-.sidebar-title-bar span {
+.sidebar-header-title {
     font-size: 11px;
     font-weight: 700;
     letter-spacing: 1.5px;
     text-transform: uppercase;
-    color: var(--text-explorer-hd);
+    color: var(--t-explorer);
 }
 
-.sidebar-title-bar button {
+.sidebar-header-btn {
     background: none;
     border: none;
-    color: var(--text-muted);
-    font-size: 16px;
-    line-height: 1;
+    color: var(--t-muted);
+    font-size: 15px;
     cursor: pointer;
     padding: 2px 4px;
     border-radius: 3px;
-    transition: background-color 0.12s, color 0.12s;
+    line-height: 1;
+    transition: background-color 0.1s, color 0.1s;
 }
 
-.sidebar-title-bar button:hover {
-    background-color: var(--bg-hover);
-    color: var(--text-normal);
+.sidebar-header-btn:hover {
+    background-color: var(--bg-2);
+    color: var(--t-primary);
 }
 
-/* Contenido scrollable del explorador */
 .sidebar-content {
     flex: 1;
     overflow-y: auto;
     overflow-x: hidden;
 }
 
-/* Sección colapsable (OPEN EDITORS · CARTELERA-SANDBOX · etc.) */
+/* Sección colapsable del explorador */
 .explorer-section { display: flex; flex-direction: column; }
 
 .explorer-section-header {
     display: flex;
     align-items: center;
-    padding: 5px 14px;
-    gap: 6px;
+    padding: 5px 0 5px 14px;
+    gap: 5px;
     cursor: pointer;
     user-select: none;
     transition: background-color 0.1s;
-    border-bottom: 1px solid transparent;
 }
 
-.explorer-section-header:hover {
-    background-color: var(--bg-hover);
-}
+.explorer-section-header:hover { background-color: var(--bg-2); }
 
-/* Chevron ">" */
+/* Chevron › */
 .explorer-section-header::before {
     content: "›";
     font-size: 16px;
     line-height: 1;
-    color: var(--text-muted);
+    color: var(--t-muted);
     display: inline-block;
     transform: rotate(90deg);
     transition: transform 0.15s ease;
     width: 12px;
     text-align: center;
+    flex-shrink: 0;
 }
 
-.explorer-section-header.collapsed::before {
-    transform: rotate(0deg);
-}
+.explorer-section-header.collapsed::before { transform: rotate(0deg); }
 
 .explorer-section-header span {
     font-size: 11px;
     font-weight: 700;
     letter-spacing: 0.8px;
     text-transform: uppercase;
-    color: var(--text-section);
+    color: var(--t-bright);
 }
 
-/* Ítems de árbol dentro de una sección */
+/* Ítem árbol */
 .tree-item {
     display: flex;
     align-items: center;
     padding: 3px 14px 3px 32px;
     font-size: 13px;
-    color: var(--text-normal);
+    color: var(--t-primary);
     cursor: pointer;
     gap: 6px;
     white-space: nowrap;
@@ -308,24 +275,22 @@ body {
     transition: background-color 0.1s;
 }
 
-.tree-item:hover  { background-color: var(--bg-hover); }
-.tree-item.active { background-color: var(--bg-selected); }
+.tree-item:hover  { background-color: var(--bg-2); }
+.tree-item.active { background-color: var(--bg-selected); color: var(--t-white); }
 
-
-/* ── Editor Area ──────────────────────────────────────────────────────────── */
-
+/* ── Editor Area ── */
 .editor-area {
     flex: 1;
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    background-color: var(--bg-editor);
+    min-width: 0;
 }
 
-/* Barra de tabs (archivos abiertos) */
+/* Tabs */
 .editor-tabs {
     display: flex;
-    background-color: var(--bg-sidebar);
+    background-color: var(--bg-1);
     border-bottom: 1px solid var(--border);
     overflow-x: auto;
     flex-shrink: 0;
@@ -339,47 +304,47 @@ body {
     align-items: center;
     gap: 8px;
     padding: 8px 16px;
-    min-width: 100px;
+    min-width: 110px;
     font-size: 13px;
-    color: var(--text-muted);
+    color: var(--t-muted);
     cursor: pointer;
     border-right: 1px solid var(--border);
     white-space: nowrap;
-    transition: background-color 0.1s, color 0.1s;
+    flex-shrink: 0;
+    transition: color 0.1s, background-color 0.1s;
 }
 
 .editor-tab.active {
-    color: var(--text-normal);
-    background-color: var(--bg-editor);
-    border-top: 1px solid var(--bg-badge);
+    color: var(--t-primary);
+    background-color: var(--bg-0);
+    border-top: 1px solid var(--accent);
     padding-top: 7px;
 }
 
 .editor-tab:hover:not(.active) {
-    background-color: var(--bg-hover);
-    color: var(--text-normal);
+    color: var(--t-primary);
+    background-color: var(--bg-2);
 }
 
-/* Contenido scrollable del editor */
+/* Contenido scrollable */
 .editor-content {
     flex: 1;
     overflow-y: auto;
 }
 
-
-/* ==========================================================================
-   3. SECCIÓN DE FILTROS  ·  Estilo "Settings panel"
-   ========================================================================== */
-
+/* ══════════════════════════════════════════════════════════════════════════
+   3. FILTROS
+   Toolbar estilo panel de preferencias de VS Code
+   ══════════════════════════════════════════════════════════════════════════ */
 .filters-section,
 .detail-filters-section {
-    background-color: var(--bg-sidebar);
+    background-color: var(--bg-1);
     border-bottom: 1px solid var(--border);
-    padding: 12px 20px;
+    padding: 14px 32px;
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
     align-items: flex-end;
+    gap: 24px;
     flex-shrink: 0;
 }
 
@@ -391,141 +356,147 @@ body {
 
 .filter-group label {
     font-size: 11px;
-    text-transform: uppercase;
-    letter-spacing: 0.8px;
-    color: var(--text-comment);
     font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.9px;
+    color: var(--t-muted);
 }
 
 .filter-group select {
-    background-color: var(--bg-input);
-    color: var(--text-normal);
-    border: 1px solid var(--border-input);
+    background-color: var(--bg-4);
+    color: var(--t-primary);
+    border: 1px solid var(--border-light);
     padding: 5px 10px;
     font-size: 13px;
-    border-radius: 2px;
-    outline: none;
-    min-width: 150px;
-    cursor: pointer;
     font-family: inherit;
+    border-radius: 2px;
+    min-width: 160px;
+    cursor: pointer;
+    outline: none;
     transition: border-color 0.12s;
+    appearance: auto;
 }
 
 .filter-group select:focus {
-    border-color: var(--bg-badge);
-    outline: 1px solid var(--bg-badge);
+    border-color: var(--accent);
+    outline: 1px solid var(--accent);
     outline-offset: -1px;
 }
 
-
-/* ==========================================================================
-   4. PELÍCULAS  ·  Encabezado de sección + Mosaico
-   ========================================================================== */
-
+/* ══════════════════════════════════════════════════════════════════════════
+   4. SECCIÓN DE PELÍCULAS
+   Encabezado estilo "CARTELERA-SANDBOX" del explorador
+   ══════════════════════════════════════════════════════════════════════════ */
 .movies-section {
-    padding: 20px 24px 0;
+    padding: 28px 32px 0;
 }
 
-/* Título tipo "EXPLORER SECTION" */
+/* Título de sección — igual que los headers del explorador */
 .movies-section h2 {
-    font-size: 11px;
-    font-weight: 700;
-    letter-spacing: 1.4px;
-    text-transform: uppercase;
-    color: var(--text-explorer-hd);
-    border-bottom: 1px solid var(--border);
-    padding-bottom: 8px;
-    margin-bottom: 20px;
     display: flex;
     align-items: center;
     gap: 6px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--t-explorer);
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 10px;
+    margin-bottom: 28px;
 }
 
 .movies-section h2::before {
     content: "›";
     font-size: 16px;
-    transform: rotate(90deg);
+    color: var(--t-muted);
     display: inline-block;
-    color: var(--text-muted);
+    transform: rotate(90deg);
+    line-height: 1;
 }
 
 /* Grid */
 .movies-mosaic {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 20px;
-    padding-bottom: 40px;
+    grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+    gap: 24px;
+    padding-bottom: 48px;
 }
 
-
-/* ==========================================================================
+/* ══════════════════════════════════════════════════════════════════════════
    5. TARJETAS DE PELÍCULAS
-   ========================================================================== */
-
+   Monocromáticas — solo grises + azul en hover
+   ══════════════════════════════════════════════════════════════════════════ */
 .movie-card {
-    background-color: var(--bg-sidebar);
+    background-color: var(--bg-1);
     border: 1px solid var(--border);
-    border-radius: 3px;
+    border-radius: 2px;
     overflow: hidden;
     cursor: pointer;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
-    transition: transform 0.18s cubic-bezier(0.165, 0.84, 0.44, 1),
-                border-color 0.18s,
-                box-shadow 0.18s;
+    transition:
+        transform     0.18s cubic-bezier(0.165, 0.84, 0.44, 1),
+        border-color  0.18s ease,
+        box-shadow    0.18s ease;
 }
 
 .movie-card:hover {
     transform: translateY(-3px);
-    border-color: var(--bg-badge);
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.45);
+    border-color: var(--accent);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
 }
 
 .movie-card img {
+    display: block;
     width: 100%;
     height: 300px;
     object-fit: cover;
     border-bottom: 1px solid var(--border);
-    display: block;
+    filter: saturate(0.85) brightness(0.95); /* Leve desaturación para coherencia */
+    transition: filter 0.18s;
+}
+
+.movie-card:hover img {
+    filter: saturate(1) brightness(1);
 }
 
 .movie-card-info {
-    padding: 12px 14px;
+    padding: 14px 16px 16px;
 }
 
 .movie-card-info h3 {
-    margin: 0 0 6px;
     font-size: 13px;
     font-weight: 600;
     line-height: 1.4;
-    color: var(--text-string);
+    color: var(--t-bright);
+    margin-bottom: 8px;
 }
 
 .movie-card-info p {
-    margin: 3px 0;
     font-size: 12px;
+    color: var(--t-secondary);
+    margin-top: 3px;
 }
 
-.movie-card-info .director { color: var(--text-comment); }
-.movie-card-info .duration  { color: var(--text-number);  }
+/* Separador sutil entre director y duración */
+.movie-card-info .director { color: var(--t-secondary); }
+.movie-card-info .duration  { color: var(--t-muted); }
 
-
-/* ==========================================================================
-   6. DETALLE DE PELÍCULA
-   ========================================================================== */
-
+/* ══════════════════════════════════════════════════════════════════════════
+   6. VISTA DETALLE
+   ══════════════════════════════════════════════════════════════════════════ */
 .movie-presentation {
     display: flex;
     flex-wrap: wrap;
-    gap: 32px;
-    padding: 24px;
+    gap: 40px;
+    padding: 32px;
 }
 
 .poster-column img {
-    width: 240px;
-    border-radius: 3px;
-    border: 1px solid #3c3c3c;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.55);
     display: block;
+    width: 240px;
+    border-radius: 2px;
+    border: 1px solid var(--border-light);
+    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.6);
 }
 
 .info-column {
@@ -534,48 +505,82 @@ body {
 }
 
 .info-column h2 {
-    margin: 0 0 14px;
-    font-size: 1.5rem;
-    font-weight: 400;
-    color: var(--text-string);
-    border-bottom: 1px solid #3c3c3c;
-    padding-bottom: 10px;
-    letter-spacing: 0;
-    text-transform: none;
+    font-size: 22px;
+    font-weight: 300;
+    letter-spacing: -0.3px;
+    color: var(--t-bright);
+    border-bottom: 1px solid var(--border-light);
+    padding-bottom: 14px;
+    margin-bottom: 16px;
 }
 
-.info-column p       { margin: 8px 0; font-size: 13px; }
-.info-column strong  { color: var(--text-keyword); }
-
-.sinopsis-text {
-    color: #b8b8b8;
-    line-height: 1.7;
+.info-column p {
     font-size: 13px;
-    background-color: var(--bg-sidebar);
-    padding: 14px 16px;
-    border-left: 3px solid var(--bg-badge);
-    border-radius: 0 2px 2px 0;
-    margin-top: 8px;
+    color: var(--t-primary);
+    margin: 8px 0;
 }
 
+/* Etiqueta tipo keyword: "Director:", "Género:"… */
+.info-column strong {
+    color: var(--t-secondary);
+    font-weight: 500;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.7px;
+    display: inline-block;
+    min-width: 80px;
+}
 
-/* ==========================================================================
+/* Bloque de sinopsis — borde izquierdo azul al estilo VS Code */
+.sinopsis-text {
+    margin-top: 12px;
+    background-color: var(--bg-1);
+    border-left: 2px solid var(--accent);
+    padding: 14px 18px;
+    border-radius: 0 2px 2px 0;
+    color: var(--t-secondary);
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+/* Sección de filtros de detalle */
+.detail-filters-section {
+    margin: 0 32px;
+    padding: 14px 0;
+    background: none;
+    border-bottom: 1px solid var(--border);
+    border-top: none;
+}
+
+/* ══════════════════════════════════════════════════════════════════════════
    7. HORARIOS
-   ========================================================================== */
-
+   Botones con tipografía monoespaciada al estilo token de código
+   ══════════════════════════════════════════════════════════════════════════ */
 .showtimes-section {
-    padding: 0 24px 40px;
+    padding: 0 32px 48px;
 }
 
 .showtimes-section h3 {
     font-size: 11px;
     font-weight: 700;
-    letter-spacing: 1.4px;
+    letter-spacing: 1.5px;
     text-transform: uppercase;
-    color: var(--text-explorer-hd);
-    border-bottom: 1px solid #3c3c3c;
+    color: var(--t-explorer);
+    border-bottom: 1px solid var(--border);
     padding-bottom: 8px;
-    margin-bottom: 16px;
+    margin-bottom: 18px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.showtimes-section h3::before {
+    content: "›";
+    font-size: 16px;
+    color: var(--t-muted);
+    display: inline-block;
+    transform: rotate(90deg);
+    line-height: 1;
 }
 
 #showtimes-container {
@@ -585,43 +590,41 @@ body {
 }
 
 #showtimes-container span {
-    background-color: var(--bg-badge) !important;
-    color: #ffffff !important;
+    background-color: var(--accent) !important;
+    color: var(--t-white) !important;
     font-family: "SF Mono", Menlo, Monaco, Consolas, "Courier New", monospace;
     font-size: 12px;
     font-weight: 500;
-    letter-spacing: 0.3px;
-    padding: 5px 12px !important;
+    letter-spacing: 0.5px;
+    padding: 5px 13px !important;
     border-radius: 2px !important;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
     cursor: pointer;
-    display: inline-block;
-    transition: background-color 0.1s;
+    display: inline-block !important;
+    box-shadow: none;
+    transition: background-color 0.1s, opacity 0.1s;
 }
 
 #showtimes-container span:hover {
-    background-color: #0066b8 !important;
+    background-color: #005fa3 !important;
 }
 
-
-/* ==========================================================================
-   8. STATUS BAR  ·  Barra inferior azul de VS Code
-   ========================================================================== */
-
+/* ══════════════════════════════════════════════════════════════════════════
+   8. STATUS BAR
+   Barra inferior azul idéntica a la de VS Code
+   ══════════════════════════════════════════════════════════════════════════ */
 .status-bar {
-    height: 22px;
-    background-color: var(--bg-badge);
-    display: flex;
-    align-items: center;
-    padding: 0 10px;
-    gap: 0;
-    font-size: 12px;
-    color: #ffffff;
     position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
-    z-index: 200;
+    height: 22px;
+    background-color: var(--accent);
+    display: flex;
+    align-items: center;
+    padding: 0 8px;
+    font-size: 12px;
+    color: var(--t-white);
+    z-index: 100;
     user-select: none;
     flex-shrink: 0;
 }
@@ -633,43 +636,43 @@ body {
     padding: 0 8px;
     height: 100%;
     cursor: pointer;
-    transition: background-color 0.1s;
     white-space: nowrap;
+    transition: background-color 0.1s;
 }
 
 .status-item:hover {
-    background-color: rgba(255, 255, 255, 0.15);
+    background-color: rgba(255, 255, 255, 0.18);
 }
 
-.status-item + .status-item { margin-left: 0; }
-
-/* Grupo del lado derecho empujado al extremo */
-.status-bar .status-right {
+.status-right {
     margin-left: auto;
     display: flex;
     align-items: center;
 }
 
-
-/* ==========================================================================
-   9. SCROLLBARS  ·  Estilo VS Code
-   ========================================================================== */
-
+/* ══════════════════════════════════════════════════════════════════════════
+   9. SCROLLBARS
+   Estilo VS Code — casi invisibles, solo aparecen en hover
+   ══════════════════════════════════════════════════════════════════════════ */
 ::-webkit-scrollbar          { width: 10px; height: 10px; }
 ::-webkit-scrollbar-track    { background: transparent; }
 ::-webkit-scrollbar-thumb {
-    background-color: rgba(121, 121, 121, 0.35);
+    background-color: rgba(121, 121, 121, 0.3);
     border-radius: 5px;
     border: 2px solid transparent;
     background-clip: content-box;
+    transition: background-color 0.15s;
 }
-::-webkit-scrollbar-thumb:hover { background-color: rgba(121, 121, 121, 0.65); }
 
-* { scrollbar-width: thin; scrollbar-color: rgba(121,121,121,.35) transparent; }
+::-webkit-scrollbar-thumb:hover { background-color: rgba(121, 121, 121, 0.6); }
+::-webkit-scrollbar-corner      { background: transparent; }
 
+* {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(121, 121, 121, 0.3) transparent;
+}
 
-/* ==========================================================================
+/* ══════════════════════════════════════════════════════════════════════════
    UTILIDADES
-   ========================================================================== */
-
+   ══════════════════════════════════════════════════════════════════════════ */
 .hidden { display: none !important; }
