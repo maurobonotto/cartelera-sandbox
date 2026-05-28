@@ -1,246 +1,675 @@
 /* ==========================================================================
-   VISUAL STUDIO CODE - DARK THEME 2026 (Core Variables)
+   VISUAL STUDIO CODE — DARK THEME 2026
+   Adaptado para coincidir con la referencia: title bar + activity bar +
+   explorer panel + editor area
    ========================================================================== */
+
 :root {
-    --vscode-bg-editor: #1e1e1e;
-    --vscode-bg-sidebar: #252526;
-    --vscode-bg-titlebar: #3c3c3c;
-    --vscode-bg-badge: #007acc;
-    --vscode-bg-input: #3c3c3c;
-    --vscode-border-input: #6b6b6b;
-    
-    /* Syntax Highlighting Colors for Text */
-    --vscode-text-normal: #d4d4d4;
-    --vscode-text-keyword: #569cd6;   /* Azul VS Code */
-    --vscode-text-string: #ce9178;    /* Naranja/Marrón de texto */
-    --vscode-text-comment: #6a9955;   /* Verde comentario */
-    --vscode-text-number: #b5cea8;    /* Verde claro números */
-    --vscode-text-class: #4ec9b0;     /* Turquesa clases */
+    /* ── Backgrounds ─────────────────────────────────────────────────────── */
+    --bg-editor:         #1e1e1e;   /* área del editor / body */
+    --bg-sidebar:        #252526;   /* panel explorador */
+    --bg-activitybar:    #333333;   /* franja de íconos izquierda */
+    --bg-titlebar:       #3c3c3c;   /* barra de título con menú */
+    --bg-input:          #3c3c3c;
+    --bg-hover:          #2a2d2e;
+    --bg-selected:       #094771;
+    --bg-badge:          #007acc;   /* azul VS Code */
+
+    /* ── Borders ─────────────────────────────────────────────────────────── */
+    --border:            #2d2d2d;
+    --border-input:      #6b6b6b;
+
+    /* ── Text ────────────────────────────────────────────────────────────── */
+    --text-normal:       #d4d4d4;
+    --text-menu:         #cccccc;   /* menú titlebar */
+    --text-explorer-hd:  #bbbbbb;   /* "EXPLORER" header */
+    --text-section:      #e8e8e8;   /* items colapsables (OPEN EDITORS…) */
+    --text-muted:        #858585;
+    --text-keyword:      #569cd6;   /* azul – keywords */
+    --text-string:       #ce9178;   /* naranja – strings */
+    --text-comment:      #6a9955;   /* verde – comentarios */
+    --text-number:       #b5cea8;   /* verde claro – números */
+    --text-class:        #4ec9b0;   /* turquesa – clases */
 }
 
-/* Base de la Aplicación */
+/* ── Reset ───────────────────────────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; }
+
 body {
-    background-color: var(--vscode-bg-editor);
-    color: var(--vscode-text-normal);
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: var(--bg-editor);
+    color: var(--text-normal);
+    font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+    font-size: 13px;
     margin: 0;
     padding: 0;
     -webkit-font-smoothing: antialiased;
+    line-height: 1.4;
 }
 
-/* 1. Cabecera estilo Barra de Títulos de VS Code */
+
+/* ==========================================================================
+   1. TITLE BAR  ·  Reproduce la barra superior con menú de VS Code
+   ========================================================================== */
+
 .main-header {
-    background-color: var(--vscode-bg-sidebar);
-    padding: 12px 24px;
+    background-color: var(--bg-titlebar);
+    height: 30px;
+    padding: 0 8px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
     border-bottom: 1px solid #2d2d2d;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    position: sticky;
+    top: 0;
+    z-index: 200;
+    user-select: none;
+    flex-shrink: 0;
 }
 
+/* Ícono VS Code — forma de cuadrilátero azul */
+.main-header::before {
+    content: "";
+    flex-shrink: 0;
+    width: 18px;
+    height: 18px;
+    background: var(--bg-badge);
+    /* Silueta simplificada del logo */
+    clip-path: polygon(
+        25% 0%, 75% 0%, 100% 25%, 100% 75%,
+        75% 100%, 25% 100%, 0% 75%, 0% 25%
+    );
+    margin-right: 4px;
+}
+
+/* Título / nombre del sitio (actúa como primer ítem del menú) */
 #site-title {
     margin: 0;
-    font-size: 1.1rem;
-    font-weight: 500;
-    letter-spacing: 0.5px;
-    color: var(--vscode-text-keyword);
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--text-menu);
+    font-family: "Segoe UI", sans-serif;
+    letter-spacing: 0;
+    padding: 4px 8px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.12s;
+}
+
+#site-title::before { content: none; } /* quita el "{} " del original */
+
+#site-title:hover {
+    background-color: rgba(255, 255, 255, 0.12);
+}
+
+/* Lista de ítems del menú (File · Edit · Selection…) */
+.nav-menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 0;
+}
+
+.nav-menu li > * {
+    display: block;
+    padding: 4px 8px;
+    font-size: 12px;
+    color: var(--text-menu);
+    text-decoration: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.12s;
+    white-space: nowrap;
+}
+
+.nav-menu li > *:hover {
+    background-color: rgba(255, 255, 255, 0.12);
+}
+
+
+/* ==========================================================================
+   2. LAYOUT  ·  Activity Bar + Sidebar + Editor (3 columnas)
+   ========================================================================== */
+
+.app-layout {
+    display: flex;
+    height: calc(100vh - 52px); /* 30px titlebar + 22px statusbar */
+    overflow: hidden;
+}
+
+
+/* ── Activity Bar ─────────────────────────────────────────────────────────── */
+
+.activity-bar {
+    width: 48px;
+    flex-shrink: 0;
+    background-color: var(--bg-activitybar);
+    border-right: 1px solid var(--border);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8px 0;
+    gap: 2px;
+}
+
+.activity-icon {
+    position: relative;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: var(--text-muted);
+    font-size: 22px;
+    transition: color 0.12s;
+}
+
+.activity-icon:hover { color: var(--text-normal); }
+
+.activity-icon.active {
+    color: #ffffff;
+}
+
+/* Indicador azul en el borde izquierdo del ícono activo */
+.activity-icon.active::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 2px;
+    height: 24px;
+    background-color: #ffffff;
+    border-radius: 0 1px 1px 0;
+}
+
+/* SVG icons inline (usa fill="currentColor") */
+.activity-icon svg {
+    width: 24px;
+    height: 24px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+
+/* ── Sidebar / Explorer panel ─────────────────────────────────────────────── */
+
+.sidebar {
+    width: 260px;
+    flex-shrink: 0;
+    background-color: var(--bg-sidebar);
+    border-right: 1px solid var(--border);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+/* "EXPLORER" + botón "···" */
+.sidebar-title-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 9px 14px 5px;
+    user-select: none;
+}
+
+.sidebar-title-bar span {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--text-explorer-hd);
+}
+
+.sidebar-title-bar button {
+    background: none;
+    border: none;
+    color: var(--text-muted);
+    font-size: 16px;
+    line-height: 1;
+    cursor: pointer;
+    padding: 2px 4px;
+    border-radius: 3px;
+    transition: background-color 0.12s, color 0.12s;
+}
+
+.sidebar-title-bar button:hover {
+    background-color: var(--bg-hover);
+    color: var(--text-normal);
+}
+
+/* Contenido scrollable del explorador */
+.sidebar-content {
+    flex: 1;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+/* Sección colapsable (OPEN EDITORS · CARTELERA-SANDBOX · etc.) */
+.explorer-section { display: flex; flex-direction: column; }
+
+.explorer-section-header {
+    display: flex;
+    align-items: center;
+    padding: 5px 14px;
+    gap: 6px;
+    cursor: pointer;
+    user-select: none;
+    transition: background-color 0.1s;
+    border-bottom: 1px solid transparent;
+}
+
+.explorer-section-header:hover {
+    background-color: var(--bg-hover);
+}
+
+/* Chevron ">" */
+.explorer-section-header::before {
+    content: "›";
+    font-size: 16px;
+    line-height: 1;
+    color: var(--text-muted);
     display: inline-block;
-    font-family: "SF Mono", Monaco, Menlo, Consolas, "Ubuntu Mono", monospace;
+    transform: rotate(90deg);
+    transition: transform 0.15s ease;
+    width: 12px;
+    text-align: center;
 }
 
-#site-title::before {
-    content: "{} ";
-    color: var(--vscode-text-string);
-    font-weight: bold;
+.explorer-section-header.collapsed::before {
+    transform: rotate(0deg);
 }
 
-/* 2. Barra de Control y Filtros (Estilo Panel de Preferencias) */
-.filters-section, .detail-filters-section {
-    background-color: var(--vscode-bg-sidebar);
-    border-bottom: 1px solid #2d2d2d;
-    padding: 16px 32px;
+.explorer-section-header span {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    color: var(--text-section);
+}
+
+/* Ítems de árbol dentro de una sección */
+.tree-item {
+    display: flex;
+    align-items: center;
+    padding: 3px 14px 3px 32px;
+    font-size: 13px;
+    color: var(--text-normal);
+    cursor: pointer;
+    gap: 6px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: background-color 0.1s;
+}
+
+.tree-item:hover  { background-color: var(--bg-hover); }
+.tree-item.active { background-color: var(--bg-selected); }
+
+
+/* ── Editor Area ──────────────────────────────────────────────────────────── */
+
+.editor-area {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background-color: var(--bg-editor);
+}
+
+/* Barra de tabs (archivos abiertos) */
+.editor-tabs {
+    display: flex;
+    background-color: var(--bg-sidebar);
+    border-bottom: 1px solid var(--border);
+    overflow-x: auto;
+    flex-shrink: 0;
+    scrollbar-width: none;
+}
+
+.editor-tabs::-webkit-scrollbar { display: none; }
+
+.editor-tab {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    min-width: 100px;
+    font-size: 13px;
+    color: var(--text-muted);
+    cursor: pointer;
+    border-right: 1px solid var(--border);
+    white-space: nowrap;
+    transition: background-color 0.1s, color 0.1s;
+}
+
+.editor-tab.active {
+    color: var(--text-normal);
+    background-color: var(--bg-editor);
+    border-top: 1px solid var(--bg-badge);
+    padding-top: 7px;
+}
+
+.editor-tab:hover:not(.active) {
+    background-color: var(--bg-hover);
+    color: var(--text-normal);
+}
+
+/* Contenido scrollable del editor */
+.editor-content {
+    flex: 1;
+    overflow-y: auto;
+}
+
+
+/* ==========================================================================
+   3. SECCIÓN DE FILTROS  ·  Estilo "Settings panel"
+   ========================================================================== */
+
+.filters-section,
+.detail-filters-section {
+    background-color: var(--bg-sidebar);
+    border-bottom: 1px solid var(--border);
+    padding: 12px 20px;
     display: flex;
     flex-wrap: wrap;
-    gap: 24px;
+    gap: 20px;
+    align-items: flex-end;
+    flex-shrink: 0;
 }
 
 .filter-group {
     display: flex;
     flex-direction: column;
-    gap: 6px;
+    gap: 5px;
 }
 
 .filter-group label {
-    font-size: 0.75rem;
+    font-size: 11px;
     text-transform: uppercase;
     letter-spacing: 0.8px;
-    color: var(--vscode-text-comment);
+    color: var(--text-comment);
     font-weight: 600;
 }
 
 .filter-group select {
-    background-color: var(--vscode-bg-input);
-    color: var(--vscode-text-normal);
-    border: 1px solid var(--vscode-border-input);
-    padding: 6px 12px;
-    font-size: 0.85rem;
+    background-color: var(--bg-input);
+    color: var(--text-normal);
+    border: 1px solid var(--border-input);
+    padding: 5px 10px;
+    font-size: 13px;
     border-radius: 2px;
     outline: none;
-    min-width: 160px;
+    min-width: 150px;
     cursor: pointer;
-    transition: border-color 0.15s ease;
+    font-family: inherit;
+    transition: border-color 0.12s;
 }
 
 .filter-group select:focus {
-    border-color: var(--vscode-bg-badge);
+    border-color: var(--bg-badge);
+    outline: 1px solid var(--bg-badge);
+    outline-offset: -1px;
 }
 
-/* 3. Secciones de Películas y Mosaico (Grid) */
+
+/* ==========================================================================
+   4. PELÍCULAS  ·  Encabezado de sección + Mosaico
+   ========================================================================== */
+
 .movies-section {
-    padding: 24px 32px 0 32px;
+    padding: 20px 24px 0;
 }
 
+/* Título tipo "EXPLORER SECTION" */
 .movies-section h2 {
-    font-size: 1.3rem;
-    font-weight: 400;
-    border-bottom: 1px solid #3c3c3c;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    color: var(--text-explorer-hd);
+    border-bottom: 1px solid var(--border);
     padding-bottom: 8px;
-    margin-bottom: 24px;
-    color: var(--vscode-text-class);
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
 }
 
+.movies-section h2::before {
+    content: "›";
+    font-size: 16px;
+    transform: rotate(90deg);
+    display: inline-block;
+    color: var(--text-muted);
+}
+
+/* Grid */
 .movies-mosaic {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-    gap: 28px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
     padding-bottom: 40px;
 }
 
-/* Tarjetas de Películas */
+
+/* ==========================================================================
+   5. TARJETAS DE PELÍCULAS
+   ========================================================================== */
+
 .movie-card {
-    background-color: var(--vscode-bg-sidebar);
-    border: 1px solid #2d2d2d;
-    border-radius: 4px;
+    background-color: var(--bg-sidebar);
+    border: 1px solid var(--border);
+    border-radius: 3px;
     overflow: hidden;
     cursor: pointer;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-    transition: all 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+    transition: transform 0.18s cubic-bezier(0.165, 0.84, 0.44, 1),
+                border-color 0.18s,
+                box-shadow 0.18s;
 }
 
 .movie-card:hover {
-    transform: translateY(-4px);
-    border-color: var(--vscode-bg-badge);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+    transform: translateY(-3px);
+    border-color: var(--bg-badge);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.45);
 }
 
 .movie-card img {
     width: 100%;
-    height: 320px;
+    height: 300px;
     object-fit: cover;
-    border-bottom: 1px solid #2d2d2d;
+    border-bottom: 1px solid var(--border);
+    display: block;
 }
 
 .movie-card-info {
-    padding: 16px;
+    padding: 12px 14px;
 }
 
 .movie-card-info h3 {
-    margin: 0 0 8px 0;
-    font-size: 1rem;
+    margin: 0 0 6px;
+    font-size: 13px;
     font-weight: 600;
     line-height: 1.4;
-    color: var(--vscode-text-string);
+    color: var(--text-string);
 }
 
 .movie-card-info p {
-    margin: 4px 0;
-    font-size: 0.85rem;
+    margin: 3px 0;
+    font-size: 12px;
 }
 
-.movie-card-info .director {
-    color: var(--vscode-text-comment);
-}
+.movie-card-info .director { color: var(--text-comment); }
+.movie-card-info .duration  { color: var(--text-number);  }
 
-.movie-card-info .duration {
-    color: var(--vscode-text-number);
-}
 
 /* ==========================================================================
-   PANTALLA VISTA DETALLE
+   6. DETALLE DE PELÍCULA
    ========================================================================== */
+
 .movie-presentation {
     display: flex;
     flex-wrap: wrap;
-    gap: 40px;
-    padding: 32px;
+    gap: 32px;
+    padding: 24px;
 }
 
 .poster-column img {
-    width: 280px;
-    border-radius: 4px;
+    width: 240px;
+    border-radius: 3px;
     border: 1px solid #3c3c3c;
-    box-shadow: 0 8px 24px rgba(0,0,0,0.5);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.55);
+    display: block;
 }
 
 .info-column {
     flex: 1;
-    min-width: 300px;
+    min-width: 280px;
 }
 
 .info-column h2 {
-    margin: 0 0 16px 0;
-    font-size: 2rem;
-    color: var(--vscode-text-string);
+    margin: 0 0 14px;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--text-string);
     border-bottom: 1px solid #3c3c3c;
-    padding-bottom: 12px;
+    padding-bottom: 10px;
+    letter-spacing: 0;
+    text-transform: none;
 }
 
-.info-column p {
-    margin: 10px 0;
-    font-size: 0.95rem;
-}
-
-.info-column strong {
-    color: var(--vscode-text-keyword);
-}
+.info-column p       { margin: 8px 0; font-size: 13px; }
+.info-column strong  { color: var(--text-keyword); }
 
 .sinopsis-text {
     color: #b8b8b8;
     line-height: 1.7;
-    background-color: var(--vscode-bg-sidebar);
-    padding: 16px;
-    border-left: 3px solid var(--vscode-bg-badge);
-    border-radius: 2px;
+    font-size: 13px;
+    background-color: var(--bg-sidebar);
+    padding: 14px 16px;
+    border-left: 3px solid var(--bg-badge);
+    border-radius: 0 2px 2px 0;
     margin-top: 8px;
 }
 
-/* Sección de resultados de horarios */
+
+/* ==========================================================================
+   7. HORARIOS
+   ========================================================================== */
+
 .showtimes-section {
-    padding: 0 32px 40px 32px;
+    padding: 0 24px 40px;
 }
 
 .showtimes-section h3 {
-    font-size: 1.2rem;
-    color: var(--vscode-text-class);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    color: var(--text-explorer-hd);
     border-bottom: 1px solid #3c3c3c;
     padding-bottom: 8px;
+    margin-bottom: 16px;
 }
 
-/* Botones de Horarios del listado */
+#showtimes-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
 #showtimes-container span {
-    background-color: var(--vscode-bg-badge) !important;
+    background-color: var(--bg-badge) !important;
     color: #ffffff !important;
+    font-family: "SF Mono", Menlo, Monaco, Consolas, "Courier New", monospace;
+    font-size: 12px;
     font-weight: 500;
-    padding: 6px 14px !important;
-    border-radius: 3px !important;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
-    transition: background-color 0.1s ease;
+    letter-spacing: 0.3px;
+    padding: 5px 12px !important;
+    border-radius: 2px !important;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
     display: inline-block;
+    transition: background-color 0.1s;
 }
 
 #showtimes-container span:hover {
-    background-color: #0062a3 !important;
+    background-color: #0066b8 !important;
 }
 
-/* Utilidades */
-.hidden {
-    display: none !important;
+
+/* ==========================================================================
+   8. STATUS BAR  ·  Barra inferior azul de VS Code
+   ========================================================================== */
+
+.status-bar {
+    height: 22px;
+    background-color: var(--bg-badge);
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    gap: 0;
+    font-size: 12px;
+    color: #ffffff;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 200;
+    user-select: none;
+    flex-shrink: 0;
 }
+
+.status-item {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 0 8px;
+    height: 100%;
+    cursor: pointer;
+    transition: background-color 0.1s;
+    white-space: nowrap;
+}
+
+.status-item:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.status-item + .status-item { margin-left: 0; }
+
+/* Grupo del lado derecho empujado al extremo */
+.status-bar .status-right {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+
+/* ==========================================================================
+   9. SCROLLBARS  ·  Estilo VS Code
+   ========================================================================== */
+
+::-webkit-scrollbar          { width: 10px; height: 10px; }
+::-webkit-scrollbar-track    { background: transparent; }
+::-webkit-scrollbar-thumb {
+    background-color: rgba(121, 121, 121, 0.35);
+    border-radius: 5px;
+    border: 2px solid transparent;
+    background-clip: content-box;
+}
+::-webkit-scrollbar-thumb:hover { background-color: rgba(121, 121, 121, 0.65); }
+
+* { scrollbar-width: thin; scrollbar-color: rgba(121,121,121,.35) transparent; }
+
+
+/* ==========================================================================
+   UTILIDADES
+   ========================================================================== */
+
+.hidden { display: none !important; }
