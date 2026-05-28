@@ -1,44 +1,48 @@
 /* ==========================================================================
-   CARTELERA · VS Code Dark — Revisión 3
-   Negro profundo del portfolio · Bordes redondeados · Márgenes generosos
-   Paleta: solo grises + #007acc — sin colores de sintaxis
+   CARTELERA · VS Code Dark — Versión Pro Unificada
+   Negro profundo · Columna centralizada · Jerarquías estilizadas
    ========================================================================== */
 
 /* ── Variables ─────────────────────────────────────────────────────────── */
 :root {
-    /* Fondos — del más oscuro al más claro */
-    --bg-body:        #111111;   /* negro profundo del portfolio */
-    --bg-chrome:      #181818;   /* title bar, activity bar, sidebar */
-    --bg-panel:       #1c1c1c;   /* sidebar panel, editor tabs */
-    --bg-card:        #1e1e1e;   /* tarjetas */
-    --bg-input:       #242424;   /* inputs de filtro */
-    --bg-hover:       #252525;   /* hover sobre ítems */
-    --bg-selected:    #0d3c5a;   /* ítem activo explorador */
-    --accent:         #007acc;   /* azul VS Code — único color de acento */
+    /* Fondos */
+    --bg-body:        #111111; /* Negro profundo de portfolio */
+    --bg-chrome:      #181818; /* Title bar, activity bar */
+    --bg-panel:       #1c1c1c; /* Sidebar panel, editor tabs */
+    --bg-card:        #1e1e1e; /* Tarjetas de películas */
+    --bg-input:       #242424; /* Inputs de filtro */
+    --bg-hover:       #252525; /* Hover general */
+    --bg-selected:    #0d3c5a; /* Ítem activo */
+    --accent:         #007acc; /* Azul clásico de VS Code */
 
-    /* Borders */
-    --border:         rgba(255, 255, 255, 0.07);  /* sutilísimo */
+    /* Bordes */
+    --border:         rgba(255, 255, 255, 0.07);
     --border-strong:  rgba(255, 255, 255, 0.12);
 
-    /* Text — escala monocromática */
-    --t-white:      #ffffff;
-    --t-bright:     #e8e8e8;
-    --t-primary:    #c8c8c8;
-    --t-secondary:  #888888;
-    --t-muted:      #555555;
-    --t-faint:      #3a3a3a;
-    --t-menu:       #bbbbbb;
-    --t-explorer:   #999999;
+    /* Tipografías — Escala monocromática */
+    --t-white:        #ffffff;
+    --t-bright:       #e8e8e8;
+    --t-primary:      #c8c8c8;
+    --t-secondary:    #888888;
+    --t-muted:        #555555;
+    --t-menu:         #bbbbbb;
+    --t-explorer:     #999999;
 
-    /* Espaciado */
-    --content-pad:  48px;
-    --card-radius:  7px;
+    /* Diseño y Estructura */
+    --content-pad:    max(48px, 12vw); /* Amplios márgenes laterales para crear la columna central */
+    --card-radius:    7px;
 }
 
-/* ── Reset & Base ──────────────────────────────────────────────────────── */
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+/* ── Reset & Configuración Base ────────────────────────────────────────── */
+*, *::before, *::after { 
+    box-sizing: border-box; 
+    margin: 0; 
+    padding: 0; 
+}
 
-html { height: 100%; }
+html, body { 
+    height: 100%; 
+}
 
 body {
     background-color: var(--bg-body);
@@ -48,92 +52,81 @@ body {
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
 }
 
 /* ══════════════════════════════════════════════════════════════════════════
-   1. TITLE BAR  ·  VS Code chrome — 30px de altura
+   1. TITLE BAR (Encabezado principal optimizado)
    ══════════════════════════════════════════════════════════════════════════ */
 .main-header {
     position: sticky;
     top: 0;
     z-index: 200;
-    height: 30px;
     background-color: var(--bg-chrome);
     border-bottom: 1px solid var(--border);
     display: flex;
     align-items: center;
-    padding: 0 8px;
+    padding: 18px var(--content-pad); /* Fila más ancha alineada con la columna central */
     user-select: none;
     flex-shrink: 0;
 }
 
-/* Logo SVG de VS Code — se asume marcado externo o inline SVG */
-.main-header-icon {
-    width: 30px;
-    height: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-    margin-right: 2px;
-}
-
-.main-header-icon svg { width: 16px; height: 16px; }
-
-/* Nombre del sitio (primer ítem del menú) */
 #site-title {
-    font-size: 12px;
-    font-weight: 400;
-    color: var(--t-menu);
-    padding: 3px 8px;
+    font-size: 15px; /* Letra más grande que los filtros */
+    font-weight: 600;
+    color: var(--t-white);
+    padding: 4px 10px;
     border-radius: 3px;
     cursor: pointer;
     transition: background-color 0.12s;
     white-space: nowrap;
 }
 
-#site-title:hover { background-color: rgba(255, 255, 255, 0.08); }
-#site-title::before { content: none; }
+#site-title:hover { 
+    background-color: rgba(255, 255, 255, 0.08); 
+}
 
-/* Nav del menú (File · Edit · Selection…) */
+/* Nav del menú de desarrollo */
 .nav-menu {
     display: flex;
     align-items: center;
     list-style: none;
     height: 100%;
+    margin-left: 12px;
 }
-
-.nav-menu li { height: 100%; display: flex; align-items: center; }
 
 .nav-menu li a,
 .nav-menu li span {
     display: flex;
     align-items: center;
     height: 100%;
-    padding: 0 8px;
+    padding: 4px 10px;
     font-size: 12px;
-    font-weight: 400;
     color: var(--t-menu);
     text-decoration: none;
     cursor: pointer;
+    border-radius: 3px;
     transition: background-color 0.12s;
     white-space: nowrap;
 }
 
 .nav-menu li a:hover,
-.nav-menu li span:hover { background-color: rgba(255, 255, 255, 0.08); }
+.nav-menu li span:hover { 
+    background-color: rgba(255, 255, 255, 0.08); 
+}
 
 /* ══════════════════════════════════════════════════════════════════════════
-   2. LAYOUT  ·  Activity Bar + Sidebar + Editor
+   2. LAYOUT IDE (Estructura de Tres Paneles)
    ══════════════════════════════════════════════════════════════════════════ */
 .app-layout {
     display: flex;
-    height: calc(100vh - 52px); /* 30 titlebar + 22 statusbar */
+    flex: 1;
     overflow: hidden;
 }
 
-/* ── Activity Bar ────────────────────────────────────────────────────────── */
+/* Activity Bar */
 .activity-bar {
     width: 48px;
     flex-shrink: 0;
@@ -181,7 +174,7 @@ body {
     stroke-linejoin: round;
 }
 
-/* ── Sidebar / Explorer ──────────────────────────────────────────────────── */
+/* Sidebar / Explorador de Archivos */
 .sidebar {
     width: 260px;
     flex-shrink: 0;
@@ -208,53 +201,30 @@ body {
     color: var(--t-explorer);
 }
 
-.sidebar-header-btn {
-    background: none;
-    border: none;
-    color: var(--t-muted);
-    font-size: 15px;
-    cursor: pointer;
-    padding: 2px 4px;
-    border-radius: 3px;
-    line-height: 1;
-    transition: background-color 0.12s, color 0.12s;
+.sidebar-content { 
+    flex: 1; 
+    overflow-y: auto; 
+    overflow-x: hidden; 
 }
-
-.sidebar-header-btn:hover {
-    background-color: var(--bg-hover);
-    color: var(--t-primary);
-}
-
-.sidebar-content { flex: 1; overflow-y: auto; overflow-x: hidden; }
-
-.explorer-section { display: flex; flex-direction: column; }
 
 .explorer-section-header {
     display: flex;
     align-items: center;
-    padding: 5px 0 5px 14px;
+    padding: 6px var(--content-pad) 6px 14px;
     gap: 5px;
     cursor: pointer;
     user-select: none;
-    transition: background-color 0.1s;
 }
-
-.explorer-section-header:hover { background-color: var(--bg-hover); }
 
 .explorer-section-header::before {
     content: "›";
     font-size: 16px;
-    line-height: 1;
     color: var(--t-muted);
     display: inline-block;
     transform: rotate(90deg);
-    transition: transform 0.15s ease;
     width: 12px;
     text-align: center;
-    flex-shrink: 0;
 }
-
-.explorer-section-header.collapsed::before { transform: rotate(0deg); }
 
 .explorer-section-header span {
     font-size: 11px;
@@ -267,21 +237,17 @@ body {
 .tree-item {
     display: flex;
     align-items: center;
-    padding: 3px 14px 3px 32px;
+    padding: 4px 14px 4px 32px;
     font-size: 13px;
     color: var(--t-primary);
     cursor: pointer;
     gap: 6px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    transition: background-color 0.1s;
 }
 
-.tree-item:hover  { background-color: var(--bg-hover); }
+.tree-item:hover { background-color: var(--bg-hover); }
 .tree-item.active { background-color: var(--bg-selected); color: var(--t-white); }
 
-/* ── Editor Area ─────────────────────────────────────────────────────────── */
+/* Área de Edición Central */
 .editor-area {
     flex: 1;
     display: flex;
@@ -291,7 +257,7 @@ body {
     background-color: var(--bg-body);
 }
 
-/* Tabs de archivos */
+/* Tabs */
 .editor-tabs {
     display: flex;
     background-color: var(--bg-panel);
@@ -301,21 +267,16 @@ body {
     scrollbar-width: none;
 }
 
-.editor-tabs::-webkit-scrollbar { display: none; }
-
 .editor-tab {
     display: flex;
     align-items: center;
     gap: 8px;
     padding: 8px 18px;
-    min-width: 110px;
     font-size: 12px;
     color: var(--t-muted);
     cursor: pointer;
     border-right: 1px solid var(--border);
     white-space: nowrap;
-    flex-shrink: 0;
-    transition: color 0.1s, background-color 0.1s;
 }
 
 .editor-tab.active {
@@ -325,32 +286,30 @@ body {
     padding-top: 7px;
 }
 
-.editor-tab:hover:not(.active) {
-    color: var(--t-bright);
-    background-color: var(--bg-hover);
+.editor-content { 
+    flex: 1; 
+    overflow-y: auto; 
 }
 
-.editor-content { flex: 1; overflow-y: auto; }
-
 /* ══════════════════════════════════════════════════════════════════════════
-   3. FILTROS  ·  Compactos y discretos — no compiten con el contenido
+   3. FILTROS (Compactos y discretos)
    ══════════════════════════════════════════════════════════════════════════ */
 .filters-section,
 .detail-filters-section {
     background-color: var(--bg-panel);
     border-bottom: 1px solid var(--border);
-    padding: 10px var(--content-pad);
+    padding: 12px var(--content-pad); /* Perfectamente alineados con los márgenes de la columna */
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    gap: 16px;
+    gap: 20px;
     flex-shrink: 0;
 }
 
 .filter-group {
     display: flex;
     align-items: center;
-    gap: 7px;
+    gap: 8px;
 }
 
 .filter-group label {
@@ -359,65 +318,53 @@ body {
     text-transform: uppercase;
     letter-spacing: 0.7px;
     color: var(--t-muted);
-    white-space: nowrap;
 }
 
 .filter-group select {
     background-color: var(--bg-input);
     color: var(--t-primary);
     border: 1px solid var(--border-strong);
-    padding: 3px 8px;
-    height: 26px;
+    padding: 4px 10px;
+    height: 28px;
     font-size: 11px;
-    font-family: inherit;
     border-radius: 3px;
-    min-width: 130px;
+    min-width: 140px;
     cursor: pointer;
     outline: none;
     transition: border-color 0.12s;
-    appearance: auto;
 }
 
 .filter-group select:focus {
     border-color: var(--accent);
-    outline: 1px solid var(--accent);
-    outline-offset: -1px;
 }
 
 /* ══════════════════════════════════════════════════════════════════════════
-   4. SECCIÓN DE PELÍCULAS  ·  Inspirada en el portfolio de referencia
+   4. SECCIÓN DE PELÍCULAS Y GRILLA (Estilo Portfolio Centrado)
    ══════════════════════════════════════════════════════════════════════════ */
 .movies-section {
-    padding: 52px var(--content-pad) 0;
+    padding: 40px var(--content-pad) 0;
 }
 
-/* Encabezado estilo "DOCUMENTALES" del portfolio:
-   uppercase, letter-spacing amplio, línea divisoria */
 .movies-section h2 {
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 600;
-    letter-spacing: 0.28em;
+    letter-spacing: 0.25em;
     text-transform: uppercase;
     color: var(--t-white);
-    padding-bottom: 16px;
-    margin-bottom: 36px;
+    padding-bottom: 14px;
+    margin-bottom: 32px;
     border-bottom: 1px solid var(--border-strong);
 }
 
-/* Sin chevron en el h2 — usamos el estilo del portfolio directamente */
-.movies-section h2::before { content: none; }
-
-/* Grid — 3 columnas como el portfolio, con gap generoso */
 .movies-mosaic {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-    gap: 24px;
-    padding-bottom: 64px;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 32px;
+    padding-bottom: 48px;
 }
 
 /* ══════════════════════════════════════════════════════════════════════════
-   5. TARJETAS  ·  Redondeadas, oscuras, elegantes
-   Siguiendo exactamente el portfolio de referencia
+   5. TARJETAS ELEVADAS
    ══════════════════════════════════════════════════════════════════════════ */
 .movie-card {
     background-color: var(--bg-card);
@@ -425,64 +372,66 @@ body {
     border-radius: var(--card-radius);
     overflow: hidden;
     cursor: pointer;
-    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.4);
-    transition:
-        transform     0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94),
-        box-shadow    0.2s ease,
-        border-color  0.2s ease;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    transition: transform 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94), box-shadow 0.2s ease, border-color 0.2s ease;
 }
 
 .movie-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.7);
+    transform: translateY(-5px);
+    box-shadow: 0 14px 45px rgba(0, 0, 0, 0.8);
     border-color: var(--border-strong);
 }
 
 .movie-card img {
     display: block;
     width: 100%;
-    height: 270px;
+    height: 290px;
     object-fit: cover;
-    /* Leve desaturación en reposo — plena en hover, como en portfolios de cine */
-    filter: saturate(0.85) brightness(0.93);
-    transition: filter 0.25s ease;
+    filter: saturate(0.85) brightness(0.95);
+    transition: filter 0.2s ease;
 }
 
 .movie-card:hover img {
     filter: saturate(1) brightness(1);
 }
 
-/* Zona de texto de la tarjeta */
 .movie-card-info {
-    padding: 16px 18px 18px;
+    padding: 18px;
 }
 
 .movie-card-info h3 {
     font-size: 13px;
     font-weight: 600;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.04em;
     line-height: 1.4;
     color: var(--t-white);
-    margin-bottom: 10px;
+    margin-bottom: 8px;
+    text-transform: uppercase; /* MODIFICACIÓN B: Siempre Mayúsculas */
 }
 
 .movie-card-info p {
     font-size: 12px;
     line-height: 1.5;
-    margin-top: 3px;
 }
 
-.movie-card-info .director { color: var(--t-secondary); }
-.movie-card-info .duration  { color: var(--t-muted); }
+.movie-card-info .director { 
+    color: var(--t-secondary); 
+}
+
+.movie-card-info .duration { 
+    color: #888888 !important; /* MODIFICACIÓN C: Color plano y sólido sin degradés */
+    background: transparent !important;
+    -webkit-text-fill-color: #888888 !important;
+}
 
 /* ══════════════════════════════════════════════════════════════════════════
-   6. VISTA DETALLE
+   6. VISTA DETALLE Y HORARIOS
    ══════════════════════════════════════════════════════════════════════════ */
 .movie-presentation {
     display: flex;
     flex-wrap: wrap;
     gap: 48px;
-    padding: 52px var(--content-pad);
+    padding: 40px var(--content-pad);
 }
 
 .poster-column img {
@@ -500,7 +449,7 @@ body {
 
 .info-column h2 {
     font-size: 20px;
-    font-weight: 400;
+    font-weight: 500;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--t-white);
@@ -512,46 +461,38 @@ body {
 .info-column p {
     font-size: 13px;
     color: var(--t-primary);
-    margin: 9px 0;
+    margin: 10px 0;
     display: flex;
     gap: 8px;
 }
 
-/* Etiqueta "Dir.:" "Prod.:" — estilo metadata del portfolio */
 .info-column strong {
     font-size: 11px;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.06em;
     color: var(--t-secondary);
-    flex-shrink: 0;
-    padding-top: 1px;
-    min-width: 68px;
+    min-width: 70px;
 }
 
-/* Bloque de sinopsis */
 .sinopsis-text {
     margin-top: 16px;
     background-color: var(--bg-panel);
     border-left: 2px solid var(--accent);
-    padding: 14px 18px;
+    padding: 16px;
     border-radius: 0 var(--card-radius) var(--card-radius) 0;
     color: var(--t-secondary);
     font-size: 13px;
-    line-height: 1.75;
+    line-height: 1.7;
 }
 
-/* Filtros dentro del detalle */
 .detail-filters-section {
     margin: 0 var(--content-pad);
-    padding: 14px 0;
+    padding: 16px 0;
     background: none;
     border-top: none;
 }
 
-/* ══════════════════════════════════════════════════════════════════════════
-   7. HORARIOS  ·  Tokens monoespaciados sobre fondo de acento
-   ══════════════════════════════════════════════════════════════════════════ */
 .showtimes-section {
     padding: 0 var(--content-pad) 64px;
 }
@@ -559,21 +500,12 @@ body {
 .showtimes-section h3 {
     font-size: 13px;
     font-weight: 600;
-    letter-spacing: 0.22em;
+    letter-spacing: 0.2em;
     text-transform: uppercase;
     color: var(--t-bright);
     border-bottom: 1px solid var(--border-strong);
     padding-bottom: 12px;
     margin-bottom: 20px;
-}
-
-/* Sin chevron en h3 — sigue estilo del portfolio */
-.showtimes-section h3::before { content: none; }
-
-#showtimes-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
 }
 
 #showtimes-container span {
@@ -582,65 +514,34 @@ body {
     font-family: "SF Mono", Menlo, Monaco, Consolas, monospace;
     font-size: 12px;
     font-weight: 500;
-    letter-spacing: 0.04em;
-    padding: 5px 14px !important;
+    padding: 6px 14px !important;
     border-radius: 3px !important;
     cursor: pointer;
     display: inline-block !important;
-    transition: background-color 0.12s;
 }
 
-#showtimes-container span:hover { background-color: #005f99 !important; }
-
 /* ══════════════════════════════════════════════════════════════════════════
-   8. STATUS BAR  ·  Barra azul inferior de VS Code
+   7. STATUS BAR (Barra Inferior de Sistema)
    ══════════════════════════════════════════════════════════════════════════ */
 .status-bar {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
     height: 22px;
     background-color: var(--accent);
     display: flex;
     align-items: center;
-    padding: 0 8px;
+    padding: 0 12px;
     font-size: 12px;
     color: #ffffff;
     z-index: 200;
     user-select: none;
+    flex-shrink: 0;
 }
 
-.status-item {
-    display: flex;
-    align-items: center;
-    gap: 4px;
-    padding: 0 8px;
-    height: 100%;
-    cursor: pointer;
-    white-space: nowrap;
-    transition: background-color 0.1s;
-}
-
-.status-item:hover { background-color: rgba(255, 255, 255, 0.16); }
-.status-right { margin-left: auto; display: flex; align-items: center; }
-
-/* ══════════════════════════════════════════════════════════════════════════
-   9. SCROLLBARS  ·  Casi invisibles, estilo VS Code
-   ══════════════════════════════════════════════════════════════════════════ */
-::-webkit-scrollbar          { width: 8px; height: 8px; }
-::-webkit-scrollbar-track    { background: transparent; }
+/* ── Scrollbars & Utilidades ────────────────────────────────────────────── */
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-track { background: transparent; }
 ::-webkit-scrollbar-thumb {
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 4px;
-    border: 2px solid transparent;
-    background-clip: content-box;
 }
-::-webkit-scrollbar-thumb:hover { background-color: rgba(255, 255, 255, 0.22); }
-::-webkit-scrollbar-corner      { background: transparent; }
 * { scrollbar-width: thin; scrollbar-color: rgba(255,255,255,0.1) transparent; }
-
-/* ══════════════════════════════════════════════════════════════════════════
-   UTILIDADES
-   ══════════════════════════════════════════════════════════════════════════ */
 .hidden { display: none !important; }
