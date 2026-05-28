@@ -19,13 +19,13 @@
         <section class="filters-section">
             <div class="filter-group">
                 <label for="filtro-cine">Cine</label>
-                <select id="filtro-cine" onchange="filtrarPeliculas()">
+                <select id="filtro-cine">
                     <option value="todos">Todos los cines</option>
                 </select>
             </div>
             <div class="filter-group">
                 <label for="filtro-dia">Día</label>
-                <select id="filtro-dia" onchange="filtrarPeliculas()">
+                <select id="filtro-dia">
                     <option value="todos">Todos los días</option>
                 </select>
             </div>
@@ -33,15 +33,14 @@
 
         <section class="movies-section">
             <h2>Películas en Cartelera</h2>
-            <div class="movies-mosaic" id="contenedor-peliculas">
-                </div>
+            <div class="movies-mosaic" id="contenedor-peliculas"></div>
         </section>
     </div>
 
     <div id="vista-detalle" class="hidden">
         <section class="detail-filters-section">
             <div class="filter-group">
-                <button onclick="volverInicio()" style="background: #242424; color: var(--text-bright); border: 1px solid var(--border-strong); padding: 6px 16px; border-radius: 3px; cursor: pointer; font-size: 11px; text-transform: uppercase; font-weight: 600;">
+                <button onclick="volverInicio()" style="background: var(--bg-input); color: var(--text-bright); border: 1px solid var(--border-strong); padding: 6px 16px; border-radius: 3px; cursor: pointer; font-size: 11px; text-transform: uppercase; font-weight: 600;">
                     ← Volver a la cartelera
                 </button>
             </div>
