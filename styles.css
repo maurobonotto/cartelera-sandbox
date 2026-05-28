@@ -1,130 +1,267 @@
-{
-  "peliculas": [
-    {
-      "id": "p1",
-      "titulo": "Película Estreno 1",
-      "director": "Director Alfa",
-      "duracion": "120 min",
-      "seccion": "cartelera",
-      "poster": "https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?w=500",
-      "sinopsis": "Sinopsis de la Película Estreno 1. Acción continua y suspenso garantizado para toda la semana.",
-      "funciones": [
-        { "cine": "Cine A", "ciudad": "CABA", "fecha": "2026-05-28", "idioma": "Doblada", "horarios": ["15:00", "17:30"], "url_compra": "https://entradas.cinea.com/p1" },
-        { "cine": "Cine A", "ciudad": "CABA", "fecha": "2026-05-28", "idioma": "Subtitulada", "horarios": ["20:00", "22:30"], "url_compra": "https://entradas.cinea.com/p1" },
-        { "cine": "Cine B", "ciudad": "Quilmes", "fecha": "2026-05-28", "idioma": "Doblada", "horarios": ["16:00"], "url_compra": null },
-        { "cine": "Cine B", "ciudad": "Quilmes", "fecha": "2026-05-28", "idioma": "Subtitulada", "horarios": ["21:00"], "url_compra": null },
-        { "cine": "Cine A", "ciudad": "CABA", "fecha": "2026-06-01", "idioma": "Doblada", "horarios": ["15:00"], "url_compra": "https://entradas.cinea.com/p1" },
-        { "cine": "Cine B", "ciudad": "Quilmes", "fecha": "2026-06-01", "idioma": "Subtitulada", "horarios": ["21:00"], "url_compra": null },
-        { "cine": "Cine A", "ciudad": "CABA", "fecha": "2026-06-02", "idioma": "Doblada", "horarios": ["15:00"], "url_compra": "https://entradas.cinea.com/p1" },
-        { "cine": "Cine B", "ciudad": "Quilmes", "fecha": "2026-06-02", "idioma": "Subtitulada", "horarios": ["21:00"], "url_compra": null }
-      ]
-    },
-    {
-      "id": "p2",
-      "titulo": "Película Estreno 2",
-      "director": "Director Beta",
-      "duracion": "110 min",
-      "seccion": "cartelera",
-      "poster": "https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=500",
-      "sinopsis": "Sinopsis de la Película Estreno 2. Un drama profundo que explora las relaciones humanas en la gran ciudad.",
-      "funciones": [
-        { "cine": "Cine A", "ciudad": "CABA", "fecha": "2026-05-28", "idioma": "Doblada", "horarios": ["14:00"], "url_compra": "https://entradas.cinea.com/p2" },
-        { "cine": "Cine A", "ciudad": "CABA", "fecha": "2026-05-28", "idioma": "Subtitulada", "horarios": ["19:00"], "url_compra": "https://entradas.cinea.com/p2" },
-        { "cine": "Cine B", "ciudad": "Quilmes", "fecha": "2026-05-28", "idioma": "Doblada", "horarios": ["15:30"], "url_compra": null },
-        { "cine": "Cine B", "ciudad": "Quilmes", "fecha": "2026-05-28", "idioma": "Subtitulada", "horarios": ["20:30"], "url_compra": null },
-        { "cine": "Cine A", "ciudad": "CABA", "fecha": "2026-06-02", "idioma": "Subtitulada", "horarios": ["19:00"], "url_compra": "https://entradas.cinea.com/p2" },
-        { "cine": "Cine B", "ciudad": "Quilmes", "fecha": "2026-06-02", "idioma": "Doblada", "horarios": ["15:30"], "url_compra": null }
-      ]
-    },
-    {
-      "id": "p3",
-      "titulo": "Película Estreno 3",
-      "director": "Director Gamma",
-      "duracion": "140 min",
-      "seccion": "cartelera",
-      "poster": "https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?w=500",
-      "sinopsis": "Sinopsis de la Película Estreno 3. Una comedia hilarante que arrasa en todos los complejos del país.",
-      "funciones": [
-        { "cine": "Cine A", "ciudad": "CABA", "fecha": "2026-05-28", "idioma": "Doblada", "horarios": ["18:00"], "url_compra": "https://entradas.cinea.com/p3" },
-        { "cine": "Cine B", "ciudad": "Quilmes", "fecha": "2026-05-28", "idioma": "Subtitulada", "horarios": ["22:00"], "url_compra": null },
-        { "cine": "Cine C", "ciudad": "CABA", "fecha": "2026-05-28", "idioma": null, "horarios": ["17:00", "20:00"], "url_compra": "https://entradas.cinec.com/p3" },
-        { "cine": "Cine A", "ciudad": "CABA", "fecha": "2026-06-02", "idioma": "Doblada", "horarios": ["18:00"], "url_compra": "https://entradas.cinea.com/p3" },
-        { "cine": "Cine B", "ciudad": "Quilmes", "fecha": "2026-06-02", "idioma": "Subtitulada", "horarios": ["22:00"], "url_compra": null },
-        { "cine": "Cine C", "ciudad": "CABA", "fecha": "2026-06-02", "idioma": null, "horarios": ["20:00"], "url_compra": "https://entradas.cinec.com/p3" }
-      ]
-    },
-    {
-      "id": "p4",
-      "titulo": "Película Estreno 4",
-      "director": "Director Delta",
-      "duracion": "95 min",
-      "seccion": "cartelera",
-      "poster": "https://images.unsplash.com/photo-1478720143033-6a972678da30?w=500",
-      "sinopsis": "Sinopsis de la Película Estreno 4. Función especial exclusiva del día martes.",
-      "funciones": [
-        { "cine": "Cine A", "ciudad": "CABA", "fecha": "2026-06-02", "idioma": "Doblada", "horarios": ["21:00"], "url_compra": "https://entradas.cinea.com/p4" },
-        { "cine": "Cine C", "ciudad": "CABA", "fecha": "2026-06-02", "idioma": null, "horarios": ["21:00"], "url_compra": "https://entradas.cinec.com/p4" }
-      ]
-    },
-    {
-      "id": "p5",
-      "titulo": "Película Estreno 5",
-      "director": "Director Epsilon",
-      "duracion": "105 min",
-      "seccion": "cartelera",
-      "poster": "https://images.unsplash.com/photo-1440404653325-ab127d49abc1?w=500",
-      "sinopsis": "Sinopsis de la Película Estreno 5. Ciencia ficción de culto proyectada únicamente lunes y martes.",
-      "funciones": [
-        { "cine": "Cine A", "ciudad": "CABA", "fecha": "2026-06-01", "idioma": "Subtitulada", "horarios": ["19:30", "22:00"], "url_compra": "https://entradas.cinea.com/p5" },
-        { "cine": "Cine C", "ciudad": "CABA", "fecha": "2026-06-01", "idioma": null, "horarios": ["19:30", "22:00"], "url_compra": "https://entradas.cinec.com/p5" },
-        { "cine": "Cine A", "ciudad": "CABA", "fecha": "2026-06-02", "idioma": "Subtitulada", "horarios": ["19:30", "22:00"], "url_compra": "https://entradas.cinea.com/p5" },
-        { "cine": "Cine C", "ciudad": "CABA", "fecha": "2026-06-02", "idioma": null, "horarios": ["19:30", "22:00"], "url_compra": "https://entradas.cinec.com/p5" }
-      ]
-    },
-    {
-      "id": "p6",
-      "titulo": "Próximo Estreno 6",
-      "director": "Director Seis",
-      "duracion": "Por determinar",
-      "seccion": "proximos",
-      "poster": "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?w=500",
-      "sinopsis": "El gran evento cinematográfico que llegará próximamente a Cine A, Cine B y Cine C."
-    },
-    {
-      "id": "p7",
-      "titulo": "Próximo Estreno 7",
-      "director": "Director Siete",
-      "duracion": "Por determinar",
-      "seccion": "proximos",
-      "poster": "https://images.unsplash.com/photo-1594909122845-11baa439b7bf?w=500",
-      "sinopsis": "Próximo lanzamiento exclusivo para complejos seleccionados Cine A y Cine B."
-    },
-    {
-      "id": "p8",
-      "titulo": "Próximo Estreno 8",
-      "director": "Director Ocho",
-      "duracion": "Por determinar",
-      "seccion": "proximos",
-      "poster": "https://images.unsplash.com/photo-1478720143033-6a972678da30?w=500",
-      "sinopsis": "Un thriller psicológico muy esperado que se estrenará pronto en Cine A y Cine B."
-    },
-    {
-      "id": "p9",
-      "titulo": "Próximo Estreno 9",
-      "director": "Director Nueve",
-      "duracion": "Por determinar",
-      "seccion": "proximos",
-      "poster": "https://images.unsplash.com/photo-1515621061946-eff1c2a352bd?w=500",
-      "sinopsis": "Aventura familiar animada para disfrutar en las salas de Cine A y Cine B."
-    },
-    {
-      "id": "p10",
-      "titulo": "Próximo Estreno 10",
-      "director": "Director Diez",
-      "duracion": "Por determinar",
-      "seccion": "proximos",
-      "poster": "https://images.unsplash.com/photo-1535498730771-e735b998cd64?w=500",
-      "sinopsis": "Acción futurista que llegará próximamente a las pantallas de Cine A y Cine B."
-    }
-  ]
+:root {
+    --bg-main: #111111;
+    --bg-panel: #181818;
+    --bg-card: #1c1c1c;
+    --text-main: #cccccc;
+    --text-bright: #ffffff;
+    --text-muted: #888888;
+    --accent: #007acc;
+    --border: rgba(255, 255, 255, 0.07);
+    --border-strong: rgba(255, 255, 255, 0.12);
+    --content-pad: max(48px, 12vw);
 }
+
+*, *::before, *::after { 
+    box-sizing: border-box; 
+    margin: 0; 
+    padding: 0; 
+}
+
+body {
+    background-color: var(--bg-main);
+    color: var(--text-main);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    min-height: 100vh;
+    overflow-y: auto;
+    -webkit-font-smoothing: antialiased;
+}
+
+.main-header {
+    background-color: var(--bg-panel);
+    padding: 18px var(--content-pad);
+    border-bottom: 1px solid var(--border);
+    position: sticky;
+    top: 0;
+    z-index: 200;
+}
+
+#site-title {
+    color: var(--text-bright);
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.filters-section, .detail-filters-section {
+    background-color: var(--bg-panel);
+    padding: 16px var(--content-pad);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    border-bottom: 1px solid var(--border);
+}
+
+.filter-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.filter-group label {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    color: var(--text-muted);
+    font-weight: 600;
+}
+
+.filter-group select {
+    background-color: #242424;
+    color: var(--text-main);
+    border: 1px solid var(--border-strong);
+    padding: 6px 12px;
+    font-size: 11px;
+    border-radius: 3px;
+    outline: none;
+    min-width: 150px;
+    cursor: pointer;
+}
+
+.filter-group select:focus {
+    border-color: var(--accent);
+}
+
+.movies-section {
+    padding: 48px var(--content-pad) 0;
+}
+
+.movies-section h2 {
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--text-bright);
+    border-bottom: 1px solid var(--border-strong);
+    padding-bottom: 12px;
+    margin-bottom: 32px;
+}
+
+.movies-mosaic {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 32px;
+    padding-bottom: 50px;
+}
+
+.movie-card {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 7px;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+    transition: transform 0.2s, border-color 0.2s;
+}
+
+.movie-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--border-strong);
+}
+
+.movie-card img {
+    display: block;
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    filter: saturate(0.85) brightness(0.95);
+}
+
+.movie-card:hover img {
+    filter: saturate(1) brightness(1);
+}
+
+.movie-card-info {
+    padding: 18px;
+}
+
+.movie-card-info h3 {
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--text-bright);
+    margin-bottom: 8px;
+    letter-spacing: 0.04em;
+}
+
+.movie-card-info p {
+    font-size: 12px;
+    margin-bottom: 4px;
+}
+
+.movie-card-info .director {
+    color: var(--text-muted);
+}
+
+.movie-card-info .duration {
+    color: #888888 !important;
+}
+
+.movie-presentation {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px;
+    padding: 48px var(--content-pad);
+}
+
+.poster-column img {
+    display: block;
+    width: 260px;
+    border-radius: 7px;
+    border: 1px solid var(--border);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+}
+
+.info-column {
+    flex: 1;
+    min-width: 300px;
+}
+
+.info-column h2 {
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--text-bright);
+    border-bottom: 1px solid var(--border-strong);
+    padding-bottom: 16px;
+    margin-bottom: 20px;
+}
+
+.info-column p {
+    font-size: 13px;
+    color: var(--text-main);
+    margin: 10px 0;
+    display: flex;
+    gap: 8px;
+}
+
+.info-column strong {
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    min-width: 70px;
+}
+
+.sinopsis-text {
+    margin-top: 16px;
+    background-color: var(--bg-panel);
+    border-left: 2px solid var(--accent);
+    padding: 16px;
+    color: #aaaaaa;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+.detail-filters-section {
+    margin: 0;
+    border-top: none;
+}
+
+.showtimes-section {
+    padding: 0 var(--content-pad) 64px;
+}
+
+.showtimes-section h3 {
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--text-bright);
+    border-bottom: 1px solid var(--border-strong);
+    padding-bottom: 12px;
+    margin-bottom: 20px;
+}
+
+.cine-block {
+    background-color: var(--bg-card);
+    border-radius: 4px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.cine-block h4 {
+    margin-top: 0;
+    margin-bottom: 12px;
+    color: var(--accent);
+    font-size: 14px;
+}
+
+#showtimes-container span {
+    background-color: var(--accent) !important;
+    color: #ffffff !important;
+    font-family: monospace;
+    font-size: 12px;
+    padding: 6px 12px !important;
+    border-radius: 3px !important;
+    display: inline-block;
+}
+
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background-color: rgba(255, 255, 255, 0.1); border-radius: 4px; }
+* { scrollbar-width: thin; scrollbar-color: rgba(255,255,255,0.1) transparent; }
+
+.hidden { display: none !important; }
