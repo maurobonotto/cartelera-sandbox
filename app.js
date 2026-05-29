@@ -1,23 +1,7 @@
-// app.js - con orden de días corregido y contadores
+// app.js - con agrupación de horarios corregida y placeholder "ツ"
 
 let peliculas = [];
 let peliculaActualTitulo = "";
-
-// Función auxiliar para ordenar fechas
-function convertirFechaLegible(fechaStr) {
-    const partes = fechaStr.split(' ');
-    if (partes.length < 2) return null;
-    const fechaParte = partes[1];
-    const [dia, mes, anio] = fechaParte.split('/');
-    if (!dia || !mes || !anio) return null;
-    const meses = {
-        'Enero': 0, 'Febrero': 1, 'Marzo': 2, 'Abril': 3, 'Mayo': 4, 'Junio': 5,
-        'Julio': 6, 'Agosto': 7, 'Septiembre': 8, 'Octubre': 9, 'Noviembre': 10, 'Diciembre': 11
-    };
-    const mesNum = meses[mes];
-    if (mesNum === undefined) return null;
-    return new Date(parseInt(anio), mesNum, parseInt(dia));
-}
 
 document.addEventListener("DOMContentLoaded", () => {
     cargarDatos();
@@ -86,7 +70,7 @@ function aplicarFiltrosHome() {
 function actualizarOpcionesFiltrosHome(funcionesValidas) {
     const ciudades = new Set();
     const cines = new Set();
-    const diasMap = new Map(); // ordenado por fecha
+    const diasMap = new Map();
     const horarios = new Set();
 
     funcionesValidas.forEach(f => {
@@ -163,7 +147,7 @@ function mostrarPeliculasHome(listaPeliculas) {
     if (proximosCount) proximosCount.textContent = `(${proximosMap.size})`;
 }
 
-// Placeholder "ツ"
+// Placeholder "ツ" en negrita
 function crearTarjetaPelicula(peli) {
     const tarjeta = document.createElement('div');
     tarjeta.className = 'movie-card';
@@ -318,6 +302,23 @@ function actualizarOpcionesDetalle(funcionesValidas) {
     rellenar(selectHorario, Array.from(horarios).sort(), currentHorario);
 }
 
+// Función auxiliar para convertir fecha legible a Date
+function convertirFechaLegible(fechaStr) {
+    const partes = fechaStr.split(' ');
+    if (partes.length < 2) return null;
+    const fechaParte = partes[1];
+    const [dia, mes, anio] = fechaParte.split('/');
+    if (!dia || !mes || !anio) return null;
+    const meses = {
+        'Enero': 0, 'Febrero': 1, 'Marzo': 2, 'Abril': 3, 'Mayo': 4, 'Junio': 5,
+        'Julio': 6, 'Agosto': 7, 'Septiembre': 8, 'Octubre': 9, 'Noviembre': 10, 'Diciembre': 11
+    };
+    const mesNum = meses[mes];
+    if (mesNum === undefined) return null;
+    return new Date(parseInt(anio), mesNum, parseInt(dia));
+}
+
+// Versión corregida que agrupa horarios por fecha e idioma dentro de cada cine
 function renderizarFuncionesDetalle(funciones, filtroHorario) {
     const contenedor = document.getElementById('showtimes-container');
     contenedor.innerHTML = '';
@@ -336,19 +337,35 @@ function renderizarFuncionesDetalle(funciones, filtroHorario) {
     for (const cine in porCine) {
         const bloque = document.createElement('div');
         bloque.className = 'cine-block';
-        let html = `<h4>${cine} (${porCine[cine][0].ciudad})</h4>`;
+        
+        // Agrupar dentro del mismo cine por fecha e idioma
+        const grupos = new Map();
         porCine[cine].forEach(f => {
-            const horariosMostrar = filtroHorario ? f.horarios.filter(h => h === filtroHorario) : f.horarios;
-            if (horariosMostrar.length === 0) return;
+            const key = `${f.fecha}|${f.idioma}`;
+            if (!grupos.has(key)) {
+                grupos.set(key, { fecha: f.fecha, idioma: f.idioma, horarios: [] });
+            }
+            grupos.get(key).horarios.push(...f.horarios);
+        });
+        
+        let html = `<h4>${cine} (${porCine[cine][0].ciudad})</h4>`;
+        for (const grupo of grupos.values()) {
+            let horariosMostrar = grupo.horarios;
+            if (filtroHorario) {
+                horariosMostrar = horariosMostrar.filter(h => h === filtroHorario);
+            }
+            if (horariosMostrar.length === 0) continue;
+            // Ordenar horarios
+            horariosMostrar.sort();
             html += `
                 <div class="funcion-item">
-                    <div class="funcion-fecha-idioma"><strong>${f.fecha}</strong> · ${f.idioma}</div>
+                    <div class="funcion-fecha-idioma"><strong>${grupo.fecha}</strong> · ${grupo.idioma}</div>
                     <div class="horarios-lista">
                         ${horariosMostrar.map(h => `<span class="horario-tag">${h}</span>`).join('')}
                     </div>
                 </div>
             `;
-        });
+        }
         bloque.innerHTML = html;
         contenedor.appendChild(bloque);
     }

@@ -1208,16 +1208,34 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cosmos_1780031365947_0",
+    "id_funcion": "cosmos_1780032938028_0_ju_1455",
     "titulo": "El desprecio",
     "director": "Jean-Luc Godard",
-    "duracion": "N/A",
+    "duracion": "102",
+    "pais": "Francia",
     "cine": "Cine Cosmos UBA",
     "ciudad": "CABA",
-    "fecha": "Viernes 29/Mayo/2026",
+    "fecha": "Jueves 4/Junio/2026",
     "idioma": "Idioma original con subtítulos",
     "horarios": [
-      "Ju Vi Sá Do Lu Ma Mi | 14:55",
+      "14:55"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://image.tmdb.org/t/p/w500/1sEmVmmQhPfFFdoZWZaMDehCZZ5.jpg",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cosmos_1780032938028_0_ju_1855",
+    "titulo": "El desprecio",
+    "director": "Jean-Luc Godard",
+    "duracion": "102",
+    "pais": "Francia",
+    "cine": "Cine Cosmos UBA",
+    "ciudad": "CABA",
+    "fecha": "Jueves 4/Junio/2026",
+    "idioma": "Idioma original con subtítulos",
+    "horarios": [
       "18:55"
     ],
     "seccion": "cartelera",
@@ -1226,16 +1244,197 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cosmos_1780031366807_1",
-    "titulo": "El conformista",
-    "director": "Bernardo Bertolucci",
-    "duracion": "N/A",
+    "id_funcion": "cosmos_1780032938028_0_vi_1455",
+    "titulo": "El desprecio",
+    "director": "Jean-Luc Godard",
+    "duracion": "102",
+    "pais": "Francia",
     "cine": "Cine Cosmos UBA",
     "ciudad": "CABA",
     "fecha": "Viernes 29/Mayo/2026",
     "idioma": "Idioma original con subtítulos",
     "horarios": [
-      "Ju Vi Sá Do Lu Ma Mi | 16:45"
+      "14:55"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://image.tmdb.org/t/p/w500/1sEmVmmQhPfFFdoZWZaMDehCZZ5.jpg",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cosmos_1780032938028_0_vi_1855",
+    "titulo": "El desprecio",
+    "director": "Jean-Luc Godard",
+    "duracion": "102",
+    "pais": "Francia",
+    "cine": "Cine Cosmos UBA",
+    "ciudad": "CABA",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Idioma original con subtítulos",
+    "horarios": [
+      "18:55"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://image.tmdb.org/t/p/w500/1sEmVmmQhPfFFdoZWZaMDehCZZ5.jpg",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cosmos_1780032938028_0_sá_1455",
+    "titulo": "El desprecio",
+    "director": "Jean-Luc Godard",
+    "duracion": "102",
+    "pais": "Francia",
+    "cine": "Cine Cosmos UBA",
+    "ciudad": "CABA",
+    "fecha": "Sábado 30/Mayo/2026",
+    "idioma": "Idioma original con subtítulos",
+    "horarios": [
+      "14:55"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://image.tmdb.org/t/p/w500/1sEmVmmQhPfFFdoZWZaMDehCZZ5.jpg",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cosmos_1780032938028_0_sá_1855",
+    "titulo": "El desprecio",
+    "director": "Jean-Luc Godard",
+    "duracion": "102",
+    "pais": "Francia",
+    "cine": "Cine Cosmos UBA",
+    "ciudad": "CABA",
+    "fecha": "Sábado 30/Mayo/2026",
+    "idioma": "Idioma original con subtítulos",
+    "horarios": [
+      "18:55"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://image.tmdb.org/t/p/w500/1sEmVmmQhPfFFdoZWZaMDehCZZ5.jpg",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cosmos_1780032938028_0_lu_1455",
+    "titulo": "El desprecio",
+    "director": "Jean-Luc Godard",
+    "duracion": "102",
+    "pais": "Francia",
+    "cine": "Cine Cosmos UBA",
+    "ciudad": "CABA",
+    "fecha": "Lunes 1/Junio/2026",
+    "idioma": "Idioma original con subtítulos",
+    "horarios": [
+      "14:55"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://image.tmdb.org/t/p/w500/1sEmVmmQhPfFFdoZWZaMDehCZZ5.jpg",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cosmos_1780032938028_0_lu_1855",
+    "titulo": "El desprecio",
+    "director": "Jean-Luc Godard",
+    "duracion": "102",
+    "pais": "Francia",
+    "cine": "Cine Cosmos UBA",
+    "ciudad": "CABA",
+    "fecha": "Lunes 1/Junio/2026",
+    "idioma": "Idioma original con subtítulos",
+    "horarios": [
+      "18:55"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://image.tmdb.org/t/p/w500/1sEmVmmQhPfFFdoZWZaMDehCZZ5.jpg",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cosmos_1780032938028_0_ma_1455",
+    "titulo": "El desprecio",
+    "director": "Jean-Luc Godard",
+    "duracion": "102",
+    "pais": "Francia",
+    "cine": "Cine Cosmos UBA",
+    "ciudad": "CABA",
+    "fecha": "Martes 2/Junio/2026",
+    "idioma": "Idioma original con subtítulos",
+    "horarios": [
+      "14:55"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://image.tmdb.org/t/p/w500/1sEmVmmQhPfFFdoZWZaMDehCZZ5.jpg",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cosmos_1780032938028_0_ma_1855",
+    "titulo": "El desprecio",
+    "director": "Jean-Luc Godard",
+    "duracion": "102",
+    "pais": "Francia",
+    "cine": "Cine Cosmos UBA",
+    "ciudad": "CABA",
+    "fecha": "Martes 2/Junio/2026",
+    "idioma": "Idioma original con subtítulos",
+    "horarios": [
+      "18:55"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://image.tmdb.org/t/p/w500/1sEmVmmQhPfFFdoZWZaMDehCZZ5.jpg",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cosmos_1780032938028_0_mi_1455",
+    "titulo": "El desprecio",
+    "director": "Jean-Luc Godard",
+    "duracion": "102",
+    "pais": "Francia",
+    "cine": "Cine Cosmos UBA",
+    "ciudad": "CABA",
+    "fecha": "Miércoles 3/Junio/2026",
+    "idioma": "Idioma original con subtítulos",
+    "horarios": [
+      "14:55"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://image.tmdb.org/t/p/w500/1sEmVmmQhPfFFdoZWZaMDehCZZ5.jpg",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cosmos_1780032938028_0_mi_1855",
+    "titulo": "El desprecio",
+    "director": "Jean-Luc Godard",
+    "duracion": "102",
+    "pais": "Francia",
+    "cine": "Cine Cosmos UBA",
+    "ciudad": "CABA",
+    "fecha": "Miércoles 3/Junio/2026",
+    "idioma": "Idioma original con subtítulos",
+    "horarios": [
+      "18:55"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://image.tmdb.org/t/p/w500/1sEmVmmQhPfFFdoZWZaMDehCZZ5.jpg",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cosmos_1780032939000_1_ju_1645",
+    "titulo": "El conformista",
+    "director": "Bernardo Bertolucci",
+    "duracion": "108",
+    "pais": "Italia",
+    "cine": "Cine Cosmos UBA",
+    "ciudad": "CABA",
+    "fecha": "Jueves 4/Junio/2026",
+    "idioma": "Idioma original con subtítulos",
+    "horarios": [
+      "16:45"
     ],
     "seccion": "cartelera",
     "poster": "https://image.tmdb.org/t/p/w500/1fOtsLKzGAWJA41NmhRB9yNk0z1.jpg",
@@ -1243,16 +1442,107 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cosmos_1780031367633_2",
-    "titulo": "La única opción",
-    "director": "Park Chan-wook",
-    "duracion": "N/A",
+    "id_funcion": "cosmos_1780032939000_1_vi_1645",
+    "titulo": "El conformista",
+    "director": "Bernardo Bertolucci",
+    "duracion": "108",
+    "pais": "Italia",
     "cine": "Cine Cosmos UBA",
     "ciudad": "CABA",
     "fecha": "Viernes 29/Mayo/2026",
     "idioma": "Idioma original con subtítulos",
     "horarios": [
-      "Ju Vi Sá Do Lu Ma Mi | 20:40"
+      "16:45"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://image.tmdb.org/t/p/w500/1fOtsLKzGAWJA41NmhRB9yNk0z1.jpg",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cosmos_1780032939000_1_sá_1645",
+    "titulo": "El conformista",
+    "director": "Bernardo Bertolucci",
+    "duracion": "108",
+    "pais": "Italia",
+    "cine": "Cine Cosmos UBA",
+    "ciudad": "CABA",
+    "fecha": "Sábado 30/Mayo/2026",
+    "idioma": "Idioma original con subtítulos",
+    "horarios": [
+      "16:45"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://image.tmdb.org/t/p/w500/1fOtsLKzGAWJA41NmhRB9yNk0z1.jpg",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cosmos_1780032939000_1_lu_1645",
+    "titulo": "El conformista",
+    "director": "Bernardo Bertolucci",
+    "duracion": "108",
+    "pais": "Italia",
+    "cine": "Cine Cosmos UBA",
+    "ciudad": "CABA",
+    "fecha": "Lunes 1/Junio/2026",
+    "idioma": "Idioma original con subtítulos",
+    "horarios": [
+      "16:45"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://image.tmdb.org/t/p/w500/1fOtsLKzGAWJA41NmhRB9yNk0z1.jpg",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cosmos_1780032939001_1_ma_1645",
+    "titulo": "El conformista",
+    "director": "Bernardo Bertolucci",
+    "duracion": "108",
+    "pais": "Italia",
+    "cine": "Cine Cosmos UBA",
+    "ciudad": "CABA",
+    "fecha": "Martes 2/Junio/2026",
+    "idioma": "Idioma original con subtítulos",
+    "horarios": [
+      "16:45"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://image.tmdb.org/t/p/w500/1fOtsLKzGAWJA41NmhRB9yNk0z1.jpg",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cosmos_1780032939001_1_mi_1645",
+    "titulo": "El conformista",
+    "director": "Bernardo Bertolucci",
+    "duracion": "108",
+    "pais": "Italia",
+    "cine": "Cine Cosmos UBA",
+    "ciudad": "CABA",
+    "fecha": "Miércoles 3/Junio/2026",
+    "idioma": "Idioma original con subtítulos",
+    "horarios": [
+      "16:45"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://image.tmdb.org/t/p/w500/1fOtsLKzGAWJA41NmhRB9yNk0z1.jpg",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cosmos_1780032939769_2_ju_2040",
+    "titulo": "La única opción",
+    "director": "Park Chan-wook",
+    "duracion": "139",
+    "pais": "Crea del Sur",
+    "cine": "Cine Cosmos UBA",
+    "ciudad": "CABA",
+    "fecha": "Jueves 4/Junio/2026",
+    "idioma": "Idioma original con subtítulos",
+    "horarios": [
+      "20:40"
     ],
     "seccion": "cartelera",
     "poster": "https://image.tmdb.org/t/p/w500/xJtG8d6NAGdA8iL0fZqrHweQBUd.jpg",
@@ -1260,16 +1550,124 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cosmos_1780031368271_3",
-    "titulo": "Los años más bellos de una vida",
-    "director": "Claude Lelouch",
-    "duracion": "N/A",
+    "id_funcion": "cosmos_1780032939770_2_vi_2040",
+    "titulo": "La única opción",
+    "director": "Park Chan-wook",
+    "duracion": "139",
+    "pais": "Crea del Sur",
     "cine": "Cine Cosmos UBA",
     "ciudad": "CABA",
     "fecha": "Viernes 29/Mayo/2026",
     "idioma": "Idioma original con subtítulos",
     "horarios": [
-      "Ju Vi Sá Do Lu Ma Mi | 15:10",
+      "20:40"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://image.tmdb.org/t/p/w500/xJtG8d6NAGdA8iL0fZqrHweQBUd.jpg",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cosmos_1780032939770_2_sá_2040",
+    "titulo": "La única opción",
+    "director": "Park Chan-wook",
+    "duracion": "139",
+    "pais": "Crea del Sur",
+    "cine": "Cine Cosmos UBA",
+    "ciudad": "CABA",
+    "fecha": "Sábado 30/Mayo/2026",
+    "idioma": "Idioma original con subtítulos",
+    "horarios": [
+      "20:40"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://image.tmdb.org/t/p/w500/xJtG8d6NAGdA8iL0fZqrHweQBUd.jpg",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cosmos_1780032939770_2_lu_2040",
+    "titulo": "La única opción",
+    "director": "Park Chan-wook",
+    "duracion": "139",
+    "pais": "Crea del Sur",
+    "cine": "Cine Cosmos UBA",
+    "ciudad": "CABA",
+    "fecha": "Lunes 1/Junio/2026",
+    "idioma": "Idioma original con subtítulos",
+    "horarios": [
+      "20:40"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://image.tmdb.org/t/p/w500/xJtG8d6NAGdA8iL0fZqrHweQBUd.jpg",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cosmos_1780032939770_2_ma_2040",
+    "titulo": "La única opción",
+    "director": "Park Chan-wook",
+    "duracion": "139",
+    "pais": "Crea del Sur",
+    "cine": "Cine Cosmos UBA",
+    "ciudad": "CABA",
+    "fecha": "Martes 2/Junio/2026",
+    "idioma": "Idioma original con subtítulos",
+    "horarios": [
+      "20:40"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://image.tmdb.org/t/p/w500/xJtG8d6NAGdA8iL0fZqrHweQBUd.jpg",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cosmos_1780032939770_2_mi_2040",
+    "titulo": "La única opción",
+    "director": "Park Chan-wook",
+    "duracion": "139",
+    "pais": "Crea del Sur",
+    "cine": "Cine Cosmos UBA",
+    "ciudad": "CABA",
+    "fecha": "Miércoles 3/Junio/2026",
+    "idioma": "Idioma original con subtítulos",
+    "horarios": [
+      "20:40"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://image.tmdb.org/t/p/w500/xJtG8d6NAGdA8iL0fZqrHweQBUd.jpg",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cosmos_1780032940385_3_ju_1510",
+    "titulo": "Los años más bellos de una vida",
+    "director": "Claude Lelouch",
+    "duracion": "90",
+    "pais": "Francia",
+    "cine": "Cine Cosmos UBA",
+    "ciudad": "CABA",
+    "fecha": "Jueves 4/Junio/2026",
+    "idioma": "Idioma original con subtítulos",
+    "horarios": [
+      "15:10"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://image.tmdb.org/t/p/w500/cKKMg6c82H9KKPy5gJ89VHmwBOj.jpg",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cosmos_1780032940385_3_ju_1850",
+    "titulo": "Los años más bellos de una vida",
+    "director": "Claude Lelouch",
+    "duracion": "90",
+    "pais": "Francia",
+    "cine": "Cine Cosmos UBA",
+    "ciudad": "CABA",
+    "fecha": "Jueves 4/Junio/2026",
+    "idioma": "Idioma original con subtítulos",
+    "horarios": [
       "18:50"
     ],
     "seccion": "cartelera",
@@ -1278,16 +1676,197 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cosmos_1780031368924_4",
-    "titulo": "Valor sentimental",
-    "director": "Joachim Trier",
-    "duracion": "N/A",
+    "id_funcion": "cosmos_1780032940385_3_vi_1510",
+    "titulo": "Los años más bellos de una vida",
+    "director": "Claude Lelouch",
+    "duracion": "90",
+    "pais": "Francia",
     "cine": "Cine Cosmos UBA",
     "ciudad": "CABA",
     "fecha": "Viernes 29/Mayo/2026",
     "idioma": "Idioma original con subtítulos",
     "horarios": [
-      "Ju Vi Sá Do Lu Ma Mi | 20:30"
+      "15:10"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://image.tmdb.org/t/p/w500/cKKMg6c82H9KKPy5gJ89VHmwBOj.jpg",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cosmos_1780032940385_3_vi_1850",
+    "titulo": "Los años más bellos de una vida",
+    "director": "Claude Lelouch",
+    "duracion": "90",
+    "pais": "Francia",
+    "cine": "Cine Cosmos UBA",
+    "ciudad": "CABA",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Idioma original con subtítulos",
+    "horarios": [
+      "18:50"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://image.tmdb.org/t/p/w500/cKKMg6c82H9KKPy5gJ89VHmwBOj.jpg",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cosmos_1780032940385_3_sá_1510",
+    "titulo": "Los años más bellos de una vida",
+    "director": "Claude Lelouch",
+    "duracion": "90",
+    "pais": "Francia",
+    "cine": "Cine Cosmos UBA",
+    "ciudad": "CABA",
+    "fecha": "Sábado 30/Mayo/2026",
+    "idioma": "Idioma original con subtítulos",
+    "horarios": [
+      "15:10"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://image.tmdb.org/t/p/w500/cKKMg6c82H9KKPy5gJ89VHmwBOj.jpg",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cosmos_1780032940385_3_sá_1850",
+    "titulo": "Los años más bellos de una vida",
+    "director": "Claude Lelouch",
+    "duracion": "90",
+    "pais": "Francia",
+    "cine": "Cine Cosmos UBA",
+    "ciudad": "CABA",
+    "fecha": "Sábado 30/Mayo/2026",
+    "idioma": "Idioma original con subtítulos",
+    "horarios": [
+      "18:50"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://image.tmdb.org/t/p/w500/cKKMg6c82H9KKPy5gJ89VHmwBOj.jpg",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cosmos_1780032940385_3_lu_1510",
+    "titulo": "Los años más bellos de una vida",
+    "director": "Claude Lelouch",
+    "duracion": "90",
+    "pais": "Francia",
+    "cine": "Cine Cosmos UBA",
+    "ciudad": "CABA",
+    "fecha": "Lunes 1/Junio/2026",
+    "idioma": "Idioma original con subtítulos",
+    "horarios": [
+      "15:10"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://image.tmdb.org/t/p/w500/cKKMg6c82H9KKPy5gJ89VHmwBOj.jpg",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cosmos_1780032940385_3_lu_1850",
+    "titulo": "Los años más bellos de una vida",
+    "director": "Claude Lelouch",
+    "duracion": "90",
+    "pais": "Francia",
+    "cine": "Cine Cosmos UBA",
+    "ciudad": "CABA",
+    "fecha": "Lunes 1/Junio/2026",
+    "idioma": "Idioma original con subtítulos",
+    "horarios": [
+      "18:50"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://image.tmdb.org/t/p/w500/cKKMg6c82H9KKPy5gJ89VHmwBOj.jpg",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cosmos_1780032940385_3_ma_1510",
+    "titulo": "Los años más bellos de una vida",
+    "director": "Claude Lelouch",
+    "duracion": "90",
+    "pais": "Francia",
+    "cine": "Cine Cosmos UBA",
+    "ciudad": "CABA",
+    "fecha": "Martes 2/Junio/2026",
+    "idioma": "Idioma original con subtítulos",
+    "horarios": [
+      "15:10"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://image.tmdb.org/t/p/w500/cKKMg6c82H9KKPy5gJ89VHmwBOj.jpg",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cosmos_1780032940385_3_ma_1850",
+    "titulo": "Los años más bellos de una vida",
+    "director": "Claude Lelouch",
+    "duracion": "90",
+    "pais": "Francia",
+    "cine": "Cine Cosmos UBA",
+    "ciudad": "CABA",
+    "fecha": "Martes 2/Junio/2026",
+    "idioma": "Idioma original con subtítulos",
+    "horarios": [
+      "18:50"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://image.tmdb.org/t/p/w500/cKKMg6c82H9KKPy5gJ89VHmwBOj.jpg",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cosmos_1780032940385_3_mi_1510",
+    "titulo": "Los años más bellos de una vida",
+    "director": "Claude Lelouch",
+    "duracion": "90",
+    "pais": "Francia",
+    "cine": "Cine Cosmos UBA",
+    "ciudad": "CABA",
+    "fecha": "Miércoles 3/Junio/2026",
+    "idioma": "Idioma original con subtítulos",
+    "horarios": [
+      "15:10"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://image.tmdb.org/t/p/w500/cKKMg6c82H9KKPy5gJ89VHmwBOj.jpg",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cosmos_1780032940385_3_mi_1850",
+    "titulo": "Los años más bellos de una vida",
+    "director": "Claude Lelouch",
+    "duracion": "90",
+    "pais": "Francia",
+    "cine": "Cine Cosmos UBA",
+    "ciudad": "CABA",
+    "fecha": "Miércoles 3/Junio/2026",
+    "idioma": "Idioma original con subtítulos",
+    "horarios": [
+      "18:50"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://image.tmdb.org/t/p/w500/cKKMg6c82H9KKPy5gJ89VHmwBOj.jpg",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cosmos_1780032940991_4_ju_2030",
+    "titulo": "Valor sentimental",
+    "director": "Joachim Trier",
+    "duracion": "135",
+    "pais": "Noruega",
+    "cine": "Cine Cosmos UBA",
+    "ciudad": "CABA",
+    "fecha": "Jueves 4/Junio/2026",
+    "idioma": "Idioma original con subtítulos",
+    "horarios": [
+      "20:30"
     ],
     "seccion": "cartelera",
     "poster": "https://image.tmdb.org/t/p/w500/s4a3hpTmws0mNLEn0BNBRiX5q3g.jpg",
@@ -1295,16 +1874,197 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cosmos_1780031369579_5",
-    "titulo": "Caso 137",
-    "director": "Dóminik Moll",
-    "duracion": "N/A",
+    "id_funcion": "cosmos_1780032940991_4_vi_2030",
+    "titulo": "Valor sentimental",
+    "director": "Joachim Trier",
+    "duracion": "135",
+    "pais": "Noruega",
     "cine": "Cine Cosmos UBA",
     "ciudad": "CABA",
     "fecha": "Viernes 29/Mayo/2026",
     "idioma": "Idioma original con subtítulos",
     "horarios": [
-      "Ju Vi Sá Do Lu Ma Mi | 16:45"
+      "20:30"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://image.tmdb.org/t/p/w500/s4a3hpTmws0mNLEn0BNBRiX5q3g.jpg",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cosmos_1780032940991_4_sá_2030",
+    "titulo": "Valor sentimental",
+    "director": "Joachim Trier",
+    "duracion": "135",
+    "pais": "Noruega",
+    "cine": "Cine Cosmos UBA",
+    "ciudad": "CABA",
+    "fecha": "Sábado 30/Mayo/2026",
+    "idioma": "Idioma original con subtítulos",
+    "horarios": [
+      "20:30"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://image.tmdb.org/t/p/w500/s4a3hpTmws0mNLEn0BNBRiX5q3g.jpg",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cosmos_1780032940991_4_lu_2030",
+    "titulo": "Valor sentimental",
+    "director": "Joachim Trier",
+    "duracion": "135",
+    "pais": "Noruega",
+    "cine": "Cine Cosmos UBA",
+    "ciudad": "CABA",
+    "fecha": "Lunes 1/Junio/2026",
+    "idioma": "Idioma original con subtítulos",
+    "horarios": [
+      "20:30"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://image.tmdb.org/t/p/w500/s4a3hpTmws0mNLEn0BNBRiX5q3g.jpg",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cosmos_1780032940991_4_ma_2030",
+    "titulo": "Valor sentimental",
+    "director": "Joachim Trier",
+    "duracion": "135",
+    "pais": "Noruega",
+    "cine": "Cine Cosmos UBA",
+    "ciudad": "CABA",
+    "fecha": "Martes 2/Junio/2026",
+    "idioma": "Idioma original con subtítulos",
+    "horarios": [
+      "20:30"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://image.tmdb.org/t/p/w500/s4a3hpTmws0mNLEn0BNBRiX5q3g.jpg",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cosmos_1780032940992_4_mi_2030",
+    "titulo": "Valor sentimental",
+    "director": "Joachim Trier",
+    "duracion": "135",
+    "pais": "Noruega",
+    "cine": "Cine Cosmos UBA",
+    "ciudad": "CABA",
+    "fecha": "Miércoles 3/Junio/2026",
+    "idioma": "Idioma original con subtítulos",
+    "horarios": [
+      "20:30"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://image.tmdb.org/t/p/w500/s4a3hpTmws0mNLEn0BNBRiX5q3g.jpg",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cosmos_1780032941615_5_ju_1645",
+    "titulo": "Caso 137",
+    "director": "Dóminik Moll",
+    "duracion": "115",
+    "pais": "Francia",
+    "cine": "Cine Cosmos UBA",
+    "ciudad": "CABA",
+    "fecha": "Jueves 4/Junio/2026",
+    "idioma": "Idioma original con subtítulos",
+    "horarios": [
+      "16:45"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://image.tmdb.org/t/p/w500/jhRAlfP8cmvUNyop4jttvJ6xtxm.jpg",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cosmos_1780032941615_5_vi_1645",
+    "titulo": "Caso 137",
+    "director": "Dóminik Moll",
+    "duracion": "115",
+    "pais": "Francia",
+    "cine": "Cine Cosmos UBA",
+    "ciudad": "CABA",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Idioma original con subtítulos",
+    "horarios": [
+      "16:45"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://image.tmdb.org/t/p/w500/jhRAlfP8cmvUNyop4jttvJ6xtxm.jpg",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cosmos_1780032941615_5_sá_1645",
+    "titulo": "Caso 137",
+    "director": "Dóminik Moll",
+    "duracion": "115",
+    "pais": "Francia",
+    "cine": "Cine Cosmos UBA",
+    "ciudad": "CABA",
+    "fecha": "Sábado 30/Mayo/2026",
+    "idioma": "Idioma original con subtítulos",
+    "horarios": [
+      "16:45"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://image.tmdb.org/t/p/w500/jhRAlfP8cmvUNyop4jttvJ6xtxm.jpg",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cosmos_1780032941615_5_lu_1645",
+    "titulo": "Caso 137",
+    "director": "Dóminik Moll",
+    "duracion": "115",
+    "pais": "Francia",
+    "cine": "Cine Cosmos UBA",
+    "ciudad": "CABA",
+    "fecha": "Lunes 1/Junio/2026",
+    "idioma": "Idioma original con subtítulos",
+    "horarios": [
+      "16:45"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://image.tmdb.org/t/p/w500/jhRAlfP8cmvUNyop4jttvJ6xtxm.jpg",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cosmos_1780032941616_5_ma_1645",
+    "titulo": "Caso 137",
+    "director": "Dóminik Moll",
+    "duracion": "115",
+    "pais": "Francia",
+    "cine": "Cine Cosmos UBA",
+    "ciudad": "CABA",
+    "fecha": "Martes 2/Junio/2026",
+    "idioma": "Idioma original con subtítulos",
+    "horarios": [
+      "16:45"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://image.tmdb.org/t/p/w500/jhRAlfP8cmvUNyop4jttvJ6xtxm.jpg",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cosmos_1780032941616_5_mi_1645",
+    "titulo": "Caso 137",
+    "director": "Dóminik Moll",
+    "duracion": "115",
+    "pais": "Francia",
+    "cine": "Cine Cosmos UBA",
+    "ciudad": "CABA",
+    "fecha": "Miércoles 3/Junio/2026",
+    "idioma": "Idioma original con subtítulos",
+    "horarios": [
+      "16:45"
     ],
     "seccion": "cartelera",
     "poster": "https://image.tmdb.org/t/p/w500/jhRAlfP8cmvUNyop4jttvJ6xtxm.jpg",
