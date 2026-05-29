@@ -7,7 +7,7 @@ const OUTPUT_FILE = path.join(__dirname, 'peliculas.json');
 const BACKUP_FILE = path.join(__dirname, 'peliculas.backup.json');
 
 // ================= CONFIGURACIÓN DE TMDB =================
-// 🔑 Reemplazá 'TU_API_KEY_AQUI' con la clave que copiaste de TMDB
+// 🔑 Tu API key (ya incluida)
 const TMDB_API_KEY = '62dff612c354dd50dbff40ca176b461c';
 const TMDB_IMAGE_BASE_URL = 'https://image.tmdb.org/t/p/w500';
 // =========================================================
@@ -16,13 +16,11 @@ const MAX_RETRIES = 3;
 const RETRY_DELAY = 5000;
 const wait = (ms) => new Promise(r => setTimeout(r, ms));
 
-// Capitalizar primera letra
 function capitalize(str) {
     if (!str) return '';
     return str.charAt(0).toUpperCase() + str.slice(1);
 }
 
-// Formatear fecha ISO a string legible
 function formatearFecha(isoDate) {
     const date = new Date(isoDate);
     const dias = ['domingo', 'lunes', 'martes', 'miércoles', 'jueves', 'viernes', 'sábado'];
@@ -34,35 +32,50 @@ function formatearFecha(isoDate) {
     return `${diaSemana} ${diaNumero}/${mes}/${anio}`;
 }
 
-// Buscar póster en TMDB usando el título de la película
-async function getPosterFromTMDB(movieTitle) {
-    if (!TMDB_API_KEY || TMDB_API_KEY === 'TU_API_KEY_AQUI') {
-        console.warn('   ⚠️ TMDB_API_KEY no configurada. No se podrán buscar pósteres.');
+// Búsqueda en TMDB con filtros: año, región AR, idioma original español
+async function getPosterFromTMDB(movieTitle, year = null) {
+    if (!TMDB_API_KEY) {
+        console.warn('   ⚠️ TMDB_API_KEY no configurada');
         return '';
     }
     try {
-        const url = `https://api.themoviedb.org/3/search/movie?query=${encodeURIComponent(movieTitle)}&api_key=${TMDB_API_KEY}&language=es`;
+        // Construimos la URL con los parámetros
+        let url = `https://api.themoviedb.org/3/search/movie?query=${encodeURIComponent(movieTitle)}&api_key=${TMDB_API_KEY}&language=es&include_adult=false&region=AR&with_original_language=es`;
+        if (year) {
+            url += `&year=${year}`;
+        }
         const response = await fetch(url);
         if (!response.ok) {
-            console.warn(`   ⚠️ Error ${response.status} al buscar "${movieTitle}" en TMDB`);
+            console.warn(`   ⚠️ Error ${response.status} en TMDB para "${movieTitle}"`);
             return '';
         }
         const data = await response.json();
         if (data.results && data.results.length > 0) {
-            const posterPath = data.results[0].poster_path;
-            if (posterPath) {
-                return `${TMDB_IMAGE_BASE_URL}${posterPath}`;
+            // Filtrar los que tienen póster y ordenar por popularidad
+            const candidates = data.results
+                .filter(m => m.poster_path)
+                .sort((a, b) => b.popularity - a.popularity);
+            
+            let best = null;
+            // Si tenemos año, buscar coincidencia exacta de año de lanzamiento
+            if (year) {
+                best = candidates.find(m => m.release_date && m.release_date.startsWith(year));
+            }
+            if (!best && candidates.length > 0) {
+                best = candidates[0];
+            }
+            if (best && best.poster_path) {
+                return `${TMDB_IMAGE_BASE_URL}${best.poster_path}`;
             }
         }
-        console.warn(`   ⚠️ No se encontró póster en TMDB para: "${movieTitle}"`);
+        console.warn(`   ⚠️ No se encontró póster en TMDB para: "${movieTitle}"${year ? ` (${year})` : ''}`);
         return '';
     } catch (error) {
-        console.error(`   ❌ Error al consultar TMDB para "${movieTitle}": ${error.message}`);
+        console.error(`   ❌ Error al consultar TMDB: ${error.message}`);
         return '';
     }
 }
 
-// Obtener lista de películas desde el slider principal
 async function getMoviesList(page) {
     console.log('📋 Obteniendo lista de películas...');
     await page.goto(BASE_URL, { waitUntil: 'networkidle2', timeout: 45000 });
@@ -83,20 +96,22 @@ async function getMoviesList(page) {
     return movies;
 }
 
-// Extraer detalles de la página individual y la API de horarios
 async function scrapeMovieDetails(page, movie, filmId) {
     console.log(`\n🎬 Procesando: ${movie.titulo}`);
     await page.goto(movie.url, { waitUntil: 'networkidle2', timeout: 30000 });
     await wait(1500);
 
-    // Datos desde la página web
     const details = await page.evaluate(() => {
         const sinopsis = document.querySelector('.movie-info-box .description')?.innerText.trim() || 'Sin sinopsis';
-        const duracionElem = document.querySelector('.movie-info-box .features .year');
+        const yearElem = document.querySelector('.movie-info-box .features .year');
         let duracion = 'N/A';
-        if (duracionElem) {
-            const match = duracionElem.innerText.match(/(\d+)\s*min/);
-            if (match) duracion = match[1];
+        let anio = null;
+        if (yearElem) {
+            const text = yearElem.innerText;
+            const matchDur = text.match(/(\d+)\s*min/);
+            if (matchDur) duracion = matchDur[1];
+            const matchYear = text.match(/\b(19|20)\d{2}\b/);
+            if (matchYear) anio = matchYear[0];
         }
         const trailerElem = document.querySelector('.video-player iframe');
         let linkTrailer = trailerElem ? trailerElem.src : '';
@@ -109,10 +124,10 @@ async function scrapeMovieDetails(page, movie, filmId) {
                 break;
             }
         }
-        return { sinopsis, duracion, director, linkTrailer };
+        return { sinopsis, duracion, anio, director, linkTrailer };
     });
 
-    // Horarios desde la API
+    // Horarios desde la API (sin cambios)
     let funcionesRaw = [];
     try {
         const apiUrl = `https://www.cinegaumont.com.ar/films/${filmId}/tree`;
@@ -147,10 +162,8 @@ async function scrapeMovieDetails(page, movie, filmId) {
         return [];
     }
 
-    // Ordenar por fecha
     funcionesRaw.sort((a, b) => new Date(a.fechaISO) - new Date(b.fechaISO));
     
-    // Agrupar por fecha/cine/idioma
     const grupos = new Map();
     for (const f of funcionesRaw) {
         const key = `${f.fechaLegible}|${f.cine}|${f.idioma}`;
@@ -166,7 +179,6 @@ async function scrapeMovieDetails(page, movie, filmId) {
         grupos.get(key).horarios.push(f.horario);
     }
     
-    // Convertir a formato plano (sin poster aún)
     const funcionesPlanos = Array.from(grupos.values()).map((g, idx) => ({
         id_funcion: `${filmId}_${idx+1}`,
         titulo: movie.titulo,
@@ -178,19 +190,19 @@ async function scrapeMovieDetails(page, movie, filmId) {
         idioma: g.idioma,
         horarios: g.horarios,
         seccion: 'cartelera',
-        poster: '', // se asignará después
+        poster: '',
         sinopsis: details.sinopsis,
         linkTrailer: details.linkTrailer
     }));
     
-    return funcionesPlanos;
+    return { funciones: funcionesPlanos, anio: details.anio };
 }
 
 async function main() {
-    console.log('🚀 SCRAPER GAUMONT + TMDB (con posters)');
+    console.log('🚀 SCRAPER GAUMONT + TMDB (con año, país AR e idioma español)');
     
-    if (!TMDB_API_KEY || TMDB_API_KEY === 'TU_API_KEY_AQUI') {
-        console.error('❌ Error: Debes configurar TMDB_API_KEY en el scraper.');
+    if (!TMDB_API_KEY || TMDB_API_KEY === '') {
+        console.error('❌ Error: TMDB_API_KEY no está definida.');
         return;
     }
 
@@ -207,19 +219,16 @@ async function main() {
                 if (!idMatch) continue;
                 const filmId = parseInt(idMatch[1]);
                 
-                // Obtener funciones (sin poster)
-                const funciones = await scrapeMovieDetails(page, movie, filmId);
+                const { funciones, anio } = await scrapeMovieDetails(page, movie, filmId);
                 
-                // Buscar póster en TMDB (una sola vez por película)
-                console.log(`   🖼️ Buscando póster en TMDB para: ${movie.titulo}`);
-                const posterUrl = await getPosterFromTMDB(movie.titulo);
+                console.log(`   🖼️ Buscando póster en TMDB para: ${movie.titulo}${anio ? ` (${anio})` : ''} [AR, español]`);
+                const posterUrl = await getPosterFromTMDB(movie.titulo, anio);
                 if (posterUrl) {
                     console.log(`   ✅ Póster encontrado.`);
                 } else {
                     console.log(`   ⚠️ No se encontró póster.`);
                 }
                 
-                // Asignar el póster a todas las funciones de esta película
                 const funcionesConPoster = funciones.map(func => ({
                     ...func,
                     poster: posterUrl
@@ -245,7 +254,7 @@ async function main() {
                 try {
                     const backup = await fs.readFile(BACKUP_FILE, 'utf8');
                     await fs.writeFile(OUTPUT_FILE, backup);
-                    console.log(`✅ Se restauró el backup. El frontend usará datos no actualizados.`);
+                    console.log(`✅ Se restauró el backup.`);
                 } catch (backupErr) {
                     console.error('No hay backup disponible.');
                 }
