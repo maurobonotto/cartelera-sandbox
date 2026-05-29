@@ -6,18 +6,16 @@ const BASE_URL = 'https://www.cinegaumont.ar';
 const OUTPUT_FILE = path.join(__dirname, 'peliculas.json');
 const BACKUP_FILE = path.join(__dirname, 'peliculas.backup.json');
 
-// ================= CONFIGURACIÓN DE TMDB =================
+// ================= CONFIGURACIÓN =================
 const TMDB_API_KEY = process.env.TMDB_API_KEY || '62dff612c354dd50dbff40ca176b461c';
 const TMDB_IMAGE_BASE_URL = 'https://image.tmdb.org/t/p/w500';
-// Umbral mínimo de similitud (score) para aceptar un póster. Ajustable.
-const MIN_SIMILARITY_SCORE = 60;
-// =========================================================
-
-// Excepciones manuales: si el título coincide exactamente, se usa este póster
-const MANUAL_POSTERS = {
-    // Ejemplo: "Emi": "https://image.tmdb.org/t/p/w500/abc123.jpg"
-    // Agrega aquí si alguna película sigue fallando
-};
+const MIN_SIMILARITY_SCORE = 70;        // Umbral mínimo (ajustable)
+const POPULARITY_WEIGHT = 0.33;         // Peso reducido (dividir popularidad por 3)
+const SIMILARITY_EXACT = 100;
+const SIMILARITY_PARTIAL = 80;
+const BONUS_YEAR = 100;
+const BONUS_DIRECTOR = 200;
+// ================================================
 
 const MAX_RETRIES = 3;
 const RETRY_DELAY = 5000;
@@ -42,6 +40,7 @@ function formatearFecha(isoDate) {
 
 // Normaliza texto: minúsculas, sin acentos, solo alfanuméricos y espacios
 function normalizarTexto(str) {
+    if (!str) return '';
     return str
         .toLowerCase()
         .normalize('NFD').replace(/[\u0300-\u036f]/g, '')
@@ -50,15 +49,26 @@ function normalizarTexto(str) {
         .replace(/\s+/g, ' ');
 }
 
-// Búsqueda en TMDB con umbral de similitud
-async function getPosterFromTMDB(movieTitle, year = null) {
-    // Verificar excepción manual
-    if (MANUAL_POSTERS[movieTitle]) {
-        console.log(`   📌 Usando póster manual para "${movieTitle}"`);
-        return MANUAL_POSTERS[movieTitle];
+// Obtener director de una película desde TMDB (por ID)
+async function getDirectorFromTMDB(movieId) {
+    try {
+        const url = `https://api.themoviedb.org/3/movie/${movieId}/credits?api_key=${TMDB_API_KEY}`;
+        const response = await fetch(url);
+        if (!response.ok) return null;
+        const data = await response.json();
+        const director = data.crew?.find(member => member.job === 'Director');
+        return director ? normalizarTexto(director.name) : null;
+    } catch (error) {
+        console.error(`   ❌ Error obteniendo director para ID ${movieId}: ${error.message}`);
+        return null;
     }
+}
+
+// Búsqueda en TMDB con todos los criterios
+async function getPosterFromTMDB(movieTitle, year = null, directorName = null) {
     if (!TMDB_API_KEY) return '';
     try {
+        // Construir URL de búsqueda con región e idioma original español
         let url = `https://api.themoviedb.org/3/search/movie?query=${encodeURIComponent(movieTitle)}&api_key=${TMDB_API_KEY}&language=es&include_adult=false&region=AR&with_original_language=es`;
         if (year) {
             url += `&year=${year}`;
@@ -67,29 +77,53 @@ async function getPosterFromTMDB(movieTitle, year = null) {
         if (!response.ok) return '';
         const data = await response.json();
         if (!data.results || data.results.length === 0) return '';
-        
+
         const tituloNormalizado = normalizarTexto(movieTitle);
-        const candidates = data.results
-            .filter(m => m.poster_path)
-            .map(m => {
-                const tmdbTitleNorm = normalizarTexto(m.title);
-                let similarity = 0;
-                if (tmdbTitleNorm === tituloNormalizado) {
-                    similarity = 100;
-                } else if (tmdbTitleNorm.includes(tituloNormalizado) || tituloNormalizado.includes(tmdbTitleNorm)) {
-                    similarity = 80;
+        const directorNormalizado = directorName ? normalizarTexto(directorName) : null;
+
+        // Procesar candidatos (limitamos a los primeros 10 para no sobrecargar)
+        const candidates = [];
+        for (const movie of data.results.slice(0, 10)) {
+            if (!movie.poster_path) continue;
+
+            // Comparar título y original_title
+            const tmdbTitleNorm = normalizarTexto(movie.title);
+            const tmdbOriginalTitleNorm = normalizarTexto(movie.original_title || '');
+            let similarity = 0;
+            if (tmdbTitleNorm === tituloNormalizado || tmdbOriginalTitleNorm === tituloNormalizado) {
+                similarity = SIMILARITY_EXACT;
+            } else if (tmdbTitleNorm.includes(tituloNormalizado) || tituloNormalizado.includes(tmdbTitleNorm) ||
+                       tmdbOriginalTitleNorm.includes(tituloNormalizado) || tituloNormalizado.includes(tmdbOriginalTitleNorm)) {
+                similarity = SIMILARITY_PARTIAL;
+            }
+
+            // Coincidencia de año
+            let yearMatch = false;
+            if (year && movie.release_date) {
+                const releaseYear = movie.release_date.substring(0,4);
+                if (releaseYear === year.toString()) yearMatch = true;
+            }
+
+            // Coincidencia de director (requiere llamada adicional)
+            let directorMatch = false;
+            if (directorNormalizado) {
+                const tmdbDirector = await getDirectorFromTMDB(movie.id);
+                if (tmdbDirector && tmdbDirector === directorNormalizado) {
+                    directorMatch = true;
                 }
-                let yearMatch = false;
-                if (year && m.release_date) {
-                    const releaseYear = m.release_date.substring(0,4);
-                    if (releaseYear === year.toString()) yearMatch = true;
-                }
-                let score = (m.popularity || 0) + similarity;
-                if (yearMatch) score += 100;
-                return { ...m, score };
-            })
-            .sort((a, b) => b.score - a.score);
-        
+            }
+
+            // Calcular score: popularidad reducida + similitud + bonificaciones
+            let score = (movie.popularity || 0) * POPULARITY_WEIGHT + similarity;
+            if (yearMatch) score += BONUS_YEAR;
+            if (directorMatch) score += BONUS_DIRECTOR;
+
+            candidates.push({ ...movie, score });
+        }
+
+        // Ordenar por score descendente
+        candidates.sort((a, b) => b.score - a.score);
+
         if (candidates.length > 0 && candidates[0].score >= MIN_SIMILARITY_SCORE) {
             const best = candidates[0];
             console.log(`   ✅ TMDB: "${best.title}" (${best.release_date ? best.release_date.substring(0,4) : '?'}) score=${Math.round(best.score)}`);
@@ -226,12 +260,12 @@ async function scrapeMovieDetails(page, movie, filmId) {
         linkTrailer: details.linkTrailer
     }));
     
-    return { funciones: funcionesPlanos, anio: details.anio };
+    return { funciones: funcionesPlanos, anio: details.anio, director: details.director };
 }
 
 // ---------- Main ----------
 async function main() {
-    console.log('🚀 SCRAPER GAUMONT + TMDB (con umbral de similitud)');
+    console.log('🚀 SCRAPER GAUMONT + TMDB (con pesos ajustados, original_title y director)');
     
     if (!TMDB_API_KEY || TMDB_API_KEY === '') {
         console.error('❌ Error: TMDB_API_KEY no está definida.');
@@ -251,10 +285,10 @@ async function main() {
                 if (!idMatch) continue;
                 const filmId = parseInt(idMatch[1]);
                 
-                const { funciones, anio } = await scrapeMovieDetails(page, movie, filmId);
+                const { funciones, anio, director } = await scrapeMovieDetails(page, movie, filmId);
                 
-                console.log(`   🖼️ Buscando póster en TMDB para: ${movie.titulo}${anio ? ` (${anio})` : ''}`);
-                const posterUrl = await getPosterFromTMDB(movie.titulo, anio);
+                console.log(`   🖼️ Buscando póster en TMDB para: ${movie.titulo}${anio ? ` (${anio})` : ''} | Director: ${director}`);
+                const posterUrl = await getPosterFromTMDB(movie.titulo, anio, director);
                 if (posterUrl) {
                     console.log(`   ✅ Póster asignado.`);
                 } else {
