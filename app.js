@@ -1,4 +1,4 @@
-// app.js - Simplificado: los filtros se llenan una sola vez y nunca se rellenan dinámicamente
+// app.js - Versión con orden de días desde hoy
 let peliculas = [];
 let peliculaActualTitulo = "";
 
@@ -18,16 +18,88 @@ function cargarDatos() {
         .catch(error => console.error("Error cargando el JSON:", error));
 }
 
+// ================================ NORMALIZACIÓN DE FECHAS ================================
+function parsearFechaLegible(texto) {
+    if (!texto) return null;
+
+    // Formato 1: "Viernes 29/Mayo/2026" (día completo)
+    let match = texto.match(/^[A-Za-záéíóúñ]+ (\d{1,2})\/([A-Za-záéíóú]+)\/(\d{4})$/i);
+    if (match) {
+        const dia = parseInt(match[1]);
+        let mesStr = match[2].toLowerCase();
+        const mesesCompletos = {
+            'enero':0,'febrero':1,'marzo':2,'abril':3,'mayo':4,'junio':5,'julio':6,'agosto':7,'septiembre':8,'octubre':9,'noviembre':10,'diciembre':11
+        };
+        let mes = mesesCompletos[mesStr];
+        if (mes === undefined) {
+            const mesesAbr = { 'ene':0,'feb':1,'mar':2,'abr':3,'may':4,'jun':5,'jul':6,'ago':7,'sep':8,'oct':9,'nov':10,'dic':11 };
+            const abr = mesStr.substring(0,3);
+            mes = mesesAbr[abr];
+        }
+        const anio = parseInt(match[3]);
+        if (!isNaN(dia) && mes !== undefined && !isNaN(anio)) {
+            return new Date(anio, mes, dia);
+        }
+    }
+
+    // Formato 2: "LUN 1/JUN/2026" (día abreviado)
+    match = texto.match(/^[A-Za-z]{3} (\d{1,2})\/([A-Za-z]{3})\/(\d{4})$/i);
+    if (match) {
+        const dia = parseInt(match[1]);
+        const mesAbr = match[2].toUpperCase();
+        const mesesAbr = { 'ENE':0,'FEB':1,'MAR':2,'ABR':3,'MAY':4,'JUN':5,'JUL':6,'AGO':7,'SEP':8,'OCT':9,'NOV':10,'DIC':11 };
+        const mes = mesesAbr[mesAbr];
+        const anio = parseInt(match[3]);
+        if (!isNaN(dia) && mes !== undefined && !isNaN(anio)) {
+            return new Date(anio, mes, dia);
+        }
+    }
+
+    // Formato 3: "2026-05-29" (ISO)
+    match = texto.match(/^(\d{4})-(\d{2})-(\d{2})$/);
+    if (match) {
+        return new Date(parseInt(match[1]), parseInt(match[2])-1, parseInt(match[3]));
+    }
+
+    // Formato 4: "29/5/2026" (día/mes/año)
+    match = texto.match(/^(\d{1,2})\/(\d{1,2})\/(\d{4})$/);
+    if (match) {
+        return new Date(parseInt(match[3]), parseInt(match[2])-1, parseInt(match[1]));
+    }
+
+    console.warn(`⚠️ No se pudo parsear la fecha: ${texto}`);
+    return null;
+}
+
+function ordenarFechasDesdeHoy(fechasMap) {
+    // fechasMap: Map donde clave = string fecha (ej. "LUN 1/JUN/2026"), valor = Date
+    const hoy = new Date();
+    hoy.setHours(0, 0, 0, 0);
+    
+    // Convertir a array y ordenar cronológicamente
+    const entries = Array.from(fechasMap.entries());
+    entries.sort((a, b) => a[1] - b[1]);
+    
+    // Dividir en dos listas: desde hoy hacia adelante, y antes de hoy
+    const desdeHoy = [];
+    const antesHoy = [];
+    for (const [fechaStr, fechaObj] of entries) {
+        if (fechaObj >= hoy) {
+            desdeHoy.push(fechaStr);
+        } else {
+            antesHoy.push(fechaStr);
+        }
+    }
+    // Concatenar: primero desde hoy, luego los anteriores
+    return [...desdeHoy, ...antesHoy];
+}
+
 // ================================ HOME ================================
 function inicializarHome() {
-    // Llenar los filtros UNA SOLA VEZ con todas las opciones de la sección cartelera
     const funcionesCartelera = peliculas.filter(p => p.seccion === "cartelera");
     llenarFiltrosHome(funcionesCartelera);
-    
-    // Mostrar todas las películas (cartelera + próximos)
     mostrarPeliculasHome(peliculas);
 
-    // Agregar event listeners a los filtros
     const filtrosIds = ['home-filter-ciudad', 'home-filter-cine', 'home-filter-dia', 'home-filter-horario'];
     filtrosIds.forEach(id => {
         document.getElementById(id).addEventListener('change', () => aplicarFiltrosHome());
@@ -37,25 +109,25 @@ function inicializarHome() {
 function llenarFiltrosHome(funcionesCartelera) {
     const ciudades = new Set();
     const cines = new Set();
-    const diasMap = new Map();
+    const fechasMap = new Map(); // clave: fechaStr, valor: Date
     const horarios = new Set();
 
     funcionesCartelera.forEach(f => {
         if (f.ciudad) ciudades.add(f.ciudad);
         if (f.cine) cines.add(f.cine);
         if (f.fecha) {
-            const fechaDate = convertirFechaLegible(f.fecha);
-            if (fechaDate) {
-                const iso = fechaDate.toISOString().split('T')[0];
-                diasMap.set(iso, f.fecha);
+            const fechaObj = parsearFechaLegible(f.fecha);
+            if (fechaObj) {
+                fechasMap.set(f.fecha, fechaObj);
             } else {
-                diasMap.set(f.fecha, f.fecha);
+                // fallback: usar el string como clave
+                fechasMap.set(f.fecha, null);
             }
         }
         if (f.horarios) f.horarios.forEach(h => horarios.add(h));
     });
 
-    const diasOrdenados = Array.from(diasMap.keys()).sort().map(iso => diasMap.get(iso));
+    const diasOrdenados = ordenarFechasDesdeHoy(fechasMap);
     const horariosOrdenados = Array.from(horarios).sort();
 
     function llenarSelect(id, valores) {
@@ -82,14 +154,12 @@ function aplicarFiltrosHome() {
     const valDia = document.getElementById('home-filter-dia').value;
     const valHorario = document.getElementById('home-filter-horario').value;
 
-    // Filtrar funciones de cartelera
     let funcionesFiltradas = peliculas.filter(p => p.seccion === "cartelera");
     if (valCiudad) funcionesFiltradas = funcionesFiltradas.filter(p => p.ciudad === valCiudad);
     if (valCine) funcionesFiltradas = funcionesFiltradas.filter(p => p.cine === valCine);
     if (valDia) funcionesFiltradas = funcionesFiltradas.filter(p => p.fecha === valDia);
     if (valHorario) funcionesFiltradas = funcionesFiltradas.filter(p => p.horarios && p.horarios.includes(valHorario));
 
-    // Obtener títulos únicos de cartelera filtrados
     const titulosCartelera = new Set(funcionesFiltradas.map(f => f.titulo));
     const pelisCarteleraUnicas = [];
     const agregados = new Set();
@@ -100,7 +170,6 @@ function aplicarFiltrosHome() {
         }
     }
 
-    // Próximos estrenos siempre se muestran completos (sin filtros)
     const pelisProximosUnicas = [];
     const agregadosProx = new Set();
     for (const p of peliculas) {
@@ -199,21 +268,17 @@ function abrirDetallePelicula(titulo) {
     window.scrollTo(0, 0);
 }
 
-// ========== FILTROS DETALLE SIMPLIFICADOS (sin actualización dinámica) ==========
+// ========== FILTROS DETALLE ==========
 function inicializarFiltrosDetalle() {
-    // Obtener todas las funciones de la película actual
     const todasFunciones = peliculas.filter(p => p.titulo === peliculaActualTitulo);
-    // Llenar los selects con todas las opciones disponibles para esta película
     llenarFiltrosDetalle(todasFunciones);
     
-    // Limpiar valores seleccionados
     const selectsIds = ['detail-filter-ciudad', 'detail-filter-cine', 'detail-filter-dia', 'detail-filter-idioma', 'detail-filter-horario'];
     selectsIds.forEach(id => {
         const select = document.getElementById(id);
         if (select) select.value = "";
     });
     
-    // Agregar event listeners (una sola vez)
     selectsIds.forEach(id => {
         const select = document.getElementById(id);
         if (select) {
@@ -226,7 +291,7 @@ function inicializarFiltrosDetalle() {
 function llenarFiltrosDetalle(funciones) {
     const ciudades = new Set();
     const cines = new Set();
-    const diasMap = new Map();
+    const fechasMap = new Map();
     const idiomas = new Set();
     const horarios = new Set();
 
@@ -234,19 +299,18 @@ function llenarFiltrosDetalle(funciones) {
         if (f.ciudad) ciudades.add(f.ciudad);
         if (f.cine) cines.add(f.cine);
         if (f.fecha) {
-            const fechaDate = convertirFechaLegible(f.fecha);
-            if (fechaDate) {
-                const iso = fechaDate.toISOString().split('T')[0];
-                diasMap.set(iso, f.fecha);
+            const fechaObj = parsearFechaLegible(f.fecha);
+            if (fechaObj) {
+                fechasMap.set(f.fecha, fechaObj);
             } else {
-                diasMap.set(f.fecha, f.fecha);
+                fechasMap.set(f.fecha, null);
             }
         }
         if (f.idioma) idiomas.add(f.idioma);
         if (f.horarios) f.horarios.forEach(h => horarios.add(h));
     });
 
-    const diasOrdenados = Array.from(diasMap.keys()).sort().map(iso => diasMap.get(iso));
+    const diasOrdenados = ordenarFechasDesdeHoy(fechasMap);
     const horariosOrdenados = Array.from(horarios).sort();
 
     function llenarSelect(id, valores) {
@@ -269,14 +333,12 @@ function llenarFiltrosDetalle(funciones) {
 }
 
 function aplicarFiltrosDetalle() {
-    // Obtener valores seleccionados
     const ciudad = document.getElementById('detail-filter-ciudad').value;
     const cine = document.getElementById('detail-filter-cine').value;
     const dia = document.getElementById('detail-filter-dia').value;
     const idioma = document.getElementById('detail-filter-idioma').value;
     const horario = document.getElementById('detail-filter-horario').value;
 
-    // Filtrar funciones de la película actual
     let funcionesFiltradas = peliculas.filter(p => p.titulo === peliculaActualTitulo);
     if (ciudad) funcionesFiltradas = funcionesFiltradas.filter(p => p.ciudad === ciudad);
     if (cine) funcionesFiltradas = funcionesFiltradas.filter(p => p.cine === cine);
@@ -284,22 +346,6 @@ function aplicarFiltrosDetalle() {
     if (idioma) funcionesFiltradas = funcionesFiltradas.filter(p => p.idioma === idioma);
 
     renderizarFuncionesDetalle(funcionesFiltradas, horario);
-}
-// ========== FIN FILTROS DETALLE ==========
-
-function convertirFechaLegible(fechaStr) {
-    const partes = fechaStr.split(' ');
-    if (partes.length < 2) return null;
-    const fechaParte = partes[1];
-    const [dia, mes, anio] = fechaParte.split('/');
-    if (!dia || !mes || !anio) return null;
-    const meses = {
-        'Enero': 0, 'Febrero': 1, 'Marzo': 2, 'Abril': 3, 'Mayo': 4, 'Junio': 5,
-        'Julio': 6, 'Agosto': 7, 'Septiembre': 8, 'Octubre': 9, 'Noviembre': 10, 'Diciembre': 11
-    };
-    const mesNum = meses[mes];
-    if (mesNum === undefined) return null;
-    return new Date(parseInt(anio), mesNum, parseInt(dia));
 }
 
 function renderizarFuncionesDetalle(funciones, filtroHorario) {
@@ -358,12 +404,11 @@ function renderizarFuncionesDetalle(funciones, filtroHorario) {
 // ================================ NAVEGACIÓN GLOBAL ================================
 function configurarNavegacionGlobal() {
     document.getElementById('site-title').addEventListener('click', () => {
-        // Resetear filtros del home
         document.getElementById('home-filter-ciudad').value = "";
         document.getElementById('home-filter-cine').value = "";
         document.getElementById('home-filter-dia').value = "";
         document.getElementById('home-filter-horario').value = "";
-        aplicarFiltrosHome(); // Refrescar home sin filtros
+        aplicarFiltrosHome();
         document.getElementById('detail-view').classList.add('hidden');
         document.getElementById('home-view').classList.remove('hidden');
     });
