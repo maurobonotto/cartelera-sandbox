@@ -1,0 +1,48 @@
+# .github/workflows/update-cartelera.yml
+name: Actualizar Cartelera Gaumont
+
+# Define cuándo se ejecutará este workflow
+on:
+  # Este es el horario programado (cron job)
+  schedule:
+    # Usa cron en formato POSIX. UTC es el timezone.
+    # Esta línea ejecutará el workflow los jueves a las 4:00, 12:00 y 20:00 UTC.
+    # Puedes modificar el cron según necesites. Por ejemplo, para solo las 6, 12 y 18 (UTC-3):
+    # - cron: '0 9,15,21 * * 4'  (9,15,21 UTC = 6,12,18 Argentina)
+    - cron: '0 4,12,20 * * 4' # Jueves a las 4, 12 y 20 UTC
+  # Permite ejecutarlo manualmente desde la pestaña "Actions" de GitHub
+  workflow_dispatch:
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 📥 Clonar el repositorio
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false # Seguridad adicional
+
+      - name: ⚙️ Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20' # Usa la última versión LTS estable
+          cache: 'npm'
+          cache-dependency-path: backend/package-lock.json
+
+      - name: 📦 Instalar dependencias del scraper
+        working-directory: ./backend
+        run: npm ci
+
+      - name: 🕷️ Ejecutar el scraper
+        working-directory: ./backend
+        # Las variables de entorno se crean a partir de los secrets del repositorio
+        env:
+          TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
+        run: node scraper_gaumont.js
+
+      - name: 🚀 Subir los cambios al repositorio
+        # Esta acción subirá los cambios solo si el archivo JSON se modificó
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: actualizar cartelera [skip ci]"
+          file_pattern: backend/peliculas.json backend/peliculas.backup.json
