@@ -2,7 +2,9 @@ name: Actualizar Cartelera Gaumont
 
 on:
   schedule:
+    # Jueves a las 4,12,20 UTC (1,9,17 Argentina)
     - cron: '0 4,12,20 * * 4'
+  # Permite ejecución manual desde la pestaña Actions
   workflow_dispatch:
 
 jobs:
@@ -11,8 +13,7 @@ jobs:
     steps:
       - name: 📥 Clonar el repositorio
         uses: actions/checkout@v5
-        with:
-          token: ${{ secrets.PAT_TOKEN }}
+        # No especificamos token: se usa el GITHUB_TOKEN automático
 
       - name: ⚙️ Configurar Node.js
         uses: actions/setup-node@v5
