@@ -4,14 +4,15 @@ const path = require('path');
 const GAUMONT_FILE = path.join(__dirname, 'peliculas_gaumont.json');
 const COSMOS_FILE = path.join(__dirname, 'peliculas_cosmos.json');
 const CACODELPHIA_FILE = path.join(__dirname, 'peliculas_cacodelphia.json');
+const ATLAS_FILE = path.join(__dirname, 'peliculas_atlas.json');
 const OUTPUT_FILE = path.join(__dirname, 'peliculas.json');
 
-// Normaliza un título: minúsculas, sin acentos, sin caracteres especiales, espacios simples
+// Normaliza un título: minúsculas, sin acentos, sin caracteres especiales
 function normalizarTitulo(titulo) {
     return titulo
         .toLowerCase()
-        .normalize('NFD').replace(/[\u0300-\u036f]/g, '') // elimina acentos
-        .replace(/[^a-z0-9\s]/g, '') // elimina puntuación
+        .normalize('NFD').replace(/[\u0300-\u036f]/g, '')
+        .replace(/[^a-z0-9\s]/g, '')
         .trim()
         .replace(/\s+/g, ' ');
 }
@@ -34,15 +35,15 @@ async function main() {
     const gaumont = await cargarFuente(GAUMONT_FILE, 'Gaumont');
     const cosmos = await cargarFuente(COSMOS_FILE, 'Cosmos');
     const cacodelphia = await cargarFuente(CACODELPHIA_FILE, 'Cacodelphia');
+    const atlas = await cargarFuente(ATLAS_FILE, 'Atlas');
     
-    const todasFunciones = [...gaumont, ...cosmos, ...cacodelphia];
+    const todasFunciones = [...gaumont, ...cosmos, ...cacodelphia, ...atlas];
     
-    // Agrupar por título normalizado
-    const mapa = new Map(); // clave = título normalizado, valor = objeto con título original y lista de funciones
+    // Agrupar por título normalizado para fusionar películas repetidas
+    const mapa = new Map();
     for (const func of todasFunciones) {
         const clave = normalizarTitulo(func.titulo);
         if (!mapa.has(clave)) {
-            // Conservamos el título original más legible (podríamos priorizar Gaumont, pero usamos el que aparece primero)
             mapa.set(clave, {
                 tituloOriginal: func.titulo,
                 funciones: []
@@ -52,15 +53,13 @@ async function main() {
         grupo.funciones.push(func);
     }
     
-    // Reconstruir array de funciones únicas por película, combinando los horarios
+    // Reconstruir array de funciones combinadas
     const resultado = [];
     for (const grupo of mapa.values()) {
-        // Usamos el título original del primer elemento (puede mejorarse)
         const tituloFinal = grupo.tituloOriginal;
-        // Combinar todas las funciones (sin modificar su estructura, solo cambiar título si es necesario)
         const funcionesCombinadas = grupo.funciones.map(f => ({
             ...f,
-            titulo: tituloFinal   // uniformizamos el título
+            titulo: tituloFinal
         }));
         resultado.push(...funcionesCombinadas);
     }
