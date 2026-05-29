@@ -340,6 +340,7 @@ body {
 * { scrollbar-width: thin; scrollbar-color: rgba(255,255,255,0.1) transparent; }
 
 .hidden { display: none !important; }
+
 /* Contenedor de funciones disponibles: mostrar cines en horizontal */
 #showtimes-container {
     display: flex;
@@ -363,4 +364,75 @@ body {
     .cine-block {
         width: 100%;
     }
+}
+
+/* ===== MENÚ HAMBURGUESA CORREGIDO (cuadrado, mayúsculas/negrita, offset) ===== */
+.hamburger-menu {
+    position: relative;
+    display: inline-block;
+    margin-right: 16px;
+    vertical-align: middle;
+}
+
+.menu-toggle {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: var(--text-bright);
+    padding: 0;
+    line-height: 1;
+    transition: opacity 0.2s;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.menu-toggle:hover {
+    opacity: 0.7;
+}
+
+.menu-nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--bg-panel);
+    border: 1px solid var(--border-strong);
+    border-radius: 6px;
+    padding: 8px 0;
+    min-width: 180px;
+    z-index: 300;
+    margin-top: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.menu-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-nav li {
+    margin: 0;
+}
+
+.menu-nav .menu-link {
+    display: block;
+    padding: 10px 16px;
+    color: var(--text-main);
+    text-decoration: none;
+    font-size: 13px;
+    transition: background 0.2s;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.menu-nav .menu-link:hover {
+    background-color: rgba(255,255,255,0.05);
+    color: var(--text-bright);
 }

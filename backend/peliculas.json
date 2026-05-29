@@ -2710,7 +2710,25 @@
     "linkTrailer": "https://youtu.be/nQeJckJxwek?si=0Mr2Jv-Rj5m6_jKW"
   },
   {
-    "id_funcion": "cinemark_Hoyts_DOT_39",
+    "id_funcion": "cinemark_Hoyts_DOT_45",
+    "titulo": "AMARGA NAVIDAD",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Hoyts DOT",
+    "ciudad": "CABA",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada",
+    "horarios": [
+      "14:10",
+      "19:40"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://image.tmdb.org/t/p/w500/ji29dXqoeIsQiVnXAkzI4nzxMjr.jpg",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_Hoyts_DOT_49",
     "titulo": "AMARGA NAVIDAD",
     "director": "No especificado",
     "duracion": "N/A",
@@ -2728,7 +2746,7 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cinemark_Hoyts_DOT_43",
+    "id_funcion": "cinemark_Hoyts_DOT_53",
     "titulo": "AMARGA NAVIDAD",
     "director": "No especificado",
     "duracion": "N/A",
@@ -2746,7 +2764,7 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cinemark_Hoyts_DOT_47",
+    "id_funcion": "cinemark_Hoyts_DOT_57",
     "titulo": "AMARGA NAVIDAD",
     "director": "No especificado",
     "duracion": "N/A",
@@ -2764,7 +2782,7 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cinemark_Hoyts_DOT_51",
+    "id_funcion": "cinemark_Hoyts_DOT_61",
     "titulo": "AMARGA NAVIDAD",
     "director": "No especificado",
     "duracion": "N/A",
@@ -2782,7 +2800,7 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cinemark_Hoyts_DOT_55",
+    "id_funcion": "cinemark_Hoyts_DOT_65",
     "titulo": "AMARGA NAVIDAD",
     "director": "No especificado",
     "duracion": "N/A",
@@ -3214,7 +3232,7 @@
     "duracion": "N/A",
     "cine": "Hoyts Abasto",
     "ciudad": "CABA",
-    "fecha": "Sáb 30/Mayo/2026",
+    "fecha": "Viernes 29/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
       "13:00",
@@ -3234,7 +3252,7 @@
     "duracion": "N/A",
     "cine": "Hoyts Abasto",
     "ciudad": "CABA",
-    "fecha": "Dom 31/Mayo/2026",
+    "fecha": "Sáb 30/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
       "13:00",
@@ -3254,7 +3272,7 @@
     "duracion": "N/A",
     "cine": "Hoyts Abasto",
     "ciudad": "CABA",
-    "fecha": "Lun 1/Junio/2026",
+    "fecha": "Dom 31/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
       "13:00",
@@ -3274,7 +3292,7 @@
     "duracion": "N/A",
     "cine": "Hoyts Abasto",
     "ciudad": "CABA",
-    "fecha": "Mar 2/Junio/2026",
+    "fecha": "Lun 1/Junio/2026",
     "idioma": "Doblada",
     "horarios": [
       "13:00",
@@ -3294,6 +3312,26 @@
     "duracion": "N/A",
     "cine": "Hoyts Abasto",
     "ciudad": "CABA",
+    "fecha": "Mar 2/Junio/2026",
+    "idioma": "Doblada",
+    "horarios": [
+      "13:00",
+      "16:00",
+      "19:00",
+      "22:00"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://www.atlascines.com/images/posters/200_441.jpg",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_Hoyts_Abasto_23",
+    "titulo": "MICHAEL",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Hoyts Abasto",
+    "ciudad": "CABA",
     "fecha": "Mié 3/Junio/2026",
     "idioma": "Doblada",
     "horarios": [
@@ -3308,49 +3346,13 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cinemark_Cinemark_Puerto_Madero_59",
-    "titulo": "MICHAEL",
-    "director": "No especificado",
-    "duracion": "N/A",
-    "cine": "Cinemark Puerto Madero",
-    "ciudad": "CABA",
-    "fecha": "Sáb 30/Mayo/2026",
-    "idioma": "Doblada",
-    "horarios": [
-      "14:10",
-      "19:50"
-    ],
-    "seccion": "cartelera",
-    "poster": "https://www.atlascines.com/images/posters/200_441.jpg",
-    "sinopsis": "Sin sinopsis disponible",
-    "linkTrailer": ""
-  },
-  {
-    "id_funcion": "cinemark_Cinemark_Puerto_Madero_64",
-    "titulo": "MICHAEL",
-    "director": "No especificado",
-    "duracion": "N/A",
-    "cine": "Cinemark Puerto Madero",
-    "ciudad": "CABA",
-    "fecha": "Dom 31/Mayo/2026",
-    "idioma": "Doblada",
-    "horarios": [
-      "14:10",
-      "19:50"
-    ],
-    "seccion": "cartelera",
-    "poster": "https://www.atlascines.com/images/posters/200_441.jpg",
-    "sinopsis": "Sin sinopsis disponible",
-    "linkTrailer": ""
-  },
-  {
     "id_funcion": "cinemark_Cinemark_Puerto_Madero_69",
     "titulo": "MICHAEL",
     "director": "No especificado",
     "duracion": "N/A",
     "cine": "Cinemark Puerto Madero",
     "ciudad": "CABA",
-    "fecha": "Lun 1/Junio/2026",
+    "fecha": "Viernes 29/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
       "14:10",
@@ -3368,7 +3370,7 @@
     "duracion": "N/A",
     "cine": "Cinemark Puerto Madero",
     "ciudad": "CABA",
-    "fecha": "Mar 2/Junio/2026",
+    "fecha": "Sáb 30/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
       "14:10",
@@ -3386,6 +3388,60 @@
     "duracion": "N/A",
     "cine": "Cinemark Puerto Madero",
     "ciudad": "CABA",
+    "fecha": "Dom 31/Mayo/2026",
+    "idioma": "Doblada",
+    "horarios": [
+      "14:10",
+      "19:50"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://www.atlascines.com/images/posters/200_441.jpg",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_Cinemark_Puerto_Madero_84",
+    "titulo": "MICHAEL",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Puerto Madero",
+    "ciudad": "CABA",
+    "fecha": "Lun 1/Junio/2026",
+    "idioma": "Doblada",
+    "horarios": [
+      "14:10",
+      "19:50"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://www.atlascines.com/images/posters/200_441.jpg",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_Cinemark_Puerto_Madero_89",
+    "titulo": "MICHAEL",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Puerto Madero",
+    "ciudad": "CABA",
+    "fecha": "Mar 2/Junio/2026",
+    "idioma": "Doblada",
+    "horarios": [
+      "14:10",
+      "19:50"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://www.atlascines.com/images/posters/200_441.jpg",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_Cinemark_Puerto_Madero_94",
+    "titulo": "MICHAEL",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Puerto Madero",
+    "ciudad": "CABA",
     "fecha": "Mié 3/Junio/2026",
     "idioma": "Doblada",
     "horarios": [
@@ -3398,7 +3454,27 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cinemark_Cinemark_Temperley_153",
+    "id_funcion": "cinemark_Cinemark_Temperley_181",
+    "titulo": "MICHAEL",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Temperley",
+    "ciudad": "Temperley",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada",
+    "horarios": [
+      "13:15",
+      "16:10",
+      "19:10",
+      "22:15"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://www.atlascines.com/images/posters/200_441.jpg",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_Cinemark_Temperley_184",
     "titulo": "MICHAEL",
     "director": "No especificado",
     "duracion": "N/A",
@@ -3418,7 +3494,7 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cinemark_Cinemark_Temperley_156",
+    "id_funcion": "cinemark_Cinemark_Temperley_187",
     "titulo": "MICHAEL",
     "director": "No especificado",
     "duracion": "N/A",
@@ -3438,7 +3514,7 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cinemark_Cinemark_Temperley_159",
+    "id_funcion": "cinemark_Cinemark_Temperley_190",
     "titulo": "MICHAEL",
     "director": "No especificado",
     "duracion": "N/A",
@@ -3458,7 +3534,7 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cinemark_Cinemark_Temperley_162",
+    "id_funcion": "cinemark_Cinemark_Temperley_193",
     "titulo": "MICHAEL",
     "director": "No especificado",
     "duracion": "N/A",
@@ -3478,7 +3554,7 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cinemark_Cinemark_Temperley_165",
+    "id_funcion": "cinemark_Cinemark_Temperley_196",
     "titulo": "MICHAEL",
     "director": "No especificado",
     "duracion": "N/A",
@@ -3498,7 +3574,27 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cinemark_Hoyts_Unicenter_179",
+    "id_funcion": "cinemark_Hoyts_Unicenter_212",
+    "titulo": "MICHAEL",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Hoyts Unicenter",
+    "ciudad": "Martínez",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada",
+    "horarios": [
+      "13:20",
+      "16:20",
+      "22:20",
+      "22:50"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://www.atlascines.com/images/posters/200_441.jpg",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_Hoyts_Unicenter_216",
     "titulo": "MICHAEL",
     "director": "No especificado",
     "duracion": "N/A",
@@ -3518,7 +3614,7 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cinemark_Hoyts_Unicenter_183",
+    "id_funcion": "cinemark_Hoyts_Unicenter_220",
     "titulo": "MICHAEL",
     "director": "No especificado",
     "duracion": "N/A",
@@ -3538,7 +3634,7 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cinemark_Hoyts_Unicenter_187",
+    "id_funcion": "cinemark_Hoyts_Unicenter_224",
     "titulo": "MICHAEL",
     "director": "No especificado",
     "duracion": "N/A",
@@ -3558,7 +3654,7 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cinemark_Hoyts_Unicenter_191",
+    "id_funcion": "cinemark_Hoyts_Unicenter_228",
     "titulo": "MICHAEL",
     "director": "No especificado",
     "duracion": "N/A",
@@ -3578,7 +3674,7 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cinemark_Hoyts_Unicenter_195",
+    "id_funcion": "cinemark_Hoyts_Unicenter_232",
     "titulo": "MICHAEL",
     "director": "No especificado",
     "duracion": "N/A",
@@ -3706,7 +3802,7 @@
     "duracion": "N/A",
     "cine": "Hoyts Abasto",
     "ciudad": "CABA",
-    "fecha": "Sáb 30/Mayo/2026",
+    "fecha": "Viernes 29/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
       "13:20",
@@ -3729,7 +3825,7 @@
     "duracion": "N/A",
     "cine": "Hoyts Abasto",
     "ciudad": "CABA",
-    "fecha": "Dom 31/Mayo/2026",
+    "fecha": "Sáb 30/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
       "00:50",
@@ -3754,7 +3850,7 @@
     "duracion": "N/A",
     "cine": "Hoyts Abasto",
     "ciudad": "CABA",
-    "fecha": "Lun 1/Junio/2026",
+    "fecha": "Dom 31/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
       "13:20",
@@ -3777,7 +3873,7 @@
     "duracion": "N/A",
     "cine": "Hoyts Abasto",
     "ciudad": "CABA",
-    "fecha": "Mar 2/Junio/2026",
+    "fecha": "Lun 1/Junio/2026",
     "idioma": "Doblada",
     "horarios": [
       "13:20",
@@ -3800,7 +3896,7 @@
     "duracion": "N/A",
     "cine": "Hoyts Abasto",
     "ciudad": "CABA",
-    "fecha": "Mié 3/Junio/2026",
+    "fecha": "Mar 2/Junio/2026",
     "idioma": "Doblada",
     "horarios": [
       "13:20",
@@ -3816,31 +3912,13 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cinemark_Cinemark_Caballito_22",
-    "titulo": "EL DIABLO VISTE A LA MODA 2",
-    "director": "No especificado",
-    "duracion": "N/A",
-    "cine": "Cinemark Caballito",
-    "ciudad": "CABA",
-    "fecha": "Sáb 30/Mayo/2026",
-    "idioma": "Doblada",
-    "horarios": [
-      "14:25",
-      "17:10"
-    ],
-    "seccion": "cartelera",
-    "poster": "https://www.atlascines.com/images/posters/200_446.jpg",
-    "sinopsis": "Sin sinopsis disponible",
-    "linkTrailer": ""
-  },
-  {
     "id_funcion": "cinemark_Cinemark_Caballito_25",
     "titulo": "EL DIABLO VISTE A LA MODA 2",
     "director": "No especificado",
     "duracion": "N/A",
     "cine": "Cinemark Caballito",
     "ciudad": "CABA",
-    "fecha": "Dom 31/Mayo/2026",
+    "fecha": "Viernes 29/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
       "14:25",
@@ -3858,7 +3936,7 @@
     "duracion": "N/A",
     "cine": "Cinemark Caballito",
     "ciudad": "CABA",
-    "fecha": "Lun 1/Junio/2026",
+    "fecha": "Sáb 30/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
       "14:25",
@@ -3876,7 +3954,7 @@
     "duracion": "N/A",
     "cine": "Cinemark Caballito",
     "ciudad": "CABA",
-    "fecha": "Mar 2/Junio/2026",
+    "fecha": "Dom 31/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
       "14:25",
@@ -3894,6 +3972,42 @@
     "duracion": "N/A",
     "cine": "Cinemark Caballito",
     "ciudad": "CABA",
+    "fecha": "Lun 1/Junio/2026",
+    "idioma": "Doblada",
+    "horarios": [
+      "14:25",
+      "17:10"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://www.atlascines.com/images/posters/200_446.jpg",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_Cinemark_Caballito_37",
+    "titulo": "EL DIABLO VISTE A LA MODA 2",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Caballito",
+    "ciudad": "CABA",
+    "fecha": "Mar 2/Junio/2026",
+    "idioma": "Doblada",
+    "horarios": [
+      "14:25",
+      "17:10"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://www.atlascines.com/images/posters/200_446.jpg",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_Cinemark_Caballito_40",
+    "titulo": "EL DIABLO VISTE A LA MODA 2",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Caballito",
+    "ciudad": "CABA",
     "fecha": "Mié 3/Junio/2026",
     "idioma": "Doblada",
     "horarios": [
@@ -3906,7 +4020,29 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cinemark_Hoyts_DOT_37",
+    "id_funcion": "cinemark_Hoyts_DOT_43",
+    "titulo": "EL DIABLO VISTE A LA MODA 2",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Hoyts DOT",
+    "ciudad": "CABA",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada",
+    "horarios": [
+      "13:00",
+      "15:50",
+      "17:00",
+      "18:30",
+      "21:30",
+      "22:20"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://www.atlascines.com/images/posters/200_446.jpg",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_Hoyts_DOT_47",
     "titulo": "EL DIABLO VISTE A LA MODA 2",
     "director": "No especificado",
     "duracion": "N/A",
@@ -3928,7 +4064,7 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cinemark_Hoyts_DOT_41",
+    "id_funcion": "cinemark_Hoyts_DOT_51",
     "titulo": "EL DIABLO VISTE A LA MODA 2",
     "director": "No especificado",
     "duracion": "N/A",
@@ -3950,7 +4086,7 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cinemark_Hoyts_DOT_45",
+    "id_funcion": "cinemark_Hoyts_DOT_55",
     "titulo": "EL DIABLO VISTE A LA MODA 2",
     "director": "No especificado",
     "duracion": "N/A",
@@ -3972,7 +4108,7 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cinemark_Hoyts_DOT_49",
+    "id_funcion": "cinemark_Hoyts_DOT_59",
     "titulo": "EL DIABLO VISTE A LA MODA 2",
     "director": "No especificado",
     "duracion": "N/A",
@@ -3994,7 +4130,7 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cinemark_Hoyts_DOT_53",
+    "id_funcion": "cinemark_Hoyts_DOT_63",
     "titulo": "EL DIABLO VISTE A LA MODA 2",
     "director": "No especificado",
     "duracion": "N/A",
@@ -4016,51 +4152,13 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cinemark_Cinemark_Puerto_Madero_57",
-    "titulo": "EL DIABLO VISTE A LA MODA 2",
-    "director": "No especificado",
-    "duracion": "N/A",
-    "cine": "Cinemark Puerto Madero",
-    "ciudad": "CABA",
-    "fecha": "Sáb 30/Mayo/2026",
-    "idioma": "Doblada",
-    "horarios": [
-      "14:00",
-      "16:40",
-      "22:00"
-    ],
-    "seccion": "cartelera",
-    "poster": "https://www.atlascines.com/images/posters/200_446.jpg",
-    "sinopsis": "Sin sinopsis disponible",
-    "linkTrailer": ""
-  },
-  {
-    "id_funcion": "cinemark_Cinemark_Puerto_Madero_62",
-    "titulo": "EL DIABLO VISTE A LA MODA 2",
-    "director": "No especificado",
-    "duracion": "N/A",
-    "cine": "Cinemark Puerto Madero",
-    "ciudad": "CABA",
-    "fecha": "Dom 31/Mayo/2026",
-    "idioma": "Doblada",
-    "horarios": [
-      "14:00",
-      "16:40",
-      "22:00"
-    ],
-    "seccion": "cartelera",
-    "poster": "https://www.atlascines.com/images/posters/200_446.jpg",
-    "sinopsis": "Sin sinopsis disponible",
-    "linkTrailer": ""
-  },
-  {
     "id_funcion": "cinemark_Cinemark_Puerto_Madero_67",
     "titulo": "EL DIABLO VISTE A LA MODA 2",
     "director": "No especificado",
     "duracion": "N/A",
     "cine": "Cinemark Puerto Madero",
     "ciudad": "CABA",
-    "fecha": "Lun 1/Junio/2026",
+    "fecha": "Viernes 29/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
       "14:00",
@@ -4079,7 +4177,7 @@
     "duracion": "N/A",
     "cine": "Cinemark Puerto Madero",
     "ciudad": "CABA",
-    "fecha": "Mar 2/Junio/2026",
+    "fecha": "Sáb 30/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
       "14:00",
@@ -4098,6 +4196,63 @@
     "duracion": "N/A",
     "cine": "Cinemark Puerto Madero",
     "ciudad": "CABA",
+    "fecha": "Dom 31/Mayo/2026",
+    "idioma": "Doblada",
+    "horarios": [
+      "14:00",
+      "16:40",
+      "22:00"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://www.atlascines.com/images/posters/200_446.jpg",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_Cinemark_Puerto_Madero_82",
+    "titulo": "EL DIABLO VISTE A LA MODA 2",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Puerto Madero",
+    "ciudad": "CABA",
+    "fecha": "Lun 1/Junio/2026",
+    "idioma": "Doblada",
+    "horarios": [
+      "14:00",
+      "16:40",
+      "22:00"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://www.atlascines.com/images/posters/200_446.jpg",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_Cinemark_Puerto_Madero_87",
+    "titulo": "EL DIABLO VISTE A LA MODA 2",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Puerto Madero",
+    "ciudad": "CABA",
+    "fecha": "Mar 2/Junio/2026",
+    "idioma": "Doblada",
+    "horarios": [
+      "14:00",
+      "16:40",
+      "22:00"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://www.atlascines.com/images/posters/200_446.jpg",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_Cinemark_Puerto_Madero_92",
+    "titulo": "EL DIABLO VISTE A LA MODA 2",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Puerto Madero",
+    "ciudad": "CABA",
     "fecha": "Mié 3/Junio/2026",
     "idioma": "Doblada",
     "horarios": [
@@ -4111,7 +4266,28 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cinemark_Cinemark_Quilmes_127",
+    "id_funcion": "cinemark_Cinemark_Quilmes_150",
+    "titulo": "EL DIABLO VISTE A LA MODA 2",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Quilmes",
+    "ciudad": "Quilmes",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada",
+    "horarios": [
+      "13:40",
+      "16:20",
+      "17:00",
+      "21:40",
+      "22:40"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://www.atlascines.com/images/posters/200_446.jpg",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_Cinemark_Quilmes_153",
     "titulo": "EL DIABLO VISTE A LA MODA 2",
     "director": "No especificado",
     "duracion": "N/A",
@@ -4132,7 +4308,7 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cinemark_Cinemark_Quilmes_130",
+    "id_funcion": "cinemark_Cinemark_Quilmes_156",
     "titulo": "EL DIABLO VISTE A LA MODA 2",
     "director": "No especificado",
     "duracion": "N/A",
@@ -4153,7 +4329,7 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cinemark_Cinemark_Quilmes_133",
+    "id_funcion": "cinemark_Cinemark_Quilmes_159",
     "titulo": "EL DIABLO VISTE A LA MODA 2",
     "director": "No especificado",
     "duracion": "N/A",
@@ -4174,7 +4350,7 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cinemark_Cinemark_Quilmes_136",
+    "id_funcion": "cinemark_Cinemark_Quilmes_162",
     "titulo": "EL DIABLO VISTE A LA MODA 2",
     "director": "No especificado",
     "duracion": "N/A",
@@ -4195,7 +4371,7 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cinemark_Cinemark_Quilmes_139",
+    "id_funcion": "cinemark_Cinemark_Quilmes_165",
     "titulo": "EL DIABLO VISTE A LA MODA 2",
     "director": "No especificado",
     "duracion": "N/A",
@@ -4216,13 +4392,13 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cinemark_Hoyts_Unicenter_177",
+    "id_funcion": "cinemark_Hoyts_Unicenter_210",
     "titulo": "EL DIABLO VISTE A LA MODA 2",
     "director": "No especificado",
     "duracion": "N/A",
     "cine": "Hoyts Unicenter",
     "ciudad": "Martínez",
-    "fecha": "Sáb 30/Mayo/2026",
+    "fecha": "Viernes 29/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
       "13:00",
@@ -4240,13 +4416,13 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cinemark_Hoyts_Unicenter_181",
+    "id_funcion": "cinemark_Hoyts_Unicenter_214",
     "titulo": "EL DIABLO VISTE A LA MODA 2",
     "director": "No especificado",
     "duracion": "N/A",
     "cine": "Hoyts Unicenter",
     "ciudad": "Martínez",
-    "fecha": "Dom 31/Mayo/2026",
+    "fecha": "Sáb 30/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
       "13:00",
@@ -4265,7 +4441,31 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cinemark_Hoyts_Unicenter_185",
+    "id_funcion": "cinemark_Hoyts_Unicenter_218",
+    "titulo": "EL DIABLO VISTE A LA MODA 2",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Hoyts Unicenter",
+    "ciudad": "Martínez",
+    "fecha": "Dom 31/Mayo/2026",
+    "idioma": "Doblada",
+    "horarios": [
+      "13:00",
+      "13:15",
+      "15:40",
+      "16:00",
+      "18:20",
+      "18:50",
+      "21:00",
+      "21:40"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://www.atlascines.com/images/posters/200_446.jpg",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_Hoyts_Unicenter_222",
     "titulo": "EL DIABLO VISTE A LA MODA 2",
     "director": "No especificado",
     "duracion": "N/A",
@@ -4289,7 +4489,7 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cinemark_Hoyts_Unicenter_189",
+    "id_funcion": "cinemark_Hoyts_Unicenter_226",
     "titulo": "EL DIABLO VISTE A LA MODA 2",
     "director": "No especificado",
     "duracion": "N/A",
@@ -4313,7 +4513,7 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cinemark_Hoyts_Unicenter_193",
+    "id_funcion": "cinemark_Hoyts_Unicenter_230",
     "titulo": "EL DIABLO VISTE A LA MODA 2",
     "director": "No especificado",
     "duracion": "N/A",
@@ -4323,13 +4523,13 @@
     "idioma": "Doblada",
     "horarios": [
       "13:00",
-      "13:15",
+      "14:10",
       "15:40",
-      "16:00",
+      "17:00",
       "18:20",
-      "18:50",
+      "19:50",
       "21:00",
-      "21:40"
+      "22:45"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_446.jpg",
@@ -4558,51 +4758,13 @@
     "linkTrailer": "https://youtu.be/cK-LH2I-oMk?si=xv4TSlTDokNRMW4m"
   },
   {
-    "id_funcion": "cinemark_Cinemark_Puerto_Madero_60",
-    "titulo": "OBSESIÓN",
-    "director": "No especificado",
-    "duracion": "N/A",
-    "cine": "Cinemark Puerto Madero",
-    "ciudad": "CABA",
-    "fecha": "Sáb 30/Mayo/2026",
-    "idioma": "Doblada",
-    "horarios": [
-      "14:50",
-      "17:20",
-      "22:20"
-    ],
-    "seccion": "cartelera",
-    "poster": "https://www.atlascines.com/images/posters/200_470.jpg",
-    "sinopsis": "Sin sinopsis disponible",
-    "linkTrailer": ""
-  },
-  {
-    "id_funcion": "cinemark_Cinemark_Puerto_Madero_65",
-    "titulo": "OBSESIÓN",
-    "director": "No especificado",
-    "duracion": "N/A",
-    "cine": "Cinemark Puerto Madero",
-    "ciudad": "CABA",
-    "fecha": "Dom 31/Mayo/2026",
-    "idioma": "Doblada",
-    "horarios": [
-      "14:50",
-      "17:20",
-      "22:20"
-    ],
-    "seccion": "cartelera",
-    "poster": "https://www.atlascines.com/images/posters/200_470.jpg",
-    "sinopsis": "Sin sinopsis disponible",
-    "linkTrailer": ""
-  },
-  {
     "id_funcion": "cinemark_Cinemark_Puerto_Madero_70",
     "titulo": "OBSESIÓN",
     "director": "No especificado",
     "duracion": "N/A",
     "cine": "Cinemark Puerto Madero",
     "ciudad": "CABA",
-    "fecha": "Lun 1/Junio/2026",
+    "fecha": "Viernes 29/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
       "14:50",
@@ -4621,7 +4783,7 @@
     "duracion": "N/A",
     "cine": "Cinemark Puerto Madero",
     "ciudad": "CABA",
-    "fecha": "Mar 2/Junio/2026",
+    "fecha": "Sáb 30/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
       "14:50",
@@ -4640,7 +4802,45 @@
     "duracion": "N/A",
     "cine": "Cinemark Puerto Madero",
     "ciudad": "CABA",
-    "fecha": "Mié 3/Junio/2026",
+    "fecha": "Dom 31/Mayo/2026",
+    "idioma": "Doblada",
+    "horarios": [
+      "14:50",
+      "17:20",
+      "22:20"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://www.atlascines.com/images/posters/200_470.jpg",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_Cinemark_Puerto_Madero_85",
+    "titulo": "OBSESIÓN",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Puerto Madero",
+    "ciudad": "CABA",
+    "fecha": "Lun 1/Junio/2026",
+    "idioma": "Doblada",
+    "horarios": [
+      "14:50",
+      "17:20",
+      "22:20"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://www.atlascines.com/images/posters/200_470.jpg",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_Cinemark_Puerto_Madero_90",
+    "titulo": "OBSESIÓN",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Puerto Madero",
+    "ciudad": "CABA",
+    "fecha": "Mar 2/Junio/2026",
     "idioma": "Doblada",
     "horarios": [
       "14:50",
@@ -4795,7 +4995,7 @@
     "duracion": "N/A",
     "cine": "Hoyts Abasto",
     "ciudad": "CABA",
-    "fecha": "Sáb 30/Mayo/2026",
+    "fecha": "Viernes 29/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
       "12:30",
@@ -4820,7 +5020,7 @@
     "duracion": "N/A",
     "cine": "Hoyts Abasto",
     "ciudad": "CABA",
-    "fecha": "Dom 31/Mayo/2026",
+    "fecha": "Sáb 30/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
       "00:30",
@@ -4847,7 +5047,7 @@
     "duracion": "N/A",
     "cine": "Hoyts Abasto",
     "ciudad": "CABA",
-    "fecha": "Lun 1/Junio/2026",
+    "fecha": "Dom 31/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
       "12:30",
@@ -4872,7 +5072,7 @@
     "duracion": "N/A",
     "cine": "Hoyts Abasto",
     "ciudad": "CABA",
-    "fecha": "Mar 2/Junio/2026",
+    "fecha": "Lun 1/Junio/2026",
     "idioma": "Doblada",
     "horarios": [
       "12:30",
@@ -4897,6 +5097,31 @@
     "duracion": "N/A",
     "cine": "Hoyts Abasto",
     "ciudad": "CABA",
+    "fecha": "Mar 2/Junio/2026",
+    "idioma": "Doblada",
+    "horarios": [
+      "12:30",
+      "14:10",
+      "15:00",
+      "16:40",
+      "17:40",
+      "19:20",
+      "20:20",
+      "22:00",
+      "23:00"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://www.atlascines.com/images/posters/200_479.jpg",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_Hoyts_Abasto_21",
+    "titulo": "BACKROOMS",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Hoyts Abasto",
+    "ciudad": "CABA",
     "fecha": "Mié 3/Junio/2026",
     "idioma": "Doblada",
     "horarios": [
@@ -4916,31 +5141,13 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cinemark_Cinemark_Caballito_21",
-    "titulo": "BACKROOMS",
-    "director": "No especificado",
-    "duracion": "N/A",
-    "cine": "Cinemark Caballito",
-    "ciudad": "CABA",
-    "fecha": "Sáb 30/Mayo/2026",
-    "idioma": "Doblada",
-    "horarios": [
-      "12:30",
-      "17:30"
-    ],
-    "seccion": "cartelera",
-    "poster": "https://www.atlascines.com/images/posters/200_479.jpg",
-    "sinopsis": "Sin sinopsis disponible",
-    "linkTrailer": ""
-  },
-  {
     "id_funcion": "cinemark_Cinemark_Caballito_24",
     "titulo": "BACKROOMS",
     "director": "No especificado",
     "duracion": "N/A",
     "cine": "Cinemark Caballito",
     "ciudad": "CABA",
-    "fecha": "Dom 31/Mayo/2026",
+    "fecha": "Viernes 29/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
       "12:30",
@@ -4958,7 +5165,7 @@
     "duracion": "N/A",
     "cine": "Cinemark Caballito",
     "ciudad": "CABA",
-    "fecha": "Lun 1/Junio/2026",
+    "fecha": "Sáb 30/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
       "12:30",
@@ -4976,7 +5183,7 @@
     "duracion": "N/A",
     "cine": "Cinemark Caballito",
     "ciudad": "CABA",
-    "fecha": "Mar 2/Junio/2026",
+    "fecha": "Dom 31/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
       "12:30",
@@ -4994,6 +5201,42 @@
     "duracion": "N/A",
     "cine": "Cinemark Caballito",
     "ciudad": "CABA",
+    "fecha": "Lun 1/Junio/2026",
+    "idioma": "Doblada",
+    "horarios": [
+      "12:30",
+      "17:30"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://www.atlascines.com/images/posters/200_479.jpg",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_Cinemark_Caballito_36",
+    "titulo": "BACKROOMS",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Caballito",
+    "ciudad": "CABA",
+    "fecha": "Mar 2/Junio/2026",
+    "idioma": "Doblada",
+    "horarios": [
+      "12:30",
+      "17:30"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://www.atlascines.com/images/posters/200_479.jpg",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_Cinemark_Caballito_39",
+    "titulo": "BACKROOMS",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Caballito",
+    "ciudad": "CABA",
     "fecha": "Mié 3/Junio/2026",
     "idioma": "Doblada",
     "horarios": [
@@ -5006,7 +5249,33 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cinemark_Hoyts_DOT_36",
+    "id_funcion": "cinemark_Hoyts_DOT_42",
+    "titulo": "BACKROOMS",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Hoyts DOT",
+    "ciudad": "CABA",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada",
+    "horarios": [
+      "12:20",
+      "12:30",
+      "14:50",
+      "15:10",
+      "17:20",
+      "17:50",
+      "19:50",
+      "20:25",
+      "22:30",
+      "23:00"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://www.atlascines.com/images/posters/200_479.jpg",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_Hoyts_DOT_46",
     "titulo": "BACKROOMS",
     "director": "No especificado",
     "duracion": "N/A",
@@ -5021,7 +5290,9 @@
       "15:10",
       "17:20",
       "17:50",
+      "19:50",
       "20:25",
+      "22:30",
       "23:00"
     ],
     "seccion": "cartelera",
@@ -5030,7 +5301,7 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cinemark_Hoyts_DOT_40",
+    "id_funcion": "cinemark_Hoyts_DOT_50",
     "titulo": "BACKROOMS",
     "director": "No especificado",
     "duracion": "N/A",
@@ -5047,6 +5318,7 @@
       "17:50",
       "19:50",
       "20:25",
+      "22:30",
       "23:00"
     ],
     "seccion": "cartelera",
@@ -5055,7 +5327,7 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cinemark_Hoyts_DOT_44",
+    "id_funcion": "cinemark_Hoyts_DOT_54",
     "titulo": "BACKROOMS",
     "director": "No especificado",
     "duracion": "N/A",
@@ -5068,9 +5340,7 @@
       "12:30",
       "14:50",
       "15:10",
-      "17:20",
       "17:50",
-      "19:50",
       "20:25",
       "22:30",
       "23:00"
@@ -5081,37 +5351,13 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cinemark_Hoyts_DOT_48",
+    "id_funcion": "cinemark_Hoyts_DOT_58",
     "titulo": "BACKROOMS",
     "director": "No especificado",
     "duracion": "N/A",
     "cine": "Hoyts DOT",
     "ciudad": "CABA",
     "fecha": "Mar 2/Junio/2026",
-    "idioma": "Doblada",
-    "horarios": [
-      "12:20",
-      "12:30",
-      "14:50",
-      "15:10",
-      "17:50",
-      "20:25",
-      "22:30",
-      "23:00"
-    ],
-    "seccion": "cartelera",
-    "poster": "https://www.atlascines.com/images/posters/200_479.jpg",
-    "sinopsis": "Sin sinopsis disponible",
-    "linkTrailer": ""
-  },
-  {
-    "id_funcion": "cinemark_Hoyts_DOT_52",
-    "titulo": "BACKROOMS",
-    "director": "No especificado",
-    "duracion": "N/A",
-    "cine": "Hoyts DOT",
-    "ciudad": "CABA",
-    "fecha": "Mié 3/Junio/2026",
     "idioma": "Doblada",
     "horarios": [
       "12:00",
@@ -5130,37 +5376,25 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cinemark_Cinemark_Puerto_Madero_56",
+    "id_funcion": "cinemark_Hoyts_DOT_62",
     "titulo": "BACKROOMS",
     "director": "No especificado",
     "duracion": "N/A",
-    "cine": "Cinemark Puerto Madero",
+    "cine": "Hoyts DOT",
     "ciudad": "CABA",
-    "fecha": "Sáb 30/Mayo/2026",
+    "fecha": "Mié 3/Junio/2026",
     "idioma": "Doblada",
     "horarios": [
-      "15:00",
-      "20:30",
-      "22:30"
-    ],
-    "seccion": "cartelera",
-    "poster": "https://www.atlascines.com/images/posters/200_479.jpg",
-    "sinopsis": "Sin sinopsis disponible",
-    "linkTrailer": ""
-  },
-  {
-    "id_funcion": "cinemark_Cinemark_Puerto_Madero_61",
-    "titulo": "BACKROOMS",
-    "director": "No especificado",
-    "duracion": "N/A",
-    "cine": "Cinemark Puerto Madero",
-    "ciudad": "CABA",
-    "fecha": "Dom 31/Mayo/2026",
-    "idioma": "Doblada",
-    "horarios": [
-      "15:00",
-      "20:30",
-      "22:30"
+      "12:20",
+      "12:30",
+      "14:50",
+      "15:10",
+      "17:20",
+      "17:50",
+      "19:50",
+      "20:25",
+      "22:30",
+      "23:00"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_479.jpg",
@@ -5174,7 +5408,7 @@
     "duracion": "N/A",
     "cine": "Cinemark Puerto Madero",
     "ciudad": "CABA",
-    "fecha": "Lun 1/Junio/2026",
+    "fecha": "Viernes 29/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
       "15:00",
@@ -5193,7 +5427,7 @@
     "duracion": "N/A",
     "cine": "Cinemark Puerto Madero",
     "ciudad": "CABA",
-    "fecha": "Mar 2/Junio/2026",
+    "fecha": "Sáb 30/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
       "15:00",
@@ -5212,6 +5446,63 @@
     "duracion": "N/A",
     "cine": "Cinemark Puerto Madero",
     "ciudad": "CABA",
+    "fecha": "Dom 31/Mayo/2026",
+    "idioma": "Doblada",
+    "horarios": [
+      "15:00",
+      "20:30",
+      "22:30"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://www.atlascines.com/images/posters/200_479.jpg",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_Cinemark_Puerto_Madero_81",
+    "titulo": "BACKROOMS",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Puerto Madero",
+    "ciudad": "CABA",
+    "fecha": "Lun 1/Junio/2026",
+    "idioma": "Doblada",
+    "horarios": [
+      "15:00",
+      "20:30",
+      "22:30"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://www.atlascines.com/images/posters/200_479.jpg",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_Cinemark_Puerto_Madero_86",
+    "titulo": "BACKROOMS",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Puerto Madero",
+    "ciudad": "CABA",
+    "fecha": "Mar 2/Junio/2026",
+    "idioma": "Doblada",
+    "horarios": [
+      "15:00",
+      "20:30",
+      "22:30"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://www.atlascines.com/images/posters/200_479.jpg",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_Cinemark_Puerto_Madero_91",
+    "titulo": "BACKROOMS",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Puerto Madero",
+    "ciudad": "CABA",
     "fecha": "Mié 3/Junio/2026",
     "idioma": "Doblada",
     "horarios": [
@@ -5225,7 +5516,28 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cinemark_Cinemark_Avellaneda_86",
+    "id_funcion": "cinemark_Cinemark_Avellaneda_101",
+    "titulo": "BACKROOMS",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Avellaneda",
+    "ciudad": "Avellaneda",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada",
+    "horarios": [
+      "12:40",
+      "15:20",
+      "18:00",
+      "20:30",
+      "23:00"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://www.atlascines.com/images/posters/200_479.jpg",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_Cinemark_Avellaneda_103",
     "titulo": "BACKROOMS",
     "director": "No especificado",
     "duracion": "N/A",
@@ -5246,7 +5558,7 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cinemark_Cinemark_Avellaneda_88",
+    "id_funcion": "cinemark_Cinemark_Avellaneda_105",
     "titulo": "BACKROOMS",
     "director": "No especificado",
     "duracion": "N/A",
@@ -5267,7 +5579,7 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cinemark_Cinemark_Avellaneda_90",
+    "id_funcion": "cinemark_Cinemark_Avellaneda_107",
     "titulo": "BACKROOMS",
     "director": "No especificado",
     "duracion": "N/A",
@@ -5288,7 +5600,7 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cinemark_Cinemark_Avellaneda_92",
+    "id_funcion": "cinemark_Cinemark_Avellaneda_109",
     "titulo": "BACKROOMS",
     "director": "No especificado",
     "duracion": "N/A",
@@ -5309,7 +5621,7 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cinemark_Cinemark_Avellaneda_94",
+    "id_funcion": "cinemark_Cinemark_Avellaneda_111",
     "titulo": "BACKROOMS",
     "director": "No especificado",
     "duracion": "N/A",
@@ -5330,7 +5642,28 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cinemark_Cinemark_Malvinas_Argentinas_96",
+    "id_funcion": "cinemark_Cinemark_Malvinas_Argentinas_113",
+    "titulo": "BACKROOMS",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Malvinas Argentinas",
+    "ciudad": "Malvinas Argentinas",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada",
+    "horarios": [
+      "12:30",
+      "15:00",
+      "17:25",
+      "19:50",
+      "22:20"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://www.atlascines.com/images/posters/200_479.jpg",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_Cinemark_Malvinas_Argentinas_115",
     "titulo": "BACKROOMS",
     "director": "No especificado",
     "duracion": "N/A",
@@ -5351,7 +5684,7 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cinemark_Cinemark_Malvinas_Argentinas_98",
+    "id_funcion": "cinemark_Cinemark_Malvinas_Argentinas_117",
     "titulo": "BACKROOMS",
     "director": "No especificado",
     "duracion": "N/A",
@@ -5372,7 +5705,7 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cinemark_Cinemark_Malvinas_Argentinas_100",
+    "id_funcion": "cinemark_Cinemark_Malvinas_Argentinas_119",
     "titulo": "BACKROOMS",
     "director": "No especificado",
     "duracion": "N/A",
@@ -5393,7 +5726,7 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cinemark_Cinemark_Malvinas_Argentinas_102",
+    "id_funcion": "cinemark_Cinemark_Malvinas_Argentinas_121",
     "titulo": "BACKROOMS",
     "director": "No especificado",
     "duracion": "N/A",
@@ -5414,7 +5747,7 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cinemark_Cinemark_Malvinas_Argentinas_104",
+    "id_funcion": "cinemark_Cinemark_Malvinas_Argentinas_123",
     "titulo": "BACKROOMS",
     "director": "No especificado",
     "duracion": "N/A",
@@ -5435,7 +5768,28 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cinemark_Cinemark_Moreno_106",
+    "id_funcion": "cinemark_Cinemark_Moreno_125",
+    "titulo": "BACKROOMS",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Moreno",
+    "ciudad": "Moreno",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada",
+    "horarios": [
+      "13:00",
+      "15:30",
+      "18:00",
+      "20:30",
+      "23:00"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://www.atlascines.com/images/posters/200_479.jpg",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_Cinemark_Moreno_127",
     "titulo": "BACKROOMS",
     "director": "No especificado",
     "duracion": "N/A",
@@ -5456,7 +5810,7 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cinemark_Cinemark_Moreno_108",
+    "id_funcion": "cinemark_Cinemark_Moreno_129",
     "titulo": "BACKROOMS",
     "director": "No especificado",
     "duracion": "N/A",
@@ -5477,7 +5831,7 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cinemark_Cinemark_Moreno_110",
+    "id_funcion": "cinemark_Cinemark_Moreno_131",
     "titulo": "BACKROOMS",
     "director": "No especificado",
     "duracion": "N/A",
@@ -5498,7 +5852,7 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cinemark_Cinemark_Moreno_112",
+    "id_funcion": "cinemark_Cinemark_Moreno_133",
     "titulo": "BACKROOMS",
     "director": "No especificado",
     "duracion": "N/A",
@@ -5519,7 +5873,7 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cinemark_Cinemark_Moreno_114",
+    "id_funcion": "cinemark_Cinemark_Moreno_135",
     "titulo": "BACKROOMS",
     "director": "No especificado",
     "duracion": "N/A",
@@ -5540,7 +5894,28 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cinemark_Hoyts_Plaza_Oeste_Morón_116",
+    "id_funcion": "cinemark_Hoyts_Plaza_Oeste_Morón_137",
+    "titulo": "BACKROOMS",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Hoyts Plaza Oeste Morón",
+    "ciudad": "Morón",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada",
+    "horarios": [
+      "13:00",
+      "15:30",
+      "18:00",
+      "20:30",
+      "23:00"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://www.atlascines.com/images/posters/200_479.jpg",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_Hoyts_Plaza_Oeste_Morón_139",
     "titulo": "BACKROOMS",
     "director": "No especificado",
     "duracion": "N/A",
@@ -5561,7 +5936,7 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cinemark_Hoyts_Plaza_Oeste_Morón_118",
+    "id_funcion": "cinemark_Hoyts_Plaza_Oeste_Morón_141",
     "titulo": "BACKROOMS",
     "director": "No especificado",
     "duracion": "N/A",
@@ -5582,7 +5957,7 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cinemark_Hoyts_Plaza_Oeste_Morón_120",
+    "id_funcion": "cinemark_Hoyts_Plaza_Oeste_Morón_143",
     "titulo": "BACKROOMS",
     "director": "No especificado",
     "duracion": "N/A",
@@ -5603,7 +5978,7 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cinemark_Hoyts_Plaza_Oeste_Morón_122",
+    "id_funcion": "cinemark_Hoyts_Plaza_Oeste_Morón_145",
     "titulo": "BACKROOMS",
     "director": "No especificado",
     "duracion": "N/A",
@@ -5624,7 +5999,7 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cinemark_Hoyts_Plaza_Oeste_Morón_124",
+    "id_funcion": "cinemark_Hoyts_Plaza_Oeste_Morón_147",
     "titulo": "BACKROOMS",
     "director": "No especificado",
     "duracion": "N/A",
@@ -5645,7 +6020,31 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cinemark_Cinemark_Quilmes_126",
+    "id_funcion": "cinemark_Cinemark_Quilmes_149",
+    "titulo": "BACKROOMS",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Quilmes",
+    "ciudad": "Quilmes",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada",
+    "horarios": [
+      "13:00",
+      "14:00",
+      "15:30",
+      "18:10",
+      "19:40",
+      "20:40",
+      "22:00",
+      "23:10"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://www.atlascines.com/images/posters/200_479.jpg",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_Cinemark_Quilmes_152",
     "titulo": "BACKROOMS",
     "director": "No especificado",
     "duracion": "N/A",
@@ -5669,7 +6068,7 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cinemark_Cinemark_Quilmes_129",
+    "id_funcion": "cinemark_Cinemark_Quilmes_155",
     "titulo": "BACKROOMS",
     "director": "No especificado",
     "duracion": "N/A",
@@ -5693,7 +6092,7 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cinemark_Cinemark_Quilmes_132",
+    "id_funcion": "cinemark_Cinemark_Quilmes_158",
     "titulo": "BACKROOMS",
     "director": "No especificado",
     "duracion": "N/A",
@@ -5717,7 +6116,7 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cinemark_Cinemark_Quilmes_135",
+    "id_funcion": "cinemark_Cinemark_Quilmes_161",
     "titulo": "BACKROOMS",
     "director": "No especificado",
     "duracion": "N/A",
@@ -5741,7 +6140,7 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cinemark_Cinemark_Quilmes_138",
+    "id_funcion": "cinemark_Cinemark_Quilmes_164",
     "titulo": "BACKROOMS",
     "director": "No especificado",
     "duracion": "N/A",
@@ -5765,7 +6164,28 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cinemark_Cinemark_San_Justo_141",
+    "id_funcion": "cinemark_Cinemark_San_Justo_167",
+    "titulo": "BACKROOMS",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark San Justo",
+    "ciudad": "San Justo",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada",
+    "horarios": [
+      "12:30",
+      "15:00",
+      "17:30",
+      "20:00",
+      "22:30"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://www.atlascines.com/images/posters/200_479.jpg",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_Cinemark_San_Justo_169",
     "titulo": "BACKROOMS",
     "director": "No especificado",
     "duracion": "N/A",
@@ -5786,7 +6206,7 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cinemark_Cinemark_San_Justo_143",
+    "id_funcion": "cinemark_Cinemark_San_Justo_171",
     "titulo": "BACKROOMS",
     "director": "No especificado",
     "duracion": "N/A",
@@ -5807,7 +6227,7 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cinemark_Cinemark_San_Justo_145",
+    "id_funcion": "cinemark_Cinemark_San_Justo_173",
     "titulo": "BACKROOMS",
     "director": "No especificado",
     "duracion": "N/A",
@@ -5828,7 +6248,7 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cinemark_Cinemark_San_Justo_147",
+    "id_funcion": "cinemark_Cinemark_San_Justo_175",
     "titulo": "BACKROOMS",
     "director": "No especificado",
     "duracion": "N/A",
@@ -5849,7 +6269,7 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cinemark_Cinemark_San_Justo_149",
+    "id_funcion": "cinemark_Cinemark_San_Justo_177",
     "titulo": "BACKROOMS",
     "director": "No especificado",
     "duracion": "N/A",
@@ -5870,7 +6290,30 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cinemark_Cinemark_Temperley_151",
+    "id_funcion": "cinemark_Cinemark_Temperley_179",
+    "titulo": "BACKROOMS",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Temperley",
+    "ciudad": "Temperley",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada",
+    "horarios": [
+      "12:40",
+      "15:15",
+      "17:10",
+      "17:50",
+      "20:25",
+      "22:45",
+      "23:00"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://www.atlascines.com/images/posters/200_479.jpg",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_Cinemark_Temperley_182",
     "titulo": "BACKROOMS",
     "director": "No especificado",
     "duracion": "N/A",
@@ -5893,7 +6336,7 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cinemark_Cinemark_Temperley_154",
+    "id_funcion": "cinemark_Cinemark_Temperley_185",
     "titulo": "BACKROOMS",
     "director": "No especificado",
     "duracion": "N/A",
@@ -5916,7 +6359,7 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cinemark_Cinemark_Temperley_157",
+    "id_funcion": "cinemark_Cinemark_Temperley_188",
     "titulo": "BACKROOMS",
     "director": "No especificado",
     "duracion": "N/A",
@@ -5939,7 +6382,7 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cinemark_Cinemark_Temperley_160",
+    "id_funcion": "cinemark_Cinemark_Temperley_191",
     "titulo": "BACKROOMS",
     "director": "No especificado",
     "duracion": "N/A",
@@ -5962,7 +6405,7 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cinemark_Cinemark_Temperley_163",
+    "id_funcion": "cinemark_Cinemark_Temperley_194",
     "titulo": "BACKROOMS",
     "director": "No especificado",
     "duracion": "N/A",
@@ -5985,7 +6428,28 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cinemark_Cinemark_Tortugas_166",
+    "id_funcion": "cinemark_Cinemark_Tortugas_197",
+    "titulo": "BACKROOMS",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Tortugas",
+    "ciudad": "Tortuguitas",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada",
+    "horarios": [
+      "13:00",
+      "15:30",
+      "18:00",
+      "20:30",
+      "23:00"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://www.atlascines.com/images/posters/200_479.jpg",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_Cinemark_Tortugas_199",
     "titulo": "BACKROOMS",
     "director": "No especificado",
     "duracion": "N/A",
@@ -6006,7 +6470,7 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cinemark_Cinemark_Tortugas_168",
+    "id_funcion": "cinemark_Cinemark_Tortugas_201",
     "titulo": "BACKROOMS",
     "director": "No especificado",
     "duracion": "N/A",
@@ -6027,7 +6491,7 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cinemark_Cinemark_Tortugas_170",
+    "id_funcion": "cinemark_Cinemark_Tortugas_203",
     "titulo": "BACKROOMS",
     "director": "No especificado",
     "duracion": "N/A",
@@ -6048,7 +6512,7 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cinemark_Cinemark_Tortugas_172",
+    "id_funcion": "cinemark_Cinemark_Tortugas_205",
     "titulo": "BACKROOMS",
     "director": "No especificado",
     "duracion": "N/A",
@@ -6069,7 +6533,7 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cinemark_Cinemark_Tortugas_174",
+    "id_funcion": "cinemark_Cinemark_Tortugas_207",
     "titulo": "BACKROOMS",
     "director": "No especificado",
     "duracion": "N/A",
@@ -6090,13 +6554,13 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cinemark_Hoyts_Unicenter_176",
+    "id_funcion": "cinemark_Hoyts_Unicenter_209",
     "titulo": "BACKROOMS",
     "director": "No especificado",
     "duracion": "N/A",
     "cine": "Hoyts Unicenter",
     "ciudad": "Martínez",
-    "fecha": "Sáb 30/Mayo/2026",
+    "fecha": "Viernes 29/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
       "12:40",
@@ -6116,13 +6580,13 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cinemark_Hoyts_Unicenter_180",
+    "id_funcion": "cinemark_Hoyts_Unicenter_213",
     "titulo": "BACKROOMS",
     "director": "No especificado",
     "duracion": "N/A",
     "cine": "Hoyts Unicenter",
     "ciudad": "Martínez",
-    "fecha": "Dom 31/Mayo/2026",
+    "fecha": "Sáb 30/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
       "00:30",
@@ -6144,7 +6608,33 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cinemark_Hoyts_Unicenter_184",
+    "id_funcion": "cinemark_Hoyts_Unicenter_217",
+    "titulo": "BACKROOMS",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Hoyts Unicenter",
+    "ciudad": "Martínez",
+    "fecha": "Dom 31/Mayo/2026",
+    "idioma": "Doblada",
+    "horarios": [
+      "12:40",
+      "14:00",
+      "15:10",
+      "16:40",
+      "17:40",
+      "19:20",
+      "19:30",
+      "20:10",
+      "22:00",
+      "22:40"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://www.atlascines.com/images/posters/200_479.jpg",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_Hoyts_Unicenter_221",
     "titulo": "BACKROOMS",
     "director": "No especificado",
     "duracion": "N/A",
@@ -6170,7 +6660,7 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cinemark_Hoyts_Unicenter_188",
+    "id_funcion": "cinemark_Hoyts_Unicenter_225",
     "titulo": "BACKROOMS",
     "director": "No especificado",
     "duracion": "N/A",
@@ -6196,7 +6686,7 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cinemark_Hoyts_Unicenter_192",
+    "id_funcion": "cinemark_Hoyts_Unicenter_229",
     "titulo": "BACKROOMS",
     "director": "No especificado",
     "duracion": "N/A",
@@ -6483,7 +6973,7 @@
     "duracion": "N/A",
     "cine": "Hoyts Abasto",
     "ciudad": "CABA",
-    "fecha": "Sáb 30/Mayo/2026",
+    "fecha": "Viernes 29/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
       "13:00",
@@ -6507,7 +6997,7 @@
     "duracion": "N/A",
     "cine": "Hoyts Abasto",
     "ciudad": "CABA",
-    "fecha": "Dom 31/Mayo/2026",
+    "fecha": "Sáb 30/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
       "13:00",
@@ -6531,7 +7021,7 @@
     "duracion": "N/A",
     "cine": "Hoyts Abasto",
     "ciudad": "CABA",
-    "fecha": "Lun 1/Junio/2026",
+    "fecha": "Dom 31/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
       "13:00",
@@ -6555,7 +7045,7 @@
     "duracion": "N/A",
     "cine": "Hoyts Abasto",
     "ciudad": "CABA",
-    "fecha": "Mar 2/Junio/2026",
+    "fecha": "Lun 1/Junio/2026",
     "idioma": "Doblada",
     "horarios": [
       "13:00",
@@ -6579,6 +7069,30 @@
     "duracion": "N/A",
     "cine": "Hoyts Abasto",
     "ciudad": "CABA",
+    "fecha": "Mar 2/Junio/2026",
+    "idioma": "Doblada",
+    "horarios": [
+      "13:00",
+      "14:00",
+      "16:00",
+      "17:00",
+      "18:50",
+      "19:50",
+      "21:50",
+      "22:50"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_Hoyts_Abasto_22",
+    "titulo": "THE MANDALORIAN AND GROGU",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Hoyts Abasto",
+    "ciudad": "CABA",
     "fecha": "Mié 3/Junio/2026",
     "idioma": "Doblada",
     "horarios": [
@@ -6597,32 +7111,13 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cinemark_Cinemark_Caballito_23",
-    "titulo": "THE MANDALORIAN AND GROGU",
-    "director": "No especificado",
-    "duracion": "N/A",
-    "cine": "Cinemark Caballito",
-    "ciudad": "CABA",
-    "fecha": "Sáb 30/Mayo/2026",
-    "idioma": "Doblada",
-    "horarios": [
-      "13:50",
-      "16:50",
-      "22:50"
-    ],
-    "seccion": "cartelera",
-    "poster": "",
-    "sinopsis": "Sin sinopsis disponible",
-    "linkTrailer": ""
-  },
-  {
     "id_funcion": "cinemark_Cinemark_Caballito_26",
     "titulo": "THE MANDALORIAN AND GROGU",
     "director": "No especificado",
     "duracion": "N/A",
     "cine": "Cinemark Caballito",
     "ciudad": "CABA",
-    "fecha": "Dom 31/Mayo/2026",
+    "fecha": "Viernes 29/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
       "13:50",
@@ -6641,7 +7136,7 @@
     "duracion": "N/A",
     "cine": "Cinemark Caballito",
     "ciudad": "CABA",
-    "fecha": "Lun 1/Junio/2026",
+    "fecha": "Sáb 30/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
       "13:50",
@@ -6660,7 +7155,7 @@
     "duracion": "N/A",
     "cine": "Cinemark Caballito",
     "ciudad": "CABA",
-    "fecha": "Mar 2/Junio/2026",
+    "fecha": "Dom 31/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
       "13:50",
@@ -6679,6 +7174,44 @@
     "duracion": "N/A",
     "cine": "Cinemark Caballito",
     "ciudad": "CABA",
+    "fecha": "Lun 1/Junio/2026",
+    "idioma": "Doblada",
+    "horarios": [
+      "13:50",
+      "16:50",
+      "22:50"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_Cinemark_Caballito_38",
+    "titulo": "THE MANDALORIAN AND GROGU",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Caballito",
+    "ciudad": "CABA",
+    "fecha": "Mar 2/Junio/2026",
+    "idioma": "Doblada",
+    "horarios": [
+      "13:50",
+      "16:50",
+      "22:50"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_Cinemark_Caballito_41",
+    "titulo": "THE MANDALORIAN AND GROGU",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Caballito",
+    "ciudad": "CABA",
     "fecha": "Mié 3/Junio/2026",
     "idioma": "Doblada",
     "horarios": [
@@ -6692,7 +7225,30 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cinemark_Hoyts_DOT_38",
+    "id_funcion": "cinemark_Hoyts_DOT_44",
+    "titulo": "THE MANDALORIAN AND GROGU",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Hoyts DOT",
+    "ciudad": "CABA",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada",
+    "horarios": [
+      "13:15",
+      "13:55",
+      "16:10",
+      "16:50",
+      "19:05",
+      "22:00",
+      "22:40"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_Hoyts_DOT_48",
     "titulo": "THE MANDALORIAN AND GROGU",
     "director": "No especificado",
     "duracion": "N/A",
@@ -6715,7 +7271,7 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cinemark_Hoyts_DOT_42",
+    "id_funcion": "cinemark_Hoyts_DOT_52",
     "titulo": "THE MANDALORIAN AND GROGU",
     "director": "No especificado",
     "duracion": "N/A",
@@ -6738,7 +7294,7 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cinemark_Hoyts_DOT_46",
+    "id_funcion": "cinemark_Hoyts_DOT_56",
     "titulo": "THE MANDALORIAN AND GROGU",
     "director": "No especificado",
     "duracion": "N/A",
@@ -6761,7 +7317,7 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cinemark_Hoyts_DOT_50",
+    "id_funcion": "cinemark_Hoyts_DOT_60",
     "titulo": "THE MANDALORIAN AND GROGU",
     "director": "No especificado",
     "duracion": "N/A",
@@ -6784,7 +7340,7 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cinemark_Hoyts_DOT_54",
+    "id_funcion": "cinemark_Hoyts_DOT_64",
     "titulo": "THE MANDALORIAN AND GROGU",
     "director": "No especificado",
     "duracion": "N/A",
@@ -6807,49 +7363,13 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cinemark_Cinemark_Puerto_Madero_58",
-    "titulo": "THE MANDALORIAN AND GROGU",
-    "director": "No especificado",
-    "duracion": "N/A",
-    "cine": "Cinemark Puerto Madero",
-    "ciudad": "CABA",
-    "fecha": "Sáb 30/Mayo/2026",
-    "idioma": "Doblada",
-    "horarios": [
-      "14:00",
-      "19:40"
-    ],
-    "seccion": "cartelera",
-    "poster": "",
-    "sinopsis": "Sin sinopsis disponible",
-    "linkTrailer": ""
-  },
-  {
-    "id_funcion": "cinemark_Cinemark_Puerto_Madero_63",
-    "titulo": "THE MANDALORIAN AND GROGU",
-    "director": "No especificado",
-    "duracion": "N/A",
-    "cine": "Cinemark Puerto Madero",
-    "ciudad": "CABA",
-    "fecha": "Dom 31/Mayo/2026",
-    "idioma": "Doblada",
-    "horarios": [
-      "14:00",
-      "19:40"
-    ],
-    "seccion": "cartelera",
-    "poster": "",
-    "sinopsis": "Sin sinopsis disponible",
-    "linkTrailer": ""
-  },
-  {
     "id_funcion": "cinemark_Cinemark_Puerto_Madero_68",
     "titulo": "THE MANDALORIAN AND GROGU",
     "director": "No especificado",
     "duracion": "N/A",
     "cine": "Cinemark Puerto Madero",
     "ciudad": "CABA",
-    "fecha": "Lun 1/Junio/2026",
+    "fecha": "Viernes 29/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
       "14:00",
@@ -6867,7 +7387,7 @@
     "duracion": "N/A",
     "cine": "Cinemark Puerto Madero",
     "ciudad": "CABA",
-    "fecha": "Mar 2/Junio/2026",
+    "fecha": "Sáb 30/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
       "14:00",
@@ -6885,6 +7405,60 @@
     "duracion": "N/A",
     "cine": "Cinemark Puerto Madero",
     "ciudad": "CABA",
+    "fecha": "Dom 31/Mayo/2026",
+    "idioma": "Doblada",
+    "horarios": [
+      "14:00",
+      "19:40"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_Cinemark_Puerto_Madero_83",
+    "titulo": "THE MANDALORIAN AND GROGU",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Puerto Madero",
+    "ciudad": "CABA",
+    "fecha": "Lun 1/Junio/2026",
+    "idioma": "Doblada",
+    "horarios": [
+      "14:00",
+      "19:40"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_Cinemark_Puerto_Madero_88",
+    "titulo": "THE MANDALORIAN AND GROGU",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Puerto Madero",
+    "ciudad": "CABA",
+    "fecha": "Mar 2/Junio/2026",
+    "idioma": "Doblada",
+    "horarios": [
+      "14:00",
+      "19:40"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_Cinemark_Puerto_Madero_93",
+    "titulo": "THE MANDALORIAN AND GROGU",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Puerto Madero",
+    "ciudad": "CABA",
     "fecha": "Mié 3/Junio/2026",
     "idioma": "Doblada",
     "horarios": [
@@ -6897,7 +7471,25 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cinemark_Cinemark_Soleil_81",
+    "id_funcion": "cinemark_Cinemark_Soleil_95",
+    "titulo": "THE MANDALORIAN AND GROGU",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Soleil",
+    "ciudad": "Boulogne",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada",
+    "horarios": [
+      "16:30",
+      "22:20"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_Cinemark_Soleil_96",
     "titulo": "THE MANDALORIAN AND GROGU",
     "director": "No especificado",
     "duracion": "N/A",
@@ -6915,7 +7507,7 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cinemark_Cinemark_Soleil_82",
+    "id_funcion": "cinemark_Cinemark_Soleil_97",
     "titulo": "THE MANDALORIAN AND GROGU",
     "director": "No especificado",
     "duracion": "N/A",
@@ -6933,7 +7525,7 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cinemark_Cinemark_Soleil_83",
+    "id_funcion": "cinemark_Cinemark_Soleil_98",
     "titulo": "THE MANDALORIAN AND GROGU",
     "director": "No especificado",
     "duracion": "N/A",
@@ -6951,7 +7543,7 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cinemark_Cinemark_Soleil_84",
+    "id_funcion": "cinemark_Cinemark_Soleil_99",
     "titulo": "THE MANDALORIAN AND GROGU",
     "director": "No especificado",
     "duracion": "N/A",
@@ -6969,7 +7561,7 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cinemark_Cinemark_Soleil_85",
+    "id_funcion": "cinemark_Cinemark_Soleil_100",
     "titulo": "THE MANDALORIAN AND GROGU",
     "director": "No especificado",
     "duracion": "N/A",
@@ -6987,7 +7579,27 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cinemark_Cinemark_Avellaneda_87",
+    "id_funcion": "cinemark_Cinemark_Avellaneda_102",
+    "titulo": "THE MANDALORIAN AND GROGU",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Avellaneda",
+    "ciudad": "Avellaneda",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada",
+    "horarios": [
+      "13:10",
+      "16:15",
+      "19:10",
+      "22:10"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_Cinemark_Avellaneda_104",
     "titulo": "THE MANDALORIAN AND GROGU",
     "director": "No especificado",
     "duracion": "N/A",
@@ -7007,7 +7619,7 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cinemark_Cinemark_Avellaneda_89",
+    "id_funcion": "cinemark_Cinemark_Avellaneda_106",
     "titulo": "THE MANDALORIAN AND GROGU",
     "director": "No especificado",
     "duracion": "N/A",
@@ -7027,7 +7639,7 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cinemark_Cinemark_Avellaneda_91",
+    "id_funcion": "cinemark_Cinemark_Avellaneda_108",
     "titulo": "THE MANDALORIAN AND GROGU",
     "director": "No especificado",
     "duracion": "N/A",
@@ -7047,7 +7659,7 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cinemark_Cinemark_Avellaneda_93",
+    "id_funcion": "cinemark_Cinemark_Avellaneda_110",
     "titulo": "THE MANDALORIAN AND GROGU",
     "director": "No especificado",
     "duracion": "N/A",
@@ -7067,7 +7679,7 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cinemark_Cinemark_Avellaneda_95",
+    "id_funcion": "cinemark_Cinemark_Avellaneda_112",
     "titulo": "THE MANDALORIAN AND GROGU",
     "director": "No especificado",
     "duracion": "N/A",
@@ -7087,13 +7699,13 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cinemark_Cinemark_Malvinas_Argentinas_97",
+    "id_funcion": "cinemark_Cinemark_Malvinas_Argentinas_114",
     "titulo": "THE MANDALORIAN AND GROGU",
     "director": "No especificado",
     "duracion": "N/A",
     "cine": "Cinemark Malvinas Argentinas",
     "ciudad": "Malvinas Argentinas",
-    "fecha": "Sáb 30/Mayo/2026",
+    "fecha": "Viernes 29/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
       "13:10",
@@ -7109,7 +7721,27 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cinemark_Cinemark_Malvinas_Argentinas_99",
+    "id_funcion": "cinemark_Cinemark_Malvinas_Argentinas_116",
+    "titulo": "THE MANDALORIAN AND GROGU",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Malvinas Argentinas",
+    "ciudad": "Malvinas Argentinas",
+    "fecha": "Sáb 30/Mayo/2026",
+    "idioma": "Doblada",
+    "horarios": [
+      "13:10",
+      "16:25",
+      "19:20",
+      "22:45"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_Cinemark_Malvinas_Argentinas_118",
     "titulo": "THE MANDALORIAN AND GROGU",
     "director": "No especificado",
     "duracion": "N/A",
@@ -7129,7 +7761,7 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cinemark_Cinemark_Malvinas_Argentinas_101",
+    "id_funcion": "cinemark_Cinemark_Malvinas_Argentinas_120",
     "titulo": "THE MANDALORIAN AND GROGU",
     "director": "No especificado",
     "duracion": "N/A",
@@ -7139,8 +7771,10 @@
     "idioma": "Doblada",
     "horarios": [
       "13:10",
+      "14:20",
       "16:25",
       "19:20",
+      "20:00",
       "22:45"
     ],
     "seccion": "cartelera",
@@ -7149,7 +7783,7 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cinemark_Cinemark_Malvinas_Argentinas_103",
+    "id_funcion": "cinemark_Cinemark_Malvinas_Argentinas_122",
     "titulo": "THE MANDALORIAN AND GROGU",
     "director": "No especificado",
     "duracion": "N/A",
@@ -7171,7 +7805,7 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cinemark_Cinemark_Malvinas_Argentinas_105",
+    "id_funcion": "cinemark_Cinemark_Malvinas_Argentinas_124",
     "titulo": "THE MANDALORIAN AND GROGU",
     "director": "No especificado",
     "duracion": "N/A",
@@ -7184,7 +7818,7 @@
       "14:20",
       "16:25",
       "19:20",
-      "20:00",
+      "20:05",
       "22:45"
     ],
     "seccion": "cartelera",
@@ -7193,13 +7827,13 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cinemark_Cinemark_Moreno_107",
+    "id_funcion": "cinemark_Cinemark_Moreno_126",
     "titulo": "THE MANDALORIAN AND GROGU",
     "director": "No especificado",
     "duracion": "N/A",
     "cine": "Cinemark Moreno",
     "ciudad": "Moreno",
-    "fecha": "Sáb 30/Mayo/2026",
+    "fecha": "Viernes 29/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
       "13:20",
@@ -7213,7 +7847,27 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cinemark_Cinemark_Moreno_109",
+    "id_funcion": "cinemark_Cinemark_Moreno_128",
+    "titulo": "THE MANDALORIAN AND GROGU",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Moreno",
+    "ciudad": "Moreno",
+    "fecha": "Sáb 30/Mayo/2026",
+    "idioma": "Doblada",
+    "horarios": [
+      "13:20",
+      "16:20",
+      "19:20",
+      "22:20"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_Cinemark_Moreno_130",
     "titulo": "THE MANDALORIAN AND GROGU",
     "director": "No especificado",
     "duracion": "N/A",
@@ -7233,7 +7887,7 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cinemark_Cinemark_Moreno_111",
+    "id_funcion": "cinemark_Cinemark_Moreno_132",
     "titulo": "THE MANDALORIAN AND GROGU",
     "director": "No especificado",
     "duracion": "N/A",
@@ -7244,8 +7898,8 @@
     "horarios": [
       "13:20",
       "16:20",
-      "19:20",
-      "22:20"
+      "19:30",
+      "22:30"
     ],
     "seccion": "cartelera",
     "poster": "",
@@ -7253,7 +7907,7 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cinemark_Cinemark_Moreno_113",
+    "id_funcion": "cinemark_Cinemark_Moreno_134",
     "titulo": "THE MANDALORIAN AND GROGU",
     "director": "No especificado",
     "duracion": "N/A",
@@ -7273,7 +7927,7 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cinemark_Cinemark_Moreno_115",
+    "id_funcion": "cinemark_Cinemark_Moreno_136",
     "titulo": "THE MANDALORIAN AND GROGU",
     "director": "No especificado",
     "duracion": "N/A",
@@ -7282,10 +7936,10 @@
     "fecha": "Mié 3/Junio/2026",
     "idioma": "Doblada",
     "horarios": [
-      "13:20",
+      "13:30",
       "16:20",
-      "19:30",
-      "22:30"
+      "19:10",
+      "22:10"
     ],
     "seccion": "cartelera",
     "poster": "",
@@ -7293,7 +7947,29 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cinemark_Hoyts_Plaza_Oeste_Morón_117",
+    "id_funcion": "cinemark_Hoyts_Plaza_Oeste_Morón_138",
+    "titulo": "THE MANDALORIAN AND GROGU",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Hoyts Plaza Oeste Morón",
+    "ciudad": "Morón",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada",
+    "horarios": [
+      "13:20",
+      "14:00",
+      "16:10",
+      "19:00",
+      "19:50",
+      "22:10"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_Hoyts_Plaza_Oeste_Morón_140",
     "titulo": "THE MANDALORIAN AND GROGU",
     "director": "No especificado",
     "duracion": "N/A",
@@ -7315,7 +7991,7 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cinemark_Hoyts_Plaza_Oeste_Morón_119",
+    "id_funcion": "cinemark_Hoyts_Plaza_Oeste_Morón_142",
     "titulo": "THE MANDALORIAN AND GROGU",
     "director": "No especificado",
     "duracion": "N/A",
@@ -7337,7 +8013,7 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cinemark_Hoyts_Plaza_Oeste_Morón_121",
+    "id_funcion": "cinemark_Hoyts_Plaza_Oeste_Morón_144",
     "titulo": "THE MANDALORIAN AND GROGU",
     "director": "No especificado",
     "duracion": "N/A",
@@ -7359,7 +8035,7 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cinemark_Hoyts_Plaza_Oeste_Morón_123",
+    "id_funcion": "cinemark_Hoyts_Plaza_Oeste_Morón_146",
     "titulo": "THE MANDALORIAN AND GROGU",
     "director": "No especificado",
     "duracion": "N/A",
@@ -7381,7 +8057,7 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cinemark_Hoyts_Plaza_Oeste_Morón_125",
+    "id_funcion": "cinemark_Hoyts_Plaza_Oeste_Morón_148",
     "titulo": "THE MANDALORIAN AND GROGU",
     "director": "No especificado",
     "duracion": "N/A",
@@ -7403,7 +8079,29 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cinemark_Cinemark_Quilmes_128",
+    "id_funcion": "cinemark_Cinemark_Quilmes_151",
+    "titulo": "THE MANDALORIAN AND GROGU",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Quilmes",
+    "ciudad": "Quilmes",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada",
+    "horarios": [
+      "13:05",
+      "14:30",
+      "16:40",
+      "20:00",
+      "21:50",
+      "22:45"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_Cinemark_Quilmes_154",
     "titulo": "THE MANDALORIAN AND GROGU",
     "director": "No especificado",
     "duracion": "N/A",
@@ -7425,7 +8123,7 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cinemark_Cinemark_Quilmes_131",
+    "id_funcion": "cinemark_Cinemark_Quilmes_157",
     "titulo": "THE MANDALORIAN AND GROGU",
     "director": "No especificado",
     "duracion": "N/A",
@@ -7447,7 +8145,7 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cinemark_Cinemark_Quilmes_134",
+    "id_funcion": "cinemark_Cinemark_Quilmes_160",
     "titulo": "THE MANDALORIAN AND GROGU",
     "director": "No especificado",
     "duracion": "N/A",
@@ -7469,7 +8167,7 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cinemark_Cinemark_Quilmes_137",
+    "id_funcion": "cinemark_Cinemark_Quilmes_163",
     "titulo": "THE MANDALORIAN AND GROGU",
     "director": "No especificado",
     "duracion": "N/A",
@@ -7491,7 +8189,7 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cinemark_Cinemark_Quilmes_140",
+    "id_funcion": "cinemark_Cinemark_Quilmes_166",
     "titulo": "THE MANDALORIAN AND GROGU",
     "director": "No especificado",
     "duracion": "N/A",
@@ -7513,7 +8211,27 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cinemark_Cinemark_San_Justo_142",
+    "id_funcion": "cinemark_Cinemark_San_Justo_168",
+    "titulo": "THE MANDALORIAN AND GROGU",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark San Justo",
+    "ciudad": "San Justo",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada",
+    "horarios": [
+      "13:40",
+      "16:30",
+      "19:20",
+      "22:15"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_Cinemark_San_Justo_170",
     "titulo": "THE MANDALORIAN AND GROGU",
     "director": "No especificado",
     "duracion": "N/A",
@@ -7533,7 +8251,7 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cinemark_Cinemark_San_Justo_144",
+    "id_funcion": "cinemark_Cinemark_San_Justo_172",
     "titulo": "THE MANDALORIAN AND GROGU",
     "director": "No especificado",
     "duracion": "N/A",
@@ -7553,7 +8271,7 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cinemark_Cinemark_San_Justo_146",
+    "id_funcion": "cinemark_Cinemark_San_Justo_174",
     "titulo": "THE MANDALORIAN AND GROGU",
     "director": "No especificado",
     "duracion": "N/A",
@@ -7573,7 +8291,7 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cinemark_Cinemark_San_Justo_148",
+    "id_funcion": "cinemark_Cinemark_San_Justo_176",
     "titulo": "THE MANDALORIAN AND GROGU",
     "director": "No especificado",
     "duracion": "N/A",
@@ -7593,7 +8311,7 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cinemark_Cinemark_San_Justo_150",
+    "id_funcion": "cinemark_Cinemark_San_Justo_178",
     "titulo": "THE MANDALORIAN AND GROGU",
     "director": "No especificado",
     "duracion": "N/A",
@@ -7613,7 +8331,29 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cinemark_Cinemark_Temperley_152",
+    "id_funcion": "cinemark_Cinemark_Temperley_180",
+    "titulo": "THE MANDALORIAN AND GROGU",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Temperley",
+    "ciudad": "Temperley",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada",
+    "horarios": [
+      "13:00",
+      "14:10",
+      "16:00",
+      "19:00",
+      "19:40",
+      "22:00"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_Cinemark_Temperley_183",
     "titulo": "THE MANDALORIAN AND GROGU",
     "director": "No especificado",
     "duracion": "N/A",
@@ -7635,7 +8375,7 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cinemark_Cinemark_Temperley_155",
+    "id_funcion": "cinemark_Cinemark_Temperley_186",
     "titulo": "THE MANDALORIAN AND GROGU",
     "director": "No especificado",
     "duracion": "N/A",
@@ -7657,7 +8397,7 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cinemark_Cinemark_Temperley_158",
+    "id_funcion": "cinemark_Cinemark_Temperley_189",
     "titulo": "THE MANDALORIAN AND GROGU",
     "director": "No especificado",
     "duracion": "N/A",
@@ -7679,7 +8419,7 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cinemark_Cinemark_Temperley_161",
+    "id_funcion": "cinemark_Cinemark_Temperley_192",
     "titulo": "THE MANDALORIAN AND GROGU",
     "director": "No especificado",
     "duracion": "N/A",
@@ -7701,7 +8441,7 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cinemark_Cinemark_Temperley_164",
+    "id_funcion": "cinemark_Cinemark_Temperley_195",
     "titulo": "THE MANDALORIAN AND GROGU",
     "director": "No especificado",
     "duracion": "N/A",
@@ -7723,7 +8463,29 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cinemark_Cinemark_Tortugas_167",
+    "id_funcion": "cinemark_Cinemark_Tortugas_198",
+    "titulo": "THE MANDALORIAN AND GROGU",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Tortugas",
+    "ciudad": "Tortuguitas",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada",
+    "horarios": [
+      "13:40",
+      "14:10",
+      "16:40",
+      "19:30",
+      "20:00",
+      "22:20"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_Cinemark_Tortugas_200",
     "titulo": "THE MANDALORIAN AND GROGU",
     "director": "No especificado",
     "duracion": "N/A",
@@ -7745,7 +8507,7 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cinemark_Cinemark_Tortugas_169",
+    "id_funcion": "cinemark_Cinemark_Tortugas_202",
     "titulo": "THE MANDALORIAN AND GROGU",
     "director": "No especificado",
     "duracion": "N/A",
@@ -7767,7 +8529,7 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cinemark_Cinemark_Tortugas_171",
+    "id_funcion": "cinemark_Cinemark_Tortugas_204",
     "titulo": "THE MANDALORIAN AND GROGU",
     "director": "No especificado",
     "duracion": "N/A",
@@ -7789,7 +8551,7 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cinemark_Cinemark_Tortugas_173",
+    "id_funcion": "cinemark_Cinemark_Tortugas_206",
     "titulo": "THE MANDALORIAN AND GROGU",
     "director": "No especificado",
     "duracion": "N/A",
@@ -7811,7 +8573,7 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cinemark_Cinemark_Tortugas_175",
+    "id_funcion": "cinemark_Cinemark_Tortugas_208",
     "titulo": "THE MANDALORIAN AND GROGU",
     "director": "No especificado",
     "duracion": "N/A",
@@ -7820,12 +8582,11 @@
     "fecha": "Mié 3/Junio/2026",
     "idioma": "Doblada",
     "horarios": [
-      "13:40",
-      "14:10",
-      "16:40",
-      "19:30",
-      "20:00",
-      "22:20"
+      "13:10",
+      "14:00",
+      "16:00",
+      "18:50",
+      "22:10"
     ],
     "seccion": "cartelera",
     "poster": "",
@@ -7833,13 +8594,13 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cinemark_Hoyts_Unicenter_178",
+    "id_funcion": "cinemark_Hoyts_Unicenter_211",
     "titulo": "THE MANDALORIAN AND GROGU",
     "director": "No especificado",
     "duracion": "N/A",
     "cine": "Hoyts Unicenter",
     "ciudad": "Martínez",
-    "fecha": "Sáb 30/Mayo/2026",
+    "fecha": "Viernes 29/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
       "12:45",
@@ -7861,13 +8622,13 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cinemark_Hoyts_Unicenter_182",
+    "id_funcion": "cinemark_Hoyts_Unicenter_215",
     "titulo": "THE MANDALORIAN AND GROGU",
     "director": "No especificado",
     "duracion": "N/A",
     "cine": "Hoyts Unicenter",
     "ciudad": "Martínez",
-    "fecha": "Dom 31/Mayo/2026",
+    "fecha": "Sáb 30/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
       "00:25",
@@ -7890,13 +8651,13 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cinemark_Hoyts_Unicenter_186",
+    "id_funcion": "cinemark_Hoyts_Unicenter_219",
     "titulo": "THE MANDALORIAN AND GROGU",
     "director": "No especificado",
     "duracion": "N/A",
     "cine": "Hoyts Unicenter",
     "ciudad": "Martínez",
-    "fecha": "Lun 1/Junio/2026",
+    "fecha": "Dom 31/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
       "12:45",
@@ -7918,13 +8679,13 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cinemark_Hoyts_Unicenter_190",
+    "id_funcion": "cinemark_Hoyts_Unicenter_223",
     "titulo": "THE MANDALORIAN AND GROGU",
     "director": "No especificado",
     "duracion": "N/A",
     "cine": "Hoyts Unicenter",
     "ciudad": "Martínez",
-    "fecha": "Mar 2/Junio/2026",
+    "fecha": "Lun 1/Junio/2026",
     "idioma": "Doblada",
     "horarios": [
       "12:45",
@@ -7945,7 +8706,35 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "cinemark_Hoyts_Unicenter_194",
+    "id_funcion": "cinemark_Hoyts_Unicenter_227",
+    "titulo": "THE MANDALORIAN AND GROGU",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Hoyts Unicenter",
+    "ciudad": "Martínez",
+    "fecha": "Mar 2/Junio/2026",
+    "idioma": "Doblada",
+    "horarios": [
+      "12:45",
+      "13:15",
+      "14:00",
+      "15:40",
+      "16:10",
+      "16:30",
+      "17:00",
+      "18:30",
+      "19:00",
+      "21:30",
+      "22:00",
+      "22:10"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_Hoyts_Unicenter_231",
     "titulo": "THE MANDALORIAN AND GROGU",
     "director": "No especificado",
     "duracion": "N/A",

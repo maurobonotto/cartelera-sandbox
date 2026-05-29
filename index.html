@@ -9,6 +9,17 @@
 <body>
 
     <header class="main-header">
+        <!-- MENÚ HAMBURGUESA -->
+        <div class="hamburger-menu">
+            <button id="menu-toggle" class="menu-toggle" aria-label="Menú">☰</button>
+            <nav id="menu-nav" class="menu-nav hidden">
+                <ul>
+                    <li><a href="#cartelera" class="menu-link">En Cartelera</a></li>
+                    <li><a href="#proximos" class="menu-link">Próximos Estrenos</a></li>
+                </ul>
+            </nav>
+        </div>
+
         <h1 id="site-title" style="cursor: pointer;">
             Cine Sandbox
             <span class="site-subtitle">Horarios centralizados de cines de CABA</span>
@@ -43,12 +54,12 @@
             </div>
         </section>
 
-        <section class="movies-section">
+        <section id="cartelera" class="movies-section">
             <h2>En Cartelera <span id="cartelera-counter" class="counter"></span></h2>
             <div id="cartelera-grid" class="movies-mosaic"></div>
         </section>
 
-        <section class="movies-section">
+        <section id="proximos" class="movies-section">
             <h2>Próximos Estrenos <span id="proximos-counter" class="counter"></span></h2>
             <div id="proximos-grid" class="movies-mosaic"></div>
         </section>

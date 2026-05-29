@@ -1,12 +1,11 @@
-// app.js - con orden alfabético en home y cines en horizontal en detalle
-// CORREGIDO: en detalle se muestran horarios de todas las funciones (cartelera y próximos)
-
+// app.js - con orden alfabético en home, cines en horizontal en detalle, menú hamburguesa corregido
 let peliculas = [];
 let peliculaActualTitulo = "";
 
 document.addEventListener("DOMContentLoaded", () => {
     cargarDatos();
     configurarNavegacionGlobal();
+    inicializarMenuHamburguesa();
 });
 
 function cargarDatos() {
@@ -130,7 +129,6 @@ function mostrarPeliculasHome(listaPeliculas) {
         }
     }
     
-    // Ordenar alfabéticamente por título
     const carteleraOrdenada = Array.from(carteleraMap.values()).sort((a, b) => a.titulo.localeCompare(b.titulo));
     const proximosOrdenada = Array.from(proximosMap.values()).sort((a, b) => a.titulo.localeCompare(b.titulo));
     
@@ -152,7 +150,6 @@ function mostrarPeliculasHome(listaPeliculas) {
     if (proximosCount) proximosCount.textContent = `(${proximosOrdenada.length})`;
 }
 
-// Placeholder "ツ" en negrita
 function crearTarjetaPelicula(peli) {
     const tarjeta = document.createElement('div');
     tarjeta.className = 'movie-card';
@@ -207,9 +204,7 @@ function abrirDetallePelicula(titulo) {
     window.scrollTo(0, 0);
 }
 
-// ========== CORRECCIÓN: eliminar filtro de sección "cartelera" en detalle ==========
 function inicializarFiltrosDetalle() {
-    // Antes: peliculas.filter(p => p.titulo === peliculaActualTitulo && p.seccion === "cartelera")
     const funcionesPeli = peliculas.filter(p => p.titulo === peliculaActualTitulo);
     actualizarOpcionesDetalle(funcionesPeli);
 
@@ -223,7 +218,6 @@ function inicializarFiltrosDetalle() {
 }
 
 function aplicarFiltrosDetalle() {
-    // Antes: peliculas.filter(p => p.titulo === peliculaActualTitulo && p.seccion === "cartelera")
     let funciones = peliculas.filter(p => p.titulo === peliculaActualTitulo);
 
     const valCiudad = document.getElementById('detail-filter-ciudad').value;
@@ -245,7 +239,6 @@ function aplicarFiltrosDetalle() {
     const nuevoValIdioma = document.getElementById('detail-filter-idioma').value;
     const nuevoValHorario = document.getElementById('detail-filter-horario').value;
 
-    // Antes: peliculas.filter(p => p.titulo === peliculaActualTitulo && p.seccion === "cartelera")
     let finalFunciones = peliculas.filter(p => p.titulo === peliculaActualTitulo);
     if (nuevoValCiudad) finalFunciones = finalFunciones.filter(p => p.ciudad === nuevoValCiudad);
     if (nuevoValCine) finalFunciones = finalFunciones.filter(p => p.cine === nuevoValCine);
@@ -254,7 +247,6 @@ function aplicarFiltrosDetalle() {
 
     renderizarFuncionesDetalle(finalFunciones, nuevoValHorario);
 }
-// ========== FIN CORRECCIÓN ==========
 
 function actualizarOpcionesDetalle(funcionesValidas) {
     const ciudades = new Set();
@@ -312,7 +304,6 @@ function actualizarOpcionesDetalle(funcionesValidas) {
     rellenar(selectHorario, Array.from(horarios).sort(), currentHorario);
 }
 
-// Función auxiliar para convertir fecha legible a Date
 function convertirFechaLegible(fechaStr) {
     const partes = fechaStr.split(' ');
     if (partes.length < 2) return null;
@@ -328,7 +319,6 @@ function convertirFechaLegible(fechaStr) {
     return new Date(parseInt(anio), mesNum, parseInt(dia));
 }
 
-// Versión con cines en horizontal y orden alfabético de cines
 function renderizarFuncionesDetalle(funciones, filtroHorario) {
     const contenedor = document.getElementById('showtimes-container');
     contenedor.innerHTML = '';
@@ -344,7 +334,6 @@ function renderizarFuncionesDetalle(funciones, filtroHorario) {
         porCine[f.cine].push(f);
     });
 
-    // Ordenar cines alfabéticamente
     const cinesOrdenados = Object.keys(porCine).sort();
 
     for (const cine of cinesOrdenados) {
@@ -352,7 +341,6 @@ function renderizarFuncionesDetalle(funciones, filtroHorario) {
         const bloque = document.createElement('div');
         bloque.className = 'cine-block';
         
-        // Agrupar dentro del mismo cine por fecha e idioma
         const grupos = new Map();
         funcionesCine.forEach(f => {
             const key = `${f.fecha}|${f.idioma}`;
@@ -384,7 +372,7 @@ function renderizarFuncionesDetalle(funciones, filtroHorario) {
     }
 }
 
-// ================================ NAVEGACIÓN ================================
+// ================================ NAVEGACIÓN GLOBAL ================================
 function configurarNavegacionGlobal() {
     document.getElementById('site-title').addEventListener('click', () => {
         document.getElementById('home-filter-ciudad').value = "";
@@ -396,5 +384,58 @@ function configurarNavegacionGlobal() {
         mostrarPeliculasHome(peliculas);
         document.getElementById('detail-view').classList.add('hidden');
         document.getElementById('home-view').classList.remove('hidden');
+    });
+}
+
+// ================================ MENÚ HAMBURGUESA CORREGIDO (con scroll offset) ================================
+function inicializarMenuHamburguesa() {
+    const toggleBtn = document.getElementById('menu-toggle');
+    const menuNav = document.getElementById('menu-nav');
+
+    if (!toggleBtn || !menuNav) return;
+
+    toggleBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        menuNav.classList.toggle('hidden');
+    });
+
+    const links = document.querySelectorAll('.menu-link');
+    links.forEach(link => {
+        link.addEventListener('click', (e) => {
+            e.preventDefault();
+            const targetId = link.getAttribute('href');
+            
+            const detailView = document.getElementById('detail-view');
+            const homeView = document.getElementById('home-view');
+            
+            // Función para hacer scroll con offset
+            const scrollToTarget = () => {
+                if (targetId) {
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        const headerHeight = document.querySelector('.main-header').offsetHeight;
+                        const elementPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
+                        const offsetPosition = elementPosition - headerHeight - 60; // AUMENTADO A 60
+                        window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
+                    }
+                }
+            };
+            
+            if (!detailView.classList.contains('hidden')) {
+                // Volver al home sin resetear filtros
+                homeView.classList.remove('hidden');
+                detailView.classList.add('hidden');
+                setTimeout(scrollToTarget, 50);
+            } else {
+                scrollToTarget();
+            }
+            menuNav.classList.add('hidden');
+        });
+    });
+
+    document.addEventListener('click', (e) => {
+        if (!menuNav.contains(e.target) && !toggleBtn.contains(e.target)) {
+            menuNav.classList.add('hidden');
+        }
     });
 }
