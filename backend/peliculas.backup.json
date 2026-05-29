@@ -6,7 +6,7 @@
     "duracion": "81",
     "cine": "Cine Gaumont (CABA)",
     "ciudad": "CABA",
-    "fecha": "jueves 28/mayo/2026",
+    "fecha": "Jueves 28/Mayo/2026",
     "idioma": "2D-Castellano",
     "horarios": [
       "16:00"
@@ -23,7 +23,7 @@
     "duracion": "81",
     "cine": "Cine Gaumont (CABA)",
     "ciudad": "CABA",
-    "fecha": "viernes 29/mayo/2026",
+    "fecha": "Viernes 29/Mayo/2026",
     "idioma": "2D-Castellano",
     "horarios": [
       "16:00"
@@ -40,7 +40,7 @@
     "duracion": "81",
     "cine": "Cine Gaumont (CABA)",
     "ciudad": "CABA",
-    "fecha": "sábado 30/mayo/2026",
+    "fecha": "Sábado 30/Mayo/2026",
     "idioma": "2D-Castellano",
     "horarios": [
       "16:00"
@@ -57,7 +57,7 @@
     "duracion": "81",
     "cine": "Cine Gaumont (CABA)",
     "ciudad": "CABA",
-    "fecha": "domingo 31/mayo/2026",
+    "fecha": "Domingo 31/Mayo/2026",
     "idioma": "2D-Castellano",
     "horarios": [
       "16:00"
@@ -74,7 +74,7 @@
     "duracion": "81",
     "cine": "Cine Gaumont (CABA)",
     "ciudad": "CABA",
-    "fecha": "martes 2/junio/2026",
+    "fecha": "Martes 2/Junio/2026",
     "idioma": "2D-Castellano",
     "horarios": [
       "16:00"
@@ -91,7 +91,7 @@
     "duracion": "65",
     "cine": "Cine Gaumont (CABA)",
     "ciudad": "CABA",
-    "fecha": "jueves 28/mayo/2026",
+    "fecha": "Jueves 28/Mayo/2026",
     "idioma": "2D-Castellano",
     "horarios": [
       "19:00"
@@ -108,7 +108,7 @@
     "duracion": "65",
     "cine": "Cine Gaumont (CABA)",
     "ciudad": "CABA",
-    "fecha": "viernes 29/mayo/2026",
+    "fecha": "Viernes 29/Mayo/2026",
     "idioma": "2D-Castellano",
     "horarios": [
       "19:00"
@@ -125,7 +125,7 @@
     "duracion": "65",
     "cine": "Cine Gaumont (CABA)",
     "ciudad": "CABA",
-    "fecha": "sábado 30/mayo/2026",
+    "fecha": "Sábado 30/Mayo/2026",
     "idioma": "2D-Castellano",
     "horarios": [
       "19:00"
@@ -142,7 +142,7 @@
     "duracion": "65",
     "cine": "Cine Gaumont (CABA)",
     "ciudad": "CABA",
-    "fecha": "domingo 31/mayo/2026",
+    "fecha": "Domingo 31/Mayo/2026",
     "idioma": "2D-Castellano",
     "horarios": [
       "19:00"
@@ -159,7 +159,7 @@
     "duracion": "65",
     "cine": "Cine Gaumont (CABA)",
     "ciudad": "CABA",
-    "fecha": "lunes 1/junio/2026",
+    "fecha": "Lunes 1/Junio/2026",
     "idioma": "2D-Castellano",
     "horarios": [
       "19:00"
@@ -176,7 +176,7 @@
     "duracion": "65",
     "cine": "Cine Gaumont (CABA)",
     "ciudad": "CABA",
-    "fecha": "martes 2/junio/2026",
+    "fecha": "Martes 2/Junio/2026",
     "idioma": "2D-Castellano",
     "horarios": [
       "19:00"
@@ -193,10 +193,11 @@
     "duracion": "90",
     "cine": "Cine Gaumont (CABA)",
     "ciudad": "CABA",
-    "fecha": "jueves 28/mayo/2026",
+    "fecha": "Jueves 28/Mayo/2026",
     "idioma": "2D-Castellano",
     "horarios": [
-      "17:45"
+      "17:45",
+      "21:45"
     ],
     "seccion": "cartelera",
     "poster": "",
@@ -210,9 +211,10 @@
     "duracion": "90",
     "cine": "Cine Gaumont (CABA)",
     "ciudad": "CABA",
-    "fecha": "jueves 28/mayo/2026",
+    "fecha": "Viernes 29/Mayo/2026",
     "idioma": "2D-Castellano",
     "horarios": [
+      "17:45",
       "21:45"
     ],
     "seccion": "cartelera",
@@ -227,10 +229,11 @@
     "duracion": "90",
     "cine": "Cine Gaumont (CABA)",
     "ciudad": "CABA",
-    "fecha": "viernes 29/mayo/2026",
+    "fecha": "Sábado 30/Mayo/2026",
     "idioma": "2D-Castellano",
     "horarios": [
-      "17:45"
+      "17:45",
+      "21:45"
     ],
     "seccion": "cartelera",
     "poster": "",
@@ -244,9 +247,10 @@
     "duracion": "90",
     "cine": "Cine Gaumont (CABA)",
     "ciudad": "CABA",
-    "fecha": "viernes 29/mayo/2026",
+    "fecha": "Domingo 31/Mayo/2026",
     "idioma": "2D-Castellano",
     "horarios": [
+      "17:45",
       "21:45"
     ],
     "seccion": "cartelera",
@@ -261,10 +265,11 @@
     "duracion": "90",
     "cine": "Cine Gaumont (CABA)",
     "ciudad": "CABA",
-    "fecha": "sábado 30/mayo/2026",
+    "fecha": "Lunes 1/Junio/2026",
     "idioma": "2D-Castellano",
     "horarios": [
-      "17:45"
+      "17:45",
+      "22:00"
     ],
     "seccion": "cartelera",
     "poster": "",
@@ -278,111 +283,10 @@
     "duracion": "90",
     "cine": "Cine Gaumont (CABA)",
     "ciudad": "CABA",
-    "fecha": "sábado 30/mayo/2026",
+    "fecha": "Martes 2/Junio/2026",
     "idioma": "2D-Castellano",
     "horarios": [
-      "21:45"
-    ],
-    "seccion": "cartelera",
-    "poster": "",
-    "sinopsis": "Guillermo y Mechi se conocen en un viaje laboral de la empresa para la que trabajan. Ambos están casados y arrastran vidas que ya no los representan: él, atrapado en un matrimonio rutinario bajo la presión de un suegro que parece manejarlo; ella, con un trabajo que no la identifica, un marido lleno de proyectos fallidos y una hija que la rechaza. Escapando de un supuesto temblor, se cruzan una madrugada en la playa y, entre risas y copas, nace una conexión inesperada. Mientras la empresa para la que trabajan se hunde, entre ellos aparece algo que no estaban buscando, pero que no pueden ignorar...",
-    "linkTrailer": ""
-  },
-  {
-    "id_funcion": "838_7",
-    "titulo": "NADA ENTRE LOS DOS",
-    "director": "Juan Taratuto",
-    "duracion": "90",
-    "cine": "Cine Gaumont (CABA)",
-    "ciudad": "CABA",
-    "fecha": "domingo 31/mayo/2026",
-    "idioma": "2D-Castellano",
-    "horarios": [
-      "17:45"
-    ],
-    "seccion": "cartelera",
-    "poster": "",
-    "sinopsis": "Guillermo y Mechi se conocen en un viaje laboral de la empresa para la que trabajan. Ambos están casados y arrastran vidas que ya no los representan: él, atrapado en un matrimonio rutinario bajo la presión de un suegro que parece manejarlo; ella, con un trabajo que no la identifica, un marido lleno de proyectos fallidos y una hija que la rechaza. Escapando de un supuesto temblor, se cruzan una madrugada en la playa y, entre risas y copas, nace una conexión inesperada. Mientras la empresa para la que trabajan se hunde, entre ellos aparece algo que no estaban buscando, pero que no pueden ignorar...",
-    "linkTrailer": ""
-  },
-  {
-    "id_funcion": "838_8",
-    "titulo": "NADA ENTRE LOS DOS",
-    "director": "Juan Taratuto",
-    "duracion": "90",
-    "cine": "Cine Gaumont (CABA)",
-    "ciudad": "CABA",
-    "fecha": "domingo 31/mayo/2026",
-    "idioma": "2D-Castellano",
-    "horarios": [
-      "21:45"
-    ],
-    "seccion": "cartelera",
-    "poster": "",
-    "sinopsis": "Guillermo y Mechi se conocen en un viaje laboral de la empresa para la que trabajan. Ambos están casados y arrastran vidas que ya no los representan: él, atrapado en un matrimonio rutinario bajo la presión de un suegro que parece manejarlo; ella, con un trabajo que no la identifica, un marido lleno de proyectos fallidos y una hija que la rechaza. Escapando de un supuesto temblor, se cruzan una madrugada en la playa y, entre risas y copas, nace una conexión inesperada. Mientras la empresa para la que trabajan se hunde, entre ellos aparece algo que no estaban buscando, pero que no pueden ignorar...",
-    "linkTrailer": ""
-  },
-  {
-    "id_funcion": "838_9",
-    "titulo": "NADA ENTRE LOS DOS",
-    "director": "Juan Taratuto",
-    "duracion": "90",
-    "cine": "Cine Gaumont (CABA)",
-    "ciudad": "CABA",
-    "fecha": "lunes 1/junio/2026",
-    "idioma": "2D-Castellano",
-    "horarios": [
-      "17:45"
-    ],
-    "seccion": "cartelera",
-    "poster": "",
-    "sinopsis": "Guillermo y Mechi se conocen en un viaje laboral de la empresa para la que trabajan. Ambos están casados y arrastran vidas que ya no los representan: él, atrapado en un matrimonio rutinario bajo la presión de un suegro que parece manejarlo; ella, con un trabajo que no la identifica, un marido lleno de proyectos fallidos y una hija que la rechaza. Escapando de un supuesto temblor, se cruzan una madrugada en la playa y, entre risas y copas, nace una conexión inesperada. Mientras la empresa para la que trabajan se hunde, entre ellos aparece algo que no estaban buscando, pero que no pueden ignorar...",
-    "linkTrailer": ""
-  },
-  {
-    "id_funcion": "838_10",
-    "titulo": "NADA ENTRE LOS DOS",
-    "director": "Juan Taratuto",
-    "duracion": "90",
-    "cine": "Cine Gaumont (CABA)",
-    "ciudad": "CABA",
-    "fecha": "lunes 1/junio/2026",
-    "idioma": "2D-Castellano",
-    "horarios": [
-      "22:00"
-    ],
-    "seccion": "cartelera",
-    "poster": "",
-    "sinopsis": "Guillermo y Mechi se conocen en un viaje laboral de la empresa para la que trabajan. Ambos están casados y arrastran vidas que ya no los representan: él, atrapado en un matrimonio rutinario bajo la presión de un suegro que parece manejarlo; ella, con un trabajo que no la identifica, un marido lleno de proyectos fallidos y una hija que la rechaza. Escapando de un supuesto temblor, se cruzan una madrugada en la playa y, entre risas y copas, nace una conexión inesperada. Mientras la empresa para la que trabajan se hunde, entre ellos aparece algo que no estaban buscando, pero que no pueden ignorar...",
-    "linkTrailer": ""
-  },
-  {
-    "id_funcion": "838_11",
-    "titulo": "NADA ENTRE LOS DOS",
-    "director": "Juan Taratuto",
-    "duracion": "90",
-    "cine": "Cine Gaumont (CABA)",
-    "ciudad": "CABA",
-    "fecha": "martes 2/junio/2026",
-    "idioma": "2D-Castellano",
-    "horarios": [
-      "17:45"
-    ],
-    "seccion": "cartelera",
-    "poster": "",
-    "sinopsis": "Guillermo y Mechi se conocen en un viaje laboral de la empresa para la que trabajan. Ambos están casados y arrastran vidas que ya no los representan: él, atrapado en un matrimonio rutinario bajo la presión de un suegro que parece manejarlo; ella, con un trabajo que no la identifica, un marido lleno de proyectos fallidos y una hija que la rechaza. Escapando de un supuesto temblor, se cruzan una madrugada en la playa y, entre risas y copas, nace una conexión inesperada. Mientras la empresa para la que trabajan se hunde, entre ellos aparece algo que no estaban buscando, pero que no pueden ignorar...",
-    "linkTrailer": ""
-  },
-  {
-    "id_funcion": "838_12",
-    "titulo": "NADA ENTRE LOS DOS",
-    "director": "Juan Taratuto",
-    "duracion": "90",
-    "cine": "Cine Gaumont (CABA)",
-    "ciudad": "CABA",
-    "fecha": "martes 2/junio/2026",
-    "idioma": "2D-Castellano",
-    "horarios": [
+      "17:45",
       "21:45"
     ],
     "seccion": "cartelera",
@@ -397,10 +301,11 @@
     "duracion": "92",
     "cine": "Cine Gaumont (CABA)",
     "ciudad": "CABA",
-    "fecha": "jueves 28/mayo/2026",
+    "fecha": "Jueves 28/Mayo/2026",
     "idioma": "2D-Castellano",
     "horarios": [
-      "15:45"
+      "15:45",
+      "19:45"
     ],
     "seccion": "cartelera",
     "poster": "",
@@ -414,9 +319,10 @@
     "duracion": "92",
     "cine": "Cine Gaumont (CABA)",
     "ciudad": "CABA",
-    "fecha": "jueves 28/mayo/2026",
+    "fecha": "Viernes 29/Mayo/2026",
     "idioma": "2D-Castellano",
     "horarios": [
+      "15:45",
       "19:45"
     ],
     "seccion": "cartelera",
@@ -431,10 +337,11 @@
     "duracion": "92",
     "cine": "Cine Gaumont (CABA)",
     "ciudad": "CABA",
-    "fecha": "viernes 29/mayo/2026",
+    "fecha": "Sábado 30/Mayo/2026",
     "idioma": "2D-Castellano",
     "horarios": [
-      "15:45"
+      "15:45",
+      "19:45"
     ],
     "seccion": "cartelera",
     "poster": "",
@@ -448,9 +355,10 @@
     "duracion": "92",
     "cine": "Cine Gaumont (CABA)",
     "ciudad": "CABA",
-    "fecha": "viernes 29/mayo/2026",
+    "fecha": "Domingo 31/Mayo/2026",
     "idioma": "2D-Castellano",
     "horarios": [
+      "15:45",
       "19:45"
     ],
     "seccion": "cartelera",
@@ -465,10 +373,11 @@
     "duracion": "92",
     "cine": "Cine Gaumont (CABA)",
     "ciudad": "CABA",
-    "fecha": "sábado 30/mayo/2026",
+    "fecha": "Lunes 1/Junio/2026",
     "idioma": "2D-Castellano",
     "horarios": [
-      "15:45"
+      "15:45",
+      "19:45"
     ],
     "seccion": "cartelera",
     "poster": "",
@@ -482,111 +391,10 @@
     "duracion": "92",
     "cine": "Cine Gaumont (CABA)",
     "ciudad": "CABA",
-    "fecha": "sábado 30/mayo/2026",
+    "fecha": "Martes 2/Junio/2026",
     "idioma": "2D-Castellano",
     "horarios": [
-      "19:45"
-    ],
-    "seccion": "cartelera",
-    "poster": "",
-    "sinopsis": "Emi de 18 años vive con sus padres en los suburbios de Buenos Aires. Hace unos meses empezó a trabajar en un taller de reparación de motos en un barrio obrero. Emi quiere saber acerca de su familia biológica y pasa sus días armando el rompecabezas de su historia.",
-    "linkTrailer": ""
-  },
-  {
-    "id_funcion": "837_7",
-    "titulo": "EMI",
-    "director": "Ezequiel Erriquez Mena",
-    "duracion": "92",
-    "cine": "Cine Gaumont (CABA)",
-    "ciudad": "CABA",
-    "fecha": "domingo 31/mayo/2026",
-    "idioma": "2D-Castellano",
-    "horarios": [
-      "15:45"
-    ],
-    "seccion": "cartelera",
-    "poster": "",
-    "sinopsis": "Emi de 18 años vive con sus padres en los suburbios de Buenos Aires. Hace unos meses empezó a trabajar en un taller de reparación de motos en un barrio obrero. Emi quiere saber acerca de su familia biológica y pasa sus días armando el rompecabezas de su historia.",
-    "linkTrailer": ""
-  },
-  {
-    "id_funcion": "837_8",
-    "titulo": "EMI",
-    "director": "Ezequiel Erriquez Mena",
-    "duracion": "92",
-    "cine": "Cine Gaumont (CABA)",
-    "ciudad": "CABA",
-    "fecha": "domingo 31/mayo/2026",
-    "idioma": "2D-Castellano",
-    "horarios": [
-      "19:45"
-    ],
-    "seccion": "cartelera",
-    "poster": "",
-    "sinopsis": "Emi de 18 años vive con sus padres en los suburbios de Buenos Aires. Hace unos meses empezó a trabajar en un taller de reparación de motos en un barrio obrero. Emi quiere saber acerca de su familia biológica y pasa sus días armando el rompecabezas de su historia.",
-    "linkTrailer": ""
-  },
-  {
-    "id_funcion": "837_9",
-    "titulo": "EMI",
-    "director": "Ezequiel Erriquez Mena",
-    "duracion": "92",
-    "cine": "Cine Gaumont (CABA)",
-    "ciudad": "CABA",
-    "fecha": "lunes 1/junio/2026",
-    "idioma": "2D-Castellano",
-    "horarios": [
-      "15:45"
-    ],
-    "seccion": "cartelera",
-    "poster": "",
-    "sinopsis": "Emi de 18 años vive con sus padres en los suburbios de Buenos Aires. Hace unos meses empezó a trabajar en un taller de reparación de motos en un barrio obrero. Emi quiere saber acerca de su familia biológica y pasa sus días armando el rompecabezas de su historia.",
-    "linkTrailer": ""
-  },
-  {
-    "id_funcion": "837_10",
-    "titulo": "EMI",
-    "director": "Ezequiel Erriquez Mena",
-    "duracion": "92",
-    "cine": "Cine Gaumont (CABA)",
-    "ciudad": "CABA",
-    "fecha": "lunes 1/junio/2026",
-    "idioma": "2D-Castellano",
-    "horarios": [
-      "19:45"
-    ],
-    "seccion": "cartelera",
-    "poster": "",
-    "sinopsis": "Emi de 18 años vive con sus padres en los suburbios de Buenos Aires. Hace unos meses empezó a trabajar en un taller de reparación de motos en un barrio obrero. Emi quiere saber acerca de su familia biológica y pasa sus días armando el rompecabezas de su historia.",
-    "linkTrailer": ""
-  },
-  {
-    "id_funcion": "837_11",
-    "titulo": "EMI",
-    "director": "Ezequiel Erriquez Mena",
-    "duracion": "92",
-    "cine": "Cine Gaumont (CABA)",
-    "ciudad": "CABA",
-    "fecha": "martes 2/junio/2026",
-    "idioma": "2D-Castellano",
-    "horarios": [
-      "15:45"
-    ],
-    "seccion": "cartelera",
-    "poster": "",
-    "sinopsis": "Emi de 18 años vive con sus padres en los suburbios de Buenos Aires. Hace unos meses empezó a trabajar en un taller de reparación de motos en un barrio obrero. Emi quiere saber acerca de su familia biológica y pasa sus días armando el rompecabezas de su historia.",
-    "linkTrailer": ""
-  },
-  {
-    "id_funcion": "837_12",
-    "titulo": "EMI",
-    "director": "Ezequiel Erriquez Mena",
-    "duracion": "92",
-    "cine": "Cine Gaumont (CABA)",
-    "ciudad": "CABA",
-    "fecha": "martes 2/junio/2026",
-    "idioma": "2D-Castellano",
-    "horarios": [
+      "15:45",
       "19:45"
     ],
     "seccion": "cartelera",
@@ -601,7 +409,7 @@
     "duracion": "156",
     "cine": "Cine Gaumont (CABA)",
     "ciudad": "CABA",
-    "fecha": "lunes 1/junio/2026",
+    "fecha": "Lunes 1/Junio/2026",
     "idioma": "2D-Subtitulado",
     "horarios": [
       "21:45"
@@ -618,7 +426,7 @@
     "duracion": "66",
     "cine": "Cine Gaumont (CABA)",
     "ciudad": "CABA",
-    "fecha": "jueves 28/mayo/2026",
+    "fecha": "Jueves 28/Mayo/2026",
     "idioma": "2D-Castellano",
     "horarios": [
       "14:15"
@@ -635,7 +443,7 @@
     "duracion": "66",
     "cine": "Cine Gaumont (CABA)",
     "ciudad": "CABA",
-    "fecha": "viernes 29/mayo/2026",
+    "fecha": "Viernes 29/Mayo/2026",
     "idioma": "2D-Castellano",
     "horarios": [
       "14:15"
@@ -652,7 +460,7 @@
     "duracion": "66",
     "cine": "Cine Gaumont (CABA)",
     "ciudad": "CABA",
-    "fecha": "sábado 30/mayo/2026",
+    "fecha": "Sábado 30/Mayo/2026",
     "idioma": "2D-Castellano",
     "horarios": [
       "14:15"
@@ -669,7 +477,7 @@
     "duracion": "66",
     "cine": "Cine Gaumont (CABA)",
     "ciudad": "CABA",
-    "fecha": "domingo 31/mayo/2026",
+    "fecha": "Domingo 31/Mayo/2026",
     "idioma": "2D-Castellano",
     "horarios": [
       "14:15"
@@ -686,7 +494,7 @@
     "duracion": "66",
     "cine": "Cine Gaumont (CABA)",
     "ciudad": "CABA",
-    "fecha": "lunes 1/junio/2026",
+    "fecha": "Lunes 1/Junio/2026",
     "idioma": "2D-Castellano",
     "horarios": [
       "14:15"
@@ -703,7 +511,7 @@
     "duracion": "66",
     "cine": "Cine Gaumont (CABA)",
     "ciudad": "CABA",
-    "fecha": "martes 2/junio/2026",
+    "fecha": "Martes 2/Junio/2026",
     "idioma": "2D-Castellano",
     "horarios": [
       "14:15"
@@ -720,7 +528,7 @@
     "duracion": "93",
     "cine": "Cine Gaumont (CABA)",
     "ciudad": "CABA",
-    "fecha": "jueves 28/mayo/2026",
+    "fecha": "Jueves 28/Mayo/2026",
     "idioma": "2D-Castellano",
     "horarios": [
       "14:45"
@@ -737,7 +545,7 @@
     "duracion": "93",
     "cine": "Cine Gaumont (CABA)",
     "ciudad": "CABA",
-    "fecha": "viernes 29/mayo/2026",
+    "fecha": "Viernes 29/Mayo/2026",
     "idioma": "2D-Castellano",
     "horarios": [
       "14:45"
@@ -754,7 +562,7 @@
     "duracion": "93",
     "cine": "Cine Gaumont (CABA)",
     "ciudad": "CABA",
-    "fecha": "sábado 30/mayo/2026",
+    "fecha": "Sábado 30/Mayo/2026",
     "idioma": "2D-Castellano",
     "horarios": [
       "14:45"
@@ -771,7 +579,7 @@
     "duracion": "93",
     "cine": "Cine Gaumont (CABA)",
     "ciudad": "CABA",
-    "fecha": "domingo 31/mayo/2026",
+    "fecha": "Domingo 31/Mayo/2026",
     "idioma": "2D-Castellano",
     "horarios": [
       "14:45"
@@ -788,7 +596,7 @@
     "duracion": "93",
     "cine": "Cine Gaumont (CABA)",
     "ciudad": "CABA",
-    "fecha": "lunes 1/junio/2026",
+    "fecha": "Lunes 1/Junio/2026",
     "idioma": "2D-Castellano",
     "horarios": [
       "14:45"
@@ -805,7 +613,7 @@
     "duracion": "93",
     "cine": "Cine Gaumont (CABA)",
     "ciudad": "CABA",
-    "fecha": "martes 2/junio/2026",
+    "fecha": "Martes 2/Junio/2026",
     "idioma": "2D-Castellano",
     "horarios": [
       "14:45"
@@ -822,7 +630,7 @@
     "duracion": "113",
     "cine": "Cine Gaumont (CABA)",
     "ciudad": "CABA",
-    "fecha": "jueves 28/mayo/2026",
+    "fecha": "Jueves 28/Mayo/2026",
     "idioma": "2D-Castellano",
     "horarios": [
       "16:45"
@@ -839,7 +647,7 @@
     "duracion": "113",
     "cine": "Cine Gaumont (CABA)",
     "ciudad": "CABA",
-    "fecha": "viernes 29/mayo/2026",
+    "fecha": "Viernes 29/Mayo/2026",
     "idioma": "2D-Castellano",
     "horarios": [
       "16:45"
@@ -856,7 +664,7 @@
     "duracion": "113",
     "cine": "Cine Gaumont (CABA)",
     "ciudad": "CABA",
-    "fecha": "sábado 30/mayo/2026",
+    "fecha": "Sábado 30/Mayo/2026",
     "idioma": "2D-Castellano",
     "horarios": [
       "16:45"
@@ -873,7 +681,7 @@
     "duracion": "113",
     "cine": "Cine Gaumont (CABA)",
     "ciudad": "CABA",
-    "fecha": "domingo 31/mayo/2026",
+    "fecha": "Domingo 31/Mayo/2026",
     "idioma": "2D-Castellano",
     "horarios": [
       "16:45"
@@ -890,7 +698,7 @@
     "duracion": "113",
     "cine": "Cine Gaumont (CABA)",
     "ciudad": "CABA",
-    "fecha": "lunes 1/junio/2026",
+    "fecha": "Lunes 1/Junio/2026",
     "idioma": "2D-Castellano",
     "horarios": [
       "16:45"
@@ -907,7 +715,7 @@
     "duracion": "113",
     "cine": "Cine Gaumont (CABA)",
     "ciudad": "CABA",
-    "fecha": "martes 2/junio/2026",
+    "fecha": "Martes 2/Junio/2026",
     "idioma": "2D-Castellano",
     "horarios": [
       "16:45"
@@ -924,7 +732,7 @@
     "duracion": "81",
     "cine": "Cine Gaumont (CABA)",
     "ciudad": "CABA",
-    "fecha": "jueves 28/mayo/2026",
+    "fecha": "Jueves 28/Mayo/2026",
     "idioma": "2D-Castellano",
     "horarios": [
       "16:00"
@@ -941,7 +749,7 @@
     "duracion": "81",
     "cine": "Cine Gaumont (CABA)",
     "ciudad": "CABA",
-    "fecha": "viernes 29/mayo/2026",
+    "fecha": "Viernes 29/Mayo/2026",
     "idioma": "2D-Castellano",
     "horarios": [
       "16:00"
@@ -958,7 +766,7 @@
     "duracion": "81",
     "cine": "Cine Gaumont (CABA)",
     "ciudad": "CABA",
-    "fecha": "sábado 30/mayo/2026",
+    "fecha": "Sábado 30/Mayo/2026",
     "idioma": "2D-Castellano",
     "horarios": [
       "16:00"
@@ -975,7 +783,7 @@
     "duracion": "81",
     "cine": "Cine Gaumont (CABA)",
     "ciudad": "CABA",
-    "fecha": "domingo 31/mayo/2026",
+    "fecha": "Domingo 31/Mayo/2026",
     "idioma": "2D-Castellano",
     "horarios": [
       "16:00"
@@ -992,7 +800,7 @@
     "duracion": "81",
     "cine": "Cine Gaumont (CABA)",
     "ciudad": "CABA",
-    "fecha": "martes 2/junio/2026",
+    "fecha": "Martes 2/Junio/2026",
     "idioma": "2D-Castellano",
     "horarios": [
       "16:00"
@@ -1009,7 +817,7 @@
     "duracion": "65",
     "cine": "Cine Gaumont (CABA)",
     "ciudad": "CABA",
-    "fecha": "jueves 28/mayo/2026",
+    "fecha": "Jueves 28/Mayo/2026",
     "idioma": "2D-Castellano",
     "horarios": [
       "19:00"
@@ -1026,7 +834,7 @@
     "duracion": "65",
     "cine": "Cine Gaumont (CABA)",
     "ciudad": "CABA",
-    "fecha": "viernes 29/mayo/2026",
+    "fecha": "Viernes 29/Mayo/2026",
     "idioma": "2D-Castellano",
     "horarios": [
       "19:00"
@@ -1043,7 +851,7 @@
     "duracion": "65",
     "cine": "Cine Gaumont (CABA)",
     "ciudad": "CABA",
-    "fecha": "sábado 30/mayo/2026",
+    "fecha": "Sábado 30/Mayo/2026",
     "idioma": "2D-Castellano",
     "horarios": [
       "19:00"
@@ -1060,7 +868,7 @@
     "duracion": "65",
     "cine": "Cine Gaumont (CABA)",
     "ciudad": "CABA",
-    "fecha": "domingo 31/mayo/2026",
+    "fecha": "Domingo 31/Mayo/2026",
     "idioma": "2D-Castellano",
     "horarios": [
       "19:00"
@@ -1077,7 +885,7 @@
     "duracion": "65",
     "cine": "Cine Gaumont (CABA)",
     "ciudad": "CABA",
-    "fecha": "lunes 1/junio/2026",
+    "fecha": "Lunes 1/Junio/2026",
     "idioma": "2D-Castellano",
     "horarios": [
       "19:00"
@@ -1094,7 +902,7 @@
     "duracion": "65",
     "cine": "Cine Gaumont (CABA)",
     "ciudad": "CABA",
-    "fecha": "martes 2/junio/2026",
+    "fecha": "Martes 2/Junio/2026",
     "idioma": "2D-Castellano",
     "horarios": [
       "19:00"

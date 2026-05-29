@@ -1,4 +1,4 @@
-// app.js - corregido (sin duplicados)
+// app.js - con ordenamiento de filtros por fecha y hora
 
 let peliculas = [];
 let peliculaActualTitulo = "";
@@ -22,7 +22,7 @@ function cargarDatos() {
 function inicializarHome() {
     const funcionesCartelera = peliculas.filter(p => p.seccion === "cartelera");
     actualizarOpcionesFiltrosHome(funcionesCartelera);
-    mostrarPeliculasHome(peliculas); // Acá ya debe mostrar únicas
+    mostrarPeliculasHome(peliculas);
 
     const filtrosIds = ['home-filter-ciudad', 'home-filter-cine', 'home-filter-dia', 'home-filter-horario'];
     filtrosIds.forEach(id => {
@@ -45,10 +45,7 @@ function aplicarFiltrosHome() {
 
     actualizarOpcionesFiltrosHome(funcionesFiltradas);
 
-    // Obtener títulos únicos de las funciones filtradas
     const titulosValidos = new Set(funcionesFiltradas.map(f => f.titulo));
-    
-    // Películas de cartelera (una por título)
     const pelisCarteleraUnicas = [];
     const agregados = new Set();
     for (const p of peliculas) {
@@ -57,8 +54,6 @@ function aplicarFiltrosHome() {
             pelisCarteleraUnicas.push(p);
         }
     }
-    
-    // Próximos estrenos (siempre todos, sin duplicados)
     const pelisProximosUnicas = [];
     const agregadosProx = new Set();
     for (const p of peliculas) {
@@ -67,22 +62,52 @@ function aplicarFiltrosHome() {
             pelisProximosUnicas.push(p);
         }
     }
-    
     mostrarPeliculasHome([...pelisCarteleraUnicas, ...pelisProximosUnicas]);
+}
+
+// Función auxiliar para convertir string de fecha (ej. "Jueves 29/Mayo/2026") a Date
+function convertirStringAFecha(fechaStr) {
+    // Extrae día, mes y año
+    const partes = fechaStr.split(' ');
+    if (partes.length < 2) return null;
+    const fechaParte = partes[1]; // "29/Mayo/2026"
+    const [dia, mes, anio] = fechaParte.split('/');
+    if (!dia || !mes || !anio) return null;
+    // Mapeo de meses en español (con mayúscula inicial)
+    const meses = {
+        'Enero': 0, 'Febrero': 1, 'Marzo': 2, 'Abril': 3, 'Mayo': 4, 'Junio': 5,
+        'Julio': 6, 'Agosto': 7, 'Septiembre': 8, 'Octubre': 9, 'Noviembre': 10, 'Diciembre': 11
+    };
+    const mesNum = meses[mes];
+    if (mesNum === undefined) return null;
+    return new Date(parseInt(anio), mesNum, parseInt(dia));
 }
 
 function actualizarOpcionesFiltrosHome(funcionesValidas) {
     const ciudades = new Set();
     const cines = new Set();
-    const dias = new Set();
+    // Para días, usaremos un mapa para ordenar
+    const diasMap = new Map(); // clave: fechaISO, valor: string legible
     const horarios = new Set();
 
     funcionesValidas.forEach(f => {
         if (f.ciudad) ciudades.add(f.ciudad);
         if (f.cine) cines.add(f.cine);
-        if (f.fecha) dias.add(f.fecha);
+        if (f.fecha) {
+            const fechaDate = convertirStringAFecha(f.fecha);
+            if (fechaDate) {
+                const iso = fechaDate.toISOString().split('T')[0];
+                diasMap.set(iso, f.fecha);
+            } else {
+                // fallback: usar el string como clave
+                diasMap.set(f.fecha, f.fecha);
+            }
+        }
         if (f.horarios) f.horarios.forEach(h => horarios.add(h));
     });
+
+    // Ordenar los días cronológicamente
+    const diasOrdenados = Array.from(diasMap.keys()).sort().map(iso => diasMap.get(iso));
 
     const selectCiudad = document.getElementById('home-filter-ciudad');
     const selectCine = document.getElementById('home-filter-cine');
@@ -94,10 +119,10 @@ function actualizarOpcionesFiltrosHome(funcionesValidas) {
     const currentDia = selectDia.value;
     const currentHorario = selectHorario.value;
 
-    function rellenar(select, valoresSet, currentValue) {
-        const nuevoValor = currentValue && valoresSet.has(currentValue) ? currentValue : "";
+    function rellenar(select, valoresArray, currentValue) {
+        const nuevoValor = valoresArray.includes(currentValue) ? currentValue : "";
         select.innerHTML = `<option value="">Todos</option>`;
-        Array.from(valoresSet).sort().forEach(v => {
+        valoresArray.forEach(v => {
             const opt = document.createElement('option');
             opt.value = v;
             opt.textContent = v;
@@ -106,17 +131,15 @@ function actualizarOpcionesFiltrosHome(funcionesValidas) {
         });
     }
 
-    rellenar(selectCiudad, ciudades, currentCiudad);
-    rellenar(selectCine, cines, currentCine);
-    rellenar(selectDia, dias, currentDia);
-    rellenar(selectHorario, horarios, currentHorario);
+    rellenar(selectCiudad, Array.from(ciudades).sort(), currentCiudad);
+    rellenar(selectCine, Array.from(cines).sort(), currentCine);
+    rellenar(selectDia, diasOrdenados, currentDia);
+    rellenar(selectHorario, Array.from(horarios).sort(), currentHorario);
 }
 
 function mostrarPeliculasHome(listaPeliculas) {
-    // Separar por sección y asegurar unicidad (por si acaso)
     const carteleraMap = new Map();
     const proximosMap = new Map();
-    
     for (const peli of listaPeliculas) {
         if (peli.seccion === "cartelera" && !carteleraMap.has(peli.titulo)) {
             carteleraMap.set(peli.titulo, peli);
@@ -124,12 +147,10 @@ function mostrarPeliculasHome(listaPeliculas) {
             proximosMap.set(peli.titulo, peli);
         }
     }
-    
     const carteleraGrid = document.getElementById('cartelera-grid');
     const proximosGrid = document.getElementById('proximos-grid');
     carteleraGrid.innerHTML = '';
     proximosGrid.innerHTML = '';
-    
     for (const peli of carteleraMap.values()) {
         carteleraGrid.appendChild(crearTarjetaPelicula(peli));
     }
@@ -154,7 +175,7 @@ function crearTarjetaPelicula(peli) {
     return tarjeta;
 }
 
-// ================================ DETALLE (con cascada) ================================
+// ================================ DETALLE ================================
 function abrirDetallePelicula(titulo) {
     peliculaActualTitulo = titulo;
     const datosFijos = peliculas.find(p => p.titulo === titulo);
@@ -230,17 +251,27 @@ function aplicarFiltrosDetalle() {
 function actualizarOpcionesDetalle(funcionesValidas) {
     const ciudades = new Set();
     const cines = new Set();
-    const dias = new Set();
+    const diasMap = new Map();
     const idiomas = new Set();
     const horarios = new Set();
 
     funcionesValidas.forEach(f => {
         if (f.ciudad) ciudades.add(f.ciudad);
         if (f.cine) cines.add(f.cine);
-        if (f.fecha) dias.add(f.fecha);
+        if (f.fecha) {
+            const fechaDate = convertirStringAFecha(f.fecha);
+            if (fechaDate) {
+                const iso = fechaDate.toISOString().split('T')[0];
+                diasMap.set(iso, f.fecha);
+            } else {
+                diasMap.set(f.fecha, f.fecha);
+            }
+        }
         if (f.idioma) idiomas.add(f.idioma);
         if (f.horarios) f.horarios.forEach(h => horarios.add(h));
     });
+
+    const diasOrdenados = Array.from(diasMap.keys()).sort().map(iso => diasMap.get(iso));
 
     const selectCiudad = document.getElementById('detail-filter-ciudad');
     const selectCine = document.getElementById('detail-filter-cine');
@@ -254,10 +285,10 @@ function actualizarOpcionesDetalle(funcionesValidas) {
     const currentIdioma = selectIdioma.value;
     const currentHorario = selectHorario.value;
 
-    function rellenar(select, valoresSet, currentValue) {
-        const nuevoValor = currentValue && valoresSet.has(currentValue) ? currentValue : "";
+    function rellenar(select, valoresArray, currentValue) {
+        const nuevoValor = valoresArray.includes(currentValue) ? currentValue : "";
         select.innerHTML = `<option value="">Todos</option>`;
-        Array.from(valoresSet).sort().forEach(v => {
+        valoresArray.forEach(v => {
             const opt = document.createElement('option');
             opt.value = v;
             opt.textContent = v;
@@ -266,11 +297,11 @@ function actualizarOpcionesDetalle(funcionesValidas) {
         });
     }
 
-    rellenar(selectCiudad, ciudades, currentCiudad);
-    rellenar(selectCine, cines, currentCine);
-    rellenar(selectDia, dias, currentDia);
-    rellenar(selectIdioma, idiomas, currentIdioma);
-    rellenar(selectHorario, horarios, currentHorario);
+    rellenar(selectCiudad, Array.from(ciudades).sort(), currentCiudad);
+    rellenar(selectCine, Array.from(cines).sort(), currentCine);
+    rellenar(selectDia, diasOrdenados, currentDia);
+    rellenar(selectIdioma, Array.from(idiomas).sort(), currentIdioma);
+    rellenar(selectHorario, Array.from(horarios).sort(), currentHorario);
 }
 
 function renderizarFuncionesDetalle(funciones, filtroHorario) {

@@ -10,10 +10,27 @@ const RETRY_DELAY = 5000;
 
 const wait = (ms) => new Promise(r => setTimeout(r, ms));
 
+// Capitalizar primera letra
+function capitalize(str) {
+    if (!str) return '';
+    return str.charAt(0).toUpperCase() + str.slice(1);
+}
+
+// Formatear fecha ISO a string legible con mayúscula inicial
+function formatearFecha(isoDate) {
+    const date = new Date(isoDate);
+    const dias = ['domingo', 'lunes', 'martes', 'miércoles', 'jueves', 'viernes', 'sábado'];
+    const meses = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre'];
+    const diaSemana = capitalize(dias[date.getDay()]);
+    const diaNumero = date.getDate();
+    const mes = capitalize(meses[date.getMonth()]);
+    const anio = date.getFullYear();
+    return `${diaSemana} ${diaNumero}/${mes}/${anio}`;
+}
+
 async function getMoviesList(page) {
     console.log('📋 Obteniendo lista de películas...');
     await page.goto(BASE_URL, { waitUntil: 'networkidle2', timeout: 45000 });
-    // Esperar a que el slider cargue (usando el selector que funcionó antes)
     await page.waitForSelector('.swiper-slide .name', { timeout: 20000 });
 
     const movies = await page.evaluate(() => {
@@ -45,7 +62,6 @@ async function scrapeMovieDetails(page, movie, filmId) {
     await wait(1500);
 
     const details = await page.evaluate(() => {
-        // Poster grande
         let poster = '';
         const posterImg = document.querySelector('.movie-poster img');
         if (posterImg && posterImg.src) poster = posterImg.src;
@@ -76,7 +92,7 @@ async function scrapeMovieDetails(page, movie, filmId) {
     });
 
     // Obtener horarios desde API
-    let funcionesPlanos = [];
+    let funcionesRaw = [];
     try {
         const apiUrl = `https://www.cinegaumont.com.ar/films/${filmId}/tree`;
         const response = await page.evaluate(async (url) => {
@@ -86,19 +102,19 @@ async function scrapeMovieDetails(page, movie, filmId) {
         
         if (response && response.days) {
             for (const [fechaISO, cines] of Object.entries(response.days)) {
-                const fecha = new Date(fechaISO);
-                const fechaFormateada = `${fecha.toLocaleDateString('es-AR', { weekday: 'long' })} ${fecha.getDate()}/${fecha.toLocaleString('es-AR', { month: 'long' })}/${fecha.getFullYear()}`;
+                const fechaLegible = formatearFecha(fechaISO);
                 for (const cine of cines) {
                     const cineNombre = `${cine.name} (CABA)`;
                     for (const formato of cine.formats) {
                         const idioma = formato.formatDescription || 'Sin especificar';
                         for (const funcion of formato.performances) {
-                            funcionesPlanos.push({
+                            funcionesRaw.push({
+                                fechaISO: fechaISO,
+                                fechaLegible: fechaLegible,
                                 cine: cineNombre,
                                 ciudad: 'CABA',
-                                fecha: fechaFormateada,
                                 idioma: idioma,
-                                horarios: [funcion.showTime]
+                                horario: funcion.showTime
                             });
                         }
                     }
@@ -110,27 +126,48 @@ async function scrapeMovieDetails(page, movie, filmId) {
         return [];
     }
 
-    // Convertir a formato plano
-    let contador = 1;
-    return funcionesPlanos.map(func => ({
-        id_funcion: `${filmId}_${contador++}`,
+    // Ordenar por fechaISO ascendente (de hoy hacia adelante)
+    funcionesRaw.sort((a, b) => new Date(a.fechaISO) - new Date(b.fechaISO));
+    
+    // Agrupar por fechaLegible + cine + idioma
+    const grupos = new Map();
+    for (const f of funcionesRaw) {
+        const key = `${f.fechaLegible}|${f.cine}|${f.idioma}`;
+        if (!grupos.has(key)) {
+            grupos.set(key, {
+                fecha: f.fechaLegible,
+                cine: f.cine,
+                ciudad: f.ciudad,
+                idioma: f.idioma,
+                horarios: []
+            });
+        }
+        grupos.get(key).horarios.push(f.horario);
+    }
+    
+    // Convertir a array de funciones planas
+    const funcionesPlanos = Array.from(grupos.values()).map((g, idx) => ({
+        id_funcion: `${filmId}_${idx+1}`,
         titulo: movie.titulo,
         director: details.director,
         duracion: details.duracion,
-        cine: func.cine,
-        ciudad: func.ciudad,
-        fecha: func.fecha,
-        idioma: func.idioma,
-        horarios: func.horarios,
+        cine: g.cine,
+        ciudad: g.ciudad,
+        fecha: g.fecha,
+        idioma: g.idioma,
+        horarios: g.horarios,
         seccion: 'cartelera',
         poster: details.poster || movie.poster,
         sinopsis: details.sinopsis,
         linkTrailer: details.linkTrailer
     }));
+    
+    console.log(`   ✅ ${funcionesPlanos.length} funciones generadas (ordenadas por fecha).`);
+    return funcionesPlanos;
 }
 
 async function main() {
-    console.log('🚀 SCRAPER GAUMONT CON REINTENTOS');
+    console.log('🚀 SCRAPER GAUMONT CON FECHAS ORDENADAS Y MAYÚSCULAS');
     
     for (let intento = 1; intento <= MAX_RETRIES; intento++) {
         const browser = await puppeteer.launch({ headless: true, args: ['--no-sandbox'] });
@@ -150,10 +187,10 @@ async function main() {
             }
             
             await fs.writeFile(OUTPUT_FILE, JSON.stringify(todas, null, 2));
-            await fs.writeFile(BACKUP_FILE, JSON.stringify(todas, null, 2)); // guarda backup
+            await fs.writeFile(BACKUP_FILE, JSON.stringify(todas, null, 2));
             console.log(`\n🎉 ÉXITO! ${todas.length} funciones guardadas en ${OUTPUT_FILE}`);
             await browser.close();
-            return; // salir si funciona
+            return;
         } catch (err) {
             console.error(`Intento ${intento} falló: ${err.message}`);
             await browser.close();
@@ -162,7 +199,6 @@ async function main() {
                 await wait(RETRY_DELAY);
             } else {
                 console.log('❌ Todos los intentos fallaron. Usando backup si existe...');
-                // Intentar leer backup
                 try {
                     const backup = await fs.readFile(BACKUP_FILE, 'utf8');
                     await fs.writeFile(OUTPUT_FILE, backup);
