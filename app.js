@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 function cargarDatos() {
-    fetch('cartelera_prueba.json')
+   fetch('backend/peliculas.json')
         .then(response => response.json())
         .then(data => {
             peliculas = data;
