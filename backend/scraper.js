@@ -7,7 +7,18 @@ const OUTPUT_FILE = path.join(__dirname, 'peliculas.json');
 
 const wait = (ms) => new Promise(r => setTimeout(r, ms));
 
-// Obtener lista de películas desde el slider principal
+// Función para formatear fecha ISO a formato legible en español
+function formatearFecha(isoDate) {
+    const date = new Date(isoDate);
+    const diasSemana = ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'];
+    const meses = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'];
+    const diaSemana = diasSemana[date.getDay()];
+    const diaNumero = date.getDate();
+    const mes = meses[date.getMonth()];
+    const anio = date.getFullYear();
+    return `${diaSemana} ${diaNumero}/${mes}/${anio}`;
+}
+
 async function getMoviesList(page) {
     console.log('📋 Obteniendo lista de películas...');
     await page.goto(BASE_URL, { waitUntil: 'networkidle2', timeout: 30000 });
@@ -20,22 +31,20 @@ async function getMoviesList(page) {
             const titleElem = item.querySelector('.name');
             const linkElem = item.querySelector('.play-btn, .add-btn');
             const taglineElem = item.querySelector('.tagline');
+            // Poster desde la miniatura del slide (puede ser pequeña)
             const posterElem = item.querySelector('.slide-inner');
-            
-            if (titleElem && linkElem) {
-                let posterUrl = '';
-                if (posterElem) {
-                    const bgStyle = posterElem.getAttribute('data-background') || posterElem.style.backgroundImage;
-                    const urlMatch = bgStyle.match(/url\(["']?(.*?)["']?\)/);
-                    if (urlMatch && urlMatch[1]) posterUrl = urlMatch[1];
-                }
-                result.push({
-                    titulo: titleElem.innerText.trim(),
-                    url: linkElem.href,
-                    genero: taglineElem ? taglineElem.innerText.trim() : 'N/A',
-                    poster: posterUrl
-                });
+            let posterUrl = '';
+            if (posterElem) {
+                const bgStyle = posterElem.getAttribute('data-background') || posterElem.style.backgroundImage;
+                const urlMatch = bgStyle.match(/url\(["']?(.*?)["']?\)/);
+                if (urlMatch && urlMatch[1]) posterUrl = urlMatch[1];
             }
+            result.push({
+                titulo: titleElem ? titleElem.innerText.trim() : 'Sin título',
+                url: linkElem ? linkElem.href : '',
+                genero: taglineElem ? taglineElem.innerText.trim() : 'N/A',
+                posterMiniatura: posterUrl
+            });
         }
         return result;
     });
@@ -43,13 +52,24 @@ async function getMoviesList(page) {
     return movies;
 }
 
-// Extraer detalles de la página individual y combinar con API de horarios
 async function scrapeMovieDetails(page, movie, filmId) {
     console.log(`\n🎬 Procesando: ${movie.titulo}`);
     await page.goto(movie.url, { waitUntil: 'networkidle2', timeout: 30000 });
     await wait(1500);
 
+    // Extraer detalles incluyendo póster de alta resolución desde la página individual
     const details = await page.evaluate(() => {
+        // Póster grande (normalmente en .movie-poster img)
+        const posterLargeElem = document.querySelector('.movie-poster img');
+        let poster = '';
+        if (posterLargeElem && posterLargeElem.src) {
+            poster = posterLargeElem.src;
+        } else {
+            // Fallback: buscar cualquier imagen grande
+            const anyPoster = document.querySelector('.poster img, .film-poster img');
+            if (anyPoster && anyPoster.src) poster = anyPoster.src;
+        }
+        
         const sinopsisElem = document.querySelector('.movie-info-box .description');
         const sinopsis = sinopsisElem ? sinopsisElem.innerText.trim() : 'Sin sinopsis disponible.';
         
@@ -75,8 +95,17 @@ async function scrapeMovieDetails(page, movie, filmId) {
             }
         }
         
-        return { sinopsis, duracion, director, linkTrailer };
+        return { poster, sinopsis, duracion, director, linkTrailer };
     });
+
+    // Si no se encontró póster en la página individual, usar la miniatura como fallback
+    if (!details.poster && movie.posterMiniatura) {
+        details.poster = movie.posterMiniatura;
+    }
+    // Convertir URLs relativas a absolutas
+    if (details.poster && details.poster.startsWith('/')) {
+        details.poster = `https://www.cinegaumont.ar${details.poster}`;
+    }
 
     // Obtener horarios desde la API
     console.log(`   ⏰ Consultando API de horarios (film ID: ${filmId})...`);
@@ -89,7 +118,9 @@ async function scrapeMovieDetails(page, movie, filmId) {
         }, apiUrl);
         
         if (response && response.days) {
-            for (const [fecha, cines] of Object.entries(response.days)) {
+            for (const [fechaISO, cines] of Object.entries(response.days)) {
+                // Convertir la fecha ISO a formato legible
+                const fechaLegible = formatearFecha(fechaISO);
                 for (const cine of cines) {
                     const cineNombre = `${cine.name} (CABA)`;
                     for (const formato of cine.formats) {
@@ -98,7 +129,7 @@ async function scrapeMovieDetails(page, movie, filmId) {
                             funcionesPlanos.push({
                                 cine: cineNombre,
                                 ciudad: 'CABA',
-                                fecha: fecha,
+                                fecha: fechaLegible,
                                 idioma: idioma,
                                 horarios: [funcion.showTime]
                             });
@@ -129,7 +160,7 @@ async function scrapeMovieDetails(page, movie, filmId) {
             idioma: func.idioma,
             horarios: func.horarios,
             seccion: "cartelera",
-            poster: movie.poster,
+            poster: details.poster,
             sinopsis: details.sinopsis,
             linkTrailer: details.linkTrailer
         });
