@@ -1,10 +1,9 @@
-// app.js - Con direcciones cargadas desde archivo JSON externo
+// app.js - Con navegación global y menú hamburguesa funcionando
 let peliculas = [];
 let peliculaActualTitulo = "";
-let direccionesData = {}; // Aquí se guardarán las direcciones
+let direccionesData = {};
 
 document.addEventListener("DOMContentLoaded", () => {
-    // Primero cargar direcciones, luego películas
     cargarDirecciones();
 });
 
@@ -13,12 +12,12 @@ function cargarDirecciones() {
         .then(response => response.json())
         .then(data => {
             direccionesData = data;
-            cargarDatos(); // Una vez cargadas las direcciones, cargar películas
+            cargarDatos();
         })
         .catch(error => {
             console.error("Error cargando direcciones:", error);
-            direccionesData = {}; // fallback vacío
-            cargarDatos(); // igual intentar cargar películas
+            direccionesData = {};
+            cargarDatos();
         });
 }
 
@@ -28,6 +27,8 @@ function cargarDatos() {
         .then(data => {
             peliculas = data;
             inicializarHome();
+            configurarNavegacionGlobal();
+            inicializarMenuHamburguesa();
         })
         .catch(error => console.error("Error cargando el JSON:", error));
 }
@@ -73,7 +74,7 @@ function esFechaPosteriorOHoy(fechaStr) {
     return fechaObj >= hoy;
 }
 
-// ================================ URL DE COMPRA O WEB DEL CINE ================================
+// ================================ URL DE COMPRA ================================
 function obtenerURLCompra(cine, titulo, fecha = null, horario = null) {
     if (cine.includes('Gaumont')) return 'https://www.cinegaumont.ar/boleteria';
     if (cine.includes('Cosmos')) return 'https://www.cinecosmos.uba.ar/';
@@ -95,12 +96,12 @@ function obtenerURLCompra(cine, titulo, fecha = null, horario = null) {
     return `https://www.google.com/search?q=${encodeURIComponent(`${cine} ${titulo} entradas`)}`;
 }
 
-// ================================ DIRECCIONES Y MAPS (desde JSON) ================================
+// ================================ DIRECCIONES ================================
 function obtenerDireccionYMapa(cine) {
     return direccionesData[cine] || null;
 }
 
-// ================================ HOME (igual que antes) ================================
+// ================================ HOME ================================
 function inicializarHome() {
     const funcionesCartelera = peliculas.filter(p => p.seccion === "cartelera");
     llenarFiltrosHome(funcionesCartelera);
@@ -368,12 +369,9 @@ function renderizarFuncionesDetalle(funciones, filtroHorario) {
             if (!grupos.has(key)) grupos.set(key, { fecha: f.fecha, idioma: f.idioma, horarios: [], titulo: f.titulo });
             grupos.get(key).horarios.push(...f.horarios);
         });
-        
-        // Enlace para el nombre del cine (mayúsculas)
         let urlCompra = obtenerURLCompra(cine, funcionesCine[0].titulo);
         const cineNombreMayus = cine.toUpperCase();
         let cineHtml = '';
-        
         if (urlCompra) {
             cineHtml = `<h4 style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 8px; margin: 0 0 12px 0;">
                             <a href="${urlCompra}" target="_blank" rel="noopener noreferrer" class="cine-link">${cineNombreMayus}</a>`;
@@ -381,14 +379,11 @@ function renderizarFuncionesDetalle(funciones, filtroHorario) {
             cineHtml = `<h4 style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 8px; margin: 0 0 12px 0;">
                             <span class="cine-sin-link">${cineNombreMayus}</span>`;
         }
-        
-        // Dirección y enlace a Maps (al lado)
         const direccionData = obtenerDireccionYMapa(cine);
         if (direccionData) {
             cineHtml += `<span class="cine-direccion"><a href="${direccionData.maps}" target="_blank" rel="noopener noreferrer" class="direccion-link">${direccionData.direccion}</a></span>`;
         }
         cineHtml += `</h4>`;
-        
         let html = cineHtml;
         for (const grupo of grupos.values()) {
             let horariosMostrar = grupo.horarios;
@@ -411,15 +406,19 @@ function renderizarFuncionesDetalle(funciones, filtroHorario) {
 
 // ================================ NAVEGACIÓN GLOBAL ================================
 function configurarNavegacionGlobal() {
-    document.getElementById('site-title').addEventListener('click', () => {
-        document.getElementById('home-filter-ciudad').value = "";
-        document.getElementById('home-filter-cine').value = "";
-        document.getElementById('home-filter-dia').value = "";
-        document.getElementById('home-filter-horario').value = "";
-        aplicarFiltrosHome();
-        document.getElementById('detail-view').classList.add('hidden');
-        document.getElementById('home-view').classList.remove('hidden');
-    });
+    const siteTitle = document.getElementById('site-title');
+    if (siteTitle) {
+        siteTitle.addEventListener('click', () => {
+            // Resetear filtros del home
+            document.getElementById('home-filter-ciudad').value = "";
+            document.getElementById('home-filter-cine').value = "";
+            document.getElementById('home-filter-dia').value = "";
+            document.getElementById('home-filter-horario').value = "";
+            aplicarFiltrosHome();
+            document.getElementById('detail-view').classList.add('hidden');
+            document.getElementById('home-view').classList.remove('hidden');
+        });
+    }
 }
 
 // ================================ MENÚ HAMBURGUESA ================================
@@ -427,10 +426,12 @@ function inicializarMenuHamburguesa() {
     const toggleBtn = document.getElementById('menu-toggle');
     const menuNav = document.getElementById('menu-nav');
     if (!toggleBtn || !menuNav) return;
+
     toggleBtn.addEventListener('click', (e) => {
         e.stopPropagation();
         menuNav.classList.toggle('hidden');
     });
+
     const links = document.querySelectorAll('.menu-link');
     links.forEach(link => {
         link.addEventListener('click', (e) => {
@@ -459,6 +460,7 @@ function inicializarMenuHamburguesa() {
             menuNav.classList.add('hidden');
         });
     });
+
     document.addEventListener('click', (e) => {
         if (!menuNav.contains(e.target) && !toggleBtn.contains(e.target)) {
             menuNav.classList.add('hidden');

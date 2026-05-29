@@ -175,7 +175,7 @@ body {
     color: #888888 !important;
 }
 
-/* ========== DETALLE DE PELÍCULA ========== */
+/* ========== DETALLE DE PELÍCULA (póster reducido 20%) ========== */
 #detail-view {
     display: flex;
     flex-direction: column;
@@ -190,7 +190,7 @@ body {
 
 .movie-presentation {
     display: grid;
-    grid-template-columns: 260px 1fr;
+    grid-template-columns: 208px 1fr;  /* 260px - 20% = 208px */
     gap: 48px;
     padding: 48px 0;
 }
@@ -307,8 +307,6 @@ body {
     margin-bottom: 0;
 }
 
-/* Estilos para el encabezado del cine (flex, alineado) */
-/* Reemplaza la sección de .cine-block h4 y sus hijos */
 .cine-block h4 {
     margin: 0 0 12px 0;
     font-size: 14px;
@@ -352,6 +350,7 @@ body {
     color: var(--text-bright);
     text-decoration: underline;
 }
+
 .funcion-item {
     display: inline-block;
     margin-right: 24px;
@@ -393,7 +392,6 @@ body {
     cursor: default;
 }
 
-/* Scrollbar */
 ::-webkit-scrollbar { width: 8px; height: 8px; }
 ::-webkit-scrollbar-track { background: transparent; }
 ::-webkit-scrollbar-thumb { background-color: rgba(255, 255, 255, 0.1); border-radius: 4px; }
@@ -401,7 +399,6 @@ body {
 
 .hidden { display: none !important; }
 
-/* ===== MENÚ HAMBURGUESA ===== */
 .hamburger-menu {
     position: relative;
     display: inline-block;
@@ -472,7 +469,6 @@ body {
     color: var(--text-bright);
 }
 
-/* Responsive: en pantallas pequeñas, el grid se colapsa y los días se apilan */
 @media (max-width: 768px) {
     .movie-presentation {
         grid-template-columns: 1fr;
@@ -484,7 +480,7 @@ body {
         justify-content: center;
     }
     .poster-column img {
-        width: 220px;
+        width: 176px;  /* 220px - 20% = 176px */
     }
     .funcion-item {
         display: block;

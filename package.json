@@ -19,6 +19,8 @@
   },
   "homepage": "https://github.com/maurobonotto/cartelera-sandbox#readme",
   "dependencies": {
-    "puppeteer": "^25.1.0"
+    "axios": "^1.16.1",
+    "puppeteer": "^25.1.0",
+    "tesseract.js": "^7.0.0"
   }
 }

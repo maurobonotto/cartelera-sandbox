@@ -1,0 +1,39 @@
+[
+  {
+    "id_funcion": "lorca_1780080691825_0",
+    "titulo": "TEL GRAN ARCO",
+    "director": "No especificado",
+    "duracion": "110",
+    "cine": "Cine Lorca",
+    "ciudad": "CABA",
+    "fecha": "VIE 29/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "00:10",
+      "22:10"
+    ],
+    "sala": "Sala 1",
+    "seccion": "cartelera",
+    "poster": null,
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "lorca_1780080691826_1",
+    "titulo": "NEL PARTIDO",
+    "director": "No especificado",
+    "duracion": "106",
+    "cine": "Cine Lorca",
+    "ciudad": "CABA",
+    "fecha": "VIE 29/MAY/2026",
+    "idioma": "Sin especificar",
+    "horarios": [
+      "06:15"
+    ],
+    "sala": "Sala 2",
+    "seccion": "cartelera",
+    "poster": null,
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  }
+]
