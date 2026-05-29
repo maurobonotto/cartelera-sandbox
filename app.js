@@ -1,4 +1,4 @@
-// app.js - con agrupación de horarios corregida y placeholder "ツ"
+// app.js - con orden alfabético en home y cines en horizontal en detalle
 
 let peliculas = [];
 let peliculaActualTitulo = "";
@@ -129,22 +129,26 @@ function mostrarPeliculasHome(listaPeliculas) {
         }
     }
     
+    // Ordenar alfabéticamente por título
+    const carteleraOrdenada = Array.from(carteleraMap.values()).sort((a, b) => a.titulo.localeCompare(b.titulo));
+    const proximosOrdenada = Array.from(proximosMap.values()).sort((a, b) => a.titulo.localeCompare(b.titulo));
+    
     const carteleraGrid = document.getElementById('cartelera-grid');
     const proximosGrid = document.getElementById('proximos-grid');
     carteleraGrid.innerHTML = '';
     proximosGrid.innerHTML = '';
     
-    for (const peli of carteleraMap.values()) {
+    for (const peli of carteleraOrdenada) {
         carteleraGrid.appendChild(crearTarjetaPelicula(peli));
     }
-    for (const peli of proximosMap.values()) {
+    for (const peli of proximosOrdenada) {
         proximosGrid.appendChild(crearTarjetaPelicula(peli));
     }
     
     const carteleraCount = document.getElementById('cartelera-counter');
     const proximosCount = document.getElementById('proximos-counter');
-    if (carteleraCount) carteleraCount.textContent = `(${carteleraMap.size})`;
-    if (proximosCount) proximosCount.textContent = `(${proximosMap.size})`;
+    if (carteleraCount) carteleraCount.textContent = `(${carteleraOrdenada.length})`;
+    if (proximosCount) proximosCount.textContent = `(${proximosOrdenada.length})`;
 }
 
 // Placeholder "ツ" en negrita
@@ -318,7 +322,7 @@ function convertirFechaLegible(fechaStr) {
     return new Date(parseInt(anio), mesNum, parseInt(dia));
 }
 
-// Versión corregida que agrupa horarios por fecha e idioma dentro de cada cine
+// Versión con cines en horizontal y orden alfabético de cines
 function renderizarFuncionesDetalle(funciones, filtroHorario) {
     const contenedor = document.getElementById('showtimes-container');
     contenedor.innerHTML = '';
@@ -334,13 +338,17 @@ function renderizarFuncionesDetalle(funciones, filtroHorario) {
         porCine[f.cine].push(f);
     });
 
-    for (const cine in porCine) {
+    // Ordenar cines alfabéticamente
+    const cinesOrdenados = Object.keys(porCine).sort();
+
+    for (const cine of cinesOrdenados) {
+        const funcionesCine = porCine[cine];
         const bloque = document.createElement('div');
         bloque.className = 'cine-block';
         
         // Agrupar dentro del mismo cine por fecha e idioma
         const grupos = new Map();
-        porCine[cine].forEach(f => {
+        funcionesCine.forEach(f => {
             const key = `${f.fecha}|${f.idioma}`;
             if (!grupos.has(key)) {
                 grupos.set(key, { fecha: f.fecha, idioma: f.idioma, horarios: [] });
@@ -348,14 +356,13 @@ function renderizarFuncionesDetalle(funciones, filtroHorario) {
             grupos.get(key).horarios.push(...f.horarios);
         });
         
-        let html = `<h4>${cine} (${porCine[cine][0].ciudad})</h4>`;
+        let html = `<h4>${cine} (${funcionesCine[0].ciudad})</h4>`;
         for (const grupo of grupos.values()) {
             let horariosMostrar = grupo.horarios;
             if (filtroHorario) {
                 horariosMostrar = horariosMostrar.filter(h => h === filtroHorario);
             }
             if (horariosMostrar.length === 0) continue;
-            // Ordenar horarios
             horariosMostrar.sort();
             html += `
                 <div class="funcion-item">

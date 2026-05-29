@@ -340,3 +340,27 @@ body {
 * { scrollbar-width: thin; scrollbar-color: rgba(255,255,255,0.1) transparent; }
 
 .hidden { display: none !important; }
+/* Contenedor de funciones disponibles: mostrar cines en horizontal */
+#showtimes-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+/* Cada bloque de cine debe tener ancho automático, no 100% */
+.cine-block {
+    flex: 0 0 auto;
+    min-width: 260px;
+    max-width: 100%;
+}
+
+/* En pantallas pequeñas, que se apilen */
+@media (max-width: 768px) {
+    #showtimes-container {
+        flex-direction: column;
+    }
+    .cine-block {
+        width: 100%;
+    }
+}
