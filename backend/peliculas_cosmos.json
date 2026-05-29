@@ -1,0 +1,20 @@
+[
+  {
+    "id_funcion": "cosmos_1780029721438_0",
+    "titulo": "El desprecio",
+    "director": "Jean-Luc Godard",
+    "duracion": "N/A",
+    "cine": "Cine Cosmos UBA",
+    "ciudad": "CABA",
+    "fecha": "viernes 29/mayo/2026",
+    "idioma": "Idioma original con subtítulos",
+    "horarios": [
+      "14:55",
+      "18:55"
+    ],
+    "seccion": "cartelera",
+    "poster": "assets/uploads/Desprecio-Slider.jpg",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  }
+]
