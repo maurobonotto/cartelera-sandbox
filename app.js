@@ -1,4 +1,4 @@
-// app.js - Versión con orden de días desde hoy
+// app.js - Versión sin fechas pasadas (solo hoy y futuro)
 let peliculas = [];
 let peliculaActualTitulo = "";
 
@@ -71,27 +71,13 @@ function parsearFechaLegible(texto) {
     return null;
 }
 
-function ordenarFechasDesdeHoy(fechasMap) {
-    // fechasMap: Map donde clave = string fecha (ej. "LUN 1/JUN/2026"), valor = Date
+// Verifica si la fecha es igual o posterior al día actual (sin hora)
+function esFechaPosteriorOHoy(fechaStr) {
+    const fechaObj = parsearFechaLegible(fechaStr);
+    if (!fechaObj) return false;
     const hoy = new Date();
     hoy.setHours(0, 0, 0, 0);
-    
-    // Convertir a array y ordenar cronológicamente
-    const entries = Array.from(fechasMap.entries());
-    entries.sort((a, b) => a[1] - b[1]);
-    
-    // Dividir en dos listas: desde hoy hacia adelante, y antes de hoy
-    const desdeHoy = [];
-    const antesHoy = [];
-    for (const [fechaStr, fechaObj] of entries) {
-        if (fechaObj >= hoy) {
-            desdeHoy.push(fechaStr);
-        } else {
-            antesHoy.push(fechaStr);
-        }
-    }
-    // Concatenar: primero desde hoy, luego los anteriores
-    return [...desdeHoy, ...antesHoy];
+    return fechaObj >= hoy;
 }
 
 // ================================ HOME ================================
@@ -109,25 +95,23 @@ function inicializarHome() {
 function llenarFiltrosHome(funcionesCartelera) {
     const ciudades = new Set();
     const cines = new Set();
-    const fechasMap = new Map(); // clave: fechaStr, valor: Date
+    const fechasMap = new Map(); // clave: fechaStr, valor: Date (solo hoy o futuras)
     const horarios = new Set();
 
     funcionesCartelera.forEach(f => {
         if (f.ciudad) ciudades.add(f.ciudad);
         if (f.cine) cines.add(f.cine);
-        if (f.fecha) {
+        if (f.fecha && esFechaPosteriorOHoy(f.fecha)) {
             const fechaObj = parsearFechaLegible(f.fecha);
-            if (fechaObj) {
-                fechasMap.set(f.fecha, fechaObj);
-            } else {
-                // fallback: usar el string como clave
-                fechasMap.set(f.fecha, null);
-            }
+            if (fechaObj) fechasMap.set(f.fecha, fechaObj);
         }
         if (f.horarios) f.horarios.forEach(h => horarios.add(h));
     });
 
-    const diasOrdenados = ordenarFechasDesdeHoy(fechasMap);
+    // Ordenar fechas (solo desde hoy hacia adelante)
+    const diasOrdenados = Array.from(fechasMap.entries())
+        .sort((a, b) => a[1] - b[1])
+        .map(([fechaStr]) => fechaStr);
     const horariosOrdenados = Array.from(horarios).sort();
 
     function llenarSelect(id, valores) {
@@ -154,7 +138,8 @@ function aplicarFiltrosHome() {
     const valDia = document.getElementById('home-filter-dia').value;
     const valHorario = document.getElementById('home-filter-horario').value;
 
-    let funcionesFiltradas = peliculas.filter(p => p.seccion === "cartelera");
+    // Solo considerar funciones de cartelera y con fecha >= hoy
+    let funcionesFiltradas = peliculas.filter(p => p.seccion === "cartelera" && esFechaPosteriorOHoy(p.fecha));
     if (valCiudad) funcionesFiltradas = funcionesFiltradas.filter(p => p.ciudad === valCiudad);
     if (valCine) funcionesFiltradas = funcionesFiltradas.filter(p => p.cine === valCine);
     if (valDia) funcionesFiltradas = funcionesFiltradas.filter(p => p.fecha === valDia);
@@ -291,26 +276,24 @@ function inicializarFiltrosDetalle() {
 function llenarFiltrosDetalle(funciones) {
     const ciudades = new Set();
     const cines = new Set();
-    const fechasMap = new Map();
+    const fechasMap = new Map(); // solo hoy y futuras
     const idiomas = new Set();
     const horarios = new Set();
 
     funciones.forEach(f => {
         if (f.ciudad) ciudades.add(f.ciudad);
         if (f.cine) cines.add(f.cine);
-        if (f.fecha) {
+        if (f.fecha && esFechaPosteriorOHoy(f.fecha)) {
             const fechaObj = parsearFechaLegible(f.fecha);
-            if (fechaObj) {
-                fechasMap.set(f.fecha, fechaObj);
-            } else {
-                fechasMap.set(f.fecha, null);
-            }
+            if (fechaObj) fechasMap.set(f.fecha, fechaObj);
         }
         if (f.idioma) idiomas.add(f.idioma);
         if (f.horarios) f.horarios.forEach(h => horarios.add(h));
     });
 
-    const diasOrdenados = ordenarFechasDesdeHoy(fechasMap);
+    const diasOrdenados = Array.from(fechasMap.entries())
+        .sort((a, b) => a[1] - b[1])
+        .map(([fechaStr]) => fechaStr);
     const horariosOrdenados = Array.from(horarios).sort();
 
     function llenarSelect(id, valores) {
@@ -339,7 +322,7 @@ function aplicarFiltrosDetalle() {
     const idioma = document.getElementById('detail-filter-idioma').value;
     const horario = document.getElementById('detail-filter-horario').value;
 
-    let funcionesFiltradas = peliculas.filter(p => p.titulo === peliculaActualTitulo);
+    let funcionesFiltradas = peliculas.filter(p => p.titulo === peliculaActualTitulo && esFechaPosteriorOHoy(p.fecha));
     if (ciudad) funcionesFiltradas = funcionesFiltradas.filter(p => p.ciudad === ciudad);
     if (cine) funcionesFiltradas = funcionesFiltradas.filter(p => p.cine === cine);
     if (dia) funcionesFiltradas = funcionesFiltradas.filter(p => p.fecha === dia);
@@ -352,13 +335,15 @@ function renderizarFuncionesDetalle(funciones, filtroHorario) {
     const contenedor = document.getElementById('showtimes-container');
     contenedor.innerHTML = '';
 
-    if (funciones.length === 0) {
+    // Ya vienen filtradas por fecha >= hoy, pero por si acaso
+    const funcionesFuturas = funciones.filter(f => esFechaPosteriorOHoy(f.fecha));
+    if (funcionesFuturas.length === 0) {
         contenedor.innerHTML = '<p style="color: var(--text-muted);">No hay funciones disponibles para los filtros seleccionados.</p>';
         return;
     }
 
     const porCine = {};
-    funciones.forEach(f => {
+    funcionesFuturas.forEach(f => {
         if (!porCine[f.cine]) porCine[f.cine] = [];
         porCine[f.cine].push(f);
     });
