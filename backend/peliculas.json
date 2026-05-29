@@ -896,6 +896,23 @@
     "linkTrailer": ""
   },
   {
+    "id_funcion": "cacodelphia_21537_52",
+    "titulo": "Emi",
+    "director": "No especificado",
+    "duracion": "93",
+    "cine": "Cine Arte Cacodelphia",
+    "ciudad": "CABA",
+    "fecha": "Sábado 30/Mayo/2026",
+    "idioma": "Cast / 2D",
+    "horarios": [
+      "21:00"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://image.tmdb.org/t/p/w500/588JYNjjPJ0NtHK4Fp5WMncGa9Z.jpg",
+    "sinopsis": "Emi, de 18 años, vive con sus padres en los suburbios de Buenos Aires. Hace unos meses empezó a trabajar en un taller de reparación de motos en un barrio obrero. Emi quiere saber acerca de su familia biológica y pasa sus días armando el rompecabezas de su historia.",
+    "linkTrailer": "https://www.youtube.com/embed/940hTvDoN5Q?si=JeteX5p6WT8sKgS8"
+  },
+  {
     "id_funcion": "838_1",
     "titulo": "Nada entre los dos",
     "director": "Juan Taratuto",
@@ -2937,22 +2954,5 @@
     "poster": "https://apiv2.gaf.adro.studio/uploads/86/poster/69fb3855f1d831.58899579.webp",
     "sinopsis": "Johanne se enamora por primera vez de su profesora de francés y, para preservar sus sentimientos, decide documentar sus emociones y experiencias en un diario personal. Cuando su madre y su abuela acceden a estos relatos, se muestran sorprendidas por la intimidad del testimonio, pero rápidamente ambas descubren una voz literaria con gran potencial.\r\n\r\nMientras la familia debate sobre la moralidad y las posibles consecuencias de publicar el material, Johanne debe navegar la brecha que separa su fantasía romántica de la realidad. A través de este proceso, las tres mujeres confrontan sus distintas visiones sobre el amor, la sexualidad y el autodescubrimiento en un profundo diálogo generacional.",
     "linkTrailer": "https://www.youtube.com/embed/dYTJdb2t7BY?si=F6ycCB41UZd92a61"
-  },
-  {
-    "id_funcion": "cacodelphia_21537_52",
-    "titulo": "EMI",
-    "director": "No especificado",
-    "duracion": "93",
-    "cine": "Cine Arte Cacodelphia",
-    "ciudad": "CABA",
-    "fecha": "Sábado 30/Mayo/2026",
-    "idioma": "Cast / 2D",
-    "horarios": [
-      "21:00"
-    ],
-    "seccion": "cartelera",
-    "poster": "https://image.tmdb.org/t/p/w500/588JYNjjPJ0NtHK4Fp5WMncGa9Z.jpg",
-    "sinopsis": "Emi, de 18 años, vive con sus padres en los suburbios de Buenos Aires. Hace unos meses empezó a trabajar en un taller de reparación de motos en un barrio obrero. Emi quiere saber acerca de su familia biológica y pasa sus días armando el rompecabezas de su historia.",
-    "linkTrailer": "https://www.youtube.com/embed/940hTvDoN5Q?si=JeteX5p6WT8sKgS8"
   }
 ]
