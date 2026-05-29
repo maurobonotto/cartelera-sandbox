@@ -1,0 +1,4235 @@
+[
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20193_JUE 28-MAY-2026_1850",
+    "titulo": "Amarga Navidad",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "JUE 28/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "18:50"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/GB7MYC7EYREGTJ3EY3UUHPCC4A.png?auth=b9a426606b8278ed3d0c524d6cc6f0addb0b938f3076045e990c663dd6b9f936&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20193_JUE 28-MAY-2026_2100",
+    "titulo": "Amarga Navidad",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "JUE 28/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "21:00"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/GB7MYC7EYREGTJ3EY3UUHPCC4A.png?auth=b9a426606b8278ed3d0c524d6cc6f0addb0b938f3076045e990c663dd6b9f936&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20193_VIE 29-MAY-2026_1850",
+    "titulo": "Amarga Navidad",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "VIE 29/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "18:50"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/GB7MYC7EYREGTJ3EY3UUHPCC4A.png?auth=b9a426606b8278ed3d0c524d6cc6f0addb0b938f3076045e990c663dd6b9f936&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20193_VIE 29-MAY-2026_2100",
+    "titulo": "Amarga Navidad",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "VIE 29/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "21:00"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/GB7MYC7EYREGTJ3EY3UUHPCC4A.png?auth=b9a426606b8278ed3d0c524d6cc6f0addb0b938f3076045e990c663dd6b9f936&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20193_SÁB 30-MAY-2026_1850",
+    "titulo": "Amarga Navidad",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "SÁB 30/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "18:50"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/GB7MYC7EYREGTJ3EY3UUHPCC4A.png?auth=b9a426606b8278ed3d0c524d6cc6f0addb0b938f3076045e990c663dd6b9f936&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20193_SÁB 30-MAY-2026_2100",
+    "titulo": "Amarga Navidad",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "SÁB 30/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "21:00"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/GB7MYC7EYREGTJ3EY3UUHPCC4A.png?auth=b9a426606b8278ed3d0c524d6cc6f0addb0b938f3076045e990c663dd6b9f936&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20193_DOM 31-MAY-2026_1850",
+    "titulo": "Amarga Navidad",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "DOM 31/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "18:50"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/GB7MYC7EYREGTJ3EY3UUHPCC4A.png?auth=b9a426606b8278ed3d0c524d6cc6f0addb0b938f3076045e990c663dd6b9f936&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20193_DOM 31-MAY-2026_2100",
+    "titulo": "Amarga Navidad",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "DOM 31/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "21:00"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/GB7MYC7EYREGTJ3EY3UUHPCC4A.png?auth=b9a426606b8278ed3d0c524d6cc6f0addb0b938f3076045e990c663dd6b9f936&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20193_LUN 01-JUN-2026_1850",
+    "titulo": "Amarga Navidad",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "LUN 01/JUN/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "18:50"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/GB7MYC7EYREGTJ3EY3UUHPCC4A.png?auth=b9a426606b8278ed3d0c524d6cc6f0addb0b938f3076045e990c663dd6b9f936&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20193_LUN 01-JUN-2026_2100",
+    "titulo": "Amarga Navidad",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "LUN 01/JUN/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "21:00"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/GB7MYC7EYREGTJ3EY3UUHPCC4A.png?auth=b9a426606b8278ed3d0c524d6cc6f0addb0b938f3076045e990c663dd6b9f936&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20193_MAR 02-JUN-2026_1850",
+    "titulo": "Amarga Navidad",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "MAR 02/JUN/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "18:50"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/GB7MYC7EYREGTJ3EY3UUHPCC4A.png?auth=b9a426606b8278ed3d0c524d6cc6f0addb0b938f3076045e990c663dd6b9f936&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20193_MAR 02-JUN-2026_2100",
+    "titulo": "Amarga Navidad",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "MAR 02/JUN/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "21:00"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/GB7MYC7EYREGTJ3EY3UUHPCC4A.png?auth=b9a426606b8278ed3d0c524d6cc6f0addb0b938f3076045e990c663dd6b9f936&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20193_MIÉ 03-JUN-2026_1850",
+    "titulo": "Amarga Navidad",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "MIÉ 03/JUN/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "18:50"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/GB7MYC7EYREGTJ3EY3UUHPCC4A.png?auth=b9a426606b8278ed3d0c524d6cc6f0addb0b938f3076045e990c663dd6b9f936&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20193_MIÉ 03-JUN-2026_2100",
+    "titulo": "Amarga Navidad",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "MIÉ 03/JUN/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "21:00"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/GB7MYC7EYREGTJ3EY3UUHPCC4A.png?auth=b9a426606b8278ed3d0c524d6cc6f0addb0b938f3076045e990c663dd6b9f936&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20191_JUE 28-MAY-2026_1400",
+    "titulo": "Backrooms",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "JUE 28/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "14:00"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/YWBIACNOXBBGDC64FLYHBFKGVA.png?auth=234819cfb4d4919f0d25fee68c826a903e698aec0ca9e03e4cb8098aa83a35da&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20191_JUE 28-MAY-2026_1610",
+    "titulo": "Backrooms",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "JUE 28/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "16:10"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/YWBIACNOXBBGDC64FLYHBFKGVA.png?auth=234819cfb4d4919f0d25fee68c826a903e698aec0ca9e03e4cb8098aa83a35da&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20191_JUE 28-MAY-2026_1840",
+    "titulo": "Backrooms",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "JUE 28/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "18:40"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/YWBIACNOXBBGDC64FLYHBFKGVA.png?auth=234819cfb4d4919f0d25fee68c826a903e698aec0ca9e03e4cb8098aa83a35da&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20191_JUE 28-MAY-2026_2050",
+    "titulo": "Backrooms",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "JUE 28/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "20:50"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/YWBIACNOXBBGDC64FLYHBFKGVA.png?auth=234819cfb4d4919f0d25fee68c826a903e698aec0ca9e03e4cb8098aa83a35da&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20191_JUE 28-MAY-2026_2300",
+    "titulo": "Backrooms",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "JUE 28/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "23:00"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/YWBIACNOXBBGDC64FLYHBFKGVA.png?auth=234819cfb4d4919f0d25fee68c826a903e698aec0ca9e03e4cb8098aa83a35da&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20191_VIE 29-MAY-2026_1400",
+    "titulo": "Backrooms",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "VIE 29/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "14:00"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/YWBIACNOXBBGDC64FLYHBFKGVA.png?auth=234819cfb4d4919f0d25fee68c826a903e698aec0ca9e03e4cb8098aa83a35da&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20191_VIE 29-MAY-2026_1610",
+    "titulo": "Backrooms",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "VIE 29/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "16:10"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/YWBIACNOXBBGDC64FLYHBFKGVA.png?auth=234819cfb4d4919f0d25fee68c826a903e698aec0ca9e03e4cb8098aa83a35da&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20191_VIE 29-MAY-2026_1840",
+    "titulo": "Backrooms",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "VIE 29/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "18:40"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/YWBIACNOXBBGDC64FLYHBFKGVA.png?auth=234819cfb4d4919f0d25fee68c826a903e698aec0ca9e03e4cb8098aa83a35da&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20191_VIE 29-MAY-2026_2050",
+    "titulo": "Backrooms",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "VIE 29/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "20:50"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/YWBIACNOXBBGDC64FLYHBFKGVA.png?auth=234819cfb4d4919f0d25fee68c826a903e698aec0ca9e03e4cb8098aa83a35da&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20191_VIE 29-MAY-2026_2300",
+    "titulo": "Backrooms",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "VIE 29/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "23:00"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/YWBIACNOXBBGDC64FLYHBFKGVA.png?auth=234819cfb4d4919f0d25fee68c826a903e698aec0ca9e03e4cb8098aa83a35da&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20191_SÁB 30-MAY-2026_1400",
+    "titulo": "Backrooms",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "SÁB 30/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "14:00"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/YWBIACNOXBBGDC64FLYHBFKGVA.png?auth=234819cfb4d4919f0d25fee68c826a903e698aec0ca9e03e4cb8098aa83a35da&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20191_SÁB 30-MAY-2026_1610",
+    "titulo": "Backrooms",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "SÁB 30/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "16:10"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/YWBIACNOXBBGDC64FLYHBFKGVA.png?auth=234819cfb4d4919f0d25fee68c826a903e698aec0ca9e03e4cb8098aa83a35da&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20191_SÁB 30-MAY-2026_1840",
+    "titulo": "Backrooms",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "SÁB 30/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "18:40"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/YWBIACNOXBBGDC64FLYHBFKGVA.png?auth=234819cfb4d4919f0d25fee68c826a903e698aec0ca9e03e4cb8098aa83a35da&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20191_SÁB 30-MAY-2026_2050",
+    "titulo": "Backrooms",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "SÁB 30/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "20:50"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/YWBIACNOXBBGDC64FLYHBFKGVA.png?auth=234819cfb4d4919f0d25fee68c826a903e698aec0ca9e03e4cb8098aa83a35da&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20191_SÁB 30-MAY-2026_2300",
+    "titulo": "Backrooms",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "SÁB 30/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "23:00"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/YWBIACNOXBBGDC64FLYHBFKGVA.png?auth=234819cfb4d4919f0d25fee68c826a903e698aec0ca9e03e4cb8098aa83a35da&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20191_DOM 31-MAY-2026_1400",
+    "titulo": "Backrooms",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "DOM 31/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "14:00"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/YWBIACNOXBBGDC64FLYHBFKGVA.png?auth=234819cfb4d4919f0d25fee68c826a903e698aec0ca9e03e4cb8098aa83a35da&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20191_DOM 31-MAY-2026_1610",
+    "titulo": "Backrooms",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "DOM 31/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "16:10"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/YWBIACNOXBBGDC64FLYHBFKGVA.png?auth=234819cfb4d4919f0d25fee68c826a903e698aec0ca9e03e4cb8098aa83a35da&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20191_DOM 31-MAY-2026_1840",
+    "titulo": "Backrooms",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "DOM 31/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "18:40"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/YWBIACNOXBBGDC64FLYHBFKGVA.png?auth=234819cfb4d4919f0d25fee68c826a903e698aec0ca9e03e4cb8098aa83a35da&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20191_DOM 31-MAY-2026_2050",
+    "titulo": "Backrooms",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "DOM 31/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "20:50"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/YWBIACNOXBBGDC64FLYHBFKGVA.png?auth=234819cfb4d4919f0d25fee68c826a903e698aec0ca9e03e4cb8098aa83a35da&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20191_DOM 31-MAY-2026_2300",
+    "titulo": "Backrooms",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "DOM 31/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "23:00"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/YWBIACNOXBBGDC64FLYHBFKGVA.png?auth=234819cfb4d4919f0d25fee68c826a903e698aec0ca9e03e4cb8098aa83a35da&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20191_LUN 01-JUN-2026_1400",
+    "titulo": "Backrooms",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "LUN 01/JUN/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "14:00"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/YWBIACNOXBBGDC64FLYHBFKGVA.png?auth=234819cfb4d4919f0d25fee68c826a903e698aec0ca9e03e4cb8098aa83a35da&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20191_LUN 01-JUN-2026_1610",
+    "titulo": "Backrooms",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "LUN 01/JUN/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "16:10"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/YWBIACNOXBBGDC64FLYHBFKGVA.png?auth=234819cfb4d4919f0d25fee68c826a903e698aec0ca9e03e4cb8098aa83a35da&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20191_LUN 01-JUN-2026_1840",
+    "titulo": "Backrooms",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "LUN 01/JUN/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "18:40"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/YWBIACNOXBBGDC64FLYHBFKGVA.png?auth=234819cfb4d4919f0d25fee68c826a903e698aec0ca9e03e4cb8098aa83a35da&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20191_LUN 01-JUN-2026_2050",
+    "titulo": "Backrooms",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "LUN 01/JUN/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "20:50"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/YWBIACNOXBBGDC64FLYHBFKGVA.png?auth=234819cfb4d4919f0d25fee68c826a903e698aec0ca9e03e4cb8098aa83a35da&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20191_LUN 01-JUN-2026_2300",
+    "titulo": "Backrooms",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "LUN 01/JUN/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "23:00"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/YWBIACNOXBBGDC64FLYHBFKGVA.png?auth=234819cfb4d4919f0d25fee68c826a903e698aec0ca9e03e4cb8098aa83a35da&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20191_MAR 02-JUN-2026_1400",
+    "titulo": "Backrooms",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "MAR 02/JUN/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "14:00"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/YWBIACNOXBBGDC64FLYHBFKGVA.png?auth=234819cfb4d4919f0d25fee68c826a903e698aec0ca9e03e4cb8098aa83a35da&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20191_MAR 02-JUN-2026_1610",
+    "titulo": "Backrooms",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "MAR 02/JUN/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "16:10"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/YWBIACNOXBBGDC64FLYHBFKGVA.png?auth=234819cfb4d4919f0d25fee68c826a903e698aec0ca9e03e4cb8098aa83a35da&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20191_MAR 02-JUN-2026_1840",
+    "titulo": "Backrooms",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "MAR 02/JUN/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "18:40"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/YWBIACNOXBBGDC64FLYHBFKGVA.png?auth=234819cfb4d4919f0d25fee68c826a903e698aec0ca9e03e4cb8098aa83a35da&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20191_MAR 02-JUN-2026_2050",
+    "titulo": "Backrooms",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "MAR 02/JUN/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "20:50"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/YWBIACNOXBBGDC64FLYHBFKGVA.png?auth=234819cfb4d4919f0d25fee68c826a903e698aec0ca9e03e4cb8098aa83a35da&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20191_MAR 02-JUN-2026_2300",
+    "titulo": "Backrooms",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "MAR 02/JUN/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "23:00"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/YWBIACNOXBBGDC64FLYHBFKGVA.png?auth=234819cfb4d4919f0d25fee68c826a903e698aec0ca9e03e4cb8098aa83a35da&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20191_MIÉ 03-JUN-2026_1400",
+    "titulo": "Backrooms",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "MIÉ 03/JUN/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "14:00"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/YWBIACNOXBBGDC64FLYHBFKGVA.png?auth=234819cfb4d4919f0d25fee68c826a903e698aec0ca9e03e4cb8098aa83a35da&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20191_MIÉ 03-JUN-2026_1610",
+    "titulo": "Backrooms",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "MIÉ 03/JUN/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "16:10"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/YWBIACNOXBBGDC64FLYHBFKGVA.png?auth=234819cfb4d4919f0d25fee68c826a903e698aec0ca9e03e4cb8098aa83a35da&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20191_MIÉ 03-JUN-2026_2050",
+    "titulo": "Backrooms",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "MIÉ 03/JUN/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "20:50"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/YWBIACNOXBBGDC64FLYHBFKGVA.png?auth=234819cfb4d4919f0d25fee68c826a903e698aec0ca9e03e4cb8098aa83a35da&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20191_MIÉ 03-JUN-2026_2300",
+    "titulo": "Backrooms",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "MIÉ 03/JUN/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "23:00"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/YWBIACNOXBBGDC64FLYHBFKGVA.png?auth=234819cfb4d4919f0d25fee68c826a903e698aec0ca9e03e4cb8098aa83a35da&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20194_JUE 28-MAY-2026_1300",
+    "titulo": "Dolly: Juega conmigo",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "JUE 28/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "13:00"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/CNUCNH6RWNGONNRQLWJOUOYCTM.png?auth=841b31cb4ac6e83eb8b5531d42b49e51249fba8229fb19b37834bffccd3f3ab3&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20194_JUE 28-MAY-2026_2320",
+    "titulo": "Dolly: Juega conmigo",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "JUE 28/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "23:20"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/CNUCNH6RWNGONNRQLWJOUOYCTM.png?auth=841b31cb4ac6e83eb8b5531d42b49e51249fba8229fb19b37834bffccd3f3ab3&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20194_VIE 29-MAY-2026_1300",
+    "titulo": "Dolly: Juega conmigo",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "VIE 29/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "13:00"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/CNUCNH6RWNGONNRQLWJOUOYCTM.png?auth=841b31cb4ac6e83eb8b5531d42b49e51249fba8229fb19b37834bffccd3f3ab3&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20194_VIE 29-MAY-2026_2320",
+    "titulo": "Dolly: Juega conmigo",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "VIE 29/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "23:20"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/CNUCNH6RWNGONNRQLWJOUOYCTM.png?auth=841b31cb4ac6e83eb8b5531d42b49e51249fba8229fb19b37834bffccd3f3ab3&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20194_SÁB 30-MAY-2026_1300",
+    "titulo": "Dolly: Juega conmigo",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "SÁB 30/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "13:00"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/CNUCNH6RWNGONNRQLWJOUOYCTM.png?auth=841b31cb4ac6e83eb8b5531d42b49e51249fba8229fb19b37834bffccd3f3ab3&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20194_SÁB 30-MAY-2026_2320",
+    "titulo": "Dolly: Juega conmigo",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "SÁB 30/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "23:20"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/CNUCNH6RWNGONNRQLWJOUOYCTM.png?auth=841b31cb4ac6e83eb8b5531d42b49e51249fba8229fb19b37834bffccd3f3ab3&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20194_DOM 31-MAY-2026_1300",
+    "titulo": "Dolly: Juega conmigo",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "DOM 31/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "13:00"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/CNUCNH6RWNGONNRQLWJOUOYCTM.png?auth=841b31cb4ac6e83eb8b5531d42b49e51249fba8229fb19b37834bffccd3f3ab3&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20194_DOM 31-MAY-2026_2320",
+    "titulo": "Dolly: Juega conmigo",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "DOM 31/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "23:20"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/CNUCNH6RWNGONNRQLWJOUOYCTM.png?auth=841b31cb4ac6e83eb8b5531d42b49e51249fba8229fb19b37834bffccd3f3ab3&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20194_LUN 01-JUN-2026_1300",
+    "titulo": "Dolly: Juega conmigo",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "LUN 01/JUN/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "13:00"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/CNUCNH6RWNGONNRQLWJOUOYCTM.png?auth=841b31cb4ac6e83eb8b5531d42b49e51249fba8229fb19b37834bffccd3f3ab3&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20194_LUN 01-JUN-2026_2320",
+    "titulo": "Dolly: Juega conmigo",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "LUN 01/JUN/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "23:20"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/CNUCNH6RWNGONNRQLWJOUOYCTM.png?auth=841b31cb4ac6e83eb8b5531d42b49e51249fba8229fb19b37834bffccd3f3ab3&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20194_MAR 02-JUN-2026_1300",
+    "titulo": "Dolly: Juega conmigo",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "MAR 02/JUN/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "13:00"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/CNUCNH6RWNGONNRQLWJOUOYCTM.png?auth=841b31cb4ac6e83eb8b5531d42b49e51249fba8229fb19b37834bffccd3f3ab3&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20194_MAR 02-JUN-2026_2320",
+    "titulo": "Dolly: Juega conmigo",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "MAR 02/JUN/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "23:20"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/CNUCNH6RWNGONNRQLWJOUOYCTM.png?auth=841b31cb4ac6e83eb8b5531d42b49e51249fba8229fb19b37834bffccd3f3ab3&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20194_MIÉ 03-JUN-2026_1300",
+    "titulo": "Dolly: Juega conmigo",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "MIÉ 03/JUN/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "13:00"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/CNUCNH6RWNGONNRQLWJOUOYCTM.png?auth=841b31cb4ac6e83eb8b5531d42b49e51249fba8229fb19b37834bffccd3f3ab3&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20194_MIÉ 03-JUN-2026_2320",
+    "titulo": "Dolly: Juega conmigo",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "MIÉ 03/JUN/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "23:20"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/CNUCNH6RWNGONNRQLWJOUOYCTM.png?auth=841b31cb4ac6e83eb8b5531d42b49e51249fba8229fb19b37834bffccd3f3ab3&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20122_JUE 28-MAY-2026_1305",
+    "titulo": "El diablo viste a la moda 2",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "JUE 28/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "13:05"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/IT72SIP7WZHP5HKJA3ACM2LBNI.png?auth=ff8124af782965f6b3a3c142f2db9f4920ae726ae54a91581ed66278122aceda&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20122_JUE 28-MAY-2026_1515",
+    "titulo": "El diablo viste a la moda 2",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "JUE 28/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "15:15"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/IT72SIP7WZHP5HKJA3ACM2LBNI.png?auth=ff8124af782965f6b3a3c142f2db9f4920ae726ae54a91581ed66278122aceda&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20122_JUE 28-MAY-2026_1730",
+    "titulo": "El diablo viste a la moda 2",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "JUE 28/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "17:30"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/IT72SIP7WZHP5HKJA3ACM2LBNI.png?auth=ff8124af782965f6b3a3c142f2db9f4920ae726ae54a91581ed66278122aceda&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20122_JUE 28-MAY-2026_2010",
+    "titulo": "El diablo viste a la moda 2",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "JUE 28/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "20:10"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/IT72SIP7WZHP5HKJA3ACM2LBNI.png?auth=ff8124af782965f6b3a3c142f2db9f4920ae726ae54a91581ed66278122aceda&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20122_JUE 28-MAY-2026_2230",
+    "titulo": "El diablo viste a la moda 2",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "JUE 28/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "22:30"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/IT72SIP7WZHP5HKJA3ACM2LBNI.png?auth=ff8124af782965f6b3a3c142f2db9f4920ae726ae54a91581ed66278122aceda&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20122_VIE 29-MAY-2026_1305",
+    "titulo": "El diablo viste a la moda 2",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "VIE 29/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "13:05"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/IT72SIP7WZHP5HKJA3ACM2LBNI.png?auth=ff8124af782965f6b3a3c142f2db9f4920ae726ae54a91581ed66278122aceda&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20122_VIE 29-MAY-2026_1515",
+    "titulo": "El diablo viste a la moda 2",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "VIE 29/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "15:15"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/IT72SIP7WZHP5HKJA3ACM2LBNI.png?auth=ff8124af782965f6b3a3c142f2db9f4920ae726ae54a91581ed66278122aceda&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20122_VIE 29-MAY-2026_1730",
+    "titulo": "El diablo viste a la moda 2",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "VIE 29/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "17:30"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/IT72SIP7WZHP5HKJA3ACM2LBNI.png?auth=ff8124af782965f6b3a3c142f2db9f4920ae726ae54a91581ed66278122aceda&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20122_VIE 29-MAY-2026_2010",
+    "titulo": "El diablo viste a la moda 2",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "VIE 29/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "20:10"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/IT72SIP7WZHP5HKJA3ACM2LBNI.png?auth=ff8124af782965f6b3a3c142f2db9f4920ae726ae54a91581ed66278122aceda&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20122_VIE 29-MAY-2026_2230",
+    "titulo": "El diablo viste a la moda 2",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "VIE 29/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "22:30"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/IT72SIP7WZHP5HKJA3ACM2LBNI.png?auth=ff8124af782965f6b3a3c142f2db9f4920ae726ae54a91581ed66278122aceda&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20122_SÁB 30-MAY-2026_1305",
+    "titulo": "El diablo viste a la moda 2",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "SÁB 30/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "13:05"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/IT72SIP7WZHP5HKJA3ACM2LBNI.png?auth=ff8124af782965f6b3a3c142f2db9f4920ae726ae54a91581ed66278122aceda&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20122_SÁB 30-MAY-2026_1515",
+    "titulo": "El diablo viste a la moda 2",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "SÁB 30/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "15:15"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/IT72SIP7WZHP5HKJA3ACM2LBNI.png?auth=ff8124af782965f6b3a3c142f2db9f4920ae726ae54a91581ed66278122aceda&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20122_SÁB 30-MAY-2026_1730",
+    "titulo": "El diablo viste a la moda 2",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "SÁB 30/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "17:30"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/IT72SIP7WZHP5HKJA3ACM2LBNI.png?auth=ff8124af782965f6b3a3c142f2db9f4920ae726ae54a91581ed66278122aceda&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20122_SÁB 30-MAY-2026_2010",
+    "titulo": "El diablo viste a la moda 2",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "SÁB 30/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "20:10"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/IT72SIP7WZHP5HKJA3ACM2LBNI.png?auth=ff8124af782965f6b3a3c142f2db9f4920ae726ae54a91581ed66278122aceda&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20122_SÁB 30-MAY-2026_2230",
+    "titulo": "El diablo viste a la moda 2",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "SÁB 30/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "22:30"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/IT72SIP7WZHP5HKJA3ACM2LBNI.png?auth=ff8124af782965f6b3a3c142f2db9f4920ae726ae54a91581ed66278122aceda&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20122_DOM 31-MAY-2026_1305",
+    "titulo": "El diablo viste a la moda 2",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "DOM 31/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "13:05"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/IT72SIP7WZHP5HKJA3ACM2LBNI.png?auth=ff8124af782965f6b3a3c142f2db9f4920ae726ae54a91581ed66278122aceda&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20122_DOM 31-MAY-2026_1515",
+    "titulo": "El diablo viste a la moda 2",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "DOM 31/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "15:15"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/IT72SIP7WZHP5HKJA3ACM2LBNI.png?auth=ff8124af782965f6b3a3c142f2db9f4920ae726ae54a91581ed66278122aceda&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20122_DOM 31-MAY-2026_1730",
+    "titulo": "El diablo viste a la moda 2",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "DOM 31/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "17:30"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/IT72SIP7WZHP5HKJA3ACM2LBNI.png?auth=ff8124af782965f6b3a3c142f2db9f4920ae726ae54a91581ed66278122aceda&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20122_DOM 31-MAY-2026_2010",
+    "titulo": "El diablo viste a la moda 2",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "DOM 31/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "20:10"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/IT72SIP7WZHP5HKJA3ACM2LBNI.png?auth=ff8124af782965f6b3a3c142f2db9f4920ae726ae54a91581ed66278122aceda&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20122_DOM 31-MAY-2026_2230",
+    "titulo": "El diablo viste a la moda 2",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "DOM 31/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "22:30"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/IT72SIP7WZHP5HKJA3ACM2LBNI.png?auth=ff8124af782965f6b3a3c142f2db9f4920ae726ae54a91581ed66278122aceda&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20122_LUN 01-JUN-2026_1305",
+    "titulo": "El diablo viste a la moda 2",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "LUN 01/JUN/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "13:05"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/IT72SIP7WZHP5HKJA3ACM2LBNI.png?auth=ff8124af782965f6b3a3c142f2db9f4920ae726ae54a91581ed66278122aceda&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20122_LUN 01-JUN-2026_1515",
+    "titulo": "El diablo viste a la moda 2",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "LUN 01/JUN/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "15:15"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/IT72SIP7WZHP5HKJA3ACM2LBNI.png?auth=ff8124af782965f6b3a3c142f2db9f4920ae726ae54a91581ed66278122aceda&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20122_LUN 01-JUN-2026_1730",
+    "titulo": "El diablo viste a la moda 2",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "LUN 01/JUN/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "17:30"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/IT72SIP7WZHP5HKJA3ACM2LBNI.png?auth=ff8124af782965f6b3a3c142f2db9f4920ae726ae54a91581ed66278122aceda&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20122_LUN 01-JUN-2026_2010",
+    "titulo": "El diablo viste a la moda 2",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "LUN 01/JUN/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "20:10"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/IT72SIP7WZHP5HKJA3ACM2LBNI.png?auth=ff8124af782965f6b3a3c142f2db9f4920ae726ae54a91581ed66278122aceda&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20122_LUN 01-JUN-2026_2230",
+    "titulo": "El diablo viste a la moda 2",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "LUN 01/JUN/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "22:30"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/IT72SIP7WZHP5HKJA3ACM2LBNI.png?auth=ff8124af782965f6b3a3c142f2db9f4920ae726ae54a91581ed66278122aceda&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20122_MAR 02-JUN-2026_1305",
+    "titulo": "El diablo viste a la moda 2",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "MAR 02/JUN/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "13:05"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/IT72SIP7WZHP5HKJA3ACM2LBNI.png?auth=ff8124af782965f6b3a3c142f2db9f4920ae726ae54a91581ed66278122aceda&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20122_MAR 02-JUN-2026_1515",
+    "titulo": "El diablo viste a la moda 2",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "MAR 02/JUN/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "15:15"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/IT72SIP7WZHP5HKJA3ACM2LBNI.png?auth=ff8124af782965f6b3a3c142f2db9f4920ae726ae54a91581ed66278122aceda&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20122_MAR 02-JUN-2026_1730",
+    "titulo": "El diablo viste a la moda 2",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "MAR 02/JUN/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "17:30"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/IT72SIP7WZHP5HKJA3ACM2LBNI.png?auth=ff8124af782965f6b3a3c142f2db9f4920ae726ae54a91581ed66278122aceda&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20122_MAR 02-JUN-2026_2010",
+    "titulo": "El diablo viste a la moda 2",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "MAR 02/JUN/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "20:10"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/IT72SIP7WZHP5HKJA3ACM2LBNI.png?auth=ff8124af782965f6b3a3c142f2db9f4920ae726ae54a91581ed66278122aceda&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20122_MAR 02-JUN-2026_2230",
+    "titulo": "El diablo viste a la moda 2",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "MAR 02/JUN/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "22:30"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/IT72SIP7WZHP5HKJA3ACM2LBNI.png?auth=ff8124af782965f6b3a3c142f2db9f4920ae726ae54a91581ed66278122aceda&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20122_MIÉ 03-JUN-2026_1305",
+    "titulo": "El diablo viste a la moda 2",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "MIÉ 03/JUN/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "13:05"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/IT72SIP7WZHP5HKJA3ACM2LBNI.png?auth=ff8124af782965f6b3a3c142f2db9f4920ae726ae54a91581ed66278122aceda&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20122_MIÉ 03-JUN-2026_1515",
+    "titulo": "El diablo viste a la moda 2",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "MIÉ 03/JUN/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "15:15"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/IT72SIP7WZHP5HKJA3ACM2LBNI.png?auth=ff8124af782965f6b3a3c142f2db9f4920ae726ae54a91581ed66278122aceda&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20122_MIÉ 03-JUN-2026_1730",
+    "titulo": "El diablo viste a la moda 2",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "MIÉ 03/JUN/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "17:30"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/IT72SIP7WZHP5HKJA3ACM2LBNI.png?auth=ff8124af782965f6b3a3c142f2db9f4920ae726ae54a91581ed66278122aceda&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20122_MIÉ 03-JUN-2026_2010",
+    "titulo": "El diablo viste a la moda 2",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "MIÉ 03/JUN/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "20:10"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/IT72SIP7WZHP5HKJA3ACM2LBNI.png?auth=ff8124af782965f6b3a3c142f2db9f4920ae726ae54a91581ed66278122aceda&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20180_JUE 28-MAY-2026_2240",
+    "titulo": "El pasajero del Diablo",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "JUE 28/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "22:40"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/MZQWLQCTHNCKVI4EHK34EYJCIA.png?auth=96a378d321d0603b726600e3629e75a0e019f3ca93ea4721345739fbec2ced9a&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20180_VIE 29-MAY-2026_2240",
+    "titulo": "El pasajero del Diablo",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "VIE 29/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "22:40"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/MZQWLQCTHNCKVI4EHK34EYJCIA.png?auth=96a378d321d0603b726600e3629e75a0e019f3ca93ea4721345739fbec2ced9a&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20180_SÁB 30-MAY-2026_2240",
+    "titulo": "El pasajero del Diablo",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "SÁB 30/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "22:40"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/MZQWLQCTHNCKVI4EHK34EYJCIA.png?auth=96a378d321d0603b726600e3629e75a0e019f3ca93ea4721345739fbec2ced9a&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20180_DOM 31-MAY-2026_2240",
+    "titulo": "El pasajero del Diablo",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "DOM 31/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "22:40"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/MZQWLQCTHNCKVI4EHK34EYJCIA.png?auth=96a378d321d0603b726600e3629e75a0e019f3ca93ea4721345739fbec2ced9a&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20180_LUN 01-JUN-2026_2240",
+    "titulo": "El pasajero del Diablo",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "LUN 01/JUN/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "22:40"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/MZQWLQCTHNCKVI4EHK34EYJCIA.png?auth=96a378d321d0603b726600e3629e75a0e019f3ca93ea4721345739fbec2ced9a&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20180_MAR 02-JUN-2026_2240",
+    "titulo": "El pasajero del Diablo",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "MAR 02/JUN/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "22:40"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/MZQWLQCTHNCKVI4EHK34EYJCIA.png?auth=96a378d321d0603b726600e3629e75a0e019f3ca93ea4721345739fbec2ced9a&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20180_MIÉ 03-JUN-2026_2240",
+    "titulo": "El pasajero del Diablo",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "MIÉ 03/JUN/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "22:40"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/MZQWLQCTHNCKVI4EHK34EYJCIA.png?auth=96a378d321d0603b726600e3629e75a0e019f3ca93ea4721345739fbec2ced9a&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20111_JUE 28-MAY-2026_1325",
+    "titulo": "Michael",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "JUE 28/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "13:25"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/UQSR4QB5QVHPXI4DKCKUEDJFS4.png?auth=3b9f68fed312fc9813f94bde05a726a513f7113d082ab352f984de6a3681dc24&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20111_JUE 28-MAY-2026_1535",
+    "titulo": "Michael",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "JUE 28/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "15:35"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/UQSR4QB5QVHPXI4DKCKUEDJFS4.png?auth=3b9f68fed312fc9813f94bde05a726a513f7113d082ab352f984de6a3681dc24&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20111_JUE 28-MAY-2026_1550",
+    "titulo": "Michael",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "JUE 28/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "15:50"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/UQSR4QB5QVHPXI4DKCKUEDJFS4.png?auth=3b9f68fed312fc9813f94bde05a726a513f7113d082ab352f984de6a3681dc24&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20111_JUE 28-MAY-2026_1820",
+    "titulo": "Michael",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "JUE 28/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "18:20"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/UQSR4QB5QVHPXI4DKCKUEDJFS4.png?auth=3b9f68fed312fc9813f94bde05a726a513f7113d082ab352f984de6a3681dc24&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20111_JUE 28-MAY-2026_2050",
+    "titulo": "Michael",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "JUE 28/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "20:50"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/UQSR4QB5QVHPXI4DKCKUEDJFS4.png?auth=3b9f68fed312fc9813f94bde05a726a513f7113d082ab352f984de6a3681dc24&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20111_JUE 28-MAY-2026_2255",
+    "titulo": "Michael",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "JUE 28/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "22:55"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/UQSR4QB5QVHPXI4DKCKUEDJFS4.png?auth=3b9f68fed312fc9813f94bde05a726a513f7113d082ab352f984de6a3681dc24&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20111_VIE 29-MAY-2026_1325",
+    "titulo": "Michael",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "VIE 29/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "13:25"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/UQSR4QB5QVHPXI4DKCKUEDJFS4.png?auth=3b9f68fed312fc9813f94bde05a726a513f7113d082ab352f984de6a3681dc24&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20111_VIE 29-MAY-2026_1535",
+    "titulo": "Michael",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "VIE 29/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "15:35"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/UQSR4QB5QVHPXI4DKCKUEDJFS4.png?auth=3b9f68fed312fc9813f94bde05a726a513f7113d082ab352f984de6a3681dc24&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20111_VIE 29-MAY-2026_1550",
+    "titulo": "Michael",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "VIE 29/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "15:50"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/UQSR4QB5QVHPXI4DKCKUEDJFS4.png?auth=3b9f68fed312fc9813f94bde05a726a513f7113d082ab352f984de6a3681dc24&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20111_VIE 29-MAY-2026_1820",
+    "titulo": "Michael",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "VIE 29/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "18:20"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/UQSR4QB5QVHPXI4DKCKUEDJFS4.png?auth=3b9f68fed312fc9813f94bde05a726a513f7113d082ab352f984de6a3681dc24&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20111_VIE 29-MAY-2026_2050",
+    "titulo": "Michael",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "VIE 29/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "20:50"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/UQSR4QB5QVHPXI4DKCKUEDJFS4.png?auth=3b9f68fed312fc9813f94bde05a726a513f7113d082ab352f984de6a3681dc24&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20111_VIE 29-MAY-2026_2255",
+    "titulo": "Michael",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "VIE 29/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "22:55"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/UQSR4QB5QVHPXI4DKCKUEDJFS4.png?auth=3b9f68fed312fc9813f94bde05a726a513f7113d082ab352f984de6a3681dc24&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20111_SÁB 30-MAY-2026_1325",
+    "titulo": "Michael",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "SÁB 30/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "13:25"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/UQSR4QB5QVHPXI4DKCKUEDJFS4.png?auth=3b9f68fed312fc9813f94bde05a726a513f7113d082ab352f984de6a3681dc24&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20111_SÁB 30-MAY-2026_1535",
+    "titulo": "Michael",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "SÁB 30/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "15:35"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/UQSR4QB5QVHPXI4DKCKUEDJFS4.png?auth=3b9f68fed312fc9813f94bde05a726a513f7113d082ab352f984de6a3681dc24&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20111_SÁB 30-MAY-2026_1550",
+    "titulo": "Michael",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "SÁB 30/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "15:50"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/UQSR4QB5QVHPXI4DKCKUEDJFS4.png?auth=3b9f68fed312fc9813f94bde05a726a513f7113d082ab352f984de6a3681dc24&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20111_SÁB 30-MAY-2026_1820",
+    "titulo": "Michael",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "SÁB 30/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "18:20"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/UQSR4QB5QVHPXI4DKCKUEDJFS4.png?auth=3b9f68fed312fc9813f94bde05a726a513f7113d082ab352f984de6a3681dc24&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20111_SÁB 30-MAY-2026_2050",
+    "titulo": "Michael",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "SÁB 30/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "20:50"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/UQSR4QB5QVHPXI4DKCKUEDJFS4.png?auth=3b9f68fed312fc9813f94bde05a726a513f7113d082ab352f984de6a3681dc24&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20111_SÁB 30-MAY-2026_2255",
+    "titulo": "Michael",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "SÁB 30/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "22:55"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/UQSR4QB5QVHPXI4DKCKUEDJFS4.png?auth=3b9f68fed312fc9813f94bde05a726a513f7113d082ab352f984de6a3681dc24&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20111_DOM 31-MAY-2026_1325",
+    "titulo": "Michael",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "DOM 31/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "13:25"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/UQSR4QB5QVHPXI4DKCKUEDJFS4.png?auth=3b9f68fed312fc9813f94bde05a726a513f7113d082ab352f984de6a3681dc24&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20111_DOM 31-MAY-2026_1535",
+    "titulo": "Michael",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "DOM 31/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "15:35"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/UQSR4QB5QVHPXI4DKCKUEDJFS4.png?auth=3b9f68fed312fc9813f94bde05a726a513f7113d082ab352f984de6a3681dc24&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20111_DOM 31-MAY-2026_1550",
+    "titulo": "Michael",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "DOM 31/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "15:50"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/UQSR4QB5QVHPXI4DKCKUEDJFS4.png?auth=3b9f68fed312fc9813f94bde05a726a513f7113d082ab352f984de6a3681dc24&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20111_DOM 31-MAY-2026_1820",
+    "titulo": "Michael",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "DOM 31/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "18:20"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/UQSR4QB5QVHPXI4DKCKUEDJFS4.png?auth=3b9f68fed312fc9813f94bde05a726a513f7113d082ab352f984de6a3681dc24&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20111_DOM 31-MAY-2026_2050",
+    "titulo": "Michael",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "DOM 31/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "20:50"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/UQSR4QB5QVHPXI4DKCKUEDJFS4.png?auth=3b9f68fed312fc9813f94bde05a726a513f7113d082ab352f984de6a3681dc24&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20111_DOM 31-MAY-2026_2255",
+    "titulo": "Michael",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "DOM 31/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "22:55"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/UQSR4QB5QVHPXI4DKCKUEDJFS4.png?auth=3b9f68fed312fc9813f94bde05a726a513f7113d082ab352f984de6a3681dc24&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20111_LUN 01-JUN-2026_1325",
+    "titulo": "Michael",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "LUN 01/JUN/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "13:25"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/UQSR4QB5QVHPXI4DKCKUEDJFS4.png?auth=3b9f68fed312fc9813f94bde05a726a513f7113d082ab352f984de6a3681dc24&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20111_LUN 01-JUN-2026_1535",
+    "titulo": "Michael",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "LUN 01/JUN/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "15:35"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/UQSR4QB5QVHPXI4DKCKUEDJFS4.png?auth=3b9f68fed312fc9813f94bde05a726a513f7113d082ab352f984de6a3681dc24&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20111_LUN 01-JUN-2026_1550",
+    "titulo": "Michael",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "LUN 01/JUN/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "15:50"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/UQSR4QB5QVHPXI4DKCKUEDJFS4.png?auth=3b9f68fed312fc9813f94bde05a726a513f7113d082ab352f984de6a3681dc24&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20111_LUN 01-JUN-2026_1820",
+    "titulo": "Michael",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "LUN 01/JUN/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "18:20"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/UQSR4QB5QVHPXI4DKCKUEDJFS4.png?auth=3b9f68fed312fc9813f94bde05a726a513f7113d082ab352f984de6a3681dc24&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20111_LUN 01-JUN-2026_2050",
+    "titulo": "Michael",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "LUN 01/JUN/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "20:50"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/UQSR4QB5QVHPXI4DKCKUEDJFS4.png?auth=3b9f68fed312fc9813f94bde05a726a513f7113d082ab352f984de6a3681dc24&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20111_LUN 01-JUN-2026_2255",
+    "titulo": "Michael",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "LUN 01/JUN/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "22:55"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/UQSR4QB5QVHPXI4DKCKUEDJFS4.png?auth=3b9f68fed312fc9813f94bde05a726a513f7113d082ab352f984de6a3681dc24&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20111_MAR 02-JUN-2026_1325",
+    "titulo": "Michael",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "MAR 02/JUN/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "13:25"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/UQSR4QB5QVHPXI4DKCKUEDJFS4.png?auth=3b9f68fed312fc9813f94bde05a726a513f7113d082ab352f984de6a3681dc24&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20111_MAR 02-JUN-2026_1535",
+    "titulo": "Michael",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "MAR 02/JUN/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "15:35"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/UQSR4QB5QVHPXI4DKCKUEDJFS4.png?auth=3b9f68fed312fc9813f94bde05a726a513f7113d082ab352f984de6a3681dc24&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20111_MAR 02-JUN-2026_1550",
+    "titulo": "Michael",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "MAR 02/JUN/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "15:50"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/UQSR4QB5QVHPXI4DKCKUEDJFS4.png?auth=3b9f68fed312fc9813f94bde05a726a513f7113d082ab352f984de6a3681dc24&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20111_MAR 02-JUN-2026_1820",
+    "titulo": "Michael",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "MAR 02/JUN/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "18:20"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/UQSR4QB5QVHPXI4DKCKUEDJFS4.png?auth=3b9f68fed312fc9813f94bde05a726a513f7113d082ab352f984de6a3681dc24&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20111_MAR 02-JUN-2026_2050",
+    "titulo": "Michael",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "MAR 02/JUN/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "20:50"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/UQSR4QB5QVHPXI4DKCKUEDJFS4.png?auth=3b9f68fed312fc9813f94bde05a726a513f7113d082ab352f984de6a3681dc24&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20111_MAR 02-JUN-2026_2255",
+    "titulo": "Michael",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "MAR 02/JUN/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "22:55"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/UQSR4QB5QVHPXI4DKCKUEDJFS4.png?auth=3b9f68fed312fc9813f94bde05a726a513f7113d082ab352f984de6a3681dc24&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20111_MIÉ 03-JUN-2026_1325",
+    "titulo": "Michael",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "MIÉ 03/JUN/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "13:25"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/UQSR4QB5QVHPXI4DKCKUEDJFS4.png?auth=3b9f68fed312fc9813f94bde05a726a513f7113d082ab352f984de6a3681dc24&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20111_MIÉ 03-JUN-2026_1535",
+    "titulo": "Michael",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "MIÉ 03/JUN/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "15:35"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/UQSR4QB5QVHPXI4DKCKUEDJFS4.png?auth=3b9f68fed312fc9813f94bde05a726a513f7113d082ab352f984de6a3681dc24&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20111_MIÉ 03-JUN-2026_1550",
+    "titulo": "Michael",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "MIÉ 03/JUN/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "15:50"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/UQSR4QB5QVHPXI4DKCKUEDJFS4.png?auth=3b9f68fed312fc9813f94bde05a726a513f7113d082ab352f984de6a3681dc24&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20111_MIÉ 03-JUN-2026_1820",
+    "titulo": "Michael",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "MIÉ 03/JUN/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "18:20"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/UQSR4QB5QVHPXI4DKCKUEDJFS4.png?auth=3b9f68fed312fc9813f94bde05a726a513f7113d082ab352f984de6a3681dc24&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20111_MIÉ 03-JUN-2026_2050",
+    "titulo": "Michael",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "MIÉ 03/JUN/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "20:50"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/UQSR4QB5QVHPXI4DKCKUEDJFS4.png?auth=3b9f68fed312fc9813f94bde05a726a513f7113d082ab352f984de6a3681dc24&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20111_MIÉ 03-JUN-2026_2255",
+    "titulo": "Michael",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "MIÉ 03/JUN/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "22:55"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/UQSR4QB5QVHPXI4DKCKUEDJFS4.png?auth=3b9f68fed312fc9813f94bde05a726a513f7113d082ab352f984de6a3681dc24&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20143_JUE 28-MAY-2026_1820",
+    "titulo": "Mortal Kombat II",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "JUE 28/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "18:20"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/JVQ5CHYADJCYLECIAEPI2DAYKY.png?auth=8acc4bab9819aef60de2efe27ccc2d0cfbfee1d7d0bc8e0e08b143cc613c4855&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20143_JUE 28-MAY-2026_2040",
+    "titulo": "Mortal Kombat II",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "JUE 28/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "20:40"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/JVQ5CHYADJCYLECIAEPI2DAYKY.png?auth=8acc4bab9819aef60de2efe27ccc2d0cfbfee1d7d0bc8e0e08b143cc613c4855&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20143_JUE 28-MAY-2026_2230",
+    "titulo": "Mortal Kombat II",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "JUE 28/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "22:30"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/JVQ5CHYADJCYLECIAEPI2DAYKY.png?auth=8acc4bab9819aef60de2efe27ccc2d0cfbfee1d7d0bc8e0e08b143cc613c4855&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20143_VIE 29-MAY-2026_1820",
+    "titulo": "Mortal Kombat II",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "VIE 29/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "18:20"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/JVQ5CHYADJCYLECIAEPI2DAYKY.png?auth=8acc4bab9819aef60de2efe27ccc2d0cfbfee1d7d0bc8e0e08b143cc613c4855&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20143_VIE 29-MAY-2026_2040",
+    "titulo": "Mortal Kombat II",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "VIE 29/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "20:40"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/JVQ5CHYADJCYLECIAEPI2DAYKY.png?auth=8acc4bab9819aef60de2efe27ccc2d0cfbfee1d7d0bc8e0e08b143cc613c4855&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20143_VIE 29-MAY-2026_2230",
+    "titulo": "Mortal Kombat II",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "VIE 29/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "22:30"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/JVQ5CHYADJCYLECIAEPI2DAYKY.png?auth=8acc4bab9819aef60de2efe27ccc2d0cfbfee1d7d0bc8e0e08b143cc613c4855&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20143_SÁB 30-MAY-2026_1820",
+    "titulo": "Mortal Kombat II",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "SÁB 30/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "18:20"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/JVQ5CHYADJCYLECIAEPI2DAYKY.png?auth=8acc4bab9819aef60de2efe27ccc2d0cfbfee1d7d0bc8e0e08b143cc613c4855&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20143_SÁB 30-MAY-2026_2040",
+    "titulo": "Mortal Kombat II",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "SÁB 30/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "20:40"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/JVQ5CHYADJCYLECIAEPI2DAYKY.png?auth=8acc4bab9819aef60de2efe27ccc2d0cfbfee1d7d0bc8e0e08b143cc613c4855&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20143_SÁB 30-MAY-2026_2230",
+    "titulo": "Mortal Kombat II",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "SÁB 30/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "22:30"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/JVQ5CHYADJCYLECIAEPI2DAYKY.png?auth=8acc4bab9819aef60de2efe27ccc2d0cfbfee1d7d0bc8e0e08b143cc613c4855&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20143_DOM 31-MAY-2026_1820",
+    "titulo": "Mortal Kombat II",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "DOM 31/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "18:20"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/JVQ5CHYADJCYLECIAEPI2DAYKY.png?auth=8acc4bab9819aef60de2efe27ccc2d0cfbfee1d7d0bc8e0e08b143cc613c4855&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20143_DOM 31-MAY-2026_2040",
+    "titulo": "Mortal Kombat II",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "DOM 31/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "20:40"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/JVQ5CHYADJCYLECIAEPI2DAYKY.png?auth=8acc4bab9819aef60de2efe27ccc2d0cfbfee1d7d0bc8e0e08b143cc613c4855&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20143_DOM 31-MAY-2026_2230",
+    "titulo": "Mortal Kombat II",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "DOM 31/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "22:30"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/JVQ5CHYADJCYLECIAEPI2DAYKY.png?auth=8acc4bab9819aef60de2efe27ccc2d0cfbfee1d7d0bc8e0e08b143cc613c4855&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20143_LUN 01-JUN-2026_1820",
+    "titulo": "Mortal Kombat II",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "LUN 01/JUN/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "18:20"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/JVQ5CHYADJCYLECIAEPI2DAYKY.png?auth=8acc4bab9819aef60de2efe27ccc2d0cfbfee1d7d0bc8e0e08b143cc613c4855&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20143_LUN 01-JUN-2026_2040",
+    "titulo": "Mortal Kombat II",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "LUN 01/JUN/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "20:40"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/JVQ5CHYADJCYLECIAEPI2DAYKY.png?auth=8acc4bab9819aef60de2efe27ccc2d0cfbfee1d7d0bc8e0e08b143cc613c4855&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20143_LUN 01-JUN-2026_2230",
+    "titulo": "Mortal Kombat II",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "LUN 01/JUN/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "22:30"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/JVQ5CHYADJCYLECIAEPI2DAYKY.png?auth=8acc4bab9819aef60de2efe27ccc2d0cfbfee1d7d0bc8e0e08b143cc613c4855&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20143_MAR 02-JUN-2026_1820",
+    "titulo": "Mortal Kombat II",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "MAR 02/JUN/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "18:20"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/JVQ5CHYADJCYLECIAEPI2DAYKY.png?auth=8acc4bab9819aef60de2efe27ccc2d0cfbfee1d7d0bc8e0e08b143cc613c4855&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20143_MAR 02-JUN-2026_2040",
+    "titulo": "Mortal Kombat II",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "MAR 02/JUN/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "20:40"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/JVQ5CHYADJCYLECIAEPI2DAYKY.png?auth=8acc4bab9819aef60de2efe27ccc2d0cfbfee1d7d0bc8e0e08b143cc613c4855&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20143_MAR 02-JUN-2026_2230",
+    "titulo": "Mortal Kombat II",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "MAR 02/JUN/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "22:30"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/JVQ5CHYADJCYLECIAEPI2DAYKY.png?auth=8acc4bab9819aef60de2efe27ccc2d0cfbfee1d7d0bc8e0e08b143cc613c4855&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20143_MIÉ 03-JUN-2026_1820",
+    "titulo": "Mortal Kombat II",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "MIÉ 03/JUN/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "18:20"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/JVQ5CHYADJCYLECIAEPI2DAYKY.png?auth=8acc4bab9819aef60de2efe27ccc2d0cfbfee1d7d0bc8e0e08b143cc613c4855&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20143_MIÉ 03-JUN-2026_2040",
+    "titulo": "Mortal Kombat II",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "MIÉ 03/JUN/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "20:40"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/JVQ5CHYADJCYLECIAEPI2DAYKY.png?auth=8acc4bab9819aef60de2efe27ccc2d0cfbfee1d7d0bc8e0e08b143cc613c4855&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20143_MIÉ 03-JUN-2026_2230",
+    "titulo": "Mortal Kombat II",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "MIÉ 03/JUN/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "22:30"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/JVQ5CHYADJCYLECIAEPI2DAYKY.png?auth=8acc4bab9819aef60de2efe27ccc2d0cfbfee1d7d0bc8e0e08b143cc613c4855&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20165_JUE 28-MAY-2026_2035",
+    "titulo": "Obsesión",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "JUE 28/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "20:35"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/5Z2UDJGXDJGJFFBK653TCMN6H4.png?auth=b7694427c664088fe93c0f832ca5fecbefc4f1914040279f7e570485cd994ad0&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20165_VIE 29-MAY-2026_2035",
+    "titulo": "Obsesión",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "VIE 29/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "20:35"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/5Z2UDJGXDJGJFFBK653TCMN6H4.png?auth=b7694427c664088fe93c0f832ca5fecbefc4f1914040279f7e570485cd994ad0&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20165_SÁB 30-MAY-2026_2035",
+    "titulo": "Obsesión",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "SÁB 30/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "20:35"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/5Z2UDJGXDJGJFFBK653TCMN6H4.png?auth=b7694427c664088fe93c0f832ca5fecbefc4f1914040279f7e570485cd994ad0&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20165_DOM 31-MAY-2026_2035",
+    "titulo": "Obsesión",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "DOM 31/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "20:35"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/5Z2UDJGXDJGJFFBK653TCMN6H4.png?auth=b7694427c664088fe93c0f832ca5fecbefc4f1914040279f7e570485cd994ad0&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20165_LUN 01-JUN-2026_2035",
+    "titulo": "Obsesión",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "LUN 01/JUN/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "20:35"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/5Z2UDJGXDJGJFFBK653TCMN6H4.png?auth=b7694427c664088fe93c0f832ca5fecbefc4f1914040279f7e570485cd994ad0&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20165_MAR 02-JUN-2026_2035",
+    "titulo": "Obsesión",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "MAR 02/JUN/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "20:35"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/5Z2UDJGXDJGJFFBK653TCMN6H4.png?auth=b7694427c664088fe93c0f832ca5fecbefc4f1914040279f7e570485cd994ad0&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20165_MIÉ 03-JUN-2026_2035",
+    "titulo": "Obsesión",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "MIÉ 03/JUN/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "20:35"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/5Z2UDJGXDJGJFFBK653TCMN6H4.png?auth=b7694427c664088fe93c0f832ca5fecbefc4f1914040279f7e570485cd994ad0&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20173_JUE 28-MAY-2026_1300",
+    "titulo": "Star Wars: The Mandalorian and Grogu",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "JUE 28/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "13:00"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/W4FWYQUWWBEU5CO33J3BVN6SHY.png?auth=bcff0de39e7040d17acd371541599534494c11aa184776d88dd3ba680be1048e&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20173_JUE 28-MAY-2026_1330",
+    "titulo": "Star Wars: The Mandalorian and Grogu",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "JUE 28/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "13:30"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/W4FWYQUWWBEU5CO33J3BVN6SHY.png?auth=bcff0de39e7040d17acd371541599534494c11aa184776d88dd3ba680be1048e&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20173_JUE 28-MAY-2026_1440",
+    "titulo": "Star Wars: The Mandalorian and Grogu",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "JUE 28/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "14:40"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/W4FWYQUWWBEU5CO33J3BVN6SHY.png?auth=bcff0de39e7040d17acd371541599534494c11aa184776d88dd3ba680be1048e&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20173_JUE 28-MAY-2026_1605",
+    "titulo": "Star Wars: The Mandalorian and Grogu",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "JUE 28/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "16:05"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/W4FWYQUWWBEU5CO33J3BVN6SHY.png?auth=bcff0de39e7040d17acd371541599534494c11aa184776d88dd3ba680be1048e&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20173_JUE 28-MAY-2026_1715",
+    "titulo": "Star Wars: The Mandalorian and Grogu",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "JUE 28/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "17:15"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/W4FWYQUWWBEU5CO33J3BVN6SHY.png?auth=bcff0de39e7040d17acd371541599534494c11aa184776d88dd3ba680be1048e&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20173_JUE 28-MAY-2026_1805",
+    "titulo": "Star Wars: The Mandalorian and Grogu",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "JUE 28/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "18:05"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/W4FWYQUWWBEU5CO33J3BVN6SHY.png?auth=bcff0de39e7040d17acd371541599534494c11aa184776d88dd3ba680be1048e&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20173_JUE 28-MAY-2026_1950",
+    "titulo": "Star Wars: The Mandalorian and Grogu",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "JUE 28/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "19:50"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/W4FWYQUWWBEU5CO33J3BVN6SHY.png?auth=bcff0de39e7040d17acd371541599534494c11aa184776d88dd3ba680be1048e&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20173_VIE 29-MAY-2026_1300",
+    "titulo": "Star Wars: The Mandalorian and Grogu",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "VIE 29/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "13:00"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/W4FWYQUWWBEU5CO33J3BVN6SHY.png?auth=bcff0de39e7040d17acd371541599534494c11aa184776d88dd3ba680be1048e&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20173_VIE 29-MAY-2026_1330",
+    "titulo": "Star Wars: The Mandalorian and Grogu",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "VIE 29/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "13:30"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/W4FWYQUWWBEU5CO33J3BVN6SHY.png?auth=bcff0de39e7040d17acd371541599534494c11aa184776d88dd3ba680be1048e&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20173_VIE 29-MAY-2026_1440",
+    "titulo": "Star Wars: The Mandalorian and Grogu",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "VIE 29/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "14:40"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/W4FWYQUWWBEU5CO33J3BVN6SHY.png?auth=bcff0de39e7040d17acd371541599534494c11aa184776d88dd3ba680be1048e&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20173_VIE 29-MAY-2026_1605",
+    "titulo": "Star Wars: The Mandalorian and Grogu",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "VIE 29/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "16:05"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/W4FWYQUWWBEU5CO33J3BVN6SHY.png?auth=bcff0de39e7040d17acd371541599534494c11aa184776d88dd3ba680be1048e&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20173_VIE 29-MAY-2026_1715",
+    "titulo": "Star Wars: The Mandalorian and Grogu",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "VIE 29/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "17:15"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/W4FWYQUWWBEU5CO33J3BVN6SHY.png?auth=bcff0de39e7040d17acd371541599534494c11aa184776d88dd3ba680be1048e&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20173_VIE 29-MAY-2026_1805",
+    "titulo": "Star Wars: The Mandalorian and Grogu",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "VIE 29/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "18:05"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/W4FWYQUWWBEU5CO33J3BVN6SHY.png?auth=bcff0de39e7040d17acd371541599534494c11aa184776d88dd3ba680be1048e&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20173_VIE 29-MAY-2026_1950",
+    "titulo": "Star Wars: The Mandalorian and Grogu",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "VIE 29/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "19:50"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/W4FWYQUWWBEU5CO33J3BVN6SHY.png?auth=bcff0de39e7040d17acd371541599534494c11aa184776d88dd3ba680be1048e&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20173_SÁB 30-MAY-2026_1300",
+    "titulo": "Star Wars: The Mandalorian and Grogu",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "SÁB 30/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "13:00"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/W4FWYQUWWBEU5CO33J3BVN6SHY.png?auth=bcff0de39e7040d17acd371541599534494c11aa184776d88dd3ba680be1048e&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20173_SÁB 30-MAY-2026_1330",
+    "titulo": "Star Wars: The Mandalorian and Grogu",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "SÁB 30/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "13:30"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/W4FWYQUWWBEU5CO33J3BVN6SHY.png?auth=bcff0de39e7040d17acd371541599534494c11aa184776d88dd3ba680be1048e&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20173_SÁB 30-MAY-2026_1440",
+    "titulo": "Star Wars: The Mandalorian and Grogu",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "SÁB 30/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "14:40"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/W4FWYQUWWBEU5CO33J3BVN6SHY.png?auth=bcff0de39e7040d17acd371541599534494c11aa184776d88dd3ba680be1048e&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20173_SÁB 30-MAY-2026_1605",
+    "titulo": "Star Wars: The Mandalorian and Grogu",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "SÁB 30/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "16:05"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/W4FWYQUWWBEU5CO33J3BVN6SHY.png?auth=bcff0de39e7040d17acd371541599534494c11aa184776d88dd3ba680be1048e&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20173_SÁB 30-MAY-2026_1715",
+    "titulo": "Star Wars: The Mandalorian and Grogu",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "SÁB 30/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "17:15"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/W4FWYQUWWBEU5CO33J3BVN6SHY.png?auth=bcff0de39e7040d17acd371541599534494c11aa184776d88dd3ba680be1048e&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20173_SÁB 30-MAY-2026_1805",
+    "titulo": "Star Wars: The Mandalorian and Grogu",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "SÁB 30/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "18:05"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/W4FWYQUWWBEU5CO33J3BVN6SHY.png?auth=bcff0de39e7040d17acd371541599534494c11aa184776d88dd3ba680be1048e&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20173_SÁB 30-MAY-2026_1950",
+    "titulo": "Star Wars: The Mandalorian and Grogu",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "SÁB 30/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "19:50"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/W4FWYQUWWBEU5CO33J3BVN6SHY.png?auth=bcff0de39e7040d17acd371541599534494c11aa184776d88dd3ba680be1048e&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20173_DOM 31-MAY-2026_1300",
+    "titulo": "Star Wars: The Mandalorian and Grogu",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "DOM 31/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "13:00"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/W4FWYQUWWBEU5CO33J3BVN6SHY.png?auth=bcff0de39e7040d17acd371541599534494c11aa184776d88dd3ba680be1048e&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20173_DOM 31-MAY-2026_1330",
+    "titulo": "Star Wars: The Mandalorian and Grogu",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "DOM 31/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "13:30"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/W4FWYQUWWBEU5CO33J3BVN6SHY.png?auth=bcff0de39e7040d17acd371541599534494c11aa184776d88dd3ba680be1048e&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20173_DOM 31-MAY-2026_1440",
+    "titulo": "Star Wars: The Mandalorian and Grogu",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "DOM 31/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "14:40"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/W4FWYQUWWBEU5CO33J3BVN6SHY.png?auth=bcff0de39e7040d17acd371541599534494c11aa184776d88dd3ba680be1048e&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20173_DOM 31-MAY-2026_1605",
+    "titulo": "Star Wars: The Mandalorian and Grogu",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "DOM 31/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "16:05"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/W4FWYQUWWBEU5CO33J3BVN6SHY.png?auth=bcff0de39e7040d17acd371541599534494c11aa184776d88dd3ba680be1048e&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20173_DOM 31-MAY-2026_1715",
+    "titulo": "Star Wars: The Mandalorian and Grogu",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "DOM 31/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "17:15"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/W4FWYQUWWBEU5CO33J3BVN6SHY.png?auth=bcff0de39e7040d17acd371541599534494c11aa184776d88dd3ba680be1048e&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20173_DOM 31-MAY-2026_1805",
+    "titulo": "Star Wars: The Mandalorian and Grogu",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "DOM 31/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "18:05"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/W4FWYQUWWBEU5CO33J3BVN6SHY.png?auth=bcff0de39e7040d17acd371541599534494c11aa184776d88dd3ba680be1048e&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20173_DOM 31-MAY-2026_1950",
+    "titulo": "Star Wars: The Mandalorian and Grogu",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "DOM 31/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "19:50"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/W4FWYQUWWBEU5CO33J3BVN6SHY.png?auth=bcff0de39e7040d17acd371541599534494c11aa184776d88dd3ba680be1048e&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20173_LUN 01-JUN-2026_1300",
+    "titulo": "Star Wars: The Mandalorian and Grogu",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "LUN 01/JUN/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "13:00"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/W4FWYQUWWBEU5CO33J3BVN6SHY.png?auth=bcff0de39e7040d17acd371541599534494c11aa184776d88dd3ba680be1048e&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20173_LUN 01-JUN-2026_1330",
+    "titulo": "Star Wars: The Mandalorian and Grogu",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "LUN 01/JUN/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "13:30"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/W4FWYQUWWBEU5CO33J3BVN6SHY.png?auth=bcff0de39e7040d17acd371541599534494c11aa184776d88dd3ba680be1048e&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20173_LUN 01-JUN-2026_1440",
+    "titulo": "Star Wars: The Mandalorian and Grogu",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "LUN 01/JUN/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "14:40"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/W4FWYQUWWBEU5CO33J3BVN6SHY.png?auth=bcff0de39e7040d17acd371541599534494c11aa184776d88dd3ba680be1048e&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20173_LUN 01-JUN-2026_1605",
+    "titulo": "Star Wars: The Mandalorian and Grogu",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "LUN 01/JUN/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "16:05"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/W4FWYQUWWBEU5CO33J3BVN6SHY.png?auth=bcff0de39e7040d17acd371541599534494c11aa184776d88dd3ba680be1048e&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20173_LUN 01-JUN-2026_1715",
+    "titulo": "Star Wars: The Mandalorian and Grogu",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "LUN 01/JUN/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "17:15"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/W4FWYQUWWBEU5CO33J3BVN6SHY.png?auth=bcff0de39e7040d17acd371541599534494c11aa184776d88dd3ba680be1048e&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20173_LUN 01-JUN-2026_1805",
+    "titulo": "Star Wars: The Mandalorian and Grogu",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "LUN 01/JUN/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "18:05"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/W4FWYQUWWBEU5CO33J3BVN6SHY.png?auth=bcff0de39e7040d17acd371541599534494c11aa184776d88dd3ba680be1048e&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20173_LUN 01-JUN-2026_1950",
+    "titulo": "Star Wars: The Mandalorian and Grogu",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "LUN 01/JUN/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "19:50"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/W4FWYQUWWBEU5CO33J3BVN6SHY.png?auth=bcff0de39e7040d17acd371541599534494c11aa184776d88dd3ba680be1048e&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20173_MAR 02-JUN-2026_1300",
+    "titulo": "Star Wars: The Mandalorian and Grogu",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "MAR 02/JUN/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "13:00"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/W4FWYQUWWBEU5CO33J3BVN6SHY.png?auth=bcff0de39e7040d17acd371541599534494c11aa184776d88dd3ba680be1048e&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20173_MAR 02-JUN-2026_1330",
+    "titulo": "Star Wars: The Mandalorian and Grogu",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "MAR 02/JUN/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "13:30"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/W4FWYQUWWBEU5CO33J3BVN6SHY.png?auth=bcff0de39e7040d17acd371541599534494c11aa184776d88dd3ba680be1048e&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20173_MAR 02-JUN-2026_1440",
+    "titulo": "Star Wars: The Mandalorian and Grogu",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "MAR 02/JUN/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "14:40"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/W4FWYQUWWBEU5CO33J3BVN6SHY.png?auth=bcff0de39e7040d17acd371541599534494c11aa184776d88dd3ba680be1048e&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20173_MAR 02-JUN-2026_1605",
+    "titulo": "Star Wars: The Mandalorian and Grogu",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "MAR 02/JUN/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "16:05"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/W4FWYQUWWBEU5CO33J3BVN6SHY.png?auth=bcff0de39e7040d17acd371541599534494c11aa184776d88dd3ba680be1048e&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20173_MAR 02-JUN-2026_1715",
+    "titulo": "Star Wars: The Mandalorian and Grogu",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "MAR 02/JUN/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "17:15"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/W4FWYQUWWBEU5CO33J3BVN6SHY.png?auth=bcff0de39e7040d17acd371541599534494c11aa184776d88dd3ba680be1048e&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20173_MAR 02-JUN-2026_1805",
+    "titulo": "Star Wars: The Mandalorian and Grogu",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "MAR 02/JUN/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "18:05"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/W4FWYQUWWBEU5CO33J3BVN6SHY.png?auth=bcff0de39e7040d17acd371541599534494c11aa184776d88dd3ba680be1048e&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20173_MAR 02-JUN-2026_1950",
+    "titulo": "Star Wars: The Mandalorian and Grogu",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "MAR 02/JUN/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "19:50"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/W4FWYQUWWBEU5CO33J3BVN6SHY.png?auth=bcff0de39e7040d17acd371541599534494c11aa184776d88dd3ba680be1048e&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20173_MIÉ 03-JUN-2026_1300",
+    "titulo": "Star Wars: The Mandalorian and Grogu",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "MIÉ 03/JUN/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "13:00"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/W4FWYQUWWBEU5CO33J3BVN6SHY.png?auth=bcff0de39e7040d17acd371541599534494c11aa184776d88dd3ba680be1048e&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20173_MIÉ 03-JUN-2026_1330",
+    "titulo": "Star Wars: The Mandalorian and Grogu",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "MIÉ 03/JUN/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "13:30"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/W4FWYQUWWBEU5CO33J3BVN6SHY.png?auth=bcff0de39e7040d17acd371541599534494c11aa184776d88dd3ba680be1048e&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20173_MIÉ 03-JUN-2026_1440",
+    "titulo": "Star Wars: The Mandalorian and Grogu",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "MIÉ 03/JUN/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "14:40"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/W4FWYQUWWBEU5CO33J3BVN6SHY.png?auth=bcff0de39e7040d17acd371541599534494c11aa184776d88dd3ba680be1048e&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20173_MIÉ 03-JUN-2026_1605",
+    "titulo": "Star Wars: The Mandalorian and Grogu",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "MIÉ 03/JUN/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "16:05"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/W4FWYQUWWBEU5CO33J3BVN6SHY.png?auth=bcff0de39e7040d17acd371541599534494c11aa184776d88dd3ba680be1048e&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20173_MIÉ 03-JUN-2026_1715",
+    "titulo": "Star Wars: The Mandalorian and Grogu",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "MIÉ 03/JUN/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "17:15"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/W4FWYQUWWBEU5CO33J3BVN6SHY.png?auth=bcff0de39e7040d17acd371541599534494c11aa184776d88dd3ba680be1048e&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20173_MIÉ 03-JUN-2026_1805",
+    "titulo": "Star Wars: The Mandalorian and Grogu",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "MIÉ 03/JUN/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "18:05"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/W4FWYQUWWBEU5CO33J3BVN6SHY.png?auth=bcff0de39e7040d17acd371541599534494c11aa184776d88dd3ba680be1048e&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20079_JUE 28-MAY-2026_1310",
+    "titulo": "Super Mario Galaxy: La película",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "JUE 28/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "13:10"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/R64OEFYPANATFKRHV3NBCUX6QQ.png?auth=1c2ac0ea43bfd80f02d34837471b1504d8801cd74ac6fa2cee9213abc9a7d226&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20079_JUE 28-MAY-2026_1500",
+    "titulo": "Super Mario Galaxy: La película",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "JUE 28/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "15:00"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/R64OEFYPANATFKRHV3NBCUX6QQ.png?auth=1c2ac0ea43bfd80f02d34837471b1504d8801cd74ac6fa2cee9213abc9a7d226&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20079_JUE 28-MAY-2026_1655",
+    "titulo": "Super Mario Galaxy: La película",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "JUE 28/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "16:55"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/R64OEFYPANATFKRHV3NBCUX6QQ.png?auth=1c2ac0ea43bfd80f02d34837471b1504d8801cd74ac6fa2cee9213abc9a7d226&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20079_VIE 29-MAY-2026_1310",
+    "titulo": "Super Mario Galaxy: La película",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "VIE 29/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "13:10"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/R64OEFYPANATFKRHV3NBCUX6QQ.png?auth=1c2ac0ea43bfd80f02d34837471b1504d8801cd74ac6fa2cee9213abc9a7d226&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20079_VIE 29-MAY-2026_1500",
+    "titulo": "Super Mario Galaxy: La película",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "VIE 29/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "15:00"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/R64OEFYPANATFKRHV3NBCUX6QQ.png?auth=1c2ac0ea43bfd80f02d34837471b1504d8801cd74ac6fa2cee9213abc9a7d226&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20079_VIE 29-MAY-2026_1655",
+    "titulo": "Super Mario Galaxy: La película",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "VIE 29/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "16:55"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/R64OEFYPANATFKRHV3NBCUX6QQ.png?auth=1c2ac0ea43bfd80f02d34837471b1504d8801cd74ac6fa2cee9213abc9a7d226&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20079_SÁB 30-MAY-2026_1310",
+    "titulo": "Super Mario Galaxy: La película",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "SÁB 30/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "13:10"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/R64OEFYPANATFKRHV3NBCUX6QQ.png?auth=1c2ac0ea43bfd80f02d34837471b1504d8801cd74ac6fa2cee9213abc9a7d226&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20079_SÁB 30-MAY-2026_1500",
+    "titulo": "Super Mario Galaxy: La película",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "SÁB 30/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "15:00"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/R64OEFYPANATFKRHV3NBCUX6QQ.png?auth=1c2ac0ea43bfd80f02d34837471b1504d8801cd74ac6fa2cee9213abc9a7d226&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20079_SÁB 30-MAY-2026_1655",
+    "titulo": "Super Mario Galaxy: La película",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "SÁB 30/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "16:55"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/R64OEFYPANATFKRHV3NBCUX6QQ.png?auth=1c2ac0ea43bfd80f02d34837471b1504d8801cd74ac6fa2cee9213abc9a7d226&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20079_DOM 31-MAY-2026_1310",
+    "titulo": "Super Mario Galaxy: La película",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "DOM 31/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "13:10"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/R64OEFYPANATFKRHV3NBCUX6QQ.png?auth=1c2ac0ea43bfd80f02d34837471b1504d8801cd74ac6fa2cee9213abc9a7d226&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20079_DOM 31-MAY-2026_1500",
+    "titulo": "Super Mario Galaxy: La película",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "DOM 31/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "15:00"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/R64OEFYPANATFKRHV3NBCUX6QQ.png?auth=1c2ac0ea43bfd80f02d34837471b1504d8801cd74ac6fa2cee9213abc9a7d226&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20079_DOM 31-MAY-2026_1655",
+    "titulo": "Super Mario Galaxy: La película",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "DOM 31/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "16:55"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/R64OEFYPANATFKRHV3NBCUX6QQ.png?auth=1c2ac0ea43bfd80f02d34837471b1504d8801cd74ac6fa2cee9213abc9a7d226&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20079_LUN 01-JUN-2026_1310",
+    "titulo": "Super Mario Galaxy: La película",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "LUN 01/JUN/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "13:10"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/R64OEFYPANATFKRHV3NBCUX6QQ.png?auth=1c2ac0ea43bfd80f02d34837471b1504d8801cd74ac6fa2cee9213abc9a7d226&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20079_LUN 01-JUN-2026_1500",
+    "titulo": "Super Mario Galaxy: La película",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "LUN 01/JUN/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "15:00"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/R64OEFYPANATFKRHV3NBCUX6QQ.png?auth=1c2ac0ea43bfd80f02d34837471b1504d8801cd74ac6fa2cee9213abc9a7d226&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20079_LUN 01-JUN-2026_1655",
+    "titulo": "Super Mario Galaxy: La película",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "LUN 01/JUN/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "16:55"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/R64OEFYPANATFKRHV3NBCUX6QQ.png?auth=1c2ac0ea43bfd80f02d34837471b1504d8801cd74ac6fa2cee9213abc9a7d226&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20079_MAR 02-JUN-2026_1310",
+    "titulo": "Super Mario Galaxy: La película",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "MAR 02/JUN/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "13:10"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/R64OEFYPANATFKRHV3NBCUX6QQ.png?auth=1c2ac0ea43bfd80f02d34837471b1504d8801cd74ac6fa2cee9213abc9a7d226&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20079_MAR 02-JUN-2026_1500",
+    "titulo": "Super Mario Galaxy: La película",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "MAR 02/JUN/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "15:00"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/R64OEFYPANATFKRHV3NBCUX6QQ.png?auth=1c2ac0ea43bfd80f02d34837471b1504d8801cd74ac6fa2cee9213abc9a7d226&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20079_MAR 02-JUN-2026_1655",
+    "titulo": "Super Mario Galaxy: La película",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "MAR 02/JUN/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "16:55"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/R64OEFYPANATFKRHV3NBCUX6QQ.png?auth=1c2ac0ea43bfd80f02d34837471b1504d8801cd74ac6fa2cee9213abc9a7d226&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20079_MIÉ 03-JUN-2026_1310",
+    "titulo": "Super Mario Galaxy: La película",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "MIÉ 03/JUN/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "13:10"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/R64OEFYPANATFKRHV3NBCUX6QQ.png?auth=1c2ac0ea43bfd80f02d34837471b1504d8801cd74ac6fa2cee9213abc9a7d226&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20079_MIÉ 03-JUN-2026_1500",
+    "titulo": "Super Mario Galaxy: La película",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "MIÉ 03/JUN/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "15:00"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/R64OEFYPANATFKRHV3NBCUX6QQ.png?auth=1c2ac0ea43bfd80f02d34837471b1504d8801cd74ac6fa2cee9213abc9a7d226&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20079_MIÉ 03-JUN-2026_1655",
+    "titulo": "Super Mario Galaxy: La película",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "MIÉ 03/JUN/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "16:55"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/R64OEFYPANATFKRHV3NBCUX6QQ.png?auth=1c2ac0ea43bfd80f02d34837471b1504d8801cd74ac6fa2cee9213abc9a7d226&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20195_JUE 28-MAY-2026_2305",
+    "titulo": "Zona de riesgo",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "JUE 28/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "23:05"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/ZA43LVUUAFDHTCJOUZLLE7YSK4.png?auth=f8aa2462651f002a60632bee55ad1d91a41e823e07766dc86cc5c46854728bba&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20195_VIE 29-MAY-2026_2305",
+    "titulo": "Zona de riesgo",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "VIE 29/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "23:05"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/ZA43LVUUAFDHTCJOUZLLE7YSK4.png?auth=f8aa2462651f002a60632bee55ad1d91a41e823e07766dc86cc5c46854728bba&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20195_SÁB 30-MAY-2026_2305",
+    "titulo": "Zona de riesgo",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "SÁB 30/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "23:05"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/ZA43LVUUAFDHTCJOUZLLE7YSK4.png?auth=f8aa2462651f002a60632bee55ad1d91a41e823e07766dc86cc5c46854728bba&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20195_DOM 31-MAY-2026_2305",
+    "titulo": "Zona de riesgo",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "DOM 31/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "23:05"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/ZA43LVUUAFDHTCJOUZLLE7YSK4.png?auth=f8aa2462651f002a60632bee55ad1d91a41e823e07766dc86cc5c46854728bba&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20195_LUN 01-JUN-2026_2305",
+    "titulo": "Zona de riesgo",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "LUN 01/JUN/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "23:05"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/ZA43LVUUAFDHTCJOUZLLE7YSK4.png?auth=f8aa2462651f002a60632bee55ad1d91a41e823e07766dc86cc5c46854728bba&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20195_MAR 02-JUN-2026_2305",
+    "titulo": "Zona de riesgo",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "MAR 02/JUN/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "23:05"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/ZA43LVUUAFDHTCJOUZLLE7YSK4.png?auth=f8aa2462651f002a60632bee55ad1d91a41e823e07766dc86cc5c46854728bba&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "multiplex_multiplex-lavalle-sa229_20195_MIÉ 03-JUN-2026_2305",
+    "titulo": "Zona de riesgo",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Multiplex Lavalle",
+    "ciudad": "CABA",
+    "fecha": "MIÉ 03/JUN/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "23:05"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/ZA43LVUUAFDHTCJOUZLLE7YSK4.png?auth=f8aa2462651f002a60632bee55ad1d91a41e823e07766dc86cc5c46854728bba&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  }
+]

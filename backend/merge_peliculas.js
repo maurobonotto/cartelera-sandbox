@@ -1,12 +1,16 @@
 const fs = require('fs').promises;
 const path = require('path');
 
+// Archivos de cada cine
 const GAUMONT_FILE = path.join(__dirname, 'peliculas_gaumont.json');
 const COSMOS_FILE = path.join(__dirname, 'peliculas_cosmos.json');
 const CACODELPHIA_FILE = path.join(__dirname, 'peliculas_cacodelphia.json');
 const ATLAS_FILE = path.join(__dirname, 'peliculas_atlas.json');
 const CINEMARK_FILE = path.join(__dirname, 'peliculas_cinemark.json');
-const LORCA_FILE = path.join(__dirname, 'peliculas_lorca.json');    // ← NUEVO
+const LORCA_FILE = path.join(__dirname, 'peliculas_lorca.json');
+const CINEPOLIS_FILE = path.join(__dirname, 'peliculas_cinepolis.json');
+const MULTIPLEX_FILE = path.join(__dirname, 'peliculas_multiplex.json');   // preparado para futuro
+
 const OUTPUT_FILE = path.join(__dirname, 'peliculas.json');
 
 const IGNORAR_SUFIJOS = [
@@ -77,7 +81,6 @@ const mesesCompletos = {
 
 function parsearFechaLegible(texto) {
     if (!texto) return null;
-    
     let match = texto.match(/^[A-Za-záéíóúñ]+ (\d{1,2})\/([A-Za-záéíóú]+)\/(\d{4})$/i);
     if (match) {
         const dia = parseInt(match[1]);
@@ -90,7 +93,6 @@ function parsearFechaLegible(texto) {
         const anio = parseInt(match[3]);
         if (!isNaN(dia) && mes !== undefined && !isNaN(anio)) return new Date(anio, mes, dia);
     }
-    
     match = texto.match(/^[A-Za-z]{3} (\d{1,2})\/([A-Za-z]{3})\/(\d{4})$/i);
     if (match) {
         const dia = parseInt(match[1]);
@@ -99,13 +101,10 @@ function parsearFechaLegible(texto) {
         const anio = parseInt(match[3]);
         if (!isNaN(dia) && mes !== undefined && !isNaN(anio)) return new Date(anio, mes, dia);
     }
-    
     match = texto.match(/^(\d{4})-(\d{2})-(\d{2})$/);
     if (match) return new Date(parseInt(match[1]), parseInt(match[2])-1, parseInt(match[3]));
-    
     match = texto.match(/^(\d{1,2})\/(\d{1,2})\/(\d{4})$/);
     if (match) return new Date(parseInt(match[3]), parseInt(match[2])-1, parseInt(match[1]));
-    
     console.warn(`⚠️ No se pudo parsear la fecha: ${texto}`);
     return null;
 }
@@ -114,11 +113,7 @@ function formatearFechaUniforme(date) {
     if (!date || isNaN(date.getTime())) return 'Fecha no disponible';
     const dias = ['DOM', 'LUN', 'MAR', 'MIÉ', 'JUE', 'VIE', 'SÁB'];
     const meses = ['ENE', 'FEB', 'MAR', 'ABR', 'MAY', 'JUN', 'JUL', 'AGO', 'SEP', 'OCT', 'NOV', 'DIC'];
-    const diaSemana = dias[date.getDay()];
-    const diaNum = date.getDate();
-    const mes = meses[date.getMonth()];
-    const anio = date.getFullYear();
-    return `${diaSemana} ${diaNum}/${mes}/${anio}`;
+    return `${dias[date.getDay()]} ${date.getDate()}/${meses[date.getMonth()]}/${date.getFullYear()}`;
 }
 
 // ---------- VENTANA DE SEMANA (JUEVES A MIÉRCOLES) ----------
@@ -138,7 +133,7 @@ function obtenerFinSemana(inicio) {
     return fin;
 }
 
-// ---------- CARGA DE FUENTES ----------
+// ---------- CARGA DE FUENTES (con tolerancia a archivos faltantes) ----------
 async function cargarFuente(archivo, nombre) {
     try {
         const data = await fs.readFile(archivo, 'utf8');
@@ -146,7 +141,7 @@ async function cargarFuente(archivo, nombre) {
         console.log(`   ${nombre}: ${funciones.length} funciones.`);
         return funciones;
     } catch (err) {
-        console.error(`   ⚠️ No se encontró ${archivo}.`);
+        console.log(`   ⚠️ ${nombre}: archivo no encontrado (se omite).`);
         return [];
     }
 }
@@ -160,9 +155,14 @@ async function main() {
     const cacodelphia = await cargarFuente(CACODELPHIA_FILE, 'Cacodelphia');
     const atlas = await cargarFuente(ATLAS_FILE, 'Atlas');
     const cinemark = await cargarFuente(CINEMARK_FILE, 'Cinemark');
-    const lorca = await cargarFuente(LORCA_FILE, 'Lorca');   // ← NUEVO
+    const lorca = await cargarFuente(LORCA_FILE, 'Lorca');
+    const cinepolis = await cargarFuente(CINEPOLIS_FILE, 'Cinépolis');
+    const multiplex = await cargarFuente(MULTIPLEX_FILE, 'Multiplex');  // futuro
     
-    let todasFunciones = [...gaumont, ...cosmos, ...cacodelphia, ...atlas, ...cinemark, ...lorca];
+    let todasFunciones = [
+        ...gaumont, ...cosmos, ...cacodelphia, ...atlas, ...cinemark,
+        ...lorca, ...cinepolis, ...multiplex
+    ];
     
     // Normalizar fechas
     for (const func of todasFunciones) {
@@ -182,7 +182,7 @@ async function main() {
     
     console.log(`📅 Ventana actual (jueves a miércoles): ${formatearFechaUniforme(inicioSemana)} - ${formatearFechaUniforme(finSemana)}`);
     
-    // Agrupar por película
+    // Agrupar por película (usando título normalizado)
     const todasPorPeli = new Map();
     for (const func of todasFunciones) {
         const clave = normalizarTitulo(func.titulo);
@@ -225,7 +225,7 @@ async function main() {
     for (const f of funcionesCartelera) f.seccion = 'cartelera';
     for (const f of funcionesProximos) f.seccion = 'proximos';
     
-    // Fusionar títulos duplicados (aquí se aplica el puntaje de similitud)
+    // Fusionar títulos duplicados (con similitud Jaccard)
     function fusionarPorGrupo(funciones) {
         const grupos = [];
         for (const func of funciones) {
