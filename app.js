@@ -1,4 +1,4 @@
-// app.js - con contadores y placeholder "SIN PÓSTER"
+// app.js - con contadores y placeholder "ツ" en negrita
 
 let peliculas = [];
 let peliculaActualTitulo = "";
@@ -139,13 +139,14 @@ function mostrarPeliculasHome(listaPeliculas) {
 }
 
 // --------------------------------------------------------------
-// PLACEHOLDER "SIN PÓSTER" (estilo mejorado)
+// PLACEHOLDER "ツ" en negrita para pósters faltantes
 // --------------------------------------------------------------
 function crearTarjetaPelicula(peli) {
     const tarjeta = document.createElement('div');
     tarjeta.className = 'movie-card';
     tarjeta.dataset.titulo = peli.titulo;
-    const posterPlaceholder = 'data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20200%20300%22%3E%3Crect%20width%3D%22200%22%20height%3D%22300%22%20fill%3D%22%23333%22%2F%3E%3Ctext%20x%3D%22100%22%20y%3D%22150%22%20fill%3D%22%23999%22%20text-anchor%3D%22middle%22%20font-size%3D%2216%22%20font-family%3D%22Arial%2C%20sans-serif%22%3ESIN%20P%C3%93STER%3C%2Ftext%3E%3C%2Fsvg%3E';
+    // Placeholder SVG con carita ツ en negrita (tamaño 32)
+    const posterPlaceholder = 'data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20200%20300%22%3E%3Crect%20width%3D%22200%22%20height%3D%22300%22%20fill%3D%22%23333%22%2F%3E%3Ctext%20x%3D%22100%22%20y%3D%22150%22%20fill%3D%22%23999%22%20text-anchor%3D%22middle%22%20font-size%3D%2232%22%20font-weight%3D%22bold%22%20font-family%3D%22Arial%2C%20sans-serif%22%3E%E3%83%84%3C%2Ftext%3E%3C%2Fsvg%3E';
     tarjeta.innerHTML = `
         <img src="${peli.poster || posterPlaceholder}" alt="Póster de ${peli.titulo}"
              onerror="this.onerror=null; this.src='${posterPlaceholder}';">
@@ -165,7 +166,8 @@ function abrirDetallePelicula(titulo) {
     const datosFijos = peliculas.find(p => p.titulo === titulo);
     if (!datosFijos) return;
 
-    const posterPlaceholder = 'data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20260%20462%22%3E%3Crect%20width%3D%22260%22%20height%3D%22462%22%20fill%3D%22%23333%22%2F%3E%3Ctext%20x%3D%22130%22%20y%3D%22231%22%20fill%3D%22%23999%22%20text-anchor%3D%22middle%22%20font-size%3D%2218%22%20font-family%3D%22Arial%2C%20sans-serif%22%3ESIN%20P%C3%93STER%3C%2Ftext%3E%3C%2Fsvg%3E';
+    // Placeholder para detalle (carita ツ más grande, negrita)
+    const posterPlaceholder = 'data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20260%20462%22%3E%3Crect%20width%3D%22260%22%20height%3D%22462%22%20fill%3D%22%23333%22%2F%3E%3Ctext%20x%3D%22130%22%20y%3D%22231%22%20fill%3D%22%23999%22%20text-anchor%3D%22middle%22%20font-size%3D%2250%22%20font-weight%3D%22bold%22%20font-family%3D%22Arial%2C%20sans-serif%22%3E%E3%83%84%3C%2Ftext%3E%3C%2Fsvg%3E';
     const detailPoster = document.getElementById('detail-poster');
     detailPoster.src = datosFijos.poster || posterPlaceholder;
     detailPoster.onerror = function() {
