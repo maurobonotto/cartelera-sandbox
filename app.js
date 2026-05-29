@@ -1,4 +1,5 @@
 // app.js - con orden alfabético en home y cines en horizontal en detalle
+// CORREGIDO: en detalle se muestran horarios de todas las funciones (cartelera y próximos)
 
 let peliculas = [];
 let peliculaActualTitulo = "";
@@ -206,8 +207,10 @@ function abrirDetallePelicula(titulo) {
     window.scrollTo(0, 0);
 }
 
+// ========== CORRECCIÓN: eliminar filtro de sección "cartelera" en detalle ==========
 function inicializarFiltrosDetalle() {
-    const funcionesPeli = peliculas.filter(p => p.titulo === peliculaActualTitulo && p.seccion === "cartelera");
+    // Antes: peliculas.filter(p => p.titulo === peliculaActualTitulo && p.seccion === "cartelera")
+    const funcionesPeli = peliculas.filter(p => p.titulo === peliculaActualTitulo);
     actualizarOpcionesDetalle(funcionesPeli);
 
     const filtrosIds = ['detail-filter-ciudad', 'detail-filter-cine', 'detail-filter-dia', 'detail-filter-horario', 'detail-filter-idioma'];
@@ -220,7 +223,8 @@ function inicializarFiltrosDetalle() {
 }
 
 function aplicarFiltrosDetalle() {
-    let funciones = peliculas.filter(p => p.titulo === peliculaActualTitulo && p.seccion === "cartelera");
+    // Antes: peliculas.filter(p => p.titulo === peliculaActualTitulo && p.seccion === "cartelera")
+    let funciones = peliculas.filter(p => p.titulo === peliculaActualTitulo);
 
     const valCiudad = document.getElementById('detail-filter-ciudad').value;
     const valCine = document.getElementById('detail-filter-cine').value;
@@ -241,7 +245,8 @@ function aplicarFiltrosDetalle() {
     const nuevoValIdioma = document.getElementById('detail-filter-idioma').value;
     const nuevoValHorario = document.getElementById('detail-filter-horario').value;
 
-    let finalFunciones = peliculas.filter(p => p.titulo === peliculaActualTitulo && p.seccion === "cartelera");
+    // Antes: peliculas.filter(p => p.titulo === peliculaActualTitulo && p.seccion === "cartelera")
+    let finalFunciones = peliculas.filter(p => p.titulo === peliculaActualTitulo);
     if (nuevoValCiudad) finalFunciones = finalFunciones.filter(p => p.ciudad === nuevoValCiudad);
     if (nuevoValCine) finalFunciones = finalFunciones.filter(p => p.cine === nuevoValCine);
     if (nuevoValDia) finalFunciones = finalFunciones.filter(p => p.fecha === nuevoValDia);
@@ -249,6 +254,7 @@ function aplicarFiltrosDetalle() {
 
     renderizarFuncionesDetalle(finalFunciones, nuevoValHorario);
 }
+// ========== FIN CORRECCIÓN ==========
 
 function actualizarOpcionesDetalle(funcionesValidas) {
     const ciudades = new Set();
