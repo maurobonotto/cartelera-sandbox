@@ -1,359 +1,41 @@
-const puppeteer = require('puppeteer');
-const fs = require('fs').promises;
-const path = require('path');
+name: Actualizar Cartelera Gaumont
 
-const BASE_URL = 'https://www.cinegaumont.ar';
-const OUTPUT_FILE = path.join(__dirname, 'peliculas.json');
-const BACKUP_FILE = path.join(__dirname, 'peliculas.backup.json');
+on:
+  schedule:
+    - cron: '0 4,12,20 * * 4'
+  workflow_dispatch:
 
-// Configuración de TMDB (igual que antes)
-const TMDB_API_KEY = process.env.TMDB_API_KEY || '62dff612c354dd50dbff40ca176b461c';
-const TMDB_IMAGE_BASE_URL = 'https://image.tmdb.org/t/p/w500';
-const MIN_SIMILARITY_SCORE = 70;
-const POPULARITY_WEIGHT = 0.33;
-const SIMILARITY_EXACT = 100;
-const SIMILARITY_PARTIAL = 80;
-const BONUS_YEAR = 100;
-const BONUS_DIRECTOR = 200;
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 📥 Clonar el repositorio
+        uses: actions/checkout@v5
+        with:
+          token: ${{ secrets.PAT_TOKEN }}
 
-const MAX_RETRIES = 3;
-const RETRY_DELAY = 5000;
-const wait = (ms) => new Promise(r => setTimeout(r, ms));
+      - name: ⚙️ Configurar Node.js
+        uses: actions/setup-node@v5
+        with:
+          node-version: '20'
+          cache: 'npm'
+          cache-dependency-path: backend/package-lock.json
 
-// ---------- Funciones auxiliares ----------
-function capitalize(str) {
-    if (!str) return '';
-    return str.charAt(0).toUpperCase() + str.slice(1);
-}
+      - name: 📦 Instalar dependencias
+        working-directory: ./backend
+        run: npm ci
 
-function formatearFecha(isoDate) {
-    const date = new Date(isoDate);
-    const dias = ['domingo', 'lunes', 'martes', 'miércoles', 'jueves', 'viernes', 'sábado'];
-    const meses = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre'];
-    const diaSemana = capitalize(dias[date.getDay()]);
-    const diaNumero = date.getDate();
-    const mes = capitalize(meses[date.getMonth()]);
-    const anio = date.getFullYear();
-    return `${diaSemana} ${diaNumero}/${mes}/${anio}`;
-}
+      - name: 🕷️ Ejecutar scraper
+        working-directory: ./backend
+        env:
+          TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
+        run: node scraper_gaumont.js
 
-function normalizarTexto(str) {
-    if (!str) return '';
-    return str
-        .toLowerCase()
-        .normalize('NFD').replace(/[\u0300-\u036f]/g, '')
-        .replace(/[^a-z0-9]/g, ' ')
-        .trim()
-        .replace(/\s+/g, ' ');
-}
-
-// Obtener director desde TMDB (por ID)
-async function getDirectorFromTMDB(movieId) {
-    try {
-        const url = `https://api.themoviedb.org/3/movie/${movieId}/credits?api_key=${TMDB_API_KEY}`;
-        const response = await fetch(url);
-        if (!response.ok) return null;
-        const data = await response.json();
-        const director = data.crew?.find(member => member.job === 'Director');
-        return director ? normalizarTexto(director.name) : null;
-    } catch (error) {
-        console.error(`   ❌ Error obteniendo director para ID ${movieId}: ${error.message}`);
-        return null;
-    }
-}
-
-// Buscar póster en TMDB (versión mejorada)
-async function getPosterFromTMDB(movieTitle, year = null, directorName = null) {
-    if (!TMDB_API_KEY) return '';
-    try {
-        let url = `https://api.themoviedb.org/3/search/movie?query=${encodeURIComponent(movieTitle)}&api_key=${TMDB_API_KEY}&language=es&include_adult=false&region=AR&with_original_language=es`;
-        if (year) url += `&year=${year}`;
-        const response = await fetch(url);
-        if (!response.ok) return '';
-        const data = await response.json();
-        if (!data.results || data.results.length === 0) return '';
-
-        const tituloNormalizado = normalizarTexto(movieTitle);
-        const directorNormalizado = directorName ? normalizarTexto(directorName) : null;
-
-        const candidates = [];
-        for (const movie of data.results.slice(0, 10)) {
-            if (!movie.poster_path) continue;
-            const tmdbTitleNorm = normalizarTexto(movie.title);
-            const tmdbOriginalTitleNorm = normalizarTexto(movie.original_title || '');
-            let similarity = 0;
-            if (tmdbTitleNorm === tituloNormalizado || tmdbOriginalTitleNorm === tituloNormalizado) {
-                similarity = SIMILARITY_EXACT;
-            } else if (tmdbTitleNorm.includes(tituloNormalizado) || tituloNormalizado.includes(tmdbTitleNorm) ||
-                       tmdbOriginalTitleNorm.includes(tituloNormalizado) || tituloNormalizado.includes(tmdbOriginalTitleNorm)) {
-                similarity = SIMILARITY_PARTIAL;
-            }
-
-            let yearMatch = false;
-            if (year && movie.release_date) {
-                const releaseYear = movie.release_date.substring(0,4);
-                if (releaseYear === year.toString()) yearMatch = true;
-            }
-
-            let directorMatch = false;
-            if (directorNormalizado) {
-                const tmdbDirector = await getDirectorFromTMDB(movie.id);
-                if (tmdbDirector && tmdbDirector === directorNormalizado) directorMatch = true;
-            }
-
-            let score = (movie.popularity || 0) * POPULARITY_WEIGHT + similarity;
-            if (yearMatch) score += BONUS_YEAR;
-            if (directorMatch) score += BONUS_DIRECTOR;
-            candidates.push({ ...movie, score });
-        }
-        candidates.sort((a, b) => b.score - a.score);
-
-        if (candidates.length > 0 && candidates[0].score >= MIN_SIMILARITY_SCORE) {
-            const best = candidates[0];
-            console.log(`   ✅ TMDB: "${best.title}" (${best.release_date ? best.release_date.substring(0,4) : '?'}) score=${Math.round(best.score)}`);
-            return `${TMDB_IMAGE_BASE_URL}${best.poster_path}`;
-        }
-        return '';
-    } catch (error) {
-        console.error(`   ❌ Error en TMDB: ${error.message}`);
-        return '';
-    }
-}
-
-// ========== FUNCIONES DE SCRAPING ==========
-
-// Obtener la lista de todas las películas desde la página principal
-async function getMoviesList(page) {
-    console.log('📋 Obteniendo lista de películas...');
-    await page.goto(BASE_URL, { waitUntil: 'networkidle2', timeout: 45000 });
-    // Esperar a que aparezca cualquier enlace que contenga 'filmid='
-    await page.waitForSelector('a[href*="filmid="]', { timeout: 20000 });
-    
-    const movies = await page.evaluate(() => {
-        const links = document.querySelectorAll('a[href*="filmid="]');
-        const result = [];
-        for (const link of links) {
-            const url = link.href;
-            // Evitar duplicados
-            if (result.some(m => m.url === url)) continue;
-            
-            let titleElem = link.querySelector('h3, h4, .name, .title');
-            if (!titleElem && link.parentElement) {
-                titleElem = link.parentElement.querySelector('h3, h4, .name, .title');
-            }
-            const titulo = titleElem ? titleElem.innerText.trim() : 'Sin título';
-            result.push({ titulo, url });
-        }
-        return result;
-    });
-    console.log(`   ✅ Encontradas ${movies.length} películas.`);
-    return movies;
-}
-
-// Obtener detalles de una película desde su página individual
-async function scrapeMovieDetails(page, movie, filmId) {
-    console.log(`\n🎬 Procesando: ${movie.titulo}`);
-    await page.goto(movie.url, { waitUntil: 'networkidle2', timeout: 30000 });
-    await wait(1500);
-
-    const details = await page.evaluate(() => {
-        // Sinopsis
-        const sinopsisElem = document.querySelector('.movie-info-box .description');
-        const sinopsis = sinopsisElem ? sinopsisElem.innerText.trim() : 'Sin sinopsis';
-        
-        // Duración y año
-        const yearElem = document.querySelector('.movie-info-box .features .year');
-        let duracion = 'N/A';
-        let anio = null;
-        if (yearElem) {
-            const text = yearElem.innerText;
-            const matchDur = text.match(/(\d+)\s*min/);
-            if (matchDur) duracion = matchDur[1];
-            const matchYear = text.match(/\b(19|20)\d{2}\b/);
-            if (matchYear) anio = matchYear[0];
-        }
-        
-        // Trailer
-        const trailerElem = document.querySelector('.video-player iframe');
-        let linkTrailer = trailerElem ? trailerElem.src : '';
-        
-        // Director
-        let director = 'No especificado';
-        const sideItems = document.querySelectorAll('.movie-side-info-box ul li');
-        for (const item of sideItems) {
-            const strong = item.querySelector('strong');
-            if (strong && strong.innerText.includes('Dirección')) {
-                director = item.innerText.replace(strong.innerText, '').trim();
-                break;
-            }
-        }
-        
-        // Póster (si la página lo tiene)
-        let poster = '';
-        const posterImg = document.querySelector('.movie-poster img');
-        if (posterImg && posterImg.src) poster = posterImg.src;
-        else {
-            const metaOg = document.querySelector('meta[property="og:image"]');
-            if (metaOg) poster = metaOg.content;
-        }
-        
-        return { sinopsis, duracion, anio, director, linkTrailer, poster };
-    });
-    
-    // Si la página no tiene póster, se buscará luego en TMDB
-    return { ...details, poster: details.poster || '' };
-}
-
-// Obtener horarios desde la API de funciones
-async function getSchedules(filmId) {
-    try {
-        const url = `https://www.cinegaumont.com.ar/films/${filmId}/tree`;
-        const response = await fetch(url);
-        if (!response.ok) return [];
-        const data = await response.json();
-        const funcionesRaw = [];
-        if (data && data.days) {
-            for (const [fechaISO, cines] of Object.entries(data.days)) {
-                const fechaLegible = formatearFecha(fechaISO);
-                for (const cine of cines) {
-                    const cineNombre = `${cine.name} (CABA)`;
-                    for (const formato of cine.formats) {
-                        const idioma = formato.formatDescription || 'Sin especificar';
-                        for (const funcion of formato.performances) {
-                            funcionesRaw.push({
-                                fechaISO: fechaISO,
-                                fechaLegible: fechaLegible,
-                                cine: cineNombre,
-                                ciudad: 'CABA',
-                                idioma: idioma,
-                                horario: funcion.showTime
-                            });
-                        }
-                    }
-                }
-            }
-        }
-        // Ordenar y agrupar funciones por día/cine/idioma
-        funcionesRaw.sort((a, b) => new Date(a.fechaISO) - new Date(b.fechaISO));
-        const grupos = new Map();
-        for (const f of funcionesRaw) {
-            const key = `${f.fechaLegible}|${f.cine}|${f.idioma}`;
-            if (!grupos.has(key)) {
-                grupos.set(key, {
-                    fecha: f.fechaLegible,
-                    cine: f.cine,
-                    ciudad: f.ciudad,
-                    idioma: f.idioma,
-                    horarios: []
-                });
-            }
-            grupos.get(key).horarios.push(f.horario);
-        }
-        return Array.from(grupos.values()).map((g, idx) => ({
-            id_funcion: `${filmId}_${idx+1}`,
-            fecha: g.fecha,
-            cine: g.cine,
-            ciudad: g.ciudad,
-            idioma: g.idioma,
-            horarios: g.horarios
-        }));
-    } catch (error) {
-        console.error(`   ❌ Error obteniendo horarios para film ${filmId}: ${error.message}`);
-        return [];
-    }
-}
-
-// ========== FUNCIÓN PRINCIPAL ==========
-async function main() {
-    console.log('🚀 SCRAPER GAUMONT (Puppeteer + API de horarios + TMDB)');
-    
-    let browser;
-    for (let intento = 1; intento <= MAX_RETRIES; intento++) {
-        try {
-            browser = await puppeteer.launch({ headless: true, args: ['--no-sandbox'] });
-            const page = await browser.newPage();
-            const movies = await getMoviesList(page);
-            await browser.close();
-            browser = null;
-            
-            if (movies.length === 0) throw new Error('No se encontraron películas');
-            
-            let todasLasFunciones = [];
-            for (const movie of movies) {
-                // Extraer el filmId de la URL
-                const idMatch = movie.url.match(/filmid=(\d+)/);
-                if (!idMatch) {
-                    console.log(`   ⚠️ No se pudo extraer ID de: ${movie.url}`);
-                    continue;
-                }
-                const filmId = parseInt(idMatch[1]);
-                
-                // Crear una nueva página para cada película (evita conflictos)
-                const detailPage = await browser ? browser.newPage() : (await puppeteer.launch({ headless: true, args: ['--no-sandbox'] })).newPage();
-                const details = await scrapeMovieDetails(detailPage, movie, filmId);
-                await detailPage.close();
-                
-                const funciones = await getSchedules(filmId);
-                if (funciones.length === 0) {
-                    console.log(`   ⚠️ No hay funciones para "${movie.titulo}".`);
-                    continue;
-                }
-                
-                // Buscar póster en TMDB si no se obtuvo de la página
-                let posterUrl = details.poster;
-                if (!posterUrl) {
-                    console.log(`   🖼️ Buscando póster en TMDB para: ${movie.titulo}${details.anio ? ` (${details.anio})` : ''} | Director: ${details.director}`);
-                    posterUrl = await getPosterFromTMDB(movie.titulo, details.anio, details.director);
-                    if (posterUrl) console.log(`   ✅ Póster asignado desde TMDB.`);
-                    else console.log(`   ⚠️ No se asignó póster (se mostrará sin imagen).`);
-                } else {
-                    console.log(`   🖼️ Usando póster de la página individual.`);
-                }
-                
-                // Crear las entradas planas para cada función
-                for (const func of funciones) {
-                    todasLasFunciones.push({
-                        id_funcion: func.id_funcion,
-                        titulo: movie.titulo,
-                        director: details.director,
-                        duracion: details.duracion,
-                        cine: func.cine,
-                        ciudad: func.ciudad,
-                        fecha: func.fecha,
-                        idioma: func.idioma,
-                        horarios: func.horarios,
-                        seccion: 'cartelera',
-                        poster: posterUrl,
-                        sinopsis: details.sinopsis,
-                        linkTrailer: details.linkTrailer
-                    });
-                }
-                console.log(`   ✅ ${funciones.length} funciones agregadas.`);
-                await wait(500);
-            }
-            
-            await fs.writeFile(OUTPUT_FILE, JSON.stringify(todasLasFunciones, null, 2));
-            await fs.writeFile(BACKUP_FILE, JSON.stringify(todasLasFunciones, null, 2));
-            console.log(`\n🎉 ¡ÉXITO! ${todasLasFunciones.length} funciones guardadas en ${OUTPUT_FILE}`);
-            return;
-        } catch (err) {
-            console.error(`Intento ${intento} falló: ${err.message}`);
-            if (browser) await browser.close();
-            if (intento < MAX_RETRIES) {
-                console.log(`Reintentando en ${RETRY_DELAY/1000} segundos...`);
-                await wait(RETRY_DELAY);
-            } else {
-                console.log('❌ Todos los intentos fallaron. Usando backup si existe...');
-                try {
-                    const backup = await fs.readFile(BACKUP_FILE, 'utf8');
-                    await fs.writeFile(OUTPUT_FILE, backup);
-                    console.log(`✅ Se restauró el backup.`);
-                } catch (backupErr) {
-                    console.error('No hay backup disponible.');
-                }
-            }
-        }
-    }
-}
-
-main();
+      - name: 🚀 Subir cambios al repositorio
+        uses: stefanzweifel/git-auto-commit-action@v7
+        with:
+          commit_message: "chore: actualizar cartelera [skip ci]"
+          file_pattern: backend/peliculas.json backend/peliculas.backup.json
+          commit_user_name: github-actions[bot]
+          commit_user_email: github-actions[bot]@users.noreply.github.com
+          commit_author: github-actions[bot] <github-actions[bot]@users.noreply.github.com>
