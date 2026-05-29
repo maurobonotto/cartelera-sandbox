@@ -3,6 +3,7 @@ const path = require('path');
 
 const GAUMONT_FILE = path.join(__dirname, 'peliculas_gaumont.json');
 const COSMOS_FILE = path.join(__dirname, 'peliculas_cosmos.json');
+const CACODELPHIA_FILE = path.join(__dirname, 'peliculas_cacodelphia.json');
 const OUTPUT_FILE = path.join(__dirname, 'peliculas.json');
 
 async function main() {
@@ -25,7 +26,16 @@ async function main() {
         console.error('   ⚠️ No se encontró peliculas_cosmos.json. Ejecuta scraper_cosmos.js primero.');
     }
 
-    const todas = [...gaumont, ...cosmos];
+    let cacodelphia = [];
+    try {
+        const data = await fs.readFile(CACODELPHIA_FILE, 'utf8');
+        cacodelphia = JSON.parse(data);
+        console.log(`   Cacodelphia: ${cacodelphia.length} funciones.`);
+    } catch (err) {
+        console.error('   ⚠️ No se encontró peliculas_cacodelphia.json. Ejecuta scraper_cacodelphia.js primero.');
+    }
+
+    const todas = [...gaumont, ...cosmos, ...cacodelphia];
     await fs.writeFile(OUTPUT_FILE, JSON.stringify(todas, null, 2));
     console.log(`✅ Unificación completada. Total funciones: ${todas.length}`);
 }
