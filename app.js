@@ -1,4 +1,4 @@
-// app.js - Versión sin fechas pasadas (solo hoy y futuro)
+// app.js - Agrupación de cines: individuales al principio, cadenas con divisores
 let peliculas = [];
 let peliculaActualTitulo = "";
 
@@ -22,7 +22,6 @@ function cargarDatos() {
 function parsearFechaLegible(texto) {
     if (!texto) return null;
 
-    // Formato 1: "Viernes 29/Mayo/2026" (día completo)
     let match = texto.match(/^[A-Za-záéíóúñ]+ (\d{1,2})\/([A-Za-záéíóú]+)\/(\d{4})$/i);
     if (match) {
         const dia = parseInt(match[1]);
@@ -42,7 +41,6 @@ function parsearFechaLegible(texto) {
         }
     }
 
-    // Formato 2: "LUN 1/JUN/2026" (día abreviado)
     match = texto.match(/^[A-Za-z]{3} (\d{1,2})\/([A-Za-z]{3})\/(\d{4})$/i);
     if (match) {
         const dia = parseInt(match[1]);
@@ -55,13 +53,11 @@ function parsearFechaLegible(texto) {
         }
     }
 
-    // Formato 3: "2026-05-29" (ISO)
     match = texto.match(/^(\d{4})-(\d{2})-(\d{2})$/);
     if (match) {
         return new Date(parseInt(match[1]), parseInt(match[2])-1, parseInt(match[3]));
     }
 
-    // Formato 4: "29/5/2026" (día/mes/año)
     match = texto.match(/^(\d{1,2})\/(\d{1,2})\/(\d{4})$/);
     if (match) {
         return new Date(parseInt(match[3]), parseInt(match[2])-1, parseInt(match[1]));
@@ -71,7 +67,6 @@ function parsearFechaLegible(texto) {
     return null;
 }
 
-// Verifica si la fecha es igual o posterior al día actual (sin hora)
 function esFechaPosteriorOHoy(fechaStr) {
     const fechaObj = parsearFechaLegible(fechaStr);
     if (!fechaObj) return false;
@@ -92,10 +87,77 @@ function inicializarHome() {
     });
 }
 
+// Clasifica cines en: individuales (sin agrupar) y grupos de cadena
+function clasificarCines(cinesArray) {
+    const individuales = [];   // cines que no pertenecen a ninguna cadena (Gaumont, Cosmos, Cacodelphia)
+    const grupos = {
+        "Atlas": [],
+        "Cinemark/Hoyts": []
+    };
+    for (const cine of cinesArray) {
+        if (cine.includes("Gaumont") || cine.includes("Cosmos") || cine.includes("Cacodelphia")) {
+            individuales.push(cine);
+        } else if (cine.includes("Atlas")) {
+            grupos["Atlas"].push(cine);
+        } else if (cine.includes("Cinemark") || cine.includes("Hoyts")) {
+            grupos["Cinemark/Hoyts"].push(cine);
+        } else {
+            individuales.push(cine); // cualquier otro (no debería haber)
+        }
+    }
+    // Ordenar alfabéticamente cada lista
+    individuales.sort();
+    grupos["Atlas"].sort();
+    grupos["Cinemark/Hoyts"].sort();
+    return { individuales, grupos };
+}
+
+// Llenar un select con opciones planas (para ciudad, día, horario, idioma)
+function llenarSelect(id, valores) {
+    const select = document.getElementById(id);
+    if (!select) return;
+    select.innerHTML = '<option value="">Todos</option>';
+    valores.forEach(v => {
+        const opt = document.createElement('option');
+        opt.value = v;
+        opt.textContent = v;
+        select.appendChild(opt);
+    });
+}
+
+// Llenar select de cines: individuales al principio, luego grupos con optgroup
+function llenarSelectCines(id, individuales, grupos) {
+    const select = document.getElementById(id);
+    if (!select) return;
+    select.innerHTML = '<option value="">Todos</option>';
+    
+    // 1. Cines individuales (sin encabezado)
+    for (const cine of individuales) {
+        const opt = document.createElement('option');
+        opt.value = cine;
+        opt.textContent = cine;
+        select.appendChild(opt);
+    }
+    
+    // 2. Grupos de cadena (con optgroup)
+    for (const [nombreGrupo, cinesLista] of Object.entries(grupos)) {
+        if (cinesLista.length === 0) continue;
+        const optgroup = document.createElement('optgroup');
+        optgroup.label = nombreGrupo;
+        for (const cine of cinesLista) {
+            const opt = document.createElement('option');
+            opt.value = cine;
+            opt.textContent = cine;
+            optgroup.appendChild(opt);
+        }
+        select.appendChild(optgroup);
+    }
+}
+
 function llenarFiltrosHome(funcionesCartelera) {
     const ciudades = new Set();
     const cines = new Set();
-    const fechasMap = new Map(); // clave: fechaStr, valor: Date (solo hoy o futuras)
+    const fechasMap = new Map();
     const horarios = new Set();
 
     funcionesCartelera.forEach(f => {
@@ -108,26 +170,14 @@ function llenarFiltrosHome(funcionesCartelera) {
         if (f.horarios) f.horarios.forEach(h => horarios.add(h));
     });
 
-    // Ordenar fechas (solo desde hoy hacia adelante)
     const diasOrdenados = Array.from(fechasMap.entries())
         .sort((a, b) => a[1] - b[1])
         .map(([fechaStr]) => fechaStr);
     const horariosOrdenados = Array.from(horarios).sort();
 
-    function llenarSelect(id, valores) {
-        const select = document.getElementById(id);
-        if (!select) return;
-        select.innerHTML = '<option value="">Todos</option>';
-        valores.forEach(v => {
-            const opt = document.createElement('option');
-            opt.value = v;
-            opt.textContent = v;
-            select.appendChild(opt);
-        });
-    }
-
     llenarSelect('home-filter-ciudad', Array.from(ciudades).sort());
-    llenarSelect('home-filter-cine', Array.from(cines).sort());
+    const { individuales, grupos } = clasificarCines(Array.from(cines));
+    llenarSelectCines('home-filter-cine', individuales, grupos);
     llenarSelect('home-filter-dia', diasOrdenados);
     llenarSelect('home-filter-horario', horariosOrdenados);
 }
@@ -138,7 +188,6 @@ function aplicarFiltrosHome() {
     const valDia = document.getElementById('home-filter-dia').value;
     const valHorario = document.getElementById('home-filter-horario').value;
 
-    // Solo considerar funciones de cartelera y con fecha >= hoy
     let funcionesFiltradas = peliculas.filter(p => p.seccion === "cartelera" && esFechaPosteriorOHoy(p.fecha));
     if (valCiudad) funcionesFiltradas = funcionesFiltradas.filter(p => p.ciudad === valCiudad);
     if (valCine) funcionesFiltradas = funcionesFiltradas.filter(p => p.cine === valCine);
@@ -253,7 +302,6 @@ function abrirDetallePelicula(titulo) {
     window.scrollTo(0, 0);
 }
 
-// ========== FILTROS DETALLE ==========
 function inicializarFiltrosDetalle() {
     const todasFunciones = peliculas.filter(p => p.titulo === peliculaActualTitulo);
     llenarFiltrosDetalle(todasFunciones);
@@ -276,7 +324,7 @@ function inicializarFiltrosDetalle() {
 function llenarFiltrosDetalle(funciones) {
     const ciudades = new Set();
     const cines = new Set();
-    const fechasMap = new Map(); // solo hoy y futuras
+    const fechasMap = new Map();
     const idiomas = new Set();
     const horarios = new Set();
 
@@ -296,20 +344,9 @@ function llenarFiltrosDetalle(funciones) {
         .map(([fechaStr]) => fechaStr);
     const horariosOrdenados = Array.from(horarios).sort();
 
-    function llenarSelect(id, valores) {
-        const select = document.getElementById(id);
-        if (!select) return;
-        select.innerHTML = '<option value="">Todos</option>';
-        valores.forEach(v => {
-            const opt = document.createElement('option');
-            opt.value = v;
-            opt.textContent = v;
-            select.appendChild(opt);
-        });
-    }
-
     llenarSelect('detail-filter-ciudad', Array.from(ciudades).sort());
-    llenarSelect('detail-filter-cine', Array.from(cines).sort());
+    const { individuales, grupos } = clasificarCines(Array.from(cines));
+    llenarSelectCines('detail-filter-cine', individuales, grupos);
     llenarSelect('detail-filter-dia', diasOrdenados);
     llenarSelect('detail-filter-idioma', Array.from(idiomas).sort());
     llenarSelect('detail-filter-horario', horariosOrdenados);
@@ -335,7 +372,6 @@ function renderizarFuncionesDetalle(funciones, filtroHorario) {
     const contenedor = document.getElementById('showtimes-container');
     contenedor.innerHTML = '';
 
-    // Ya vienen filtradas por fecha >= hoy, pero por si acaso
     const funcionesFuturas = funciones.filter(f => esFechaPosteriorOHoy(f.fecha));
     if (funcionesFuturas.length === 0) {
         contenedor.innerHTML = '<p style="color: var(--text-muted);">No hay funciones disponibles para los filtros seleccionados.</p>';
