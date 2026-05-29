@@ -5,16 +5,29 @@ const GAUMONT_FILE = path.join(__dirname, 'peliculas_gaumont.json');
 const COSMOS_FILE = path.join(__dirname, 'peliculas_cosmos.json');
 const CACODELPHIA_FILE = path.join(__dirname, 'peliculas_cacodelphia.json');
 const ATLAS_FILE = path.join(__dirname, 'peliculas_atlas.json');
+const CINEMARK_FILE = path.join(__dirname, 'peliculas_cinemark.json');
 const OUTPUT_FILE = path.join(__dirname, 'peliculas.json');
 
-// Normaliza un título: minúsculas, sin acentos, sin caracteres especiales
+// Normalización avanzada (sin dependencias)
 function normalizarTitulo(titulo) {
-    return titulo
-        .toLowerCase()
-        .normalize('NFD').replace(/[\u0300-\u036f]/g, '')
-        .replace(/[^a-z0-9\s]/g, '')
-        .trim()
-        .replace(/\s+/g, ' ');
+    if (!titulo) return '';
+    
+    let t = titulo;
+    
+    // Eliminar contenido entre paréntesis, corchetes, llaves
+    t = t.replace(/[\(\[].*?[\)\]]/g, '');
+    // Eliminar después de guión o dos puntos
+    t = t.replace(/\s*[-–—:].*$/, '');
+    // Eliminar artículos al inicio
+    t = t.replace(/^(the|a|an|la|el|los|las|le|un|una|unos|unas)\s+/i, '');
+    
+    // Normalizar
+    t = t.toLowerCase();
+    t = t.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+    t = t.replace(/[^a-z0-9\s]/g, '');
+    t = t.trim().replace(/\s+/g, ' ');
+    
+    return t;
 }
 
 async function cargarFuente(archivo, nombre) {
@@ -30,16 +43,17 @@ async function cargarFuente(archivo, nombre) {
 }
 
 async function main() {
-    console.log('🔄 Unificando carteleras (con fusión por título normalizado)...');
+    console.log('🔄 Unificando carteleras (con normalización avanzada)...');
     
     const gaumont = await cargarFuente(GAUMONT_FILE, 'Gaumont');
     const cosmos = await cargarFuente(COSMOS_FILE, 'Cosmos');
     const cacodelphia = await cargarFuente(CACODELPHIA_FILE, 'Cacodelphia');
     const atlas = await cargarFuente(ATLAS_FILE, 'Atlas');
+    const cinemark = await cargarFuente(CINEMARK_FILE, 'Cinemark');
     
-    const todasFunciones = [...gaumont, ...cosmos, ...cacodelphia, ...atlas];
+    const todasFunciones = [...gaumont, ...cosmos, ...cacodelphia, ...atlas, ...cinemark];
     
-    // Agrupar por título normalizado para fusionar películas repetidas
+    // Agrupar solo por título normalizado
     const mapa = new Map();
     for (const func of todasFunciones) {
         const clave = normalizarTitulo(func.titulo);
@@ -49,14 +63,26 @@ async function main() {
                 funciones: []
             });
         }
-        const grupo = mapa.get(clave);
-        grupo.funciones.push(func);
+        mapa.get(clave).funciones.push(func);
     }
     
-    // Reconstruir array de funciones combinadas
+    // Elegir el título más frecuente como canónico
     const resultado = [];
     for (const grupo of mapa.values()) {
-        const tituloFinal = grupo.tituloOriginal;
+        const frecuencias = new Map();
+        for (const f of grupo.funciones) {
+            const titulo = f.titulo;
+            frecuencias.set(titulo, (frecuencias.get(titulo) || 0) + 1);
+        }
+        let tituloFinal = grupo.tituloOriginal;
+        let maxFreq = 0;
+        for (const [titulo, freq] of frecuencias) {
+            if (freq > maxFreq) {
+                maxFreq = freq;
+                tituloFinal = titulo;
+            }
+        }
+        
         const funcionesCombinadas = grupo.funciones.map(f => ({
             ...f,
             titulo: tituloFinal

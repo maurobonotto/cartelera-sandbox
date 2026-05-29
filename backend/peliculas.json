@@ -1072,6 +1072,76 @@
     "linkTrailer": "https://youtu.be/N1qb7JHpwuA?si=nGgYexq02P8kLckq"
   },
   {
+    "id_funcion": "cinemark_abasto_9",
+    "titulo": "Nada entre los dos",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Hoyts Abasto",
+    "ciudad": "CABA",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "15:40"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_palermo_30",
+    "titulo": "Nada entre los dos",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Palermo",
+    "ciudad": "CABA",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "12:40",
+      "20:20"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_moreno_90",
+    "titulo": "Nada entre los dos",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Moreno",
+    "ciudad": "Moreno",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "13:15"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_unicenter_158",
+    "titulo": "Nada entre los dos",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Hoyts Unicenter",
+    "ciudad": "Martínez",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "13:00",
+      "18:00"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
     "id_funcion": "839_1",
     "titulo": "Historias breves 24",
     "director": "Varios",
@@ -2939,6 +3009,257 @@
     "linkTrailer": "https://youtu.be/nQeJckJxwek?si=0Mr2Jv-Rj5m6_jKW"
   },
   {
+    "id_funcion": "cinemark_abasto_5",
+    "titulo": "AMARGA NAVIDAD",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Hoyts Abasto",
+    "ciudad": "CABA",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "14:30",
+      "17:10",
+      "19:50",
+      "22:30"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_caballito_19",
+    "titulo": "AMARGA NAVIDAD",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Caballito",
+    "ciudad": "CABA",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "14:20",
+      "19:40",
+      "22:20"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_palermo_28",
+    "titulo": "AMARGA NAVIDAD",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Palermo",
+    "ciudad": "CABA",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "13:00",
+      "14:10",
+      "15:30",
+      "17:10",
+      "20:00",
+      "20:40",
+      "22:30",
+      "23:10"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_dot_38",
+    "titulo": "AMARGA NAVIDAD",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Hoyts DOT",
+    "ciudad": "CABA",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "14:10",
+      "19:40",
+      "16:10",
+      "21:30"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_puertomadero_47",
+    "titulo": "AMARGA NAVIDAD",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Puerto Madero",
+    "ciudad": "CABA",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "14:30",
+      "17:00",
+      "19:30",
+      "22:10"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_altoavellaneda_63",
+    "titulo": "AMARGA NAVIDAD",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Avellaneda",
+    "ciudad": "Avellaneda",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "13:00",
+      "20:20"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_malvinasargentinas_73",
+    "titulo": "AMARGA NAVIDAD",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Malvinas Argentinas",
+    "ciudad": "Malvinas Argentinas",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "15:30",
+      "20:35"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_moreno_86",
+    "titulo": "AMARGA NAVIDAD",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Moreno",
+    "ciudad": "Moreno",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "16:40",
+      "22:10"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_moron_100",
+    "titulo": "AMARGA NAVIDAD",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Hoyts Plaza Oeste Morón",
+    "ciudad": "Morón",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "20:20"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_quilmes_110",
+    "titulo": "AMARGA NAVIDAD",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Quilmes",
+    "ciudad": "Quilmes",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "14:20",
+      "16:50",
+      "19:20"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_temperley_130",
+    "titulo": "AMARGA NAVIDAD",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Temperley",
+    "ciudad": "Temperley",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "12:30",
+      "17:35",
+      "22:35"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_tortugas_142",
+    "titulo": "AMARGA NAVIDAD",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Tortugas",
+    "ciudad": "Tortuguitas",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "15:40",
+      "20:45"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_unicenter_154",
+    "titulo": "AMARGA NAVIDAD",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Hoyts Unicenter",
+    "ciudad": "Martínez",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "12:40",
+      "15:05",
+      "17:30",
+      "20:35",
+      "23:00"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
     "id_funcion": "cacodelphia_21814_40",
     "titulo": "VIDAS IMAGINARIAS",
     "director": "No especificado",
@@ -3056,6 +3377,177 @@
     "poster": "https://www.atlascines.com/images/posters/200_474.jpg",
     "sinopsis": "Con una duración de 91 minutos – igual que el partido de 1986 – el largometraje reúne por primera vez a jugadores de ambos equipos para reconstruir no solo el partido,sino los sucesos históricos que se pusieron en marcha siglos antes. Junto a testimonios de sus protagonistas y archivos nunca vistos de entrenadores,árbitros,hinchas,músicos,y políticos,la película logra capturar la belleza del juego y lo absurdo de la guerra. Basada en el libro “El Partido” de Andrés Burgo.",
     "linkTrailer": "https://youtu.be/Y5q_fAffnv4?si=JRuxyUonQ3qMi1Ge"
+  },
+  {
+    "id_funcion": "cinemark_abasto_11",
+    "titulo": "EL PARTIDO",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Hoyts Abasto",
+    "ciudad": "CABA",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "18:10"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_caballito_20",
+    "titulo": "EL PARTIDO",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Caballito",
+    "ciudad": "CABA",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "14:00"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_palermo_31",
+    "titulo": "EL PARTIDO",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Palermo",
+    "ciudad": "CABA",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "18:10"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_dot_39",
+    "titulo": "EL PARTIDO",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Hoyts DOT",
+    "ciudad": "CABA",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "20:30"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_altoavellaneda_65",
+    "titulo": "EL PARTIDO",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Avellaneda",
+    "ciudad": "Avellaneda",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "15:30"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_malvinasargentinas_78",
+    "titulo": "EL PARTIDO",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Malvinas Argentinas",
+    "ciudad": "Malvinas Argentinas",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "14:40"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_moreno_92",
+    "titulo": "EL PARTIDO",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Moreno",
+    "ciudad": "Moreno",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "15:40"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_moron_102",
+    "titulo": "EL PARTIDO",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Hoyts Plaza Oeste Morón",
+    "ciudad": "Morón",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "14:30"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_quilmes_115",
+    "titulo": "EL PARTIDO",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Quilmes",
+    "ciudad": "Quilmes",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "15:00"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_unicenter_160",
+    "titulo": "EL PARTIDO",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Hoyts Unicenter",
+    "ciudad": "Martínez",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "15:30",
+      "20:20"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
   },
   {
     "id_funcion": "cacodelphia_21797_45",
@@ -3178,7 +3670,7 @@
   },
   {
     "id_funcion": "atlas_18010_1780036647084",
-    "titulo": "SUPER MARIO GALAXY:LA PELICULA",
+    "titulo": "SUPER MARIO GALAXY: LA PELÍCULA",
     "director": "No especificado",
     "duracion": "100",
     "cine": "Atlas Caballito",
@@ -3195,7 +3687,7 @@
   },
   {
     "id_funcion": "atlas_15885_1780036647421",
-    "titulo": "SUPER MARIO GALAXY:LA PELICULA",
+    "titulo": "SUPER MARIO GALAXY: LA PELÍCULA",
     "director": "No especificado",
     "duracion": "100",
     "cine": "Atlas Catan",
@@ -3212,7 +3704,7 @@
   },
   {
     "id_funcion": "atlas_15384_1780036648403",
-    "titulo": "SUPER MARIO GALAXY:LA PELICULA",
+    "titulo": "SUPER MARIO GALAXY: LA PELÍCULA",
     "director": "No especificado",
     "duracion": "100",
     "cine": "Atlas Nordelta",
@@ -3229,7 +3721,7 @@
   },
   {
     "id_funcion": "atlas_15443_1780036648793",
-    "titulo": "SUPER MARIO GALAXY:LA PELICULA",
+    "titulo": "SUPER MARIO GALAXY: LA PELÍCULA",
     "director": "No especificado",
     "duracion": "100",
     "cine": "Atlas Flores",
@@ -3246,7 +3738,7 @@
   },
   {
     "id_funcion": "atlas_13226_1780036649116",
-    "titulo": "SUPER MARIO GALAXY:LA PELICULA",
+    "titulo": "SUPER MARIO GALAXY: LA PELÍCULA",
     "director": "No especificado",
     "duracion": "100",
     "cine": "Atlas Liniers",
@@ -3260,6 +3752,292 @@
     "poster": "https://www.atlascines.com/images/posters/200_400.jpg",
     "sinopsis": "Luego de vencer a Bowser y salvar Brooklyn,Mario y amigos enfrentan una nueva amenaza: Wario,con Bowser Jr.,conspira para dominar el mundo. Deben aliarse con Yoshi para detener a este dúo malvado.",
     "linkTrailer": "https://youtu.be/fS-RU8dmb5Q?si=BDA9takQxU1pA06R"
+  },
+  {
+    "id_funcion": "cinemark_abasto_14",
+    "titulo": "SUPER MARIO GALAXY: LA PELÍCULA",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Hoyts Abasto",
+    "ciudad": "CABA",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "13:00",
+      "15:20",
+      "17:40"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_caballito_23",
+    "titulo": "SUPER MARIO GALAXY: LA PELÍCULA",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Caballito",
+    "ciudad": "CABA",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "13:00",
+      "15:20",
+      "17:50"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_palermo_33",
+    "titulo": "SUPER MARIO GALAXY: LA PELÍCULA",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Palermo",
+    "ciudad": "CABA",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "14:00",
+      "16:40"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_dot_42",
+    "titulo": "SUPER MARIO GALAXY: LA PELÍCULA",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Hoyts DOT",
+    "ciudad": "CABA",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "13:00",
+      "15:40",
+      "18:00"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_puertomadero_51",
+    "titulo": "SUPER MARIO GALAXY: LA PELÍCULA",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Puerto Madero",
+    "ciudad": "CABA",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "15:10",
+      "17:50"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_soleil_58",
+    "titulo": "SUPER MARIO GALAXY: LA PELÍCULA",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Soleil",
+    "ciudad": "Boulogne",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "13:10",
+      "15:30",
+      "17:50"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_altoavellaneda_68",
+    "titulo": "SUPER MARIO GALAXY: LA PELÍCULA",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Avellaneda",
+    "ciudad": "Avellaneda",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "13:00",
+      "15:20",
+      "17:45"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_malvinasargentinas_81",
+    "titulo": "SUPER MARIO GALAXY: LA PELÍCULA",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Malvinas Argentinas",
+    "ciudad": "Malvinas Argentinas",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "12:40",
+      "15:20",
+      "17:50",
+      "20:10"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_moreno_95",
+    "titulo": "SUPER MARIO GALAXY: LA PELÍCULA",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Moreno",
+    "ciudad": "Moreno",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "13:10",
+      "15:20",
+      "17:50"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_moron_105",
+    "titulo": "SUPER MARIO GALAXY: LA PELÍCULA",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Hoyts Plaza Oeste Morón",
+    "ciudad": "Morón",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "13:10",
+      "15:30",
+      "17:50"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_quilmes_118",
+    "titulo": "SUPER MARIO GALAXY: LA PELÍCULA",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Quilmes",
+    "ciudad": "Quilmes",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "13:20",
+      "15:45",
+      "18:05",
+      "20:30"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_sanjusto_125",
+    "titulo": "SUPER MARIO GALAXY: LA PELÍCULA",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark San Justo",
+    "ciudad": "San Justo",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "12:50",
+      "15:20",
+      "17:50"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_temperley_137",
+    "titulo": "SUPER MARIO GALAXY: LA PELÍCULA",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Temperley",
+    "ciudad": "Temperley",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "12:40",
+      "15:00",
+      "17:25"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_tortugas_149",
+    "titulo": "SUPER MARIO GALAXY: LA PELÍCULA",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Tortugas",
+    "ciudad": "Tortuguitas",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "13:00",
+      "15:20",
+      "17:40"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_unicenter_163",
+    "titulo": "SUPER MARIO GALAXY: LA PELÍCULA",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Hoyts Unicenter",
+    "ciudad": "Martínez",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "13:20",
+      "15:40",
+      "18:10",
+      "20:30"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
   },
   {
     "id_funcion": "atlas_18031_1780036647084",
@@ -3345,6 +4123,318 @@
     "poster": "https://www.atlascines.com/images/posters/200_441.jpg",
     "sinopsis": "Muestra el viaje de Michael Jackson más allá de la música,desde el descubrimiento de su extraordinario talento como líder de los Jackson Five hasta convertirse en una visionaria estrella cuya ambición creativa despertó un incansable afán por consagrarse como el mayor icono de la industria del entretenimiento.",
     "linkTrailer": "https://youtu.be/9b8beMjr4oE?si=v2TGncQQYRY6pGZ7"
+  },
+  {
+    "id_funcion": "cinemark_abasto_4",
+    "titulo": "MICHAEL",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Hoyts Abasto",
+    "ciudad": "CABA",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "13:00",
+      "16:00",
+      "19:00",
+      "22:00",
+      "20:00",
+      "23:00"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_caballito_18",
+    "titulo": "MICHAEL",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Caballito",
+    "ciudad": "CABA",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "16:10",
+      "19:00",
+      "22:00"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_palermo_27",
+    "titulo": "MICHAEL",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Palermo",
+    "ciudad": "CABA",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "13:10",
+      "16:00",
+      "19:00",
+      "22:00"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_dot_37",
+    "titulo": "MICHAEL",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Hoyts DOT",
+    "ciudad": "CABA",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "12:30",
+      "15:30",
+      "18:40",
+      "22:10"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_puertomadero_46",
+    "titulo": "MICHAEL",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Puerto Madero",
+    "ciudad": "CABA",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "14:10",
+      "19:50",
+      "17:00",
+      "22:40"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_soleil_55",
+    "titulo": "MICHAEL",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Soleil",
+    "ciudad": "Boulogne",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "13:20",
+      "16:20",
+      "19:20",
+      "22:10"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_altoavellaneda_62",
+    "titulo": "MICHAEL",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Avellaneda",
+    "ciudad": "Avellaneda",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "13:20",
+      "16:10",
+      "19:00",
+      "22:00"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_malvinasargentinas_72",
+    "titulo": "MICHAEL",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Malvinas Argentinas",
+    "ciudad": "Malvinas Argentinas",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "13:00",
+      "16:00",
+      "19:00",
+      "22:00"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_moreno_85",
+    "titulo": "MICHAEL",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Moreno",
+    "ciudad": "Moreno",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "13:05",
+      "15:50",
+      "18:40",
+      "21:40",
+      "23:00"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_moron_99",
+    "titulo": "MICHAEL",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Hoyts Plaza Oeste Morón",
+    "ciudad": "Morón",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "13:40",
+      "16:30",
+      "19:20",
+      "22:20"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_quilmes_109",
+    "titulo": "MICHAEL",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Quilmes",
+    "ciudad": "Quilmes",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "13:15",
+      "14:10",
+      "16:10",
+      "19:10",
+      "19:50",
+      "22:20"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_sanjusto_122",
+    "titulo": "MICHAEL",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark San Justo",
+    "ciudad": "San Justo",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "13:30",
+      "16:20",
+      "19:10",
+      "22:00"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_temperley_129",
+    "titulo": "MICHAEL",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Temperley",
+    "ciudad": "Temperley",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "13:15",
+      "16:10",
+      "19:10",
+      "22:15",
+      "13:15",
+      "16:10",
+      "19:10",
+      "22:15"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_tortugas_141",
+    "titulo": "MICHAEL",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Tortugas",
+    "ciudad": "Tortuguitas",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "13:20",
+      "16:10",
+      "17:10",
+      "19:00",
+      "21:50",
+      "22:50"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_unicenter_153",
+    "titulo": "MICHAEL",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Hoyts Unicenter",
+    "ciudad": "Martínez",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "13:20",
+      "16:20",
+      "22:20",
+      "22:50",
+      "19:20",
+      "20:00"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
   },
   {
     "id_funcion": "atlas_18021_1780036647084",
@@ -3449,6 +4539,339 @@
     "linkTrailer": "https://youtu.be/2mha7C_mCRs?si=H0VEYdfoe0srTbCx"
   },
   {
+    "id_funcion": "cinemark_abasto_2",
+    "titulo": "EL DIABLO VISTE A LA MODA 2",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Hoyts Abasto",
+    "ciudad": "CABA",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "13:20",
+      "14:10",
+      "16:00",
+      "18:40",
+      "19:40",
+      "21:20",
+      "22:30",
+      "16:50"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_caballito_16",
+    "titulo": "EL DIABLO VISTE A LA MODA 2",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Caballito",
+    "ciudad": "CABA",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "14:25",
+      "17:10",
+      "19:55",
+      "22:40"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_palermo_25",
+    "titulo": "EL DIABLO VISTE A LA MODA 2",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Palermo",
+    "ciudad": "CABA",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "12:30",
+      "13:40",
+      "15:40",
+      "16:30",
+      "18:30",
+      "19:40",
+      "21:30",
+      "22:30"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_dot_35",
+    "titulo": "EL DIABLO VISTE A LA MODA 2",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Hoyts DOT",
+    "ciudad": "CABA",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "13:00",
+      "15:50",
+      "17:00",
+      "18:30",
+      "21:30",
+      "22:20",
+      "13:20",
+      "18:40"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_puertomadero_44",
+    "titulo": "EL DIABLO VISTE A LA MODA 2",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Puerto Madero",
+    "ciudad": "CABA",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "14:00",
+      "16:40",
+      "22:00",
+      "19:20"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_soleil_53",
+    "titulo": "EL DIABLO VISTE A LA MODA 2",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Soleil",
+    "ciudad": "Boulogne",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "13:30",
+      "16:30",
+      "19:30",
+      "22:30"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_altoavellaneda_60",
+    "titulo": "EL DIABLO VISTE A LA MODA 2",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Avellaneda",
+    "ciudad": "Avellaneda",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "13:45",
+      "16:30",
+      "19:15",
+      "20:00",
+      "22:10",
+      "22:40"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_malvinasargentinas_70",
+    "titulo": "EL DIABLO VISTE A LA MODA 2",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Malvinas Argentinas",
+    "ciudad": "Malvinas Argentinas",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "13:20",
+      "16:10",
+      "17:15",
+      "18:50",
+      "21:40",
+      "22:55"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_moreno_83",
+    "titulo": "EL DIABLO VISTE A LA MODA 2",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Moreno",
+    "ciudad": "Moreno",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "13:30",
+      "14:00",
+      "16:10",
+      "19:00",
+      "19:25",
+      "22:00"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_moron_97",
+    "titulo": "EL DIABLO VISTE A LA MODA 2",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Hoyts Plaza Oeste Morón",
+    "ciudad": "Morón",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "13:30",
+      "16:20",
+      "17:00",
+      "19:10",
+      "21:50",
+      "22:40"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_quilmes_107",
+    "titulo": "EL DIABLO VISTE A LA MODA 2",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Quilmes",
+    "ciudad": "Quilmes",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "13:40",
+      "16:20",
+      "17:00",
+      "21:40",
+      "22:40",
+      "19:00"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_sanjusto_120",
+    "titulo": "EL DIABLO VISTE A LA MODA 2",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark San Justo",
+    "ciudad": "San Justo",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "13:20",
+      "16:10",
+      "19:00",
+      "21:45"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_temperley_127",
+    "titulo": "EL DIABLO VISTE A LA MODA 2",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Temperley",
+    "ciudad": "Temperley",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "13:30",
+      "16:20",
+      "19:15",
+      "22:10",
+      "22:50"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_tortugas_139",
+    "titulo": "EL DIABLO VISTE A LA MODA 2",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Tortugas",
+    "ciudad": "Tortuguitas",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "13:30",
+      "14:00",
+      "16:20",
+      "19:20",
+      "19:50",
+      "22:10"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_unicenter_151",
+    "titulo": "EL DIABLO VISTE A LA MODA 2",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Hoyts Unicenter",
+    "ciudad": "Martínez",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "13:00",
+      "15:40",
+      "18:20",
+      "21:00",
+      "13:15",
+      "16:00",
+      "18:50",
+      "21:40",
+      "14:10",
+      "17:00",
+      "19:50",
+      "22:45"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
     "id_funcion": "atlas_17992_1780036647084",
     "titulo": "MORTAL KOMBAT II",
     "director": "No especificado",
@@ -3515,6 +4938,253 @@
     "poster": "https://www.atlascines.com/images/posters/200_454.jpg",
     "sinopsis": "Esta vez,los campeones favoritos de los fans —ahora acompañados por el mismísimo Johnny Cage— se enfrentan entre sí en la batalla definitiva,sangrienta y sin reglas,para derrotar el oscuro dominio de Shao Kahn,que amenaza con destruir el Reino de la Tierra y a sus defensores.",
     "linkTrailer": "https://youtu.be/7p3uotWIvhs?si=mcSE_jFz3bZkbI4J"
+  },
+  {
+    "id_funcion": "cinemark_abasto_13",
+    "titulo": "MORTAL KOMBAT II",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Hoyts Abasto",
+    "ciudad": "CABA",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "13:30",
+      "16:10",
+      "19:00",
+      "21:50"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_caballito_22",
+    "titulo": "MORTAL KOMBAT II",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Caballito",
+    "ciudad": "CABA",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "17:00"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_dot_41",
+    "titulo": "MORTAL KOMBAT II",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Hoyts DOT",
+    "ciudad": "CABA",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "17:10"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_soleil_57",
+    "titulo": "MORTAL KOMBAT II",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Soleil",
+    "ciudad": "Boulogne",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "14:40",
+      "17:20",
+      "20:00",
+      "22:40"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_altoavellaneda_67",
+    "titulo": "MORTAL KOMBAT II",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Avellaneda",
+    "ciudad": "Avellaneda",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "12:40",
+      "15:10",
+      "17:50",
+      "20:25"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_malvinasargentinas_80",
+    "titulo": "MORTAL KOMBAT II",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Malvinas Argentinas",
+    "ciudad": "Malvinas Argentinas",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "14:10",
+      "16:50",
+      "19:30",
+      "22:25"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_moreno_94",
+    "titulo": "MORTAL KOMBAT II",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Moreno",
+    "ciudad": "Moreno",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "14:10",
+      "17:00",
+      "19:40",
+      "22:20"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_moron_104",
+    "titulo": "MORTAL KOMBAT II",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Hoyts Plaza Oeste Morón",
+    "ciudad": "Morón",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "14:40",
+      "17:20",
+      "20:00"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_quilmes_117",
+    "titulo": "MORTAL KOMBAT II",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Quilmes",
+    "ciudad": "Quilmes",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "14:25",
+      "17:05",
+      "19:40",
+      "22:30"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_sanjusto_124",
+    "titulo": "MORTAL KOMBAT II",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark San Justo",
+    "ciudad": "San Justo",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "20:10",
+      "22:45"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_temperley_136",
+    "titulo": "MORTAL KOMBAT II",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Temperley",
+    "ciudad": "Temperley",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "14:30",
+      "17:15",
+      "20:00"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_tortugas_148",
+    "titulo": "MORTAL KOMBAT II",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Tortugas",
+    "ciudad": "Tortuguitas",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "13:50",
+      "19:10"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_unicenter_162",
+    "titulo": "MORTAL KOMBAT II",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Hoyts Unicenter",
+    "ciudad": "Martínez",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "13:40",
+      "16:30",
+      "19:10"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
   },
   {
     "id_funcion": "atlas_17997_1780036647084",
@@ -3637,7 +5307,7 @@
   },
   {
     "id_funcion": "atlas_17995_1780036647085",
-    "titulo": "OBSESION",
+    "titulo": "OBSESIÓN",
     "director": "No especificado",
     "duracion": "109",
     "cine": "Atlas Caballito",
@@ -3654,7 +5324,7 @@
   },
   {
     "id_funcion": "atlas_15890_1780036647421",
-    "titulo": "OBSESION",
+    "titulo": "OBSESIÓN",
     "director": "No especificado",
     "duracion": "109",
     "cine": "Atlas Catan",
@@ -3668,6 +5338,289 @@
     "poster": "https://www.atlascines.com/images/posters/200_470.jpg",
     "sinopsis": "El anhelo romántico desesperado de un chico por su amor platónico de toda la vida desencadena un siniestro hechizo: Niki se vuelve irracionalmente obsesiva hasta convertirse en la sombra de Bear. Una fantasía aparentemente inofensiva que se convertirá en una perturbadora pesadilla. Potente metáfora sobre la cosificación de las relaciones románticas y de los límites a los que estamos dispuestos a llegar movidos por el deseo de ser correspondidos.",
     "linkTrailer": "https://youtu.be/cK-LH2I-oMk?si=xv4TSlTDokNRMW4m"
+  },
+  {
+    "id_funcion": "cinemark_abasto_12",
+    "titulo": "OBSESIÓN",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Hoyts Abasto",
+    "ciudad": "CABA",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "13:10",
+      "20:40",
+      "23:05"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_caballito_21",
+    "titulo": "OBSESIÓN",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Caballito",
+    "ciudad": "CABA",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "20:20",
+      "23:00"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_palermo_32",
+    "titulo": "OBSESIÓN",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Palermo",
+    "ciudad": "CABA",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "12:40",
+      "15:10",
+      "17:40",
+      "20:10",
+      "22:40",
+      "01:10"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_dot_40",
+    "titulo": "OBSESIÓN",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Hoyts DOT",
+    "ciudad": "CABA",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "14:30",
+      "20:00",
+      "22:30"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_puertomadero_50",
+    "titulo": "OBSESIÓN",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Puerto Madero",
+    "ciudad": "CABA",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "14:50",
+      "17:20",
+      "22:20",
+      "19:50"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_soleil_56",
+    "titulo": "OBSESIÓN",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Soleil",
+    "ciudad": "Boulogne",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "22:50"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_altoavellaneda_66",
+    "titulo": "OBSESIÓN",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Avellaneda",
+    "ciudad": "Avellaneda",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "17:50",
+      "22:50"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_malvinasargentinas_79",
+    "titulo": "OBSESIÓN",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Malvinas Argentinas",
+    "ciudad": "Malvinas Argentinas",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "12:50",
+      "17:10",
+      "22:35"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_moreno_93",
+    "titulo": "OBSESIÓN",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Moreno",
+    "ciudad": "Moreno",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "20:10",
+      "22:50"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_moron_103",
+    "titulo": "OBSESIÓN",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Hoyts Plaza Oeste Morón",
+    "ciudad": "Morón",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "19:30",
+      "22:30"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_quilmes_116",
+    "titulo": "OBSESIÓN",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Quilmes",
+    "ciudad": "Quilmes",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "17:40",
+      "20:10",
+      "22:10"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_sanjusto_123",
+    "titulo": "OBSESIÓN",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark San Justo",
+    "ciudad": "San Justo",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "13:00",
+      "18:10",
+      "23:00"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_temperley_135",
+    "titulo": "OBSESIÓN",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Temperley",
+    "ciudad": "Temperley",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "20:35",
+      "22:40"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_tortugas_147",
+    "titulo": "OBSESIÓN",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Tortugas",
+    "ciudad": "Tortuguitas",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "20:10",
+      "22:40"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_unicenter_161",
+    "titulo": "OBSESIÓN",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Hoyts Unicenter",
+    "ciudad": "Martínez",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "13:00",
+      "15:45",
+      "18:10",
+      "20:30",
+      "23:05"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
   },
   {
     "id_funcion": "atlas_17993_1780036647085",
@@ -3719,6 +5672,159 @@
     "poster": "https://www.atlascines.com/images/posters/200_475.jpg",
     "sinopsis": "Tras presenciar un terrible accidente en la autopista,una joven pareja pronto se da cuenta de que no salieron ilesos del lugar del siniestro,pues una presencia demoníaca llamada el Pasajero,que no se detendrá hasta atraparlos a ambos,convierte su aventura en la carretera en una pesadilla.",
     "linkTrailer": "https://youtu.be/tjCTMdbk_xc?si=o-jyCyvMnDJD0NhH"
+  },
+  {
+    "id_funcion": "cinemark_abasto_10",
+    "titulo": "EL PASAJERO DEL DIABLO",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Hoyts Abasto",
+    "ciudad": "CABA",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "15:50"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_altoavellaneda_64",
+    "titulo": "EL PASAJERO DEL DIABLO",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Avellaneda",
+    "ciudad": "Avellaneda",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "23:00"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_malvinasargentinas_77",
+    "titulo": "EL PASAJERO DEL DIABLO",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Malvinas Argentinas",
+    "ciudad": "Malvinas Argentinas",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "23:05"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_moreno_91",
+    "titulo": "EL PASAJERO DEL DIABLO",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Moreno",
+    "ciudad": "Moreno",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "20:40"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_moron_101",
+    "titulo": "EL PASAJERO DEL DIABLO",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Hoyts Plaza Oeste Morón",
+    "ciudad": "Morón",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "22:50"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_quilmes_114",
+    "titulo": "EL PASAJERO DEL DIABLO",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Quilmes",
+    "ciudad": "Quilmes",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "23:05"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_temperley_134",
+    "titulo": "EL PASAJERO DEL DIABLO",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Temperley",
+    "ciudad": "Temperley",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "13:10"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_tortugas_146",
+    "titulo": "EL PASAJERO DEL DIABLO",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Tortugas",
+    "ciudad": "Tortuguitas",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "17:00"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_unicenter_159",
+    "titulo": "EL PASAJERO DEL DIABLO",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Hoyts Unicenter",
+    "ciudad": "Martínez",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "22:30"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
   },
   {
     "id_funcion": "atlas_18026_1780036647085",
@@ -3959,8 +6065,149 @@
     "linkTrailer": "https://youtu.be/QqS0JBgyImY?si=XiiJhdX2nvHAPtRg"
   },
   {
+    "id_funcion": "cinemark_abasto_7",
+    "titulo": "DOLLY",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Hoyts Abasto",
+    "ciudad": "CABA",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "23:00"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_puertomadero_49",
+    "titulo": "DOLLY",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Puerto Madero",
+    "ciudad": "CABA",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "18:00",
+      "22:50"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_malvinasargentinas_75",
+    "titulo": "DOLLY",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Malvinas Argentinas",
+    "ciudad": "Malvinas Argentinas",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "22:10"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_moreno_88",
+    "titulo": "DOLLY",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Moreno",
+    "ciudad": "Moreno",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "15:10",
+      "22:40"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_quilmes_112",
+    "titulo": "DOLLY",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Quilmes",
+    "ciudad": "Quilmes",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "15:40",
+      "20:50"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_temperley_132",
+    "titulo": "DOLLY",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Temperley",
+    "ciudad": "Temperley",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "15:30",
+      "23:00"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_tortugas_144",
+    "titulo": "DOLLY",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Tortugas",
+    "ciudad": "Tortuguitas",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "23:10"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_unicenter_156",
+    "titulo": "DOLLY",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Hoyts Unicenter",
+    "ciudad": "Martínez",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "15:30",
+      "22:45"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
     "id_funcion": "atlas_17994_1780036647085",
-    "titulo": "EL CASTILLO AMBULANTE",
+    "titulo": "EL CASTILLO AMBULANTE (2004)",
     "director": "No especificado",
     "duracion": "118",
     "cine": "Atlas Caballito",
@@ -3974,6 +6221,142 @@
     "poster": "https://www.atlascines.com/images/posters/200_483.jpg",
     "sinopsis": "Una joven llamada Sophie es transformada en una anciana por una maldición y encuentra refugio en el mágico castillo ambulante del misterioso mago Howl.",
     "linkTrailer": "https://youtu.be/jqmmDq46PCU?si=3gWiRleK_qBPQGqe"
+  },
+  {
+    "id_funcion": "cinemark_abasto_8",
+    "titulo": "EL CASTILLO AMBULANTE (2004)",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Hoyts Abasto",
+    "ciudad": "CABA",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "18:00"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_palermo_29",
+    "titulo": "EL CASTILLO AMBULANTE (2004)",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Palermo",
+    "ciudad": "CABA",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "18:00"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_malvinasargentinas_76",
+    "titulo": "EL CASTILLO AMBULANTE (2004)",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Malvinas Argentinas",
+    "ciudad": "Malvinas Argentinas",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "18:00"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_moreno_89",
+    "titulo": "EL CASTILLO AMBULANTE (2004)",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Moreno",
+    "ciudad": "Moreno",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "18:00"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_quilmes_113",
+    "titulo": "EL CASTILLO AMBULANTE (2004)",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Quilmes",
+    "ciudad": "Quilmes",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "18:00"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_temperley_133",
+    "titulo": "EL CASTILLO AMBULANTE (2004)",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Temperley",
+    "ciudad": "Temperley",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "18:00"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_tortugas_145",
+    "titulo": "EL CASTILLO AMBULANTE (2004)",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Tortugas",
+    "ciudad": "Tortuguitas",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "18:10"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_unicenter_157",
+    "titulo": "EL CASTILLO AMBULANTE (2004)",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Hoyts Unicenter",
+    "ciudad": "Martínez",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "18:00"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
   },
   {
     "id_funcion": "atlas_18013_1780036647085",
@@ -4025,6 +6408,150 @@
     "poster": "https://www.atlascines.com/images/posters/200_486.jpg",
     "sinopsis": "Los obreros de una construcción en Londres desentierran una bomba de la Segunda Guerra Mundial sin explotar,lo que obliga a la población a evacuar la ciudad. Unos ladrones oportunistas,aprovechan el caos para llevar a cabo un elaborado atraco.",
     "linkTrailer": "https://youtu.be/iNls3bZ4rBA?si=mFFr_mreTNHDZ8yl"
+  },
+  {
+    "id_funcion": "cinemark_abasto_6",
+    "titulo": "ZONA DE RIESGO",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Hoyts Abasto",
+    "ciudad": "CABA",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "13:20",
+      "20:30"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_puertomadero_48",
+    "titulo": "ZONA DE RIESGO",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Puerto Madero",
+    "ciudad": "CABA",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "15:30",
+      "20:20"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_malvinasargentinas_74",
+    "titulo": "ZONA DE RIESGO",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Malvinas Argentinas",
+    "ciudad": "Malvinas Argentinas",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "19:40"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_moreno_87",
+    "titulo": "ZONA DE RIESGO",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Moreno",
+    "ciudad": "Moreno",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "12:50",
+      "17:40",
+      "20:20"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_quilmes_111",
+    "titulo": "ZONA DE RIESGO",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Quilmes",
+    "ciudad": "Quilmes",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "13:10",
+      "23:00"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_temperley_131",
+    "titulo": "ZONA DE RIESGO",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Temperley",
+    "ciudad": "Temperley",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "15:10",
+      "20:10"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_tortugas_143",
+    "titulo": "ZONA DE RIESGO",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Tortugas",
+    "ciudad": "Tortuguitas",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "13:10",
+      "22:30"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_unicenter_155",
+    "titulo": "ZONA DE RIESGO",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Hoyts Unicenter",
+    "ciudad": "Martínez",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "13:10",
+      "22:00"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
   },
   {
     "id_funcion": "atlas_18263_1780036647085",
@@ -4314,5 +6841,790 @@
     "poster": "https://www.atlascines.com/images/posters/200_478.jpg",
     "sinopsis": "Finnick pierde accidentalmente la invisibilidad,y ahora el mundo de los brownies está amenazado. Junto con su amiga Kristina,va en busca de un mago que le ayude a recuperar la invisibilidad.",
     "linkTrailer": "https://youtu.be/ZaRy_7-cke8?si=5uNKyEQKnXpHBNt2"
+  },
+  {
+    "id_funcion": "cinemark_abasto_1",
+    "titulo": "BACKROOMS",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Hoyts Abasto",
+    "ciudad": "CABA",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "12:30",
+      "15:00",
+      "17:40",
+      "20:20",
+      "23:00",
+      "12:30",
+      "14:10",
+      "15:00",
+      "16:40",
+      "17:40",
+      "19:20",
+      "22:00",
+      "20:20",
+      "23:00"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_caballito_15",
+    "titulo": "BACKROOMS",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Caballito",
+    "ciudad": "CABA",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "12:30",
+      "17:30",
+      "15:00",
+      "20:00",
+      "22:30"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_palermo_24",
+    "titulo": "BACKROOMS",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Palermo",
+    "ciudad": "CABA",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "12:50",
+      "15:30",
+      "18:00",
+      "19:30",
+      "20:30",
+      "22:10",
+      "23:00",
+      "00:10",
+      "01:00"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_dot_34",
+    "titulo": "BACKROOMS",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Hoyts DOT",
+    "ciudad": "CABA",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "12:20",
+      "14:50",
+      "17:20",
+      "19:50",
+      "22:30",
+      "12:30",
+      "15:10",
+      "17:50",
+      "20:25",
+      "23:00",
+      "22:45"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_puertomadero_43",
+    "titulo": "BACKROOMS",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Puerto Madero",
+    "ciudad": "CABA",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "15:00",
+      "20:30",
+      "22:30",
+      "17:30",
+      "20:00",
+      "23:00"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_soleil_52",
+    "titulo": "BACKROOMS",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Soleil",
+    "ciudad": "Boulogne",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "13:00",
+      "14:00",
+      "15:30",
+      "18:00",
+      "20:10",
+      "20:30",
+      "23:00"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_altoavellaneda_59",
+    "titulo": "BACKROOMS",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Avellaneda",
+    "ciudad": "Avellaneda",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "12:40",
+      "15:20",
+      "18:00",
+      "20:30",
+      "23:00",
+      "12:40",
+      "15:20",
+      "18:00",
+      "20:30",
+      "23:00",
+      "17:10",
+      "22:45"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_malvinasargentinas_69",
+    "titulo": "BACKROOMS",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Malvinas Argentinas",
+    "ciudad": "Malvinas Argentinas",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "12:30",
+      "15:00",
+      "17:25",
+      "19:50",
+      "22:20",
+      "12:30",
+      "15:00",
+      "17:25",
+      "19:50",
+      "22:20",
+      "13:40",
+      "16:15",
+      "18:40",
+      "21:30"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_moreno_82",
+    "titulo": "BACKROOMS",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Moreno",
+    "ciudad": "Moreno",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "13:00",
+      "15:30",
+      "18:00",
+      "20:30",
+      "23:00",
+      "13:00",
+      "13:50",
+      "15:30",
+      "16:30",
+      "18:00",
+      "19:10",
+      "20:30",
+      "21:50",
+      "23:00"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_moron_96",
+    "titulo": "BACKROOMS",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Hoyts Plaza Oeste Morón",
+    "ciudad": "Morón",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "13:00",
+      "15:30",
+      "18:00",
+      "20:30",
+      "23:00",
+      "13:00",
+      "15:30",
+      "16:50",
+      "18:00",
+      "20:30",
+      "22:00",
+      "23:00"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_quilmes_106",
+    "titulo": "BACKROOMS",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Quilmes",
+    "ciudad": "Quilmes",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "13:00",
+      "14:00",
+      "15:30",
+      "18:10",
+      "19:40",
+      "20:40",
+      "22:00",
+      "23:10",
+      "17:30",
+      "22:50"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_sanjusto_119",
+    "titulo": "BACKROOMS",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark San Justo",
+    "ciudad": "San Justo",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "12:30",
+      "15:00",
+      "17:30",
+      "20:00",
+      "22:30",
+      "12:30",
+      "15:00",
+      "17:30",
+      "20:00",
+      "22:30",
+      "15:40",
+      "20:30"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_temperley_126",
+    "titulo": "BACKROOMS",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Temperley",
+    "ciudad": "Temperley",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "12:40",
+      "15:15",
+      "17:50",
+      "20:25",
+      "23:00",
+      "12:40",
+      "15:15",
+      "17:50",
+      "20:25",
+      "23:00",
+      "17:10",
+      "22:45",
+      "19:45"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_tortugas_138",
+    "titulo": "BACKROOMS",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Tortugas",
+    "ciudad": "Tortuguitas",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "13:00",
+      "15:30",
+      "18:00",
+      "20:30",
+      "23:00",
+      "13:00",
+      "15:30",
+      "18:00",
+      "20:30",
+      "23:00",
+      "16:30",
+      "22:00"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_unicenter_150",
+    "titulo": "BACKROOMS",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Hoyts Unicenter",
+    "ciudad": "Martínez",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "12:40",
+      "15:10",
+      "17:40",
+      "20:10",
+      "22:40",
+      "12:40",
+      "15:10",
+      "14:00",
+      "17:40",
+      "19:30",
+      "20:10",
+      "22:40",
+      "14:00",
+      "16:40",
+      "19:20",
+      "22:00",
+      "23:00"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_abasto_3",
+    "titulo": "THE MANDALORIAN AND GROGU",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Hoyts Abasto",
+    "ciudad": "CABA",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "13:00",
+      "14:00",
+      "16:00",
+      "18:50",
+      "21:50",
+      "19:50",
+      "13:00",
+      "14:00",
+      "16:00",
+      "18:50",
+      "21:50",
+      "19:50",
+      "17:00",
+      "22:50",
+      "17:00",
+      "22:50"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_caballito_17",
+    "titulo": "THE MANDALORIAN AND GROGU",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Caballito",
+    "ciudad": "CABA",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "13:50",
+      "22:50",
+      "16:50",
+      "19:50"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_palermo_26",
+    "titulo": "THE MANDALORIAN AND GROGU",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Palermo",
+    "ciudad": "CABA",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "12:20",
+      "15:00",
+      "15:20",
+      "18:20",
+      "21:40",
+      "22:50",
+      "00:40"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_dot_36",
+    "titulo": "THE MANDALORIAN AND GROGU",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Hoyts DOT",
+    "ciudad": "CABA",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "13:15",
+      "16:10",
+      "19:05",
+      "22:00",
+      "22:40",
+      "13:55",
+      "16:50",
+      "19:50"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_puertomadero_45",
+    "titulo": "THE MANDALORIAN AND GROGU",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Puerto Madero",
+    "ciudad": "CABA",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "14:00",
+      "19:40",
+      "16:50",
+      "22:40"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_soleil_54",
+    "titulo": "THE MANDALORIAN AND GROGU",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Soleil",
+    "ciudad": "Boulogne",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "16:30",
+      "22:20",
+      "19:30"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_altoavellaneda_61",
+    "titulo": "THE MANDALORIAN AND GROGU",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Avellaneda",
+    "ciudad": "Avellaneda",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "13:10",
+      "16:15",
+      "19:10",
+      "22:10",
+      "13:10",
+      "16:15",
+      "19:10",
+      "22:10",
+      "14:00",
+      "19:50"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_malvinasargentinas_71",
+    "titulo": "THE MANDALORIAN AND GROGU",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Malvinas Argentinas",
+    "ciudad": "Malvinas Argentinas",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "13:10",
+      "19:20",
+      "13:10",
+      "19:20",
+      "14:20",
+      "16:25",
+      "20:00",
+      "22:45",
+      "16:25",
+      "22:45"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_moreno_84",
+    "titulo": "THE MANDALORIAN AND GROGU",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Moreno",
+    "ciudad": "Moreno",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "13:20",
+      "19:30",
+      "13:20",
+      "19:30",
+      "16:20",
+      "22:30",
+      "16:20",
+      "22:30"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_moron_98",
+    "titulo": "THE MANDALORIAN AND GROGU",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Hoyts Plaza Oeste Morón",
+    "ciudad": "Morón",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "13:20",
+      "19:00",
+      "13:20",
+      "19:00",
+      "14:00",
+      "16:10",
+      "19:50",
+      "22:10",
+      "16:10",
+      "22:10"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_quilmes_108",
+    "titulo": "THE MANDALORIAN AND GROGU",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Quilmes",
+    "ciudad": "Quilmes",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "13:05",
+      "16:40",
+      "21:50",
+      "22:45",
+      "14:30",
+      "20:00",
+      "16:00",
+      "18:50"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_sanjusto_121",
+    "titulo": "THE MANDALORIAN AND GROGU",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark San Justo",
+    "ciudad": "San Justo",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "13:40",
+      "19:20",
+      "13:40",
+      "19:20",
+      "16:30",
+      "22:15",
+      "16:30",
+      "22:15"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_temperley_128",
+    "titulo": "THE MANDALORIAN AND GROGU",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Temperley",
+    "ciudad": "Temperley",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "13:00",
+      "19:00",
+      "13:00",
+      "19:00",
+      "14:10",
+      "19:40",
+      "16:00",
+      "22:00",
+      "16:00",
+      "22:00"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_tortugas_140",
+    "titulo": "THE MANDALORIAN AND GROGU",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cinemark Tortugas",
+    "ciudad": "Tortuguitas",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "13:40",
+      "19:30",
+      "13:40",
+      "19:30",
+      "14:10",
+      "16:40",
+      "20:00",
+      "22:20",
+      "16:40",
+      "22:20"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "cinemark_unicenter_152",
+    "titulo": "THE MANDALORIAN AND GROGU",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Hoyts Unicenter",
+    "ciudad": "Martínez",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada/Subtitulada",
+    "horarios": [
+      "12:45",
+      "21:30",
+      "15:40",
+      "18:30",
+      "12:45",
+      "21:30",
+      "15:40",
+      "18:30",
+      "13:15",
+      "19:00",
+      "16:10",
+      "22:10",
+      "13:15",
+      "16:30",
+      "19:00",
+      "22:00",
+      "16:10",
+      "22:10",
+      "14:00",
+      "17:00",
+      "20:00"
+    ],
+    "seccion": "cartelera",
+    "poster": "",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
   }
 ]
