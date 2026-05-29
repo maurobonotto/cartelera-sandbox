@@ -175,26 +175,36 @@ body {
     color: #888888 !important;
 }
 
-.movie-presentation {
+/* ========== DETALLE DE PELÍCULA (MISMOS MÁRGENES QUE EL HOME) ========== */
+/* Aplicamos el mismo padding lateral a toda la vista de detalle */
+#detail-view {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 0 var(--content-pad);
+}
+
+/* Contenedor interno para mantener el ancho máximo opcional, pero sin afectar márgenes */
+.detail-container {
+    width: 100%;
+    max-width: 1400px; /* Opcional: evita que el contenido se estire demasiado en pantallas enormes, pero respeta el padding */
+    margin: 0 auto;
+}
+
+/* Grid para la presentación: póster e información */
+.movie-presentation {
+    display: grid;
+    grid-template-columns: 260px 1fr;
     gap: 48px;
-    padding: 48px var(--content-pad);
+    padding: 48px 0;
 }
 
 .poster-column img {
-    display: block;
-    width: 260px;
+    width: 100%;
     aspect-ratio: 9 / 16;
     object-fit: cover;
     border-radius: 7px;
     border: 1px solid var(--border);
     box-shadow: 0 10px 30px rgba(0,0,0,0.6);
-}
-
-.info-column {
-    flex: 1;
-    min-width: 300px;
 }
 
 .info-column h2 {
@@ -232,8 +242,7 @@ body {
     color: #aaaaaa;
     font-size: 13px;
     line-height: 1.7;
-    width: fit-content;
-    max-width: 100%;
+    width: 100%;
 }
 
 .trailer-container {
@@ -260,13 +269,19 @@ body {
     border-color: var(--accent);
 }
 
+/* Filtros de detalle */
 .detail-filters-section {
-    margin: 0;
     border-top: none;
+    justify-content: flex-start;
+    gap: 24px;
+    background-color: transparent;
+    padding: 0 0 24px 0;
+    border-bottom: none;
 }
 
+/* ========== SECCIÓN DE HORARIOS ========== */
 .showtimes-section {
-    padding: 48px var(--content-pad) 64px;
+    padding: 0 0 64px 0;
 }
 
 .showtimes-section h3 {
@@ -278,15 +293,25 @@ body {
     border-bottom: 1px solid var(--border-strong);
     padding-bottom: 12px;
     margin-bottom: 20px;
+    width: 100%;
+    text-align: left;
 }
 
+/* Contenedor de horarios: ocupa todo el ancho disponible */
+#showtimes-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+/* Cada bloque de cine ocupa el 100% del ancho */
 .cine-block {
+    width: 100%;
     background-color: var(--bg-card);
     border-radius: 4px;
     padding: 15px;
-    margin-bottom: 20px;
-    width: fit-content;
-    max-width: 100%;
+    margin-bottom: 0;
 }
 
 .cine-block h4 {
@@ -296,8 +321,16 @@ body {
     font-size: 14px;
 }
 
+/* Los diferentes días se muestran en horizontal, uno al lado del otro */
 .funcion-item {
+    display: inline-block;
+    margin-right: 24px;
     margin-bottom: 16px;
+    vertical-align: top;
+    background-color: rgba(255,255,255,0.03);
+    padding: 8px 12px;
+    border-radius: 6px;
+    min-width: 180px;
 }
 
 .funcion-fecha-idioma {
@@ -334,6 +367,7 @@ body {
     color: var(--accent);
 }
 
+/* Scrollbar */
 ::-webkit-scrollbar { width: 8px; height: 8px; }
 ::-webkit-scrollbar-track { background: transparent; }
 ::-webkit-scrollbar-thumb { background-color: rgba(255, 255, 255, 0.1); border-radius: 4px; }
@@ -341,32 +375,7 @@ body {
 
 .hidden { display: none !important; }
 
-/* Contenedor de funciones disponibles: mostrar cines en horizontal */
-#showtimes-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    align-items: flex-start;
-}
-
-/* Cada bloque de cine debe tener ancho automático, no 100% */
-.cine-block {
-    flex: 0 0 auto;
-    min-width: 260px;
-    max-width: 100%;
-}
-
-/* En pantallas pequeñas, que se apilen */
-@media (max-width: 768px) {
-    #showtimes-container {
-        flex-direction: column;
-    }
-    .cine-block {
-        width: 100%;
-    }
-}
-
-/* ===== MENÚ HAMBURGUESA CORREGIDO (cuadrado, mayúsculas/negrita, offset) ===== */
+/* ===== MENÚ HAMBURGUESA ===== */
 .hamburger-menu {
     position: relative;
     display: inline-block;
@@ -435,4 +444,25 @@ body {
 .menu-nav .menu-link:hover {
     background-color: rgba(255,255,255,0.05);
     color: var(--text-bright);
+}
+
+/* Responsive: en pantallas pequeñas, el grid se colapsa y los días se apilan */
+@media (max-width: 768px) {
+    .movie-presentation {
+        grid-template-columns: 1fr;
+        gap: 24px;
+        text-align: center;
+    }
+    .poster-column {
+        display: flex;
+        justify-content: center;
+    }
+    .poster-column img {
+        width: 220px;
+    }
+    .funcion-item {
+        display: block;
+        margin-right: 0;
+        width: 100%;
+    }
 }
