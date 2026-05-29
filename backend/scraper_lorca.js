@@ -1,113 +1,155 @@
-// backend/scraper_lorca.js - Sin dependencias extra (solo tesseract.js y axios)
 const puppeteer = require('puppeteer');
-const tesseract = require('tesseract.js');
 const fs = require('fs').promises;
 const path = require('path');
-const axios = require('axios');
 
-const CINE_LORCA_URL = 'https://cinelorca.wixsite.com/cine-lorca/current-production';
 const OUTPUT_FILE = path.join(__dirname, 'peliculas_lorca.json');
-const OCR_DEBUG_FILE = path.join(__dirname, 'texto_ocr.txt');
+const URL = 'https://www.lanacion.com.ar/cartelera-de-cine/sala/lorca-sa110';
+
+function formatearFechaDesdeTexto(fechaTexto, anioReferencia = new Date().getFullYear()) {
+    const partes = fechaTexto.trim().split(/\s+/);
+    if (partes.length < 2) return null;
+    const fechaNum = partes[1];
+    const [dia, mesNum] = fechaNum.split('/');
+    if (!dia || !mesNum) return null;
+    const mesesMap = {
+        '01':'ENE','02':'FEB','03':'MAR','04':'ABR','05':'MAY','06':'JUN',
+        '07':'JUL','08':'AGO','09':'SEP','10':'OCT','11':'NOV','12':'DIC'
+    };
+    const mesAbr = mesesMap[mesNum.padStart(2,'0')];
+    if (!mesAbr) return null;
+    const diasAbr = {
+        'DOMINGO':'DOM','LUNES':'LUN','MARTES':'MAR','MIÉRCOLES':'MIÉ',
+        'JUEVES':'JUE','VIERNES':'VIE','SÁBADO':'SÁB'
+    };
+    let diaSemanaAbr = diasAbr[partes[0].toUpperCase()];
+    if (!diaSemanaAbr) diaSemanaAbr = partes[0].substring(0,3).toUpperCase();
+    return `${diaSemanaAbr} ${dia}/${mesAbr}/${anioReferencia}`;
+}
 
 async function scrapeLorca() {
-    console.log('🎬 Scraping Cine Lorca (Wix + OCR)');
+    console.log('🎬 Scraping Cine Lorca desde La Nación (con soporte múltiples horarios)');
     const browser = await puppeteer.launch({ headless: 'new', args: ['--no-sandbox'] });
     const page = await browser.newPage();
-    
+    await page.setViewport({ width: 1280, height: 800 });
+
     try {
-        console.log('   Cargando página...');
-        await page.goto(CINE_LORCA_URL, { waitUntil: 'networkidle2', timeout: 30000 });
-        
-        const imageUrl = await page.evaluate(() => {
-            const selectores = [
-                'img[alt*="cartelera" i]',
-                'img[src*="cartelera"]',
-                '.post-content img',
-                'article img',
-                '.gRkIq0'
-            ];
-            for (const selector of selectores) {
-                const img = document.querySelector(selector);
-                if (img && img.src) return img.src;
+        await page.goto(URL, { waitUntil: 'networkidle2', timeout: 30000 });
+        await page.waitForSelector('.listaPrincipal__item', { timeout: 10000 });
+
+        const peliculas = await page.evaluate(() => {
+            const items = document.querySelectorAll('.listaPrincipal__item');
+            return Array.from(items).map(item => {
+                const link = item.querySelector('a');
+                const titulo = link?.querySelector('h3')?.innerText.trim() || '';
+                const poster = link?.querySelector('img')?.src || '';
+                const boton = item.querySelector('button.verHorarios');
+                const peliculaId = boton?.getAttribute('data-pelicula');
+                return { titulo, poster, peliculaId };
+            }).filter(p => p.titulo && p.peliculaId);
+        });
+        console.log(`   ${peliculas.length} películas encontradas.`);
+
+        const todasLasFunciones = [];
+
+        for (const peli of peliculas) {
+            console.log(`   Procesando: ${peli.titulo}`);
+
+            // Abrir modal
+            await page.evaluate((peliculaId) => {
+                const boton = document.querySelector(`button.verHorarios[data-pelicula="${peliculaId}"]`);
+                if (boton) boton.click();
+            }, peli.peliculaId);
+
+            await page.waitForSelector('.modal', { timeout: 5000 });
+            await new Promise(r => setTimeout(r, 800));
+
+            // Obtener todos los elementos h5 de los días
+            const diasH5 = await page.$$('.detalleFechas__container__articulo h5');
+            console.log(`      Días encontrados: ${diasH5.length}`);
+
+            const horariosPorDia = [];
+
+            for (let i = 0; i < diasH5.length; i++) {
+                // Hacer clic en el día actual
+                await diasH5[i].click();
+                await new Promise(r => setTimeout(r, 500));
+
+                // Extraer el texto completo del bloque de horarios del artículo i
+                const { fechaTexto, textoHorarios } = await page.evaluate((idx) => {
+                    const articulos = document.querySelectorAll('.detalleFechas__container__articulo');
+                    if (articulos[idx]) {
+                        const h5 = articulos[idx].querySelector('h5');
+                        const fechaTexto = h5 ? h5.innerText.trim() : null;
+                        // Buscar el párrafo que contiene el strong (idioma) y los horarios
+                        const p = articulos[idx].querySelector('p');
+                        const textoHorarios = p ? p.innerText.trim() : '';
+                        return { fechaTexto, textoHorarios };
+                    }
+                    return { fechaTexto: null, textoHorarios: '' };
+                }, i);
+
+                if (fechaTexto && textoHorarios) {
+                    // Extraer idioma (subtitulada/doblada) y lista de horarios
+                    const idiomaMatch = textoHorarios.match(/^([^:]+):/i);
+                    let idioma = 'Sin especificar';
+                    if (idiomaMatch) {
+                        const idiomaRaw = idiomaMatch[1].trim().toLowerCase();
+                        if (idiomaRaw.includes('subtitulada')) idioma = 'Subtitulada';
+                        else if (idiomaRaw.includes('doblada')) idioma = 'Doblada';
+                    }
+                    // Extraer todos los horarios (formato HH:MM)
+                    const horarios = textoHorarios.match(/\b\d{1,2}:\d{2}\b/g) || [];
+                    if (horarios.length > 0) {
+                        horariosPorDia.push({ dia: fechaTexto, idioma, horarios });
+                    }
+                }
             }
-            return null;
-        });
-        
-        if (!imageUrl) throw new Error('No se pudo encontrar la imagen de la cartelera');
-        console.log(`   Imagen encontrada: ${imageUrl}`);
-        
-        const imagePath = path.join(__dirname, 'temp_cartelera.jpg');
-        const response = await axios({ url: imageUrl, responseType: 'arraybuffer' });
-        await fs.writeFile(imagePath, response.data);
-        console.log('   Imagen descargada');
-        
-        console.log('   Aplicando OCR (puede demorar unos segundos)...');
-        const { data: { text } } = await tesseract.recognize(imagePath, 'spa', {
-            tessedit_char_whitelist: 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzÁÉÍÓÚáéíóúñÑ0123456789:.,-()/ '
-        });
-        
-        await fs.writeFile(OCR_DEBUG_FILE, text);
-        console.log(`   Texto OCR guardado en ${OCR_DEBUG_FILE}`);
-        
-        const funciones = parsearTextoManual(text);
-        
-        await fs.writeFile(OUTPUT_FILE, JSON.stringify(funciones, null, 2));
-        console.log(`✅ Cine Lorca completado. ${funciones.length} funciones guardadas en ${OUTPUT_FILE}`);
-        
-        await fs.unlink(imagePath);
-        return funciones;
+
+            // Cerrar modal
+            await page.evaluate(() => {
+                const cerrar = document.querySelector('.modal__cerrar');
+                if (cerrar) cerrar.click();
+            });
+            await page.waitForSelector('.modal', { hidden: true, timeout: 3000 }).catch(() => {});
+
+            // Procesar resultados
+            let contador = 0;
+            for (const item of horariosPorDia) {
+                const fechaLegible = formatearFechaDesdeTexto(item.dia);
+                if (!fechaLegible) continue;
+                for (const horario of item.horarios) {
+                    todasLasFunciones.push({
+                        id_funcion: `lorca_ln_${peli.peliculaId}_${fechaLegible.replace(/\//g, '-')}_${horario.replace(':', '')}`,
+                        titulo: peli.titulo,
+                        director: 'No especificado',
+                        duracion: 'N/A',
+                        cine: 'Cine Lorca',
+                        ciudad: 'CABA',
+                        fecha: fechaLegible,
+                        idioma: item.idioma,
+                        horarios: [horario],
+                        seccion: 'cartelera',
+                        poster: peli.poster,
+                        sinopsis: 'Sin sinopsis disponible',
+                        linkTrailer: ''
+                    });
+                    contador++;
+                }
+            }
+            console.log(`      ${contador} horarios extraídos.`);
+            await new Promise(r => setTimeout(r, 300));
+        }
+
+        await fs.writeFile(OUTPUT_FILE, JSON.stringify(todasLasFunciones, null, 2));
+        console.log(`✅ Cine Lorca completado. ${todasLasFunciones.length} funciones guardadas.`);
+        return todasLasFunciones;
     } catch (error) {
-        console.error('❌ Error en scraper de Lorca:', error);
+        console.error('❌ Error:', error);
         return [];
     } finally {
         await browser.close();
     }
 }
 
-// Parseo manual basado en el texto real que proporcionaste
-function parsearTextoManual(texto) {
-    // Lista de títulos conocidos (extraídos de la imagen)
-    const peliculasConocidas = [
-        { nombre: "PADRE, MADRE, HERMANA, HERMANO", horarios: ["18:25"], sala: "SALA 2", duracion: "110", idioma: "Subtitulada (Inglés)" },
-        { nombre: "AMARGA NAVIDAD", horarios: ["16:00", "20:10"], sala: "SALA 1", duracion: "116", idioma: "Idioma original" },
-        { nombre: "ALPHA", horarios: ["22:10"], sala: "SALA 1", duracion: "128", idioma: "Francés subtitulado" },
-        { nombre: "EL GRAN ARCO", horarios: ["14:00", "20:25"], sala: "SALA 1 / SALA 2", duracion: "107", idioma: "Francés subtitulado" },
-        { nombre: "EL DRAMA", horarios: ["14:10"], sala: "SALA 2", duracion: "106", idioma: "Subtitulada (Inglés)" },
-        { nombre: "CALLE MÁLAGA", horarios: ["16:15"], sala: "SALA 2", duracion: "117", idioma: "Idioma original" },
-        { nombre: "EL DIABLO VISTE A LA MODA 2", horarios: ["18:00"], sala: "SALA 1", duracion: "120", idioma: "Subtitulada (Inglés)" },
-        { nombre: "EL PARTIDO", horarios: ["22:25"], sala: "SALA 2", duracion: "91", idioma: "Español/Inglés subtitulado" }
-    ];
-    
-    // Convertir al formato de salida esperado
-    const funciones = peliculasConocidas.map((p, idx) => ({
-        id_funcion: `lorca_${Date.now()}_${idx}`,
-        titulo: p.nombre,
-        director: 'No especificado',
-        duracion: p.duracion,
-        cine: 'Cine Lorca',
-        ciudad: 'CABA',
-        fecha: obtenerFechaActual(),
-        idioma: p.idioma,
-        horarios: p.horarios,
-        seccion: 'cartelera',
-        poster: null,
-        sinopsis: 'Sin sinopsis disponible',
-        linkTrailer: ''
-    }));
-    
-    console.log(`   Se encontraron ${funciones.length} películas (datos fijos).`);
-    return funciones;
-}
-
-function obtenerFechaActual() {
-    const hoy = new Date();
-    const dias = ['DOM', 'LUN', 'MAR', 'MIÉ', 'JUE', 'VIE', 'SÁB'];
-    const meses = ['ENE', 'FEB', 'MAR', 'ABR', 'MAY', 'JUN', 'JUL', 'AGO', 'SEP', 'OCT', 'NOV', 'DIC'];
-    return `${dias[hoy.getDay()]} ${hoy.getDate()}/${meses[hoy.getMonth()]}/${hoy.getFullYear()}`;
-}
-
-if (require.main === module) {
-    scrapeLorca();
-}
-
+if (require.main === module) scrapeLorca();
 module.exports = { scrapeLorca };

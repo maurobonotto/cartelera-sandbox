@@ -6,6 +6,7 @@ const COSMOS_FILE = path.join(__dirname, 'peliculas_cosmos.json');
 const CACODELPHIA_FILE = path.join(__dirname, 'peliculas_cacodelphia.json');
 const ATLAS_FILE = path.join(__dirname, 'peliculas_atlas.json');
 const CINEMARK_FILE = path.join(__dirname, 'peliculas_cinemark.json');
+const LORCA_FILE = path.join(__dirname, 'peliculas_lorca.json');    // ← NUEVO
 const OUTPUT_FILE = path.join(__dirname, 'peliculas.json');
 
 const IGNORAR_SUFIJOS = [
@@ -77,7 +78,6 @@ const mesesCompletos = {
 function parsearFechaLegible(texto) {
     if (!texto) return null;
     
-    // Formato 1: "Viernes 29/Mayo/2026" (día completo)
     let match = texto.match(/^[A-Za-záéíóúñ]+ (\d{1,2})\/([A-Za-záéíóú]+)\/(\d{4})$/i);
     if (match) {
         const dia = parseInt(match[1]);
@@ -88,34 +88,23 @@ function parsearFechaLegible(texto) {
             mes = mesesAbr[abr.toUpperCase()];
         }
         const anio = parseInt(match[3]);
-        if (!isNaN(dia) && mes !== undefined && !isNaN(anio)) {
-            return new Date(anio, mes, dia);
-        }
+        if (!isNaN(dia) && mes !== undefined && !isNaN(anio)) return new Date(anio, mes, dia);
     }
     
-    // Formato 2: "Lun 1/Jun/2026" (día abreviado)
     match = texto.match(/^[A-Za-z]{3} (\d{1,2})\/([A-Za-z]{3})\/(\d{4})$/i);
     if (match) {
         const dia = parseInt(match[1]);
         const mesAbr = match[2].toUpperCase();
         const mes = mesesAbr[mesAbr];
         const anio = parseInt(match[3]);
-        if (!isNaN(dia) && mes !== undefined && !isNaN(anio)) {
-            return new Date(anio, mes, dia);
-        }
+        if (!isNaN(dia) && mes !== undefined && !isNaN(anio)) return new Date(anio, mes, dia);
     }
     
-    // Formato 3: "2026-05-29"
     match = texto.match(/^(\d{4})-(\d{2})-(\d{2})$/);
-    if (match) {
-        return new Date(parseInt(match[1]), parseInt(match[2])-1, parseInt(match[3]));
-    }
+    if (match) return new Date(parseInt(match[1]), parseInt(match[2])-1, parseInt(match[3]));
     
-    // Formato 4: "29/5/2026"
     match = texto.match(/^(\d{1,2})\/(\d{1,2})\/(\d{4})$/);
-    if (match) {
-        return new Date(parseInt(match[3]), parseInt(match[2])-1, parseInt(match[1]));
-    }
+    if (match) return new Date(parseInt(match[3]), parseInt(match[2])-1, parseInt(match[1]));
     
     console.warn(`⚠️ No se pudo parsear la fecha: ${texto}`);
     return null;
@@ -171,10 +160,11 @@ async function main() {
     const cacodelphia = await cargarFuente(CACODELPHIA_FILE, 'Cacodelphia');
     const atlas = await cargarFuente(ATLAS_FILE, 'Atlas');
     const cinemark = await cargarFuente(CINEMARK_FILE, 'Cinemark');
+    const lorca = await cargarFuente(LORCA_FILE, 'Lorca');   // ← NUEVO
     
-    let todasFunciones = [...gaumont, ...cosmos, ...cacodelphia, ...atlas, ...cinemark];
+    let todasFunciones = [...gaumont, ...cosmos, ...cacodelphia, ...atlas, ...cinemark, ...lorca];
     
-    // Normalizar fechas: reemplazar 'fecha' por formato uniforme, y guardar 'fecha_obj' para comparaciones
+    // Normalizar fechas
     for (const func of todasFunciones) {
         const fechaObj = parsearFechaLegible(func.fecha);
         if (fechaObj) {
@@ -182,7 +172,6 @@ async function main() {
             func.fecha = formatearFechaUniforme(fechaObj);
         } else {
             func.fecha_obj = null;
-            // Dejamos la fecha original si no se pudo parsear
         }
     }
     
@@ -233,11 +222,10 @@ async function main() {
         }
     }
     
-    // Asignar sección
     for (const f of funcionesCartelera) f.seccion = 'cartelera';
     for (const f of funcionesProximos) f.seccion = 'proximos';
     
-    // Fusionar títulos duplicados
+    // Fusionar títulos duplicados (aquí se aplica el puntaje de similitud)
     function fusionarPorGrupo(funciones) {
         const grupos = [];
         for (const func of funciones) {
@@ -279,7 +267,7 @@ async function main() {
                 }
             }
             const funcionesCombinadas = grupo.funciones.map(f => {
-                const { fecha_obj, ...resto } = f; // eliminar campo interno
+                const { fecha_obj, ...resto } = f;
                 return {
                     ...resto,
                     titulo: tituloFinal,

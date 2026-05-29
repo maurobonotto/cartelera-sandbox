@@ -1,38 +1,1191 @@
 [
   {
-    "id_funcion": "lorca_1780080691825_0",
-    "titulo": "TEL GRAN ARCO",
+    "id_funcion": "lorca_ln_20202_JUE 28-MAY-2026_2210",
+    "titulo": "Alpha",
     "director": "No especificado",
-    "duracion": "110",
+    "duracion": "N/A",
+    "cine": "Cine Lorca",
+    "ciudad": "CABA",
+    "fecha": "JUE 28/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "22:10"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/IBSQDYLHKVE5RBJXRM4MLA3V4M.png?auth=3d3a51897e5c103d6ea86b927b5dd7a1cdb98335e8d1cf34fca8f8b54c1656f7&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "lorca_ln_20202_VIE 29-MAY-2026_2210",
+    "titulo": "Alpha",
+    "director": "No especificado",
+    "duracion": "N/A",
     "cine": "Cine Lorca",
     "ciudad": "CABA",
     "fecha": "VIE 29/MAY/2026",
     "idioma": "Subtitulada",
     "horarios": [
-      "00:10",
       "22:10"
     ],
-    "sala": "Sala 1",
     "seccion": "cartelera",
-    "poster": null,
+    "poster": "https://resizer.glanacion.com/resizer/v2/IBSQDYLHKVE5RBJXRM4MLA3V4M.png?auth=3d3a51897e5c103d6ea86b927b5dd7a1cdb98335e8d1cf34fca8f8b54c1656f7&width=210&height=300&smart=true",
     "sinopsis": "Sin sinopsis disponible",
     "linkTrailer": ""
   },
   {
-    "id_funcion": "lorca_1780080691826_1",
-    "titulo": "NEL PARTIDO",
+    "id_funcion": "lorca_ln_20202_SÁB 30-MAY-2026_2210",
+    "titulo": "Alpha",
     "director": "No especificado",
-    "duracion": "106",
+    "duracion": "N/A",
+    "cine": "Cine Lorca",
+    "ciudad": "CABA",
+    "fecha": "SÁB 30/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "22:10"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/IBSQDYLHKVE5RBJXRM4MLA3V4M.png?auth=3d3a51897e5c103d6ea86b927b5dd7a1cdb98335e8d1cf34fca8f8b54c1656f7&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "lorca_ln_20202_DOM 31-MAY-2026_2210",
+    "titulo": "Alpha",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cine Lorca",
+    "ciudad": "CABA",
+    "fecha": "DOM 31/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "22:10"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/IBSQDYLHKVE5RBJXRM4MLA3V4M.png?auth=3d3a51897e5c103d6ea86b927b5dd7a1cdb98335e8d1cf34fca8f8b54c1656f7&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "lorca_ln_20202_LUN 01-JUN-2026_2210",
+    "titulo": "Alpha",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cine Lorca",
+    "ciudad": "CABA",
+    "fecha": "LUN 01/JUN/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "22:10"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/IBSQDYLHKVE5RBJXRM4MLA3V4M.png?auth=3d3a51897e5c103d6ea86b927b5dd7a1cdb98335e8d1cf34fca8f8b54c1656f7&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "lorca_ln_20202_MAR 02-JUN-2026_2210",
+    "titulo": "Alpha",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cine Lorca",
+    "ciudad": "CABA",
+    "fecha": "MAR 02/JUN/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "22:10"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/IBSQDYLHKVE5RBJXRM4MLA3V4M.png?auth=3d3a51897e5c103d6ea86b927b5dd7a1cdb98335e8d1cf34fca8f8b54c1656f7&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "lorca_ln_20202_MIÉ 03-JUN-2026_2210",
+    "titulo": "Alpha",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cine Lorca",
+    "ciudad": "CABA",
+    "fecha": "MIÉ 03/JUN/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "22:10"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/IBSQDYLHKVE5RBJXRM4MLA3V4M.png?auth=3d3a51897e5c103d6ea86b927b5dd7a1cdb98335e8d1cf34fca8f8b54c1656f7&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "lorca_ln_20193_JUE 28-MAY-2026_1600",
+    "titulo": "Amarga Navidad",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cine Lorca",
+    "ciudad": "CABA",
+    "fecha": "JUE 28/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "16:00"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/GB7MYC7EYREGTJ3EY3UUHPCC4A.png?auth=b9a426606b8278ed3d0c524d6cc6f0addb0b938f3076045e990c663dd6b9f936&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "lorca_ln_20193_JUE 28-MAY-2026_2010",
+    "titulo": "Amarga Navidad",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cine Lorca",
+    "ciudad": "CABA",
+    "fecha": "JUE 28/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "20:10"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/GB7MYC7EYREGTJ3EY3UUHPCC4A.png?auth=b9a426606b8278ed3d0c524d6cc6f0addb0b938f3076045e990c663dd6b9f936&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "lorca_ln_20193_VIE 29-MAY-2026_1600",
+    "titulo": "Amarga Navidad",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cine Lorca",
+    "ciudad": "CABA",
+    "fecha": "VIE 29/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "16:00"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/GB7MYC7EYREGTJ3EY3UUHPCC4A.png?auth=b9a426606b8278ed3d0c524d6cc6f0addb0b938f3076045e990c663dd6b9f936&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "lorca_ln_20193_VIE 29-MAY-2026_2010",
+    "titulo": "Amarga Navidad",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cine Lorca",
+    "ciudad": "CABA",
+    "fecha": "VIE 29/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "20:10"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/GB7MYC7EYREGTJ3EY3UUHPCC4A.png?auth=b9a426606b8278ed3d0c524d6cc6f0addb0b938f3076045e990c663dd6b9f936&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "lorca_ln_20193_SÁB 30-MAY-2026_1600",
+    "titulo": "Amarga Navidad",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cine Lorca",
+    "ciudad": "CABA",
+    "fecha": "SÁB 30/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "16:00"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/GB7MYC7EYREGTJ3EY3UUHPCC4A.png?auth=b9a426606b8278ed3d0c524d6cc6f0addb0b938f3076045e990c663dd6b9f936&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "lorca_ln_20193_SÁB 30-MAY-2026_2010",
+    "titulo": "Amarga Navidad",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cine Lorca",
+    "ciudad": "CABA",
+    "fecha": "SÁB 30/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "20:10"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/GB7MYC7EYREGTJ3EY3UUHPCC4A.png?auth=b9a426606b8278ed3d0c524d6cc6f0addb0b938f3076045e990c663dd6b9f936&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "lorca_ln_20193_DOM 31-MAY-2026_1600",
+    "titulo": "Amarga Navidad",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cine Lorca",
+    "ciudad": "CABA",
+    "fecha": "DOM 31/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "16:00"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/GB7MYC7EYREGTJ3EY3UUHPCC4A.png?auth=b9a426606b8278ed3d0c524d6cc6f0addb0b938f3076045e990c663dd6b9f936&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "lorca_ln_20193_DOM 31-MAY-2026_2010",
+    "titulo": "Amarga Navidad",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cine Lorca",
+    "ciudad": "CABA",
+    "fecha": "DOM 31/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "20:10"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/GB7MYC7EYREGTJ3EY3UUHPCC4A.png?auth=b9a426606b8278ed3d0c524d6cc6f0addb0b938f3076045e990c663dd6b9f936&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "lorca_ln_20193_LUN 01-JUN-2026_1600",
+    "titulo": "Amarga Navidad",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cine Lorca",
+    "ciudad": "CABA",
+    "fecha": "LUN 01/JUN/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "16:00"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/GB7MYC7EYREGTJ3EY3UUHPCC4A.png?auth=b9a426606b8278ed3d0c524d6cc6f0addb0b938f3076045e990c663dd6b9f936&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "lorca_ln_20193_LUN 01-JUN-2026_2010",
+    "titulo": "Amarga Navidad",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cine Lorca",
+    "ciudad": "CABA",
+    "fecha": "LUN 01/JUN/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "20:10"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/GB7MYC7EYREGTJ3EY3UUHPCC4A.png?auth=b9a426606b8278ed3d0c524d6cc6f0addb0b938f3076045e990c663dd6b9f936&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "lorca_ln_20193_MAR 02-JUN-2026_1600",
+    "titulo": "Amarga Navidad",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cine Lorca",
+    "ciudad": "CABA",
+    "fecha": "MAR 02/JUN/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "16:00"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/GB7MYC7EYREGTJ3EY3UUHPCC4A.png?auth=b9a426606b8278ed3d0c524d6cc6f0addb0b938f3076045e990c663dd6b9f936&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "lorca_ln_20193_MAR 02-JUN-2026_2010",
+    "titulo": "Amarga Navidad",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cine Lorca",
+    "ciudad": "CABA",
+    "fecha": "MAR 02/JUN/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "20:10"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/GB7MYC7EYREGTJ3EY3UUHPCC4A.png?auth=b9a426606b8278ed3d0c524d6cc6f0addb0b938f3076045e990c663dd6b9f936&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "lorca_ln_20193_MIÉ 03-JUN-2026_1600",
+    "titulo": "Amarga Navidad",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cine Lorca",
+    "ciudad": "CABA",
+    "fecha": "MIÉ 03/JUN/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "16:00"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/GB7MYC7EYREGTJ3EY3UUHPCC4A.png?auth=b9a426606b8278ed3d0c524d6cc6f0addb0b938f3076045e990c663dd6b9f936&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "lorca_ln_20193_MIÉ 03-JUN-2026_2010",
+    "titulo": "Amarga Navidad",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cine Lorca",
+    "ciudad": "CABA",
+    "fecha": "MIÉ 03/JUN/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "20:10"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/GB7MYC7EYREGTJ3EY3UUHPCC4A.png?auth=b9a426606b8278ed3d0c524d6cc6f0addb0b938f3076045e990c663dd6b9f936&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "lorca_ln_19891_JUE 28-MAY-2026_1615",
+    "titulo": "Calle Málaga",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cine Lorca",
+    "ciudad": "CABA",
+    "fecha": "JUE 28/MAY/2026",
+    "idioma": "Sin especificar",
+    "horarios": [
+      "16:15"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/SQRICLXHC5FTLN3S737NTRZYY4.png?auth=5aea756c047dc6e2aa026b6c6ad715486b4fd2eb18a475fe9a1d3bb0bc98757a&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "lorca_ln_19891_VIE 29-MAY-2026_1615",
+    "titulo": "Calle Málaga",
+    "director": "No especificado",
+    "duracion": "N/A",
     "cine": "Cine Lorca",
     "ciudad": "CABA",
     "fecha": "VIE 29/MAY/2026",
     "idioma": "Sin especificar",
     "horarios": [
-      "06:15"
+      "16:15"
     ],
-    "sala": "Sala 2",
     "seccion": "cartelera",
-    "poster": null,
+    "poster": "https://resizer.glanacion.com/resizer/v2/SQRICLXHC5FTLN3S737NTRZYY4.png?auth=5aea756c047dc6e2aa026b6c6ad715486b4fd2eb18a475fe9a1d3bb0bc98757a&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "lorca_ln_19891_SÁB 30-MAY-2026_1615",
+    "titulo": "Calle Málaga",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cine Lorca",
+    "ciudad": "CABA",
+    "fecha": "SÁB 30/MAY/2026",
+    "idioma": "Sin especificar",
+    "horarios": [
+      "16:15"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/SQRICLXHC5FTLN3S737NTRZYY4.png?auth=5aea756c047dc6e2aa026b6c6ad715486b4fd2eb18a475fe9a1d3bb0bc98757a&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "lorca_ln_19891_DOM 31-MAY-2026_1615",
+    "titulo": "Calle Málaga",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cine Lorca",
+    "ciudad": "CABA",
+    "fecha": "DOM 31/MAY/2026",
+    "idioma": "Sin especificar",
+    "horarios": [
+      "16:15"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/SQRICLXHC5FTLN3S737NTRZYY4.png?auth=5aea756c047dc6e2aa026b6c6ad715486b4fd2eb18a475fe9a1d3bb0bc98757a&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "lorca_ln_19891_LUN 01-JUN-2026_1615",
+    "titulo": "Calle Málaga",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cine Lorca",
+    "ciudad": "CABA",
+    "fecha": "LUN 01/JUN/2026",
+    "idioma": "Sin especificar",
+    "horarios": [
+      "16:15"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/SQRICLXHC5FTLN3S737NTRZYY4.png?auth=5aea756c047dc6e2aa026b6c6ad715486b4fd2eb18a475fe9a1d3bb0bc98757a&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "lorca_ln_19891_MAR 02-JUN-2026_1615",
+    "titulo": "Calle Málaga",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cine Lorca",
+    "ciudad": "CABA",
+    "fecha": "MAR 02/JUN/2026",
+    "idioma": "Sin especificar",
+    "horarios": [
+      "16:15"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/SQRICLXHC5FTLN3S737NTRZYY4.png?auth=5aea756c047dc6e2aa026b6c6ad715486b4fd2eb18a475fe9a1d3bb0bc98757a&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "lorca_ln_19891_MIÉ 03-JUN-2026_1615",
+    "titulo": "Calle Málaga",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cine Lorca",
+    "ciudad": "CABA",
+    "fecha": "MIÉ 03/JUN/2026",
+    "idioma": "Sin especificar",
+    "horarios": [
+      "16:15"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/SQRICLXHC5FTLN3S737NTRZYY4.png?auth=5aea756c047dc6e2aa026b6c6ad715486b4fd2eb18a475fe9a1d3bb0bc98757a&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "lorca_ln_20122_JUE 28-MAY-2026_1800",
+    "titulo": "El diablo viste a la moda 2",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cine Lorca",
+    "ciudad": "CABA",
+    "fecha": "JUE 28/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "18:00"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/IT72SIP7WZHP5HKJA3ACM2LBNI.png?auth=ff8124af782965f6b3a3c142f2db9f4920ae726ae54a91581ed66278122aceda&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "lorca_ln_20122_VIE 29-MAY-2026_1800",
+    "titulo": "El diablo viste a la moda 2",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cine Lorca",
+    "ciudad": "CABA",
+    "fecha": "VIE 29/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "18:00"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/IT72SIP7WZHP5HKJA3ACM2LBNI.png?auth=ff8124af782965f6b3a3c142f2db9f4920ae726ae54a91581ed66278122aceda&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "lorca_ln_20122_SÁB 30-MAY-2026_1800",
+    "titulo": "El diablo viste a la moda 2",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cine Lorca",
+    "ciudad": "CABA",
+    "fecha": "SÁB 30/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "18:00"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/IT72SIP7WZHP5HKJA3ACM2LBNI.png?auth=ff8124af782965f6b3a3c142f2db9f4920ae726ae54a91581ed66278122aceda&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "lorca_ln_20122_DOM 31-MAY-2026_1800",
+    "titulo": "El diablo viste a la moda 2",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cine Lorca",
+    "ciudad": "CABA",
+    "fecha": "DOM 31/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "18:00"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/IT72SIP7WZHP5HKJA3ACM2LBNI.png?auth=ff8124af782965f6b3a3c142f2db9f4920ae726ae54a91581ed66278122aceda&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "lorca_ln_20122_LUN 01-JUN-2026_1800",
+    "titulo": "El diablo viste a la moda 2",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cine Lorca",
+    "ciudad": "CABA",
+    "fecha": "LUN 01/JUN/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "18:00"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/IT72SIP7WZHP5HKJA3ACM2LBNI.png?auth=ff8124af782965f6b3a3c142f2db9f4920ae726ae54a91581ed66278122aceda&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "lorca_ln_20122_MAR 02-JUN-2026_1800",
+    "titulo": "El diablo viste a la moda 2",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cine Lorca",
+    "ciudad": "CABA",
+    "fecha": "MAR 02/JUN/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "18:00"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/IT72SIP7WZHP5HKJA3ACM2LBNI.png?auth=ff8124af782965f6b3a3c142f2db9f4920ae726ae54a91581ed66278122aceda&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "lorca_ln_20122_MIÉ 03-JUN-2026_1800",
+    "titulo": "El diablo viste a la moda 2",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cine Lorca",
+    "ciudad": "CABA",
+    "fecha": "MIÉ 03/JUN/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "18:00"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/IT72SIP7WZHP5HKJA3ACM2LBNI.png?auth=ff8124af782965f6b3a3c142f2db9f4920ae726ae54a91581ed66278122aceda&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "lorca_ln_20089_JUE 28-MAY-2026_1410",
+    "titulo": "El drama",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cine Lorca",
+    "ciudad": "CABA",
+    "fecha": "JUE 28/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "14:10"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/LAZVJTKVRRBBJPGYAKWEB7YZ2I.png?auth=3b16dc1e2c576b20c183d217105cc7a5f3274ebcf03d684255e0807b8138129f&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "lorca_ln_20089_VIE 29-MAY-2026_1410",
+    "titulo": "El drama",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cine Lorca",
+    "ciudad": "CABA",
+    "fecha": "VIE 29/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "14:10"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/LAZVJTKVRRBBJPGYAKWEB7YZ2I.png?auth=3b16dc1e2c576b20c183d217105cc7a5f3274ebcf03d684255e0807b8138129f&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "lorca_ln_20089_SÁB 30-MAY-2026_1410",
+    "titulo": "El drama",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cine Lorca",
+    "ciudad": "CABA",
+    "fecha": "SÁB 30/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "14:10"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/LAZVJTKVRRBBJPGYAKWEB7YZ2I.png?auth=3b16dc1e2c576b20c183d217105cc7a5f3274ebcf03d684255e0807b8138129f&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "lorca_ln_20089_DOM 31-MAY-2026_1410",
+    "titulo": "El drama",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cine Lorca",
+    "ciudad": "CABA",
+    "fecha": "DOM 31/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "14:10"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/LAZVJTKVRRBBJPGYAKWEB7YZ2I.png?auth=3b16dc1e2c576b20c183d217105cc7a5f3274ebcf03d684255e0807b8138129f&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "lorca_ln_20089_LUN 01-JUN-2026_1410",
+    "titulo": "El drama",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cine Lorca",
+    "ciudad": "CABA",
+    "fecha": "LUN 01/JUN/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "14:10"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/LAZVJTKVRRBBJPGYAKWEB7YZ2I.png?auth=3b16dc1e2c576b20c183d217105cc7a5f3274ebcf03d684255e0807b8138129f&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "lorca_ln_20089_MAR 02-JUN-2026_1410",
+    "titulo": "El drama",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cine Lorca",
+    "ciudad": "CABA",
+    "fecha": "MAR 02/JUN/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "14:10"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/LAZVJTKVRRBBJPGYAKWEB7YZ2I.png?auth=3b16dc1e2c576b20c183d217105cc7a5f3274ebcf03d684255e0807b8138129f&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "lorca_ln_20089_MIÉ 03-JUN-2026_1410",
+    "titulo": "El drama",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cine Lorca",
+    "ciudad": "CABA",
+    "fecha": "MIÉ 03/JUN/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "14:10"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/LAZVJTKVRRBBJPGYAKWEB7YZ2I.png?auth=3b16dc1e2c576b20c183d217105cc7a5f3274ebcf03d684255e0807b8138129f&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "lorca_ln_20094_JUE 28-MAY-2026_1400",
+    "titulo": "El gran arco",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cine Lorca",
+    "ciudad": "CABA",
+    "fecha": "JUE 28/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "14:00"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://static.glanacion.com/v2/cartelera/img/imagen-placeholder-cine.png",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "lorca_ln_20094_JUE 28-MAY-2026_2025",
+    "titulo": "El gran arco",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cine Lorca",
+    "ciudad": "CABA",
+    "fecha": "JUE 28/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "20:25"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://static.glanacion.com/v2/cartelera/img/imagen-placeholder-cine.png",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "lorca_ln_20094_VIE 29-MAY-2026_1400",
+    "titulo": "El gran arco",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cine Lorca",
+    "ciudad": "CABA",
+    "fecha": "VIE 29/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "14:00"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://static.glanacion.com/v2/cartelera/img/imagen-placeholder-cine.png",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "lorca_ln_20094_VIE 29-MAY-2026_2025",
+    "titulo": "El gran arco",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cine Lorca",
+    "ciudad": "CABA",
+    "fecha": "VIE 29/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "20:25"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://static.glanacion.com/v2/cartelera/img/imagen-placeholder-cine.png",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "lorca_ln_20094_SÁB 30-MAY-2026_1400",
+    "titulo": "El gran arco",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cine Lorca",
+    "ciudad": "CABA",
+    "fecha": "SÁB 30/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "14:00"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://static.glanacion.com/v2/cartelera/img/imagen-placeholder-cine.png",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "lorca_ln_20094_SÁB 30-MAY-2026_2025",
+    "titulo": "El gran arco",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cine Lorca",
+    "ciudad": "CABA",
+    "fecha": "SÁB 30/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "20:25"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://static.glanacion.com/v2/cartelera/img/imagen-placeholder-cine.png",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "lorca_ln_20094_DOM 31-MAY-2026_1400",
+    "titulo": "El gran arco",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cine Lorca",
+    "ciudad": "CABA",
+    "fecha": "DOM 31/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "14:00"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://static.glanacion.com/v2/cartelera/img/imagen-placeholder-cine.png",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "lorca_ln_20094_DOM 31-MAY-2026_2025",
+    "titulo": "El gran arco",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cine Lorca",
+    "ciudad": "CABA",
+    "fecha": "DOM 31/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "20:25"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://static.glanacion.com/v2/cartelera/img/imagen-placeholder-cine.png",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "lorca_ln_20094_LUN 01-JUN-2026_1400",
+    "titulo": "El gran arco",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cine Lorca",
+    "ciudad": "CABA",
+    "fecha": "LUN 01/JUN/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "14:00"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://static.glanacion.com/v2/cartelera/img/imagen-placeholder-cine.png",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "lorca_ln_20094_LUN 01-JUN-2026_2025",
+    "titulo": "El gran arco",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cine Lorca",
+    "ciudad": "CABA",
+    "fecha": "LUN 01/JUN/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "20:25"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://static.glanacion.com/v2/cartelera/img/imagen-placeholder-cine.png",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "lorca_ln_20094_MAR 02-JUN-2026_1400",
+    "titulo": "El gran arco",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cine Lorca",
+    "ciudad": "CABA",
+    "fecha": "MAR 02/JUN/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "14:00"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://static.glanacion.com/v2/cartelera/img/imagen-placeholder-cine.png",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "lorca_ln_20094_MAR 02-JUN-2026_2025",
+    "titulo": "El gran arco",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cine Lorca",
+    "ciudad": "CABA",
+    "fecha": "MAR 02/JUN/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "20:25"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://static.glanacion.com/v2/cartelera/img/imagen-placeholder-cine.png",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "lorca_ln_20094_MIÉ 03-JUN-2026_1400",
+    "titulo": "El gran arco",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cine Lorca",
+    "ciudad": "CABA",
+    "fecha": "MIÉ 03/JUN/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "14:00"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://static.glanacion.com/v2/cartelera/img/imagen-placeholder-cine.png",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "lorca_ln_20094_MIÉ 03-JUN-2026_2025",
+    "titulo": "El gran arco",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cine Lorca",
+    "ciudad": "CABA",
+    "fecha": "MIÉ 03/JUN/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "20:25"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://static.glanacion.com/v2/cartelera/img/imagen-placeholder-cine.png",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "lorca_ln_20177_JUE 28-MAY-2026_2225",
+    "titulo": "El Partido",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cine Lorca",
+    "ciudad": "CABA",
+    "fecha": "JUE 28/MAY/2026",
+    "idioma": "Sin especificar",
+    "horarios": [
+      "22:25"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/ZAVD64LBTNAKNACKMKKYCHL3BQ.png?auth=3bf04c18367ffe787f55bf201b6e794eaf9ff6542e75dcdbb54a201eeaf9b2c1&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "lorca_ln_20177_VIE 29-MAY-2026_2225",
+    "titulo": "El Partido",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cine Lorca",
+    "ciudad": "CABA",
+    "fecha": "VIE 29/MAY/2026",
+    "idioma": "Sin especificar",
+    "horarios": [
+      "22:25"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/ZAVD64LBTNAKNACKMKKYCHL3BQ.png?auth=3bf04c18367ffe787f55bf201b6e794eaf9ff6542e75dcdbb54a201eeaf9b2c1&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "lorca_ln_20177_SÁB 30-MAY-2026_2225",
+    "titulo": "El Partido",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cine Lorca",
+    "ciudad": "CABA",
+    "fecha": "SÁB 30/MAY/2026",
+    "idioma": "Sin especificar",
+    "horarios": [
+      "22:25"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/ZAVD64LBTNAKNACKMKKYCHL3BQ.png?auth=3bf04c18367ffe787f55bf201b6e794eaf9ff6542e75dcdbb54a201eeaf9b2c1&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "lorca_ln_20177_DOM 31-MAY-2026_2225",
+    "titulo": "El Partido",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cine Lorca",
+    "ciudad": "CABA",
+    "fecha": "DOM 31/MAY/2026",
+    "idioma": "Sin especificar",
+    "horarios": [
+      "22:25"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/ZAVD64LBTNAKNACKMKKYCHL3BQ.png?auth=3bf04c18367ffe787f55bf201b6e794eaf9ff6542e75dcdbb54a201eeaf9b2c1&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "lorca_ln_20177_LUN 01-JUN-2026_2225",
+    "titulo": "El Partido",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cine Lorca",
+    "ciudad": "CABA",
+    "fecha": "LUN 01/JUN/2026",
+    "idioma": "Sin especificar",
+    "horarios": [
+      "22:25"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/ZAVD64LBTNAKNACKMKKYCHL3BQ.png?auth=3bf04c18367ffe787f55bf201b6e794eaf9ff6542e75dcdbb54a201eeaf9b2c1&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "lorca_ln_20177_MAR 02-JUN-2026_2225",
+    "titulo": "El Partido",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cine Lorca",
+    "ciudad": "CABA",
+    "fecha": "MAR 02/JUN/2026",
+    "idioma": "Sin especificar",
+    "horarios": [
+      "22:25"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/ZAVD64LBTNAKNACKMKKYCHL3BQ.png?auth=3bf04c18367ffe787f55bf201b6e794eaf9ff6542e75dcdbb54a201eeaf9b2c1&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "lorca_ln_20177_MIÉ 03-JUN-2026_2225",
+    "titulo": "El Partido",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cine Lorca",
+    "ciudad": "CABA",
+    "fecha": "MIÉ 03/JUN/2026",
+    "idioma": "Sin especificar",
+    "horarios": [
+      "22:25"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/ZAVD64LBTNAKNACKMKKYCHL3BQ.png?auth=3bf04c18367ffe787f55bf201b6e794eaf9ff6542e75dcdbb54a201eeaf9b2c1&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "lorca_ln_20103_JUE 28-MAY-2026_1825",
+    "titulo": "Padre Madre Hermana Hermano",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cine Lorca",
+    "ciudad": "CABA",
+    "fecha": "JUE 28/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "18:25"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/PWGLGZQQAJG6LPFHK7WPFYAJYQ.png?auth=aad8dd4cdfa400ff68c6eca8c28e80624a7cd65ca5c5a23eb51b7c9fcb7dc770&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "lorca_ln_20103_VIE 29-MAY-2026_1825",
+    "titulo": "Padre Madre Hermana Hermano",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cine Lorca",
+    "ciudad": "CABA",
+    "fecha": "VIE 29/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "18:25"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/PWGLGZQQAJG6LPFHK7WPFYAJYQ.png?auth=aad8dd4cdfa400ff68c6eca8c28e80624a7cd65ca5c5a23eb51b7c9fcb7dc770&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "lorca_ln_20103_SÁB 30-MAY-2026_1825",
+    "titulo": "Padre Madre Hermana Hermano",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cine Lorca",
+    "ciudad": "CABA",
+    "fecha": "SÁB 30/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "18:25"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/PWGLGZQQAJG6LPFHK7WPFYAJYQ.png?auth=aad8dd4cdfa400ff68c6eca8c28e80624a7cd65ca5c5a23eb51b7c9fcb7dc770&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "lorca_ln_20103_DOM 31-MAY-2026_1825",
+    "titulo": "Padre Madre Hermana Hermano",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cine Lorca",
+    "ciudad": "CABA",
+    "fecha": "DOM 31/MAY/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "18:25"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/PWGLGZQQAJG6LPFHK7WPFYAJYQ.png?auth=aad8dd4cdfa400ff68c6eca8c28e80624a7cd65ca5c5a23eb51b7c9fcb7dc770&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "lorca_ln_20103_LUN 01-JUN-2026_1825",
+    "titulo": "Padre Madre Hermana Hermano",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cine Lorca",
+    "ciudad": "CABA",
+    "fecha": "LUN 01/JUN/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "18:25"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/PWGLGZQQAJG6LPFHK7WPFYAJYQ.png?auth=aad8dd4cdfa400ff68c6eca8c28e80624a7cd65ca5c5a23eb51b7c9fcb7dc770&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "lorca_ln_20103_MAR 02-JUN-2026_1825",
+    "titulo": "Padre Madre Hermana Hermano",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cine Lorca",
+    "ciudad": "CABA",
+    "fecha": "MAR 02/JUN/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "18:25"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/PWGLGZQQAJG6LPFHK7WPFYAJYQ.png?auth=aad8dd4cdfa400ff68c6eca8c28e80624a7cd65ca5c5a23eb51b7c9fcb7dc770&width=210&height=300&smart=true",
+    "sinopsis": "Sin sinopsis disponible",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "lorca_ln_20103_MIÉ 03-JUN-2026_1825",
+    "titulo": "Padre Madre Hermana Hermano",
+    "director": "No especificado",
+    "duracion": "N/A",
+    "cine": "Cine Lorca",
+    "ciudad": "CABA",
+    "fecha": "MIÉ 03/JUN/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "18:25"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://resizer.glanacion.com/resizer/v2/PWGLGZQQAJG6LPFHK7WPFYAJYQ.png?auth=aad8dd4cdfa400ff68c6eca8c28e80624a7cd65ca5c5a23eb51b7c9fcb7dc770&width=210&height=300&smart=true",
     "sinopsis": "Sin sinopsis disponible",
     "linkTrailer": ""
   }
