@@ -1,6 +1,6 @@
 [
   {
-    "id_funcion": "cosmos_365_1780031069704_0",
+    "id_funcion": "cosmos_1780031365947_0",
     "titulo": "El desprecio",
     "director": "Jean-Luc Godard",
     "duracion": "N/A",
@@ -9,49 +9,16 @@
     "fecha": "Viernes 29/Mayo/2026",
     "idioma": "Idioma original con subtítulos",
     "horarios": [
-      "14:55"
-    ],
-    "seccion": "cartelera",
-    "poster": "",
-    "sinopsis": "Sin sinopsis disponible",
-    "linkTrailer": "https://www.youtube.com/embed/nzhrUP2fAVI"
-  },
-  {
-    "id_funcion": "cosmos_365_1780031069704_1",
-    "titulo": "El desprecio",
-    "director": "Jean-Luc Godard",
-    "duracion": "N/A",
-    "cine": "Cine Cosmos UBA",
-    "ciudad": "CABA",
-    "fecha": "Viernes 29/Mayo/2026",
-    "idioma": "Idioma original con subtítulos",
-    "horarios": [
+      "Ju Vi Sá Do Lu Ma Mi | 14:55",
       "18:55"
     ],
     "seccion": "cartelera",
-    "poster": "",
+    "poster": "https://image.tmdb.org/t/p/w500/1sEmVmmQhPfFFdoZWZaMDehCZZ5.jpg",
     "sinopsis": "Sin sinopsis disponible",
-    "linkTrailer": "https://www.youtube.com/embed/nzhrUP2fAVI"
+    "linkTrailer": ""
   },
   {
-    "id_funcion": "cosmos_365_1780031069704_2",
-    "titulo": "El desprecio",
-    "director": "Jean-Luc Godard",
-    "duracion": "N/A",
-    "cine": "Cine Cosmos UBA",
-    "ciudad": "CABA",
-    "fecha": "Viernes 29/Mayo/2026",
-    "idioma": "Idioma original con subtítulos",
-    "horarios": [
-      "14:30"
-    ],
-    "seccion": "cartelera",
-    "poster": "",
-    "sinopsis": "Sin sinopsis disponible",
-    "linkTrailer": "https://www.youtube.com/embed/nzhrUP2fAVI"
-  },
-  {
-    "id_funcion": "cosmos_364_1780031071293_0",
+    "id_funcion": "cosmos_1780031366807_1",
     "titulo": "El conformista",
     "director": "Bernardo Bertolucci",
     "duracion": "N/A",
@@ -60,49 +27,15 @@
     "fecha": "Viernes 29/Mayo/2026",
     "idioma": "Idioma original con subtítulos",
     "horarios": [
-      "16:55"
+      "Ju Vi Sá Do Lu Ma Mi | 16:45"
     ],
     "seccion": "cartelera",
-    "poster": "",
+    "poster": "https://image.tmdb.org/t/p/w500/1fOtsLKzGAWJA41NmhRB9yNk0z1.jpg",
     "sinopsis": "Sin sinopsis disponible",
-    "linkTrailer": "https://www.youtube.com/embed/LhPDoq2LJ3A"
+    "linkTrailer": ""
   },
   {
-    "id_funcion": "cosmos_364_1780031071293_1",
-    "titulo": "El conformista",
-    "director": "Bernardo Bertolucci",
-    "duracion": "N/A",
-    "cine": "Cine Cosmos UBA",
-    "ciudad": "CABA",
-    "fecha": "Viernes 29/Mayo/2026",
-    "idioma": "Idioma original con subtítulos",
-    "horarios": [
-      "16:45"
-    ],
-    "seccion": "cartelera",
-    "poster": "",
-    "sinopsis": "Sin sinopsis disponible",
-    "linkTrailer": "https://www.youtube.com/embed/LhPDoq2LJ3A"
-  },
-  {
-    "id_funcion": "cosmos_364_1780031071293_2",
-    "titulo": "El conformista",
-    "director": "Bernardo Bertolucci",
-    "duracion": "N/A",
-    "cine": "Cine Cosmos UBA",
-    "ciudad": "CABA",
-    "fecha": "Viernes 29/Mayo/2026",
-    "idioma": "Idioma original con subtítulos",
-    "horarios": [
-      "14:30"
-    ],
-    "seccion": "cartelera",
-    "poster": "",
-    "sinopsis": "Sin sinopsis disponible",
-    "linkTrailer": "https://www.youtube.com/embed/LhPDoq2LJ3A"
-  },
-  {
-    "id_funcion": "cosmos_362_1780031072785_0",
+    "id_funcion": "cosmos_1780031367633_2",
     "titulo": "La única opción",
     "director": "Park Chan-wook",
     "duracion": "N/A",
@@ -111,32 +44,15 @@
     "fecha": "Viernes 29/Mayo/2026",
     "idioma": "Idioma original con subtítulos",
     "horarios": [
-      "20:40"
+      "Ju Vi Sá Do Lu Ma Mi | 20:40"
     ],
     "seccion": "cartelera",
-    "poster": "",
+    "poster": "https://image.tmdb.org/t/p/w500/xJtG8d6NAGdA8iL0fZqrHweQBUd.jpg",
     "sinopsis": "Sin sinopsis disponible",
-    "linkTrailer": "https://www.youtube.com/embed/APVAxWNajkI"
+    "linkTrailer": ""
   },
   {
-    "id_funcion": "cosmos_362_1780031072785_1",
-    "titulo": "La única opción",
-    "director": "Park Chan-wook",
-    "duracion": "N/A",
-    "cine": "Cine Cosmos UBA",
-    "ciudad": "CABA",
-    "fecha": "Viernes 29/Mayo/2026",
-    "idioma": "Idioma original con subtítulos",
-    "horarios": [
-      "14:30"
-    ],
-    "seccion": "cartelera",
-    "poster": "",
-    "sinopsis": "Sin sinopsis disponible",
-    "linkTrailer": "https://www.youtube.com/embed/APVAxWNajkI"
-  },
-  {
-    "id_funcion": "cosmos_359_1780031074839_0",
+    "id_funcion": "cosmos_1780031368271_3",
     "titulo": "Los años más bellos de una vida",
     "director": "Claude Lelouch",
     "duracion": "N/A",
@@ -145,49 +61,16 @@
     "fecha": "Viernes 29/Mayo/2026",
     "idioma": "Idioma original con subtítulos",
     "horarios": [
-      "15:10"
-    ],
-    "seccion": "cartelera",
-    "poster": "",
-    "sinopsis": "Sin sinopsis disponible",
-    "linkTrailer": "https://www.youtube.com/embed/Jd9A92gVGYw"
-  },
-  {
-    "id_funcion": "cosmos_359_1780031074839_1",
-    "titulo": "Los años más bellos de una vida",
-    "director": "Claude Lelouch",
-    "duracion": "N/A",
-    "cine": "Cine Cosmos UBA",
-    "ciudad": "CABA",
-    "fecha": "Viernes 29/Mayo/2026",
-    "idioma": "Idioma original con subtítulos",
-    "horarios": [
+      "Ju Vi Sá Do Lu Ma Mi | 15:10",
       "18:50"
     ],
     "seccion": "cartelera",
-    "poster": "",
+    "poster": "https://image.tmdb.org/t/p/w500/cKKMg6c82H9KKPy5gJ89VHmwBOj.jpg",
     "sinopsis": "Sin sinopsis disponible",
-    "linkTrailer": "https://www.youtube.com/embed/Jd9A92gVGYw"
+    "linkTrailer": ""
   },
   {
-    "id_funcion": "cosmos_359_1780031074839_2",
-    "titulo": "Los años más bellos de una vida",
-    "director": "Claude Lelouch",
-    "duracion": "N/A",
-    "cine": "Cine Cosmos UBA",
-    "ciudad": "CABA",
-    "fecha": "Viernes 29/Mayo/2026",
-    "idioma": "Idioma original con subtítulos",
-    "horarios": [
-      "14:30"
-    ],
-    "seccion": "cartelera",
-    "poster": "",
-    "sinopsis": "Sin sinopsis disponible",
-    "linkTrailer": "https://www.youtube.com/embed/Jd9A92gVGYw"
-  },
-  {
-    "id_funcion": "cosmos_358_1780031076378_0",
+    "id_funcion": "cosmos_1780031368924_4",
     "titulo": "Valor sentimental",
     "director": "Joachim Trier",
     "duracion": "N/A",
@@ -196,32 +79,15 @@
     "fecha": "Viernes 29/Mayo/2026",
     "idioma": "Idioma original con subtítulos",
     "horarios": [
-      "20:30"
+      "Ju Vi Sá Do Lu Ma Mi | 20:30"
     ],
     "seccion": "cartelera",
-    "poster": "",
+    "poster": "https://image.tmdb.org/t/p/w500/s4a3hpTmws0mNLEn0BNBRiX5q3g.jpg",
     "sinopsis": "Sin sinopsis disponible",
-    "linkTrailer": "https://www.youtube.com/embed/k_fbWje7Yco"
+    "linkTrailer": ""
   },
   {
-    "id_funcion": "cosmos_358_1780031076378_1",
-    "titulo": "Valor sentimental",
-    "director": "Joachim Trier",
-    "duracion": "N/A",
-    "cine": "Cine Cosmos UBA",
-    "ciudad": "CABA",
-    "fecha": "Viernes 29/Mayo/2026",
-    "idioma": "Idioma original con subtítulos",
-    "horarios": [
-      "14:30"
-    ],
-    "seccion": "cartelera",
-    "poster": "",
-    "sinopsis": "Sin sinopsis disponible",
-    "linkTrailer": "https://www.youtube.com/embed/k_fbWje7Yco"
-  },
-  {
-    "id_funcion": "cosmos_357_1780031078444_0",
+    "id_funcion": "cosmos_1780031369579_5",
     "titulo": "Caso 137",
     "director": "Dóminik Moll",
     "duracion": "N/A",
@@ -230,28 +96,11 @@
     "fecha": "Viernes 29/Mayo/2026",
     "idioma": "Idioma original con subtítulos",
     "horarios": [
-      "16:45"
+      "Ju Vi Sá Do Lu Ma Mi | 16:45"
     ],
     "seccion": "cartelera",
-    "poster": "",
+    "poster": "https://image.tmdb.org/t/p/w500/jhRAlfP8cmvUNyop4jttvJ6xtxm.jpg",
     "sinopsis": "Sin sinopsis disponible",
-    "linkTrailer": "https://www.youtube.com/embed/b74_qVMZ09A"
-  },
-  {
-    "id_funcion": "cosmos_357_1780031078444_1",
-    "titulo": "Caso 137",
-    "director": "Dóminik Moll",
-    "duracion": "N/A",
-    "cine": "Cine Cosmos UBA",
-    "ciudad": "CABA",
-    "fecha": "Viernes 29/Mayo/2026",
-    "idioma": "Idioma original con subtítulos",
-    "horarios": [
-      "14:30"
-    ],
-    "seccion": "cartelera",
-    "poster": "",
-    "sinopsis": "Sin sinopsis disponible",
-    "linkTrailer": "https://www.youtube.com/embed/b74_qVMZ09A"
+    "linkTrailer": ""
   }
 ]
