@@ -1,0 +1,102 @@
+{
+    "Cine Gaumont (CABA)": {
+        "direccion": "Av. Rivadavia 1635, CABA",
+        "maps": "https://maps.google.com/?q=Av.+Rivadavia+1635,+CABA"
+    },
+    "Cine Cosmos UBA": {
+        "direccion": "Av. Corrientes 2046, CABA",
+        "maps": "https://maps.google.com/?q=Av.+Corrientes+2046,+CABA"
+    },
+    "Cine Arte Cacodelphia": {
+        "direccion": "Av. Pres. Roque Sáenz Peña 1150, CABA",
+        "maps": "https://maps.google.com/?q=Av.+Figueroa+Alcorta+2300,+CABA"
+    },
+    "Atlas Caballito": {
+        "direccion": "Av. Rivadavia 5071, CABA",
+        "maps": "https://maps.google.com/?q=Av.+Rivadavia+4950,+CABA"
+    },
+    "Atlas Catan": {
+        "direccion": "Av. Brig. Gral. Juan Manuel de Rosas 14457, González Catán",
+        "maps": "https://maps.google.com/?q=Av.+Directorio+200,+CABA"
+    },
+    "Atlas Alcorta": {
+        "direccion": "Jerónimo Salguero 3172, CABA",
+        "maps": "https://maps.google.com/?q=Jer%C3%B3nimo+Salguero+3172,+CABA"
+    },
+    "Atlas Patio Bullrich": {
+        "direccion": "Av. del Libertador 750, CABA",
+        "maps": "https://maps.google.com/?q=Av.+del+Libertador+750,+CABA"
+    },
+    "Atlas Nordelta": {
+        "direccion": "Av. de los Lagos 7010, Tigre",
+        "maps": "https://maps.google.com/?q=Av.+del+Puerto+240,+Tigre"
+    },
+    "Atlas Flores": {
+        "direccion": "Rivera Indarte 44, CABA",
+        "maps": "https://maps.google.com/?q=Av.+Rivadavia+7200,+CABA"
+    },
+    "Atlas Liniers": {
+        "direccion": "Av. Rivadavia 11526, CABA",
+        "maps": "https://maps.google.com/?q=Av.+Rivadavia+10500,+CABA"
+    },
+    "Hoyts Abasto": {
+        "direccion": "Av. Corrientes 3247, CABA",
+        "maps": "https://maps.google.com/?q=Av.+Corrientes+3247,+CABA"
+    },
+    "Cinemark Caballito": {
+        "direccion": "Av. La Plata 96, CABA",
+        "maps": "https://maps.google.com/?q=Av.+Rivadavia+5000,+CABA"
+    },
+    "Cinemark Palermo": {
+        "direccion": "Beruti 3399, CABA",
+        "maps": "https://maps.google.com/?q=Av.+Santa+Fe+3250,+CABA"
+    },
+    "Hoyts DOT": {
+        "direccion": "Vedia 3626, CABA",
+        "maps": "https://maps.google.com/?q=Av.+Gral.+Paz+11000,+CABA"
+    },
+    "Cinemark Puerto Madero": {
+        "direccion": "Av. Alicia Moreau de Justo 1920, CABA",
+        "maps": "https://maps.google.com/?q=Av.+de+los+Italianos+801,+CABA"
+    },
+    "Cinemark Soleil": {
+        "direccion": "Bernardo de Irigoyen 2647, Boulogne",
+        "maps": "https://maps.google.com/?q=Av.+Pte.+Per%C3%B3n+1000,+Boulogne"
+    },
+    "Cinemark Avellaneda": {
+        "direccion": "Gral. Güemes 897, Avellaneda",
+        "maps": "https://maps.google.com/?q=Av.+G%C3%BCemes+300,+Avellaneda"
+    },
+    "Cinemark Malvinas Argentinas": {
+        "direccion": "Ruta Provincial 8 y Ruta Provincial 202, Malvinas Argentinas",
+        "maps": "https://maps.google.com/?q=Av.+del+Puerto+2020,+Malvinas+Argentinas"
+    },
+    "Cinemark Moreno": {
+        "direccion": "Av. Victorica 1128, Moreno",
+        "maps": "https://maps.google.com/?q=Av.+del+Gaucho+1500,+Moreno"
+    },
+    "Hoyts Plaza Oeste Morón": {
+        "direccion": "Blvd. Juan Manuel de Rosas 658, Castelar",
+        "maps": "https://maps.google.com/?q=Av.+del+Libertador+2000,+Mor%C3%B3n"
+    },
+    "Cinemark Quilmes": {
+        "direccion": "Av. Calchaquí 3950, Quilmes",
+        "maps": "https://maps.google.com/?q=Av.+12+de+Octubre+200,+Quilmes"
+    },
+    "Cinemark San Justo": {
+        "direccion": "Av. Brig. Gral. Juan Manuel de Rosas 3900, San Justo",
+        "maps": "https://maps.google.com/?q=Av.+Pte.+Per%C3%B3n+5000,+San+Justo"
+    },
+    "Cinemark Temperley": {
+        "direccion": "Av. Hipólito Yrigoyen 10699, Temperley",
+        "maps": "https://maps.google.com/?q=Av.+Per%C3%B3n+1234,+Temperley"
+    },
+    "Cinemark Tortugas": {
+        "direccion": "Autopista Panamericana Km 36.5, Tortuguitas",
+        "maps": "https://maps.google.com/?q=Ruta+8+km+45,+Tortuguitas"
+    },
+    "Hoyts Unicenter": {
+        "direccion": "Paraná 3745, Martínez",
+        "maps": "https://maps.google.com/?q=Av.+del+Parque+1400,+Mart%C3%ADnez"
+    }
+}
