@@ -13,6 +13,7 @@ const IGNORAR_SUFIJOS = [
     '2d', '3d', 'doblada', 'subtitulada', 'sub', 'cast'
 ];
 
+// ---------- NORMALIZACIÓN DE TÍTULOS ----------
 function normalizarBase(titulo) {
     if (!titulo) return '';
     let t = titulo;
@@ -42,39 +43,6 @@ function normalizarTitulo(titulo) {
     return base;
 }
 
-function fechaLegibleToDate(fechaLegible) {
-    const partes = fechaLegible.split(' ');
-    if (partes.length < 2) return null;
-    const fechaParte = partes[1];
-    const [dia, mesStr, anio] = fechaParte.split('/');
-    if (!dia || !mesStr || !anio) return null;
-    const meses = {
-        'Enero': 0, 'Febrero': 1, 'Marzo': 2, 'Abril': 3, 'Mayo': 4, 'Junio': 5,
-        'Julio': 6, 'Agosto': 7, 'Septiembre': 8, 'Octubre': 9, 'Noviembre': 10, 'Diciembre': 11
-    };
-    const mesNum = meses[mesStr];
-    if (mesNum === undefined) return null;
-    const fecha = new Date(parseInt(anio), mesNum, parseInt(dia));
-    fecha.setHours(0, 0, 0, 0);
-    return fecha;
-}
-
-function obtenerInicioSemana(fechaActual) {
-    const fecha = new Date(fechaActual);
-    fecha.setHours(0, 0, 0, 0);
-    const diaSemana = fecha.getDay();
-    let diasAtras = (diaSemana - 4 + 7) % 7;
-    const inicio = new Date(fecha);
-    inicio.setDate(fecha.getDate() - diasAtras);
-    return inicio;
-}
-
-function obtenerFinSemana(inicio) {
-    const fin = new Date(inicio);
-    fin.setDate(inicio.getDate() + 6);
-    return fin;
-}
-
 function similitudJaccard(a, b) {
     const palabrasA = new Set(a.split(' '));
     const palabrasB = new Set(b.split(' '));
@@ -100,6 +68,88 @@ function mismaPelicula(tituloA, tituloB) {
     return false;
 }
 
+// ---------- NORMALIZACIÓN DE FECHAS ----------
+const mesesAbr = { 'ENE':0, 'FEB':1, 'MAR':2, 'ABR':3, 'MAY':4, 'JUN':5, 'JUL':6, 'AGO':7, 'SEP':8, 'OCT':9, 'NOV':10, 'DIC':11 };
+const mesesCompletos = {
+    'enero':0,'febrero':1,'marzo':2,'abril':3,'mayo':4,'junio':5,'julio':6,'agosto':7,'septiembre':8,'octubre':9,'noviembre':10,'diciembre':11
+};
+
+function parsearFechaLegible(texto) {
+    if (!texto) return null;
+    
+    // Formato 1: "Viernes 29/Mayo/2026" (día completo)
+    let match = texto.match(/^[A-Za-záéíóúñ]+ (\d{1,2})\/([A-Za-záéíóú]+)\/(\d{4})$/i);
+    if (match) {
+        const dia = parseInt(match[1]);
+        let mesStr = match[2].toLowerCase();
+        let mes = mesesCompletos[mesStr];
+        if (mes === undefined) {
+            const abr = mesStr.substring(0,3);
+            mes = mesesAbr[abr.toUpperCase()];
+        }
+        const anio = parseInt(match[3]);
+        if (!isNaN(dia) && mes !== undefined && !isNaN(anio)) {
+            return new Date(anio, mes, dia);
+        }
+    }
+    
+    // Formato 2: "Lun 1/Jun/2026" (día abreviado)
+    match = texto.match(/^[A-Za-z]{3} (\d{1,2})\/([A-Za-z]{3})\/(\d{4})$/i);
+    if (match) {
+        const dia = parseInt(match[1]);
+        const mesAbr = match[2].toUpperCase();
+        const mes = mesesAbr[mesAbr];
+        const anio = parseInt(match[3]);
+        if (!isNaN(dia) && mes !== undefined && !isNaN(anio)) {
+            return new Date(anio, mes, dia);
+        }
+    }
+    
+    // Formato 3: "2026-05-29"
+    match = texto.match(/^(\d{4})-(\d{2})-(\d{2})$/);
+    if (match) {
+        return new Date(parseInt(match[1]), parseInt(match[2])-1, parseInt(match[3]));
+    }
+    
+    // Formato 4: "29/5/2026"
+    match = texto.match(/^(\d{1,2})\/(\d{1,2})\/(\d{4})$/);
+    if (match) {
+        return new Date(parseInt(match[3]), parseInt(match[2])-1, parseInt(match[1]));
+    }
+    
+    console.warn(`⚠️ No se pudo parsear la fecha: ${texto}`);
+    return null;
+}
+
+function formatearFechaUniforme(date) {
+    if (!date || isNaN(date.getTime())) return 'Fecha no disponible';
+    const dias = ['DOM', 'LUN', 'MAR', 'MIÉ', 'JUE', 'VIE', 'SÁB'];
+    const meses = ['ENE', 'FEB', 'MAR', 'ABR', 'MAY', 'JUN', 'JUL', 'AGO', 'SEP', 'OCT', 'NOV', 'DIC'];
+    const diaSemana = dias[date.getDay()];
+    const diaNum = date.getDate();
+    const mes = meses[date.getMonth()];
+    const anio = date.getFullYear();
+    return `${diaSemana} ${diaNum}/${mes}/${anio}`;
+}
+
+// ---------- VENTANA DE SEMANA (JUEVES A MIÉRCOLES) ----------
+function obtenerInicioSemana(fechaActual) {
+    const fecha = new Date(fechaActual);
+    fecha.setHours(0, 0, 0, 0);
+    const diaSemana = fecha.getDay();
+    const diasHastaJueves = (diaSemana - 4 + 7) % 7;
+    const inicio = new Date(fecha);
+    inicio.setDate(fecha.getDate() - diasHastaJueves);
+    return inicio;
+}
+
+function obtenerFinSemana(inicio) {
+    const fin = new Date(inicio);
+    fin.setDate(inicio.getDate() + 6);
+    return fin;
+}
+
+// ---------- CARGA DE FUENTES ----------
 async function cargarFuente(archivo, nombre) {
     try {
         const data = await fs.readFile(archivo, 'utf8');
@@ -112,8 +162,9 @@ async function cargarFuente(archivo, nombre) {
     }
 }
 
+// ---------- MAIN ----------
 async function main() {
-    console.log('🔄 Unificando carteleras: funciones de la semana actual (jueves a miércoles) en Cartelera, y funciones futuras en Próximos estrenos (con horarios)');
+    console.log('🔄 Unificando carteleras: normalizando fechas y títulos');
     
     const gaumont = await cargarFuente(GAUMONT_FILE, 'Gaumont');
     const cosmos = await cargarFuente(COSMOS_FILE, 'Cosmos');
@@ -121,17 +172,29 @@ async function main() {
     const atlas = await cargarFuente(ATLAS_FILE, 'Atlas');
     const cinemark = await cargarFuente(CINEMARK_FILE, 'Cinemark');
     
-    const todasFunciones = [...gaumont, ...cosmos, ...cacodelphia, ...atlas, ...cinemark];
+    let todasFunciones = [...gaumont, ...cosmos, ...cacodelphia, ...atlas, ...cinemark];
+    
+    // Normalizar fechas: reemplazar 'fecha' por formato uniforme, y guardar 'fecha_obj' para comparaciones
+    for (const func of todasFunciones) {
+        const fechaObj = parsearFechaLegible(func.fecha);
+        if (fechaObj) {
+            func.fecha_obj = fechaObj;
+            func.fecha = formatearFechaUniforme(fechaObj);
+        } else {
+            func.fecha_obj = null;
+            // Dejamos la fecha original si no se pudo parsear
+        }
+    }
     
     const hoy = new Date();
     hoy.setHours(0, 0, 0, 0);
     const inicioSemana = obtenerInicioSemana(hoy);
     const finSemana = obtenerFinSemana(inicioSemana);
     
-    console.log(`📅 Ventana actual: ${inicioSemana.toLocaleDateString('es-AR')} (jueves) hasta ${finSemana.toLocaleDateString('es-AR')} (miércoles)`);
+    console.log(`📅 Ventana actual (jueves a miércoles): ${formatearFechaUniforme(inicioSemana)} - ${formatearFechaUniforme(finSemana)}`);
     
-    // Agrupar todas las funciones por película (normalizando título)
-    const todasPorPeli = new Map(); // clave normalizada -> { funciones: [] }
+    // Agrupar por película
+    const todasPorPeli = new Map();
     for (const func of todasFunciones) {
         const clave = normalizarTitulo(func.titulo);
         if (!todasPorPeli.has(clave)) {
@@ -140,9 +203,8 @@ async function main() {
         todasPorPeli.get(clave).funciones.push(func);
     }
     
-    // Clasificar funciones por película
-    const funcionesCartelera = [];   // funciones que están dentro de la semana actual
-    const funcionesProximos = [];    // funciones futuras (después del miércoles) para películas que no tienen funciones en la semana actual
+    const funcionesCartelera = [];
+    const funcionesProximos = [];
     
     for (const [clave, grupo] of todasPorPeli.entries()) {
         let tieneFuncionEnSemana = false;
@@ -150,36 +212,32 @@ async function main() {
         const funcionesFuturas = [];
         
         for (const func of grupo.funciones) {
-            const fechaFunc = fechaLegibleToDate(func.fecha);
-            if (!fechaFunc) {
-                // Sin fecha válida, la metemos en cartelera por las dudas
+            const fechaObj = func.fecha_obj;
+            if (!fechaObj) {
                 funcionesEnSemana.push(func);
                 tieneFuncionEnSemana = true;
                 continue;
             }
-            if (fechaFunc >= inicioSemana && fechaFunc <= finSemana) {
+            if (fechaObj >= inicioSemana && fechaObj <= finSemana) {
                 funcionesEnSemana.push(func);
                 tieneFuncionEnSemana = true;
-            } else if (fechaFunc > finSemana) {
+            } else if (fechaObj > finSemana) {
                 funcionesFuturas.push(func);
             }
-            // Las funciones anteriores a inicioSemana se ignoran
         }
         
         if (tieneFuncionEnSemana) {
-            // La película está en cartelera esta semana -> solo van las funciones de la semana
             funcionesCartelera.push(...funcionesEnSemana);
         } else if (funcionesFuturas.length > 0) {
-            // No tiene funciones esta semana, pero sí futuras -> va a próximos estrenos con todas sus funciones futuras
             funcionesProximos.push(...funcionesFuturas);
         }
     }
     
-    // Asignar sección a cada función
+    // Asignar sección
     for (const f of funcionesCartelera) f.seccion = 'cartelera';
     for (const f of funcionesProximos) f.seccion = 'proximos';
     
-    // Ahora fusionar títulos duplicados (por ej. "BACKROOMS" y "BACKROOMS SIN SALIDA") en cada grupo por separado
+    // Fusionar títulos duplicados
     function fusionarPorGrupo(funciones) {
         const grupos = [];
         for (const func of funciones) {
@@ -220,11 +278,14 @@ async function main() {
                     tituloFinal = titulo;
                 }
             }
-            const funcionesCombinadas = grupo.funciones.map(f => ({
-                ...f,
-                titulo: tituloFinal,
-                poster: mejorPoster || f.poster
-            }));
+            const funcionesCombinadas = grupo.funciones.map(f => {
+                const { fecha_obj, ...resto } = f; // eliminar campo interno
+                return {
+                    ...resto,
+                    titulo: tituloFinal,
+                    poster: mejorPoster || f.poster
+                };
+            });
             resultado.push(...funcionesCombinadas);
         }
         return resultado;
@@ -237,7 +298,7 @@ async function main() {
     await fs.writeFile(OUTPUT_FILE, JSON.stringify(resultadoFinal, null, 2));
     console.log(`✅ Unificación completada.`);
     console.log(`   Funciones en cartelera (semana actual): ${resultadoCartelera.length}`);
-    console.log(`   Funciones en próximos estrenos (todas futuras): ${resultadoProximos.length}`);
+    console.log(`   Funciones en próximos estrenos: ${resultadoProximos.length}`);
     console.log(`   Total registros en peliculas.json: ${resultadoFinal.length}`);
 }
 
