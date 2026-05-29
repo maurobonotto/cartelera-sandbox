@@ -1,19 +1,16 @@
-// backend/scraper_cinemark.js - Versión final con nombres y ubicaciones exactas
+// backend/scraper_cinemark.js - Hace clic en cada fecha para obtener horarios reales
 const puppeteer = require('puppeteer');
 const fs = require('fs').promises;
 const path = require('path');
 
 const OUTPUT_FILE = path.join(__dirname, 'peliculas_cinemark.json');
 
-// Lista definitiva de cines AMBA con nombres comerciales exactos y ciudades correctas
 const CINES = [
-    // CABA
     { slug: 'abasto', nombre: 'Hoyts Abasto', ciudad: 'CABA' },
     { slug: 'caballito', nombre: 'Cinemark Caballito', ciudad: 'CABA' },
     { slug: 'palermo', nombre: 'Cinemark Palermo', ciudad: 'CABA' },
     { slug: 'dot', nombre: 'Hoyts DOT', ciudad: 'CABA' },
     { slug: 'puertomadero', nombre: 'Cinemark Puerto Madero', ciudad: 'CABA' },
-    // Gran Buenos Aires
     { slug: 'soleil', nombre: 'Cinemark Soleil', ciudad: 'Boulogne' },
     { slug: 'altoavellaneda', nombre: 'Cinemark Avellaneda', ciudad: 'Avellaneda' },
     { slug: 'malvinasargentinas', nombre: 'Cinemark Malvinas Argentinas', ciudad: 'Malvinas Argentinas' },
@@ -26,18 +23,102 @@ const CINES = [
     { slug: 'unicenter', nombre: 'Hoyts Unicenter', ciudad: 'Martínez' }
 ];
 
-function formatearFecha(date) {
-    const dias = ['domingo', 'lunes', 'martes', 'miércoles', 'jueves', 'viernes', 'sábado'];
-    const meses = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre'];
-    const diaSemana = dias[date.getDay()].charAt(0).toUpperCase() + dias[date.getDay()].slice(1);
-    const diaNumero = date.getDate();
-    const mes = meses[date.getMonth()].charAt(0).toUpperCase() + meses[date.getMonth()].slice(1);
-    const anio = date.getFullYear();
-    return `${diaSemana} ${diaNumero}/${mes}/${anio}`;
+function convertirFechaCarrusel(textoDia, textoFecha) {
+    const meses = {
+        'ENE': 'Enero', 'FEB': 'Febrero', 'MAR': 'Marzo', 'ABR': 'Abril',
+        'MAY': 'Mayo', 'JUN': 'Junio', 'JUL': 'Julio', 'AGO': 'Agosto',
+        'SEP': 'Septiembre', 'OCT': 'Octubre', 'NOV': 'Noviembre', 'DIC': 'Diciembre'
+    };
+    let diaSemana = textoDia.trim();
+    if (diaSemana === 'HOY') diaSemana = 'Hoy';
+    else diaSemana = diaSemana.charAt(0).toUpperCase() + diaSemana.slice(1).toLowerCase();
+    
+    const partes = textoFecha.split('/');
+    if (partes.length === 2) {
+        const diaNum = partes[0];
+        const mesAbr = partes[1].toUpperCase();
+        const mes = meses[mesAbr] || mesAbr;
+        const anio = new Date().getFullYear();
+        return `${diaSemana} ${diaNum}/${mes}/${anio}`;
+    }
+    return `${diaSemana} ${textoFecha}`;
+}
+
+// Extraer películas y horarios del DOM actual
+async function extraerFuncionesPorFecha(page, fechaDia, fechaTexto, cineNombre, cineCiudad, idCounter) {
+    const funciones = await page.evaluate(() => {
+        const results = [];
+        const movieCards = document.querySelectorAll('.mui-1vn7os0');
+        
+        for (const card of movieCards) {
+            const titleEl = card.querySelector('h1.mui-1v7o5yb');
+            const title = titleEl ? titleEl.innerText.trim() : null;
+            if (!title) continue;
+            
+            let horariosContainer = card.nextElementSibling;
+            while (horariosContainer && !horariosContainer.classList.contains('mui-1af0m59')) {
+                horariosContainer = horariosContainer.nextElementSibling;
+            }
+            if (!horariosContainer) continue;
+            
+            const bloques = horariosContainer.querySelectorAll('.mui-30g0zv');
+            const horariosPorIdioma = new Map();
+            
+            bloques.forEach(bloque => {
+                let idioma = 'Doblada';
+                const idiomaElem = bloque.querySelector('.mui-1xj2a7k');
+                if (idiomaElem) {
+                    const idiomaText = idiomaElem.innerText.trim().toUpperCase();
+                    if (idiomaText.includes('SUBTITULADA')) idioma = 'Subtitulada';
+                    else if (idiomaText.includes('CASTELLANO')) idioma = 'Doblada';
+                }
+                
+                const hourElements = bloque.querySelectorAll('.mui-19midw5 .mui-aiec9m');
+                const horariosBloque = Array.from(hourElements).map(el => el.innerText.trim().replace('hs', ''));
+                
+                if (horariosBloque.length > 0) {
+                    if (!horariosPorIdioma.has(idioma)) horariosPorIdioma.set(idioma, []);
+                    horariosPorIdioma.set(idioma, [...horariosPorIdioma.get(idioma), ...horariosBloque]);
+                }
+            });
+            
+            if (horariosPorIdioma.size > 0) {
+                for (const [idioma, horarios] of horariosPorIdioma.entries()) {
+                    results.push({
+                        titulo: title,
+                        idioma: idioma,
+                        horarios: [...new Set(horarios)].sort()
+                    });
+                }
+            }
+        }
+        return results;
+    });
+    
+    const fechaLegible = convertirFechaCarrusel(fechaDia, fechaTexto);
+    const funcionesLista = [];
+    for (const f of funciones) {
+        funcionesLista.push({
+            id_funcion: `cinemark_${cineNombre.replace(/\s/g, '_')}_${idCounter++}`,
+            titulo: f.titulo,
+            director: 'No especificado',
+            duracion: 'N/A',
+            cine: cineNombre,
+            ciudad: cineCiudad,
+            fecha: fechaLegible,
+            idioma: f.idioma,
+            horarios: f.horarios,
+            seccion: 'cartelera',
+            poster: '',
+            sinopsis: 'Sin sinopsis disponible',
+            linkTrailer: ''
+        });
+    }
+    return { funcionesLista, nuevoIdCounter: idCounter };
 }
 
 async function scrapeCinemark() {
-    console.log('🎬 Scraping Cinemark/Hoyts - AMBA (nombres y ubicaciones exactas)');
+    console.log('🎬 Scraping Cinemark/Hoyts - Fechas reales con clic');
     const browser = await puppeteer.launch({ headless: 'new', args: ['--no-sandbox'] });
     const page = await browser.newPage();
 
@@ -45,10 +126,8 @@ async function scrapeCinemark() {
     await context.overridePermissions('https://www.cinemark.com.ar', ['geolocation']);
     console.log('✅ Geolocalización permitida.');
 
-    const todasFunciones = [];
+    let todasFunciones = [];
     let idCounter = 1;
-    const hoy = new Date();
-    const fechaLegible = formatearFecha(hoy);
 
     for (const cine of CINES) {
         const url = `https://www.cinemark.com.ar/cartelera/${cine.slug}`;
@@ -59,7 +138,7 @@ async function scrapeCinemark() {
             await page.goto(url, { waitUntil: 'networkidle2', timeout: 30000 });
             await new Promise(r => setTimeout(r, 2000));
 
-            // Cerrar aviso de cookies
+            // Cerrar cookies
             try {
                 const botonAcepto = await page.$('button:has-text("ACEPTO")');
                 if (botonAcepto) {
@@ -71,70 +150,57 @@ async function scrapeCinemark() {
                 await new Promise(r => setTimeout(r, 1500));
             } catch (e) {}
 
-            // Esperar a que desaparezcan los skeletons
-            await page.waitForFunction(
-                () => !document.querySelector('.MuiSkeleton-root'),
-                { timeout: 20000 }
-            ).catch(() => console.log('   ⚠️ Timeout skeletons, continuando...'));
-
-            // Esperar tarjetas de películas
-            await page.waitForSelector('.mui-1vn7os0, .MuiGrid-item', { timeout: 15000 }).catch(() => {
-                console.log('   ⚠️ No se encontraron tarjetas.');
-                return;
-            });
-
+            // Esperar contenido
+            await page.waitForFunction(() => !document.querySelector('.MuiSkeleton-root'), { timeout: 20000 }).catch(() => {});
+            await page.waitForSelector('.mui-1vn7os0, .MuiGrid-item', { timeout: 15000 }).catch(() => {});
             await new Promise(r => setTimeout(r, 2000));
 
-            // Extraer datos
-            const peliculas = await page.evaluate(() => {
-                const results = [];
-                const movieCards = document.querySelectorAll('.mui-1vn7os0');
-                
-                for (const card of movieCards) {
-                    const titleEl = card.querySelector('h1.mui-1v7o5yb');
-                    const title = titleEl ? titleEl.innerText.trim() : null;
-                    if (!title) continue;
-
-                    let horariosContainer = card.nextElementSibling;
-                    while (horariosContainer && !horariosContainer.classList.contains('mui-1af0m59')) {
-                        horariosContainer = horariosContainer.nextElementSibling;
-                    }
-                    if (!horariosContainer) continue;
-
-                    const hourElements = horariosContainer.querySelectorAll('p.mui-aiec9m');
-                    const horarios = Array.from(hourElements).map(el => el.innerText.trim().replace('hs', ''));
-
-                    if (horarios.length > 0) {
-                        results.push({ title, horarios });
-                    }
-                }
-                return results;
+            // Obtener todas las fechas del carrusel
+            const fechas = await page.evaluate(() => {
+                const items = document.querySelectorAll('.date-carousel-item');
+                return Array.from(items).map(item => {
+                    const diaElem = item.querySelector('h3, p:first-child');
+                    const fechaElem = item.querySelector('p:last-child');
+                    return {
+                        dia: diaElem ? diaElem.innerText.trim() : '',
+                        fecha: fechaElem ? fechaElem.innerText.trim() : ''
+                    };
+                }).filter(f => f.dia && f.fecha);
             });
 
-            if (peliculas.length === 0) {
-                console.log('   ⚠️ No se encontraron películas.');
-                const html = await page.content();
-                await fs.writeFile(`debug_${cine.slug}.html`, html);
-            } else {
-                console.log(`   ✅ ${peliculas.length} películas encontradas.`);
-                for (const peli of peliculas) {
-                    todasFunciones.push({
-                        id_funcion: `cinemark_${cine.slug}_${idCounter++}`,
-                        titulo: peli.title,
-                        director: 'No especificado',
-                        duracion: 'N/A',
-                        cine: cine.nombre,
-                        ciudad: cine.ciudad,
-                        fecha: fechaLegible,
-                        idioma: 'Doblada/Subtitulada',
-                        horarios: peli.horarios,
-                        seccion: 'cartelera',
-                        poster: '',
-                        sinopsis: 'Sin sinopsis disponible',
-                        linkTrailer: ''
-                    });
-                }
+            if (fechas.length === 0) {
+                console.log('   ⚠️ No se encontraron fechas.');
+                continue;
             }
+
+            console.log(`   📅 Fechas encontradas: ${fechas.map(f => `${f.dia} ${f.fecha}`).join(', ')}`);
+
+            // Procesar la primera fecha (ya visible)
+            console.log(`   📍 Procesando: ${fechas[0].dia} ${fechas[0].fecha}`);
+            const { funcionesLista: funcionesPrimera, nuevoIdCounter: id1 } = await extraerFuncionesPorFecha(page, fechas[0].dia, fechas[0].fecha, cine.nombre, cine.ciudad, idCounter);
+            todasFunciones.push(...funcionesPrimera);
+            idCounter = id1;
+
+            // Procesar el resto de las fechas (haciendo clic)
+            for (let i = 1; i < fechas.length; i++) {
+                console.log(`   📍 Procesando: ${fechas[i].dia} ${fechas[i].fecha}`);
+                // Hacer clic en la pestaña correspondiente usando evaluate (más robusto)
+                await page.evaluate((index) => {
+                    const items = document.querySelectorAll('.date-carousel-item');
+                    if (items[index]) items[index].click();
+                }, i);
+                
+                // Esperar a que los horarios se actualicen (esperar a que aparezcan nuevos .mui-aiec9m)
+                await new Promise(r => setTimeout(r, 3000));
+                // También podemos esperar a que algún elemento específico cambie, pero timeout es suficiente
+                
+                const { funcionesLista, nuevoIdCounter } = await extraerFuncionesPorFecha(page, fechas[i].dia, fechas[i].fecha, cine.nombre, cine.ciudad, idCounter);
+                todasFunciones.push(...funcionesLista);
+                idCounter = nuevoIdCounter;
+            }
+
+            console.log(`   ✅ Total funciones para ${cine.nombre}: ${todasFunciones.filter(f => f.cine === cine.nombre).length}`);
+
         } catch (error) {
             console.error(`   ❌ Error en ${cine.nombre}:`, error.message);
             const html = await page.content().catch(() => '');

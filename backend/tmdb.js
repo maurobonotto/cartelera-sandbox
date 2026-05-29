@@ -1,92 +1,58 @@
+require('dotenv').config()
 // backend/tmdb.js
-const TMDB_API_KEY = process.env.TMDB_API_KEY || '62dff612c354dd50dbff40ca176b461c';
-const TMDB_IMAGE_BASE_URL = 'https://image.tmdb.org/t/p/w500';
-const MIN_SIMILARITY_SCORE = 70;
-const POPULARITY_WEIGHT = 0.33;
-const SIMILARITY_EXACT = 100;
-const SIMILARITY_PARTIAL = 80;
-const BONUS_YEAR = 100;
-const BONUS_DIRECTOR = 200;
+const API_KEY = process.env.TMDB_API_KEY;
+const BASE_URL = 'https://api.themoviedb.org/3';
 
-function normalizarTexto(str) {
-    if (!str) return '';
-    return str
-        .toLowerCase()
-        .normalize('NFD').replace(/[\u0300-\u036f]/g, '')
-        .replace(/[^a-z0-9]/g, ' ')
-        .trim()
-        .replace(/\s+/g, ' ');
+if (!API_KEY) {
+    console.error('❌ Error: Falta la variable de entorno TMDB_API_KEY');
 }
 
-async function getDirectorFromTMDB(movieId) {
+async function getPosterFromTMDB(titulo, anio, director) {
+    if (!API_KEY) return null;
+    const searchUrl = `${BASE_URL}/search/movie?api_key=${API_KEY}&query=${encodeURIComponent(titulo)}&language=es`;
     try {
-        const url = `https://api.themoviedb.org/3/movie/${movieId}/credits?api_key=${TMDB_API_KEY}`;
-        const response = await fetch(url);
-        if (!response.ok) return null;
+        const response = await fetch(searchUrl);
         const data = await response.json();
-        const director = data.crew?.find(member => member.job === 'Director');
-        return director ? normalizarTexto(director.name) : null;
+        if (data.results && data.results.length > 0) {
+            let results = data.results;
+            if (anio) {
+                results = results.filter(m => m.release_date && m.release_date.startsWith(anio));
+            }
+            if (results.length > 0) {
+                const movie = results[0];
+                return movie.poster_path ? `https://image.tmdb.org/t/p/w500${movie.poster_path}` : null;
+            }
+        }
+        return null;
     } catch (error) {
-        console.error(`   Error obteniendo director para ID ${movieId}: ${error.message}`);
         return null;
     }
 }
 
-async function getPosterFromTMDB(movieTitle, year = null, directorName = null) {
-    if (!TMDB_API_KEY) return '';
+// NUEVA FUNCIÓN (devuelve objeto con poster y tmdb_id)
+async function getTMDBInfo(titulo, anio, director) {
+    if (!API_KEY) return { poster: null, tmdb_id: null };
+    const searchUrl = `${BASE_URL}/search/movie?api_key=${API_KEY}&query=${encodeURIComponent(titulo)}&language=es`;
     try {
-        let url = `https://api.themoviedb.org/3/search/movie?query=${encodeURIComponent(movieTitle)}&api_key=${TMDB_API_KEY}&language=es&include_adult=false&region=AR&with_original_language=es`;
-        if (year) url += `&year=${year}`;
-        const response = await fetch(url);
-        if (!response.ok) return '';
+        const response = await fetch(searchUrl);
         const data = await response.json();
-        if (!data.results || data.results.length === 0) return '';
-
-        const tituloNormalizado = normalizarTexto(movieTitle);
-        const directorNormalizado = directorName ? normalizarTexto(directorName) : null;
-
-        const candidates = [];
-        for (const movie of data.results.slice(0, 10)) {
-            if (!movie.poster_path) continue;
-            const tmdbTitleNorm = normalizarTexto(movie.title);
-            const tmdbOriginalTitleNorm = normalizarTexto(movie.original_title || '');
-            let similarity = 0;
-            if (tmdbTitleNorm === tituloNormalizado || tmdbOriginalTitleNorm === tituloNormalizado) {
-                similarity = SIMILARITY_EXACT;
-            } else if (tmdbTitleNorm.includes(tituloNormalizado) || tituloNormalizado.includes(tmdbTitleNorm) ||
-                       tmdbOriginalTitleNorm.includes(tituloNormalizado) || tituloNormalizado.includes(tmdbOriginalTitleNorm)) {
-                similarity = SIMILARITY_PARTIAL;
+        if (data.results && data.results.length > 0) {
+            let results = data.results;
+            if (anio) {
+                results = results.filter(m => m.release_date && m.release_date.startsWith(anio));
             }
-
-            let yearMatch = false;
-            if (year && movie.release_date) {
-                const releaseYear = movie.release_date.substring(0,4);
-                if (releaseYear === year.toString()) yearMatch = true;
+            if (results.length > 0) {
+                const movie = results[0];
+                return {
+                    poster: movie.poster_path ? `https://image.tmdb.org/t/p/w500${movie.poster_path}` : null,
+                    tmdb_id: movie.id
+                };
             }
-
-            let directorMatch = false;
-            if (directorNormalizado) {
-                const tmdbDirector = await getDirectorFromTMDB(movie.id);
-                if (tmdbDirector && tmdbDirector === directorNormalizado) directorMatch = true;
-            }
-
-            let score = (movie.popularity || 0) * POPULARITY_WEIGHT + similarity;
-            if (yearMatch) score += BONUS_YEAR;
-            if (directorMatch) score += BONUS_DIRECTOR;
-            candidates.push({ ...movie, score });
         }
-        candidates.sort((a, b) => b.score - a.score);
-
-        if (candidates.length > 0 && candidates[0].score >= MIN_SIMILARITY_SCORE) {
-            console.log(`      ✅ TMDB: "${candidates[0].title}" (${candidates[0].release_date ? candidates[0].release_date.substring(0,4) : '?'}) score=${Math.round(candidates[0].score)}`);
-            return `${TMDB_IMAGE_BASE_URL}${candidates[0].poster_path}`;
-        }
-        console.log(`      ⚠️ No se encontró póster aceptable para "${movieTitle}"`);
-        return '';
+        return { poster: null, tmdb_id: null };
     } catch (error) {
-        console.error(`   Error en TMDB: ${error.message}`);
-        return '';
+        return { poster: null, tmdb_id: null };
     }
 }
 
-module.exports = { getPosterFromTMDB, normalizarTexto };
+module.exports = { getPosterFromTMDB, getTMDBInfo };
