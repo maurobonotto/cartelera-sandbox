@@ -99,8 +99,8 @@
     "fecha": "Miércoles 3/Junio/2026",
     "idioma": "Doblada",
     "horarios": [
-      "12:20",
-      "14:30"
+      "12:30",
+      "14:50"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_400.jpg",
@@ -304,7 +304,6 @@
     "horarios": [
       "12:20",
       "17:20",
-      "20:00",
       "22:40"
     ],
     "seccion": "cartelera",
@@ -502,6 +501,7 @@
     "idioma": "Doblada",
     "horarios": [
       "13:20",
+      "16:10",
       "20:40"
     ],
     "seccion": "cartelera",
@@ -558,8 +558,7 @@
     "idioma": "Doblada",
     "horarios": [
       "13:20",
-      "16:10",
-      "20:40"
+      "15:50"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_454.jpg",
@@ -1093,7 +1092,7 @@
     "fecha": "Miércoles 3/Junio/2026",
     "idioma": "Subtitulada",
     "horarios": [
-      "23:10"
+      "22:20"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_462.jpg",
@@ -1145,7 +1144,6 @@
     "fecha": "Domingo 31/Mayo/2026",
     "idioma": "Subtitulada",
     "horarios": [
-      "16:10",
       "20:30"
     ],
     "seccion": "cartelera",
@@ -1299,7 +1297,7 @@
     "fecha": "Miércoles 3/Junio/2026",
     "idioma": "Doblada",
     "horarios": [
-      "18:40"
+      "18:20"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_474.jpg",
@@ -1508,8 +1506,8 @@
     "fecha": "Miércoles 3/Junio/2026",
     "idioma": "Doblada",
     "horarios": [
-      "14:10",
-      "21:00"
+      "13:50",
+      "20:20"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_477.jpg",
@@ -1721,10 +1719,9 @@
     "fecha": "Miércoles 3/Junio/2026",
     "idioma": "Subtitulada",
     "horarios": [
-      "12:50",
-      "16:40",
-      "20:20",
-      "22:50"
+      "12:20",
+      "19:30",
+      "22:00"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_479.jpg",
@@ -1741,9 +1738,8 @@
     "fecha": "Miércoles 3/Junio/2026",
     "idioma": "Doblada",
     "horarios": [
-      "15:20",
-      "17:50",
-      "23:10"
+      "14:40",
+      "17:10"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_479.jpg",
@@ -2457,7 +2453,7 @@
     "fecha": "Miércoles 3/Junio/2026",
     "idioma": "Subtitulada",
     "horarios": [
-      "19:00"
+      "17:10"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_486.jpg",
@@ -2823,9 +2819,15 @@
     "idioma": "Doblada",
     "horarios": [
       "12:50",
+      "13:30",
       "15:10",
+      "15:50",
       "17:30",
-      "19:50"
+      "18:10",
+      "19:50",
+      "20:30",
+      "21:50",
+      "22:50"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_488.jpg",
@@ -3320,8 +3322,8 @@
     "fecha": "Domingo 31/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
-      "14:30",
-      "16:50"
+      "14:00",
+      "16:20"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_400.jpg",
@@ -3356,8 +3358,8 @@
     "fecha": "Martes 2/Junio/2026",
     "idioma": "Doblada",
     "horarios": [
-      "14:00",
-      "16:20"
+      "14:30",
+      "16:50"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_400.jpg",
@@ -3428,8 +3430,8 @@
     "fecha": "Domingo 31/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
-      "19:00",
-      "21:40"
+      "18:30",
+      "21:10"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_441.jpg",
@@ -3536,8 +3538,8 @@
     "fecha": "Domingo 31/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
-      "15:20",
-      "20:00"
+      "14:50",
+      "19:30"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_446.jpg",
@@ -3554,8 +3556,8 @@
     "fecha": "Lunes 1/Junio/2026",
     "idioma": "Doblada",
     "horarios": [
-      "14:50",
-      "19:30"
+      "15:20",
+      "20:00"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_446.jpg",
@@ -3590,8 +3592,8 @@
     "fecha": "Miércoles 3/Junio/2026",
     "idioma": "Doblada",
     "horarios": [
-      "14:50",
-      "19:30"
+      "15:20",
+      "20:00"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_446.jpg",
@@ -3901,8 +3903,8 @@
     "fecha": "Domingo 31/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
-      "15:30",
-      "20:50"
+      "15:00",
+      "20:20"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_459.jpg",
@@ -3919,8 +3921,8 @@
     "fecha": "Domingo 31/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
-      "16:15",
-      "19:00"
+      "15:45",
+      "18:30"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_459.jpg",
@@ -3973,8 +3975,8 @@
     "fecha": "Martes 2/Junio/2026",
     "idioma": "Doblada",
     "horarios": [
-      "15:00",
-      "20:20"
+      "15:30",
+      "20:50"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_459.jpg",
@@ -3991,8 +3993,8 @@
     "fecha": "Martes 2/Junio/2026",
     "idioma": "Doblada",
     "horarios": [
-      "15:45",
-      "18:30"
+      "16:15",
+      "19:00"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_459.jpg",
@@ -4009,8 +4011,7 @@
     "fecha": "Miércoles 3/Junio/2026",
     "idioma": "Doblada",
     "horarios": [
-      "15:30",
-      "20:50"
+      "15:30"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_459.jpg",
@@ -4181,7 +4182,7 @@
     "fecha": "Domingo 31/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
-      "22:15"
+      "21:45"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_475.jpg",
@@ -4198,7 +4199,7 @@
     "fecha": "Lunes 1/Junio/2026",
     "idioma": "Doblada",
     "horarios": [
-      "21:45"
+      "22:15"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_475.jpg",
@@ -4290,9 +4291,9 @@
     "idioma": "Doblada",
     "horarios": [
       "14:20",
-      "17:00",
-      "19:30",
-      "22:00"
+      "16:30",
+      "19:00",
+      "21:30"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_479.jpg",
@@ -4351,8 +4352,7 @@
     "horarios": [
       "14:20",
       "17:00",
-      "19:30",
-      "22:00"
+      "20:50"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_479.jpg",
@@ -4387,8 +4387,11 @@
     "fecha": "Jueves 4/Junio/2026",
     "idioma": "Doblada",
     "horarios": [
-      "19:20",
-      "21:30"
+      "14:00",
+      "16:00",
+      "18:10",
+      "20:20",
+      "22:30"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_480.jpg",
@@ -4546,8 +4549,8 @@
     "fecha": "Domingo 31/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
-      "18:00",
-      "22:30"
+      "17:30",
+      "22:00"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_482.jpg",
@@ -4679,9 +4682,13 @@
     "idioma": "Doblada",
     "horarios": [
       "14:10",
+      "15:10",
       "16:30",
+      "17:30",
       "18:50",
-      "21:10"
+      "19:50",
+      "21:10",
+      "22:10"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_488.jpg",
@@ -5460,6 +5467,26 @@
     "linkTrailer": ""
   },
   {
+    "id_funcion": "atlas_194_488_Jueves 18-Junio-2026_Doblada",
+    "titulo": "TOY STORY 5",
+    "director": "No especificado",
+    "duracion": "102",
+    "cine": "Atlas Alcorta",
+    "ciudad": "CABA",
+    "fecha": "Jueves 18/Junio/2026",
+    "idioma": "Doblada",
+    "horarios": [
+      "13:20",
+      "15:30",
+      "17:50",
+      "20:10"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://www.atlascines.com/images/posters/200_488.jpg",
+    "sinopsis": "Los juguetes están de vuelta en «Toy Story 5»,de Disney y Pixar,y esta vez se enfrentan los juguetes y la tecnología. El trabajo de Buzz,Woody,Jessie y el resto de la pandilla se complica exponencialmente cuando se enfrentan a esta nueva amenaza para el tiempo de juego",
+    "linkTrailer": ""
+  },
+  {
     "id_funcion": "atlas_194_488_Jueves 18-Junio-2026_Subtitulada",
     "titulo": "TOY STORY 5",
     "director": "No especificado",
@@ -5507,6 +5534,26 @@
     "idioma": "Subtitulada",
     "horarios": [
       "22:30"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://www.atlascines.com/images/posters/200_488.jpg",
+    "sinopsis": "Los juguetes están de vuelta en «Toy Story 5»,de Disney y Pixar,y esta vez se enfrentan los juguetes y la tecnología. El trabajo de Buzz,Woody,Jessie y el resto de la pandilla se complica exponencialmente cuando se enfrentan a esta nueva amenaza para el tiempo de juego",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "atlas_194_488_Sábado 20-Junio-2026_Doblada",
+    "titulo": "TOY STORY 5",
+    "director": "No especificado",
+    "duracion": "102",
+    "cine": "Atlas Alcorta",
+    "ciudad": "CABA",
+    "fecha": "Sábado 20/Junio/2026",
+    "idioma": "Doblada",
+    "horarios": [
+      "13:20",
+      "15:30",
+      "17:50",
+      "20:10"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_488.jpg",
@@ -5789,8 +5836,8 @@
     "fecha": "Domingo 31/Mayo/2026",
     "idioma": "Subtitulada",
     "horarios": [
-      "16:20",
-      "18:50"
+      "15:20",
+      "17:50"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_446.jpg",
@@ -5895,7 +5942,7 @@
     "fecha": "Domingo 31/Mayo/2026",
     "idioma": "Subtitulada",
     "horarios": [
-      "21:20"
+      "20:20"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_452.jpg",
@@ -5997,7 +6044,7 @@
     "fecha": "Domingo 31/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
-      "20:00"
+      "19:00"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_477.jpg",
@@ -6105,10 +6152,10 @@
     "fecha": "Domingo 31/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
-      "16:40",
-      "18:30",
-      "19:10",
-      "21:40"
+      "15:40",
+      "17:30",
+      "18:10",
+      "20:40"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_481.jpg",
@@ -6125,10 +6172,10 @@
     "fecha": "Lunes 1/Junio/2026",
     "idioma": "Doblada",
     "horarios": [
-      "15:40",
-      "17:30",
-      "18:10",
-      "20:40"
+      "16:40",
+      "18:30",
+      "19:10",
+      "21:40"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_481.jpg",
@@ -6223,9 +6270,9 @@
     "fecha": "Domingo 31/Mayo/2026",
     "idioma": "Subtitulada",
     "horarios": [
-      "15:40",
-      "17:50",
-      "22:00"
+      "14:40",
+      "16:50",
+      "21:00"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_484.jpg",
@@ -6670,7 +6717,7 @@
     "fecha": "Domingo 31/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
-      "15:40"
+      "14:50"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_400.jpg",
@@ -6687,7 +6734,7 @@
     "fecha": "Lunes 1/Junio/2026",
     "idioma": "Doblada",
     "horarios": [
-      "14:50"
+      "15:40"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_400.jpg",
@@ -6757,7 +6804,8 @@
     "idioma": "Subtitulada",
     "horarios": [
       "16:40",
-      "19:20"
+      "19:20",
+      "22:00"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_441.jpg",
@@ -6945,8 +6993,7 @@
     "idioma": "Subtitulada",
     "horarios": [
       "17:20",
-      "19:50",
-      "22:20"
+      "19:50"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_446.jpg",
@@ -6988,16 +7035,16 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "atlas_196_459_Sábado 30-Mayo-2026_Subtitulada",
+    "id_funcion": "atlas_196_459_Sábado 30-Mayo-2026_Doblada",
     "titulo": "STAR WARS: MANDALORIAN Y GROGU",
     "director": "No especificado",
     "duracion": "132",
     "cine": "Atlas Nordelta",
     "ciudad": "Tigre",
     "fecha": "Sábado 30/Mayo/2026",
-    "idioma": "Subtitulada",
+    "idioma": "Doblada",
     "horarios": [
-      "22:00"
+      "15:50"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_459.jpg",
@@ -7014,57 +7061,6 @@
     "fecha": "Sábado 30/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
-      "15:20"
-    ],
-    "seccion": "cartelera",
-    "poster": "https://www.atlascines.com/images/posters/200_459.jpg",
-    "sinopsis": "El cruel Imperio ha caído,pero los señores de la guerra imperiales siguen dispersos por toda la Galaxia. La incipiente Nueva República trabaja para proteger las conquistas de la Rebelión con la ayuda del legendario cazarrecompensas mandaloriano,Din Djarin (Pedro Pascal),y su joven aprendiz,Grogu.\n\nSTAR WARS: THE MANDALORIAN AND GROGU contiene\nvarias escenas con luces intermitentes que pueden afectar a personas susceptibles a la epilepsia fotosensible o a padecer otras fotosensibilidades.",
-    "linkTrailer": ""
-  },
-  {
-    "id_funcion": "atlas_196_459_Domingo 31-Mayo-2026_Doblada",
-    "titulo": "STAR WARS: MANDALORIAN Y GROGU",
-    "director": "No especificado",
-    "duracion": "132",
-    "cine": "Atlas Nordelta",
-    "ciudad": "Tigre",
-    "fecha": "Domingo 31/Mayo/2026",
-    "idioma": "Doblada",
-    "horarios": [
-      "15:50"
-    ],
-    "seccion": "cartelera",
-    "poster": "https://www.atlascines.com/images/posters/200_459.jpg",
-    "sinopsis": "El cruel Imperio ha caído,pero los señores de la guerra imperiales siguen dispersos por toda la Galaxia. La incipiente Nueva República trabaja para proteger las conquistas de la Rebelión con la ayuda del legendario cazarrecompensas mandaloriano,Din Djarin (Pedro Pascal),y su joven aprendiz,Grogu.\n\nSTAR WARS: THE MANDALORIAN AND GROGU contiene\nvarias escenas con luces intermitentes que pueden afectar a personas susceptibles a la epilepsia fotosensible o a padecer otras fotosensibilidades.",
-    "linkTrailer": ""
-  },
-  {
-    "id_funcion": "atlas_196_459_Domingo 31-Mayo-2026_Subtitulada",
-    "titulo": "STAR WARS: MANDALORIAN Y GROGU",
-    "director": "No especificado",
-    "duracion": "132",
-    "cine": "Atlas Nordelta",
-    "ciudad": "Tigre",
-    "fecha": "Domingo 31/Mayo/2026",
-    "idioma": "Subtitulada",
-    "horarios": [
-      "21:30"
-    ],
-    "seccion": "cartelera",
-    "poster": "https://www.atlascines.com/images/posters/200_459.jpg",
-    "sinopsis": "El cruel Imperio ha caído,pero los señores de la guerra imperiales siguen dispersos por toda la Galaxia. La incipiente Nueva República trabaja para proteger las conquistas de la Rebelión con la ayuda del legendario cazarrecompensas mandaloriano,Din Djarin (Pedro Pascal),y su joven aprendiz,Grogu.\n\nSTAR WARS: THE MANDALORIAN AND GROGU contiene\nvarias escenas con luces intermitentes que pueden afectar a personas susceptibles a la epilepsia fotosensible o a padecer otras fotosensibilidades.",
-    "linkTrailer": ""
-  },
-  {
-    "id_funcion": "atlas_196_459_Domingo 31-Mayo-2026_Doblada",
-    "titulo": "STAR WARS: MANDALORIAN Y GROGU",
-    "director": "No especificado",
-    "duracion": "132",
-    "cine": "Atlas Nordelta",
-    "ciudad": "Tigre",
-    "fecha": "Domingo 31/Mayo/2026",
-    "idioma": "Doblada",
-    "horarios": [
       "18:40"
     ],
     "seccion": "cartelera",
@@ -7073,13 +7069,13 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "atlas_196_459_Lunes 1-Junio-2026_Doblada",
+    "id_funcion": "atlas_196_459_Domingo 31-Mayo-2026_Doblada",
     "titulo": "STAR WARS: MANDALORIAN Y GROGU",
     "director": "No especificado",
     "duracion": "132",
     "cine": "Atlas Nordelta",
     "ciudad": "Tigre",
-    "fecha": "Lunes 1/Junio/2026",
+    "fecha": "Domingo 31/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
       "15:00"
@@ -7090,135 +7086,16 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "atlas_196_459_Lunes 1-Junio-2026_Subtitulada",
+    "id_funcion": "atlas_196_459_Domingo 31-Mayo-2026_Doblada",
     "titulo": "STAR WARS: MANDALORIAN Y GROGU",
     "director": "No especificado",
     "duracion": "132",
     "cine": "Atlas Nordelta",
     "ciudad": "Tigre",
-    "fecha": "Lunes 1/Junio/2026",
-    "idioma": "Subtitulada",
-    "horarios": [
-      "20:40"
-    ],
-    "seccion": "cartelera",
-    "poster": "https://www.atlascines.com/images/posters/200_459.jpg",
-    "sinopsis": "El cruel Imperio ha caído,pero los señores de la guerra imperiales siguen dispersos por toda la Galaxia. La incipiente Nueva República trabaja para proteger las conquistas de la Rebelión con la ayuda del legendario cazarrecompensas mandaloriano,Din Djarin (Pedro Pascal),y su joven aprendiz,Grogu.\n\nSTAR WARS: THE MANDALORIAN AND GROGU contiene\nvarias escenas con luces intermitentes que pueden afectar a personas susceptibles a la epilepsia fotosensible o a padecer otras fotosensibilidades.",
-    "linkTrailer": ""
-  },
-  {
-    "id_funcion": "atlas_196_459_Lunes 1-Junio-2026_Doblada",
-    "titulo": "STAR WARS: MANDALORIAN Y GROGU",
-    "director": "No especificado",
-    "duracion": "132",
-    "cine": "Atlas Nordelta",
-    "ciudad": "Tigre",
-    "fecha": "Lunes 1/Junio/2026",
+    "fecha": "Domingo 31/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
       "17:50"
-    ],
-    "seccion": "cartelera",
-    "poster": "https://www.atlascines.com/images/posters/200_459.jpg",
-    "sinopsis": "El cruel Imperio ha caído,pero los señores de la guerra imperiales siguen dispersos por toda la Galaxia. La incipiente Nueva República trabaja para proteger las conquistas de la Rebelión con la ayuda del legendario cazarrecompensas mandaloriano,Din Djarin (Pedro Pascal),y su joven aprendiz,Grogu.\n\nSTAR WARS: THE MANDALORIAN AND GROGU contiene\nvarias escenas con luces intermitentes que pueden afectar a personas susceptibles a la epilepsia fotosensible o a padecer otras fotosensibilidades.",
-    "linkTrailer": ""
-  },
-  {
-    "id_funcion": "atlas_196_459_Martes 2-Junio-2026_Doblada",
-    "titulo": "STAR WARS: MANDALORIAN Y GROGU",
-    "director": "No especificado",
-    "duracion": "132",
-    "cine": "Atlas Nordelta",
-    "ciudad": "Tigre",
-    "fecha": "Martes 2/Junio/2026",
-    "idioma": "Doblada",
-    "horarios": [
-      "15:50"
-    ],
-    "seccion": "cartelera",
-    "poster": "https://www.atlascines.com/images/posters/200_459.jpg",
-    "sinopsis": "El cruel Imperio ha caído,pero los señores de la guerra imperiales siguen dispersos por toda la Galaxia. La incipiente Nueva República trabaja para proteger las conquistas de la Rebelión con la ayuda del legendario cazarrecompensas mandaloriano,Din Djarin (Pedro Pascal),y su joven aprendiz,Grogu.\n\nSTAR WARS: THE MANDALORIAN AND GROGU contiene\nvarias escenas con luces intermitentes que pueden afectar a personas susceptibles a la epilepsia fotosensible o a padecer otras fotosensibilidades.",
-    "linkTrailer": ""
-  },
-  {
-    "id_funcion": "atlas_196_459_Martes 2-Junio-2026_Subtitulada",
-    "titulo": "STAR WARS: MANDALORIAN Y GROGU",
-    "director": "No especificado",
-    "duracion": "132",
-    "cine": "Atlas Nordelta",
-    "ciudad": "Tigre",
-    "fecha": "Martes 2/Junio/2026",
-    "idioma": "Subtitulada",
-    "horarios": [
-      "21:30"
-    ],
-    "seccion": "cartelera",
-    "poster": "https://www.atlascines.com/images/posters/200_459.jpg",
-    "sinopsis": "El cruel Imperio ha caído,pero los señores de la guerra imperiales siguen dispersos por toda la Galaxia. La incipiente Nueva República trabaja para proteger las conquistas de la Rebelión con la ayuda del legendario cazarrecompensas mandaloriano,Din Djarin (Pedro Pascal),y su joven aprendiz,Grogu.\n\nSTAR WARS: THE MANDALORIAN AND GROGU contiene\nvarias escenas con luces intermitentes que pueden afectar a personas susceptibles a la epilepsia fotosensible o a padecer otras fotosensibilidades.",
-    "linkTrailer": ""
-  },
-  {
-    "id_funcion": "atlas_196_459_Martes 2-Junio-2026_Doblada",
-    "titulo": "STAR WARS: MANDALORIAN Y GROGU",
-    "director": "No especificado",
-    "duracion": "132",
-    "cine": "Atlas Nordelta",
-    "ciudad": "Tigre",
-    "fecha": "Martes 2/Junio/2026",
-    "idioma": "Doblada",
-    "horarios": [
-      "18:40"
-    ],
-    "seccion": "cartelera",
-    "poster": "https://www.atlascines.com/images/posters/200_459.jpg",
-    "sinopsis": "El cruel Imperio ha caído,pero los señores de la guerra imperiales siguen dispersos por toda la Galaxia. La incipiente Nueva República trabaja para proteger las conquistas de la Rebelión con la ayuda del legendario cazarrecompensas mandaloriano,Din Djarin (Pedro Pascal),y su joven aprendiz,Grogu.\n\nSTAR WARS: THE MANDALORIAN AND GROGU contiene\nvarias escenas con luces intermitentes que pueden afectar a personas susceptibles a la epilepsia fotosensible o a padecer otras fotosensibilidades.",
-    "linkTrailer": ""
-  },
-  {
-    "id_funcion": "atlas_196_459_Miércoles 3-Junio-2026_Doblada",
-    "titulo": "STAR WARS: MANDALORIAN Y GROGU",
-    "director": "No especificado",
-    "duracion": "132",
-    "cine": "Atlas Nordelta",
-    "ciudad": "Tigre",
-    "fecha": "Miércoles 3/Junio/2026",
-    "idioma": "Doblada",
-    "horarios": [
-      "15:50"
-    ],
-    "seccion": "cartelera",
-    "poster": "https://www.atlascines.com/images/posters/200_459.jpg",
-    "sinopsis": "El cruel Imperio ha caído,pero los señores de la guerra imperiales siguen dispersos por toda la Galaxia. La incipiente Nueva República trabaja para proteger las conquistas de la Rebelión con la ayuda del legendario cazarrecompensas mandaloriano,Din Djarin (Pedro Pascal),y su joven aprendiz,Grogu.\n\nSTAR WARS: THE MANDALORIAN AND GROGU contiene\nvarias escenas con luces intermitentes que pueden afectar a personas susceptibles a la epilepsia fotosensible o a padecer otras fotosensibilidades.",
-    "linkTrailer": ""
-  },
-  {
-    "id_funcion": "atlas_196_459_Miércoles 3-Junio-2026_Subtitulada",
-    "titulo": "STAR WARS: MANDALORIAN Y GROGU",
-    "director": "No especificado",
-    "duracion": "132",
-    "cine": "Atlas Nordelta",
-    "ciudad": "Tigre",
-    "fecha": "Miércoles 3/Junio/2026",
-    "idioma": "Subtitulada",
-    "horarios": [
-      "21:30"
-    ],
-    "seccion": "cartelera",
-    "poster": "https://www.atlascines.com/images/posters/200_459.jpg",
-    "sinopsis": "El cruel Imperio ha caído,pero los señores de la guerra imperiales siguen dispersos por toda la Galaxia. La incipiente Nueva República trabaja para proteger las conquistas de la Rebelión con la ayuda del legendario cazarrecompensas mandaloriano,Din Djarin (Pedro Pascal),y su joven aprendiz,Grogu.\n\nSTAR WARS: THE MANDALORIAN AND GROGU contiene\nvarias escenas con luces intermitentes que pueden afectar a personas susceptibles a la epilepsia fotosensible o a padecer otras fotosensibilidades.",
-    "linkTrailer": ""
-  },
-  {
-    "id_funcion": "atlas_196_459_Miércoles 3-Junio-2026_Doblada",
-    "titulo": "STAR WARS: MANDALORIAN Y GROGU",
-    "director": "No especificado",
-    "duracion": "132",
-    "cine": "Atlas Nordelta",
-    "ciudad": "Tigre",
-    "fecha": "Miércoles 3/Junio/2026",
-    "idioma": "Doblada",
-    "horarios": [
-      "18:40"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_459.jpg",
@@ -7507,7 +7384,7 @@
     "fecha": "Domingo 31/Mayo/2026",
     "idioma": "Subtitulada",
     "horarios": [
-      "20:10"
+      "19:20"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_479.jpg",
@@ -7524,7 +7401,7 @@
     "fecha": "Domingo 31/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
-      "17:30"
+      "16:40"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_479.jpg",
@@ -7541,7 +7418,7 @@
     "fecha": "Lunes 1/Junio/2026",
     "idioma": "Subtitulada",
     "horarios": [
-      "19:20"
+      "20:10"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_479.jpg",
@@ -7558,7 +7435,7 @@
     "fecha": "Lunes 1/Junio/2026",
     "idioma": "Doblada",
     "horarios": [
-      "16:40"
+      "17:30"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_479.jpg",
@@ -7715,9 +7592,8 @@
     "fecha": "Domingo 31/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
-      "15:10",
-      "20:00",
-      "22:30"
+      "19:10",
+      "21:40"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_481.jpg",
@@ -7734,8 +7610,9 @@
     "fecha": "Lunes 1/Junio/2026",
     "idioma": "Doblada",
     "horarios": [
-      "19:10",
-      "21:40"
+      "15:10",
+      "20:00",
+      "22:30"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_481.jpg",
@@ -7824,7 +7701,7 @@
     "fecha": "Domingo 31/Mayo/2026",
     "idioma": "Subtitulada",
     "horarios": [
-      "18:00"
+      "17:10"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_484.jpg",
@@ -7926,7 +7803,7 @@
     "fecha": "Domingo 31/Mayo/2026",
     "idioma": "Subtitulada",
     "horarios": [
-      "22:40"
+      "21:50"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_486.jpg",
@@ -7943,7 +7820,7 @@
     "fecha": "Lunes 1/Junio/2026",
     "idioma": "Subtitulada",
     "horarios": [
-      "21:50"
+      "22:40"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_486.jpg",
@@ -8033,8 +7910,11 @@
     "idioma": "Doblada",
     "horarios": [
       "13:20",
+      "14:10",
       "15:40",
+      "16:30",
       "18:00",
+      "18:50",
       "20:20"
     ],
     "seccion": "cartelera",
@@ -9228,8 +9108,7 @@
     "idioma": "Doblada",
     "horarios": [
       "17:00",
-      "19:30",
-      "21:30"
+      "19:30"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_479.jpg",
@@ -9749,9 +9628,13 @@
     "idioma": "Doblada",
     "horarios": [
       "13:30",
+      "14:50",
       "15:50",
+      "17:10",
       "18:10",
+      "19:30",
       "20:30",
+      "21:50",
       "22:50"
     ],
     "seccion": "cartelera",
@@ -10207,7 +10090,7 @@
     "fecha": "Miércoles 3/Junio/2026",
     "idioma": "Doblada",
     "horarios": [
-      "14:40"
+      "15:10"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_400.jpg",
@@ -10853,9 +10736,8 @@
     "fecha": "Miércoles 3/Junio/2026",
     "idioma": "Doblada",
     "horarios": [
-      "17:00",
-      "19:30",
-      "22:10"
+      "17:30",
+      "21:50"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_479.jpg",
@@ -11102,8 +10984,7 @@
     "fecha": "Miércoles 3/Junio/2026",
     "idioma": "Doblada",
     "horarios": [
-      "19:50",
-      "21:50"
+      "19:50"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_482.jpg",

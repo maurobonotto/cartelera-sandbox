@@ -1,10 +1,11 @@
-// backend/scraper_atlas.js - Sin errores de "detached node"
+// backend/scraper_atlas.js - Versión robusta que captura todas las fechas
 const puppeteer = require('puppeteer');
 const fs = require('fs').promises;
 const path = require('path');
 
 const OUTPUT_FILE = path.join(__dirname, 'peliculas_atlas.json');
 
+// Lista completa de complejos (extraída del HTML de Atlas)
 const COMPLEJOS = [
     { codComplejo: 191, nombre: "Caballito", ciudad: "CABA" },
     { codComplejo: 192, nombre: "Catan", ciudad: "CABA" },
@@ -15,6 +16,7 @@ const COMPLEJOS = [
     { codComplejo: 198, nombre: "Liniers", ciudad: "CABA" }
 ];
 
+// Función para convertir fecha del selector "29 MAY" a objeto Date
 function parseFechaSelector(texto) {
     const partes = texto.trim().split(' ');
     if (partes.length !== 2) return null;
@@ -37,6 +39,7 @@ function formatearFechaLegible(fechaISO) {
     return `${dias[date.getDay()]} ${date.getDate()}/${meses[date.getMonth()]}/${date.getFullYear()}`;
 }
 
+// Obtener lista de películas desde la API
 async function obtenerPeliculasDesdeAPI(codComplejo) {
     const url = `https://www.atlascines.com/Funciones/GetPeliculasPorComplejo?codComplejo=${codComplejo}`;
     const response = await fetch(url, { headers: { 'User-Agent': 'Mozilla/5.0' } });
@@ -59,11 +62,12 @@ async function obtenerPeliculasDesdeAPI(codComplejo) {
     return Array.from(peliculasMap.values());
 }
 
+// Extraer horarios para una película y complejo (con manejo robusto de fechas)
 async function extraerHorarios(page, codPelicula, codComplejo) {
     const url = `https://atlascines.com/Peliculas?codPelicula=${codPelicula}`;
     await page.goto(url, { waitUntil: 'networkidle2', timeout: 30000 });
 
-    // Seleccionar complejo
+    // 1. Seleccionar complejo
     await page.waitForSelector('#complejoSelect', { timeout: 10000 });
     await page.select('#complejoSelect', codComplejo.toString());
     await page.evaluate(() => {
@@ -71,60 +75,27 @@ async function extraerHorarios(page, codPelicula, codComplejo) {
         if (select) select.dispatchEvent(new Event('change', { bubbles: true }));
     });
 
-    // Esperar a que aparezca el selector de fechas
+    // 2. Esperar a que aparezca el selector de fechas
     await page.waitForSelector('.date-item', { timeout: 15000 });
-    
-    // Obtener número de fechas activas
-    const numFechas = await page.$$eval('.date-item:not(.disabled)', items => items.length);
+
+    // 3. Obtener todas las fechas activas (no deshabilitadas)
+    const fechasActivas = await page.$$eval('.date-item:not(.disabled)', items =>
+        items.map((item, idx) => ({
+            index: idx,
+            dateText: item.querySelector('.date')?.innerText || ''
+        }))
+    );
+
+    if (fechasActivas.length === 0) return [];
+
+    console.log(`       Fechas disponibles: ${fechasActivas.map(f => f.dateText).join(', ')}`);
+
+    // 4. Extraer horarios para la fecha actualmente activa (sin hacer clic)
     const resultados = [];
 
-    for (let i = 0; i < numFechas; i++) {
-        // Obtener el texto de la fecha en esta iteración
-        const fechaInfo = await page.evaluate((idx) => {
-            const items = document.querySelectorAll('.date-item:not(.disabled)');
-            if (items[idx]) {
-                const dateSpan = items[idx].querySelector('.date');
-                return { dateText: dateSpan ? dateSpan.innerText : '' };
-            }
-            return { dateText: '' };
-        }, i);
-
-        if (!fechaInfo.dateText) continue;
-
-        console.log(`       Procesando fecha: ${fechaInfo.dateText}`);
-
-        // Hacer clic en la fecha usando evaluate (evita detached node)
-        await page.evaluate((idx) => {
-            const items = document.querySelectorAll('.date-item:not(.disabled)');
-            if (items[idx]) items[idx].click();
-        }, i);
-        
-        // Esperar a que se carguen los horarios
-        try {
-            await page.waitForFunction(
-                () => {
-                    const containers = document.querySelectorAll('.tecnologia-container');
-                    if (containers.length === 0) return false;
-                    let hasHorarios = false;
-                    for (const c of containers) {
-                        const horarios = c.querySelectorAll('.horarios .horario');
-                        if (horarios.length > 0) {
-                            hasHorarios = true;
-                            break;
-                        }
-                    }
-                    return hasHorarios;
-                },
-                { timeout: 15000 }
-            ).catch(() => {
-                console.log(`       ⚠️ No se cargaron horarios para ${fechaInfo.dateText}`);
-            });
-        } catch (e) {
-            console.log(`       ⚠️ Error esperando horarios: ${e.message}`);
-        }
-
-        // Extraer horarios
-        const horariosData = await page.evaluate(() => {
+    // Función auxiliar para extraer horarios de la página actual
+    const extraerHorariosActuales = async () => {
+        return await page.evaluate(() => {
             const data = [];
             const containers = document.querySelectorAll('.tecnologia-container');
             for (const container of containers) {
@@ -143,14 +114,53 @@ async function extraerHorarios(page, codPelicula, codComplejo) {
             }
             return data;
         });
+    };
 
+    // Para cada fecha, hacer clic (excepto la primera que ya está activa) y extraer
+    for (let i = 0; i < fechasActivas.length; i++) {
+        const fecha = fechasActivas[i];
+        console.log(`       Procesando fecha: ${fecha.dateText} (índice ${fecha.index})`);
+
+        if (i > 0) {
+            // Hacer clic en la fecha (no en la primera porque ya está activa)
+            await page.evaluate((idx) => {
+                const items = document.querySelectorAll('.date-item:not(.disabled)');
+                if (items[idx]) items[idx].click();
+            }, i);
+            // Esperar a que se actualicen los horarios (máximo 10 segundos)
+            try {
+                await page.waitForFunction(
+                    () => document.querySelectorAll('.tecnologia-container .horarios .horario').length > 0,
+                    { timeout: 10000 }
+                );
+            } catch (e) {
+                console.log(`       ⚠️ No se encontraron horarios después del clic para ${fecha.dateText}`);
+                // Puede que no haya funciones ese día, continuar
+            }
+            // Pequeña pausa adicional para estabilidad
+            await new Promise(r => setTimeout(r, 1000));
+        } else {
+            // Para la primera fecha, ya está cargada; esperamos a que los horarios existan
+            try {
+                await page.waitForFunction(
+                    () => document.querySelectorAll('.tecnologia-container .horarios .horario').length > 0,
+                    { timeout: 10000 }
+                );
+            } catch (e) {
+                console.log(`       ⚠️ No se encontraron horarios para la fecha inicial ${fecha.dateText}`);
+            }
+        }
+
+        // Extraer horarios actuales
+        const horariosData = await extraerHorariosActuales();
         if (horariosData.length === 0) {
-            console.log(`       No se encontraron horarios para ${fechaInfo.dateText}`);
+            console.log(`       No se encontraron horarios para ${fecha.dateText}`);
             continue;
         }
 
-        const fechaDate = parseFechaSelector(fechaInfo.dateText);
-        const fechaLegible = fechaDate ? formatearFechaLegible(fechaDate.toISOString()) : `Fecha no disponible (${fechaInfo.dateText})`;
+        const fechaDate = parseFechaSelector(fecha.dateText);
+        const fechaLegible = fechaDate ? formatearFechaLegible(fechaDate.toISOString()) : `Fecha no disponible (${fecha.dateText})`;
+        console.log(`       Encontrados ${horariosData.length} grupos de horarios para ${fecha.dateText} -> ${fechaLegible}`);
 
         for (const item of horariosData) {
             resultados.push({
@@ -159,13 +169,13 @@ async function extraerHorarios(page, codPelicula, codComplejo) {
                 horarios: item.horarios.sort()
             });
         }
-        console.log(`       Encontrados ${horariosData.length} grupos de horarios para ${fechaInfo.dateText}`);
     }
+
     return resultados;
 }
 
 async function scrapeAtlas() {
-    console.log('🎬 Scraping Atlas Cines - corregido (sin detached node)');
+    console.log('🎬 Scraping Atlas Cines - Versión robusta (cada fecha por separado)');
     const browser = await puppeteer.launch({ headless: 'new', args: ['--no-sandbox'] });
     const page = await browser.newPage();
     await page.setViewport({ width: 1280, height: 900 });
