@@ -1,4 +1,4 @@
-// app.js - Con navegación global y menú hamburguesa funcionando
+// app.js - Con navegación global, menú hamburguesa, y grupos de cines actualizados
 let peliculas = [];
 let peliculaActualTitulo = "";
 let direccionesData = {};
@@ -80,19 +80,28 @@ function obtenerURLCompra(cine, titulo, fecha = null, horario = null) {
     if (cine.includes('Cosmos')) return 'https://www.cinecosmos.uba.ar/';
     if (cine.includes('Cacodelphia')) return 'https://cineartecacodelphia.com.ar/';
     if (cine.includes('Atlas')) return 'https://atlascines.com/cartelera/';
-    if (cine.includes('Cinemark') || cine.includes('Hoyts')) {
+    if (cine.includes('Cinemark')) {
         const slugMap = {
-            'Hoyts Abasto': 'abasto', 'Cinemark Caballito': 'caballito', 'Cinemark Palermo': 'palermo',
-            'Hoyts DOT': 'dot', 'Cinemark Puerto Madero': 'puertomadero', 'Cinemark Soleil': 'soleil',
+            'Cinemark Caballito': 'caballito', 'Cinemark Palermo': 'palermo',
+            'Cinemark Puerto Madero': 'puertomadero', 'Cinemark Soleil': 'soleil',
             'Cinemark Avellaneda': 'altoavellaneda', 'Cinemark Malvinas Argentinas': 'malvinasargentinas',
-            'Cinemark Moreno': 'moreno', 'Hoyts Plaza Oeste Morón': 'moron', 'Cinemark Quilmes': 'quilmes',
-            'Cinemark San Justo': 'sanjusto', 'Cinemark Temperley': 'temperley', 'Cinemark Tortugas': 'tortugas',
+            'Cinemark Moreno': 'moreno', 'Cinemark Quilmes': 'quilmes',
+            'Cinemark San Justo': 'sanjusto', 'Cinemark Temperley': 'temperley', 'Cinemark Tortugas': 'tortugas'
+        };
+        let slug = slugMap[cine];
+        if (!slug) slug = cine.toLowerCase().replace('cinemark ','').replace(/ /g,'').normalize('NFD').replace(/[\u0300-\u036f]/g,'');
+        return `https://www.cinemark.com.ar/cartelera/${slug}`;
+    }
+    if (cine.includes('Hoyts')) {
+        const slugMap = {
+            'Hoyts Abasto': 'abasto', 'Hoyts DOT': 'dot', 'Hoyts Plaza Oeste Morón': 'moron',
             'Hoyts Unicenter': 'unicenter'
         };
         let slug = slugMap[cine];
-        if (!slug) slug = cine.toLowerCase().replace('cinemark ','').replace('hoyts ','').replace(/ /g,'').normalize('NFD').replace(/[\u0300-\u036f]/g,'');
-        return `https://www.cinemark.com.ar/cartelera/${slug}`;
+        if (!slug) slug = cine.toLowerCase().replace('hoyts ','').replace(/ /g,'').normalize('NFD').replace(/[\u0300-\u036f]/g,'');
+        return `https://www.hoyts.com.ar/cartelera/${slug}`;
     }
+    if (cine.includes('Cinépolis')) return 'https://www.cinepolis.com.ar/';
     return `https://www.google.com/search?q=${encodeURIComponent(`${cine} ${titulo} entradas`)}`;
 }
 
@@ -114,21 +123,27 @@ function inicializarHome() {
 
 function clasificarCines(cinesArray) {
     const individuales = [];
-    const grupos = { "Atlas": [], "Cinemark/Hoyts": [] };
+    const grupos = { "Atlas": [], "Cinemark": [], "Hoyts": [], "Cinépolis": [] };
     for (const cine of cinesArray) {
-        if (cine.includes("Gaumont") || cine.includes("Cosmos") || cine.includes("Cacodelphia")) {
+        if (cine.includes("Gaumont") || cine.includes("Cosmos") || cine.includes("Cacodelphia") || cine.includes("Lorca") || cine.includes("Multiplex")) {
             individuales.push(cine);
         } else if (cine.includes("Atlas")) {
             grupos["Atlas"].push(cine);
-        } else if (cine.includes("Cinemark") || cine.includes("Hoyts")) {
-            grupos["Cinemark/Hoyts"].push(cine);
+        } else if (cine.includes("Cinemark")) {
+            grupos["Cinemark"].push(cine);
+        } else if (cine.includes("Hoyts")) {
+            grupos["Hoyts"].push(cine);
+        } else if (cine.includes("Cinépolis")) {
+            grupos["Cinépolis"].push(cine);
         } else {
             individuales.push(cine);
         }
     }
     individuales.sort();
     grupos["Atlas"].sort();
-    grupos["Cinemark/Hoyts"].sort();
+    grupos["Cinemark"].sort();
+    grupos["Hoyts"].sort();
+    grupos["Cinépolis"].sort();
     return { individuales, grupos };
 }
 
@@ -409,7 +424,6 @@ function configurarNavegacionGlobal() {
     const siteTitle = document.getElementById('site-title');
     if (siteTitle) {
         siteTitle.addEventListener('click', () => {
-            // Resetear filtros del home
             document.getElementById('home-filter-ciudad').value = "";
             document.getElementById('home-filter-cine').value = "";
             document.getElementById('home-filter-dia').value = "";
