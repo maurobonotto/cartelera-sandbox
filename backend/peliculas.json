@@ -1206,23 +1206,5 @@
     "poster": "https://image.tmdb.org/t/p/w500/fj1FAiS6OHidg1O1T6z2356fD6u.jpg",
     "sinopsis": "El profesor de ciencias Ryland Grace se despierta en una nave espacial a años luz de su hogar sin recordar quién es ni cómo ha llegado allí. A medida que recupera la memoria, comienza a descubrir su misión: resolver el enigma de la misteriosa sustancia que está provocando la extinción del sol. Debe recurrir a sus conocimientos científicos y a sus ideas poco ortodoxas para salvar de la extinción todo lo que hay en la Tierra... pero una amistad inesperada hace que quizá no tenga que hacerlo solo.",
     "linkTrailer": ""
-  },
-  {
-    "id_funcion": "cosmos_1780029721438_0",
-    "titulo": "El desprecio",
-    "director": "Jean-Luc Godard",
-    "duracion": "N/A",
-    "cine": "Cine Cosmos UBA",
-    "ciudad": "CABA",
-    "fecha": "viernes 29/mayo/2026",
-    "idioma": "Idioma original con subtítulos",
-    "horarios": [
-      "14:55",
-      "18:55"
-    ],
-    "seccion": "cartelera",
-    "poster": "assets/uploads/Desprecio-Slider.jpg",
-    "sinopsis": "Sin sinopsis disponible",
-    "linkTrailer": ""
   }
 ]

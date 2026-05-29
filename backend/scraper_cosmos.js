@@ -1,56 +1,83 @@
 // backend/scraper_cosmos.js
+const puppeteer = require('puppeteer');
 const fs = require('fs').promises;
 const path = require('path');
 
 const OUTPUT_FILE = path.join(__dirname, 'peliculas_cosmos.json');
 
 async function scrapeCosmos() {
-    console.log('🎬 Scraping Cine Cosmos UBA...');
+    console.log('🎬 Scraping Cine Cosmos UBA con Puppeteer...');
+    const browser = await puppeteer.launch({ headless: true, args: ['--no-sandbox'] });
+    const page = await browser.newPage();
+
     try {
-        const response = await fetch('https://www.cinecosmos.uba.ar/index.php');
-        const html = await response.text();
+        await page.goto('https://www.cinecosmos.uba.ar/index.php#cartelera', { waitUntil: 'networkidle2', timeout: 30000 });
+        // Esperar a que aparezcan las tarjetas de películas
+        await page.waitForSelector('.card', { timeout: 10000 });
 
-        // Buscar todas las tarjetas usando el patrón completo
-        const cardRegex = /<div class="card">(.*?)<\/div>\s*<\/div>\s*<\/div>/gs;
-        let match;
-        const peliculas = [];
+        // Extraer datos de todas las tarjetas
+        const peliculas = await page.evaluate(() => {
+            const cards = document.querySelectorAll('.card');
+            const resultados = [];
 
-        while ((match = cardRegex.exec(html)) !== null) {
-            const card = match[1];
+            cards.forEach(card => {
+                // Título
+                const tituloElem = card.querySelector('.card-title');
+                const titulo = tituloElem ? tituloElem.innerText.trim() : '';
 
-            // Título
-            const titulo = (card.match(/<h4 class="card-title">([^<]+)<\/h4>/) || [])[1]?.trim();
-            if (!titulo) continue;
+                if (!titulo) return;
 
-            // Director
-            const director = (card.match(/<p class="direccion">Dirección: ([^<]+)<\/p>/) || [])[1]?.trim() || 'No especificado';
+                // Director
+                const directorElem = card.querySelector('.direccion');
+                let director = 'No especificado';
+                if (directorElem) {
+                    director = directorElem.innerText.replace('Dirección:', '').trim();
+                }
 
-            // Duración
-            const duracionMatch = card.match(/<p class="lightText">.*?\/\s*(\d+)\s*min/);
-            const duracion = duracionMatch ? duracionMatch[1] : 'N/A';
+                // Duración (buscar dentro de .lightText)
+                const lightTextElem = card.querySelector('.lightText');
+                let duracion = 'N/A';
+                if (lightTextElem) {
+                    const text = lightTextElem.innerText;
+                    const match = text.match(/\/(\d+)\s*min/);
+                    if (match) duracion = match[1];
+                }
 
-            // Horarios: buscar el contenido después del span hasta el cierre de p
-            const horariosMatch = card.match(/<div class="card-footer">.*?<p class="textoPeliFooter">.*?<span[^>]*>.*?<\/span>\s*([^<]+)<\/p>/s);
-            let horarios = [];
-            if (horariosMatch) {
-                const horariosStr = horariosMatch[1].trim();
-                horarios = horariosStr.split(' - ').map(h => h.trim()).filter(h => /\d{1,2}:\d{2}/.test(h));
-            }
+                // Horarios (dentro de .card-footer .textoPeliFooter)
+                const footerElem = card.querySelector('.card-footer .textoPeliFooter');
+                let horarios = [];
+                if (footerElem) {
+                    // El contenido puede tener un <span> con los días, luego el texto con horarios
+                    const horariosText = footerElem.innerText;
+                    // Limpiar: eliminar la parte de los días (antes del | o del texto de días)
+                    const horariosLimpio = horariosText.replace(/^[A-Za-zÁÉÍÓÚÑ\s]+\|/, '').trim();
+                    horarios = horariosLimpio.split(' - ').map(h => h.trim()).filter(h => /\d{1,2}:\d{2}/.test(h));
+                }
 
-            // Poster
-            let poster = (card.match(/<img class="card-img-top" src="([^"]+)"/) || [])[1] || '';
-            if (poster && poster.startsWith('/')) poster = 'https://www.cinecosmos.uba.ar' + poster;
+                // Póster
+                let poster = '';
+                const imgElem = card.querySelector('.card-img-top');
+                if (imgElem && imgElem.src) {
+                    poster = imgElem.src;
+                    if (poster.startsWith('/')) poster = 'https://www.cinecosmos.uba.ar' + poster;
+                }
 
-            if (horarios.length === 0) {
-                console.log(`   ⚠️ "${titulo}" sin horarios, omitida.`);
-                continue;
-            }
+                if (horarios.length === 0) return;
 
-            peliculas.push({ titulo, director, duracion, horarios, poster });
-        }
+                resultados.push({
+                    titulo,
+                    director,
+                    duracion,
+                    horarios,
+                    poster
+                });
+            });
+            return resultados;
+        });
 
         console.log(`   Encontradas ${peliculas.length} películas con horarios.`);
 
+        // Fecha actual (para el campo "fecha")
         const hoy = new Date();
         const fechaFormateada = `${hoy.toLocaleDateString('es-AR', { weekday: 'long' })} ${hoy.getDate()}/${hoy.toLocaleDateString('es-AR', { month: 'long' })}/${hoy.getFullYear()}`;
 
@@ -74,10 +101,15 @@ async function scrapeCosmos() {
         console.log(`✅ Cosmos: ${funciones.length} funciones guardadas en ${OUTPUT_FILE}`);
         return funciones;
     } catch (error) {
-        console.error('❌ Error en Cosmos:', error);
+        console.error('❌ Error en scraper de Cosmos:', error);
         return [];
+    } finally {
+        await browser.close();
     }
 }
 
-if (require.main === module) scrapeCosmos();
+if (require.main === module) {
+    scrapeCosmos();
+}
+
 module.exports = { scrapeCosmos };
