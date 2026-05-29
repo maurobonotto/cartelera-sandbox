@@ -2,9 +2,8 @@ name: Actualizar Cartelera Gaumont
 
 on:
   schedule:
-    # Ejecuta los jueves a las 4:00, 12:00 y 20:00 UTC (equivale a 1:00, 9:00 y 17:00 Argentina, ajusta si es necesario)
+    # Ejecuta los jueves a las 4:00, 12:00 y 20:00 UTC (1:00, 9:00 y 17:00 Argentina)
     - cron: '0 4,12,20 * * 4'
-  # Permite ejecución manual desde la pestaña Actions
   workflow_dispatch:
 
 jobs:
@@ -13,8 +12,7 @@ jobs:
     steps:
       - name: 📥 Clonar el repositorio
         uses: actions/checkout@v5
-        with:
-          persist-credentials: false
+        # No uses persist-credentials: false aquí
 
       - name: ⚙️ Configurar Node.js
         uses: actions/setup-node@v5
@@ -29,7 +27,6 @@ jobs:
 
       - name: 🕷️ Ejecutar scraper
         working-directory: ./backend
-        # La API key se lee desde el entorno (opcional, si el scraper la usa)
         env:
           TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
         run: node scraper_gaumont.js
@@ -39,3 +36,6 @@ jobs:
         with:
           commit_message: "chore: actualizar cartelera [skip ci]"
           file_pattern: backend/peliculas.json backend/peliculas.backup.json
+          commit_user_name: github-actions[bot]
+          commit_user_email: github-actions[bot]@users.noreply.github.com
+          commit_author: github-actions[bot] <github-actions[bot]@users.noreply.github.com>
