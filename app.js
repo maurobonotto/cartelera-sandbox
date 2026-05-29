@@ -1,4 +1,4 @@
-// app.js - con placeholder para pósters faltantes
+// app.js - con contadores y placeholder "SIN PÓSTER"
 
 let peliculas = [];
 let peliculaActualTitulo = "";
@@ -22,7 +22,7 @@ function cargarDatos() {
 function inicializarHome() {
     const funcionesCartelera = peliculas.filter(p => p.seccion === "cartelera");
     actualizarOpcionesFiltrosHome(funcionesCartelera);
-    mostrarPeliculasHome(peliculas); // Acá ya debe mostrar únicas
+    mostrarPeliculasHome(peliculas);
 
     const filtrosIds = ['home-filter-ciudad', 'home-filter-cine', 'home-filter-dia', 'home-filter-horario'];
     filtrosIds.forEach(id => {
@@ -45,10 +45,7 @@ function aplicarFiltrosHome() {
 
     actualizarOpcionesFiltrosHome(funcionesFiltradas);
 
-    // Obtener títulos únicos de las funciones filtradas
     const titulosValidos = new Set(funcionesFiltradas.map(f => f.titulo));
-    
-    // Películas de cartelera (una por título)
     const pelisCarteleraUnicas = [];
     const agregados = new Set();
     for (const p of peliculas) {
@@ -58,7 +55,6 @@ function aplicarFiltrosHome() {
         }
     }
     
-    // Próximos estrenos (siempre todos, sin duplicados)
     const pelisProximosUnicas = [];
     const agregadosProx = new Set();
     for (const p of peliculas) {
@@ -113,10 +109,8 @@ function actualizarOpcionesFiltrosHome(funcionesValidas) {
 }
 
 function mostrarPeliculasHome(listaPeliculas) {
-    // Separar por sección y asegurar unicidad (por si acaso)
     const carteleraMap = new Map();
     const proximosMap = new Map();
-    
     for (const peli of listaPeliculas) {
         if (peli.seccion === "cartelera" && !carteleraMap.has(peli.titulo)) {
             carteleraMap.set(peli.titulo, peli);
@@ -136,16 +130,22 @@ function mostrarPeliculasHome(listaPeliculas) {
     for (const peli of proximosMap.values()) {
         proximosGrid.appendChild(crearTarjetaPelicula(peli));
     }
+    
+    // Actualizar contadores
+    const carteleraCount = document.getElementById('cartelera-counter');
+    const proximosCount = document.getElementById('proximos-counter');
+    if (carteleraCount) carteleraCount.textContent = `(${carteleraMap.size})`;
+    if (proximosCount) proximosCount.textContent = `(${proximosMap.size})`;
 }
 
 // --------------------------------------------------------------
-// FUNCIÓN MODIFICADA: placeholder para pósters en tarjetas
+// PLACEHOLDER "SIN PÓSTER" (estilo mejorado)
 // --------------------------------------------------------------
 function crearTarjetaPelicula(peli) {
     const tarjeta = document.createElement('div');
     tarjeta.className = 'movie-card';
     tarjeta.dataset.titulo = peli.titulo;
-    const posterPlaceholder = 'data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20200%20300%22%3E%3Crect%20width%3D%22200%22%20height%3D%22300%22%20fill%3D%22%23333%22%2F%3E%3Ctext%20x%3D%22100%22%20y%3D%22150%22%20fill%3D%22%23999%22%20text-anchor%3D%22middle%22%20font-size%3D%2216%22%3ESin%20p%C3%B3ster%3C%2Ftext%3E%3C%2Fsvg%3E';
+    const posterPlaceholder = 'data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20200%20300%22%3E%3Crect%20width%3D%22200%22%20height%3D%22300%22%20fill%3D%22%23333%22%2F%3E%3Ctext%20x%3D%22100%22%20y%3D%22150%22%20fill%3D%22%23999%22%20text-anchor%3D%22middle%22%20font-size%3D%2216%22%20font-family%3D%22Arial%2C%20sans-serif%22%3ESIN%20P%C3%93STER%3C%2Ftext%3E%3C%2Fsvg%3E';
     tarjeta.innerHTML = `
         <img src="${peli.poster || posterPlaceholder}" alt="Póster de ${peli.titulo}"
              onerror="this.onerror=null; this.src='${posterPlaceholder}';">
@@ -159,16 +159,13 @@ function crearTarjetaPelicula(peli) {
     return tarjeta;
 }
 
-// ================================ DETALLE (con cascada) ================================
+// ================================ DETALLE ================================
 function abrirDetallePelicula(titulo) {
     peliculaActualTitulo = titulo;
     const datosFijos = peliculas.find(p => p.titulo === titulo);
     if (!datosFijos) return;
 
-    // --------------------------------------------------------------
-    // MANEJO DE PÓSTER EN DETALLE CON PLACEHOLDER
-    // --------------------------------------------------------------
-    const posterPlaceholder = 'data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20260%20462%22%3E%3Crect%20width%3D%22260%22%20height%3D%22462%22%20fill%3D%22%23333%22%2F%3E%3Ctext%20x%3D%22130%22%20y%3D%22231%22%20fill%3D%22%23999%22%20text-anchor%3D%22middle%22%20font-size%3D%2218%22%3ESin%20p%C3%B3ster%3C%2Ftext%3E%3C%2Fsvg%3E';
+    const posterPlaceholder = 'data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20260%20462%22%3E%3Crect%20width%3D%22260%22%20height%3D%22462%22%20fill%3D%22%23333%22%2F%3E%3Ctext%20x%3D%22130%22%20y%3D%22231%22%20fill%3D%22%23999%22%20text-anchor%3D%22middle%22%20font-size%3D%2218%22%20font-family%3D%22Arial%2C%20sans-serif%22%3ESIN%20P%C3%93STER%3C%2Ftext%3E%3C%2Fsvg%3E';
     const detailPoster = document.getElementById('detail-poster');
     detailPoster.src = datosFijos.poster || posterPlaceholder;
     detailPoster.onerror = function() {

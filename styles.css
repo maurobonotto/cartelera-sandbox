@@ -44,7 +44,6 @@ body {
     display: inline-block;
 }
 
-/* Subtítulo: misma tipografía, sin negrita, sin mayúsculas (excepto H y CABA) */
 .site-subtitle {
     font-weight: 400;
     text-transform: none;
@@ -52,6 +51,14 @@ body {
     color: var(--text-muted);
     margin-left: 12px;
     letter-spacing: normal;
+}
+
+/* Contadores de sección */
+.counter {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    margin-left: 8px;
+    font-weight: normal;
 }
 
 .filters-section, .detail-filters-section {
@@ -175,7 +182,6 @@ body {
     padding: 48px var(--content-pad);
 }
 
-/* Póster con proporción 9:16 fija */
 .poster-column img {
     display: block;
     width: 260px;
@@ -218,7 +224,6 @@ body {
     min-width: 70px;
 }
 
-/* Sinopsis con ancho adaptado al contenido */
 .sinopsis-text {
     margin-top: 16px;
     background-color: var(--bg-panel);
@@ -231,7 +236,6 @@ body {
     max-width: 100%;
 }
 
-/* Botón de tráiler */
 .trailer-container {
     margin-top: 24px;
 }
@@ -262,7 +266,7 @@ body {
 }
 
 .showtimes-section {
-    padding: 48px var(--content-pad) 64px;  /* Margen superior aumentado */
+    padding: 48px var(--content-pad) 64px;
 }
 
 .showtimes-section h3 {
@@ -276,7 +280,6 @@ body {
     margin-bottom: 20px;
 }
 
-/* Cada bloque de cine se adapta al contenido */
 .cine-block {
     background-color: var(--bg-card);
     border-radius: 4px;
@@ -293,7 +296,6 @@ body {
     font-size: 14px;
 }
 
-/* Contenedor de función individual */
 .funcion-item {
     margin-bottom: 16px;
 }
@@ -308,7 +310,6 @@ body {
     color: var(--text-bright);
 }
 
-/* Horarios: etiquetas limpias, sin rectángulo azul enorme */
 .horarios-lista {
     display: flex;
     flex-wrap: wrap;
@@ -333,7 +334,6 @@ body {
     color: var(--accent);
 }
 
-/* Scrollbar */
 ::-webkit-scrollbar { width: 8px; height: 8px; }
 ::-webkit-scrollbar-track { background: transparent; }
 ::-webkit-scrollbar-thumb { background-color: rgba(255, 255, 255, 0.1); border-radius: 4px; }
