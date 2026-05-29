@@ -210,6 +210,23 @@
     "linkTrailer": "https://www.youtube.com/embed/c7306cQg9Zk?autoplay=0&showinfo=0&controls=0&rel=0&modestbranding=0&enablejsapi=1"
   },
   {
+    "id_funcion": "atlas_197_449_Viernes 29-Mayo-2026_Doblada",
+    "titulo": "Risa y la cabina del viento",
+    "director": "No especificado",
+    "duracion": "97",
+    "cine": "Atlas Flores",
+    "ciudad": "CABA",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada",
+    "horarios": [
+      "22:00"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://image.tmdb.org/t/p/w500/35TwcuX3wvOV3M06BOwVWIMnJTs.jpg",
+    "sinopsis": "Luego de perder a su papá en un trágico incendio,Risa,una niña de 10 años,descubre un teléfono público fuera de servicio que le permite hablar con los muertos. Cada uno de ellos tiene un deseo,un pedido,algo que resolver. Si Risa los ayuda con sus asuntos pendientes en el mundo de los vivos,ellos le dejarán cumplir su deseo imposible: el de hablar con su padre una última vez.",
+    "linkTrailer": ""
+  },
+  {
     "id_funcion": "atlas_197_449_Sábado 30-Mayo-2026_Doblada",
     "titulo": "Risa y la cabina del viento",
     "director": "No especificado",
@@ -1106,6 +1123,24 @@
     "linkTrailer": ""
   },
   {
+    "id_funcion": "atlas_191_477_Viernes 29-Mayo-2026_Doblada",
+    "titulo": "NADA ENTRE LOS DOS",
+    "director": "No especificado",
+    "duracion": "93",
+    "cine": "Atlas Caballito",
+    "ciudad": "CABA",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada",
+    "horarios": [
+      "14:10",
+      "21:00"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://image.tmdb.org/t/p/w500/6GZt6CfXJQgOFBA7ArLbOQYvXI8.jpg",
+    "sinopsis": "Guillermo,mexicano de 45 años,vive atrapado en un matrimonio rutinario y bajo la presión de su suegro,que controla su vida. En medio de una crisis por una intoxicación masiva que amenaza la empresa donde trabaja,viaja a un resort en México para una reunión regional. Allí conoce a Mechi,argentina de 43 años,que carga con un empleo que no la representa,un marido lleno de ideas fallidas y una hija que la rechaza. Una madrugada,creyendo sentir un temblor,Mechi sale y encuentra a Guillermo en la playa. Entre risas y copas nace una conexión inesperada. Mientras la empresa se hunde con delirios y estrategias absurdas,ellos hallan un refugio y la posibilidad de volver a desear.",
+    "linkTrailer": ""
+  },
+  {
     "id_funcion": "atlas_191_477_Sábado 30-Mayo-2026_Doblada",
     "titulo": "NADA ENTRE LOS DOS",
     "director": "No especificado",
@@ -1187,8 +1222,25 @@
     "fecha": "Miércoles 3/Junio/2026",
     "idioma": "Doblada",
     "horarios": [
-      "13:50",
-      "20:20"
+      "14:10",
+      "21:00"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://image.tmdb.org/t/p/w500/6GZt6CfXJQgOFBA7ArLbOQYvXI8.jpg",
+    "sinopsis": "Guillermo,mexicano de 45 años,vive atrapado en un matrimonio rutinario y bajo la presión de su suegro,que controla su vida. En medio de una crisis por una intoxicación masiva que amenaza la empresa donde trabaja,viaja a un resort en México para una reunión regional. Allí conoce a Mechi,argentina de 43 años,que carga con un empleo que no la representa,un marido lleno de ideas fallidas y una hija que la rechaza. Una madrugada,creyendo sentir un temblor,Mechi sale y encuentra a Guillermo en la playa. Entre risas y copas nace una conexión inesperada. Mientras la empresa se hunde con delirios y estrategias absurdas,ellos hallan un refugio y la posibilidad de volver a desear.",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "atlas_195_477_Viernes 29-Mayo-2026_Doblada",
+    "titulo": "NADA ENTRE LOS DOS",
+    "director": "No especificado",
+    "duracion": "93",
+    "cine": "Atlas Patio Bullrich",
+    "ciudad": "CABA",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada",
+    "horarios": [
+      "20:00"
     ],
     "seccion": "cartelera",
     "poster": "https://image.tmdb.org/t/p/w500/6GZt6CfXJQgOFBA7ArLbOQYvXI8.jpg",
@@ -1222,7 +1274,7 @@
     "fecha": "Domingo 31/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
-      "19:00"
+      "20:00"
     ],
     "seccion": "cartelera",
     "poster": "https://image.tmdb.org/t/p/w500/6GZt6CfXJQgOFBA7ArLbOQYvXI8.jpg",
@@ -1239,7 +1291,7 @@
     "fecha": "Lunes 1/Junio/2026",
     "idioma": "Doblada",
     "horarios": [
-      "20:00"
+      "19:00"
     ],
     "seccion": "cartelera",
     "poster": "https://image.tmdb.org/t/p/w500/6GZt6CfXJQgOFBA7ArLbOQYvXI8.jpg",
@@ -2778,6 +2830,25 @@
     "linkTrailer": "https://www.youtube.com/embed/DKE0jfwvmn8?si=PjdQ8_xVhBGSilkG"
   },
   {
+    "id_funcion": "atlas_195_484_Viernes 29-Mayo-2026_Subtitulada",
+    "titulo": "EL GRAN ARCO",
+    "director": "No especificado",
+    "duracion": "107",
+    "cine": "Atlas Patio Bullrich",
+    "ciudad": "CABA",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "15:40",
+      "17:50",
+      "22:00"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://image.tmdb.org/t/p/w500/ijo8TVoUDrvGKsRINRzgqTZLERw.jpg",
+    "sinopsis": "En 1982,François Mitterrand decide convocar un concurso internacional de arquitectura para marcar su presidencia con un proyecto emblemático: el Gran Arco de la Defensa,en línea con el Louvre y el Arco del Triunfo. Para sorpresa de todos,el arquitecto danés Otto Von Spreckelsen gana el concurso. De la noche a la mañana,este hombre de 53 años,desconocido en Francia,llega a París y es propulsado a la cabeza de este proyecto faraónico. Aunque el arquitecto pretende construir el Gran Arco,tal y como lo ha imaginado,sus ideas pronto chocan con la complejidad de la realidad y los caprichos de la política.",
+    "linkTrailer": ""
+  },
+  {
     "id_funcion": "atlas_195_484_Sábado 30-Mayo-2026_Subtitulada",
     "titulo": "EL GRAN ARCO",
     "director": "No especificado",
@@ -2806,9 +2877,9 @@
     "fecha": "Domingo 31/Mayo/2026",
     "idioma": "Subtitulada",
     "horarios": [
-      "14:40",
-      "16:50",
-      "21:00"
+      "15:40",
+      "17:50",
+      "22:00"
     ],
     "seccion": "cartelera",
     "poster": "https://image.tmdb.org/t/p/w500/ijo8TVoUDrvGKsRINRzgqTZLERw.jpg",
@@ -2825,9 +2896,9 @@
     "fecha": "Lunes 1/Junio/2026",
     "idioma": "Subtitulada",
     "horarios": [
-      "15:40",
-      "17:50",
-      "22:00"
+      "14:40",
+      "16:50",
+      "21:00"
     ],
     "seccion": "cartelera",
     "poster": "https://image.tmdb.org/t/p/w500/ijo8TVoUDrvGKsRINRzgqTZLERw.jpg",
@@ -2863,9 +2934,26 @@
     "fecha": "Miércoles 3/Junio/2026",
     "idioma": "Subtitulada",
     "horarios": [
-      "15:40",
-      "17:50",
-      "22:00"
+      "14:40",
+      "16:50",
+      "21:00"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://image.tmdb.org/t/p/w500/ijo8TVoUDrvGKsRINRzgqTZLERw.jpg",
+    "sinopsis": "En 1982,François Mitterrand decide convocar un concurso internacional de arquitectura para marcar su presidencia con un proyecto emblemático: el Gran Arco de la Defensa,en línea con el Louvre y el Arco del Triunfo. Para sorpresa de todos,el arquitecto danés Otto Von Spreckelsen gana el concurso. De la noche a la mañana,este hombre de 53 años,desconocido en Francia,llega a París y es propulsado a la cabeza de este proyecto faraónico. Aunque el arquitecto pretende construir el Gran Arco,tal y como lo ha imaginado,sus ideas pronto chocan con la complejidad de la realidad y los caprichos de la política.",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "atlas_196_484_Viernes 29-Mayo-2026_Subtitulada",
+    "titulo": "EL GRAN ARCO",
+    "director": "No especificado",
+    "duracion": "107",
+    "cine": "Atlas Nordelta",
+    "ciudad": "Tigre",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "18:00"
     ],
     "seccion": "cartelera",
     "poster": "https://image.tmdb.org/t/p/w500/ijo8TVoUDrvGKsRINRzgqTZLERw.jpg",
@@ -2899,7 +2987,7 @@
     "fecha": "Domingo 31/Mayo/2026",
     "idioma": "Subtitulada",
     "horarios": [
-      "17:10"
+      "18:00"
     ],
     "seccion": "cartelera",
     "poster": "https://image.tmdb.org/t/p/w500/ijo8TVoUDrvGKsRINRzgqTZLERw.jpg",
@@ -2916,7 +3004,7 @@
     "fecha": "Lunes 1/Junio/2026",
     "idioma": "Subtitulada",
     "horarios": [
-      "18:00"
+      "17:10"
     ],
     "seccion": "cartelera",
     "poster": "https://image.tmdb.org/t/p/w500/ijo8TVoUDrvGKsRINRzgqTZLERw.jpg",
@@ -3094,6 +3182,23 @@
     "linkTrailer": "https://www.youtube.com/embed/ALIIoT86VVA?si=B3c4uJIxJAdRe8vk"
   },
   {
+    "id_funcion": "atlas_195_485_Viernes 29-Mayo-2026_Subtitulada",
+    "titulo": "ELLA Y SU HIJO",
+    "director": "No especificado",
+    "duracion": "131",
+    "cine": "Atlas Patio Bullrich",
+    "ciudad": "CABA",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "21:00"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://image.tmdb.org/t/p/w500/3tQm0pi2gLYfP0strNg0K6PATBK.jpg",
+    "sinopsis": "Tras el fallecimiento de su esposo,Mahnaz,una enfermera de 40 años,se ve obligada a mediar entre su profesión y la rebeldía de su hijo adolescente,quien acaba de ser expulsado del colegio. La armonía familiar se rompe cuando un suceso inesperado lo trastoca todo. A partir de ese instante,Mahnaz es confrontada con una dolorosa verdad y una pérdida devastadora; emprendiendo un viaje en busca de respuestas y justicia que redefinirá su identidad como madre,como mujer y como superviviente de las circunstancias.",
+    "linkTrailer": ""
+  },
+  {
     "id_funcion": "atlas_195_485_Sábado 30-Mayo-2026_Subtitulada",
     "titulo": "ELLA Y SU HIJO",
     "director": "No especificado",
@@ -3120,7 +3225,7 @@
     "fecha": "Domingo 31/Mayo/2026",
     "idioma": "Subtitulada",
     "horarios": [
-      "20:00"
+      "21:00"
     ],
     "seccion": "cartelera",
     "poster": "https://image.tmdb.org/t/p/w500/3tQm0pi2gLYfP0strNg0K6PATBK.jpg",
@@ -3137,7 +3242,7 @@
     "fecha": "Lunes 1/Junio/2026",
     "idioma": "Subtitulada",
     "horarios": [
-      "21:00"
+      "20:00"
     ],
     "seccion": "cartelera",
     "poster": "https://image.tmdb.org/t/p/w500/3tQm0pi2gLYfP0strNg0K6PATBK.jpg",
@@ -3171,7 +3276,7 @@
     "fecha": "Miércoles 3/Junio/2026",
     "idioma": "Subtitulada",
     "horarios": [
-      "21:00"
+      "20:00"
     ],
     "seccion": "cartelera",
     "poster": "https://image.tmdb.org/t/p/w500/3tQm0pi2gLYfP0strNg0K6PATBK.jpg",
@@ -3468,6 +3573,27 @@
     "linkTrailer": "https://www.youtube.com/embed/nQeJckJxwek?si=zyUTXwE2q4qHbZtk"
   },
   {
+    "id_funcion": "atlas_191_481_Viernes 29-Mayo-2026_Doblada",
+    "titulo": "AMARGA NAVIDAD",
+    "director": "No especificado",
+    "duracion": "111",
+    "cine": "Atlas Caballito",
+    "ciudad": "CABA",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada",
+    "horarios": [
+      "13:00",
+      "15:20",
+      "17:50",
+      "20:10",
+      "22:50"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://image.tmdb.org/t/p/w500/ji29dXqoeIsQiVnXAkzI4nzxMjr.jpg",
+    "sinopsis": "Elsa es una directora de publicidad cuya madre muere durante un largo puente del mes de diciembre. Encuentra refugio en el trabajo,aunque es más bien una huida hacia adelante. Trabaja sin parar y,sin darse cuenta,no se concede el tiempo necesario para guardar el duelo por la ausencia materna. Hasta que una crisis de pánico la obliga a detenerse e imponerse un descanso. Su pareja,Bonifacio,es su tabla de salvación en esos momentos de crisis. Elsa decide viajar a la isla de Lanzarote acompañada por su amiga Patricia,que también necesita alejarse de Madrid,mientras que Bonifacio se queda en la ciudad. La historia de estos tres personajes,y algunos más,se narran paralelamente a la del guionista y director de cine Raúl Durán,entremezclando ficción y realidad.",
+    "linkTrailer": ""
+  },
+  {
     "id_funcion": "atlas_191_481_Sábado 30-Mayo-2026_Doblada",
     "titulo": "AMARGA NAVIDAD",
     "director": "No especificado",
@@ -3573,6 +3699,25 @@
     "linkTrailer": ""
   },
   {
+    "id_funcion": "atlas_194_481_Viernes 29-Mayo-2026_Doblada",
+    "titulo": "AMARGA NAVIDAD",
+    "director": "No especificado",
+    "duracion": "111",
+    "cine": "Atlas Alcorta",
+    "ciudad": "CABA",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada",
+    "horarios": [
+      "17:30",
+      "19:50",
+      "22:20"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://image.tmdb.org/t/p/w500/ji29dXqoeIsQiVnXAkzI4nzxMjr.jpg",
+    "sinopsis": "Elsa es una directora de publicidad cuya madre muere durante un largo puente del mes de diciembre. Encuentra refugio en el trabajo,aunque es más bien una huida hacia adelante. Trabaja sin parar y,sin darse cuenta,no se concede el tiempo necesario para guardar el duelo por la ausencia materna. Hasta que una crisis de pánico la obliga a detenerse e imponerse un descanso. Su pareja,Bonifacio,es su tabla de salvación en esos momentos de crisis. Elsa decide viajar a la isla de Lanzarote acompañada por su amiga Patricia,que también necesita alejarse de Madrid,mientras que Bonifacio se queda en la ciudad. La historia de estos tres personajes,y algunos más,se narran paralelamente a la del guionista y director de cine Raúl Durán,entremezclando ficción y realidad.",
+    "linkTrailer": ""
+  },
+  {
     "id_funcion": "atlas_194_481_Sábado 30-Mayo-2026_Doblada",
     "titulo": "AMARGA NAVIDAD",
     "director": "No especificado",
@@ -3649,6 +3794,26 @@
     "linkTrailer": ""
   },
   {
+    "id_funcion": "atlas_195_481_Viernes 29-Mayo-2026_Doblada",
+    "titulo": "AMARGA NAVIDAD",
+    "director": "No especificado",
+    "duracion": "111",
+    "cine": "Atlas Patio Bullrich",
+    "ciudad": "CABA",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada",
+    "horarios": [
+      "16:40",
+      "18:30",
+      "19:10",
+      "21:40"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://image.tmdb.org/t/p/w500/ji29dXqoeIsQiVnXAkzI4nzxMjr.jpg",
+    "sinopsis": "Elsa es una directora de publicidad cuya madre muere durante un largo puente del mes de diciembre. Encuentra refugio en el trabajo,aunque es más bien una huida hacia adelante. Trabaja sin parar y,sin darse cuenta,no se concede el tiempo necesario para guardar el duelo por la ausencia materna. Hasta que una crisis de pánico la obliga a detenerse e imponerse un descanso. Su pareja,Bonifacio,es su tabla de salvación en esos momentos de crisis. Elsa decide viajar a la isla de Lanzarote acompañada por su amiga Patricia,que también necesita alejarse de Madrid,mientras que Bonifacio se queda en la ciudad. La historia de estos tres personajes,y algunos más,se narran paralelamente a la del guionista y director de cine Raúl Durán,entremezclando ficción y realidad.",
+    "linkTrailer": ""
+  },
+  {
     "id_funcion": "atlas_195_481_Sábado 30-Mayo-2026_Doblada",
     "titulo": "AMARGA NAVIDAD",
     "director": "No especificado",
@@ -3678,10 +3843,10 @@
     "fecha": "Domingo 31/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
-      "15:40",
-      "17:30",
-      "18:10",
-      "20:40"
+      "16:40",
+      "18:30",
+      "19:10",
+      "21:40"
     ],
     "seccion": "cartelera",
     "poster": "https://image.tmdb.org/t/p/w500/ji29dXqoeIsQiVnXAkzI4nzxMjr.jpg",
@@ -3698,10 +3863,10 @@
     "fecha": "Lunes 1/Junio/2026",
     "idioma": "Doblada",
     "horarios": [
-      "16:40",
-      "18:30",
-      "19:10",
-      "21:40"
+      "15:40",
+      "17:30",
+      "18:10",
+      "20:40"
     ],
     "seccion": "cartelera",
     "poster": "https://image.tmdb.org/t/p/w500/ji29dXqoeIsQiVnXAkzI4nzxMjr.jpg",
@@ -3749,6 +3914,25 @@
     "linkTrailer": ""
   },
   {
+    "id_funcion": "atlas_196_481_Viernes 29-Mayo-2026_Doblada",
+    "titulo": "AMARGA NAVIDAD",
+    "director": "No especificado",
+    "duracion": "111",
+    "cine": "Atlas Nordelta",
+    "ciudad": "Tigre",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada",
+    "horarios": [
+      "15:10",
+      "20:00",
+      "22:30"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://image.tmdb.org/t/p/w500/ji29dXqoeIsQiVnXAkzI4nzxMjr.jpg",
+    "sinopsis": "Elsa es una directora de publicidad cuya madre muere durante un largo puente del mes de diciembre. Encuentra refugio en el trabajo,aunque es más bien una huida hacia adelante. Trabaja sin parar y,sin darse cuenta,no se concede el tiempo necesario para guardar el duelo por la ausencia materna. Hasta que una crisis de pánico la obliga a detenerse e imponerse un descanso. Su pareja,Bonifacio,es su tabla de salvación en esos momentos de crisis. Elsa decide viajar a la isla de Lanzarote acompañada por su amiga Patricia,que también necesita alejarse de Madrid,mientras que Bonifacio se queda en la ciudad. La historia de estos tres personajes,y algunos más,se narran paralelamente a la del guionista y director de cine Raúl Durán,entremezclando ficción y realidad.",
+    "linkTrailer": ""
+  },
+  {
     "id_funcion": "atlas_196_481_Sábado 30-Mayo-2026_Doblada",
     "titulo": "AMARGA NAVIDAD",
     "director": "No especificado",
@@ -3777,8 +3961,9 @@
     "fecha": "Domingo 31/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
-      "19:10",
-      "21:40"
+      "15:10",
+      "20:00",
+      "22:30"
     ],
     "seccion": "cartelera",
     "poster": "https://image.tmdb.org/t/p/w500/ji29dXqoeIsQiVnXAkzI4nzxMjr.jpg",
@@ -3795,9 +3980,8 @@
     "fecha": "Lunes 1/Junio/2026",
     "idioma": "Doblada",
     "horarios": [
-      "15:10",
-      "20:00",
-      "22:30"
+      "19:10",
+      "21:40"
     ],
     "seccion": "cartelera",
     "poster": "https://image.tmdb.org/t/p/w500/ji29dXqoeIsQiVnXAkzI4nzxMjr.jpg",
@@ -3833,9 +4017,27 @@
     "fecha": "Miércoles 3/Junio/2026",
     "idioma": "Doblada",
     "horarios": [
-      "15:10",
-      "20:00",
-      "22:30"
+      "19:10",
+      "21:40"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://image.tmdb.org/t/p/w500/ji29dXqoeIsQiVnXAkzI4nzxMjr.jpg",
+    "sinopsis": "Elsa es una directora de publicidad cuya madre muere durante un largo puente del mes de diciembre. Encuentra refugio en el trabajo,aunque es más bien una huida hacia adelante. Trabaja sin parar y,sin darse cuenta,no se concede el tiempo necesario para guardar el duelo por la ausencia materna. Hasta que una crisis de pánico la obliga a detenerse e imponerse un descanso. Su pareja,Bonifacio,es su tabla de salvación en esos momentos de crisis. Elsa decide viajar a la isla de Lanzarote acompañada por su amiga Patricia,que también necesita alejarse de Madrid,mientras que Bonifacio se queda en la ciudad. La historia de estos tres personajes,y algunos más,se narran paralelamente a la del guionista y director de cine Raúl Durán,entremezclando ficción y realidad.",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "atlas_197_481_Viernes 29-Mayo-2026_Doblada",
+    "titulo": "AMARGA NAVIDAD",
+    "director": "No especificado",
+    "duracion": "111",
+    "cine": "Atlas Flores",
+    "ciudad": "CABA",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada",
+    "horarios": [
+      "14:50",
+      "17:20",
+      "19:50"
     ],
     "seccion": "cartelera",
     "poster": "https://image.tmdb.org/t/p/w500/ji29dXqoeIsQiVnXAkzI4nzxMjr.jpg",
@@ -5518,6 +5720,23 @@
     "linkTrailer": "https://www.youtube.com/embed/Y5q_fAffnv4?si=WJAONXXCdYqev7xQ"
   },
   {
+    "id_funcion": "atlas_191_474_Viernes 29-Mayo-2026_Doblada",
+    "titulo": "EL PARTIDO",
+    "director": "No especificado",
+    "duracion": "91",
+    "cine": "Atlas Caballito",
+    "ciudad": "CABA",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada",
+    "horarios": [
+      "18:40"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://image.tmdb.org/t/p/w500/e5PVS1QgYS5DxHZeBWTKdxYMyou.jpg",
+    "sinopsis": "Con una duración de 91 minutos – igual que el partido de 1986 – el largometraje reúne por primera vez a jugadores de ambos equipos para reconstruir no solo el partido,sino los sucesos históricos que se pusieron en marcha siglos antes. Junto a testimonios de sus protagonistas y archivos nunca vistos de entrenadores,árbitros,hinchas,músicos,y políticos,la película logra capturar la belleza del juego y lo absurdo de la guerra. Basada en el libro “El Partido” de Andrés Burgo.",
+    "linkTrailer": ""
+  },
+  {
     "id_funcion": "atlas_191_474_Sábado 30-Mayo-2026_Doblada",
     "titulo": "EL PARTIDO",
     "director": "No especificado",
@@ -5595,7 +5814,24 @@
     "fecha": "Miércoles 3/Junio/2026",
     "idioma": "Doblada",
     "horarios": [
-      "18:20"
+      "18:40"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://image.tmdb.org/t/p/w500/e5PVS1QgYS5DxHZeBWTKdxYMyou.jpg",
+    "sinopsis": "Con una duración de 91 minutos – igual que el partido de 1986 – el largometraje reúne por primera vez a jugadores de ambos equipos para reconstruir no solo el partido,sino los sucesos históricos que se pusieron en marcha siglos antes. Junto a testimonios de sus protagonistas y archivos nunca vistos de entrenadores,árbitros,hinchas,músicos,y políticos,la película logra capturar la belleza del juego y lo absurdo de la guerra. Basada en el libro “El Partido” de Andrés Burgo.",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "atlas_196_474_Viernes 29-Mayo-2026_Doblada",
+    "titulo": "EL PARTIDO",
+    "director": "No especificado",
+    "duracion": "91",
+    "cine": "Atlas Nordelta",
+    "ciudad": "Tigre",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada",
+    "horarios": [
+      "15:20"
     ],
     "seccion": "cartelera",
     "poster": "https://image.tmdb.org/t/p/w500/e5PVS1QgYS5DxHZeBWTKdxYMyou.jpg",
@@ -5629,7 +5865,7 @@
     "fecha": "Domingo 31/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
-      "14:30"
+      "15:20"
     ],
     "seccion": "cartelera",
     "poster": "https://image.tmdb.org/t/p/w500/e5PVS1QgYS5DxHZeBWTKdxYMyou.jpg",
@@ -6799,6 +7035,24 @@
     "linkTrailer": "https://www.youtube.com/embed/dYTJdb2t7BY?si=F6ycCB41UZd92a61"
   },
   {
+    "id_funcion": "atlas_191_400_Viernes 29-Mayo-2026_Doblada",
+    "titulo": "SUPER MARIO GALAXY: LA PELÍCULA",
+    "director": "No especificado",
+    "duracion": "100",
+    "cine": "Atlas Caballito",
+    "ciudad": "CABA",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada",
+    "horarios": [
+      "12:20",
+      "14:30"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://www.atlascines.com/images/posters/200_400.jpg",
+    "sinopsis": "Luego de vencer a Bowser y salvar Brooklyn,Mario y amigos enfrentan una nueva amenaza: Wario,con Bowser Jr.,conspira para dominar el mundo. Deben aliarse con Yoshi para detener a este dúo malvado.",
+    "linkTrailer": ""
+  },
+  {
     "id_funcion": "atlas_191_400_Sábado 30-Mayo-2026_Doblada",
     "titulo": "SUPER MARIO GALAXY: LA PELÍCULA",
     "director": "No especificado",
@@ -6880,8 +7134,26 @@
     "fecha": "Miércoles 3/Junio/2026",
     "idioma": "Doblada",
     "horarios": [
-      "12:30",
-      "14:50"
+      "12:20",
+      "14:30"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://www.atlascines.com/images/posters/200_400.jpg",
+    "sinopsis": "Luego de vencer a Bowser y salvar Brooklyn,Mario y amigos enfrentan una nueva amenaza: Wario,con Bowser Jr.,conspira para dominar el mundo. Deben aliarse con Yoshi para detener a este dúo malvado.",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "atlas_192_400_Viernes 29-Mayo-2026_Doblada",
+    "titulo": "SUPER MARIO GALAXY: LA PELÍCULA",
+    "director": "No especificado",
+    "duracion": "100",
+    "cine": "Atlas Catan",
+    "ciudad": "CABA",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada",
+    "horarios": [
+      "14:30",
+      "16:50"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_400.jpg",
@@ -6916,8 +7188,8 @@
     "fecha": "Domingo 31/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
-      "14:00",
-      "16:20"
+      "14:30",
+      "16:50"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_400.jpg",
@@ -6934,8 +7206,8 @@
     "fecha": "Lunes 1/Junio/2026",
     "idioma": "Doblada",
     "horarios": [
-      "14:30",
-      "16:50"
+      "14:00",
+      "16:20"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_400.jpg",
@@ -7005,7 +7277,7 @@
     "fecha": "Domingo 31/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
-      "14:50"
+      "15:40"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_400.jpg",
@@ -7022,7 +7294,7 @@
     "fecha": "Lunes 1/Junio/2026",
     "idioma": "Doblada",
     "horarios": [
-      "15:40"
+      "14:50"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_400.jpg",
@@ -7057,6 +7329,24 @@
     "idioma": "Doblada",
     "horarios": [
       "15:40"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://www.atlascines.com/images/posters/200_400.jpg",
+    "sinopsis": "Luego de vencer a Bowser y salvar Brooklyn,Mario y amigos enfrentan una nueva amenaza: Wario,con Bowser Jr.,conspira para dominar el mundo. Deben aliarse con Yoshi para detener a este dúo malvado.",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "atlas_197_400_Viernes 29-Mayo-2026_Doblada",
+    "titulo": "SUPER MARIO GALAXY: LA PELÍCULA",
+    "director": "No especificado",
+    "duracion": "100",
+    "cine": "Atlas Flores",
+    "ciudad": "CABA",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada",
+    "horarios": [
+      "14:00",
+      "15:20"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_400.jpg",
@@ -7154,6 +7444,23 @@
     "linkTrailer": ""
   },
   {
+    "id_funcion": "atlas_198_400_Viernes 29-Mayo-2026_Doblada",
+    "titulo": "SUPER MARIO GALAXY: LA PELÍCULA",
+    "director": "No especificado",
+    "duracion": "100",
+    "cine": "Atlas Liniers",
+    "ciudad": "CABA",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada",
+    "horarios": [
+      "14:40"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://www.atlascines.com/images/posters/200_400.jpg",
+    "sinopsis": "Luego de vencer a Bowser y salvar Brooklyn,Mario y amigos enfrentan una nueva amenaza: Wario,con Bowser Jr.,conspira para dominar el mundo. Deben aliarse con Yoshi para detener a este dúo malvado.",
+    "linkTrailer": ""
+  },
+  {
     "id_funcion": "atlas_198_400_Sábado 30-Mayo-2026_Doblada",
     "titulo": "SUPER MARIO GALAXY: LA PELÍCULA",
     "director": "No especificado",
@@ -7231,7 +7538,7 @@
     "fecha": "Miércoles 3/Junio/2026",
     "idioma": "Doblada",
     "horarios": [
-      "15:10"
+      "14:40"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_400.jpg",
@@ -8953,6 +9260,43 @@
     "linkTrailer": ""
   },
   {
+    "id_funcion": "atlas_191_441_Viernes 29-Mayo-2026_Subtitulada",
+    "titulo": "MICHAEL",
+    "director": "No especificado",
+    "duracion": "127",
+    "cine": "Atlas Caballito",
+    "ciudad": "CABA",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "12:20",
+      "17:20",
+      "20:00",
+      "22:40"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://www.atlascines.com/images/posters/200_441.jpg",
+    "sinopsis": "Muestra el viaje de Michael Jackson más allá de la música,desde el descubrimiento de su extraordinario talento como líder de los Jackson Five hasta convertirse en una visionaria estrella cuya ambición creativa despertó un incansable afán por consagrarse como el mayor icono de la industria del entretenimiento.",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "atlas_191_441_Viernes 29-Mayo-2026_Doblada",
+    "titulo": "MICHAEL",
+    "director": "No especificado",
+    "duracion": "127",
+    "cine": "Atlas Caballito",
+    "ciudad": "CABA",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada",
+    "horarios": [
+      "14:40"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://www.atlascines.com/images/posters/200_441.jpg",
+    "sinopsis": "Muestra el viaje de Michael Jackson más allá de la música,desde el descubrimiento de su extraordinario talento como líder de los Jackson Five hasta convertirse en una visionaria estrella cuya ambición creativa despertó un incansable afán por consagrarse como el mayor icono de la industria del entretenimiento.",
+    "linkTrailer": ""
+  },
+  {
     "id_funcion": "atlas_191_441_Sábado 30-Mayo-2026_Subtitulada",
     "titulo": "MICHAEL",
     "director": "No especificado",
@@ -9112,6 +9456,7 @@
     "horarios": [
       "12:20",
       "17:20",
+      "20:00",
       "22:40"
     ],
     "seccion": "cartelera",
@@ -9130,6 +9475,24 @@
     "idioma": "Doblada",
     "horarios": [
       "14:40"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://www.atlascines.com/images/posters/200_441.jpg",
+    "sinopsis": "Muestra el viaje de Michael Jackson más allá de la música,desde el descubrimiento de su extraordinario talento como líder de los Jackson Five hasta convertirse en una visionaria estrella cuya ambición creativa despertó un incansable afán por consagrarse como el mayor icono de la industria del entretenimiento.",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "atlas_192_441_Viernes 29-Mayo-2026_Doblada",
+    "titulo": "MICHAEL",
+    "director": "No especificado",
+    "duracion": "127",
+    "cine": "Atlas Catan",
+    "ciudad": "CABA",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada",
+    "horarios": [
+      "19:00",
+      "21:40"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_441.jpg",
@@ -9164,8 +9527,8 @@
     "fecha": "Domingo 31/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
-      "18:30",
-      "21:10"
+      "19:00",
+      "21:40"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_441.jpg",
@@ -9182,8 +9545,8 @@
     "fecha": "Lunes 1/Junio/2026",
     "idioma": "Doblada",
     "horarios": [
-      "19:00",
-      "21:40"
+      "18:30",
+      "21:10"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_441.jpg",
@@ -9200,8 +9563,8 @@
     "fecha": "Martes 2/Junio/2026",
     "idioma": "Doblada",
     "horarios": [
-      "19:00",
-      "21:40"
+      "18:30",
+      "21:10"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_441.jpg",
@@ -9227,6 +9590,24 @@
     "linkTrailer": ""
   },
   {
+    "id_funcion": "atlas_196_441_Viernes 29-Mayo-2026_Subtitulada",
+    "titulo": "MICHAEL",
+    "director": "No especificado",
+    "duracion": "127",
+    "cine": "Atlas Nordelta",
+    "ciudad": "Tigre",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "16:40",
+      "19:20"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://www.atlascines.com/images/posters/200_441.jpg",
+    "sinopsis": "Muestra el viaje de Michael Jackson más allá de la música,desde el descubrimiento de su extraordinario talento como líder de los Jackson Five hasta convertirse en una visionaria estrella cuya ambición creativa despertó un incansable afán por consagrarse como el mayor icono de la industria del entretenimiento.",
+    "linkTrailer": ""
+  },
+  {
     "id_funcion": "atlas_196_441_Sábado 30-Mayo-2026_Subtitulada",
     "titulo": "MICHAEL",
     "director": "No especificado",
@@ -9237,8 +9618,7 @@
     "idioma": "Subtitulada",
     "horarios": [
       "16:40",
-      "19:20",
-      "22:00"
+      "19:20"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_441.jpg",
@@ -9255,9 +9635,9 @@
     "fecha": "Domingo 31/Mayo/2026",
     "idioma": "Subtitulada",
     "horarios": [
-      "15:50",
-      "18:30",
-      "21:10"
+      "16:40",
+      "19:20",
+      "22:00"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_441.jpg",
@@ -9275,8 +9655,7 @@
     "idioma": "Subtitulada",
     "horarios": [
       "16:40",
-      "19:20",
-      "22:00"
+      "19:20"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_441.jpg",
@@ -9312,8 +9691,28 @@
     "fecha": "Miércoles 3/Junio/2026",
     "idioma": "Subtitulada",
     "horarios": [
-      "16:40",
-      "21:50"
+      "15:50",
+      "18:30",
+      "21:10"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://www.atlascines.com/images/posters/200_441.jpg",
+    "sinopsis": "Muestra el viaje de Michael Jackson más allá de la música,desde el descubrimiento de su extraordinario talento como líder de los Jackson Five hasta convertirse en una visionaria estrella cuya ambición creativa despertó un incansable afán por consagrarse como el mayor icono de la industria del entretenimiento.",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "atlas_197_441_Viernes 29-Mayo-2026_Doblada",
+    "titulo": "MICHAEL",
+    "director": "No especificado",
+    "duracion": "127",
+    "cine": "Atlas Flores",
+    "ciudad": "CABA",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada",
+    "horarios": [
+      "17:20",
+      "19:50",
+      "22:30"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_441.jpg",
@@ -9409,6 +9808,25 @@
       "17:20",
       "19:50",
       "22:30"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://www.atlascines.com/images/posters/200_441.jpg",
+    "sinopsis": "Muestra el viaje de Michael Jackson más allá de la música,desde el descubrimiento de su extraordinario talento como líder de los Jackson Five hasta convertirse en una visionaria estrella cuya ambición creativa despertó un incansable afán por consagrarse como el mayor icono de la industria del entretenimiento.",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "atlas_198_441_Viernes 29-Mayo-2026_Doblada",
+    "titulo": "MICHAEL",
+    "director": "No especificado",
+    "duracion": "127",
+    "cine": "Atlas Liniers",
+    "ciudad": "CABA",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada",
+    "horarios": [
+      "15:10",
+      "18:50",
+      "21:30"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_441.jpg",
@@ -11317,6 +11735,27 @@
     "linkTrailer": ""
   },
   {
+    "id_funcion": "atlas_191_446_Viernes 29-Mayo-2026_Subtitulada",
+    "titulo": "EL DIABLO VISTE A LA MODA 2",
+    "director": "No especificado",
+    "duracion": "120",
+    "cine": "Atlas Caballito",
+    "ciudad": "CABA",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "12:30",
+      "15:00",
+      "17:30",
+      "20:00",
+      "22:30"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://www.atlascines.com/images/posters/200_446.jpg",
+    "sinopsis": "Sigue la lucha de Miranda Priestly contra Emily Charlton,su ex asistente convertida en ejecutiva rival,mientras compiten por los ingresos por publicidad en medio de la decadencia de los medios impresos y Miranda se acerca a la jubilación.",
+    "linkTrailer": ""
+  },
+  {
     "id_funcion": "atlas_191_446_Sábado 30-Mayo-2026_Subtitulada",
     "titulo": "EL DIABLO VISTE A LA MODA 2",
     "director": "No especificado",
@@ -11410,9 +11849,28 @@
     "fecha": "Miércoles 3/Junio/2026",
     "idioma": "Subtitulada",
     "horarios": [
-      "12:40",
+      "12:30",
+      "15:00",
+      "17:30",
+      "20:00",
+      "22:30"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://www.atlascines.com/images/posters/200_446.jpg",
+    "sinopsis": "Sigue la lucha de Miranda Priestly contra Emily Charlton,su ex asistente convertida en ejecutiva rival,mientras compiten por los ingresos por publicidad en medio de la decadencia de los medios impresos y Miranda se acerca a la jubilación.",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "atlas_192_446_Viernes 29-Mayo-2026_Doblada",
+    "titulo": "EL DIABLO VISTE A LA MODA 2",
+    "director": "No especificado",
+    "duracion": "120",
+    "cine": "Atlas Catan",
+    "ciudad": "CABA",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada",
+    "horarios": [
       "15:20",
-      "18:00",
       "20:00"
     ],
     "seccion": "cartelera",
@@ -11448,8 +11906,8 @@
     "fecha": "Domingo 31/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
-      "14:50",
-      "19:30"
+      "15:20",
+      "20:00"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_446.jpg",
@@ -11504,6 +11962,26 @@
     "horarios": [
       "15:20",
       "20:00"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://www.atlascines.com/images/posters/200_446.jpg",
+    "sinopsis": "Sigue la lucha de Miranda Priestly contra Emily Charlton,su ex asistente convertida en ejecutiva rival,mientras compiten por los ingresos por publicidad en medio de la decadencia de los medios impresos y Miranda se acerca a la jubilación.",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "atlas_194_446_Viernes 29-Mayo-2026_Subtitulada",
+    "titulo": "EL DIABLO VISTE A LA MODA 2",
+    "director": "No especificado",
+    "duracion": "120",
+    "cine": "Atlas Alcorta",
+    "ciudad": "CABA",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "14:10",
+      "16:50",
+      "19:20",
+      "21:50"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_446.jpg",
@@ -11591,6 +12069,24 @@
     "linkTrailer": ""
   },
   {
+    "id_funcion": "atlas_195_446_Viernes 29-Mayo-2026_Subtitulada",
+    "titulo": "EL DIABLO VISTE A LA MODA 2",
+    "director": "No especificado",
+    "duracion": "120",
+    "cine": "Atlas Patio Bullrich",
+    "ciudad": "CABA",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "16:20",
+      "18:50"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://www.atlascines.com/images/posters/200_446.jpg",
+    "sinopsis": "Sigue la lucha de Miranda Priestly contra Emily Charlton,su ex asistente convertida en ejecutiva rival,mientras compiten por los ingresos por publicidad en medio de la decadencia de los medios impresos y Miranda se acerca a la jubilación.",
+    "linkTrailer": ""
+  },
+  {
     "id_funcion": "atlas_195_446_Sábado 30-Mayo-2026_Subtitulada",
     "titulo": "EL DIABLO VISTE A LA MODA 2",
     "director": "No especificado",
@@ -11618,8 +12114,8 @@
     "fecha": "Domingo 31/Mayo/2026",
     "idioma": "Subtitulada",
     "horarios": [
-      "15:20",
-      "17:50"
+      "16:20",
+      "18:50"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_446.jpg",
@@ -11636,8 +12132,8 @@
     "fecha": "Lunes 1/Junio/2026",
     "idioma": "Subtitulada",
     "horarios": [
-      "16:20",
-      "18:50"
+      "15:20",
+      "17:50"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_446.jpg",
@@ -11681,6 +12177,25 @@
     "linkTrailer": ""
   },
   {
+    "id_funcion": "atlas_196_446_Viernes 29-Mayo-2026_Subtitulada",
+    "titulo": "EL DIABLO VISTE A LA MODA 2",
+    "director": "No especificado",
+    "duracion": "120",
+    "cine": "Atlas Nordelta",
+    "ciudad": "Tigre",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "17:20",
+      "19:50",
+      "22:20"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://www.atlascines.com/images/posters/200_446.jpg",
+    "sinopsis": "Sigue la lucha de Miranda Priestly contra Emily Charlton,su ex asistente convertida en ejecutiva rival,mientras compiten por los ingresos por publicidad en medio de la decadencia de los medios impresos y Miranda se acerca a la jubilación.",
+    "linkTrailer": ""
+  },
+  {
     "id_funcion": "atlas_196_446_Sábado 30-Mayo-2026_Subtitulada",
     "titulo": "EL DIABLO VISTE A LA MODA 2",
     "director": "No especificado",
@@ -11709,9 +12224,9 @@
     "fecha": "Domingo 31/Mayo/2026",
     "idioma": "Subtitulada",
     "horarios": [
-      "16:30",
-      "19:00",
-      "21:30"
+      "17:20",
+      "19:50",
+      "22:20"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_446.jpg",
@@ -11728,9 +12243,9 @@
     "fecha": "Lunes 1/Junio/2026",
     "idioma": "Subtitulada",
     "horarios": [
-      "17:20",
-      "19:50",
-      "22:20"
+      "16:30",
+      "19:00",
+      "21:30"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_446.jpg",
@@ -11747,9 +12262,9 @@
     "fecha": "Martes 2/Junio/2026",
     "idioma": "Subtitulada",
     "horarios": [
-      "17:20",
-      "19:50",
-      "22:20"
+      "16:30",
+      "19:00",
+      "21:30"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_446.jpg",
@@ -11767,7 +12282,27 @@
     "idioma": "Subtitulada",
     "horarios": [
       "17:20",
-      "19:50"
+      "19:50",
+      "22:20"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://www.atlascines.com/images/posters/200_446.jpg",
+    "sinopsis": "Sigue la lucha de Miranda Priestly contra Emily Charlton,su ex asistente convertida en ejecutiva rival,mientras compiten por los ingresos por publicidad en medio de la decadencia de los medios impresos y Miranda se acerca a la jubilación.",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "atlas_197_446_Viernes 29-Mayo-2026_Doblada",
+    "titulo": "EL DIABLO VISTE A LA MODA 2",
+    "director": "No especificado",
+    "duracion": "120",
+    "cine": "Atlas Flores",
+    "ciudad": "CABA",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada",
+    "horarios": [
+      "14:30",
+      "16:20",
+      "19:00"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_446.jpg",
@@ -11861,7 +12396,8 @@
     "idioma": "Doblada",
     "horarios": [
       "14:30",
-      "16:20"
+      "16:20",
+      "19:00"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_446.jpg",
@@ -13776,6 +14312,25 @@
     "linkTrailer": ""
   },
   {
+    "id_funcion": "atlas_191_454_Viernes 29-Mayo-2026_Doblada",
+    "titulo": "MORTAL KOMBAT II",
+    "director": "No especificado",
+    "duracion": "116",
+    "cine": "Atlas Caballito",
+    "ciudad": "CABA",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada",
+    "horarios": [
+      "13:20",
+      "16:10",
+      "20:40"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://www.atlascines.com/images/posters/200_454.jpg",
+    "sinopsis": "Esta vez,los campeones favoritos de los fans —ahora acompañados por el mismísimo Johnny Cage— se enfrentan entre sí en la batalla definitiva,sangrienta y sin reglas,para derrotar el oscuro dominio de Shao Kahn,que amenaza con destruir el Reino de la Tierra y a sus defensores.",
+    "linkTrailer": ""
+  },
+  {
     "id_funcion": "atlas_191_454_Sábado 30-Mayo-2026_Doblada",
     "titulo": "MORTAL KOMBAT II",
     "director": "No especificado",
@@ -13786,6 +14341,7 @@
     "idioma": "Doblada",
     "horarios": [
       "13:20",
+      "16:10",
       "20:40"
     ],
     "seccion": "cartelera",
@@ -13804,7 +14360,6 @@
     "idioma": "Doblada",
     "horarios": [
       "13:20",
-      "16:10",
       "20:40"
     ],
     "seccion": "cartelera",
@@ -13861,7 +14416,45 @@
     "idioma": "Doblada",
     "horarios": [
       "13:20",
-      "15:50"
+      "16:10",
+      "20:40"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://www.atlascines.com/images/posters/200_454.jpg",
+    "sinopsis": "Esta vez,los campeones favoritos de los fans —ahora acompañados por el mismísimo Johnny Cage— se enfrentan entre sí en la batalla definitiva,sangrienta y sin reglas,para derrotar el oscuro dominio de Shao Kahn,que amenaza con destruir el Reino de la Tierra y a sus defensores.",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "atlas_192_454_Viernes 29-Mayo-2026_Doblada",
+    "titulo": "MORTAL KOMBAT II",
+    "director": "No especificado",
+    "duracion": "116",
+    "cine": "Atlas Catan",
+    "ciudad": "CABA",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada",
+    "horarios": [
+      "14:40",
+      "17:10",
+      "19:40"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://www.atlascines.com/images/posters/200_454.jpg",
+    "sinopsis": "Esta vez,los campeones favoritos de los fans —ahora acompañados por el mismísimo Johnny Cage— se enfrentan entre sí en la batalla definitiva,sangrienta y sin reglas,para derrotar el oscuro dominio de Shao Kahn,que amenaza con destruir el Reino de la Tierra y a sus defensores.",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "atlas_192_454_Viernes 29-Mayo-2026_Doblada",
+    "titulo": "MORTAL KOMBAT II",
+    "director": "No especificado",
+    "duracion": "116",
+    "cine": "Atlas Catan",
+    "ciudad": "CABA",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada",
+    "horarios": [
+      "14:00",
+      "21:45"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_454.jpg",
@@ -13951,9 +14544,9 @@
     "fecha": "Lunes 1/Junio/2026",
     "idioma": "Doblada",
     "horarios": [
-      "14:40",
-      "17:10",
-      "19:40"
+      "14:10",
+      "16:40",
+      "19:10"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_454.jpg",
@@ -13970,8 +14563,7 @@
     "fecha": "Lunes 1/Junio/2026",
     "idioma": "Doblada",
     "horarios": [
-      "14:00",
-      "21:45"
+      "21:15"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_454.jpg",
@@ -14046,6 +14638,23 @@
     "horarios": [
       "14:00",
       "21:45"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://www.atlascines.com/images/posters/200_454.jpg",
+    "sinopsis": "Esta vez,los campeones favoritos de los fans —ahora acompañados por el mismísimo Johnny Cage— se enfrentan entre sí en la batalla definitiva,sangrienta y sin reglas,para derrotar el oscuro dominio de Shao Kahn,que amenaza con destruir el Reino de la Tierra y a sus defensores.",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "atlas_197_454_Viernes 29-Mayo-2026_Doblada",
+    "titulo": "MORTAL KOMBAT II",
+    "director": "No especificado",
+    "duracion": "116",
+    "cine": "Atlas Flores",
+    "ciudad": "CABA",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada",
+    "horarios": [
+      "14:50"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_454.jpg",
@@ -14131,6 +14740,23 @@
     "idioma": "Doblada",
     "horarios": [
       "14:50"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://www.atlascines.com/images/posters/200_454.jpg",
+    "sinopsis": "Esta vez,los campeones favoritos de los fans —ahora acompañados por el mismísimo Johnny Cage— se enfrentan entre sí en la batalla definitiva,sangrienta y sin reglas,para derrotar el oscuro dominio de Shao Kahn,que amenaza con destruir el Reino de la Tierra y a sus defensores.",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "atlas_198_454_Viernes 29-Mayo-2026_Doblada",
+    "titulo": "MORTAL KOMBAT II",
+    "director": "No especificado",
+    "duracion": "116",
+    "cine": "Atlas Liniers",
+    "ciudad": "CABA",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada",
+    "horarios": [
+      "16:20"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_454.jpg",
@@ -15677,6 +16303,78 @@
     "linkTrailer": ""
   },
   {
+    "id_funcion": "atlas_191_459_Viernes 29-Mayo-2026_Doblada",
+    "titulo": "STAR WARS: MANDALORIAN Y GROGU",
+    "director": "No especificado",
+    "duracion": "132",
+    "cine": "Atlas Caballito",
+    "ciudad": "CABA",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada",
+    "horarios": [
+      "16:40"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://www.atlascines.com/images/posters/200_459.jpg",
+    "sinopsis": "El cruel Imperio ha caído,pero los señores de la guerra imperiales siguen dispersos por toda la Galaxia. La incipiente Nueva República trabaja para proteger las conquistas de la Rebelión con la ayuda del legendario cazarrecompensas mandaloriano,Din Djarin (Pedro Pascal),y su joven aprendiz,Grogu.\n\nSTAR WARS: THE MANDALORIAN AND GROGU contiene\nvarias escenas con luces intermitentes que pueden afectar a personas susceptibles a la epilepsia fotosensible o a padecer otras fotosensibilidades.",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "atlas_191_459_Viernes 29-Mayo-2026_Subtitulada",
+    "titulo": "STAR WARS: MANDALORIAN Y GROGU",
+    "director": "No especificado",
+    "duracion": "132",
+    "cine": "Atlas Caballito",
+    "ciudad": "CABA",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "19:30",
+      "22:20"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://www.atlascines.com/images/posters/200_459.jpg",
+    "sinopsis": "El cruel Imperio ha caído,pero los señores de la guerra imperiales siguen dispersos por toda la Galaxia. La incipiente Nueva República trabaja para proteger las conquistas de la Rebelión con la ayuda del legendario cazarrecompensas mandaloriano,Din Djarin (Pedro Pascal),y su joven aprendiz,Grogu.\n\nSTAR WARS: THE MANDALORIAN AND GROGU contiene\nvarias escenas con luces intermitentes que pueden afectar a personas susceptibles a la epilepsia fotosensible o a padecer otras fotosensibilidades.",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "atlas_191_459_Viernes 29-Mayo-2026_Doblada",
+    "titulo": "STAR WARS: MANDALORIAN Y GROGU",
+    "director": "No especificado",
+    "duracion": "132",
+    "cine": "Atlas Caballito",
+    "ciudad": "CABA",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada",
+    "horarios": [
+      "13:50"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://www.atlascines.com/images/posters/200_459.jpg",
+    "sinopsis": "El cruel Imperio ha caído,pero los señores de la guerra imperiales siguen dispersos por toda la Galaxia. La incipiente Nueva República trabaja para proteger las conquistas de la Rebelión con la ayuda del legendario cazarrecompensas mandaloriano,Din Djarin (Pedro Pascal),y su joven aprendiz,Grogu.\n\nSTAR WARS: THE MANDALORIAN AND GROGU contiene\nvarias escenas con luces intermitentes que pueden afectar a personas susceptibles a la epilepsia fotosensible o a padecer otras fotosensibilidades.",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "atlas_191_459_Viernes 29-Mayo-2026_Doblada",
+    "titulo": "STAR WARS: MANDALORIAN Y GROGU",
+    "director": "No especificado",
+    "duracion": "132",
+    "cine": "Atlas Caballito",
+    "ciudad": "CABA",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada",
+    "horarios": [
+      "13:10",
+      "16:00",
+      "18:50",
+      "21:40"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://www.atlascines.com/images/posters/200_459.jpg",
+    "sinopsis": "El cruel Imperio ha caído,pero los señores de la guerra imperiales siguen dispersos por toda la Galaxia. La incipiente Nueva República trabaja para proteger las conquistas de la Rebelión con la ayuda del legendario cazarrecompensas mandaloriano,Din Djarin (Pedro Pascal),y su joven aprendiz,Grogu.\n\nSTAR WARS: THE MANDALORIAN AND GROGU contiene\nvarias escenas con luces intermitentes que pueden afectar a personas susceptibles a la epilepsia fotosensible o a padecer otras fotosensibilidades.",
+    "linkTrailer": ""
+  },
+  {
     "id_funcion": "atlas_191_459_Sábado 30-Mayo-2026_Doblada",
     "titulo": "STAR WARS: MANDALORIAN Y GROGU",
     "director": "No especificado",
@@ -16037,6 +16735,42 @@
     "linkTrailer": ""
   },
   {
+    "id_funcion": "atlas_192_459_Viernes 29-Mayo-2026_Doblada",
+    "titulo": "STAR WARS: MANDALORIAN Y GROGU",
+    "director": "No especificado",
+    "duracion": "132",
+    "cine": "Atlas Catan",
+    "ciudad": "CABA",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada",
+    "horarios": [
+      "15:30",
+      "20:50"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://www.atlascines.com/images/posters/200_459.jpg",
+    "sinopsis": "El cruel Imperio ha caído,pero los señores de la guerra imperiales siguen dispersos por toda la Galaxia. La incipiente Nueva República trabaja para proteger las conquistas de la Rebelión con la ayuda del legendario cazarrecompensas mandaloriano,Din Djarin (Pedro Pascal),y su joven aprendiz,Grogu.\n\nSTAR WARS: THE MANDALORIAN AND GROGU contiene\nvarias escenas con luces intermitentes que pueden afectar a personas susceptibles a la epilepsia fotosensible o a padecer otras fotosensibilidades.",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "atlas_192_459_Viernes 29-Mayo-2026_Doblada",
+    "titulo": "STAR WARS: MANDALORIAN Y GROGU",
+    "director": "No especificado",
+    "duracion": "132",
+    "cine": "Atlas Catan",
+    "ciudad": "CABA",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada",
+    "horarios": [
+      "16:15",
+      "19:00"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://www.atlascines.com/images/posters/200_459.jpg",
+    "sinopsis": "El cruel Imperio ha caído,pero los señores de la guerra imperiales siguen dispersos por toda la Galaxia. La incipiente Nueva República trabaja para proteger las conquistas de la Rebelión con la ayuda del legendario cazarrecompensas mandaloriano,Din Djarin (Pedro Pascal),y su joven aprendiz,Grogu.\n\nSTAR WARS: THE MANDALORIAN AND GROGU contiene\nvarias escenas con luces intermitentes que pueden afectar a personas susceptibles a la epilepsia fotosensible o a padecer otras fotosensibilidades.",
+    "linkTrailer": ""
+  },
+  {
     "id_funcion": "atlas_192_459_Sábado 30-Mayo-2026_Doblada",
     "titulo": "STAR WARS: MANDALORIAN Y GROGU",
     "director": "No especificado",
@@ -16080,6 +16814,42 @@
     "cine": "Atlas Catan",
     "ciudad": "CABA",
     "fecha": "Domingo 31/Mayo/2026",
+    "idioma": "Doblada",
+    "horarios": [
+      "15:30",
+      "20:50"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://www.atlascines.com/images/posters/200_459.jpg",
+    "sinopsis": "El cruel Imperio ha caído,pero los señores de la guerra imperiales siguen dispersos por toda la Galaxia. La incipiente Nueva República trabaja para proteger las conquistas de la Rebelión con la ayuda del legendario cazarrecompensas mandaloriano,Din Djarin (Pedro Pascal),y su joven aprendiz,Grogu.\n\nSTAR WARS: THE MANDALORIAN AND GROGU contiene\nvarias escenas con luces intermitentes que pueden afectar a personas susceptibles a la epilepsia fotosensible o a padecer otras fotosensibilidades.",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "atlas_192_459_Domingo 31-Mayo-2026_Doblada",
+    "titulo": "STAR WARS: MANDALORIAN Y GROGU",
+    "director": "No especificado",
+    "duracion": "132",
+    "cine": "Atlas Catan",
+    "ciudad": "CABA",
+    "fecha": "Domingo 31/Mayo/2026",
+    "idioma": "Doblada",
+    "horarios": [
+      "16:15",
+      "19:00"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://www.atlascines.com/images/posters/200_459.jpg",
+    "sinopsis": "El cruel Imperio ha caído,pero los señores de la guerra imperiales siguen dispersos por toda la Galaxia. La incipiente Nueva República trabaja para proteger las conquistas de la Rebelión con la ayuda del legendario cazarrecompensas mandaloriano,Din Djarin (Pedro Pascal),y su joven aprendiz,Grogu.\n\nSTAR WARS: THE MANDALORIAN AND GROGU contiene\nvarias escenas con luces intermitentes que pueden afectar a personas susceptibles a la epilepsia fotosensible o a padecer otras fotosensibilidades.",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "atlas_192_459_Lunes 1-Junio-2026_Doblada",
+    "titulo": "STAR WARS: MANDALORIAN Y GROGU",
+    "director": "No especificado",
+    "duracion": "132",
+    "cine": "Atlas Catan",
+    "ciudad": "CABA",
+    "fecha": "Lunes 1/Junio/2026",
     "idioma": "Doblada",
     "horarios": [
       "15:00",
@@ -16091,13 +16861,13 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "atlas_192_459_Domingo 31-Mayo-2026_Doblada",
+    "id_funcion": "atlas_192_459_Lunes 1-Junio-2026_Doblada",
     "titulo": "STAR WARS: MANDALORIAN Y GROGU",
     "director": "No especificado",
     "duracion": "132",
     "cine": "Atlas Catan",
     "ciudad": "CABA",
-    "fecha": "Domingo 31/Mayo/2026",
+    "fecha": "Lunes 1/Junio/2026",
     "idioma": "Doblada",
     "horarios": [
       "15:45",
@@ -16109,35 +16879,17 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "atlas_192_459_Lunes 1-Junio-2026_Doblada",
+    "id_funcion": "atlas_192_459_Martes 2-Junio-2026_Doblada",
     "titulo": "STAR WARS: MANDALORIAN Y GROGU",
     "director": "No especificado",
     "duracion": "132",
     "cine": "Atlas Catan",
     "ciudad": "CABA",
-    "fecha": "Lunes 1/Junio/2026",
+    "fecha": "Martes 2/Junio/2026",
     "idioma": "Doblada",
     "horarios": [
-      "15:30",
-      "20:50"
-    ],
-    "seccion": "cartelera",
-    "poster": "https://www.atlascines.com/images/posters/200_459.jpg",
-    "sinopsis": "El cruel Imperio ha caído,pero los señores de la guerra imperiales siguen dispersos por toda la Galaxia. La incipiente Nueva República trabaja para proteger las conquistas de la Rebelión con la ayuda del legendario cazarrecompensas mandaloriano,Din Djarin (Pedro Pascal),y su joven aprendiz,Grogu.\n\nSTAR WARS: THE MANDALORIAN AND GROGU contiene\nvarias escenas con luces intermitentes que pueden afectar a personas susceptibles a la epilepsia fotosensible o a padecer otras fotosensibilidades.",
-    "linkTrailer": ""
-  },
-  {
-    "id_funcion": "atlas_192_459_Lunes 1-Junio-2026_Doblada",
-    "titulo": "STAR WARS: MANDALORIAN Y GROGU",
-    "director": "No especificado",
-    "duracion": "132",
-    "cine": "Atlas Catan",
-    "ciudad": "CABA",
-    "fecha": "Lunes 1/Junio/2026",
-    "idioma": "Doblada",
-    "horarios": [
-      "16:15",
-      "19:00"
+      "15:00",
+      "20:20"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_459.jpg",
@@ -16154,26 +16906,8 @@
     "fecha": "Martes 2/Junio/2026",
     "idioma": "Doblada",
     "horarios": [
-      "15:30",
-      "20:50"
-    ],
-    "seccion": "cartelera",
-    "poster": "https://www.atlascines.com/images/posters/200_459.jpg",
-    "sinopsis": "El cruel Imperio ha caído,pero los señores de la guerra imperiales siguen dispersos por toda la Galaxia. La incipiente Nueva República trabaja para proteger las conquistas de la Rebelión con la ayuda del legendario cazarrecompensas mandaloriano,Din Djarin (Pedro Pascal),y su joven aprendiz,Grogu.\n\nSTAR WARS: THE MANDALORIAN AND GROGU contiene\nvarias escenas con luces intermitentes que pueden afectar a personas susceptibles a la epilepsia fotosensible o a padecer otras fotosensibilidades.",
-    "linkTrailer": ""
-  },
-  {
-    "id_funcion": "atlas_192_459_Martes 2-Junio-2026_Doblada",
-    "titulo": "STAR WARS: MANDALORIAN Y GROGU",
-    "director": "No especificado",
-    "duracion": "132",
-    "cine": "Atlas Catan",
-    "ciudad": "CABA",
-    "fecha": "Martes 2/Junio/2026",
-    "idioma": "Doblada",
-    "horarios": [
-      "16:15",
-      "19:00"
+      "15:45",
+      "18:30"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_459.jpg",
@@ -16190,7 +16924,8 @@
     "fecha": "Miércoles 3/Junio/2026",
     "idioma": "Doblada",
     "horarios": [
-      "15:30"
+      "15:30",
+      "20:50"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_459.jpg",
@@ -16209,6 +16944,23 @@
     "horarios": [
       "16:15",
       "19:00"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://www.atlascines.com/images/posters/200_459.jpg",
+    "sinopsis": "El cruel Imperio ha caído,pero los señores de la guerra imperiales siguen dispersos por toda la Galaxia. La incipiente Nueva República trabaja para proteger las conquistas de la Rebelión con la ayuda del legendario cazarrecompensas mandaloriano,Din Djarin (Pedro Pascal),y su joven aprendiz,Grogu.\n\nSTAR WARS: THE MANDALORIAN AND GROGU contiene\nvarias escenas con luces intermitentes que pueden afectar a personas susceptibles a la epilepsia fotosensible o a padecer otras fotosensibilidades.",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "atlas_194_459_Viernes 29-Mayo-2026_Subtitulada",
+    "titulo": "STAR WARS: MANDALORIAN Y GROGU",
+    "director": "No especificado",
+    "duracion": "132",
+    "cine": "Atlas Alcorta",
+    "ciudad": "CABA",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "14:40"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_459.jpg",
@@ -16284,6 +17036,40 @@
     "linkTrailer": ""
   },
   {
+    "id_funcion": "atlas_196_459_Viernes 29-Mayo-2026_Subtitulada",
+    "titulo": "STAR WARS: MANDALORIAN Y GROGU",
+    "director": "No especificado",
+    "duracion": "132",
+    "cine": "Atlas Nordelta",
+    "ciudad": "Tigre",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "22:00"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://www.atlascines.com/images/posters/200_459.jpg",
+    "sinopsis": "El cruel Imperio ha caído,pero los señores de la guerra imperiales siguen dispersos por toda la Galaxia. La incipiente Nueva República trabaja para proteger las conquistas de la Rebelión con la ayuda del legendario cazarrecompensas mandaloriano,Din Djarin (Pedro Pascal),y su joven aprendiz,Grogu.\n\nSTAR WARS: THE MANDALORIAN AND GROGU contiene\nvarias escenas con luces intermitentes que pueden afectar a personas susceptibles a la epilepsia fotosensible o a padecer otras fotosensibilidades.",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "atlas_196_459_Viernes 29-Mayo-2026_Doblada",
+    "titulo": "STAR WARS: MANDALORIAN Y GROGU",
+    "director": "No especificado",
+    "duracion": "132",
+    "cine": "Atlas Nordelta",
+    "ciudad": "Tigre",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada",
+    "horarios": [
+      "15:20"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://www.atlascines.com/images/posters/200_459.jpg",
+    "sinopsis": "El cruel Imperio ha caído,pero los señores de la guerra imperiales siguen dispersos por toda la Galaxia. La incipiente Nueva República trabaja para proteger las conquistas de la Rebelión con la ayuda del legendario cazarrecompensas mandaloriano,Din Djarin (Pedro Pascal),y su joven aprendiz,Grogu.\n\nSTAR WARS: THE MANDALORIAN AND GROGU contiene\nvarias escenas con luces intermitentes que pueden afectar a personas susceptibles a la epilepsia fotosensible o a padecer otras fotosensibilidades.",
+    "linkTrailer": ""
+  },
+  {
     "id_funcion": "atlas_196_459_Sábado 30-Mayo-2026_Doblada",
     "titulo": "STAR WARS: MANDALORIAN Y GROGU",
     "director": "No especificado",
@@ -16318,16 +17104,16 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "atlas_196_459_Domingo 31-Mayo-2026_Doblada",
+    "id_funcion": "atlas_196_459_Domingo 31-Mayo-2026_Subtitulada",
     "titulo": "STAR WARS: MANDALORIAN Y GROGU",
     "director": "No especificado",
     "duracion": "132",
     "cine": "Atlas Nordelta",
     "ciudad": "Tigre",
     "fecha": "Domingo 31/Mayo/2026",
-    "idioma": "Doblada",
+    "idioma": "Subtitulada",
     "horarios": [
-      "15:00"
+      "22:00"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_459.jpg",
@@ -16344,7 +17130,25 @@
     "fecha": "Domingo 31/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
-      "17:50"
+      "15:20"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://www.atlascines.com/images/posters/200_459.jpg",
+    "sinopsis": "El cruel Imperio ha caído,pero los señores de la guerra imperiales siguen dispersos por toda la Galaxia. La incipiente Nueva República trabaja para proteger las conquistas de la Rebelión con la ayuda del legendario cazarrecompensas mandaloriano,Din Djarin (Pedro Pascal),y su joven aprendiz,Grogu.\n\nSTAR WARS: THE MANDALORIAN AND GROGU contiene\nvarias escenas con luces intermitentes que pueden afectar a personas susceptibles a la epilepsia fotosensible o a padecer otras fotosensibilidades.",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "atlas_197_459_Viernes 29-Mayo-2026_Doblada",
+    "titulo": "STAR WARS: MANDALORIAN Y GROGU",
+    "director": "No especificado",
+    "duracion": "132",
+    "cine": "Atlas Flores",
+    "ciudad": "CABA",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada",
+    "horarios": [
+      "17:40",
+      "22:20"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_459.jpg",
@@ -16435,6 +17239,25 @@
     "horarios": [
       "17:40",
       "22:20"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://www.atlascines.com/images/posters/200_459.jpg",
+    "sinopsis": "El cruel Imperio ha caído,pero los señores de la guerra imperiales siguen dispersos por toda la Galaxia. La incipiente Nueva República trabaja para proteger las conquistas de la Rebelión con la ayuda del legendario cazarrecompensas mandaloriano,Din Djarin (Pedro Pascal),y su joven aprendiz,Grogu.\n\nSTAR WARS: THE MANDALORIAN AND GROGU contiene\nvarias escenas con luces intermitentes que pueden afectar a personas susceptibles a la epilepsia fotosensible o a padecer otras fotosensibilidades.",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "atlas_198_459_Viernes 29-Mayo-2026_Doblada",
+    "titulo": "STAR WARS: MANDALORIAN Y GROGU",
+    "director": "No especificado",
+    "duracion": "132",
+    "cine": "Atlas Liniers",
+    "ciudad": "CABA",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada",
+    "horarios": [
+      "15:30",
+      "18:20",
+      "21:10"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_459.jpg",
@@ -16537,6 +17360,23 @@
     "linkTrailer": ""
   },
   {
+    "id_funcion": "atlas_191_462_Viernes 29-Mayo-2026_Subtitulada",
+    "titulo": "HOKUM:LA MALDICION DE LA BRUJA",
+    "director": "No especificado",
+    "duracion": "107",
+    "cine": "Atlas Caballito",
+    "ciudad": "CABA",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "23:10"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://www.atlascines.com/images/posters/200_462.jpg",
+    "sinopsis": "Un escritor de terror visita una posada irlandesa para esparcir las cenizas de sus padres,sin saber que se dice que la propiedad está embrujada.",
+    "linkTrailer": ""
+  },
+  {
     "id_funcion": "atlas_191_462_Sábado 30-Mayo-2026_Subtitulada",
     "titulo": "HOKUM:LA MALDICION DE LA BRUJA",
     "director": "No especificado",
@@ -16614,11 +17454,28 @@
     "fecha": "Miércoles 3/Junio/2026",
     "idioma": "Subtitulada",
     "horarios": [
-      "22:20"
+      "23:10"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_462.jpg",
     "sinopsis": "Un escritor de terror visita una posada irlandesa para esparcir las cenizas de sus padres,sin saber que se dice que la propiedad está embrujada.",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "atlas_191_470_Viernes 29-Mayo-2026_Subtitulada",
+    "titulo": "OBSESIÓN",
+    "director": "No especificado",
+    "duracion": "109",
+    "cine": "Atlas Caballito",
+    "ciudad": "CABA",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "20:30"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://www.atlascines.com/images/posters/200_470.jpg",
+    "sinopsis": "El anhelo romántico desesperado de un chico por su amor platónico de toda la vida desencadena un siniestro hechizo: Niki se vuelve irracionalmente obsesiva hasta convertirse en la sombra de Bear. Una fantasía aparentemente inofensiva que se convertirá en una perturbadora pesadilla. Potente metáfora sobre la cosificación de las relaciones románticas y de los límites a los que estamos dispuestos a llegar movidos por el deseo de ser correspondidos.",
     "linkTrailer": ""
   },
   {
@@ -16649,6 +17506,7 @@
     "fecha": "Domingo 31/Mayo/2026",
     "idioma": "Subtitulada",
     "horarios": [
+      "16:10",
       "20:30"
     ],
     "seccion": "cartelera",
@@ -16708,6 +17566,23 @@
     "linkTrailer": ""
   },
   {
+    "id_funcion": "atlas_192_470_Viernes 29-Mayo-2026_Doblada",
+    "titulo": "OBSESIÓN",
+    "director": "No especificado",
+    "duracion": "109",
+    "cine": "Atlas Catan",
+    "ciudad": "CABA",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada",
+    "horarios": [
+      "18:20"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://www.atlascines.com/images/posters/200_470.jpg",
+    "sinopsis": "El anhelo romántico desesperado de un chico por su amor platónico de toda la vida desencadena un siniestro hechizo: Niki se vuelve irracionalmente obsesiva hasta convertirse en la sombra de Bear. Una fantasía aparentemente inofensiva que se convertirá en una perturbadora pesadilla. Potente metáfora sobre la cosificación de las relaciones románticas y de los límites a los que estamos dispuestos a llegar movidos por el deseo de ser correspondidos.",
+    "linkTrailer": ""
+  },
+  {
     "id_funcion": "atlas_192_470_Sábado 30-Mayo-2026_Doblada",
     "titulo": "OBSESIÓN",
     "director": "No especificado",
@@ -16734,7 +17609,7 @@
     "fecha": "Domingo 31/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
-      "17:50"
+      "18:20"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_470.jpg",
@@ -16751,7 +17626,7 @@
     "fecha": "Lunes 1/Junio/2026",
     "idioma": "Doblada",
     "horarios": [
-      "18:20"
+      "17:50"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_470.jpg",
@@ -18422,6 +19297,23 @@
     "linkTrailer": ""
   },
   {
+    "id_funcion": "atlas_191_475_Viernes 29-Mayo-2026_Doblada",
+    "titulo": "EL PASAJERO DEL DIABLO",
+    "director": "No especificado",
+    "duracion": "94",
+    "cine": "Atlas Caballito",
+    "ciudad": "CABA",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada",
+    "horarios": [
+      "15:50"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://www.atlascines.com/images/posters/200_475.jpg",
+    "sinopsis": "Tras presenciar un terrible accidente en la autopista,una joven pareja pronto se da cuenta de que no salieron ilesos del lugar del siniestro,pues una presencia demoníaca llamada el Pasajero,que no se detendrá hasta atraparlos a ambos,convierte su aventura en la carretera en una pesadilla.",
+    "linkTrailer": ""
+  },
+  {
     "id_funcion": "atlas_191_475_Sábado 30-Mayo-2026_Doblada",
     "titulo": "EL PASAJERO DEL DIABLO",
     "director": "No especificado",
@@ -18507,6 +19399,23 @@
     "linkTrailer": ""
   },
   {
+    "id_funcion": "atlas_192_475_Viernes 29-Mayo-2026_Doblada",
+    "titulo": "EL PASAJERO DEL DIABLO",
+    "director": "No especificado",
+    "duracion": "94",
+    "cine": "Atlas Catan",
+    "ciudad": "CABA",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada",
+    "horarios": [
+      "22:15"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://www.atlascines.com/images/posters/200_475.jpg",
+    "sinopsis": "Tras presenciar un terrible accidente en la autopista,una joven pareja pronto se da cuenta de que no salieron ilesos del lugar del siniestro,pues una presencia demoníaca llamada el Pasajero,que no se detendrá hasta atraparlos a ambos,convierte su aventura en la carretera en una pesadilla.",
+    "linkTrailer": ""
+  },
+  {
     "id_funcion": "atlas_192_475_Sábado 30-Mayo-2026_Doblada",
     "titulo": "EL PASAJERO DEL DIABLO",
     "director": "No especificado",
@@ -18533,7 +19442,7 @@
     "fecha": "Domingo 31/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
-      "21:45"
+      "22:15"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_475.jpg",
@@ -18584,7 +19493,24 @@
     "fecha": "Miércoles 3/Junio/2026",
     "idioma": "Doblada",
     "horarios": [
-      "22:15"
+      "21:45"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://www.atlascines.com/images/posters/200_475.jpg",
+    "sinopsis": "Tras presenciar un terrible accidente en la autopista,una joven pareja pronto se da cuenta de que no salieron ilesos del lugar del siniestro,pues una presencia demoníaca llamada el Pasajero,que no se detendrá hasta atraparlos a ambos,convierte su aventura en la carretera en una pesadilla.",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "atlas_198_475_Viernes 29-Mayo-2026_Doblada",
+    "titulo": "EL PASAJERO DEL DIABLO",
+    "director": "No especificado",
+    "duracion": "94",
+    "cine": "Atlas Liniers",
+    "ciudad": "CABA",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada",
+    "horarios": [
+      "17:50"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_475.jpg",
@@ -19579,6 +20505,45 @@
     "linkTrailer": ""
   },
   {
+    "id_funcion": "atlas_191_479_Viernes 29-Mayo-2026_Subtitulada",
+    "titulo": "BACKROOMS",
+    "director": "No especificado",
+    "duracion": "111",
+    "cine": "Atlas Caballito",
+    "ciudad": "CABA",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "12:50",
+      "16:40",
+      "20:20",
+      "22:50"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://www.atlascines.com/images/posters/200_479.jpg",
+    "sinopsis": "Una extraña puerta aparece en el sótano de una exposición de muebles. Cuando el paciente de una terapeuta desaparece en una dimensión más allá de la realidad,ella deberá adentrarse en lo desconocido para salvarlo.",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "atlas_191_479_Viernes 29-Mayo-2026_Doblada",
+    "titulo": "BACKROOMS",
+    "director": "No especificado",
+    "duracion": "111",
+    "cine": "Atlas Caballito",
+    "ciudad": "CABA",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada",
+    "horarios": [
+      "15:20",
+      "17:50",
+      "23:10"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://www.atlascines.com/images/posters/200_479.jpg",
+    "sinopsis": "Una extraña puerta aparece en el sótano de una exposición de muebles. Cuando el paciente de una terapeuta desaparece en una dimensión más allá de la realidad,ella deberá adentrarse en lo desconocido para salvarlo.",
+    "linkTrailer": ""
+  },
+  {
     "id_funcion": "atlas_191_479_Sábado 30-Mayo-2026_Subtitulada",
     "titulo": "BACKROOMS",
     "director": "No especificado",
@@ -19744,9 +20709,10 @@
     "fecha": "Miércoles 3/Junio/2026",
     "idioma": "Subtitulada",
     "horarios": [
-      "12:20",
-      "19:30",
-      "22:00"
+      "12:50",
+      "16:40",
+      "20:20",
+      "22:50"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_479.jpg",
@@ -19763,8 +20729,29 @@
     "fecha": "Miércoles 3/Junio/2026",
     "idioma": "Doblada",
     "horarios": [
-      "14:40",
-      "17:10"
+      "15:20",
+      "17:50",
+      "23:10"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://www.atlascines.com/images/posters/200_479.jpg",
+    "sinopsis": "Una extraña puerta aparece en el sótano de una exposición de muebles. Cuando el paciente de una terapeuta desaparece en una dimensión más allá de la realidad,ella deberá adentrarse en lo desconocido para salvarlo.",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "atlas_192_479_Viernes 29-Mayo-2026_Doblada",
+    "titulo": "BACKROOMS",
+    "director": "No especificado",
+    "duracion": "111",
+    "cine": "Atlas Catan",
+    "ciudad": "CABA",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada",
+    "horarios": [
+      "14:20",
+      "17:00",
+      "19:30",
+      "22:00"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_479.jpg",
@@ -19802,9 +20789,9 @@
     "idioma": "Doblada",
     "horarios": [
       "14:20",
-      "16:30",
-      "19:00",
-      "21:30"
+      "17:00",
+      "19:30",
+      "22:00"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_479.jpg",
@@ -19863,7 +20850,42 @@
     "horarios": [
       "14:20",
       "17:00",
-      "20:50"
+      "19:30",
+      "22:00"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://www.atlascines.com/images/posters/200_479.jpg",
+    "sinopsis": "Una extraña puerta aparece en el sótano de una exposición de muebles. Cuando el paciente de una terapeuta desaparece en una dimensión más allá de la realidad,ella deberá adentrarse en lo desconocido para salvarlo.",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "atlas_196_479_Viernes 29-Mayo-2026_Subtitulada",
+    "titulo": "BACKROOMS",
+    "director": "No especificado",
+    "duracion": "111",
+    "cine": "Atlas Nordelta",
+    "ciudad": "Tigre",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "20:10"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://www.atlascines.com/images/posters/200_479.jpg",
+    "sinopsis": "Una extraña puerta aparece en el sótano de una exposición de muebles. Cuando el paciente de una terapeuta desaparece en una dimensión más allá de la realidad,ella deberá adentrarse en lo desconocido para salvarlo.",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "atlas_196_479_Viernes 29-Mayo-2026_Doblada",
+    "titulo": "BACKROOMS",
+    "director": "No especificado",
+    "duracion": "111",
+    "cine": "Atlas Nordelta",
+    "ciudad": "Tigre",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada",
+    "horarios": [
+      "17:30"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_479.jpg",
@@ -19914,7 +20936,7 @@
     "fecha": "Domingo 31/Mayo/2026",
     "idioma": "Subtitulada",
     "horarios": [
-      "19:20"
+      "20:10"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_479.jpg",
@@ -19931,7 +20953,7 @@
     "fecha": "Domingo 31/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
-      "16:40"
+      "17:30"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_479.jpg",
@@ -19948,7 +20970,7 @@
     "fecha": "Lunes 1/Junio/2026",
     "idioma": "Subtitulada",
     "horarios": [
-      "20:10"
+      "19:20"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_479.jpg",
@@ -19965,7 +20987,7 @@
     "fecha": "Lunes 1/Junio/2026",
     "idioma": "Doblada",
     "horarios": [
-      "17:30"
+      "16:40"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_479.jpg",
@@ -19982,7 +21004,7 @@
     "fecha": "Martes 2/Junio/2026",
     "idioma": "Subtitulada",
     "horarios": [
-      "20:10"
+      "19:20"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_479.jpg",
@@ -19999,7 +21021,7 @@
     "fecha": "Martes 2/Junio/2026",
     "idioma": "Doblada",
     "horarios": [
-      "17:30"
+      "16:40"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_479.jpg",
@@ -20034,6 +21056,25 @@
     "idioma": "Doblada",
     "horarios": [
       "17:30"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://www.atlascines.com/images/posters/200_479.jpg",
+    "sinopsis": "Una extraña puerta aparece en el sótano de una exposición de muebles. Cuando el paciente de una terapeuta desaparece en una dimensión más allá de la realidad,ella deberá adentrarse en lo desconocido para salvarlo.",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "atlas_197_479_Viernes 29-Mayo-2026_Doblada",
+    "titulo": "BACKROOMS",
+    "director": "No especificado",
+    "duracion": "111",
+    "cine": "Atlas Flores",
+    "ciudad": "CABA",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada",
+    "horarios": [
+      "17:00",
+      "19:30",
+      "21:30"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_479.jpg",
@@ -20127,7 +21168,27 @@
     "idioma": "Doblada",
     "horarios": [
       "17:00",
-      "19:30"
+      "19:30",
+      "21:30"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://www.atlascines.com/images/posters/200_479.jpg",
+    "sinopsis": "Una extraña puerta aparece en el sótano de una exposición de muebles. Cuando el paciente de una terapeuta desaparece en una dimensión más allá de la realidad,ella deberá adentrarse en lo desconocido para salvarlo.",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "atlas_198_479_Viernes 29-Mayo-2026_Doblada",
+    "titulo": "BACKROOMS",
+    "director": "No especificado",
+    "duracion": "111",
+    "cine": "Atlas Liniers",
+    "ciudad": "CABA",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada",
+    "horarios": [
+      "17:00",
+      "19:30",
+      "22:10"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_479.jpg",
@@ -20220,8 +21281,9 @@
     "fecha": "Miércoles 3/Junio/2026",
     "idioma": "Doblada",
     "horarios": [
-      "17:30",
-      "21:50"
+      "17:00",
+      "19:30",
+      "22:10"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_479.jpg",
@@ -22208,6 +23270,23 @@
     "linkTrailer": ""
   },
   {
+    "id_funcion": "atlas_191_482_Viernes 29-Mayo-2026_Doblada",
+    "titulo": "DOLLY",
+    "director": "No especificado",
+    "duracion": "73",
+    "cine": "Atlas Caballito",
+    "ciudad": "CABA",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada",
+    "horarios": [
+      "22:50"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://www.atlascines.com/images/posters/200_482.jpg",
+    "sinopsis": "Una joven llamada Macy es secuestrada por una criatura monstruosa que busca criarla como si fuera su propia hija.",
+    "linkTrailer": ""
+  },
+  {
     "id_funcion": "atlas_191_482_Sábado 30-Mayo-2026_Doblada",
     "titulo": "DOLLY",
     "director": "No especificado",
@@ -22293,6 +23372,24 @@
     "linkTrailer": ""
   },
   {
+    "id_funcion": "atlas_192_482_Viernes 29-Mayo-2026_Doblada",
+    "titulo": "DOLLY",
+    "director": "No especificado",
+    "duracion": "73",
+    "cine": "Atlas Catan",
+    "ciudad": "CABA",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada",
+    "horarios": [
+      "18:00",
+      "22:30"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://www.atlascines.com/images/posters/200_482.jpg",
+    "sinopsis": "Una joven llamada Macy es secuestrada por una criatura monstruosa que busca criarla como si fuera su propia hija.",
+    "linkTrailer": ""
+  },
+  {
     "id_funcion": "atlas_192_482_Sábado 30-Mayo-2026_Doblada",
     "titulo": "DOLLY",
     "director": "No especificado",
@@ -22320,8 +23417,8 @@
     "fecha": "Domingo 31/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
-      "17:30",
-      "22:00"
+      "18:00",
+      "22:30"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_482.jpg",
@@ -22376,6 +23473,23 @@
     "horarios": [
       "18:00",
       "22:30"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://www.atlascines.com/images/posters/200_482.jpg",
+    "sinopsis": "Una joven llamada Macy es secuestrada por una criatura monstruosa que busca criarla como si fuera su propia hija.",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "atlas_197_482_Viernes 29-Mayo-2026_Doblada",
+    "titulo": "DOLLY",
+    "director": "No especificado",
+    "duracion": "73",
+    "cine": "Atlas Flores",
+    "ciudad": "CABA",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada",
+    "horarios": [
+      "22:40"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_482.jpg",
@@ -22468,6 +23582,24 @@
     "linkTrailer": ""
   },
   {
+    "id_funcion": "atlas_198_482_Viernes 29-Mayo-2026_Doblada",
+    "titulo": "DOLLY",
+    "director": "No especificado",
+    "duracion": "73",
+    "cine": "Atlas Liniers",
+    "ciudad": "CABA",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada",
+    "horarios": [
+      "19:50",
+      "21:50"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://www.atlascines.com/images/posters/200_482.jpg",
+    "sinopsis": "Una joven llamada Macy es secuestrada por una criatura monstruosa que busca criarla como si fuera su propia hija.",
+    "linkTrailer": ""
+  },
+  {
     "id_funcion": "atlas_198_482_Sábado 30-Mayo-2026_Doblada",
     "titulo": "DOLLY",
     "director": "No especificado",
@@ -22549,7 +23681,8 @@
     "fecha": "Miércoles 3/Junio/2026",
     "idioma": "Doblada",
     "horarios": [
-      "19:50"
+      "19:50",
+      "21:50"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_482.jpg",
@@ -23401,6 +24534,23 @@
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_482.jpg",
     "sinopsis": "",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "atlas_191_483_Viernes 29-Mayo-2026_Subtitulada",
+    "titulo": "EL CASTILLO AMBULANTE (2004)",
+    "director": "No especificado",
+    "duracion": "118",
+    "cine": "Atlas Caballito",
+    "ciudad": "CABA",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "18:00"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://www.atlascines.com/images/posters/200_483.jpg",
+    "sinopsis": "Una joven llamada Sophie es transformada en una anciana por una maldición y encuentra refugio en el mágico castillo ambulante del misterioso mago Howl.",
     "linkTrailer": ""
   },
   {
@@ -24305,6 +25455,23 @@
     "linkTrailer": ""
   },
   {
+    "id_funcion": "atlas_191_486_Viernes 29-Mayo-2026_Subtitulada",
+    "titulo": "ZONA DE RIESGO",
+    "director": "No especificado",
+    "duracion": "98",
+    "cine": "Atlas Caballito",
+    "ciudad": "CABA",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "19:00"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://www.atlascines.com/images/posters/200_486.jpg",
+    "sinopsis": "Los obreros de una construcción en Londres desentierran una bomba de la Segunda Guerra Mundial sin explotar,lo que obliga a la población a evacuar la ciudad. Unos ladrones oportunistas,aprovechan el caos para llevar a cabo un elaborado atraco.",
+    "linkTrailer": ""
+  },
+  {
     "id_funcion": "atlas_191_486_Sábado 30-Mayo-2026_Subtitulada",
     "titulo": "ZONA DE RIESGO",
     "director": "No especificado",
@@ -24382,7 +25549,24 @@
     "fecha": "Miércoles 3/Junio/2026",
     "idioma": "Subtitulada",
     "horarios": [
-      "17:10"
+      "19:00"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://www.atlascines.com/images/posters/200_486.jpg",
+    "sinopsis": "Los obreros de una construcción en Londres desentierran una bomba de la Segunda Guerra Mundial sin explotar,lo que obliga a la población a evacuar la ciudad. Unos ladrones oportunistas,aprovechan el caos para llevar a cabo un elaborado atraco.",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "atlas_196_486_Viernes 29-Mayo-2026_Subtitulada",
+    "titulo": "ZONA DE RIESGO",
+    "director": "No especificado",
+    "duracion": "98",
+    "cine": "Atlas Nordelta",
+    "ciudad": "Tigre",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "22:40"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_486.jpg",
@@ -24416,7 +25600,7 @@
     "fecha": "Domingo 31/Mayo/2026",
     "idioma": "Subtitulada",
     "horarios": [
-      "21:50"
+      "22:40"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_486.jpg",
@@ -24467,7 +25651,24 @@
     "fecha": "Miércoles 3/Junio/2026",
     "idioma": "Subtitulada",
     "horarios": [
-      "22:40"
+      "21:50"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://www.atlascines.com/images/posters/200_486.jpg",
+    "sinopsis": "Los obreros de una construcción en Londres desentierran una bomba de la Segunda Guerra Mundial sin explotar,lo que obliga a la población a evacuar la ciudad. Unos ladrones oportunistas,aprovechan el caos para llevar a cabo un elaborado atraco.",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "atlas_197_486_Viernes 29-Mayo-2026_Doblada",
+    "titulo": "ZONA DE RIESGO",
+    "director": "No especificado",
+    "duracion": "98",
+    "cine": "Atlas Flores",
+    "ciudad": "CABA",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada",
+    "horarios": [
+      "20:30"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_486.jpg",
@@ -25422,6 +26623,23 @@
     "linkTrailer": ""
   },
   {
+    "id_funcion": "atlas_195_396_Viernes 29-Mayo-2026_Doblada",
+    "titulo": "CALLE MÁLAGA",
+    "director": "No especificado",
+    "duracion": "117",
+    "cine": "Atlas Patio Bullrich",
+    "ciudad": "CABA",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada",
+    "horarios": [
+      "16:00"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://www.atlascines.com/images/posters/200_396.jpg",
+    "sinopsis": "María Ángeles (Carmen Maura) es una española de 79 años que vive sola en Tánger,en el norte de Marruecos,donde disfruta de su ciudad y de su vida diaria. Su vida da un giro cuando su hija Clara (Marta Etura) llega desde Madrid para vender el apartamento en el que siempre ha vivido. Decidida a quedarse en la ciudad que la vio crecer,hará todo lo posible para mantener su hogar y recuperar los objetos de toda una vida. Por el camino,redescubre,contra todo pronóstico,el amor y el deseo.",
+    "linkTrailer": ""
+  },
+  {
     "id_funcion": "atlas_195_396_Sábado 30-Mayo-2026_Doblada",
     "titulo": "CALLE MÁLAGA",
     "director": "No especificado",
@@ -25448,7 +26666,7 @@
     "fecha": "Domingo 31/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
-      "15:00"
+      "16:00"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_396.jpg",
@@ -25507,6 +26725,23 @@
     "linkTrailer": ""
   },
   {
+    "id_funcion": "atlas_195_452_Viernes 29-Mayo-2026_Subtitulada",
+    "titulo": "EL MAGO DEL KREMLIN",
+    "director": "No especificado",
+    "duracion": "152",
+    "cine": "Atlas Patio Bullrich",
+    "ciudad": "CABA",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "21:20"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://www.atlascines.com/images/posters/200_452.jpg",
+    "sinopsis": "En medio del caos postsoviético de los años 90,el joven Vadim Baranov (Paul Dano) empieza a labrarse un camino como artista y productor de televisión. Su elocuencia y conexión con las altas esferas le llevan a convertirse,de la noche a la mañana,en el asesor de un agente del KGB con un brillante porvenir: Vladimir Putin (Jude Law). Desde las entrañas del poder,ambos darán forma a la nueva Rusia,difuminando los límites entre la verdad y la mentira.",
+    "linkTrailer": ""
+  },
+  {
     "id_funcion": "atlas_195_452_Sábado 30-Mayo-2026_Subtitulada",
     "titulo": "EL MAGO DEL KREMLIN",
     "director": "No especificado",
@@ -25533,7 +26768,7 @@
     "fecha": "Domingo 31/Mayo/2026",
     "idioma": "Subtitulada",
     "horarios": [
-      "20:20"
+      "21:20"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_452.jpg",
@@ -25550,7 +26785,7 @@
     "fecha": "Lunes 1/Junio/2026",
     "idioma": "Subtitulada",
     "horarios": [
-      "21:20"
+      "20:20"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_452.jpg",
@@ -25567,7 +26802,7 @@
     "fecha": "Martes 2/Junio/2026",
     "idioma": "Subtitulada",
     "horarios": [
-      "21:20"
+      "20:20"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_452.jpg",
@@ -25589,6 +26824,23 @@
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_452.jpg",
     "sinopsis": "En medio del caos postsoviético de los años 90,el joven Vadim Baranov (Paul Dano) empieza a labrarse un camino como artista y productor de televisión. Su elocuencia y conexión con las altas esferas le llevan a convertirse,de la noche a la mañana,en el asesor de un agente del KGB con un brillante porvenir: Vladimir Putin (Jude Law). Desde las entrañas del poder,ambos darán forma a la nueva Rusia,difuminando los límites entre la verdad y la mentira.",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "atlas_196_463_Viernes 29-Mayo-2026_Doblada",
+    "titulo": "LAS OVEJAS DETECTIVES",
+    "director": "No especificado",
+    "duracion": "110",
+    "cine": "Atlas Nordelta",
+    "ciudad": "Tigre",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada",
+    "horarios": [
+      "14:20"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://www.atlascines.com/images/posters/200_463.jpg",
+    "sinopsis": "En esta nueva y divertida historia de misterio,George (Hugh Jackman) es un pastor que cada noche les lee novelas detectivescas a sus queridas ovejas,convencido de que no pueden entenderlas. Pero cuando un misterioso incidente altera la vida en la granja,las ovejas se dan cuenta de que deben convertirse en las detectives. A medida que siguen las pistas e investigan a los sospechosos humanos,demuestran que incluso las ovejas pueden ser brillantes resolviendo crímenes.",
     "linkTrailer": ""
   },
   {
@@ -25674,6 +26926,23 @@
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_463.jpg",
     "sinopsis": "En esta nueva y divertida historia de misterio,George (Hugh Jackman) es un pastor que cada noche les lee novelas detectivescas a sus queridas ovejas,convencido de que no pueden entenderlas. Pero cuando un misterioso incidente altera la vida en la granja,las ovejas se dan cuenta de que deben convertirse en las detectives. A medida que siguen las pistas e investigan a los sospechosos humanos,demuestran que incluso las ovejas pueden ser brillantes resolviendo crímenes.",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "atlas_198_478_Viernes 29-Mayo-2026_Doblada",
+    "titulo": "PEQUEÑOS MONSTRUOS",
+    "director": "No especificado",
+    "duracion": "88",
+    "cine": "Atlas Liniers",
+    "ciudad": "CABA",
+    "fecha": "Viernes 29/Mayo/2026",
+    "idioma": "Doblada",
+    "horarios": [
+      "14:20"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://www.atlascines.com/images/posters/200_478.jpg",
+    "sinopsis": "Finnick pierde accidentalmente la invisibilidad,y ahora el mundo de los brownies está amenazado. Junto con su amiga Kristina,va en busca de un mago que le ayude a recuperar la invisibilidad.",
     "linkTrailer": ""
   },
   {
@@ -27654,15 +28923,9 @@
     "idioma": "Doblada",
     "horarios": [
       "12:50",
-      "13:30",
       "15:10",
-      "15:50",
       "17:30",
-      "18:10",
-      "19:50",
-      "20:30",
-      "21:50",
-      "22:50"
+      "19:50"
     ],
     "seccion": "proximos",
     "poster": "https://www.atlascines.com/images/posters/200_488.jpg",
@@ -28218,13 +29481,9 @@
     "idioma": "Doblada",
     "horarios": [
       "14:10",
-      "15:10",
       "16:30",
-      "17:30",
       "18:50",
-      "19:50",
-      "21:10",
-      "22:10"
+      "21:10"
     ],
     "seccion": "proximos",
     "poster": "https://www.atlascines.com/images/posters/200_488.jpg",
@@ -28602,26 +29861,6 @@
     "idioma": "Subtitulada",
     "horarios": [
       "22:30"
-    ],
-    "seccion": "proximos",
-    "poster": "https://www.atlascines.com/images/posters/200_488.jpg",
-    "sinopsis": "Los juguetes están de vuelta en «Toy Story 5»,de Disney y Pixar,y esta vez se enfrentan los juguetes y la tecnología. El trabajo de Buzz,Woody,Jessie y el resto de la pandilla se complica exponencialmente cuando se enfrentan a esta nueva amenaza para el tiempo de juego",
-    "linkTrailer": ""
-  },
-  {
-    "id_funcion": "atlas_194_488_Jueves 18-Junio-2026_Doblada",
-    "titulo": "TOY STORY 5",
-    "director": "No especificado",
-    "duracion": "102",
-    "cine": "Atlas Alcorta",
-    "ciudad": "CABA",
-    "fecha": "Jueves 18/Junio/2026",
-    "idioma": "Doblada",
-    "horarios": [
-      "13:20",
-      "15:30",
-      "17:50",
-      "20:10"
     ],
     "seccion": "proximos",
     "poster": "https://www.atlascines.com/images/posters/200_488.jpg",
@@ -29131,11 +30370,8 @@
     "idioma": "Doblada",
     "horarios": [
       "13:20",
-      "14:10",
       "15:40",
-      "16:30",
       "18:00",
-      "18:50",
       "20:20"
     ],
     "seccion": "proximos",
@@ -29417,13 +30653,9 @@
     "idioma": "Doblada",
     "horarios": [
       "13:30",
-      "14:50",
       "15:50",
-      "17:10",
       "18:10",
-      "19:30",
       "20:30",
-      "21:50",
       "22:50"
     ],
     "seccion": "proximos",

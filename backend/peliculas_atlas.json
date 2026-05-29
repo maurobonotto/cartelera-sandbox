@@ -1,12 +1,12 @@
 [
   {
-    "id_funcion": "atlas_191_400_Sábado 29-Mayo-2027_Doblada",
+    "id_funcion": "atlas_191_400_Viernes 29-Mayo-2026_Doblada",
     "titulo": "SUPER MARIO GALAXY:LA PELICULA",
     "director": "No especificado",
     "duracion": "100",
     "cine": "Atlas Caballito",
     "ciudad": "CABA",
-    "fecha": "Sábado 29/Mayo/2027",
+    "fecha": "Viernes 29/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
       "12:20",
@@ -99,8 +99,8 @@
     "fecha": "Miércoles 3/Junio/2026",
     "idioma": "Doblada",
     "horarios": [
-      "12:30",
-      "14:50"
+      "12:20",
+      "14:30"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_400.jpg",
@@ -108,13 +108,13 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "atlas_191_441_Sábado 29-Mayo-2027_Subtitulada",
+    "id_funcion": "atlas_191_441_Viernes 29-Mayo-2026_Subtitulada",
     "titulo": "MICHAEL",
     "director": "No especificado",
     "duracion": "127",
     "cine": "Atlas Caballito",
     "ciudad": "CABA",
-    "fecha": "Sábado 29/Mayo/2027",
+    "fecha": "Viernes 29/Mayo/2026",
     "idioma": "Subtitulada",
     "horarios": [
       "12:20",
@@ -128,13 +128,13 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "atlas_191_441_Sábado 29-Mayo-2027_Doblada",
+    "id_funcion": "atlas_191_441_Viernes 29-Mayo-2026_Doblada",
     "titulo": "MICHAEL",
     "director": "No especificado",
     "duracion": "127",
     "cine": "Atlas Caballito",
     "ciudad": "CABA",
-    "fecha": "Sábado 29/Mayo/2027",
+    "fecha": "Viernes 29/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
       "14:40"
@@ -304,6 +304,7 @@
     "horarios": [
       "12:20",
       "17:20",
+      "20:00",
       "22:40"
     ],
     "seccion": "cartelera",
@@ -329,13 +330,13 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "atlas_191_446_Sábado 29-Mayo-2027_Subtitulada",
+    "id_funcion": "atlas_191_446_Viernes 29-Mayo-2026_Subtitulada",
     "titulo": "EL DIABLO VISTE A LA MODA 2",
     "director": "No especificado",
     "duracion": "120",
     "cine": "Atlas Caballito",
     "ciudad": "CABA",
-    "fecha": "Sábado 29/Mayo/2027",
+    "fecha": "Viernes 29/Mayo/2026",
     "idioma": "Subtitulada",
     "horarios": [
       "12:30",
@@ -443,10 +444,11 @@
     "fecha": "Miércoles 3/Junio/2026",
     "idioma": "Subtitulada",
     "horarios": [
-      "12:40",
-      "15:20",
-      "18:00",
-      "20:00"
+      "12:30",
+      "15:00",
+      "17:30",
+      "20:00",
+      "22:30"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_446.jpg",
@@ -454,13 +456,13 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "atlas_191_454_Sábado 29-Mayo-2027_Doblada",
+    "id_funcion": "atlas_191_454_Viernes 29-Mayo-2026_Doblada",
     "titulo": "MORTAL KOMBAT II",
     "director": "No especificado",
     "duracion": "116",
     "cine": "Atlas Caballito",
     "ciudad": "CABA",
-    "fecha": "Sábado 29/Mayo/2027",
+    "fecha": "Viernes 29/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
       "13:20",
@@ -483,6 +485,7 @@
     "idioma": "Doblada",
     "horarios": [
       "13:20",
+      "16:10",
       "20:40"
     ],
     "seccion": "cartelera",
@@ -501,7 +504,6 @@
     "idioma": "Doblada",
     "horarios": [
       "13:20",
-      "16:10",
       "20:40"
     ],
     "seccion": "cartelera",
@@ -558,7 +560,8 @@
     "idioma": "Doblada",
     "horarios": [
       "13:20",
-      "15:50"
+      "16:10",
+      "20:40"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_454.jpg",
@@ -566,13 +569,13 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "atlas_191_459_Sábado 29-Mayo-2027_Doblada",
+    "id_funcion": "atlas_191_459_Viernes 29-Mayo-2026_Doblada",
     "titulo": "STAR WARS: MANDALORIAN Y GROGU",
     "director": "No especificado",
     "duracion": "132",
     "cine": "Atlas Caballito",
     "ciudad": "CABA",
-    "fecha": "Sábado 29/Mayo/2027",
+    "fecha": "Viernes 29/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
       "16:40"
@@ -583,13 +586,13 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "atlas_191_459_Sábado 29-Mayo-2027_Subtitulada",
+    "id_funcion": "atlas_191_459_Viernes 29-Mayo-2026_Subtitulada",
     "titulo": "STAR WARS: MANDALORIAN Y GROGU",
     "director": "No especificado",
     "duracion": "132",
     "cine": "Atlas Caballito",
     "ciudad": "CABA",
-    "fecha": "Sábado 29/Mayo/2027",
+    "fecha": "Viernes 29/Mayo/2026",
     "idioma": "Subtitulada",
     "horarios": [
       "19:30",
@@ -601,13 +604,13 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "atlas_191_459_Sábado 29-Mayo-2027_Doblada",
+    "id_funcion": "atlas_191_459_Viernes 29-Mayo-2026_Doblada",
     "titulo": "STAR WARS: MANDALORIAN Y GROGU",
     "director": "No especificado",
     "duracion": "132",
     "cine": "Atlas Caballito",
     "ciudad": "CABA",
-    "fecha": "Sábado 29/Mayo/2027",
+    "fecha": "Viernes 29/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
       "13:50"
@@ -618,13 +621,13 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "atlas_191_459_Sábado 29-Mayo-2027_Doblada",
+    "id_funcion": "atlas_191_459_Viernes 29-Mayo-2026_Doblada",
     "titulo": "STAR WARS: MANDALORIAN Y GROGU",
     "director": "No especificado",
     "duracion": "132",
     "cine": "Atlas Caballito",
     "ciudad": "CABA",
-    "fecha": "Sábado 29/Mayo/2027",
+    "fecha": "Viernes 29/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
       "13:10",
@@ -998,13 +1001,13 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "atlas_191_462_Sábado 29-Mayo-2027_Subtitulada",
+    "id_funcion": "atlas_191_462_Viernes 29-Mayo-2026_Subtitulada",
     "titulo": "HOKUM:LA MALDICION DE LA BRUJA",
     "director": "No especificado",
     "duracion": "107",
     "cine": "Atlas Caballito",
     "ciudad": "CABA",
-    "fecha": "Sábado 29/Mayo/2027",
+    "fecha": "Viernes 29/Mayo/2026",
     "idioma": "Subtitulada",
     "horarios": [
       "23:10"
@@ -1092,7 +1095,7 @@
     "fecha": "Miércoles 3/Junio/2026",
     "idioma": "Subtitulada",
     "horarios": [
-      "22:20"
+      "23:10"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_462.jpg",
@@ -1100,13 +1103,13 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "atlas_191_470_Sábado 29-Mayo-2027_Subtitulada",
+    "id_funcion": "atlas_191_470_Viernes 29-Mayo-2026_Subtitulada",
     "titulo": "OBSESION",
     "director": "No especificado",
     "duracion": "109",
     "cine": "Atlas Caballito",
     "ciudad": "CABA",
-    "fecha": "Sábado 29/Mayo/2027",
+    "fecha": "Viernes 29/Mayo/2026",
     "idioma": "Subtitulada",
     "horarios": [
       "20:30"
@@ -1144,6 +1147,7 @@
     "fecha": "Domingo 31/Mayo/2026",
     "idioma": "Subtitulada",
     "horarios": [
+      "16:10",
       "20:30"
     ],
     "seccion": "cartelera",
@@ -1203,13 +1207,13 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "atlas_191_474_Sábado 29-Mayo-2027_Doblada",
+    "id_funcion": "atlas_191_474_Viernes 29-Mayo-2026_Doblada",
     "titulo": "EL PARTIDO",
     "director": "No especificado",
     "duracion": "91",
     "cine": "Atlas Caballito",
     "ciudad": "CABA",
-    "fecha": "Sábado 29/Mayo/2027",
+    "fecha": "Viernes 29/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
       "18:40"
@@ -1297,7 +1301,7 @@
     "fecha": "Miércoles 3/Junio/2026",
     "idioma": "Doblada",
     "horarios": [
-      "18:20"
+      "18:40"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_474.jpg",
@@ -1305,13 +1309,13 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "atlas_191_475_Sábado 29-Mayo-2027_Doblada",
+    "id_funcion": "atlas_191_475_Viernes 29-Mayo-2026_Doblada",
     "titulo": "EL PASAJERO DEL DIABLO",
     "director": "No especificado",
     "duracion": "94",
     "cine": "Atlas Caballito",
     "ciudad": "CABA",
-    "fecha": "Sábado 29/Mayo/2027",
+    "fecha": "Viernes 29/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
       "15:50"
@@ -1407,13 +1411,13 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "atlas_191_477_Sábado 29-Mayo-2027_Doblada",
+    "id_funcion": "atlas_191_477_Viernes 29-Mayo-2026_Doblada",
     "titulo": "NADA ENTRE LOS DOS",
     "director": "No especificado",
     "duracion": "93",
     "cine": "Atlas Caballito",
     "ciudad": "CABA",
-    "fecha": "Sábado 29/Mayo/2027",
+    "fecha": "Viernes 29/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
       "14:10",
@@ -1506,8 +1510,8 @@
     "fecha": "Miércoles 3/Junio/2026",
     "idioma": "Doblada",
     "horarios": [
-      "13:50",
-      "20:20"
+      "14:10",
+      "21:00"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_477.jpg",
@@ -1515,13 +1519,13 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "atlas_191_479_Sábado 29-Mayo-2027_Subtitulada",
+    "id_funcion": "atlas_191_479_Viernes 29-Mayo-2026_Subtitulada",
     "titulo": "BACKROOMS SIN SALIDA",
     "director": "No especificado",
     "duracion": "111",
     "cine": "Atlas Caballito",
     "ciudad": "CABA",
-    "fecha": "Sábado 29/Mayo/2027",
+    "fecha": "Viernes 29/Mayo/2026",
     "idioma": "Subtitulada",
     "horarios": [
       "12:50",
@@ -1535,13 +1539,13 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "atlas_191_479_Sábado 29-Mayo-2027_Doblada",
+    "id_funcion": "atlas_191_479_Viernes 29-Mayo-2026_Doblada",
     "titulo": "BACKROOMS SIN SALIDA",
     "director": "No especificado",
     "duracion": "111",
     "cine": "Atlas Caballito",
     "ciudad": "CABA",
-    "fecha": "Sábado 29/Mayo/2027",
+    "fecha": "Viernes 29/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
       "15:20",
@@ -1719,9 +1723,10 @@
     "fecha": "Miércoles 3/Junio/2026",
     "idioma": "Subtitulada",
     "horarios": [
-      "12:20",
-      "19:30",
-      "22:00"
+      "12:50",
+      "16:40",
+      "20:20",
+      "22:50"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_479.jpg",
@@ -1738,8 +1743,9 @@
     "fecha": "Miércoles 3/Junio/2026",
     "idioma": "Doblada",
     "horarios": [
-      "14:40",
-      "17:10"
+      "15:20",
+      "17:50",
+      "23:10"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_479.jpg",
@@ -2029,13 +2035,13 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "atlas_191_481_Sábado 29-Mayo-2027_Doblada",
+    "id_funcion": "atlas_191_481_Viernes 29-Mayo-2026_Doblada",
     "titulo": "AMARGA NAVIDAD",
     "director": "No especificado",
     "duracion": "111",
     "cine": "Atlas Caballito",
     "ciudad": "CABA",
-    "fecha": "Sábado 29/Mayo/2027",
+    "fecha": "Viernes 29/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
       "13:00",
@@ -2155,13 +2161,13 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "atlas_191_482_Sábado 29-Mayo-2027_Doblada",
+    "id_funcion": "atlas_191_482_Viernes 29-Mayo-2026_Doblada",
     "titulo": "DOLLY",
     "director": "No especificado",
     "duracion": "73",
     "cine": "Atlas Caballito",
     "ciudad": "CABA",
-    "fecha": "Sábado 29/Mayo/2027",
+    "fecha": "Viernes 29/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
       "22:50"
@@ -2257,13 +2263,13 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "atlas_191_483_Sábado 29-Mayo-2027_Subtitulada",
+    "id_funcion": "atlas_191_483_Viernes 29-Mayo-2026_Subtitulada",
     "titulo": "EL CASTILLO AMBULANTE",
     "director": "No especificado",
     "duracion": "118",
     "cine": "Atlas Caballito",
     "ciudad": "CABA",
-    "fecha": "Sábado 29/Mayo/2027",
+    "fecha": "Viernes 29/Mayo/2026",
     "idioma": "Subtitulada",
     "horarios": [
       "18:00"
@@ -2359,13 +2365,13 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "atlas_191_486_Sábado 29-Mayo-2027_Subtitulada",
+    "id_funcion": "atlas_191_486_Viernes 29-Mayo-2026_Subtitulada",
     "titulo": "ZONA DE RIESGO",
     "director": "No especificado",
     "duracion": "98",
     "cine": "Atlas Caballito",
     "ciudad": "CABA",
-    "fecha": "Sábado 29/Mayo/2027",
+    "fecha": "Viernes 29/Mayo/2026",
     "idioma": "Subtitulada",
     "horarios": [
       "19:00"
@@ -2453,7 +2459,7 @@
     "fecha": "Miércoles 3/Junio/2026",
     "idioma": "Subtitulada",
     "horarios": [
-      "17:10"
+      "19:00"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_486.jpg",
@@ -2567,15 +2573,9 @@
     "idioma": "Doblada",
     "horarios": [
       "12:50",
-      "13:30",
       "15:10",
-      "15:50",
       "17:30",
-      "18:10",
-      "19:50",
-      "20:30",
-      "21:50",
-      "22:50"
+      "19:50"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_488.jpg",
@@ -3277,13 +3277,13 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "atlas_192_400_Sábado 29-Mayo-2027_Doblada",
+    "id_funcion": "atlas_192_400_Viernes 29-Mayo-2026_Doblada",
     "titulo": "SUPER MARIO GALAXY:LA PELICULA",
     "director": "No especificado",
     "duracion": "100",
     "cine": "Atlas Catan",
     "ciudad": "CABA",
-    "fecha": "Sábado 29/Mayo/2027",
+    "fecha": "Viernes 29/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
       "14:30",
@@ -3322,8 +3322,8 @@
     "fecha": "Domingo 31/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
-      "14:00",
-      "16:20"
+      "14:30",
+      "16:50"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_400.jpg",
@@ -3340,8 +3340,8 @@
     "fecha": "Lunes 1/Junio/2026",
     "idioma": "Doblada",
     "horarios": [
-      "14:30",
-      "16:50"
+      "14:00",
+      "16:20"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_400.jpg",
@@ -3385,13 +3385,13 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "atlas_192_441_Sábado 29-Mayo-2027_Doblada",
+    "id_funcion": "atlas_192_441_Viernes 29-Mayo-2026_Doblada",
     "titulo": "MICHAEL",
     "director": "No especificado",
     "duracion": "127",
     "cine": "Atlas Catan",
     "ciudad": "CABA",
-    "fecha": "Sábado 29/Mayo/2027",
+    "fecha": "Viernes 29/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
       "19:00",
@@ -3430,8 +3430,8 @@
     "fecha": "Domingo 31/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
-      "18:30",
-      "21:10"
+      "19:00",
+      "21:40"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_441.jpg",
@@ -3448,8 +3448,8 @@
     "fecha": "Lunes 1/Junio/2026",
     "idioma": "Doblada",
     "horarios": [
-      "19:00",
-      "21:40"
+      "18:30",
+      "21:10"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_441.jpg",
@@ -3466,8 +3466,8 @@
     "fecha": "Martes 2/Junio/2026",
     "idioma": "Doblada",
     "horarios": [
-      "19:00",
-      "21:40"
+      "18:30",
+      "21:10"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_441.jpg",
@@ -3493,13 +3493,13 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "atlas_192_446_Sábado 29-Mayo-2027_Doblada",
+    "id_funcion": "atlas_192_446_Viernes 29-Mayo-2026_Doblada",
     "titulo": "EL DIABLO VISTE A LA MODA 2",
     "director": "No especificado",
     "duracion": "120",
     "cine": "Atlas Catan",
     "ciudad": "CABA",
-    "fecha": "Sábado 29/Mayo/2027",
+    "fecha": "Viernes 29/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
       "15:20",
@@ -3538,8 +3538,8 @@
     "fecha": "Domingo 31/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
-      "14:50",
-      "19:30"
+      "15:20",
+      "20:00"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_446.jpg",
@@ -3601,13 +3601,13 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "atlas_192_454_Sábado 29-Mayo-2027_Doblada",
+    "id_funcion": "atlas_192_454_Viernes 29-Mayo-2026_Doblada",
     "titulo": "MORTAL KOMBAT II",
     "director": "No especificado",
     "duracion": "116",
     "cine": "Atlas Catan",
     "ciudad": "CABA",
-    "fecha": "Sábado 29/Mayo/2027",
+    "fecha": "Viernes 29/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
       "14:40",
@@ -3620,13 +3620,13 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "atlas_192_454_Sábado 29-Mayo-2027_Doblada",
+    "id_funcion": "atlas_192_454_Viernes 29-Mayo-2026_Doblada",
     "titulo": "MORTAL KOMBAT II",
     "director": "No especificado",
     "duracion": "116",
     "cine": "Atlas Catan",
     "ciudad": "CABA",
-    "fecha": "Sábado 29/Mayo/2027",
+    "fecha": "Viernes 29/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
       "14:00",
@@ -3720,9 +3720,9 @@
     "fecha": "Lunes 1/Junio/2026",
     "idioma": "Doblada",
     "horarios": [
-      "14:40",
-      "17:10",
-      "19:40"
+      "14:10",
+      "16:40",
+      "19:10"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_454.jpg",
@@ -3739,8 +3739,7 @@
     "fecha": "Lunes 1/Junio/2026",
     "idioma": "Doblada",
     "horarios": [
-      "14:00",
-      "21:45"
+      "21:15"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_454.jpg",
@@ -3822,13 +3821,13 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "atlas_192_459_Sábado 29-Mayo-2027_Doblada",
+    "id_funcion": "atlas_192_459_Viernes 29-Mayo-2026_Doblada",
     "titulo": "STAR WARS: MANDALORIAN Y GROGU",
     "director": "No especificado",
     "duracion": "132",
     "cine": "Atlas Catan",
     "ciudad": "CABA",
-    "fecha": "Sábado 29/Mayo/2027",
+    "fecha": "Viernes 29/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
       "15:30",
@@ -3840,13 +3839,13 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "atlas_192_459_Sábado 29-Mayo-2027_Doblada",
+    "id_funcion": "atlas_192_459_Viernes 29-Mayo-2026_Doblada",
     "titulo": "STAR WARS: MANDALORIAN Y GROGU",
     "director": "No especificado",
     "duracion": "132",
     "cine": "Atlas Catan",
     "ciudad": "CABA",
-    "fecha": "Sábado 29/Mayo/2027",
+    "fecha": "Viernes 29/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
       "16:15",
@@ -3901,6 +3900,42 @@
     "cine": "Atlas Catan",
     "ciudad": "CABA",
     "fecha": "Domingo 31/Mayo/2026",
+    "idioma": "Doblada",
+    "horarios": [
+      "15:30",
+      "20:50"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://www.atlascines.com/images/posters/200_459.jpg",
+    "sinopsis": "El cruel Imperio ha caído,pero los señores de la guerra imperiales siguen dispersos por toda la Galaxia. La incipiente Nueva República trabaja para proteger las conquistas de la Rebelión con la ayuda del legendario cazarrecompensas mandaloriano,Din Djarin (Pedro Pascal),y su joven aprendiz,Grogu.\n\nSTAR WARS: THE MANDALORIAN AND GROGU contiene\nvarias escenas con luces intermitentes que pueden afectar a personas susceptibles a la epilepsia fotosensible o a padecer otras fotosensibilidades.",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "atlas_192_459_Domingo 31-Mayo-2026_Doblada",
+    "titulo": "STAR WARS: MANDALORIAN Y GROGU",
+    "director": "No especificado",
+    "duracion": "132",
+    "cine": "Atlas Catan",
+    "ciudad": "CABA",
+    "fecha": "Domingo 31/Mayo/2026",
+    "idioma": "Doblada",
+    "horarios": [
+      "16:15",
+      "19:00"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://www.atlascines.com/images/posters/200_459.jpg",
+    "sinopsis": "El cruel Imperio ha caído,pero los señores de la guerra imperiales siguen dispersos por toda la Galaxia. La incipiente Nueva República trabaja para proteger las conquistas de la Rebelión con la ayuda del legendario cazarrecompensas mandaloriano,Din Djarin (Pedro Pascal),y su joven aprendiz,Grogu.\n\nSTAR WARS: THE MANDALORIAN AND GROGU contiene\nvarias escenas con luces intermitentes que pueden afectar a personas susceptibles a la epilepsia fotosensible o a padecer otras fotosensibilidades.",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "atlas_192_459_Lunes 1-Junio-2026_Doblada",
+    "titulo": "STAR WARS: MANDALORIAN Y GROGU",
+    "director": "No especificado",
+    "duracion": "132",
+    "cine": "Atlas Catan",
+    "ciudad": "CABA",
+    "fecha": "Lunes 1/Junio/2026",
     "idioma": "Doblada",
     "horarios": [
       "15:00",
@@ -3912,13 +3947,13 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "atlas_192_459_Domingo 31-Mayo-2026_Doblada",
+    "id_funcion": "atlas_192_459_Lunes 1-Junio-2026_Doblada",
     "titulo": "STAR WARS: MANDALORIAN Y GROGU",
     "director": "No especificado",
     "duracion": "132",
     "cine": "Atlas Catan",
     "ciudad": "CABA",
-    "fecha": "Domingo 31/Mayo/2026",
+    "fecha": "Lunes 1/Junio/2026",
     "idioma": "Doblada",
     "horarios": [
       "15:45",
@@ -3930,35 +3965,17 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "atlas_192_459_Lunes 1-Junio-2026_Doblada",
+    "id_funcion": "atlas_192_459_Martes 2-Junio-2026_Doblada",
     "titulo": "STAR WARS: MANDALORIAN Y GROGU",
     "director": "No especificado",
     "duracion": "132",
     "cine": "Atlas Catan",
     "ciudad": "CABA",
-    "fecha": "Lunes 1/Junio/2026",
+    "fecha": "Martes 2/Junio/2026",
     "idioma": "Doblada",
     "horarios": [
-      "15:30",
-      "20:50"
-    ],
-    "seccion": "cartelera",
-    "poster": "https://www.atlascines.com/images/posters/200_459.jpg",
-    "sinopsis": "El cruel Imperio ha caído,pero los señores de la guerra imperiales siguen dispersos por toda la Galaxia. La incipiente Nueva República trabaja para proteger las conquistas de la Rebelión con la ayuda del legendario cazarrecompensas mandaloriano,Din Djarin (Pedro Pascal),y su joven aprendiz,Grogu.\n\nSTAR WARS: THE MANDALORIAN AND GROGU contiene\nvarias escenas con luces intermitentes que pueden afectar a personas susceptibles a la epilepsia fotosensible o a padecer otras fotosensibilidades.",
-    "linkTrailer": ""
-  },
-  {
-    "id_funcion": "atlas_192_459_Lunes 1-Junio-2026_Doblada",
-    "titulo": "STAR WARS: MANDALORIAN Y GROGU",
-    "director": "No especificado",
-    "duracion": "132",
-    "cine": "Atlas Catan",
-    "ciudad": "CABA",
-    "fecha": "Lunes 1/Junio/2026",
-    "idioma": "Doblada",
-    "horarios": [
-      "16:15",
-      "19:00"
+      "15:00",
+      "20:20"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_459.jpg",
@@ -3975,26 +3992,8 @@
     "fecha": "Martes 2/Junio/2026",
     "idioma": "Doblada",
     "horarios": [
-      "15:30",
-      "20:50"
-    ],
-    "seccion": "cartelera",
-    "poster": "https://www.atlascines.com/images/posters/200_459.jpg",
-    "sinopsis": "El cruel Imperio ha caído,pero los señores de la guerra imperiales siguen dispersos por toda la Galaxia. La incipiente Nueva República trabaja para proteger las conquistas de la Rebelión con la ayuda del legendario cazarrecompensas mandaloriano,Din Djarin (Pedro Pascal),y su joven aprendiz,Grogu.\n\nSTAR WARS: THE MANDALORIAN AND GROGU contiene\nvarias escenas con luces intermitentes que pueden afectar a personas susceptibles a la epilepsia fotosensible o a padecer otras fotosensibilidades.",
-    "linkTrailer": ""
-  },
-  {
-    "id_funcion": "atlas_192_459_Martes 2-Junio-2026_Doblada",
-    "titulo": "STAR WARS: MANDALORIAN Y GROGU",
-    "director": "No especificado",
-    "duracion": "132",
-    "cine": "Atlas Catan",
-    "ciudad": "CABA",
-    "fecha": "Martes 2/Junio/2026",
-    "idioma": "Doblada",
-    "horarios": [
-      "16:15",
-      "19:00"
+      "15:45",
+      "18:30"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_459.jpg",
@@ -4011,7 +4010,8 @@
     "fecha": "Miércoles 3/Junio/2026",
     "idioma": "Doblada",
     "horarios": [
-      "15:30"
+      "15:30",
+      "20:50"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_459.jpg",
@@ -4037,13 +4037,13 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "atlas_192_470_Sábado 29-Mayo-2027_Doblada",
+    "id_funcion": "atlas_192_470_Viernes 29-Mayo-2026_Doblada",
     "titulo": "OBSESION",
     "director": "No especificado",
     "duracion": "109",
     "cine": "Atlas Catan",
     "ciudad": "CABA",
-    "fecha": "Sábado 29/Mayo/2027",
+    "fecha": "Viernes 29/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
       "18:20"
@@ -4080,7 +4080,7 @@
     "fecha": "Domingo 31/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
-      "17:50"
+      "18:20"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_470.jpg",
@@ -4097,7 +4097,7 @@
     "fecha": "Lunes 1/Junio/2026",
     "idioma": "Doblada",
     "horarios": [
-      "18:20"
+      "17:50"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_470.jpg",
@@ -4139,13 +4139,13 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "atlas_192_475_Sábado 29-Mayo-2027_Doblada",
+    "id_funcion": "atlas_192_475_Viernes 29-Mayo-2026_Doblada",
     "titulo": "EL PASAJERO DEL DIABLO",
     "director": "No especificado",
     "duracion": "94",
     "cine": "Atlas Catan",
     "ciudad": "CABA",
-    "fecha": "Sábado 29/Mayo/2027",
+    "fecha": "Viernes 29/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
       "22:15"
@@ -4182,7 +4182,7 @@
     "fecha": "Domingo 31/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
-      "21:45"
+      "22:15"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_475.jpg",
@@ -4233,7 +4233,7 @@
     "fecha": "Miércoles 3/Junio/2026",
     "idioma": "Doblada",
     "horarios": [
-      "22:15"
+      "21:45"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_475.jpg",
@@ -4241,13 +4241,13 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "atlas_192_479_Sábado 29-Mayo-2027_Doblada",
+    "id_funcion": "atlas_192_479_Viernes 29-Mayo-2026_Doblada",
     "titulo": "BACKROOMS SIN SALIDA",
     "director": "No especificado",
     "duracion": "111",
     "cine": "Atlas Catan",
     "ciudad": "CABA",
-    "fecha": "Sábado 29/Mayo/2027",
+    "fecha": "Viernes 29/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
       "14:20",
@@ -4291,9 +4291,9 @@
     "idioma": "Doblada",
     "horarios": [
       "14:20",
-      "16:30",
-      "19:00",
-      "21:30"
+      "17:00",
+      "19:30",
+      "22:00"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_479.jpg",
@@ -4352,7 +4352,8 @@
     "horarios": [
       "14:20",
       "17:00",
-      "20:50"
+      "19:30",
+      "22:00"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_479.jpg",
@@ -4387,11 +4388,8 @@
     "fecha": "Jueves 4/Junio/2026",
     "idioma": "Doblada",
     "horarios": [
-      "14:00",
-      "16:00",
-      "18:10",
-      "20:20",
-      "22:30"
+      "19:20",
+      "21:30"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_480.jpg",
@@ -4408,11 +4406,8 @@
     "fecha": "Viernes 5/Junio/2026",
     "idioma": "Doblada",
     "horarios": [
-      "14:00",
-      "16:00",
-      "18:10",
-      "20:20",
-      "22:30"
+      "19:20",
+      "21:30"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_480.jpg",
@@ -4504,13 +4499,13 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "atlas_192_482_Sábado 29-Mayo-2027_Doblada",
+    "id_funcion": "atlas_192_482_Viernes 29-Mayo-2026_Doblada",
     "titulo": "DOLLY",
     "director": "No especificado",
     "duracion": "73",
     "cine": "Atlas Catan",
     "ciudad": "CABA",
-    "fecha": "Sábado 29/Mayo/2027",
+    "fecha": "Viernes 29/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
       "18:00",
@@ -4549,8 +4544,8 @@
     "fecha": "Domingo 31/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
-      "17:30",
-      "22:00"
+      "18:00",
+      "22:30"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_482.jpg",
@@ -4682,13 +4677,9 @@
     "idioma": "Doblada",
     "horarios": [
       "14:10",
-      "15:10",
       "16:30",
-      "17:30",
       "18:50",
-      "19:50",
-      "21:10",
-      "22:10"
+      "21:10"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_488.jpg",
@@ -5170,13 +5161,13 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "atlas_194_446_Sábado 29-Mayo-2027_Subtitulada",
+    "id_funcion": "atlas_194_446_Viernes 29-Mayo-2026_Subtitulada",
     "titulo": "EL DIABLO VISTE A LA MODA 2",
     "director": "No especificado",
     "duracion": "120",
     "cine": "Atlas Alcorta",
     "ciudad": "CABA",
-    "fecha": "Sábado 29/Mayo/2027",
+    "fecha": "Viernes 29/Mayo/2026",
     "idioma": "Subtitulada",
     "horarios": [
       "14:10",
@@ -5270,13 +5261,13 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "atlas_194_459_Sábado 29-Mayo-2027_Subtitulada",
+    "id_funcion": "atlas_194_459_Viernes 29-Mayo-2026_Subtitulada",
     "titulo": "STAR WARS: MANDALORIAN Y GROGU",
     "director": "No especificado",
     "duracion": "132",
     "cine": "Atlas Alcorta",
     "ciudad": "CABA",
-    "fecha": "Sábado 29/Mayo/2027",
+    "fecha": "Viernes 29/Mayo/2026",
     "idioma": "Subtitulada",
     "horarios": [
       "14:40"
@@ -5355,13 +5346,13 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "atlas_194_481_Sábado 29-Mayo-2027_Doblada",
+    "id_funcion": "atlas_194_481_Viernes 29-Mayo-2026_Doblada",
     "titulo": "AMARGA NAVIDAD",
     "director": "No especificado",
     "duracion": "111",
     "cine": "Atlas Alcorta",
     "ciudad": "CABA",
-    "fecha": "Sábado 29/Mayo/2027",
+    "fecha": "Viernes 29/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
       "17:30",
@@ -5460,26 +5451,6 @@
     "idioma": "Subtitulada",
     "horarios": [
       "22:30"
-    ],
-    "seccion": "cartelera",
-    "poster": "https://www.atlascines.com/images/posters/200_488.jpg",
-    "sinopsis": "Los juguetes están de vuelta en «Toy Story 5»,de Disney y Pixar,y esta vez se enfrentan los juguetes y la tecnología. El trabajo de Buzz,Woody,Jessie y el resto de la pandilla se complica exponencialmente cuando se enfrentan a esta nueva amenaza para el tiempo de juego",
-    "linkTrailer": ""
-  },
-  {
-    "id_funcion": "atlas_194_488_Jueves 18-Junio-2026_Doblada",
-    "titulo": "TOY STORY 5",
-    "director": "No especificado",
-    "duracion": "102",
-    "cine": "Atlas Alcorta",
-    "ciudad": "CABA",
-    "fecha": "Jueves 18/Junio/2026",
-    "idioma": "Doblada",
-    "horarios": [
-      "13:20",
-      "15:30",
-      "17:50",
-      "20:10"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_488.jpg",
@@ -5689,13 +5660,13 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "atlas_195_396_Sábado 29-Mayo-2027_Doblada",
+    "id_funcion": "atlas_195_396_Viernes 29-Mayo-2026_Doblada",
     "titulo": "CALLE MÁLAGA",
     "director": "No especificado",
     "duracion": "117",
     "cine": "Atlas Patio Bullrich",
     "ciudad": "CABA",
-    "fecha": "Sábado 29/Mayo/2027",
+    "fecha": "Viernes 29/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
       "16:00"
@@ -5732,7 +5703,7 @@
     "fecha": "Domingo 31/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
-      "15:00"
+      "16:00"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_396.jpg",
@@ -5791,13 +5762,13 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "atlas_195_446_Sábado 29-Mayo-2027_Subtitulada",
+    "id_funcion": "atlas_195_446_Viernes 29-Mayo-2026_Subtitulada",
     "titulo": "EL DIABLO VISTE A LA MODA 2",
     "director": "No especificado",
     "duracion": "120",
     "cine": "Atlas Patio Bullrich",
     "ciudad": "CABA",
-    "fecha": "Sábado 29/Mayo/2027",
+    "fecha": "Viernes 29/Mayo/2026",
     "idioma": "Subtitulada",
     "horarios": [
       "16:20",
@@ -5836,8 +5807,8 @@
     "fecha": "Domingo 31/Mayo/2026",
     "idioma": "Subtitulada",
     "horarios": [
-      "15:20",
-      "17:50"
+      "16:20",
+      "18:50"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_446.jpg",
@@ -5854,8 +5825,8 @@
     "fecha": "Lunes 1/Junio/2026",
     "idioma": "Subtitulada",
     "horarios": [
-      "16:20",
-      "18:50"
+      "15:20",
+      "17:50"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_446.jpg",
@@ -5899,13 +5870,13 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "atlas_195_452_Sábado 29-Mayo-2027_Subtitulada",
+    "id_funcion": "atlas_195_452_Viernes 29-Mayo-2026_Subtitulada",
     "titulo": "EL MAGO DEL KREMLIN",
     "director": "No especificado",
     "duracion": "152",
     "cine": "Atlas Patio Bullrich",
     "ciudad": "CABA",
-    "fecha": "Sábado 29/Mayo/2027",
+    "fecha": "Viernes 29/Mayo/2026",
     "idioma": "Subtitulada",
     "horarios": [
       "21:20"
@@ -5942,7 +5913,7 @@
     "fecha": "Domingo 31/Mayo/2026",
     "idioma": "Subtitulada",
     "horarios": [
-      "20:20"
+      "21:20"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_452.jpg",
@@ -5959,7 +5930,7 @@
     "fecha": "Lunes 1/Junio/2026",
     "idioma": "Subtitulada",
     "horarios": [
-      "21:20"
+      "20:20"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_452.jpg",
@@ -5976,7 +5947,7 @@
     "fecha": "Martes 2/Junio/2026",
     "idioma": "Subtitulada",
     "horarios": [
-      "21:20"
+      "20:20"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_452.jpg",
@@ -6001,13 +5972,13 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "atlas_195_477_Sábado 29-Mayo-2027_Doblada",
+    "id_funcion": "atlas_195_477_Viernes 29-Mayo-2026_Doblada",
     "titulo": "NADA ENTRE LOS DOS",
     "director": "No especificado",
     "duracion": "93",
     "cine": "Atlas Patio Bullrich",
     "ciudad": "CABA",
-    "fecha": "Sábado 29/Mayo/2027",
+    "fecha": "Viernes 29/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
       "20:00"
@@ -6044,7 +6015,7 @@
     "fecha": "Domingo 31/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
-      "19:00"
+      "20:00"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_477.jpg",
@@ -6061,7 +6032,7 @@
     "fecha": "Lunes 1/Junio/2026",
     "idioma": "Doblada",
     "horarios": [
-      "20:00"
+      "19:00"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_477.jpg",
@@ -6103,13 +6074,13 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "atlas_195_481_Sábado 29-Mayo-2027_Doblada",
+    "id_funcion": "atlas_195_481_Viernes 29-Mayo-2026_Doblada",
     "titulo": "AMARGA NAVIDAD",
     "director": "No especificado",
     "duracion": "111",
     "cine": "Atlas Patio Bullrich",
     "ciudad": "CABA",
-    "fecha": "Sábado 29/Mayo/2027",
+    "fecha": "Viernes 29/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
       "16:40",
@@ -6152,10 +6123,10 @@
     "fecha": "Domingo 31/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
-      "15:40",
-      "17:30",
-      "18:10",
-      "20:40"
+      "16:40",
+      "18:30",
+      "19:10",
+      "21:40"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_481.jpg",
@@ -6172,10 +6143,10 @@
     "fecha": "Lunes 1/Junio/2026",
     "idioma": "Doblada",
     "horarios": [
-      "16:40",
-      "18:30",
-      "19:10",
-      "21:40"
+      "15:40",
+      "17:30",
+      "18:10",
+      "20:40"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_481.jpg",
@@ -6223,13 +6194,13 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "atlas_195_484_Sábado 29-Mayo-2027_Subtitulada",
+    "id_funcion": "atlas_195_484_Viernes 29-Mayo-2026_Subtitulada",
     "titulo": "EL GRAN ARCO",
     "director": "No especificado",
     "duracion": "107",
     "cine": "Atlas Patio Bullrich",
     "ciudad": "CABA",
-    "fecha": "Sábado 29/Mayo/2027",
+    "fecha": "Viernes 29/Mayo/2026",
     "idioma": "Subtitulada",
     "horarios": [
       "15:40",
@@ -6270,9 +6241,9 @@
     "fecha": "Domingo 31/Mayo/2026",
     "idioma": "Subtitulada",
     "horarios": [
-      "14:40",
-      "16:50",
-      "21:00"
+      "15:40",
+      "17:50",
+      "22:00"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_484.jpg",
@@ -6289,9 +6260,9 @@
     "fecha": "Lunes 1/Junio/2026",
     "idioma": "Subtitulada",
     "horarios": [
-      "15:40",
-      "17:50",
-      "22:00"
+      "14:40",
+      "16:50",
+      "21:00"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_484.jpg",
@@ -6327,9 +6298,9 @@
     "fecha": "Miércoles 3/Junio/2026",
     "idioma": "Subtitulada",
     "horarios": [
-      "15:40",
-      "17:50",
-      "22:00"
+      "14:40",
+      "16:50",
+      "21:00"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_484.jpg",
@@ -6337,13 +6308,13 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "atlas_195_485_Sábado 29-Mayo-2027_Subtitulada",
+    "id_funcion": "atlas_195_485_Viernes 29-Mayo-2026_Subtitulada",
     "titulo": "ELLA Y SU HIJO",
     "director": "No especificado",
     "duracion": "131",
     "cine": "Atlas Patio Bullrich",
     "ciudad": "CABA",
-    "fecha": "Sábado 29/Mayo/2027",
+    "fecha": "Viernes 29/Mayo/2026",
     "idioma": "Subtitulada",
     "horarios": [
       "21:00"
@@ -6380,7 +6351,7 @@
     "fecha": "Domingo 31/Mayo/2026",
     "idioma": "Subtitulada",
     "horarios": [
-      "20:00"
+      "21:00"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_485.jpg",
@@ -6397,7 +6368,7 @@
     "fecha": "Lunes 1/Junio/2026",
     "idioma": "Subtitulada",
     "horarios": [
-      "21:00"
+      "20:00"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_485.jpg",
@@ -6431,7 +6402,7 @@
     "fecha": "Miércoles 3/Junio/2026",
     "idioma": "Subtitulada",
     "horarios": [
-      "21:00"
+      "20:00"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_485.jpg",
@@ -6717,7 +6688,7 @@
     "fecha": "Domingo 31/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
-      "14:50"
+      "15:40"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_400.jpg",
@@ -6734,7 +6705,7 @@
     "fecha": "Lunes 1/Junio/2026",
     "idioma": "Doblada",
     "horarios": [
-      "15:40"
+      "14:50"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_400.jpg",
@@ -6776,13 +6747,13 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "atlas_196_441_Sábado 29-Mayo-2027_Subtitulada",
+    "id_funcion": "atlas_196_441_Viernes 29-Mayo-2026_Subtitulada",
     "titulo": "MICHAEL",
     "director": "No especificado",
     "duracion": "127",
     "cine": "Atlas Nordelta",
     "ciudad": "Tigre",
-    "fecha": "Sábado 29/Mayo/2027",
+    "fecha": "Viernes 29/Mayo/2026",
     "idioma": "Subtitulada",
     "horarios": [
       "16:40",
@@ -6804,8 +6775,7 @@
     "idioma": "Subtitulada",
     "horarios": [
       "16:40",
-      "19:20",
-      "22:00"
+      "19:20"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_441.jpg",
@@ -6822,9 +6792,9 @@
     "fecha": "Domingo 31/Mayo/2026",
     "idioma": "Subtitulada",
     "horarios": [
-      "15:50",
-      "18:30",
-      "21:10"
+      "16:40",
+      "19:20",
+      "22:00"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_441.jpg",
@@ -6842,8 +6812,7 @@
     "idioma": "Subtitulada",
     "horarios": [
       "16:40",
-      "19:20",
-      "22:00"
+      "19:20"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_441.jpg",
@@ -6879,8 +6848,9 @@
     "fecha": "Miércoles 3/Junio/2026",
     "idioma": "Subtitulada",
     "horarios": [
-      "16:40",
-      "21:50"
+      "15:50",
+      "18:30",
+      "21:10"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_441.jpg",
@@ -6888,13 +6858,13 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "atlas_196_446_Sábado 29-Mayo-2027_Subtitulada",
+    "id_funcion": "atlas_196_446_Viernes 29-Mayo-2026_Subtitulada",
     "titulo": "EL DIABLO VISTE A LA MODA 2",
     "director": "No especificado",
     "duracion": "120",
     "cine": "Atlas Nordelta",
     "ciudad": "Tigre",
-    "fecha": "Sábado 29/Mayo/2027",
+    "fecha": "Viernes 29/Mayo/2026",
     "idioma": "Subtitulada",
     "horarios": [
       "17:20",
@@ -6935,9 +6905,9 @@
     "fecha": "Domingo 31/Mayo/2026",
     "idioma": "Subtitulada",
     "horarios": [
-      "16:30",
-      "19:00",
-      "21:30"
+      "17:20",
+      "19:50",
+      "22:20"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_446.jpg",
@@ -6954,9 +6924,9 @@
     "fecha": "Lunes 1/Junio/2026",
     "idioma": "Subtitulada",
     "horarios": [
-      "17:20",
-      "19:50",
-      "22:20"
+      "16:30",
+      "19:00",
+      "21:30"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_446.jpg",
@@ -6973,9 +6943,9 @@
     "fecha": "Martes 2/Junio/2026",
     "idioma": "Subtitulada",
     "horarios": [
-      "17:20",
-      "19:50",
-      "22:20"
+      "16:30",
+      "19:00",
+      "21:30"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_446.jpg",
@@ -6993,7 +6963,8 @@
     "idioma": "Subtitulada",
     "horarios": [
       "17:20",
-      "19:50"
+      "19:50",
+      "22:20"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_446.jpg",
@@ -7001,13 +6972,13 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "atlas_196_459_Sábado 29-Mayo-2027_Subtitulada",
+    "id_funcion": "atlas_196_459_Viernes 29-Mayo-2026_Subtitulada",
     "titulo": "STAR WARS: MANDALORIAN Y GROGU",
     "director": "No especificado",
     "duracion": "132",
     "cine": "Atlas Nordelta",
     "ciudad": "Tigre",
-    "fecha": "Sábado 29/Mayo/2027",
+    "fecha": "Viernes 29/Mayo/2026",
     "idioma": "Subtitulada",
     "horarios": [
       "22:00"
@@ -7018,13 +6989,13 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "atlas_196_459_Sábado 29-Mayo-2027_Doblada",
+    "id_funcion": "atlas_196_459_Viernes 29-Mayo-2026_Doblada",
     "titulo": "STAR WARS: MANDALORIAN Y GROGU",
     "director": "No especificado",
     "duracion": "132",
     "cine": "Atlas Nordelta",
     "ciudad": "Tigre",
-    "fecha": "Sábado 29/Mayo/2027",
+    "fecha": "Viernes 29/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
       "15:20"
@@ -7069,16 +7040,16 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "atlas_196_459_Domingo 31-Mayo-2026_Doblada",
+    "id_funcion": "atlas_196_459_Domingo 31-Mayo-2026_Subtitulada",
     "titulo": "STAR WARS: MANDALORIAN Y GROGU",
     "director": "No especificado",
     "duracion": "132",
     "cine": "Atlas Nordelta",
     "ciudad": "Tigre",
     "fecha": "Domingo 31/Mayo/2026",
-    "idioma": "Doblada",
+    "idioma": "Subtitulada",
     "horarios": [
-      "15:00"
+      "22:00"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_459.jpg",
@@ -7095,7 +7066,7 @@
     "fecha": "Domingo 31/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
-      "17:50"
+      "15:20"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_459.jpg",
@@ -7103,13 +7074,13 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "atlas_196_463_Sábado 29-Mayo-2027_Doblada",
+    "id_funcion": "atlas_196_463_Viernes 29-Mayo-2026_Doblada",
     "titulo": "LAS OVEJAS DETECTIVES",
     "director": "No especificado",
     "duracion": "110",
     "cine": "Atlas Nordelta",
     "ciudad": "Tigre",
-    "fecha": "Sábado 29/Mayo/2027",
+    "fecha": "Viernes 29/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
       "14:20"
@@ -7205,13 +7176,13 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "atlas_196_474_Sábado 29-Mayo-2027_Doblada",
+    "id_funcion": "atlas_196_474_Viernes 29-Mayo-2026_Doblada",
     "titulo": "EL PARTIDO",
     "director": "No especificado",
     "duracion": "91",
     "cine": "Atlas Nordelta",
     "ciudad": "Tigre",
-    "fecha": "Sábado 29/Mayo/2027",
+    "fecha": "Viernes 29/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
       "15:20"
@@ -7248,7 +7219,7 @@
     "fecha": "Domingo 31/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
-      "14:30"
+      "15:20"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_474.jpg",
@@ -7307,13 +7278,13 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "atlas_196_479_Sábado 29-Mayo-2027_Subtitulada",
+    "id_funcion": "atlas_196_479_Viernes 29-Mayo-2026_Subtitulada",
     "titulo": "BACKROOMS SIN SALIDA",
     "director": "No especificado",
     "duracion": "111",
     "cine": "Atlas Nordelta",
     "ciudad": "Tigre",
-    "fecha": "Sábado 29/Mayo/2027",
+    "fecha": "Viernes 29/Mayo/2026",
     "idioma": "Subtitulada",
     "horarios": [
       "20:10"
@@ -7324,13 +7295,13 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "atlas_196_479_Sábado 29-Mayo-2027_Doblada",
+    "id_funcion": "atlas_196_479_Viernes 29-Mayo-2026_Doblada",
     "titulo": "BACKROOMS SIN SALIDA",
     "director": "No especificado",
     "duracion": "111",
     "cine": "Atlas Nordelta",
     "ciudad": "Tigre",
-    "fecha": "Sábado 29/Mayo/2027",
+    "fecha": "Viernes 29/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
       "17:30"
@@ -7384,7 +7355,7 @@
     "fecha": "Domingo 31/Mayo/2026",
     "idioma": "Subtitulada",
     "horarios": [
-      "19:20"
+      "20:10"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_479.jpg",
@@ -7401,7 +7372,7 @@
     "fecha": "Domingo 31/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
-      "16:40"
+      "17:30"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_479.jpg",
@@ -7418,7 +7389,7 @@
     "fecha": "Lunes 1/Junio/2026",
     "idioma": "Subtitulada",
     "horarios": [
-      "20:10"
+      "19:20"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_479.jpg",
@@ -7435,7 +7406,7 @@
     "fecha": "Lunes 1/Junio/2026",
     "idioma": "Doblada",
     "horarios": [
-      "17:30"
+      "16:40"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_479.jpg",
@@ -7452,7 +7423,7 @@
     "fecha": "Martes 2/Junio/2026",
     "idioma": "Subtitulada",
     "horarios": [
-      "20:10"
+      "19:20"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_479.jpg",
@@ -7469,7 +7440,7 @@
     "fecha": "Martes 2/Junio/2026",
     "idioma": "Doblada",
     "horarios": [
-      "17:30"
+      "16:40"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_479.jpg",
@@ -7545,13 +7516,13 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "atlas_196_481_Sábado 29-Mayo-2027_Doblada",
+    "id_funcion": "atlas_196_481_Viernes 29-Mayo-2026_Doblada",
     "titulo": "AMARGA NAVIDAD",
     "director": "No especificado",
     "duracion": "111",
     "cine": "Atlas Nordelta",
     "ciudad": "Tigre",
-    "fecha": "Sábado 29/Mayo/2027",
+    "fecha": "Viernes 29/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
       "15:10",
@@ -7592,8 +7563,9 @@
     "fecha": "Domingo 31/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
-      "19:10",
-      "21:40"
+      "15:10",
+      "20:00",
+      "22:30"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_481.jpg",
@@ -7610,9 +7582,8 @@
     "fecha": "Lunes 1/Junio/2026",
     "idioma": "Doblada",
     "horarios": [
-      "15:10",
-      "20:00",
-      "22:30"
+      "19:10",
+      "21:40"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_481.jpg",
@@ -7648,9 +7619,8 @@
     "fecha": "Miércoles 3/Junio/2026",
     "idioma": "Doblada",
     "horarios": [
-      "15:10",
-      "20:00",
-      "22:30"
+      "19:10",
+      "21:40"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_481.jpg",
@@ -7658,13 +7628,13 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "atlas_196_484_Sábado 29-Mayo-2027_Subtitulada",
+    "id_funcion": "atlas_196_484_Viernes 29-Mayo-2026_Subtitulada",
     "titulo": "EL GRAN ARCO",
     "director": "No especificado",
     "duracion": "107",
     "cine": "Atlas Nordelta",
     "ciudad": "Tigre",
-    "fecha": "Sábado 29/Mayo/2027",
+    "fecha": "Viernes 29/Mayo/2026",
     "idioma": "Subtitulada",
     "horarios": [
       "18:00"
@@ -7701,7 +7671,7 @@
     "fecha": "Domingo 31/Mayo/2026",
     "idioma": "Subtitulada",
     "horarios": [
-      "17:10"
+      "18:00"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_484.jpg",
@@ -7718,7 +7688,7 @@
     "fecha": "Lunes 1/Junio/2026",
     "idioma": "Subtitulada",
     "horarios": [
-      "18:00"
+      "17:10"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_484.jpg",
@@ -7760,13 +7730,13 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "atlas_196_486_Sábado 29-Mayo-2027_Subtitulada",
+    "id_funcion": "atlas_196_486_Viernes 29-Mayo-2026_Subtitulada",
     "titulo": "ZONA DE RIESGO",
     "director": "No especificado",
     "duracion": "98",
     "cine": "Atlas Nordelta",
     "ciudad": "Tigre",
-    "fecha": "Sábado 29/Mayo/2027",
+    "fecha": "Viernes 29/Mayo/2026",
     "idioma": "Subtitulada",
     "horarios": [
       "22:40"
@@ -7803,7 +7773,7 @@
     "fecha": "Domingo 31/Mayo/2026",
     "idioma": "Subtitulada",
     "horarios": [
-      "21:50"
+      "22:40"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_486.jpg",
@@ -7854,7 +7824,7 @@
     "fecha": "Miércoles 3/Junio/2026",
     "idioma": "Subtitulada",
     "horarios": [
-      "22:40"
+      "21:50"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_486.jpg",
@@ -7910,11 +7880,8 @@
     "idioma": "Doblada",
     "horarios": [
       "13:20",
-      "14:10",
       "15:40",
-      "16:30",
       "18:00",
-      "18:50",
       "20:20"
     ],
     "seccion": "cartelera",
@@ -8356,13 +8323,13 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "atlas_197_400_Sábado 29-Mayo-2027_Doblada",
+    "id_funcion": "atlas_197_400_Viernes 29-Mayo-2026_Doblada",
     "titulo": "SUPER MARIO GALAXY:LA PELICULA",
     "director": "No especificado",
     "duracion": "100",
     "cine": "Atlas Flores",
     "ciudad": "CABA",
-    "fecha": "Sábado 29/Mayo/2027",
+    "fecha": "Viernes 29/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
       "14:00",
@@ -8464,13 +8431,13 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "atlas_197_441_Sábado 29-Mayo-2027_Doblada",
+    "id_funcion": "atlas_197_441_Viernes 29-Mayo-2026_Doblada",
     "titulo": "MICHAEL",
     "director": "No especificado",
     "duracion": "127",
     "cine": "Atlas Flores",
     "ciudad": "CABA",
-    "fecha": "Sábado 29/Mayo/2027",
+    "fecha": "Viernes 29/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
       "17:20",
@@ -8578,13 +8545,13 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "atlas_197_446_Sábado 29-Mayo-2027_Doblada",
+    "id_funcion": "atlas_197_446_Viernes 29-Mayo-2026_Doblada",
     "titulo": "EL DIABLO VISTE A LA MODA 2",
     "director": "No especificado",
     "duracion": "120",
     "cine": "Atlas Flores",
     "ciudad": "CABA",
-    "fecha": "Sábado 29/Mayo/2027",
+    "fecha": "Viernes 29/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
       "14:30",
@@ -8683,7 +8650,8 @@
     "idioma": "Doblada",
     "horarios": [
       "14:30",
-      "16:20"
+      "16:20",
+      "19:00"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_446.jpg",
@@ -8691,13 +8659,13 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "atlas_197_449_Sábado 29-Mayo-2027_Doblada",
+    "id_funcion": "atlas_197_449_Viernes 29-Mayo-2026_Doblada",
     "titulo": "RISA Y LA CABINA DEL VIENTO",
     "director": "No especificado",
     "duracion": "97",
     "cine": "Atlas Flores",
     "ciudad": "CABA",
-    "fecha": "Sábado 29/Mayo/2027",
+    "fecha": "Viernes 29/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
       "22:00"
@@ -8793,13 +8761,13 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "atlas_197_454_Sábado 29-Mayo-2027_Doblada",
+    "id_funcion": "atlas_197_454_Viernes 29-Mayo-2026_Doblada",
     "titulo": "MORTAL KOMBAT II",
     "director": "No especificado",
     "duracion": "116",
     "cine": "Atlas Flores",
     "ciudad": "CABA",
-    "fecha": "Sábado 29/Mayo/2027",
+    "fecha": "Viernes 29/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
       "14:50"
@@ -8895,13 +8863,13 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "atlas_197_459_Sábado 29-Mayo-2027_Doblada",
+    "id_funcion": "atlas_197_459_Viernes 29-Mayo-2026_Doblada",
     "titulo": "STAR WARS: MANDALORIAN Y GROGU",
     "director": "No especificado",
     "duracion": "132",
     "cine": "Atlas Flores",
     "ciudad": "CABA",
-    "fecha": "Sábado 29/Mayo/2027",
+    "fecha": "Viernes 29/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
       "17:40",
@@ -9003,13 +8971,13 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "atlas_197_479_Sábado 29-Mayo-2027_Doblada",
+    "id_funcion": "atlas_197_479_Viernes 29-Mayo-2026_Doblada",
     "titulo": "BACKROOMS SIN SALIDA",
     "director": "No especificado",
     "duracion": "111",
     "cine": "Atlas Flores",
     "ciudad": "CABA",
-    "fecha": "Sábado 29/Mayo/2027",
+    "fecha": "Viernes 29/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
       "17:00",
@@ -9108,7 +9076,8 @@
     "idioma": "Doblada",
     "horarios": [
       "17:00",
-      "19:30"
+      "19:30",
+      "21:30"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_479.jpg",
@@ -9143,11 +9112,8 @@
     "fecha": "Jueves 4/Junio/2026",
     "idioma": "Doblada",
     "horarios": [
-      "14:10",
-      "16:20",
-      "18:30",
-      "20:40",
-      "22:50"
+      "19:20",
+      "21:30"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_480.jpg",
@@ -9260,13 +9226,13 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "atlas_197_481_Sábado 29-Mayo-2027_Doblada",
+    "id_funcion": "atlas_197_481_Viernes 29-Mayo-2026_Doblada",
     "titulo": "AMARGA NAVIDAD",
     "director": "No especificado",
     "duracion": "111",
     "cine": "Atlas Flores",
     "ciudad": "CABA",
-    "fecha": "Sábado 29/Mayo/2027",
+    "fecha": "Viernes 29/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
       "14:50",
@@ -9374,13 +9340,13 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "atlas_197_482_Sábado 29-Mayo-2027_Doblada",
+    "id_funcion": "atlas_197_482_Viernes 29-Mayo-2026_Doblada",
     "titulo": "DOLLY",
     "director": "No especificado",
     "duracion": "73",
     "cine": "Atlas Flores",
     "ciudad": "CABA",
-    "fecha": "Sábado 29/Mayo/2027",
+    "fecha": "Viernes 29/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
       "22:40"
@@ -9476,13 +9442,13 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "atlas_197_486_Sábado 29-Mayo-2027_Doblada",
+    "id_funcion": "atlas_197_486_Viernes 29-Mayo-2026_Doblada",
     "titulo": "ZONA DE RIESGO",
     "director": "No especificado",
     "duracion": "98",
     "cine": "Atlas Flores",
     "ciudad": "CABA",
-    "fecha": "Sábado 29/Mayo/2027",
+    "fecha": "Viernes 29/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
       "20:30"
@@ -9628,13 +9594,9 @@
     "idioma": "Doblada",
     "horarios": [
       "13:30",
-      "14:50",
       "15:50",
-      "17:10",
       "18:10",
-      "19:30",
       "20:30",
-      "21:50",
       "22:50"
     ],
     "seccion": "cartelera",
@@ -9996,13 +9958,13 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "atlas_198_400_Sábado 29-Mayo-2027_Doblada",
+    "id_funcion": "atlas_198_400_Viernes 29-Mayo-2026_Doblada",
     "titulo": "SUPER MARIO GALAXY:LA PELICULA",
     "director": "No especificado",
     "duracion": "100",
     "cine": "Atlas Liniers",
     "ciudad": "CABA",
-    "fecha": "Sábado 29/Mayo/2027",
+    "fecha": "Viernes 29/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
       "14:40"
@@ -10090,7 +10052,7 @@
     "fecha": "Miércoles 3/Junio/2026",
     "idioma": "Doblada",
     "horarios": [
-      "15:10"
+      "14:40"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_400.jpg",
@@ -10098,13 +10060,13 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "atlas_198_441_Sábado 29-Mayo-2027_Doblada",
+    "id_funcion": "atlas_198_441_Viernes 29-Mayo-2026_Doblada",
     "titulo": "MICHAEL",
     "director": "No especificado",
     "duracion": "127",
     "cine": "Atlas Liniers",
     "ciudad": "CABA",
-    "fecha": "Sábado 29/Mayo/2027",
+    "fecha": "Viernes 29/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
       "15:10",
@@ -10212,13 +10174,13 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "atlas_198_454_Sábado 29-Mayo-2027_Doblada",
+    "id_funcion": "atlas_198_454_Viernes 29-Mayo-2026_Doblada",
     "titulo": "MORTAL KOMBAT II",
     "director": "No especificado",
     "duracion": "116",
     "cine": "Atlas Liniers",
     "ciudad": "CABA",
-    "fecha": "Sábado 29/Mayo/2027",
+    "fecha": "Viernes 29/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
       "16:20"
@@ -10314,13 +10276,13 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "atlas_198_459_Sábado 29-Mayo-2027_Doblada",
+    "id_funcion": "atlas_198_459_Viernes 29-Mayo-2026_Doblada",
     "titulo": "STAR WARS: MANDALORIAN Y GROGU",
     "director": "No especificado",
     "duracion": "132",
     "cine": "Atlas Liniers",
     "ciudad": "CABA",
-    "fecha": "Sábado 29/Mayo/2027",
+    "fecha": "Viernes 29/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
       "15:30",
@@ -10428,13 +10390,13 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "atlas_198_475_Sábado 29-Mayo-2027_Doblada",
+    "id_funcion": "atlas_198_475_Viernes 29-Mayo-2026_Doblada",
     "titulo": "EL PASAJERO DEL DIABLO",
     "director": "No especificado",
     "duracion": "94",
     "cine": "Atlas Liniers",
     "ciudad": "CABA",
-    "fecha": "Sábado 29/Mayo/2027",
+    "fecha": "Viernes 29/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
       "17:50"
@@ -10530,13 +10492,13 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "atlas_198_478_Sábado 29-Mayo-2027_Doblada",
+    "id_funcion": "atlas_198_478_Viernes 29-Mayo-2026_Doblada",
     "titulo": "PEQUEÑOS MONSTRUOS",
     "director": "No especificado",
     "duracion": "88",
     "cine": "Atlas Liniers",
     "ciudad": "CABA",
-    "fecha": "Sábado 29/Mayo/2027",
+    "fecha": "Viernes 29/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
       "14:20"
@@ -10632,13 +10594,13 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "atlas_198_479_Sábado 29-Mayo-2027_Doblada",
+    "id_funcion": "atlas_198_479_Viernes 29-Mayo-2026_Doblada",
     "titulo": "BACKROOMS SIN SALIDA",
     "director": "No especificado",
     "duracion": "111",
     "cine": "Atlas Liniers",
     "ciudad": "CABA",
-    "fecha": "Sábado 29/Mayo/2027",
+    "fecha": "Viernes 29/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
       "17:00",
@@ -10736,8 +10698,9 @@
     "fecha": "Miércoles 3/Junio/2026",
     "idioma": "Doblada",
     "horarios": [
-      "17:30",
-      "21:50"
+      "17:00",
+      "19:30",
+      "22:10"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_479.jpg",
@@ -10885,13 +10848,13 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "atlas_198_482_Sábado 29-Mayo-2027_Doblada",
+    "id_funcion": "atlas_198_482_Viernes 29-Mayo-2026_Doblada",
     "titulo": "DOLLY",
     "director": "No especificado",
     "duracion": "73",
     "cine": "Atlas Liniers",
     "ciudad": "CABA",
-    "fecha": "Sábado 29/Mayo/2027",
+    "fecha": "Viernes 29/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
       "19:50",
@@ -10984,7 +10947,8 @@
     "fecha": "Miércoles 3/Junio/2026",
     "idioma": "Doblada",
     "horarios": [
-      "19:50"
+      "19:50",
+      "21:50"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_482.jpg",
