@@ -3,7 +3,7 @@ const fs = require('fs').promises;
 const path = require('path');
 
 const BASE_URL = 'https://www.cinegaumont.ar';
-const OUTPUT_FILE = path.join(__dirname, 'peliculas.json');
+const OUTPUT_FILE = path.join(__dirname, 'peliculas_gaumont.json');
 const BACKUP_FILE = path.join(__dirname, 'peliculas.backup.json');
 
 // Configuración de TMDB (igual que antes)

@@ -1,12 +1,12 @@
 [
   {
-    "id_funcion": "cosmos_1780030035393_0",
+    "id_funcion": "cosmos_365_1780030670943_0",
     "titulo": "El desprecio",
     "director": "Jean-Luc Godard",
     "duracion": "N/A",
     "cine": "Cine Cosmos UBA",
     "ciudad": "CABA",
-    "fecha": "viernes 29/mayo/2026",
+    "fecha": "Viernes 29/Mayo/2026",
     "idioma": "Idioma original con subtítulos",
     "horarios": [
       "Ju Vi Sá Do Lu Ma Mi | 14:55",
@@ -15,16 +15,16 @@
     "seccion": "cartelera",
     "poster": "https://www.cinecosmos.uba.ar/assets/uploads/Desprecio-Slider.jpg",
     "sinopsis": "Sin sinopsis disponible",
-    "linkTrailer": ""
+    "linkTrailer": "https://www.youtube.com/embed/nzhrUP2fAVI"
   },
   {
-    "id_funcion": "cosmos_1780030035393_1",
+    "id_funcion": "cosmos_364_1780030677501_1",
     "titulo": "El conformista",
     "director": "Bernardo Bertolucci",
     "duracion": "N/A",
     "cine": "Cine Cosmos UBA",
     "ciudad": "CABA",
-    "fecha": "viernes 29/mayo/2026",
+    "fecha": "Viernes 29/Mayo/2026",
     "idioma": "Idioma original con subtítulos",
     "horarios": [
       "Ju Vi Sá Do Lu Ma Mi | 16:45"
@@ -32,16 +32,16 @@
     "seccion": "cartelera",
     "poster": "https://www.cinecosmos.uba.ar/assets/uploads/Conformista-Slider.jpg",
     "sinopsis": "Sin sinopsis disponible",
-    "linkTrailer": ""
+    "linkTrailer": "https://www.youtube.com/embed/LhPDoq2LJ3A"
   },
   {
-    "id_funcion": "cosmos_1780030035393_2",
+    "id_funcion": "cosmos_362_1780030683987_2",
     "titulo": "La única opción",
     "director": "Park Chan-wook",
     "duracion": "N/A",
     "cine": "Cine Cosmos UBA",
     "ciudad": "CABA",
-    "fecha": "viernes 29/mayo/2026",
+    "fecha": "Viernes 29/Mayo/2026",
     "idioma": "Idioma original con subtítulos",
     "horarios": [
       "Ju Vi Sá Do Lu Ma Mi | 20:40"
@@ -49,16 +49,16 @@
     "seccion": "cartelera",
     "poster": "https://www.cinecosmos.uba.ar/assets/uploads/Opcion-Slider.jpg",
     "sinopsis": "Sin sinopsis disponible",
-    "linkTrailer": ""
+    "linkTrailer": "https://www.youtube.com/embed/APVAxWNajkI"
   },
   {
-    "id_funcion": "cosmos_1780030035393_3",
+    "id_funcion": "cosmos_359_1780030690445_3",
     "titulo": "Los años más bellos de una vida",
     "director": "Claude Lelouch",
     "duracion": "N/A",
     "cine": "Cine Cosmos UBA",
     "ciudad": "CABA",
-    "fecha": "viernes 29/mayo/2026",
+    "fecha": "Viernes 29/Mayo/2026",
     "idioma": "Idioma original con subtítulos",
     "horarios": [
       "Ju Vi Sá Do Lu Ma Mi | 15:10",
@@ -67,16 +67,16 @@
     "seccion": "cartelera",
     "poster": "https://www.cinecosmos.uba.ar/assets/uploads/Vida-Slider.jpg",
     "sinopsis": "Sin sinopsis disponible",
-    "linkTrailer": ""
+    "linkTrailer": "https://www.youtube.com/embed/Jd9A92gVGYw"
   },
   {
-    "id_funcion": "cosmos_1780030035393_4",
+    "id_funcion": "cosmos_358_1780030696921_4",
     "titulo": "Valor sentimental",
     "director": "Joachim Trier",
     "duracion": "N/A",
     "cine": "Cine Cosmos UBA",
     "ciudad": "CABA",
-    "fecha": "viernes 29/mayo/2026",
+    "fecha": "Viernes 29/Mayo/2026",
     "idioma": "Idioma original con subtítulos",
     "horarios": [
       "Ju Vi Sá Do Lu Ma Mi | 20:30"
@@ -84,16 +84,16 @@
     "seccion": "cartelera",
     "poster": "https://www.cinecosmos.uba.ar/assets/uploads/Valor-Slider.jpg",
     "sinopsis": "Sin sinopsis disponible",
-    "linkTrailer": ""
+    "linkTrailer": "https://www.youtube.com/embed/k_fbWje7Yco"
   },
   {
-    "id_funcion": "cosmos_1780030035393_5",
+    "id_funcion": "cosmos_357_1780030703390_5",
     "titulo": "Caso 137",
     "director": "Dóminik Moll",
     "duracion": "N/A",
     "cine": "Cine Cosmos UBA",
     "ciudad": "CABA",
-    "fecha": "viernes 29/mayo/2026",
+    "fecha": "Viernes 29/Mayo/2026",
     "idioma": "Idioma original con subtítulos",
     "horarios": [
       "Ju Vi Sá Do Lu Ma Mi | 16:45"
@@ -101,6 +101,6 @@
     "seccion": "cartelera",
     "poster": "https://www.cinecosmos.uba.ar/assets/uploads/Caso-Slider.jpg",
     "sinopsis": "Sin sinopsis disponible",
-    "linkTrailer": ""
+    "linkTrailer": "https://www.youtube.com/embed/b74_qVMZ09A"
   }
 ]
