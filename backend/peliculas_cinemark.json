@@ -9,9 +9,12 @@
     "fecha": "Viernes 29/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
-      "12:30",
+      "14:10",
       "15:00",
-      "17:40"
+      "16:40",
+      "17:40",
+      "19:20",
+      "22:00"
     ],
     "seccion": "cartelera",
     "poster": "",
@@ -1593,10 +1596,11 @@
     "cine": "Cinemark Caballito",
     "ciudad": "CABA",
     "fecha": "Viernes 29/Mayo/2026",
-    "idioma": "Doblada",
+    "idioma": "Subtitulada",
     "horarios": [
-      "12:30",
-      "17:30"
+      "15:00",
+      "20:00",
+      "22:30"
     ],
     "seccion": "cartelera",
     "poster": "",
@@ -2576,7 +2580,6 @@
     "fecha": "Viernes 29/Mayo/2026",
     "idioma": "Subtitulada",
     "horarios": [
-      "12:30",
       "13:40",
       "15:40",
       "16:30",
@@ -2601,7 +2604,6 @@
     "idioma": "Subtitulada",
     "horarios": [
       "00:40",
-      "12:20",
       "15:00",
       "15:20",
       "18:20",
@@ -2649,8 +2651,7 @@
       "17:10",
       "20:00",
       "20:40",
-      "22:30",
-      "23:10"
+      "22:30"
     ],
     "seccion": "cartelera",
     "poster": "",
@@ -2857,8 +2858,7 @@
       "17:10",
       "20:00",
       "20:40",
-      "22:30",
-      "23:10"
+      "22:30"
     ],
     "seccion": "cartelera",
     "poster": "",
@@ -2932,7 +2932,8 @@
       "15:10",
       "17:40",
       "20:10",
-      "22:40"
+      "22:40",
+      "23:10"
     ],
     "seccion": "cartelera",
     "poster": "",
@@ -3062,8 +3063,7 @@
       "17:10",
       "20:00",
       "20:40",
-      "22:30",
-      "23:10"
+      "22:30"
     ],
     "seccion": "cartelera",
     "poster": "",
@@ -3136,7 +3136,8 @@
       "15:10",
       "17:40",
       "20:10",
-      "22:40"
+      "22:40",
+      "23:10"
     ],
     "seccion": "cartelera",
     "poster": "",
@@ -3265,8 +3266,7 @@
       "17:10",
       "20:00",
       "20:40",
-      "22:30",
-      "23:10"
+      "22:30"
     ],
     "seccion": "cartelera",
     "poster": "",
@@ -3339,7 +3339,8 @@
       "15:10",
       "17:40",
       "20:10",
-      "22:40"
+      "22:40",
+      "23:10"
     ],
     "seccion": "cartelera",
     "poster": "",
@@ -3469,8 +3470,7 @@
       "17:10",
       "20:00",
       "20:40",
-      "22:30",
-      "23:10"
+      "22:30"
     ],
     "seccion": "cartelera",
     "poster": "",
@@ -3543,7 +3543,8 @@
       "15:10",
       "17:40",
       "20:10",
-      "22:40"
+      "22:40",
+      "23:10"
     ],
     "seccion": "cartelera",
     "poster": "",
@@ -3673,8 +3674,7 @@
       "17:10",
       "20:00",
       "20:40",
-      "22:30",
-      "23:10"
+      "22:30"
     ],
     "seccion": "cartelera",
     "poster": "",
@@ -3745,7 +3745,8 @@
     "horarios": [
       "12:00",
       "14:30",
-      "17:20"
+      "17:20",
+      "23:10"
     ],
     "seccion": "cartelera",
     "poster": "",
@@ -3780,7 +3781,6 @@
     "fecha": "Viernes 29/Mayo/2026",
     "idioma": "Subtitulada",
     "horarios": [
-      "12:20",
       "14:50",
       "17:20",
       "19:50",
@@ -3844,7 +3844,6 @@
     "fecha": "Viernes 29/Mayo/2026",
     "idioma": "Subtitulada",
     "horarios": [
-      "12:30",
       "15:30",
       "18:40",
       "22:10"
@@ -6639,7 +6638,6 @@
     "fecha": "Viernes 29/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
-      "12:40",
       "15:20",
       "18:00",
       "20:30",
@@ -6792,7 +6790,6 @@
     "fecha": "Viernes 29/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
-      "12:40",
       "15:10",
       "17:50",
       "20:25"
@@ -7772,11 +7769,10 @@
     "fecha": "Viernes 29/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
-      "12:30",
-      "15:00",
-      "17:25",
-      "19:50",
-      "22:20"
+      "13:40",
+      "16:15",
+      "18:40",
+      "21:30"
     ],
     "seccion": "cartelera",
     "poster": "",
@@ -7995,7 +7991,6 @@
     "fecha": "Viernes 29/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
-      "12:40",
       "15:20",
       "17:50",
       "20:10"
@@ -13373,7 +13368,6 @@
     "fecha": "Viernes 29/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
-      "12:30",
       "15:00",
       "17:30",
       "20:00",
@@ -14165,7 +14159,6 @@
     "fecha": "Viernes 29/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
-      "12:40",
       "15:15",
       "17:50",
       "20:25",
@@ -14245,7 +14238,6 @@
     "fecha": "Viernes 29/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
-      "12:30",
       "17:35",
       "22:35"
     ],
@@ -14371,7 +14363,6 @@
     "fecha": "Viernes 29/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
-      "12:40",
       "15:00",
       "17:25"
     ],
@@ -16844,10 +16835,12 @@
     "cine": "Hoyts Unicenter",
     "ciudad": "Martínez",
     "fecha": "Viernes 29/Mayo/2026",
-    "idioma": "Doblada",
+    "idioma": "Subtitulada",
     "horarios": [
-      "12:40",
-      "15:10"
+      "14:00",
+      "16:40",
+      "19:20",
+      "22:00"
     ],
     "seccion": "cartelera",
     "poster": "",
@@ -16884,8 +16877,8 @@
     "fecha": "Viernes 29/Mayo/2026",
     "idioma": "Subtitulada",
     "horarios": [
-      "12:45",
-      "21:30"
+      "13:15",
+      "19:00"
     ],
     "seccion": "cartelera",
     "poster": "",
@@ -16922,7 +16915,6 @@
     "fecha": "Viernes 29/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
-      "12:40",
       "15:05",
       "17:30",
       "20:35",

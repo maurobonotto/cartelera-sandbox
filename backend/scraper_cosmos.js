@@ -1,7 +1,6 @@
 const puppeteer = require('puppeteer');
 const fs = require('fs').promises;
 const path = require('path');
-const { getPosterFromTMDB } = require('./tmdb');
 
 const OUTPUT_FILE = path.join(__dirname, 'peliculas_cosmos.json');
 
@@ -34,7 +33,7 @@ function formatearFechaDesdeDate(date) {
 }
 
 async function scrapeCosmos() {
-    console.log('🎬 Scraping Cine Cosmos UBA (duración corregida, agrupación ok)');
+    console.log('🎬 Scraping Cine Cosmos UBA (sin TMDB)');
     const browser = await puppeteer.launch({ headless: true, args: ['--no-sandbox'] });
     const page = await browser.newPage();
 
@@ -61,10 +60,8 @@ async function scrapeCosmos() {
                 const lightTextElem = card.querySelector('.lightText');
                 if (lightTextElem) {
                     const text = lightTextElem.innerText;
-                    // Busca cualquier número seguido de 'm' (ej. "108m")
                     const durMatch = text.match(/(\d+)m/);
                     if (durMatch) duracion = durMatch[1];
-                    // País: todo lo que está antes de la primera barra
                     const paisMatch = text.match(/^([A-Za-zÁÉÍÓÚÑ\s]+)\s*\//);
                     if (paisMatch) pais = paisMatch[1].trim();
                 }
@@ -107,8 +104,7 @@ async function scrapeCosmos() {
         for (let i = 0; i < peliculasBase.length; i++) {
             const p = peliculasBase[i];
             console.log(`   Procesando: ${p.titulo} (${p.pais}, ${p.duracion} min)`);
-            const tmdbPoster = await getPosterFromTMDB(p.titulo, null, p.director);
-            const posterFinal = tmdbPoster || p.poster;
+            const posterFinal = p.poster; // sin TMDB
 
             for (const diaAbr of p.diasSemana) {
                 const diaNum = diasAbrMap[diaAbr];

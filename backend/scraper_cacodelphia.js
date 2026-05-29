@@ -1,7 +1,6 @@
-// backend/scraper_cacodelphia.js
+// backend/scraper_cacodelphia.js (sin TMDB)
 const fs = require('fs').promises;
 const path = require('path');
-const { getPosterFromTMDB } = require('./tmdb');
 
 const OUTPUT_FILE = path.join(__dirname, 'peliculas_cacodelphia.json');
 const CINE_ID = 86; // CineArte Cacodelphia
@@ -30,7 +29,6 @@ async function getMoviesList() {
     const response = await fetch(url);
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     const data = await response.json();
-    // La respuesta tiene { status: "ok", data: [...] }
     const movies = data.data || [];
     console.log(`   ✅ Encontradas ${movies.length} películas.`);
     return movies;
@@ -46,7 +44,7 @@ async function getMovieDetails(pref) {
 }
 
 async function scrapeCacodelphia() {
-    console.log('🎬 Scraping Cine Arte Cacodelphia (API directa)');
+    console.log('🎬 Scraping Cine Arte Cacodelphia (API directa, sin TMDB)');
     try {
         const moviesList = await getMoviesList();
         if (moviesList.length === 0) throw new Error('No se encontraron películas');
@@ -67,25 +65,21 @@ async function scrapeCacodelphia() {
                 continue;
             }
 
-            // Poster: si es relativo, completar URL
+            // Poster original de la API (sin TMDB)
             let posterUrl = movie.poster;
             if (posterUrl && posterUrl.startsWith('/')) {
                 posterUrl = `https://apiv2.gaf.adro.studio${posterUrl}`;
             }
-            // Mejorar con TMDB (usamos título)
-            const tmdbPoster = await getPosterFromTMDB(movie.nombre, null, null);
-            const posterFinal = tmdbPoster || posterUrl;
+            const posterFinal = posterUrl; // sin buscar en TMDB
 
             const duracion = movie.Duracion || 'N/A';
-            const director = 'No especificado'; // La API no trae director
+            const director = 'No especificado';
             const sinopsis = movie.descripcion || 'Sin sinopsis disponible';
             const linkTrailer = movie.urlTrailer || '';
 
-            // Por cada función, generar entrada plana (una por fecha+horario)
             for (const st of showtimes) {
                 const fechaISO = st.fechaHora.date;
                 const fechaLegible = formatearFecha(fechaISO);
-                // Extraer hora en formato HH:MM (de "2026-05-29 16:30:00")
                 const horario = fechaISO.split(' ')[1].slice(0, 5);
                 const idiomaBase = st.lenguaje === 'Subt' ? 'Subtitulada' : (st.lenguaje === 'Esp' ? 'Doblada' : st.lenguaje || 'Sin especificar');
                 const formato = st.formato || '2D';

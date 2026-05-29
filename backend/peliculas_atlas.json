@@ -485,7 +485,6 @@
     "idioma": "Doblada",
     "horarios": [
       "13:20",
-      "16:10",
       "20:40"
     ],
     "seccion": "cartelera",
@@ -504,6 +503,7 @@
     "idioma": "Doblada",
     "horarios": [
       "13:20",
+      "16:10",
       "20:40"
     ],
     "seccion": "cartelera",
@@ -1129,7 +1129,6 @@
     "fecha": "Sábado 30/Mayo/2026",
     "idioma": "Subtitulada",
     "horarios": [
-      "16:10",
       "20:30"
     ],
     "seccion": "cartelera",
@@ -1165,6 +1164,7 @@
     "fecha": "Lunes 1/Junio/2026",
     "idioma": "Subtitulada",
     "horarios": [
+      "16:10",
       "20:30"
     ],
     "seccion": "cartelera",
@@ -1789,25 +1789,6 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "atlas_191_480_Jueves 4-Junio-2026_Subtitulada",
-    "titulo": "SCARY MOVIE: TERRORÍFICAMENTE",
-    "director": "No especificado",
-    "duracion": "95",
-    "cine": "Atlas Caballito",
-    "ciudad": "CABA",
-    "fecha": "Jueves 4/Junio/2026",
-    "idioma": "Subtitulada",
-    "horarios": [
-      "18:10",
-      "21:00",
-      "22:30"
-    ],
-    "seccion": "cartelera",
-    "poster": "https://www.atlascines.com/images/posters/200_480.jpg",
-    "sinopsis": "Veintiséis años después de escapar de un asesino enmascarado sospechosamente familiar («Ghostface»),los Cuatro del Núcleo están de vuelta en la mira del asesino y ninguna propiedad intelectual del cine de terror está a salvo. Marlon Wayans («Shorty»),Shawn Wayans («Ray»),Anna Faris («Cindy») y Regina Hall («Brenda») se reúnen en Scary Movie junto a los favoritos que regresan y caras nuevas para abrirse paso a través de reinicios,remakes,secuelas,precuelas,secuelas,spin-offs,terror elevado,historias de origen,cualquier cosa que tenga la palabra legado en ella,y cada «capítulo final» que no sea absolutamente definitivo. Nada es sagrado. Ningún tropo sobrevive. Cada línea se cruza. Los Wayans están de vuelta para cancelar la Cultura de la Cancelación.",
-    "linkTrailer": ""
-  },
-  {
     "id_funcion": "atlas_191_480_Jueves 4-Junio-2026_Doblada",
     "titulo": "SCARY MOVIE: TERRORÍFICAMENTE",
     "director": "No especificado",
@@ -1817,12 +1798,26 @@
     "fecha": "Jueves 4/Junio/2026",
     "idioma": "Doblada",
     "horarios": [
-      "12:20",
-      "14:30",
-      "16:40",
-      "18:50",
-      "20:20",
-      "23:10"
+      "19:20",
+      "22:50"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://www.atlascines.com/images/posters/200_480.jpg",
+    "sinopsis": "Veintiséis años después de escapar de un asesino enmascarado sospechosamente familiar («Ghostface»),los Cuatro del Núcleo están de vuelta en la mira del asesino y ninguna propiedad intelectual del cine de terror está a salvo. Marlon Wayans («Shorty»),Shawn Wayans («Ray»),Anna Faris («Cindy») y Regina Hall («Brenda») se reúnen en Scary Movie junto a los favoritos que regresan y caras nuevas para abrirse paso a través de reinicios,remakes,secuelas,precuelas,secuelas,spin-offs,terror elevado,historias de origen,cualquier cosa que tenga la palabra legado en ella,y cada «capítulo final» que no sea absolutamente definitivo. Nada es sagrado. Ningún tropo sobrevive. Cada línea se cruza. Los Wayans están de vuelta para cancelar la Cultura de la Cancelación.",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "atlas_191_480_Jueves 4-Junio-2026_Subtitulada",
+    "titulo": "SCARY MOVIE: TERRORÍFICAMENTE",
+    "director": "No especificado",
+    "duracion": "95",
+    "cine": "Atlas Caballito",
+    "ciudad": "CABA",
+    "fecha": "Jueves 4/Junio/2026",
+    "idioma": "Subtitulada",
+    "horarios": [
+      "20:40",
+      "21:30"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_480.jpg",
@@ -2573,9 +2568,15 @@
     "idioma": "Doblada",
     "horarios": [
       "12:50",
+      "13:30",
       "15:10",
+      "15:50",
       "17:30",
-      "19:50"
+      "18:10",
+      "19:50",
+      "20:30",
+      "21:50",
+      "22:50"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_488.jpg",
@@ -2651,15 +2652,9 @@
     "idioma": "Doblada",
     "horarios": [
       "12:50",
-      "13:30",
       "15:10",
-      "15:50",
       "17:30",
-      "18:10",
-      "19:50",
-      "20:30",
-      "21:50",
-      "22:50"
+      "19:50"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_488.jpg",
@@ -3358,8 +3353,8 @@
     "fecha": "Martes 2/Junio/2026",
     "idioma": "Doblada",
     "horarios": [
-      "14:30",
-      "16:50"
+      "14:00",
+      "16:20"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_400.jpg",
@@ -3684,9 +3679,9 @@
     "fecha": "Domingo 31/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
-      "14:10",
-      "16:40",
-      "19:10"
+      "14:40",
+      "17:10",
+      "19:40"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_454.jpg",
@@ -3703,7 +3698,8 @@
     "fecha": "Domingo 31/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
-      "21:15"
+      "14:00",
+      "21:45"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_454.jpg",
@@ -3718,42 +3714,6 @@
     "cine": "Atlas Catan",
     "ciudad": "CABA",
     "fecha": "Lunes 1/Junio/2026",
-    "idioma": "Doblada",
-    "horarios": [
-      "14:10",
-      "16:40",
-      "19:10"
-    ],
-    "seccion": "cartelera",
-    "poster": "https://www.atlascines.com/images/posters/200_454.jpg",
-    "sinopsis": "Esta vez,los campeones favoritos de los fans —ahora acompañados por el mismísimo Johnny Cage— se enfrentan entre sí en la batalla definitiva,sangrienta y sin reglas,para derrotar el oscuro dominio de Shao Kahn,que amenaza con destruir el Reino de la Tierra y a sus defensores.",
-    "linkTrailer": ""
-  },
-  {
-    "id_funcion": "atlas_192_454_Lunes 1-Junio-2026_Doblada",
-    "titulo": "MORTAL KOMBAT II",
-    "director": "No especificado",
-    "duracion": "116",
-    "cine": "Atlas Catan",
-    "ciudad": "CABA",
-    "fecha": "Lunes 1/Junio/2026",
-    "idioma": "Doblada",
-    "horarios": [
-      "21:15"
-    ],
-    "seccion": "cartelera",
-    "poster": "https://www.atlascines.com/images/posters/200_454.jpg",
-    "sinopsis": "Esta vez,los campeones favoritos de los fans —ahora acompañados por el mismísimo Johnny Cage— se enfrentan entre sí en la batalla definitiva,sangrienta y sin reglas,para derrotar el oscuro dominio de Shao Kahn,que amenaza con destruir el Reino de la Tierra y a sus defensores.",
-    "linkTrailer": ""
-  },
-  {
-    "id_funcion": "atlas_192_454_Martes 2-Junio-2026_Doblada",
-    "titulo": "MORTAL KOMBAT II",
-    "director": "No especificado",
-    "duracion": "116",
-    "cine": "Atlas Catan",
-    "ciudad": "CABA",
-    "fecha": "Martes 2/Junio/2026",
     "idioma": "Doblada",
     "horarios": [
       "14:40",
@@ -3766,6 +3726,24 @@
     "linkTrailer": ""
   },
   {
+    "id_funcion": "atlas_192_454_Lunes 1-Junio-2026_Doblada",
+    "titulo": "MORTAL KOMBAT II",
+    "director": "No especificado",
+    "duracion": "116",
+    "cine": "Atlas Catan",
+    "ciudad": "CABA",
+    "fecha": "Lunes 1/Junio/2026",
+    "idioma": "Doblada",
+    "horarios": [
+      "14:00",
+      "21:45"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://www.atlascines.com/images/posters/200_454.jpg",
+    "sinopsis": "Esta vez,los campeones favoritos de los fans —ahora acompañados por el mismísimo Johnny Cage— se enfrentan entre sí en la batalla definitiva,sangrienta y sin reglas,para derrotar el oscuro dominio de Shao Kahn,que amenaza con destruir el Reino de la Tierra y a sus defensores.",
+    "linkTrailer": ""
+  },
+  {
     "id_funcion": "atlas_192_454_Martes 2-Junio-2026_Doblada",
     "titulo": "MORTAL KOMBAT II",
     "director": "No especificado",
@@ -3775,8 +3753,26 @@
     "fecha": "Martes 2/Junio/2026",
     "idioma": "Doblada",
     "horarios": [
-      "14:00",
-      "21:45"
+      "14:10",
+      "16:40",
+      "19:10"
+    ],
+    "seccion": "cartelera",
+    "poster": "https://www.atlascines.com/images/posters/200_454.jpg",
+    "sinopsis": "Esta vez,los campeones favoritos de los fans —ahora acompañados por el mismísimo Johnny Cage— se enfrentan entre sí en la batalla definitiva,sangrienta y sin reglas,para derrotar el oscuro dominio de Shao Kahn,que amenaza con destruir el Reino de la Tierra y a sus defensores.",
+    "linkTrailer": ""
+  },
+  {
+    "id_funcion": "atlas_192_454_Martes 2-Junio-2026_Doblada",
+    "titulo": "MORTAL KOMBAT II",
+    "director": "No especificado",
+    "duracion": "116",
+    "cine": "Atlas Catan",
+    "ciudad": "CABA",
+    "fecha": "Martes 2/Junio/2026",
+    "idioma": "Doblada",
+    "horarios": [
+      "21:15"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_454.jpg",
@@ -4097,7 +4093,7 @@
     "fecha": "Lunes 1/Junio/2026",
     "idioma": "Doblada",
     "horarios": [
-      "17:50"
+      "18:20"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_470.jpg",
@@ -4216,7 +4212,7 @@
     "fecha": "Martes 2/Junio/2026",
     "idioma": "Doblada",
     "horarios": [
-      "22:15"
+      "21:45"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_475.jpg",
@@ -4233,7 +4229,7 @@
     "fecha": "Miércoles 3/Junio/2026",
     "idioma": "Doblada",
     "horarios": [
-      "21:45"
+      "22:15"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_475.jpg",
@@ -4311,9 +4307,9 @@
     "idioma": "Doblada",
     "horarios": [
       "14:20",
-      "17:00",
-      "19:30",
-      "22:00"
+      "16:30",
+      "19:00",
+      "21:30"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_479.jpg",
@@ -4406,8 +4402,11 @@
     "fecha": "Viernes 5/Junio/2026",
     "idioma": "Doblada",
     "horarios": [
-      "19:20",
-      "21:30"
+      "14:00",
+      "16:00",
+      "18:10",
+      "20:20",
+      "22:30"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_480.jpg",
@@ -4580,8 +4579,8 @@
     "fecha": "Martes 2/Junio/2026",
     "idioma": "Doblada",
     "horarios": [
-      "18:00",
-      "22:30"
+      "17:30",
+      "22:00"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_482.jpg",
@@ -5720,7 +5719,7 @@
     "fecha": "Lunes 1/Junio/2026",
     "idioma": "Doblada",
     "horarios": [
-      "16:00"
+      "15:00"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_396.jpg",
@@ -5737,7 +5736,7 @@
     "fecha": "Martes 2/Junio/2026",
     "idioma": "Doblada",
     "horarios": [
-      "16:00"
+      "15:00"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_396.jpg",
@@ -6066,7 +6065,7 @@
     "fecha": "Miércoles 3/Junio/2026",
     "idioma": "Doblada",
     "horarios": [
-      "20:00"
+      "19:00"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_477.jpg",
@@ -6143,10 +6142,10 @@
     "fecha": "Lunes 1/Junio/2026",
     "idioma": "Doblada",
     "horarios": [
-      "15:40",
-      "17:30",
-      "18:10",
-      "20:40"
+      "16:40",
+      "18:30",
+      "19:10",
+      "21:40"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_481.jpg",
@@ -6279,9 +6278,9 @@
     "fecha": "Martes 2/Junio/2026",
     "idioma": "Subtitulada",
     "horarios": [
-      "15:40",
-      "17:50",
-      "22:00"
+      "14:40",
+      "16:50",
+      "21:00"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_484.jpg",
@@ -6298,9 +6297,9 @@
     "fecha": "Miércoles 3/Junio/2026",
     "idioma": "Subtitulada",
     "horarios": [
-      "14:40",
-      "16:50",
-      "21:00"
+      "15:40",
+      "17:50",
+      "22:00"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_484.jpg",
@@ -6368,7 +6367,7 @@
     "fecha": "Lunes 1/Junio/2026",
     "idioma": "Subtitulada",
     "horarios": [
-      "20:00"
+      "21:00"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_485.jpg",
@@ -6385,7 +6384,7 @@
     "fecha": "Martes 2/Junio/2026",
     "idioma": "Subtitulada",
     "horarios": [
-      "21:00"
+      "20:00"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_485.jpg",
@@ -6402,7 +6401,7 @@
     "fecha": "Miércoles 3/Junio/2026",
     "idioma": "Subtitulada",
     "horarios": [
-      "20:00"
+      "21:00"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_485.jpg",
@@ -6722,7 +6721,7 @@
     "fecha": "Martes 2/Junio/2026",
     "idioma": "Doblada",
     "horarios": [
-      "15:40"
+      "14:50"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_400.jpg",
@@ -6775,7 +6774,8 @@
     "idioma": "Subtitulada",
     "horarios": [
       "16:40",
-      "19:20"
+      "19:20",
+      "22:00"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_441.jpg",
@@ -6792,9 +6792,9 @@
     "fecha": "Domingo 31/Mayo/2026",
     "idioma": "Subtitulada",
     "horarios": [
-      "16:40",
-      "19:20",
-      "22:00"
+      "15:50",
+      "18:30",
+      "21:10"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_441.jpg",
@@ -6811,8 +6811,9 @@
     "fecha": "Lunes 1/Junio/2026",
     "idioma": "Subtitulada",
     "horarios": [
-      "16:40",
-      "19:20"
+      "15:50",
+      "18:30",
+      "21:10"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_441.jpg",
@@ -6848,9 +6849,9 @@
     "fecha": "Miércoles 3/Junio/2026",
     "idioma": "Subtitulada",
     "horarios": [
-      "15:50",
-      "18:30",
-      "21:10"
+      "16:40",
+      "19:20",
+      "22:00"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_441.jpg",
@@ -6943,9 +6944,9 @@
     "fecha": "Martes 2/Junio/2026",
     "idioma": "Subtitulada",
     "horarios": [
-      "16:30",
-      "19:00",
-      "21:30"
+      "17:20",
+      "19:50",
+      "22:20"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_446.jpg",
@@ -6996,74 +6997,6 @@
     "cine": "Atlas Nordelta",
     "ciudad": "Tigre",
     "fecha": "Viernes 29/Mayo/2026",
-    "idioma": "Doblada",
-    "horarios": [
-      "15:20"
-    ],
-    "seccion": "cartelera",
-    "poster": "https://www.atlascines.com/images/posters/200_459.jpg",
-    "sinopsis": "El cruel Imperio ha caído,pero los señores de la guerra imperiales siguen dispersos por toda la Galaxia. La incipiente Nueva República trabaja para proteger las conquistas de la Rebelión con la ayuda del legendario cazarrecompensas mandaloriano,Din Djarin (Pedro Pascal),y su joven aprendiz,Grogu.\n\nSTAR WARS: THE MANDALORIAN AND GROGU contiene\nvarias escenas con luces intermitentes que pueden afectar a personas susceptibles a la epilepsia fotosensible o a padecer otras fotosensibilidades.",
-    "linkTrailer": ""
-  },
-  {
-    "id_funcion": "atlas_196_459_Sábado 30-Mayo-2026_Doblada",
-    "titulo": "STAR WARS: MANDALORIAN Y GROGU",
-    "director": "No especificado",
-    "duracion": "132",
-    "cine": "Atlas Nordelta",
-    "ciudad": "Tigre",
-    "fecha": "Sábado 30/Mayo/2026",
-    "idioma": "Doblada",
-    "horarios": [
-      "15:50"
-    ],
-    "seccion": "cartelera",
-    "poster": "https://www.atlascines.com/images/posters/200_459.jpg",
-    "sinopsis": "El cruel Imperio ha caído,pero los señores de la guerra imperiales siguen dispersos por toda la Galaxia. La incipiente Nueva República trabaja para proteger las conquistas de la Rebelión con la ayuda del legendario cazarrecompensas mandaloriano,Din Djarin (Pedro Pascal),y su joven aprendiz,Grogu.\n\nSTAR WARS: THE MANDALORIAN AND GROGU contiene\nvarias escenas con luces intermitentes que pueden afectar a personas susceptibles a la epilepsia fotosensible o a padecer otras fotosensibilidades.",
-    "linkTrailer": ""
-  },
-  {
-    "id_funcion": "atlas_196_459_Sábado 30-Mayo-2026_Doblada",
-    "titulo": "STAR WARS: MANDALORIAN Y GROGU",
-    "director": "No especificado",
-    "duracion": "132",
-    "cine": "Atlas Nordelta",
-    "ciudad": "Tigre",
-    "fecha": "Sábado 30/Mayo/2026",
-    "idioma": "Doblada",
-    "horarios": [
-      "18:40"
-    ],
-    "seccion": "cartelera",
-    "poster": "https://www.atlascines.com/images/posters/200_459.jpg",
-    "sinopsis": "El cruel Imperio ha caído,pero los señores de la guerra imperiales siguen dispersos por toda la Galaxia. La incipiente Nueva República trabaja para proteger las conquistas de la Rebelión con la ayuda del legendario cazarrecompensas mandaloriano,Din Djarin (Pedro Pascal),y su joven aprendiz,Grogu.\n\nSTAR WARS: THE MANDALORIAN AND GROGU contiene\nvarias escenas con luces intermitentes que pueden afectar a personas susceptibles a la epilepsia fotosensible o a padecer otras fotosensibilidades.",
-    "linkTrailer": ""
-  },
-  {
-    "id_funcion": "atlas_196_459_Domingo 31-Mayo-2026_Subtitulada",
-    "titulo": "STAR WARS: MANDALORIAN Y GROGU",
-    "director": "No especificado",
-    "duracion": "132",
-    "cine": "Atlas Nordelta",
-    "ciudad": "Tigre",
-    "fecha": "Domingo 31/Mayo/2026",
-    "idioma": "Subtitulada",
-    "horarios": [
-      "22:00"
-    ],
-    "seccion": "cartelera",
-    "poster": "https://www.atlascines.com/images/posters/200_459.jpg",
-    "sinopsis": "El cruel Imperio ha caído,pero los señores de la guerra imperiales siguen dispersos por toda la Galaxia. La incipiente Nueva República trabaja para proteger las conquistas de la Rebelión con la ayuda del legendario cazarrecompensas mandaloriano,Din Djarin (Pedro Pascal),y su joven aprendiz,Grogu.\n\nSTAR WARS: THE MANDALORIAN AND GROGU contiene\nvarias escenas con luces intermitentes que pueden afectar a personas susceptibles a la epilepsia fotosensible o a padecer otras fotosensibilidades.",
-    "linkTrailer": ""
-  },
-  {
-    "id_funcion": "atlas_196_459_Domingo 31-Mayo-2026_Doblada",
-    "titulo": "STAR WARS: MANDALORIAN Y GROGU",
-    "director": "No especificado",
-    "duracion": "132",
-    "cine": "Atlas Nordelta",
-    "ciudad": "Tigre",
-    "fecha": "Domingo 31/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
       "15:20"
@@ -7219,7 +7152,7 @@
     "fecha": "Domingo 31/Mayo/2026",
     "idioma": "Doblada",
     "horarios": [
-      "15:20"
+      "14:30"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_474.jpg",
@@ -7236,7 +7169,7 @@
     "fecha": "Lunes 1/Junio/2026",
     "idioma": "Doblada",
     "horarios": [
-      "15:20"
+      "14:30"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_474.jpg",
@@ -7619,8 +7552,9 @@
     "fecha": "Miércoles 3/Junio/2026",
     "idioma": "Doblada",
     "horarios": [
-      "19:10",
-      "21:40"
+      "15:10",
+      "20:00",
+      "22:30"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_481.jpg",
@@ -7773,7 +7707,7 @@
     "fecha": "Domingo 31/Mayo/2026",
     "idioma": "Subtitulada",
     "horarios": [
-      "22:40"
+      "21:50"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_486.jpg",
@@ -7824,7 +7758,7 @@
     "fecha": "Miércoles 3/Junio/2026",
     "idioma": "Subtitulada",
     "horarios": [
-      "21:50"
+      "22:40"
     ],
     "seccion": "cartelera",
     "poster": "https://www.atlascines.com/images/posters/200_486.jpg",
@@ -7959,11 +7893,8 @@
     "idioma": "Doblada",
     "horarios": [
       "13:20",
-      "14:10",
       "15:40",
-      "16:30",
       "18:00",
-      "18:50",
       "20:20"
     ],
     "seccion": "cartelera",

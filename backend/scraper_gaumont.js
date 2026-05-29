@@ -1,7 +1,6 @@
 const puppeteer = require('puppeteer');
 const fs = require('fs').promises;
 const path = require('path');
-const { getPosterFromTMDB } = require('./tmdb');  // Importamos la función común
 
 const BASE_URL = 'https://www.cinegaumont.ar';
 const OUTPUT_FILE = path.join(__dirname, 'peliculas_gaumont.json');
@@ -161,7 +160,7 @@ async function scrapeMovieDetails(page, movie) {
         idioma: g.idioma,
         horarios: g.horarios,
         seccion: 'cartelera',
-        poster: '', // se asignará más tarde (TMDB)
+        poster: details.poster, // solo el póster de la página (si existe)
         sinopsis: details.sinopsis,
         linkTrailer: details.linkTrailer
     }));
@@ -171,7 +170,7 @@ async function scrapeMovieDetails(page, movie) {
 
 // Función principal
 async function main() {
-    console.log('🚀 SCRAPER GAUMONT (con TMDB centralizado)');
+    console.log('🚀 SCRAPER GAUMONT (sin TMDB, solo datos crudos)');
     const browser = await puppeteer.launch({ headless: true, args: ['--no-sandbox'] });
     const page = await browser.newPage();
 
@@ -181,23 +180,12 @@ async function main() {
 
         let todasLasFunciones = [];
         for (const movie of movies) {
-            const { funciones, anio, director, posterOriginal } = await scrapeMovieDetails(page, movie);
+            const { funciones } = await scrapeMovieDetails(page, movie);
             if (funciones.length === 0) {
                 console.log(`   ⚠️ No hay funciones para "${movie.titulo}".`);
                 continue;
             }
-
-            // Buscar póster en TMDB (usamos título, año y director)
-            console.log(`   🖼️ Buscando póster en TMDB para: ${movie.titulo}${anio ? ` (${anio})` : ''} | Director: ${director}`);
-            const tmdbPoster = await getPosterFromTMDB(movie.titulo, anio, director);
-            const posterFinal = tmdbPoster || posterOriginal; // fallback al póster de la página si TMDB no da
-
-            const funcionesConPoster = funciones.map(func => ({
-                ...func,
-                poster: posterFinal
-            }));
-
-            todasLasFunciones.push(...funcionesConPoster);
+            todasLasFunciones.push(...funciones);
             await wait(500);
         }
 
