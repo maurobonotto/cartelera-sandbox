@@ -15,16 +15,21 @@ jobs:
       FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
     steps:
       - uses: actions/checkout@v4
+
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - run: npm install
-        working-directory: backend
+
+      - name: Install dependencies (incl. puppeteer stealth)
+        run: |
+          cd backend
+          npm install puppeteer-extra puppeteer-extra-plugin-stealth puppeteer
+
       - name: Run Lugones scraper
-        run: node scraper_lugones.js
-        working-directory: backend
+        run: node backend/scraper_lugones.js
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+
       - name: Commit changes
         uses: stefanzweifel/git-auto-commit-action@v5
         with:

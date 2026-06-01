@@ -1,5 +1,6 @@
-const axios = require('axios');
-const cheerio = require('cheerio');
+const puppeteer = require('puppeteer-extra');
+const StealthPlugin = require('puppeteer-extra-plugin-stealth');
+puppeteer.use(StealthPlugin());
 const fs = require('fs').promises;
 const path = require('path');
 const { GoogleGenerativeAI } = require('@google/generative-ai');
@@ -24,6 +25,7 @@ if (USE_GITHUB_MODELS) {
     console.log('Usando Gemini (ejecución local)');
 }
 
+// ------------------ Validaciones ------------------
 function validarFecha(fecha) {
     const regex = /^(DOM|LUN|MAR|MIÉ|JUE|VIE|SÁB) (\d{1,2})\/(ENE|FEB|MAR|ABR|MAY|JUN|JUL|AGO|SEP|OCT|NOV|DIC)\/(\d{4})$/;
     if (regex.test(fecha)) return fecha;
@@ -108,61 +110,47 @@ ${html}
 }
 
 async function scrapeLugones() {
-    console.log('Iniciando scraping de Sala Lugones con axios+cheerio');
+    console.log('Iniciando scraping con Puppeteer Stealth');
+    const browser = await puppeteer.launch({
+        headless: 'new',
+        args: ['--no-sandbox', '--disable-setuid-sandbox'],
+    });
+    const page = await browser.newPage();
+    await page.setUserAgent('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36');
+    
     try {
-        const response = await axios.get(BASE_URL, {
-            headers: {
-                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
-            },
-            timeout: 30000
+        await page.goto(BASE_URL, { waitUntil: 'networkidle2', timeout: 60000 });
+        await page.waitForTimeout(5000); // espera extra para Cloudflare
+        await page.waitForSelector('.list-item', { timeout: 30000 });
+
+        const eventos = await page.evaluate(() => {
+            const items = document.querySelectorAll('.list-item');
+            return Array.from(items).map(item => {
+                const tituloEvento = item.querySelector('h2')?.innerText.trim() || '';
+                const link = item.querySelector('.buttons a.button[href*="/ver/"]')?.getAttribute('href');
+                if (!link) return null;
+                let url = link.startsWith('http') ? link : `https://complejoteatral.gob.ar${link}`;
+                return { tituloEvento, url };
+            }).filter(e => e !== null);
         });
-        const $ = cheerio.load(response.data);
-        const eventosUrls = [];
-        $('a[href*="/ver/"]').each((i, el) => {
-            let href = $(el).attr('href');
-            if (href && !href.startsWith('http')) {
-                href = `https://complejoteatral.gob.ar${href}`;
-            }
-            if (href && href.includes('/ver/')) {
-                let tituloEvento = '';
-                const parent = $(el).closest('.list-item');
-                if (parent.length) {
-                    tituloEvento = parent.find('h2').first().text().trim();
-                } else {
-                    tituloEvento = $(el).closest('div').find('h2').first().text().trim();
-                }
-                if (!tituloEvento) {
-                    tituloEvento = $(el).text().trim();
-                }
-                eventosUrls.push({ tituloEvento, url: href });
-            }
-        });
-        const unicos = [];
-        const seen = new Set();
-        for (const ev of eventosUrls) {
-            if (!seen.has(ev.url)) {
-                seen.add(ev.url);
-                unicos.push(ev);
-            }
-        }
-        console.log(`   ${unicos.length} eventos encontrados.`);
+        console.log(`   ${eventos.length} eventos encontrados.`);
+
         let todasLasFunciones = [];
-        for (const evento of unicos) {
+
+        for (const evento of eventos) {
             console.log(`\nProcesando: ${evento.tituloEvento}`);
             try {
-                const eventResponse = await axios.get(evento.url, {
-                    headers: {
-                        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
-                    },
-                    timeout: 30000
-                });
-                const html = eventResponse.data;
+                await page.goto(evento.url, { waitUntil: 'networkidle2', timeout: 60000 });
+                await page.waitForTimeout(2000);
+                const html = await page.content();
                 const htmlLimpio = limpiarHTML(html);
                 let funciones = await extraerConIA(htmlLimpio, evento.tituloEvento);
+
                 if (!funciones.length) {
                     console.log(`   No se extrajeron funciones para ${evento.tituloEvento}`);
                     continue;
                 }
+
                 let contador = 0;
                 for (let f of funciones) {
                     f.fecha = validarFecha(f.fecha);
@@ -172,6 +160,7 @@ async function scrapeLugones() {
                     f.duracion = validarDuracion(f.duracion);
                     if (!f.director || f.director.trim() === '') f.director = 'No especificado';
                     if (!f.sinopsis) f.sinopsis = '';
+
                     const idBase = `lugones_${evento.tituloEvento.replace(/\s/g, '_')}_${f.titulo.replace(/\s/g, '_')}_${f.fecha.replace(/\//g, '-')}`;
                     const idFuncion = `${idBase}_${f.horario.replace(':', '')}`;
                     todasLasFunciones.push({
@@ -199,12 +188,15 @@ async function scrapeLugones() {
             }
             await new Promise(r => setTimeout(r, 1000));
         }
+
         await fs.writeFile(OUTPUT_FILE, JSON.stringify(todasLasFunciones, null, 2));
         console.log(`\n✅ Scraping completado. Se guardaron ${todasLasFunciones.length} funciones en ${OUTPUT_FILE}`);
         return todasLasFunciones;
     } catch (error) {
         console.error('❌ Error general:', error);
         return [];
+    } finally {
+        await browser.close();
     }
 }
 
