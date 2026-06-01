@@ -111,7 +111,7 @@ ${html}
                 model: 'openrouter/free',
                 messages: [{ role: 'user', content: prompt }],
                 temperature: 0.1,
-                plugins: [{ id: "response-healing" }]   // ← repara JSON automáticamente
+                plugins: [{ id: "response-healing" }]
             }),
         });
 
@@ -123,21 +123,14 @@ ${html}
 
         const data = await response.json();
         let text = data.choices[0].message.content;
-        
-        // Limpiar bloques de código markdown
         text = text.replace(/```json\s*/g, '').replace(/```\s*/g, '');
-        
-        // Extraer array JSON
         const jsonMatch = text.match(/\[[\s\S]*\]/);
         if (!jsonMatch) {
             console.error(`No se encontró array JSON en la respuesta. Respuesta: ${text.substring(0, 200)}`);
             return [];
         }
-        
         let jsonStr = jsonMatch[0];
-        // Limpiar caracteres de control no válidos
         jsonStr = jsonStr.replace(/[\x00-\x08\x0B\x0C\x0E-\x1F]/g, '');
-        
         return JSON.parse(jsonStr);
     } catch (error) {
         console.error(`Error en IA para ${tituloEvento}:`, error.message);
@@ -145,7 +138,7 @@ ${html}
     }
 }
 
-// ------------------ Scraper principal (con ScrapingAnt y filtrado de eventos) ------------------
+// ------------------ Scraper principal (con ScrapingAnt y filtrado) ------------------
 async function scrapeLugones() {
     console.log('Iniciando scraping con ScrapingAnt + OpenRouter + Filtro de eventos');
 
@@ -156,12 +149,31 @@ async function scrapeLugones() {
     }
 
     try {
-        // 1. Descargar página principal con ScrapingAnt
+        // 1. Descargar página principal con ScrapingAnt - forzando texto plano
         const mainUrl = `https://api.scrapingant.com/v2/general?url=${encodeURIComponent(BASE_URL)}&x-api-key=${apiKey}&browser=true`;
-        const mainResponse = await axios.get(mainUrl);
-        const html = mainResponse.data.content;   // ← usar .content
+        console.log(`🔍 Solicitando URL principal: ${BASE_URL}`);
+        const mainResponse = await axios.get(mainUrl, { responseType: 'text' });
+        
+        // La API puede devolver JSON o texto plano. Si es JSON, extraemos .content; si no, usamos directamente.
+        let html;
+        if (typeof mainResponse.data === 'string') {
+            html = mainResponse.data;
+        } else if (mainResponse.data && typeof mainResponse.data.content === 'string') {
+            html = mainResponse.data.content;
+        } else {
+            console.error('❌ La respuesta de ScrapingAnt no contiene HTML (formato inesperado):', typeof mainResponse.data);
+            console.log('Contenido muestra:', JSON.stringify(mainResponse.data).substring(0, 500));
+            return;
+        }
 
-        // 2. Cargar HTML con cheerio y extraer eventos de cine (filtrar no deseados)
+        if (!html || html.trim() === '') {
+            console.error('❌ El HTML obtenido está vacío.');
+            return;
+        }
+
+        console.log(`📄 HTML principal obtenido (primeros 300 caracteres): ${html.substring(0, 300)}`);
+
+        // 2. Cargar HTML con cheerio y extraer eventos de cine
         const $ = cheerio.load(html);
         const eventos = [];
 
@@ -173,39 +185,43 @@ async function scrapeLugones() {
             let url = linkElement.attr('href');
             if (url.startsWith('/')) url = 'https://complejoteatral.gob.ar' + url;
 
-            // Palabras que indican que NO es un evento de cine
             const palabrasExcluir = ['visita', 'guía', 'taller', 'concierto', 'espectáculo', 'teatro', 'muestra'];
             const esNoCine = palabrasExcluir.some(p => titulo.toLowerCase().includes(p));
-
-            // También podemos incluir solo aquellos que parezcan ciclos de cine (opcional)
             const palabrasCine = ['CINE', 'PELÍCULA', 'CICLO', 'JUSTA', 'TAXI', 'ADJANI', 'GARDEL', 'VARDA', '1926', 'EXPRESIONISMO'];
             const esCine = palabrasCine.some(p => titulo.toUpperCase().includes(p));
 
             if (!esNoCine && esCine) {
                 eventos.push({ tituloEvento: titulo, url: url });
+                console.log(`   Evento aceptado: ${titulo}`);
             } else {
-                console.log(`   Evento descartado (no cine): ${titulo}`);
+                console.log(`   Evento descartado: ${titulo}`);
             }
         });
 
-        console.log(`   ${eventos.length} eventos de cine encontrados.`);
+        console.log(`\n✅ Total eventos de cine encontrados: ${eventos.length}`);
 
         let todasLasFunciones = [];
 
         for (let idx = 0; idx < eventos.length; idx++) {
             const evento = eventos[idx];
-            console.log(`\nProcesando evento ${idx+1}: ${evento.tituloEvento} (${evento.url})`);
+            console.log(`\n📌 Procesando evento ${idx+1}: ${evento.tituloEvento} (${evento.url})`);
             try {
-                // Descargar HTML del evento con ScrapingAnt
                 const eventApiUrl = `https://api.scrapingant.com/v2/general?url=${encodeURIComponent(evento.url)}&x-api-key=${apiKey}&browser=true`;
-                const eventResponse = await axios.get(eventApiUrl);
-                const eventHtml = eventResponse.data.content;
-                const htmlLimpio = limpiarHTML(eventHtml);
+                const eventResponse = await axios.get(eventApiUrl, { responseType: 'text' });
+                let eventHtml;
+                if (typeof eventResponse.data === 'string') {
+                    eventHtml = eventResponse.data;
+                } else if (eventResponse.data && typeof eventResponse.data.content === 'string') {
+                    eventHtml = eventResponse.data.content;
+                } else {
+                    throw new Error('Formato de respuesta inesperado');
+                }
 
+                const htmlLimpio = limpiarHTML(eventHtml);
                 let funciones = await extraerConIA(htmlLimpio, evento.tituloEvento);
 
                 if (!funciones.length) {
-                    console.log(`   No se extrajeron funciones para ${evento.tituloEvento}`);
+                    console.log(`   ⚠️ No se extrajeron funciones para ${evento.tituloEvento}`);
                     continue;
                 }
 
@@ -237,14 +253,13 @@ async function scrapeLugones() {
                         linkTrailer: '',
                         anio: f.anio
                     });
-                    console.log(`   ${f.titulo} — ${f.fecha} ${f.horario} (${f.anio || 's/a'}) | Director: ${f.director} | Duración: ${f.duracion}`);
+                    console.log(`   🎬 ${f.titulo} — ${f.fecha} ${f.horario} (${f.anio || 's/a'}) | Director: ${f.director} | Duración: ${f.duracion}`);
                     contador++;
                 }
                 console.log(`      ✅ ${contador} funciones extraídas`);
             } catch (err) {
-                console.error(`      Error en evento ${evento.tituloEvento}: ${err.message}`);
+                console.error(`      ❌ Error en evento ${evento.tituloEvento}: ${err.message}`);
             }
-            // Pequeña pausa entre eventos para no saturar la API
             await new Promise(r => setTimeout(r, 1000));
         }
 
