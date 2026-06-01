@@ -1,40 +1,32 @@
 name: Scraper Semanal Lugones
-
 on:
   schedule:
-    - cron: '0 0 * * 0'   # Todos los domingos a las 00:00 UTC
-  workflow_dispatch:       # Permite ejecutarlo manualmente desde GitHub
-
+    - cron: '0 0 * * 0'
+  workflow_dispatch:
 permissions:
   contents: write
-
 jobs:
   scrape:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v5
-      
-      - uses: actions/setup-node@v6
+      - uses: actions/checkout@v6      # ✅ Actualizado
+      - uses: actions/setup-node@v7    # ✅ Actualizado
         with:
-          node-version: '22'
-      
+          node-version: '24'           # ✅ Actualizado
       - name: Install Chromium
         run: |
           sudo apt-get update
           sudo apt-get install -y chromium-browser
-      
       - run: npm install
         working-directory: backend
-      
       - name: Run Lugones scraper
         run: node scraper_lugones.js
         working-directory: backend
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
           PUPPETEER_EXECUTABLE_PATH: /usr/bin/chromium-browser
-      
       - name: Commit changes
-        uses: stefanzweifel/git-auto-commit-action@v7   # ✅ Versión actualizada
+        uses: stefanzweifel/git-auto-commit-action@v7   # ✅ Actualizado
         with:
           commit_message: "Actualización automática cartelera Lugones"
           file_pattern: backend/peliculas_lugones.json
