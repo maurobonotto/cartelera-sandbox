@@ -8,9 +8,9 @@ require('dotenv').config();
 const OUTPUT_FILE = path.join(__dirname, 'peliculas_lugones.json');
 const BASE_URL = 'https://complejoteatral.gob.ar/cine';
 
-// ------------------ Validaciones (corregidas) ------------------
+// ------------------ Validaciones (normaliza fechas) ------------------
 function validarFecha(fecha) {
-    // Normalizar días: SAB -> SÁB, MIE -> MIÉ, etc.
+    // Normalizar días sin acento
     let fechaNorm = fecha
         .replace(/^SAB/, 'SÁB')
         .replace(/^MIE/, 'MIÉ')
@@ -56,7 +56,7 @@ function limpiarHTML(html) {
     return html;
 }
 
-// ------------------ Extracción con OpenRouter (corregido) ------------------
+// ------------------ Extracción con OpenRouter (con limpieza de JSON) ------------------
 async function extraerConIA(html, tituloEvento) {
     const prompt = `
 Eres un extractor de cartelera de cine. Del siguiente HTML de la página del evento "${tituloEvento}", extrae TODAS las funciones de cine.
@@ -75,7 +75,7 @@ Devuelve ÚNICAMENTE un array JSON. Cada objeto debe tener estos campos exactos:
 Reglas estrictas:
 - Respeta EXACTAMENTE el formato de fecha y horario.
 - Si hay múltiples horarios para un mismo título, crea un objeto por cada horario.
-- No incluyas texto adicional fuera del JSON. Nada de explicaciones, solo el array.
+- No incluyas texto adicional fuera del JSON.
 - Si algún dato no está disponible, usa "" para sinopsis, "No especificado" para director, "N/A" para duración.
 - Para el año, si no está explícito, déjalo vacío ("").
 
@@ -112,18 +112,38 @@ ${html}
         const data = await response.json();
         let text = data.choices[0].message.content;
         
-        // Limpiar posibles respuestas no JSON (extraer el primer array)
-        let jsonMatch = text.match(/\[[\s\S]*\]/);
+        // Extraer el primer array JSON
+        const jsonMatch = text.match(/\[[\s\S]*\]/);
         if (!jsonMatch) {
-            // Intento alternativo: buscar un array que comience con [
-            jsonMatch = text.match(/(\[\s*\{[\s\S]*\}\s*\])/);
-            if (!jsonMatch) {
-                console.error(`Respuesta no contiene JSON: ${text.substring(0, 200)}`);
+            console.error(`No se encontró array JSON en la respuesta. Respuesta: ${text.substring(0, 200)}`);
+            return [];
+        }
+        
+        let jsonStr = jsonMatch[0];
+        
+        // Limpiar caracteres de control no válidos en JSON (excepto tab, LF, CR)
+        jsonStr = jsonStr.replace(/[\x00-\x08\x0B\x0C\x0E-\x1F]/g, '');
+        
+        // Intentar parsear JSON
+        try {
+            return JSON.parse(jsonStr);
+        } catch (parseError) {
+            console.warn(`Primer parseo falló: ${parseError.message}. Intentando reparar saltos de línea...`);
+            // Escapar saltos de línea literales dentro de cadenas (puede ser necesario)
+            jsonStr = jsonStr.replace(/[\n\r\t]/g, (match) => {
+                if (match === '\n') return '\\n';
+                if (match === '\r') return '\\r';
+                if (match === '\t') return '\\t';
+                return match;
+            });
+            try {
+                return JSON.parse(jsonStr);
+            } catch (finalError) {
+                console.error(`Error definitivo al parsear JSON: ${finalError.message}`);
+                console.error(`Respuesta original (primeros 300 caracteres): ${text.substring(0, 300)}`);
                 return [];
             }
         }
-        
-        return JSON.parse(jsonMatch[0]);
     } catch (error) {
         console.error(`Error en IA para ${tituloEvento}:`, error.message);
         return [];
