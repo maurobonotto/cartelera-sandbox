@@ -9,6 +9,7 @@ const OUTPUT_FILE = path.join(__dirname, 'peliculas_lugones.json');
 const BASE_URL = 'https://complejoteatral.gob.ar/cine';
 
 function validarFecha(fecha) {
+    // Normalizar días (igual que antes)
     let fechaNorm = fecha
         .replace(/^SAB/, 'SÁB')
         .replace(/^MIE/, 'MIÉ')
@@ -18,9 +19,20 @@ function validarFecha(fecha) {
         .replace(/^LUN/, 'LUN')
         .replace(/^MAR/, 'MAR')
         .replace(/^MI[EÉ]/, 'MIÉ');
+    
+    // NORMALIZAR MESES NO ESTÁNDAR
+    fechaNorm = fechaNorm
+        .replace(/\/(MAI)\//, '/MAY/')    // MAI → MAY
+        .replace(/\/(JUI)\//, '/JUN/')    // JUI → JUN (por si acaso)
+        .replace(/\/(AOU)\//, '/AGO/')    // AOU → AGO (francés)
+        .replace(/\/(DEC)\//, '/DIC/')    // DEC → DIC (inglés)
+        .replace(/\/(OCT)\//, '/OCT/')    // ya está bien, pero lo dejamos
+        .replace(/\/(NOV)\//, '/NOV/')
+        .replace(/\/(FEV)\//, '/FEB/');   // FEV → FEB (portugués)
+    
     const regex = /^(DOM|LUN|MAR|MIÉ|JUE|VIE|SÁB) (\d{1,2})\/(ENE|FEB|MAR|ABR|MAY|JUN|JUL|AGO|SEP|OCT|NOV|DIC)\/(\d{4})$/;
     if (regex.test(fechaNorm)) return fechaNorm;
-    console.warn(`Fecha inválida: ${fecha}`);
+    console.warn(`Fecha inválida: ${fecha} (normalizada: ${fechaNorm})`);
     return null;
 }
 
