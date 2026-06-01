@@ -8,19 +8,16 @@ on:
 permissions:
   contents: write
   models: read
-  id-token: write      # Necesario para autenticación con GitHub Models
-  issues: read         # Permisos adicionales recomendados
-  pull-requests: read  # Permisos adicionales recomendados
 
 jobs:
   scrape:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v5       # ✅ Cambiado de @v4 a @v5
       
-      - uses: actions/setup-node@v5
+      - uses: actions/setup-node@v6     # ✅ Cambiado de @v4 a @v6
         with:
-          node-version: '22'
+          node-version: '22'            # ✅ Cambiado de '20' a '22'
           
       - run: npm install
         working-directory: backend
@@ -30,8 +27,6 @@ jobs:
         working-directory: backend
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          # Asegurar que se use el token correcto para GitHub Models
-          GITHUB_MODELS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       
       - name: Commit changes
         uses: stefanzweifel/git-auto-commit-action@v5
