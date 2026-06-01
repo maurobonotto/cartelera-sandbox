@@ -86,7 +86,7 @@ ${html}
                 'Content-Type': 'application/json',
             },
             body: JSON.stringify({
-                model: 'deepseek/deepseek-chat:free',
+                model: 'mistralai/mistral-7b-instruct:free',
                 messages: [{ role: 'user', content: prompt }],
                 temperature: 0.1,
             }),
