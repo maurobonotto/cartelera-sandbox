@@ -56,7 +56,7 @@ function limpiarHTML(html) {
     return html;
 }
 
-// ------------------ Extracción con OpenRouter (con limpieza de JSON) ------------------
+// ------------------ Extracción con OpenRouter (con limpieza de JSON y markdown) ------------------
 async function extraerConIA(html, tituloEvento) {
     const prompt = `
 Eres un extractor de cartelera de cine. Del siguiente HTML de la página del evento "${tituloEvento}", extrae TODAS las funciones de cine.
@@ -75,7 +75,7 @@ Devuelve ÚNICAMENTE un array JSON. Cada objeto debe tener estos campos exactos:
 Reglas estrictas:
 - Respeta EXACTAMENTE el formato de fecha y horario.
 - Si hay múltiples horarios para un mismo título, crea un objeto por cada horario.
-- No incluyas texto adicional fuera del JSON.
+- No incluyas texto adicional fuera del JSON. No uses bloques de código markdown.
 - Si algún dato no está disponible, usa "" para sinopsis, "No especificado" para director, "N/A" para duración.
 - Para el año, si no está explícito, déjalo vacío ("").
 
@@ -112,7 +112,10 @@ ${html}
         const data = await response.json();
         let text = data.choices[0].message.content;
         
-        // Extraer el primer array JSON
+        // 1. Eliminar bloques de código markdown (```json ... ``` o ``` ... ```)
+        text = text.replace(/```json\s*/g, '').replace(/```\s*/g, '');
+        
+        // 2. Extraer el primer array JSON (desde el primer '[' hasta el último ']')
         const jsonMatch = text.match(/\[[\s\S]*\]/);
         if (!jsonMatch) {
             console.error(`No se encontró array JSON en la respuesta. Respuesta: ${text.substring(0, 200)}`);
@@ -121,15 +124,15 @@ ${html}
         
         let jsonStr = jsonMatch[0];
         
-        // Limpiar caracteres de control no válidos en JSON (excepto tab, LF, CR)
+        // 3. Limpiar caracteres de control no válidos en JSON (excepto tab, LF, CR)
         jsonStr = jsonStr.replace(/[\x00-\x08\x0B\x0C\x0E-\x1F]/g, '');
         
-        // Intentar parsear JSON
+        // 4. Intentar parsear
         try {
             return JSON.parse(jsonStr);
         } catch (parseError) {
             console.warn(`Primer parseo falló: ${parseError.message}. Intentando reparar saltos de línea...`);
-            // Escapar saltos de línea literales dentro de cadenas (puede ser necesario)
+            // Escapar saltos de línea literales dentro de cadenas
             jsonStr = jsonStr.replace(/[\n\r\t]/g, (match) => {
                 if (match === '\n') return '\\n';
                 if (match === '\r') return '\\r';
