@@ -8,7 +8,6 @@ require('dotenv').config();
 const OUTPUT_FILE = path.join(__dirname, 'peliculas_lugones.json');
 const BASE_URL = 'https://complejoteatral.gob.ar/cine';
 
-// ------------------ Validaciones ------------------
 function validarFecha(fecha) {
     let fechaNorm = fecha
         .replace(/^SAB/, 'SÁB')
@@ -47,30 +46,42 @@ function validarDuracion(duracion) {
     return 'N/A';
 }
 
+// Limpieza agresiva para reducir tokens
 function limpiarHTML(html) {
-    const inicio = html.indexOf('<div>');
-    const fin = html.indexOf('<div class="info">');
-    if (inicio !== -1 && fin !== -1) return html.substring(inicio, fin);
-    return html;
+    // Eliminar bloque .info (precios, dirección, etc.)
+    let limpio = html.replace(/<div class="info">[\s\S]*?<\/div>/, '');
+    // Eliminar párrafos de sinopsis largos (más de 300 caracteres)
+    limpio = limpio.replace(/<p>([\s\S]*?)<\/p>/g, (match, content) => {
+        if (content.length > 300) return '<p>[resumen omitido]</p>';
+        return match;
+    });
+    // Eliminar la palabra SINOPSIS y todo lo que la sigue hasta el próximo título
+    limpio = limpio.replace(/SINOPSIS[\s\S]*?(?=<h2|<strong|<div class="info"|$)/gi, '');
+    // Eliminar scripts y estilos
+    limpio = limpio.replace(/<script[\s\S]*?<\/script>/gi, '');
+    limpio = limpio.replace(/<style[\s\S]*?<\/style>/gi, '');
+    
+    const inicio = limpio.indexOf('<div>');
+    const fin = limpio.indexOf('<div class="info">');
+    if (inicio !== -1 && fin !== -1) return limpio.substring(inicio, fin);
+    return limpio;
 }
 
-// ------------------ Extracción con IA ------------------
 async function extraerConIA(html, tituloEvento) {
     const prompt = `
 Eres un extractor de cartelera de cine. Del siguiente HTML de la página del evento "${tituloEvento}", extrae TODAS las funciones de cine.
 
-IMPORTANTE: Si el evento tiene múltiples días y horarios, DEBES incluir cada función (cada combinación de día y horario) como un objeto separado en el array. No omitas ninguna.
+NO EXTRAIGAS LA SINOPSIS. Omite ese campo.
 
-Devuelve ÚNICAMENTE un array JSON. No incluyas ningún otro texto antes o después del array.
+Devuelve ÚNICAMENTE un array JSON. No incluyas texto adicional.
 
-Cada objeto debe tener estos campos exactos:
+Cada objeto debe tener estos campos:
 {
   "titulo": "nombre de la película",
-  "fecha": "día abreviado en mayúsculas, espacio, número, barra, mes en mayúsculas, barra, año (el año de la función, ej. 2026). NO USES EL AÑO DE LA PELÍCULA EN ESTE CAMPO.",
+  "fecha": "día abreviado en mayúsculas, espacio, número, barra, mes en mayúsculas, barra, año (año de la función, ej. 2026). NO USES EL AÑO DE LA PELÍCULA AQUÍ.",
   "horario": "HH:MM",
   "director": "nombre del director o 'No especificado'",
   "duracion": "número de minutos o 'N/A'",
-  "sinopsis": "texto completo de la sinopsis (si es muy larga, puedes resumirla ligeramente, pero conserva la información principal)",
   "anio": "año de la película (4 dígitos)"
 }
 
@@ -82,16 +93,15 @@ Ejemplo:
     "horario": "18:00",
     "director": "Director Ejemplo",
     "duracion": "120",
-    "sinopsis": "Sinopsis de ejemplo.",
     "anio": "2025"
   }
 ]
 
-Reglas estrictas:
+Reglas:
 - Respeta EXACTAMENTE el formato de fecha y horario.
-- Si hay múltiples horarios para un mismo título, crea un objeto por cada horario.
-- Si algún dato no está disponible, usa "" para sinopsis, "No especificado" para director, "N/A" para duración.
-- Para el año de la película, si no está explícito, déjalo vacío ("").
+- Si hay múltiples horarios para un título, crea un objeto por cada horario.
+- Usa "No especificado" si falta director, "N/A" si falta duración.
+- El año de la película déjalo vacío ("") si no aparece.
 
 HTML:
 ${html}
@@ -111,10 +121,9 @@ ${html}
                 'Content-Type': 'application/json',
             },
             body: JSON.stringify({
-                model: 'google/gemini-1.5-flash-8b:free',
+                model: 'openrouter/free',
                 messages: [{ role: 'user', content: prompt }],
                 temperature: 0.1,
-                max_tokens: 8192,
                 plugins: [{ id: "response-healing" }]
             }),
         });
@@ -154,9 +163,8 @@ ${html}
     }
 }
 
-// ------------------ Scraper principal ------------------
 async function scrapeLugones() {
-    console.log('Iniciando scraping con ScrapingAnt + OpenRouter (Gemini 1.5 Flash 8B)');
+    console.log('Iniciando scraping con ScrapingAnt + openrouter/free (sin sinopsis)');
 
     const apiKey = process.env.SCRAPINGANT_API_KEY;
     if (!apiKey) {
@@ -170,7 +178,7 @@ async function scrapeLugones() {
         let html;
         if (typeof mainResponse.data === 'string') html = mainResponse.data;
         else if (mainResponse.data && typeof mainResponse.data.content === 'string') html = mainResponse.data.content;
-        else throw new Error('Formato inesperado de la API');
+        else throw new Error('Formato inesperado');
 
         if (!html || html.trim() === '') throw new Error('HTML vacío');
 
@@ -224,7 +232,8 @@ async function scrapeLugones() {
                     f.anio = validarAnio(f.anio);
                     f.duracion = validarDuracion(f.duracion);
                     if (!f.director || f.director.trim() === '') f.director = 'No especificado';
-                    if (!f.sinopsis) f.sinopsis = '';
+                    // Sinopsis vacía (la completará TMDB después)
+                    const sinopsis = '';
 
                     const idBase = `lugones_${evento.tituloEvento.replace(/\s/g, '_')}_${f.titulo.replace(/\s/g, '_')}_${f.fecha.replace(/\//g, '-')}`;
                     const idFuncion = `${idBase}_${f.horario.replace(':', '')}`;
@@ -240,7 +249,7 @@ async function scrapeLugones() {
                         horarios: [f.horario],
                         seccion: 'cartelera',
                         poster: null,
-                        sinopsis: f.sinopsis,
+                        sinopsis: sinopsis,
                         linkTrailer: '',
                         anio: f.anio
                     });
