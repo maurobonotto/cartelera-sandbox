@@ -13,6 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+      PUPPETEER_SKIP_CHROMIUM_DOWNLOAD: true   # Evita que puppeteer descargue su propio Chrome
     steps:
       - uses: actions/checkout@v4
 
@@ -20,15 +21,21 @@ jobs:
         with:
           node-version: '22'
 
-      - name: Install dependencies (incl. puppeteer stealth)
+      - name: Install Chromium system browser
         run: |
-          cd backend
-          npm install puppeteer-extra puppeteer-extra-plugin-stealth puppeteer
+          sudo apt-get update
+          sudo apt-get install -y chromium-browser
+
+      - name: Install Node dependencies
+        run: npm install
+        working-directory: backend
 
       - name: Run Lugones scraper
-        run: node backend/scraper_lugones.js
+        run: node scraper_lugones.js
+        working-directory: backend
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+          PUPPETEER_EXECUTABLE_PATH: /usr/bin/chromium-browser   # Le dice a Puppeteer dónde está Chrome
 
       - name: Commit changes
         uses: stefanzweifel/git-auto-commit-action@v5
