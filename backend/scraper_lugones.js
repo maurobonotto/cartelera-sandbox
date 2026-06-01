@@ -120,7 +120,7 @@ async function scrapeLugones() {
     
     try {
         await page.goto(BASE_URL, { waitUntil: 'networkidle2', timeout: 60000 });
-        await page.waitForTimeout(5000); // espera extra para Cloudflare
+        await new Promise(r => setTimeout(r, 5000)); // ✅ reemplazo de waitForTimeout
         await page.waitForSelector('.list-item', { timeout: 30000 });
 
         const eventos = await page.evaluate(() => {
@@ -141,7 +141,7 @@ async function scrapeLugones() {
             console.log(`\nProcesando: ${evento.tituloEvento}`);
             try {
                 await page.goto(evento.url, { waitUntil: 'networkidle2', timeout: 60000 });
-                await page.waitForTimeout(2000);
+                await new Promise(r => setTimeout(r, 2000)); // ✅ reemplazo
                 const html = await page.content();
                 const htmlLimpio = limpiarHTML(html);
                 let funciones = await extraerConIA(htmlLimpio, evento.tituloEvento);
