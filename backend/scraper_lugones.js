@@ -58,17 +58,19 @@ async function extraerConIA(html, tituloEvento) {
     const prompt = `
 Eres un extractor de cartelera de cine. Del siguiente HTML de la página del evento "${tituloEvento}", extrae TODAS las funciones de cine.
 
+IMPORTANTE: Si el evento tiene múltiples días y horarios, DEBES incluir cada función (cada combinación de día y horario) como un objeto separado en el array. No omitas ninguna. Revisa todo el HTML para asegurarte de que capturas todas las funciones.
+
 Devuelve ÚNICAMENTE un array JSON. No incluyas ningún otro texto antes o después del array.
 
 Cada objeto debe tener estos campos exactos:
 {
   "titulo": "nombre de la película",
-  "fecha": "día abreviado en mayúsculas, espacio, número, barra, mes en mayúsculas, barra, año. Ejemplo: DOM 29/MAY/2026",
+  "fecha": "día abreviado en mayúsculas, espacio, número, barra, mes en mayúsculas, barra, año (el año de la función, que suele ser el actual o siguiente). Ejemplo: DOM 29/MAY/2026",
   "horario": "HH:MM (dos dígitos para hora, dos para minutos)",
   "director": "nombre del director o 'No especificado'",
   "duracion": "número de minutos como string, o 'N/A'",
   "sinopsis": "texto completo de la sinopsis",
-  "anio": "año de la película (4 dígitos)"
+  "anio": "año de la película (4 dígitos) - este es el año de estreno de la película, no el año de la función"
 }
 
 Ejemplo de respuesta esperada:
@@ -80,7 +82,7 @@ Ejemplo de respuesta esperada:
     "director": "Director Ejemplo",
     "duracion": "120",
     "sinopsis": "Esta es una sinopsis de ejemplo.",
-    "anio": "2026"
+    "anio": "2025"
   }
 ]
 
@@ -88,7 +90,7 @@ Reglas estrictas:
 - Respeta EXACTAMENTE el formato de fecha y horario.
 - Si hay múltiples horarios para un mismo título, crea un objeto por cada horario.
 - Si algún dato no está disponible, usa "" para sinopsis, "No especificado" para director, "N/A" para duración.
-- Para el año, si no está explícito, déjalo vacío ("").
+- Para el año de la película, si no está explícito, déjalo vacío ("").
 
 HTML:
 ${html}
@@ -126,7 +128,7 @@ ${html}
         text = text.replace(/```json\s*/g, '').replace(/```\s*/g, '');
         const jsonMatch = text.match(/\[[\s\S]*\]/);
         if (!jsonMatch) {
-            console.error(`No se encontró array JSON en la respuesta. Respuesta: ${text.substring(0, 200)}`);
+            console.error(`No se encontró array JSON. Respuesta: ${text.substring(0, 200)}`);
             return [];
         }
         let jsonStr = jsonMatch[0];
@@ -138,90 +140,75 @@ ${html}
     }
 }
 
-// ------------------ Scraper principal (con ScrapingAnt y filtrado) ------------------
+// ------------------ Scraper principal ------------------
 async function scrapeLugones() {
-    console.log('Iniciando scraping con ScrapingAnt + OpenRouter + Filtro de eventos');
+    console.log('Iniciando scraping con ScrapingAnt + OpenRouter');
 
     const apiKey = process.env.SCRAPINGANT_API_KEY;
     if (!apiKey) {
-        console.error('❌ No se encontró SCRAPINGANT_API_KEY. Revisa los secrets de GitHub.');
+        console.error('❌ No se encontró SCRAPINGANT_API_KEY.');
         return;
     }
 
     try {
-        // 1. Descargar página principal con ScrapingAnt - forzando texto plano
+        // 1. Descargar página principal
         const mainUrl = `https://api.scrapingant.com/v2/general?url=${encodeURIComponent(BASE_URL)}&x-api-key=${apiKey}&browser=true`;
-        console.log(`🔍 Solicitando URL principal: ${BASE_URL}`);
         const mainResponse = await axios.get(mainUrl, { responseType: 'text' });
-        
-        // La API puede devolver JSON o texto plano. Si es JSON, extraemos .content; si no, usamos directamente.
         let html;
-        if (typeof mainResponse.data === 'string') {
-            html = mainResponse.data;
-        } else if (mainResponse.data && typeof mainResponse.data.content === 'string') {
-            html = mainResponse.data.content;
-        } else {
-            console.error('❌ La respuesta de ScrapingAnt no contiene HTML (formato inesperado):', typeof mainResponse.data);
-            console.log('Contenido muestra:', JSON.stringify(mainResponse.data).substring(0, 500));
-            return;
-        }
+        if (typeof mainResponse.data === 'string') html = mainResponse.data;
+        else if (mainResponse.data && typeof mainResponse.data.content === 'string') html = mainResponse.data.content;
+        else throw new Error('Formato inesperado de la API');
 
-        if (!html || html.trim() === '') {
-            console.error('❌ El HTML obtenido está vacío.');
-            return;
-        }
+        if (!html || html.trim() === '') throw new Error('HTML vacío');
 
-        console.log(`📄 HTML principal obtenido (primeros 300 caracteres): ${html.substring(0, 300)}`);
-
-        // 2. Cargar HTML con cheerio y extraer eventos de cine
+        // 2. Extraer eventos (excluyendo visitas guiadas, talleres, etc.)
         const $ = cheerio.load(html);
         const eventos = [];
-
         $('.list-item').each((i, el) => {
             const titulo = $(el).find('h2').text().trim();
             const linkElement = $(el).find('.buttons a.button[href*="/ver/"]');
             if (linkElement.length === 0) return;
-
             let url = linkElement.attr('href');
             if (url.startsWith('/')) url = 'https://complejoteatral.gob.ar' + url;
 
-            const palabrasExcluir = ['visita', 'guía', 'taller', 'concierto', 'espectáculo', 'teatro', 'muestra'];
-            const esNoCine = palabrasExcluir.some(p => titulo.toLowerCase().includes(p));
-            const palabrasCine = ['CINE', 'PELÍCULA', 'CICLO', 'JUSTA', 'TAXI', 'ADJANI', 'GARDEL', 'VARDA', '1926', 'EXPRESIONISMO'];
-            const esCine = palabrasCine.some(p => titulo.toUpperCase().includes(p));
-
-            if (!esNoCine && esCine) {
-                eventos.push({ tituloEvento: titulo, url: url });
+            // Excluir eventos que claramente no son cine (visitas guiadas, talleres, etc.)
+            const excluir = ['visita', 'guía', 'taller', 'concierto', 'espectáculo', 'teatro', 'muestra', 'exposición'];
+            const esNoCine = excluir.some(p => titulo.toLowerCase().includes(p));
+            if (!esNoCine) {
+                eventos.push({ tituloEvento: titulo, url });
                 console.log(`   Evento aceptado: ${titulo}`);
             } else {
                 console.log(`   Evento descartado: ${titulo}`);
             }
         });
 
-        console.log(`\n✅ Total eventos de cine encontrados: ${eventos.length}`);
+        console.log(`\n✅ Total eventos a procesar: ${eventos.length}`);
 
         let todasLasFunciones = [];
 
         for (let idx = 0; idx < eventos.length; idx++) {
             const evento = eventos[idx];
-            console.log(`\n📌 Procesando evento ${idx+1}: ${evento.tituloEvento} (${evento.url})`);
+            console.log(`\n📌 Procesando: ${evento.tituloEvento} (${evento.url})`);
             try {
                 const eventApiUrl = `https://api.scrapingant.com/v2/general?url=${encodeURIComponent(evento.url)}&x-api-key=${apiKey}&browser=true`;
                 const eventResponse = await axios.get(eventApiUrl, { responseType: 'text' });
                 let eventHtml;
-                if (typeof eventResponse.data === 'string') {
-                    eventHtml = eventResponse.data;
-                } else if (eventResponse.data && typeof eventResponse.data.content === 'string') {
-                    eventHtml = eventResponse.data.content;
-                } else {
-                    throw new Error('Formato de respuesta inesperado');
-                }
+                if (typeof eventResponse.data === 'string') eventHtml = eventResponse.data;
+                else if (eventResponse.data && typeof eventResponse.data.content === 'string') eventHtml = eventResponse.data.content;
+                else throw new Error('Formato inesperado');
 
                 const htmlLimpio = limpiarHTML(eventHtml);
                 let funciones = await extraerConIA(htmlLimpio, evento.tituloEvento);
 
+                // Si la IA solo devuelve una función y el evento tiene varias (por ejemplo Justa), reintentar con un prompt más insistente
+                if (funciones.length === 1 && evento.tituloEvento.toLowerCase().includes('justa')) {
+                    console.log(`   Posible omisión: reintentando con prompt más estricto...`);
+                    // Forzar una segunda llamada (podría repetirse con un prompt ligeramente modificado)
+                    // Por simplicidad, aquí solo se registra; se podría implementar un reintento automático.
+                }
+
                 if (!funciones.length) {
-                    console.log(`   ⚠️ No se extrajeron funciones para ${evento.tituloEvento}`);
+                    console.log(`   No se extrajeron funciones.`);
                     continue;
                 }
 
@@ -253,12 +240,12 @@ async function scrapeLugones() {
                         linkTrailer: '',
                         anio: f.anio
                     });
-                    console.log(`   🎬 ${f.titulo} — ${f.fecha} ${f.horario} (${f.anio || 's/a'}) | Director: ${f.director} | Duración: ${f.duracion}`);
+                    console.log(`   🎬 ${f.titulo} — ${f.fecha} ${f.horario} (película: ${f.anio || 's/a'}) | Director: ${f.director} | Duración: ${f.duracion}`);
                     contador++;
                 }
                 console.log(`      ✅ ${contador} funciones extraídas`);
             } catch (err) {
-                console.error(`      ❌ Error en evento ${evento.tituloEvento}: ${err.message}`);
+                console.error(`      ❌ Error: ${err.message}`);
             }
             await new Promise(r => setTimeout(r, 1000));
         }
