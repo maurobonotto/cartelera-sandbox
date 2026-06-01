@@ -50,17 +50,20 @@ function validarDuracion(duracion) {
 function limpiarHTML(html) {
     // Eliminar bloque .info (precios, dirección, etc.)
     let limpio = html.replace(/<div class="info">[\s\S]*?<\/div>/, '');
-    // Eliminar párrafos de sinopsis largos (más de 300 caracteres)
+    
+    // Eliminar párrafos de sinopsis largos que no contengan datos de funciones
     limpio = limpio.replace(/<p>([\s\S]*?)<\/p>/g, (match, content) => {
-        if (content.length > 300) return '<p>[resumen omitido]</p>';
+        if (content.length > 500 && !content.match(/jueves|viernes|sábado|domingo|lunes|martes|miércoles|horas?/i)) {
+            return '<p>[resumen omitido]</p>';
+        }
         return match;
     });
-    // Eliminar la palabra SINOPSIS y todo lo que la sigue hasta el próximo título
-    limpio = limpio.replace(/SINOPSIS[\s\S]*?(?=<h2|<strong|<div class="info"|$)/gi, '');
+    
     // Eliminar scripts y estilos
     limpio = limpio.replace(/<script[\s\S]*?<\/script>/gi, '');
     limpio = limpio.replace(/<style[\s\S]*?<\/style>/gi, '');
     
+    // Asegurar que nos quedamos desde <div> hasta antes de <div class="info">
     const inicio = limpio.indexOf('<div>');
     const fin = limpio.indexOf('<div class="info">');
     if (inicio !== -1 && fin !== -1) return limpio.substring(inicio, fin);
