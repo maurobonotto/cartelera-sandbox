@@ -1,6 +1,7 @@
 const fs = require('fs').promises;
 const path = require('path');
 const axios = require('axios');
+const cheerio = require('cheerio');
 require('dotenv').config();
 
 const OUTPUT_FILE = path.join(__dirname, 'peliculas_lugones.json');
@@ -52,12 +53,14 @@ function limpiarHTML(html) {
     return html;
 }
 
-// ------------------ Extracción con IA (OpenRouter) ------------------
+// ------------------ Extracción con IA (OpenRouter + response-healing) ------------------
 async function extraerConIA(html, tituloEvento) {
     const prompt = `
 Eres un extractor de cartelera de cine. Del siguiente HTML de la página del evento "${tituloEvento}", extrae TODAS las funciones de cine.
 
-Devuelve ÚNICAMENTE un array JSON. Cada objeto debe tener estos campos exactos:
+Devuelve ÚNICAMENTE un array JSON. No incluyas ningún otro texto antes o después del array.
+
+Cada objeto debe tener estos campos exactos:
 {
   "titulo": "nombre de la película",
   "fecha": "día abreviado en mayúsculas, espacio, número, barra, mes en mayúsculas, barra, año. Ejemplo: DOM 29/MAY/2026",
@@ -68,10 +71,22 @@ Devuelve ÚNICAMENTE un array JSON. Cada objeto debe tener estos campos exactos:
   "anio": "año de la película (4 dígitos)"
 }
 
+Ejemplo de respuesta esperada:
+[
+  {
+    "titulo": "Ejemplo Película",
+    "fecha": "DOM 29/MAY/2026",
+    "horario": "18:00",
+    "director": "Director Ejemplo",
+    "duracion": "120",
+    "sinopsis": "Esta es una sinopsis de ejemplo.",
+    "anio": "2026"
+  }
+]
+
 Reglas estrictas:
 - Respeta EXACTAMENTE el formato de fecha y horario.
 - Si hay múltiples horarios para un mismo título, crea un objeto por cada horario.
-- No incluyas texto adicional fuera del JSON. No uses bloques de código markdown.
 - Si algún dato no está disponible, usa "" para sinopsis, "No especificado" para director, "N/A" para duración.
 - Para el año, si no está explícito, déjalo vacío ("").
 
@@ -81,7 +96,7 @@ ${html}
 
     const OPENROUTER_API_KEY = process.env.OPENROUTER_API_KEY;
     if (!OPENROUTER_API_KEY) {
-        console.error(`   No se encontró OPENROUTER_API_KEY. Revisa las variables de entorno.`);
+        console.error(`   No se encontró OPENROUTER_API_KEY.`);
         return [];
     }
 
@@ -96,6 +111,7 @@ ${html}
                 model: 'openrouter/free',
                 messages: [{ role: 'user', content: prompt }],
                 temperature: 0.1,
+                plugins: [{ id: "response-healing" }]   // ← repara JSON automáticamente
             }),
         });
 
@@ -129,9 +145,9 @@ ${html}
     }
 }
 
-// ------------------ Scraper principal (con ScrapingAnt) ------------------
+// ------------------ Scraper principal (con ScrapingAnt y filtrado de eventos) ------------------
 async function scrapeLugones() {
-    console.log('Iniciando scraping con ScrapingAnt + OpenRouter');
+    console.log('Iniciando scraping con ScrapingAnt + OpenRouter + Filtro de eventos');
 
     const apiKey = process.env.SCRAPINGANT_API_KEY;
     if (!apiKey) {
@@ -143,41 +159,53 @@ async function scrapeLugones() {
         // 1. Descargar página principal con ScrapingAnt
         const mainUrl = `https://api.scrapingant.com/v2/general?url=${encodeURIComponent(BASE_URL)}&x-api-key=${apiKey}&browser=true`;
         const mainResponse = await axios.get(mainUrl);
-        const html = mainResponse.data;
+        const html = mainResponse.data.content;   // ← usar .content
 
-        // 2. Extraer enlaces de eventos (href que contienen "/ver/")
-        const eventUrls = [];
-        const linkRegex = /<a\s+(?:[^>]*?\s+)?href="([^"]*\/ver\/[^"]*)"[^>]*>/g;
-        let match;
-        while ((match = linkRegex.exec(html)) !== null) {
-            let url = match[1];
+        // 2. Cargar HTML con cheerio y extraer eventos de cine (filtrar no deseados)
+        const $ = cheerio.load(html);
+        const eventos = [];
+
+        $('.list-item').each((i, el) => {
+            const titulo = $(el).find('h2').text().trim();
+            const linkElement = $(el).find('.buttons a.button[href*="/ver/"]');
+            if (linkElement.length === 0) return;
+
+            let url = linkElement.attr('href');
             if (url.startsWith('/')) url = 'https://complejoteatral.gob.ar' + url;
-            if (!eventUrls.includes(url)) eventUrls.push(url);
-        }
 
-        console.log(`   ${eventUrls.length} eventos encontrados.`);
+            // Palabras que indican que NO es un evento de cine
+            const palabrasExcluir = ['visita', 'guía', 'taller', 'concierto', 'espectáculo', 'teatro', 'muestra'];
+            const esNoCine = palabrasExcluir.some(p => titulo.toLowerCase().includes(p));
+
+            // También podemos incluir solo aquellos que parezcan ciclos de cine (opcional)
+            const palabrasCine = ['CINE', 'PELÍCULA', 'CICLO', 'JUSTA', 'TAXI', 'ADJANI', 'GARDEL', 'VARDA', '1926', 'EXPRESIONISMO'];
+            const esCine = palabrasCine.some(p => titulo.toUpperCase().includes(p));
+
+            if (!esNoCine && esCine) {
+                eventos.push({ tituloEvento: titulo, url: url });
+            } else {
+                console.log(`   Evento descartado (no cine): ${titulo}`);
+            }
+        });
+
+        console.log(`   ${eventos.length} eventos de cine encontrados.`);
 
         let todasLasFunciones = [];
 
-        for (let idx = 0; idx < eventUrls.length; idx++) {
-            const eventUrl = eventUrls[idx];
-            console.log(`\nProcesando evento ${idx+1}: ${eventUrl}`);
+        for (let idx = 0; idx < eventos.length; idx++) {
+            const evento = eventos[idx];
+            console.log(`\nProcesando evento ${idx+1}: ${evento.tituloEvento} (${evento.url})`);
             try {
                 // Descargar HTML del evento con ScrapingAnt
-                const eventApiUrl = `https://api.scrapingant.com/v2/general?url=${encodeURIComponent(eventUrl)}&x-api-key=${apiKey}&browser=true`;
+                const eventApiUrl = `https://api.scrapingant.com/v2/general?url=${encodeURIComponent(evento.url)}&x-api-key=${apiKey}&browser=true`;
                 const eventResponse = await axios.get(eventApiUrl);
-                const eventHtml = eventResponse.data;
+                const eventHtml = eventResponse.data.content;
                 const htmlLimpio = limpiarHTML(eventHtml);
 
-                // Extraer título del evento (desde <h2> dentro de .list-item o similar)
-                let tituloEvento = `Evento ${idx+1}`;
-                const tituloMatch = eventHtml.match(/<h2[^>]*>([^<]+)<\/h2>/);
-                if (tituloMatch) tituloEvento = tituloMatch[1].trim();
-
-                let funciones = await extraerConIA(htmlLimpio, tituloEvento);
+                let funciones = await extraerConIA(htmlLimpio, evento.tituloEvento);
 
                 if (!funciones.length) {
-                    console.log(`   No se extrajeron funciones para ${tituloEvento}`);
+                    console.log(`   No se extrajeron funciones para ${evento.tituloEvento}`);
                     continue;
                 }
 
@@ -191,7 +219,7 @@ async function scrapeLugones() {
                     if (!f.director || f.director.trim() === '') f.director = 'No especificado';
                     if (!f.sinopsis) f.sinopsis = '';
 
-                    const idBase = `lugones_${tituloEvento.replace(/\s/g, '_')}_${f.titulo.replace(/\s/g, '_')}_${f.fecha.replace(/\//g, '-')}`;
+                    const idBase = `lugones_${evento.tituloEvento.replace(/\s/g, '_')}_${f.titulo.replace(/\s/g, '_')}_${f.fecha.replace(/\//g, '-')}`;
                     const idFuncion = `${idBase}_${f.horario.replace(':', '')}`;
                     todasLasFunciones.push({
                         id_funcion: idFuncion,
@@ -214,7 +242,7 @@ async function scrapeLugones() {
                 }
                 console.log(`      ✅ ${contador} funciones extraídas`);
             } catch (err) {
-                console.error(`      Error en evento ${eventUrl}: ${err.message}`);
+                console.error(`      Error en evento ${evento.tituloEvento}: ${err.message}`);
             }
             // Pequeña pausa entre eventos para no saturar la API
             await new Promise(r => setTimeout(r, 1000));
