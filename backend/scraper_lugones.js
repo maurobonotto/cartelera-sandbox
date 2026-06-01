@@ -86,7 +86,7 @@ ${html}
                 'Content-Type': 'application/json',
             },
             body: JSON.stringify({
-                model: 'openai/gpt-3.5-turbo:free',
+                model: 'microsoft/phi-3-mini-128k-instruct:free',
                 messages: [{ role: 'user', content: prompt }],
                 temperature: 0.1,
             }),
