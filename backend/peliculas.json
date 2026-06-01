@@ -3609,7 +3609,7 @@
   {
     "id_funcion": "cacodelphia_21901_23",
     "titulo": "Alpha",
-    "director": "Julia Ducournau",
+    "director": "Guillaume de Fontenay",
     "duracion": "128",
     "cine": "Cine Arte Cacodelphia",
     "ciudad": "CABA",
@@ -3626,7 +3626,7 @@
   {
     "id_funcion": "cacodelphia_21901_24",
     "titulo": "Alpha",
-    "director": "Julia Ducournau",
+    "director": "Guillaume de Fontenay",
     "duracion": "128",
     "cine": "Cine Arte Cacodelphia",
     "ciudad": "CABA",
@@ -3643,7 +3643,7 @@
   {
     "id_funcion": "cacodelphia_21901_25",
     "titulo": "Alpha",
-    "director": "Julia Ducournau",
+    "director": "Guillaume de Fontenay",
     "duracion": "128",
     "cine": "Cine Arte Cacodelphia",
     "ciudad": "CABA",
@@ -3660,7 +3660,7 @@
   {
     "id_funcion": "cacodelphia_21901_26",
     "titulo": "Alpha",
-    "director": "Julia Ducournau",
+    "director": "Guillaume de Fontenay",
     "duracion": "128",
     "cine": "Cine Arte Cacodelphia",
     "ciudad": "CABA",
@@ -3677,7 +3677,7 @@
   {
     "id_funcion": "cacodelphia_21901_27",
     "titulo": "Alpha",
-    "director": "Julia Ducournau",
+    "director": "Guillaume de Fontenay",
     "duracion": "128",
     "cine": "Cine Arte Cacodelphia",
     "ciudad": "CABA",
@@ -3694,8 +3694,8 @@
   {
     "id_funcion": "lorca_ln_20202_JUE 28-MAY-2026_2210",
     "titulo": "Alpha",
-    "director": "Julia Ducournau",
-    "duracion": "128",
+    "director": "Guillaume de Fontenay",
+    "duracion": "84",
     "cine": "Cine Lorca",
     "ciudad": "CABA",
     "fecha": "JUE 28/MAY/2026",
@@ -3706,13 +3706,13 @@
     "seccion": "cartelera",
     "poster": "https://apiv2.gaf.adro.studio/uploads/86/poster/6a17003741c765.61002397.webp",
     "sinopsis": "Sin sinopsis disponible",
-    "linkTrailer": "https://www.youtube.com/watch?v=QzGz6ExwbDg"
+    "linkTrailer": ""
   },
   {
     "id_funcion": "lorca_ln_20202_VIE 29-MAY-2026_2210",
     "titulo": "Alpha",
-    "director": "Julia Ducournau",
-    "duracion": "128",
+    "director": "Guillaume de Fontenay",
+    "duracion": "84",
     "cine": "Cine Lorca",
     "ciudad": "CABA",
     "fecha": "VIE 29/MAY/2026",
@@ -3723,13 +3723,13 @@
     "seccion": "cartelera",
     "poster": "https://apiv2.gaf.adro.studio/uploads/86/poster/6a17003741c765.61002397.webp",
     "sinopsis": "Sin sinopsis disponible",
-    "linkTrailer": "https://www.youtube.com/watch?v=QzGz6ExwbDg"
+    "linkTrailer": ""
   },
   {
     "id_funcion": "lorca_ln_20202_SÁB 30-MAY-2026_2210",
     "titulo": "Alpha",
-    "director": "Julia Ducournau",
-    "duracion": "128",
+    "director": "Guillaume de Fontenay",
+    "duracion": "84",
     "cine": "Cine Lorca",
     "ciudad": "CABA",
     "fecha": "SÁB 30/MAY/2026",
@@ -3740,13 +3740,13 @@
     "seccion": "cartelera",
     "poster": "https://apiv2.gaf.adro.studio/uploads/86/poster/6a17003741c765.61002397.webp",
     "sinopsis": "Sin sinopsis disponible",
-    "linkTrailer": "https://www.youtube.com/watch?v=QzGz6ExwbDg"
+    "linkTrailer": ""
   },
   {
     "id_funcion": "lorca_ln_20202_DOM 31-MAY-2026_2210",
     "titulo": "Alpha",
-    "director": "Julia Ducournau",
-    "duracion": "128",
+    "director": "Guillaume de Fontenay",
+    "duracion": "84",
     "cine": "Cine Lorca",
     "ciudad": "CABA",
     "fecha": "DOM 31/MAY/2026",
@@ -3757,13 +3757,13 @@
     "seccion": "cartelera",
     "poster": "https://apiv2.gaf.adro.studio/uploads/86/poster/6a17003741c765.61002397.webp",
     "sinopsis": "Sin sinopsis disponible",
-    "linkTrailer": "https://www.youtube.com/watch?v=QzGz6ExwbDg"
+    "linkTrailer": ""
   },
   {
     "id_funcion": "lorca_ln_20202_LUN 01-JUN-2026_2210",
     "titulo": "Alpha",
-    "director": "Julia Ducournau",
-    "duracion": "128",
+    "director": "Guillaume de Fontenay",
+    "duracion": "84",
     "cine": "Cine Lorca",
     "ciudad": "CABA",
     "fecha": "LUN 1/JUN/2026",
@@ -3774,13 +3774,13 @@
     "seccion": "cartelera",
     "poster": "https://apiv2.gaf.adro.studio/uploads/86/poster/6a17003741c765.61002397.webp",
     "sinopsis": "Sin sinopsis disponible",
-    "linkTrailer": "https://www.youtube.com/watch?v=QzGz6ExwbDg"
+    "linkTrailer": ""
   },
   {
     "id_funcion": "lorca_ln_20202_MAR 02-JUN-2026_2210",
     "titulo": "Alpha",
-    "director": "Julia Ducournau",
-    "duracion": "128",
+    "director": "Guillaume de Fontenay",
+    "duracion": "84",
     "cine": "Cine Lorca",
     "ciudad": "CABA",
     "fecha": "MAR 2/JUN/2026",
@@ -3791,13 +3791,13 @@
     "seccion": "cartelera",
     "poster": "https://apiv2.gaf.adro.studio/uploads/86/poster/6a17003741c765.61002397.webp",
     "sinopsis": "Sin sinopsis disponible",
-    "linkTrailer": "https://www.youtube.com/watch?v=QzGz6ExwbDg"
+    "linkTrailer": ""
   },
   {
     "id_funcion": "lorca_ln_20202_MIÉ 03-JUN-2026_2210",
     "titulo": "Alpha",
-    "director": "Julia Ducournau",
-    "duracion": "128",
+    "director": "Guillaume de Fontenay",
+    "duracion": "84",
     "cine": "Cine Lorca",
     "ciudad": "CABA",
     "fecha": "MIÉ 3/JUN/2026",
@@ -3808,13 +3808,13 @@
     "seccion": "cartelera",
     "poster": "https://apiv2.gaf.adro.studio/uploads/86/poster/6a17003741c765.61002397.webp",
     "sinopsis": "Sin sinopsis disponible",
-    "linkTrailer": "https://www.youtube.com/watch?v=QzGz6ExwbDg"
+    "linkTrailer": ""
   },
   {
     "id_funcion": "cinepolis_cinepolis-plaza-houssay-sa1225_20202_JUE 28-MAY-2026_2245",
     "titulo": "Alpha",
-    "director": "Julia Ducournau",
-    "duracion": "128",
+    "director": "Guillaume de Fontenay",
+    "duracion": "84",
     "cine": "Cinépolis Plaza Houssay",
     "ciudad": "CABA",
     "fecha": "JUE 28/MAY/2026",
@@ -3825,13 +3825,13 @@
     "seccion": "cartelera",
     "poster": "https://apiv2.gaf.adro.studio/uploads/86/poster/6a17003741c765.61002397.webp",
     "sinopsis": "Sin sinopsis disponible",
-    "linkTrailer": "https://www.youtube.com/watch?v=QzGz6ExwbDg"
+    "linkTrailer": ""
   },
   {
     "id_funcion": "cinepolis_cinepolis-plaza-houssay-sa1225_20202_VIE 29-MAY-2026_2245",
     "titulo": "Alpha",
-    "director": "Julia Ducournau",
-    "duracion": "128",
+    "director": "Guillaume de Fontenay",
+    "duracion": "84",
     "cine": "Cinépolis Plaza Houssay",
     "ciudad": "CABA",
     "fecha": "VIE 29/MAY/2026",
@@ -3842,13 +3842,13 @@
     "seccion": "cartelera",
     "poster": "https://apiv2.gaf.adro.studio/uploads/86/poster/6a17003741c765.61002397.webp",
     "sinopsis": "Sin sinopsis disponible",
-    "linkTrailer": "https://www.youtube.com/watch?v=QzGz6ExwbDg"
+    "linkTrailer": ""
   },
   {
     "id_funcion": "cinepolis_cinepolis-plaza-houssay-sa1225_20202_SÁB 30-MAY-2026_2245",
     "titulo": "Alpha",
-    "director": "Julia Ducournau",
-    "duracion": "128",
+    "director": "Guillaume de Fontenay",
+    "duracion": "84",
     "cine": "Cinépolis Plaza Houssay",
     "ciudad": "CABA",
     "fecha": "SÁB 30/MAY/2026",
@@ -3859,13 +3859,13 @@
     "seccion": "cartelera",
     "poster": "https://apiv2.gaf.adro.studio/uploads/86/poster/6a17003741c765.61002397.webp",
     "sinopsis": "Sin sinopsis disponible",
-    "linkTrailer": "https://www.youtube.com/watch?v=QzGz6ExwbDg"
+    "linkTrailer": ""
   },
   {
     "id_funcion": "cinepolis_cinepolis-plaza-houssay-sa1225_20202_DOM 31-MAY-2026_2245",
     "titulo": "Alpha",
-    "director": "Julia Ducournau",
-    "duracion": "128",
+    "director": "Guillaume de Fontenay",
+    "duracion": "84",
     "cine": "Cinépolis Plaza Houssay",
     "ciudad": "CABA",
     "fecha": "DOM 31/MAY/2026",
@@ -3876,13 +3876,13 @@
     "seccion": "cartelera",
     "poster": "https://apiv2.gaf.adro.studio/uploads/86/poster/6a17003741c765.61002397.webp",
     "sinopsis": "Sin sinopsis disponible",
-    "linkTrailer": "https://www.youtube.com/watch?v=QzGz6ExwbDg"
+    "linkTrailer": ""
   },
   {
     "id_funcion": "cinepolis_cinepolis-plaza-houssay-sa1225_20202_LUN 01-JUN-2026_2245",
     "titulo": "Alpha",
-    "director": "Julia Ducournau",
-    "duracion": "128",
+    "director": "Guillaume de Fontenay",
+    "duracion": "84",
     "cine": "Cinépolis Plaza Houssay",
     "ciudad": "CABA",
     "fecha": "LUN 1/JUN/2026",
@@ -3893,13 +3893,13 @@
     "seccion": "cartelera",
     "poster": "https://apiv2.gaf.adro.studio/uploads/86/poster/6a17003741c765.61002397.webp",
     "sinopsis": "Sin sinopsis disponible",
-    "linkTrailer": "https://www.youtube.com/watch?v=QzGz6ExwbDg"
+    "linkTrailer": ""
   },
   {
     "id_funcion": "cinepolis_cinepolis-plaza-houssay-sa1225_20202_MAR 02-JUN-2026_2245",
     "titulo": "Alpha",
-    "director": "Julia Ducournau",
-    "duracion": "128",
+    "director": "Guillaume de Fontenay",
+    "duracion": "84",
     "cine": "Cinépolis Plaza Houssay",
     "ciudad": "CABA",
     "fecha": "MAR 2/JUN/2026",
@@ -3910,13 +3910,13 @@
     "seccion": "cartelera",
     "poster": "https://apiv2.gaf.adro.studio/uploads/86/poster/6a17003741c765.61002397.webp",
     "sinopsis": "Sin sinopsis disponible",
-    "linkTrailer": "https://www.youtube.com/watch?v=QzGz6ExwbDg"
+    "linkTrailer": ""
   },
   {
     "id_funcion": "cinepolis_cinepolis-plaza-houssay-sa1225_20202_MIÉ 03-JUN-2026_2245",
     "titulo": "Alpha",
-    "director": "Julia Ducournau",
-    "duracion": "128",
+    "director": "Guillaume de Fontenay",
+    "duracion": "84",
     "cine": "Cinépolis Plaza Houssay",
     "ciudad": "CABA",
     "fecha": "MIÉ 3/JUN/2026",
@@ -3927,7 +3927,7 @@
     "seccion": "cartelera",
     "poster": "https://apiv2.gaf.adro.studio/uploads/86/poster/6a17003741c765.61002397.webp",
     "sinopsis": "Sin sinopsis disponible",
-    "linkTrailer": "https://www.youtube.com/watch?v=QzGz6ExwbDg"
+    "linkTrailer": ""
   },
   {
     "id_funcion": "cacodelphia_21851_28",
@@ -41614,7 +41614,7 @@
     "linkTrailer": "https://www.youtube.com/watch?v=qWHvDZ_xxgI"
   },
   {
-    "id_funcion": "lugones_CIEN_AÑOS_ATRÁS:_EXPRESIONISMO,_COMEDIA,_FANTASÍA_Y_DRAMA_La_madre_MIÉ 3-JUN-2026_1500",
+    "id_funcion": "lugones_Cien_años_atrás:_expresionismo,_comedia,_fantasía_y_drama_La_madre_MIÉ 03-JUN-2026_1500",
     "titulo": "Padre Madre Hermana Hermano",
     "director": "Vsevolov Pudovkin",
     "duracion": "90",
@@ -41853,9 +41853,9 @@
     "linkTrailer": ""
   },
   {
-    "id_funcion": "lugones_JUSTA_JUSTA_JUE 28-MAY-2026_2100",
-    "titulo": "JUSTA",
-    "director": "Av",
+    "id_funcion": "lugones_Justa_Justa_JUE 28-MAY-2026_2100",
+    "titulo": "Justa",
+    "director": "Teresa Villaverde",
     "duracion": "108",
     "cine": "Sala Leopoldo Lugones",
     "ciudad": "CABA",
@@ -41866,14 +41866,14 @@
     ],
     "seccion": "cartelera",
     "poster": "https://image.tmdb.org/t/p/w500/y6ABtrQIf3cxCAGbquP9JJfWtT9.jpg",
-    "sinopsis": "En 2017, una región de Portugal fue devastada por incendios masivos que consumieron bosques enteros y vidas. Unos meses después, un pequeño grupo de sobrevivientes –una niña llamada Justa y su padre con quemaduras graves, una anciana ciega y un adolescente– lucha por reconstruir sus vidas. Cada uno enfrenta sus traumas, sus silencios y sus fantasmas. Pero algunas experiencias siguen siendo imposibles de compartir para quienes no las han vivido.",
+    "sinopsis": "Bobby Earl se enfrenta a la silla eléctrica acusado del asesinato de una joven. Ocho años después del crimen, Bobby llama al profesor en leyes Paul Armstrong para que le ayude a probar su inocencia. Armstrong pronto descubre pruebas falsas aportadas por la policía, pero a nadie le importa porque todos creen que Bobby es el asesino.",
     "linkTrailer": "",
     "anio": "2025"
   },
   {
-    "id_funcion": "lugones_JUSTA_JUSTA_VIE 29-MAY-2026_2100",
-    "titulo": "JUSTA",
-    "director": "Av",
+    "id_funcion": "lugones_Justa_Justa_VIE 29-MAY-2026_2100",
+    "titulo": "Justa",
+    "director": "Teresa Villaverde",
     "duracion": "108",
     "cine": "Sala Leopoldo Lugones",
     "ciudad": "CABA",
@@ -41884,14 +41884,14 @@
     ],
     "seccion": "cartelera",
     "poster": "https://image.tmdb.org/t/p/w500/y6ABtrQIf3cxCAGbquP9JJfWtT9.jpg",
-    "sinopsis": "En 2017, una región de Portugal fue devastada por incendios masivos que consumieron bosques enteros y vidas. Unos meses después, un pequeño grupo de sobrevivientes –una niña llamada Justa y su padre con quemaduras graves, una anciana ciega y un adolescente– lucha por reconstruir sus vidas. Cada uno enfrenta sus traumas, sus silencios y sus fantasmas. Pero algunas experiencias siguen siendo imposibles de compartir para quienes no las han vivido.",
+    "sinopsis": "Bobby Earl se enfrenta a la silla eléctrica acusado del asesinato de una joven. Ocho años después del crimen, Bobby llama al profesor en leyes Paul Armstrong para que le ayude a probar su inocencia. Armstrong pronto descubre pruebas falsas aportadas por la policía, pero a nadie le importa porque todos creen que Bobby es el asesino.",
     "linkTrailer": "",
     "anio": "2025"
   },
   {
-    "id_funcion": "lugones_JUSTA_JUSTA_SÁB 30-MAY-2026_1800",
-    "titulo": "JUSTA",
-    "director": "Av",
+    "id_funcion": "lugones_Justa_Justa_SÁB 30-MAY-2026_1800",
+    "titulo": "Justa",
+    "director": "Teresa Villaverde",
     "duracion": "108",
     "cine": "Sala Leopoldo Lugones",
     "ciudad": "CABA",
@@ -41902,14 +41902,14 @@
     ],
     "seccion": "cartelera",
     "poster": "https://image.tmdb.org/t/p/w500/y6ABtrQIf3cxCAGbquP9JJfWtT9.jpg",
-    "sinopsis": "En 2017, una región de Portugal fue devastada por incendios masivos que consumieron bosques enteros y vidas. Unos meses después, un pequeño grupo de sobrevivientes –una niña llamada Justa y su padre con quemaduras graves, una anciana ciega y un adolescente– lucha por reconstruir sus vidas. Cada uno enfrenta sus traumas, sus silencios y sus fantasmas. Pero algunas experiencias siguen siendo imposibles de compartir para quienes no las han vivido.",
+    "sinopsis": "Bobby Earl se enfrenta a la silla eléctrica acusado del asesinato de una joven. Ocho años después del crimen, Bobby llama al profesor en leyes Paul Armstrong para que le ayude a probar su inocencia. Armstrong pronto descubre pruebas falsas aportadas por la policía, pero a nadie le importa porque todos creen que Bobby es el asesino.",
     "linkTrailer": "",
     "anio": "2025"
   },
   {
-    "id_funcion": "lugones_JUSTA_JUSTA_DOM 31-MAY-2026_1730",
-    "titulo": "JUSTA",
-    "director": "Av",
+    "id_funcion": "lugones_Justa_Justa_DOM 31-MAY-2026_1730",
+    "titulo": "Justa",
+    "director": "Teresa Villaverde",
     "duracion": "108",
     "cine": "Sala Leopoldo Lugones",
     "ciudad": "CABA",
@@ -41920,14 +41920,14 @@
     ],
     "seccion": "cartelera",
     "poster": "https://image.tmdb.org/t/p/w500/y6ABtrQIf3cxCAGbquP9JJfWtT9.jpg",
-    "sinopsis": "En 2017, una región de Portugal fue devastada por incendios masivos que consumieron bosques enteros y vidas. Unos meses después, un pequeño grupo de sobrevivientes –una niña llamada Justa y su padre con quemaduras graves, una anciana ciega y un adolescente– lucha por reconstruir sus vidas. Cada uno enfrenta sus traumas, sus silencios y sus fantasmas. Pero algunas experiencias siguen siendo imposibles de compartir para quienes no las han vivido.",
+    "sinopsis": "Bobby Earl se enfrenta a la silla eléctrica acusado del asesinato de una joven. Ocho años después del crimen, Bobby llama al profesor en leyes Paul Armstrong para que le ayude a probar su inocencia. Armstrong pronto descubre pruebas falsas aportadas por la policía, pero a nadie le importa porque todos creen que Bobby es el asesino.",
     "linkTrailer": "",
     "anio": "2025"
   },
   {
-    "id_funcion": "lugones_JUSTA_JUSTA_MAR 2-JUN-2026_2100",
-    "titulo": "JUSTA",
-    "director": "Av",
+    "id_funcion": "lugones_Justa_Justa_MAR 02-JUN-2026_2100",
+    "titulo": "Justa",
+    "director": "Teresa Villaverde",
     "duracion": "108",
     "cine": "Sala Leopoldo Lugones",
     "ciudad": "CABA",
@@ -41938,14 +41938,14 @@
     ],
     "seccion": "cartelera",
     "poster": "https://image.tmdb.org/t/p/w500/y6ABtrQIf3cxCAGbquP9JJfWtT9.jpg",
-    "sinopsis": "En 2017, una región de Portugal fue devastada por incendios masivos que consumieron bosques enteros y vidas. Unos meses después, un pequeño grupo de sobrevivientes –una niña llamada Justa y su padre con quemaduras graves, una anciana ciega y un adolescente– lucha por reconstruir sus vidas. Cada uno enfrenta sus traumas, sus silencios y sus fantasmas. Pero algunas experiencias siguen siendo imposibles de compartir para quienes no las han vivido.",
+    "sinopsis": "Bobby Earl se enfrenta a la silla eléctrica acusado del asesinato de una joven. Ocho años después del crimen, Bobby llama al profesor en leyes Paul Armstrong para que le ayude a probar su inocencia. Armstrong pronto descubre pruebas falsas aportadas por la policía, pero a nadie le importa porque todos creen que Bobby es el asesino.",
     "linkTrailer": "",
     "anio": "2025"
   },
   {
-    "id_funcion": "lugones_JUSTA_JUSTA_MIÉ 3-JUN-2026_2100",
-    "titulo": "JUSTA",
-    "director": "Av",
+    "id_funcion": "lugones_Justa_Justa_MIÉ 03-JUN-2026_2100",
+    "titulo": "Justa",
+    "director": "Teresa Villaverde",
     "duracion": "108",
     "cine": "Sala Leopoldo Lugones",
     "ciudad": "CABA",
@@ -41956,123 +41956,15 @@
     ],
     "seccion": "cartelera",
     "poster": "https://image.tmdb.org/t/p/w500/y6ABtrQIf3cxCAGbquP9JJfWtT9.jpg",
-    "sinopsis": "En 2017, una región de Portugal fue devastada por incendios masivos que consumieron bosques enteros y vidas. Unos meses después, un pequeño grupo de sobrevivientes –una niña llamada Justa y su padre con quemaduras graves, una anciana ciega y un adolescente– lucha por reconstruir sus vidas. Cada uno enfrenta sus traumas, sus silencios y sus fantasmas. Pero algunas experiencias siguen siendo imposibles de compartir para quienes no las han vivido.",
+    "sinopsis": "Bobby Earl se enfrenta a la silla eléctrica acusado del asesinato de una joven. Ocho años después del crimen, Bobby llama al profesor en leyes Paul Armstrong para que le ayude a probar su inocencia. Armstrong pronto descubre pruebas falsas aportadas por la policía, pero a nadie le importa porque todos creen que Bobby es el asesino.",
     "linkTrailer": "",
     "anio": "2025"
   },
   {
-    "id_funcion": "lugones_ENCUENTRO_CON_TERESA_VILLAVERDE_Tres_hermanos_VIE 29-MAY-2026_1500",
-    "titulo": "Tres hermanos",
-    "director": "Teresa Villaverde",
-    "duracion": "108",
-    "cine": "Sala Leopoldo Lugones",
-    "ciudad": "CABA",
-    "fecha": "VIE 29/MAY/2026",
-    "idioma": "Sin especificar",
-    "horarios": [
-      "15:00"
-    ],
-    "seccion": "cartelera",
-    "poster": "https://image.tmdb.org/t/p/w500/l5HAXB0uAYf7ip4ffhUTQmqQ2sn.jpg",
-    "sinopsis": "Tres hermanos cazadores patagónicos, metaleros, lidian con sus problemas de manera hermética, se reúnen en el campo paterno después de mucho tiempo. El menor se siente atraído por un compañero de jiu-jitsu.  El mediano es diagnosticado con cáncer testicular. El mayor pierde su trabajo en un barco pesquero y vuelve al pueblo enganchado a la cocaína. Mientras tanto, las lluvias amenazan con un alud en el bosque quemado que rodea su aserradero.",
-    "linkTrailer": "",
-    "anio": "1994"
-  },
-  {
-    "id_funcion": "lugones_ENCUENTRO_CON_TERESA_VILLAVERDE_Tres_hermanos_SÁB 30-MAY-2026_2100",
-    "titulo": "Tres hermanos",
-    "director": "Teresa Villaverde",
-    "duracion": "108",
-    "cine": "Sala Leopoldo Lugones",
-    "ciudad": "CABA",
-    "fecha": "SÁB 30/MAY/2026",
-    "idioma": "Sin especificar",
-    "horarios": [
-      "21:00"
-    ],
-    "seccion": "cartelera",
-    "poster": "https://image.tmdb.org/t/p/w500/l5HAXB0uAYf7ip4ffhUTQmqQ2sn.jpg",
-    "sinopsis": "Tres hermanos cazadores patagónicos, metaleros, lidian con sus problemas de manera hermética, se reúnen en el campo paterno después de mucho tiempo. El menor se siente atraído por un compañero de jiu-jitsu.  El mediano es diagnosticado con cáncer testicular. El mayor pierde su trabajo en un barco pesquero y vuelve al pueblo enganchado a la cocaína. Mientras tanto, las lluvias amenazan con un alud en el bosque quemado que rodea su aserradero.",
-    "linkTrailer": "",
-    "anio": "1994"
-  },
-  {
-    "id_funcion": "lugones_ENCUENTRO_CON_TERESA_VILLAVERDE_Tres_hermanos_DOM 31-MAY-2026_1500",
-    "titulo": "Tres hermanos",
-    "director": "Teresa Villaverde",
-    "duracion": "108",
-    "cine": "Sala Leopoldo Lugones",
-    "ciudad": "CABA",
-    "fecha": "DOM 31/MAY/2026",
-    "idioma": "Sin especificar",
-    "horarios": [
-      "15:00"
-    ],
-    "seccion": "cartelera",
-    "poster": "https://image.tmdb.org/t/p/w500/l5HAXB0uAYf7ip4ffhUTQmqQ2sn.jpg",
-    "sinopsis": "Tres hermanos cazadores patagónicos, metaleros, lidian con sus problemas de manera hermética, se reúnen en el campo paterno después de mucho tiempo. El menor se siente atraído por un compañero de jiu-jitsu.  El mediano es diagnosticado con cáncer testicular. El mayor pierde su trabajo en un barco pesquero y vuelve al pueblo enganchado a la cocaína. Mientras tanto, las lluvias amenazan con un alud en el bosque quemado que rodea su aserradero.",
-    "linkTrailer": "",
-    "anio": "1994"
-  },
-  {
-    "id_funcion": "lugones_ENCUENTRO_CON_TERESA_VILLAVERDE_Colo_VIE 29-MAY-2026_1800",
-    "titulo": "Colo",
-    "director": "Teresa Villaverde",
-    "duracion": "135",
-    "cine": "Sala Leopoldo Lugones",
-    "ciudad": "CABA",
-    "fecha": "VIE 29/MAY/2026",
-    "idioma": "Sin especificar",
-    "horarios": [
-      "18:00"
-    ],
-    "seccion": "cartelera",
-    "poster": "https://image.tmdb.org/t/p/w500/by1o5TTdHVKrIpYqWPmg6jrftPL.jpg",
-    "sinopsis": "Sin sinopsis disponible",
-    "linkTrailer": "",
-    "anio": "2017"
-  },
-  {
-    "id_funcion": "lugones_ENCUENTRO_CON_TERESA_VILLAVERDE_Colo_SÁB 30-MAY-2026_1500",
-    "titulo": "Colo",
-    "director": "Teresa Villaverde",
-    "duracion": "135",
-    "cine": "Sala Leopoldo Lugones",
-    "ciudad": "CABA",
-    "fecha": "SÁB 30/MAY/2026",
-    "idioma": "Sin especificar",
-    "horarios": [
-      "15:00"
-    ],
-    "seccion": "cartelera",
-    "poster": "https://image.tmdb.org/t/p/w500/by1o5TTdHVKrIpYqWPmg6jrftPL.jpg",
-    "sinopsis": "Sin sinopsis disponible",
-    "linkTrailer": "",
-    "anio": "2017"
-  },
-  {
-    "id_funcion": "lugones_ENCUENTRO_CON_TERESA_VILLAVERDE_Colo_DOM 31-MAY-2026_2030",
-    "titulo": "Colo",
-    "director": "Teresa Villaverde",
-    "duracion": "135",
-    "cine": "Sala Leopoldo Lugones",
-    "ciudad": "CABA",
-    "fecha": "DOM 31/MAY/2026",
-    "idioma": "Sin especificar",
-    "horarios": [
-      "20:30"
-    ],
-    "seccion": "cartelera",
-    "poster": "https://image.tmdb.org/t/p/w500/by1o5TTdHVKrIpYqWPmg6jrftPL.jpg",
-    "sinopsis": "Sin sinopsis disponible",
-    "linkTrailer": "",
-    "anio": "2017"
-  },
-  {
-    "id_funcion": "lugones_CIEN_AÑOS_ATRÁS:_EXPRESIONISMO,_COMEDIA,_FANTASÍA_Y_DRAMA_Gorriones_MAR 2-JUN-2026_1500",
+    "id_funcion": "lugones_Cien_años_atrás:_expresionismo,_comedia,_fantasía_y_drama_Gorriones_MAR 02-JUN-2026_1500",
     "titulo": "Gorriones",
     "director": "William Beaudine",
-    "duracion": "99",
+    "duracion": "84",
     "cine": "Sala Leopoldo Lugones",
     "ciudad": "CABA",
     "fecha": "MAR 2/JUN/2026",
@@ -42087,10 +41979,10 @@
     "anio": "1926"
   },
   {
-    "id_funcion": "lugones_CIEN_AÑOS_ATRÁS:_EXPRESIONISMO,_COMEDIA,_FANTASÍA_Y_DRAMA_El_murciélago_MAR 2-JUN-2026_1800",
+    "id_funcion": "lugones_Cien_años_atrás:_expresionismo,_comedia,_fantasía_y_drama_El_murciélago_MAR 02-JUN-2026_1800",
     "titulo": "El murciélago",
     "director": "Roland West",
-    "duracion": "68",
+    "duracion": "86",
     "cine": "Sala Leopoldo Lugones",
     "ciudad": "CABA",
     "fecha": "MAR 2/JUN/2026",
@@ -42105,7 +41997,7 @@
     "anio": "1926"
   },
   {
-    "id_funcion": "lugones_CIEN_AÑOS_ATRÁS:_EXPRESIONISMO,_COMEDIA,_FANTASÍA_Y_DRAMA_El_boxeador_MIÉ 3-JUN-2026_1800",
+    "id_funcion": "lugones_Cien_años_atrás:_expresionismo,_comedia,_fantasía_y_drama_El_boxeador_MIÉ 03-JUN-2026_1800",
     "titulo": "El boxeador",
     "director": "Buster Keaton",
     "duracion": "71",
@@ -45333,133 +45225,7 @@
     "linkTrailer": "https://www.youtube.com/watch?v=K2p_Xz8i2Uo"
   },
   {
-    "id_funcion": "lugones_LA_NOCHE_ESTÁ_MARCHÁNDOSE_YA_La_noche_está_marchándose_ya_JUE 4-JUN-2026_2030",
-    "titulo": "La noche está marchándose ya",
-    "director": "María Aparicio",
-    "duracion": "104",
-    "cine": "Sala Leopoldo Lugones",
-    "ciudad": "CABA",
-    "fecha": "JUE 4/JUN/2026",
-    "idioma": "Sin especificar",
-    "horarios": [
-      "20:30"
-    ],
-    "seccion": "proximos",
-    "poster": "https://image.tmdb.org/t/p/w500/39jzHk0VK2kdt9lRAb8CqNuGcGc.jpg",
-    "sinopsis": "Pelu es un treintañero que a duras penas sobrevive con su salario de proyectorista de un cineclub municipal. Tras perder su trabajo, acepta quedarse como sereno nocturno y, por una serie de giros desafortunados, termina viviendo en secreto dentro del cine acompañado por las películas que revisa cada noche. A medida que se siente más cómodo en su nuevo hogar, Pelu comienza a formar una pequeña comunidad que habita el cine después del horario de cierre: un grupo de naranjitas (aparcacoches informales sin hogar) a los que deja dormir allí y que con el tiempo se convierten en sus amigos más cercanos, y Vale, una ex compañera a la que permite grabar videos para su canal de OnlyFans en la sala de proyección. Pero la precaria condición económica en que viven también es parte de una crisis generalizada, que amenaza con cerrar el cine y pone en riesgo su pequeña comunidad.",
-    "linkTrailer": "",
-    "anio": "2025"
-  },
-  {
-    "id_funcion": "lugones_LA_NOCHE_ESTÁ_MARCHÁNDOSE_YA_La_noche_está_marchándose_ya_VIE 5-JUN-2026_2030",
-    "titulo": "La noche está marchándose ya",
-    "director": "María Aparicio",
-    "duracion": "104",
-    "cine": "Sala Leopoldo Lugones",
-    "ciudad": "CABA",
-    "fecha": "VIE 5/JUN/2026",
-    "idioma": "Sin especificar",
-    "horarios": [
-      "20:30"
-    ],
-    "seccion": "proximos",
-    "poster": "https://image.tmdb.org/t/p/w500/39jzHk0VK2kdt9lRAb8CqNuGcGc.jpg",
-    "sinopsis": "Pelu es un treintañero que a duras penas sobrevive con su salario de proyectorista de un cineclub municipal. Tras perder su trabajo, acepta quedarse como sereno nocturno y, por una serie de giros desafortunados, termina viviendo en secreto dentro del cine acompañado por las películas que revisa cada noche. A medida que se siente más cómodo en su nuevo hogar, Pelu comienza a formar una pequeña comunidad que habita el cine después del horario de cierre: un grupo de naranjitas (aparcacoches informales sin hogar) a los que deja dormir allí y que con el tiempo se convierten en sus amigos más cercanos, y Vale, una ex compañera a la que permite grabar videos para su canal de OnlyFans en la sala de proyección. Pero la precaria condición económica en que viven también es parte de una crisis generalizada, que amenaza con cerrar el cine y pone en riesgo su pequeña comunidad.",
-    "linkTrailer": "",
-    "anio": "2025"
-  },
-  {
-    "id_funcion": "lugones_LA_NOCHE_ESTÁ_MARCHÁNDOSE_YA_La_noche_está_marchándose_ya_SÁB 6-JUN-2026_2030",
-    "titulo": "La noche está marchándose ya",
-    "director": "María Aparicio",
-    "duracion": "104",
-    "cine": "Sala Leopoldo Lugones",
-    "ciudad": "CABA",
-    "fecha": "SÁB 6/JUN/2026",
-    "idioma": "Sin especificar",
-    "horarios": [
-      "20:30"
-    ],
-    "seccion": "proximos",
-    "poster": "https://image.tmdb.org/t/p/w500/39jzHk0VK2kdt9lRAb8CqNuGcGc.jpg",
-    "sinopsis": "Pelu es un treintañero que a duras penas sobrevive con su salario de proyectorista de un cineclub municipal. Tras perder su trabajo, acepta quedarse como sereno nocturno y, por una serie de giros desafortunados, termina viviendo en secreto dentro del cine acompañado por las películas que revisa cada noche. A medida que se siente más cómodo en su nuevo hogar, Pelu comienza a formar una pequeña comunidad que habita el cine después del horario de cierre: un grupo de naranjitas (aparcacoches informales sin hogar) a los que deja dormir allí y que con el tiempo se convierten en sus amigos más cercanos, y Vale, una ex compañera a la que permite grabar videos para su canal de OnlyFans en la sala de proyección. Pero la precaria condición económica en que viven también es parte de una crisis generalizada, que amenaza con cerrar el cine y pone en riesgo su pequeña comunidad.",
-    "linkTrailer": "",
-    "anio": "2025"
-  },
-  {
-    "id_funcion": "lugones_LA_NOCHE_ESTÁ_MARCHÁNDOSE_YA_La_noche_está_marchándose_ya_DOM 7-JUN-2026_1800",
-    "titulo": "La noche está marchándose ya",
-    "director": "María Aparicio",
-    "duracion": "104",
-    "cine": "Sala Leopoldo Lugones",
-    "ciudad": "CABA",
-    "fecha": "DOM 7/JUN/2026",
-    "idioma": "Sin especificar",
-    "horarios": [
-      "18:00"
-    ],
-    "seccion": "proximos",
-    "poster": "https://image.tmdb.org/t/p/w500/39jzHk0VK2kdt9lRAb8CqNuGcGc.jpg",
-    "sinopsis": "Pelu es un treintañero que a duras penas sobrevive con su salario de proyectorista de un cineclub municipal. Tras perder su trabajo, acepta quedarse como sereno nocturno y, por una serie de giros desafortunados, termina viviendo en secreto dentro del cine acompañado por las películas que revisa cada noche. A medida que se siente más cómodo en su nuevo hogar, Pelu comienza a formar una pequeña comunidad que habita el cine después del horario de cierre: un grupo de naranjitas (aparcacoches informales sin hogar) a los que deja dormir allí y que con el tiempo se convierten en sus amigos más cercanos, y Vale, una ex compañera a la que permite grabar videos para su canal de OnlyFans en la sala de proyección. Pero la precaria condición económica en que viven también es parte de una crisis generalizada, que amenaza con cerrar el cine y pone en riesgo su pequeña comunidad.",
-    "linkTrailer": "",
-    "anio": "2025"
-  },
-  {
-    "id_funcion": "lugones_LA_NOCHE_ESTÁ_MARCHÁNDOSE_YA_La_noche_está_marchándose_ya_MAR 9-JUN-2026_2100",
-    "titulo": "La noche está marchándose ya",
-    "director": "María Aparicio",
-    "duracion": "104",
-    "cine": "Sala Leopoldo Lugones",
-    "ciudad": "CABA",
-    "fecha": "MAR 9/JUN/2026",
-    "idioma": "Sin especificar",
-    "horarios": [
-      "21:00"
-    ],
-    "seccion": "proximos",
-    "poster": "https://image.tmdb.org/t/p/w500/39jzHk0VK2kdt9lRAb8CqNuGcGc.jpg",
-    "sinopsis": "Pelu es un treintañero que a duras penas sobrevive con su salario de proyectorista de un cineclub municipal. Tras perder su trabajo, acepta quedarse como sereno nocturno y, por una serie de giros desafortunados, termina viviendo en secreto dentro del cine acompañado por las películas que revisa cada noche. A medida que se siente más cómodo en su nuevo hogar, Pelu comienza a formar una pequeña comunidad que habita el cine después del horario de cierre: un grupo de naranjitas (aparcacoches informales sin hogar) a los que deja dormir allí y que con el tiempo se convierten en sus amigos más cercanos, y Vale, una ex compañera a la que permite grabar videos para su canal de OnlyFans en la sala de proyección. Pero la precaria condición económica en que viven también es parte de una crisis generalizada, que amenaza con cerrar el cine y pone en riesgo su pequeña comunidad.",
-    "linkTrailer": "",
-    "anio": "2025"
-  },
-  {
-    "id_funcion": "lugones_LA_NOCHE_ESTÁ_MARCHÁNDOSE_YA_La_noche_está_marchándose_ya_MIÉ 10-JUN-2026_1800",
-    "titulo": "La noche está marchándose ya",
-    "director": "María Aparicio",
-    "duracion": "104",
-    "cine": "Sala Leopoldo Lugones",
-    "ciudad": "CABA",
-    "fecha": "MIÉ 10/JUN/2026",
-    "idioma": "Sin especificar",
-    "horarios": [
-      "18:00"
-    ],
-    "seccion": "proximos",
-    "poster": "https://image.tmdb.org/t/p/w500/39jzHk0VK2kdt9lRAb8CqNuGcGc.jpg",
-    "sinopsis": "Pelu es un treintañero que a duras penas sobrevive con su salario de proyectorista de un cineclub municipal. Tras perder su trabajo, acepta quedarse como sereno nocturno y, por una serie de giros desafortunados, termina viviendo en secreto dentro del cine acompañado por las películas que revisa cada noche. A medida que se siente más cómodo en su nuevo hogar, Pelu comienza a formar una pequeña comunidad que habita el cine después del horario de cierre: un grupo de naranjitas (aparcacoches informales sin hogar) a los que deja dormir allí y que con el tiempo se convierten en sus amigos más cercanos, y Vale, una ex compañera a la que permite grabar videos para su canal de OnlyFans en la sala de proyección. Pero la precaria condición económica en que viven también es parte de una crisis generalizada, que amenaza con cerrar el cine y pone en riesgo su pequeña comunidad.",
-    "linkTrailer": "",
-    "anio": "2025"
-  },
-  {
-    "id_funcion": "lugones_LA_NOCHE_ESTÁ_MARCHÁNDOSE_YA_La_noche_está_marchándose_ya_JUE 11-JUN-2026_1800",
-    "titulo": "La noche está marchándose ya",
-    "director": "María Aparicio",
-    "duracion": "104",
-    "cine": "Sala Leopoldo Lugones",
-    "ciudad": "CABA",
-    "fecha": "JUE 11/JUN/2026",
-    "idioma": "Sin especificar",
-    "horarios": [
-      "18:00"
-    ],
-    "seccion": "proximos",
-    "poster": "https://image.tmdb.org/t/p/w500/39jzHk0VK2kdt9lRAb8CqNuGcGc.jpg",
-    "sinopsis": "Pelu es un treintañero que a duras penas sobrevive con su salario de proyectorista de un cineclub municipal. Tras perder su trabajo, acepta quedarse como sereno nocturno y, por una serie de giros desafortunados, termina viviendo en secreto dentro del cine acompañado por las películas que revisa cada noche. A medida que se siente más cómodo en su nuevo hogar, Pelu comienza a formar una pequeña comunidad que habita el cine después del horario de cierre: un grupo de naranjitas (aparcacoches informales sin hogar) a los que deja dormir allí y que con el tiempo se convierten en sus amigos más cercanos, y Vale, una ex compañera a la que permite grabar videos para su canal de OnlyFans en la sala de proyección. Pero la precaria condición económica en que viven también es parte de una crisis generalizada, que amenaza con cerrar el cine y pone en riesgo su pequeña comunidad.",
-    "linkTrailer": "",
-    "anio": "2025"
-  },
-  {
-    "id_funcion": "lugones_TAXI_DRIVER_Taxi_Driver_DOM 7-JUN-2026_2100",
+    "id_funcion": "lugones_Taxi_Driver_Taxi_Driver_DOM 7-JUN-2026_2100",
     "titulo": "Taxi Driver",
     "director": "Martin Scorsese",
     "duracion": "113",
@@ -45472,12 +45238,12 @@
     ],
     "seccion": "proximos",
     "poster": "https://image.tmdb.org/t/p/w500/mZMl0YVHJOrkCUSH9oDOEgDwbHT.jpg",
-    "sinopsis": "Para sobrellevar el insomnio crónico que sufre desde su regreso de Vietnam, Travis Bickle (Robert De Niro) trabaja como taxista nocturno en Nueva York. Es un hombre antisocial que apenas tiene contacto con los demás, se pasa los días en el cine y vive obsesionado con Betsy (Cybill Shepherd), una atractiva rubia que trabaja como voluntaria en una campaña política. Pero lo que realmente obsesiona a Travis es comprobar cómo la violencia, la sordidez y la desolación dominan la ciudad. Y un día decide pasar a la acción.",
+    "sinopsis": "Para sobrellevar el insomnio crónico que sufre después de su regreso de Vietnam, Travis decide trabajar como taxista nocturno. Como individuo tiene poco contacto con la gente, pero observa la violencia y desolación en la que se hunde la ciudad de Nueva York. Travis anota en su diario todas sus impresiones, hasta que un día decide pasar a la acción.",
     "linkTrailer": "",
     "anio": "1976"
   },
   {
-    "id_funcion": "lugones_TAXI_DRIVER_Taxi_Driver_SÁB 13-JUN-2026_2100",
+    "id_funcion": "lugones_Taxi_Driver_Taxi_Driver_SÁB 13-JUN-2026_2100",
     "titulo": "Taxi Driver",
     "director": "Martin Scorsese",
     "duracion": "113",
@@ -45490,12 +45256,12 @@
     ],
     "seccion": "proximos",
     "poster": "https://image.tmdb.org/t/p/w500/mZMl0YVHJOrkCUSH9oDOEgDwbHT.jpg",
-    "sinopsis": "Para sobrellevar el insomnio crónico que sufre desde su regreso de Vietnam, Travis Bickle (Robert De Niro) trabaja como taxista nocturno en Nueva York. Es un hombre antisocial que apenas tiene contacto con los demás, se pasa los días en el cine y vive obsesionado con Betsy (Cybill Shepherd), una atractiva rubia que trabaja como voluntaria en una campaña política. Pero lo que realmente obsesiona a Travis es comprobar cómo la violencia, la sordidez y la desolación dominan la ciudad. Y un día decide pasar a la acción.",
+    "sinopsis": "Para sobrellevar el insomnio crónico que sufre después de su regreso de Vietnam, Travis decide trabajar como taxista nocturno. Como individuo tiene poco contacto con la gente, pero observa la violencia y desolación en la que se hunde la ciudad de Nueva York. Travis anota en su diario todas sus impresiones, hasta que un día decide pasar a la acción.",
     "linkTrailer": "",
     "anio": "1976"
   },
   {
-    "id_funcion": "lugones_TAXI_DRIVER_Taxi_Driver_DOM 14-JUN-2026_1700",
+    "id_funcion": "lugones_Taxi_Driver_Taxi_Driver_DOM 14-JUN-2026_1700",
     "titulo": "Taxi Driver",
     "director": "Martin Scorsese",
     "duracion": "113",
@@ -45508,12 +45274,12 @@
     ],
     "seccion": "proximos",
     "poster": "https://image.tmdb.org/t/p/w500/mZMl0YVHJOrkCUSH9oDOEgDwbHT.jpg",
-    "sinopsis": "Para sobrellevar el insomnio crónico que sufre desde su regreso de Vietnam, Travis Bickle (Robert De Niro) trabaja como taxista nocturno en Nueva York. Es un hombre antisocial que apenas tiene contacto con los demás, se pasa los días en el cine y vive obsesionado con Betsy (Cybill Shepherd), una atractiva rubia que trabaja como voluntaria en una campaña política. Pero lo que realmente obsesiona a Travis es comprobar cómo la violencia, la sordidez y la desolación dominan la ciudad. Y un día decide pasar a la acción.",
+    "sinopsis": "Para sobrellevar el insomnio crónico que sufre después de su regreso de Vietnam, Travis decide trabajar como taxista nocturno. Como individuo tiene poco contacto con la gente, pero observa la violencia y desolación en la que se hunde la ciudad de Nueva York. Travis anota en su diario todas sus impresiones, hasta que un día decide pasar a la acción.",
     "linkTrailer": "",
     "anio": "1976"
   },
   {
-    "id_funcion": "lugones_TAXI_DRIVER_Taxi_Driver_VIE 19-JUN-2026_2100",
+    "id_funcion": "lugones_Taxi_Driver_Taxi_Driver_VIE 19-JUN-2026_2100",
     "titulo": "Taxi Driver",
     "director": "Martin Scorsese",
     "duracion": "113",
@@ -45526,12 +45292,12 @@
     ],
     "seccion": "proximos",
     "poster": "https://image.tmdb.org/t/p/w500/mZMl0YVHJOrkCUSH9oDOEgDwbHT.jpg",
-    "sinopsis": "Para sobrellevar el insomnio crónico que sufre desde su regreso de Vietnam, Travis Bickle (Robert De Niro) trabaja como taxista nocturno en Nueva York. Es un hombre antisocial que apenas tiene contacto con los demás, se pasa los días en el cine y vive obsesionado con Betsy (Cybill Shepherd), una atractiva rubia que trabaja como voluntaria en una campaña política. Pero lo que realmente obsesiona a Travis es comprobar cómo la violencia, la sordidez y la desolación dominan la ciudad. Y un día decide pasar a la acción.",
+    "sinopsis": "Para sobrellevar el insomnio crónico que sufre después de su regreso de Vietnam, Travis decide trabajar como taxista nocturno. Como individuo tiene poco contacto con la gente, pero observa la violencia y desolación en la que se hunde la ciudad de Nueva York. Travis anota en su diario todas sus impresiones, hasta que un día decide pasar a la acción.",
     "linkTrailer": "",
     "anio": "1976"
   },
   {
-    "id_funcion": "lugones_BREVE_ENCUENTRO_CON_ISABELLE_ADJANI_La_historia_de_Adela_H._JUE 11-JUN-2026_1500",
+    "id_funcion": "lugones_Breve_encuentro_con_Isabelle_Adjani_La_historia_de_Adela_H._JUE 11-JUN-2026_1500",
     "titulo": "La historia de Adela H.",
     "director": "François Truffaut",
     "duracion": "96",
@@ -45549,7 +45315,7 @@
     "anio": "1975"
   },
   {
-    "id_funcion": "lugones_BREVE_ENCUENTRO_CON_ISABELLE_ADJANI_La_historia_de_Adela_H._MAR 16-JUN-2026_1800",
+    "id_funcion": "lugones_Breve_encuentro_con_Isabelle_Adjani_La_historia_de_Adela_H._MAR 16-JUN-2026_1800",
     "titulo": "La historia de Adela H.",
     "director": "François Truffaut",
     "duracion": "96",
@@ -45567,7 +45333,7 @@
     "anio": "1975"
   },
   {
-    "id_funcion": "lugones_BREVE_ENCUENTRO_CON_ISABELLE_ADJANI_La_historia_de_Adela_H._MIÉ 17-JUN-2026_2100",
+    "id_funcion": "lugones_Breve_encuentro_con_Isabelle_Adjani_La_historia_de_Adela_H._MIÉ 17-JUN-2026_2100",
     "titulo": "La historia de Adela H.",
     "director": "François Truffaut",
     "duracion": "96",
@@ -45585,7 +45351,7 @@
     "anio": "1975"
   },
   {
-    "id_funcion": "lugones_BREVE_ENCUENTRO_CON_ISABELLE_ADJANI_Possession_VIE 12-JUN-2026_2030",
+    "id_funcion": "lugones_Breve_encuentro_con_Isabelle_Adjani_Possession_VIE 12-JUN-2026_2030",
     "titulo": "Possession",
     "director": "Andrzej Zulawski",
     "duracion": "127",
@@ -45603,7 +45369,7 @@
     "anio": "1981"
   },
   {
-    "id_funcion": "lugones_BREVE_ENCUENTRO_CON_ISABELLE_ADJANI_Possession_VIE 19-JUN-2026_1800",
+    "id_funcion": "lugones_Breve_encuentro_con_Isabelle_Adjani_Possession_VIE 19-JUN-2026_1800",
     "titulo": "Possession",
     "director": "Andrzej Zulawski",
     "duracion": "127",
@@ -45621,7 +45387,7 @@
     "anio": "1981"
   },
   {
-    "id_funcion": "lugones_BREVE_ENCUENTRO_CON_ISABELLE_ADJANI_Possession_MIÉ 24-JUN-2026_1500",
+    "id_funcion": "lugones_Breve_encuentro_con_Isabelle_Adjani_Possession_MIÉ 24-JUN-2026_1500",
     "titulo": "Possession",
     "director": "Andrzej Zulawski",
     "duracion": "127",
@@ -45639,10 +45405,10 @@
     "anio": "1981"
   },
   {
-    "id_funcion": "lugones_BREVE_ENCUENTRO_CON_ISABELLE_ADJANI_Ishtar_SÁB 13-JUN-2026_1500",
+    "id_funcion": "lugones_Breve_encuentro_con_Isabelle_Adjani_Ishtar_SÁB 13-JUN-2026_1500",
     "titulo": "Ishtar",
     "director": "Elaine May",
-    "duracion": "27",
+    "duracion": "107",
     "cine": "Sala Leopoldo Lugones",
     "ciudad": "CABA",
     "fecha": "SÁB 13/JUN/2026",
@@ -45657,7 +45423,7 @@
     "anio": "1987"
   },
   {
-    "id_funcion": "lugones_BREVE_ENCUENTRO_CON_ISABELLE_ADJANI_Ishtar_DOM 21-JUN-2026_1500",
+    "id_funcion": "lugones_Breve_encuentro_con_Isabelle_Adjani_Ishtar_DOM 21-JUN-2026_1500",
     "titulo": "Ishtar",
     "director": "Elaine May",
     "duracion": "107",
@@ -45675,7 +45441,7 @@
     "anio": "1987"
   },
   {
-    "id_funcion": "lugones_BREVE_ENCUENTRO_CON_ISABELLE_ADJANI_Ishtar_MAR 23-JUN-2026_1800",
+    "id_funcion": "lugones_Breve_encuentro_con_Isabelle_Adjani_Ishtar_MAR 23-JUN-2026_1800",
     "titulo": "Ishtar",
     "director": "Elaine May",
     "duracion": "107",
@@ -45693,13 +45459,13 @@
     "anio": "1987"
   },
   {
-    "id_funcion": "lugones_BREVE_ENCUENTRO_CON_ISABELLE_ADJANI_La_reina_Margot_SÁB 13-JUN-2026_1730",
+    "id_funcion": "lugones_Breve_encuentro_con_Isabelle_Adjani_La_reina_Margot_DOM 14-JUN-2026_1730",
     "titulo": "La reina Margot",
     "director": "Patrice Chéreau",
-    "duracion": "27",
+    "duracion": "159",
     "cine": "Sala Leopoldo Lugones",
     "ciudad": "CABA",
-    "fecha": "SÁB 13/JUN/2026",
+    "fecha": "DOM 14/JUN/2026",
     "idioma": "Sin especificar",
     "horarios": [
       "17:30"
@@ -45711,28 +45477,10 @@
     "anio": "1994"
   },
   {
-    "id_funcion": "lugones_BREVE_ENCUENTRO_CON_ISABELLE_ADJANI_La_reina_Margot_DOM 14-JUN-2026_2000",
+    "id_funcion": "lugones_Breve_encuentro_con_Isabelle_Adjani_La_reina_Margot_JUE 18-JUN-2026_2000",
     "titulo": "La reina Margot",
     "director": "Patrice Chéreau",
-    "duracion": "96",
-    "cine": "Sala Leopoldo Lugones",
-    "ciudad": "CABA",
-    "fecha": "DOM 14/JUN/2026",
-    "idioma": "Sin especificar",
-    "horarios": [
-      "20:00"
-    ],
-    "seccion": "proximos",
-    "poster": "https://image.tmdb.org/t/p/w500/ysTsBH8OfPsUQqaBYulSAmaN13l.jpg",
-    "sinopsis": "París, Reino de Francia, 18 de agosto de 1572. Con el propósito de evitar el estallido de una guerra religiosa, la princesa católica Margarita de Valois, hermana del débil rey Carlos IX, se casa con el rey hugonote Enrique III de Navarra.",
-    "linkTrailer": "",
-    "anio": "1994"
-  },
-  {
-    "id_funcion": "lugones_BREVE_ENCUENTRO_CON_ISABELLE_ADJANI_La_reina_Margot_JUE 18-JUN-2026_2000",
-    "titulo": "La reina Margot",
-    "director": "Patrice Chéreau",
-    "duracion": "127",
+    "duracion": "159",
     "cine": "Sala Leopoldo Lugones",
     "ciudad": "CABA",
     "fecha": "JUE 18/JUN/2026",
@@ -45747,10 +45495,10 @@
     "anio": "1994"
   },
   {
-    "id_funcion": "lugones_CIEN_AÑOS_ATRÁS:_EXPRESIONISMO,_COMEDIA,_FANTASÍA_Y_DRAMA_Fausto_SÁB 6-JUN-2026_1800",
+    "id_funcion": "lugones_Cien_años_atrás:_expresionismo,_comedia,_fantasía_y_drama_Fausto_SÁB 06-JUN-2026_1800",
     "titulo": "Fausto",
-    "director": "F",
-    "duracion": "71",
+    "director": "F. W. Murnau",
+    "duracion": "107",
     "cine": "Sala Leopoldo Lugones",
     "ciudad": "CABA",
     "fecha": "SÁB 6/JUN/2026",
@@ -45765,10 +45513,10 @@
     "anio": "1926"
   },
   {
-    "id_funcion": "lugones_CIEN_AÑOS_ATRÁS:_EXPRESIONISMO,_COMEDIA,_FANTASÍA_Y_DRAMA_Fausto_MIÉ 10-JUN-2026_1500",
+    "id_funcion": "lugones_Cien_años_atrás:_expresionismo,_comedia,_fantasía_y_drama_Fausto_MIÉ 10-JUN-2026_1500",
     "titulo": "Fausto",
-    "director": "F",
-    "duracion": "90",
+    "director": "F. W. Murnau",
+    "duracion": "107",
     "cine": "Sala Leopoldo Lugones",
     "ciudad": "CABA",
     "fecha": "MIÉ 10/JUN/2026",
@@ -45783,10 +45531,10 @@
     "anio": "1926"
   },
   {
-    "id_funcion": "lugones_CIEN_AÑOS_ATRÁS:_EXPRESIONISMO,_COMEDIA,_FANTASÍA_Y_DRAMA_Fausto_JUE 11-JUN-2026_2100",
+    "id_funcion": "lugones_Cien_años_atrás:_expresionismo,_comedia,_fantasía_y_drama_Fausto_JUE 11-JUN-2026_2100",
     "titulo": "Fausto",
-    "director": "F",
-    "duracion": "139",
+    "director": "F. W. Murnau",
+    "duracion": "107",
     "cine": "Sala Leopoldo Lugones",
     "ciudad": "CABA",
     "fecha": "JUE 11/JUN/2026",
@@ -45801,9 +45549,9 @@
     "anio": "1926"
   },
   {
-    "id_funcion": "lugones_CIEN_AÑOS_ATRÁS:_EXPRESIONISMO,_COMEDIA,_FANTASÍA_Y_DRAMA_El_payaso_MAR 9-JUN-2026_1500",
+    "id_funcion": "lugones_Cien_años_atrás:_expresionismo,_comedia,_fantasía_y_drama_El_payaso_MAR 09-JUN-2026_1500",
     "titulo": "El payaso",
-    "director": "A",
+    "director": "A. W. Sandberg",
     "duracion": "139",
     "cine": "Sala Leopoldo Lugones",
     "ciudad": "CABA",
@@ -45819,9 +45567,9 @@
     "anio": "1926"
   },
   {
-    "id_funcion": "lugones_CIEN_AÑOS_ATRÁS:_EXPRESIONISMO,_COMEDIA,_FANTASÍA_Y_DRAMA_El_payaso_VIE 12-JUN-2026_1500",
+    "id_funcion": "lugones_Cien_años_atrás:_expresionismo,_comedia,_fantasía_y_drama_El_payaso_VIE 12-JUN-2026_1500",
     "titulo": "El payaso",
-    "director": "A",
+    "director": "A. W. Sandberg",
     "duracion": "139",
     "cine": "Sala Leopoldo Lugones",
     "ciudad": "CABA",
@@ -45837,9 +45585,9 @@
     "anio": "1926"
   },
   {
-    "id_funcion": "lugones_CIEN_AÑOS_ATRÁS:_EXPRESIONISMO,_COMEDIA,_FANTASÍA_Y_DRAMA_El_payaso_MIÉ 17-JUN-2026_1800",
+    "id_funcion": "lugones_Cien_años_atrás:_expresionismo,_comedia,_fantasía_y_drama_El_payaso_MIÉ 17-JUN-2026_1800",
     "titulo": "El payaso",
-    "director": "A",
+    "director": "A. W. Sandberg",
     "duracion": "139",
     "cine": "Sala Leopoldo Lugones",
     "ciudad": "CABA",
@@ -45853,221 +45601,5 @@
     "sinopsis": "Sin sinopsis disponible",
     "linkTrailer": "",
     "anio": "1926"
-  },
-  {
-    "id_funcion": "lugones_TRES_TARDES_CON_GARDEL_El_día_que_me_quieras_MIÉ 17-JUN-2026_1500",
-    "titulo": "El día que me quieras",
-    "director": "John Reinhardt",
-    "duracion": "83",
-    "cine": "Sala Leopoldo Lugones",
-    "ciudad": "CABA",
-    "fecha": "MIÉ 17/JUN/2026",
-    "idioma": "Sin especificar",
-    "horarios": [
-      "15:00"
-    ],
-    "seccion": "proximos",
-    "poster": "https://image.tmdb.org/t/p/w500/gryRzYDcac9auQxgFBTqcdTgwyV.jpg",
-    "sinopsis": "Julio Argüelles (Carlos Gardel), hijo de familia bien y cantor a escondidas, desafía la autoridad paterna y se casa con una actriz. Despreciado y sin trabajo, con su mujer enferma, decide robar la casa de su progenitor. Luego enviuda y se dedica a cantar, con su hija, para ganarse la vida. La joven se enamora de un muchacho cuyo padre no aprueba el noviazgo, por ser hija de artistas. Pero, después, cambia de parecer cuando descubre la verdadera identidad de Argüelles.",
-    "linkTrailer": "",
-    "anio": "1935"
-  },
-  {
-    "id_funcion": "lugones_TRES_TARDES_CON_GARDEL_Tango_Bar_JUE 18-JUN-2026_1800",
-    "titulo": "Tango Bar",
-    "director": "John Reinhardt",
-    "duracion": "100",
-    "cine": "Sala Leopoldo Lugones",
-    "ciudad": "CABA",
-    "fecha": "JUE 18/JUN/2026",
-    "idioma": "Sin especificar",
-    "horarios": [
-      "18:00"
-    ],
-    "seccion": "proximos",
-    "poster": "https://image.tmdb.org/t/p/w500/sAMh8zqbbGMX2bIi69kBCPf9W8c.jpg",
-    "sinopsis": "María, una joven que quería convertirse en modelo de moda, es engañada para viajar al extranjero, creyendo que va a cumplir su sueño de fama internacional, cuando llega al país de destino, se da cuenta de que ha sido traficada con fines de explotación sexual. En el Tango Bar, el dueño del prostíbulo Rubén la somete con violencia, pero María nunca abandona su deseo de recuperar su libertad.",
-    "linkTrailer": "",
-    "anio": "1935"
-  },
-  {
-    "id_funcion": "lugones_TRES_TARDES_CON_GARDEL_Así_cantaba_Carlos_Gardel_VIE 19-JUN-2026_1500",
-    "titulo": "Así cantaba Carlos Gardel",
-    "director": "Eduardo Morera",
-    "duracion": "35",
-    "cine": "Sala Leopoldo Lugones",
-    "ciudad": "CABA",
-    "fecha": "VIE 19/JUN/2026",
-    "idioma": "Sin especificar",
-    "horarios": [
-      "15:00"
-    ],
-    "seccion": "proximos",
-    "poster": "https://image.tmdb.org/t/p/w500/4qPy4LnXtnMC77HZ98Yk1PQpinJ.jpg",
-    "sinopsis": "Así cantaba Carlos Gardel es un film de 1935 que reúne diez de los quince cortos que Carlos Gardel filmó en 1930 bajo la dirección de Eduardo Morera, en los estudios cinematográficos del pionero Federico Valle. Además de su enorme valor documental, estos cortos tienen una importancia histórica, porque con estas canciones interpretadas por Gardel -que incluye los tangos Padrino pelao, Mano a mano, Tengo miedo, Viejo smoking, Añoranzas, El carretero, Rosas de otoño, Canchero, Enfundá la mandolina y Yira, yira- nació el cine sonoro argentino, que tendría en su desarrollo al tango como bandera.",
-    "linkTrailer": "",
-    "anio": "1935"
-  },
-  {
-    "id_funcion": "lugones_TRES_TARDES_CON_GARDEL_Cuesta_abajo_VIE 19-JUN-2026_1500",
-    "titulo": "Cuesta abajo",
-    "director": "Louis Gasnier",
-    "duracion": "8",
-    "cine": "Sala Leopoldo Lugones",
-    "ciudad": "CABA",
-    "fecha": "VIE 19/JUN/2026",
-    "idioma": "Sin especificar",
-    "horarios": [
-      "15:00"
-    ],
-    "seccion": "proximos",
-    "poster": "https://image.tmdb.org/t/p/w500/sgwNLIrhS6Dya9d5oNiKvNdi9ib.jpg",
-    "sinopsis": "Sin sinopsis disponible",
-    "linkTrailer": "",
-    "anio": "1934"
-  },
-  {
-    "id_funcion": "lugones_AGNÈS_VARDA_X_3_Cléo_de_5_a_7_JUE 18-JUN-2026_1500",
-    "titulo": "Cléo de 5 a 7",
-    "director": "Agnès Varda",
-    "duracion": "90",
-    "cine": "Sala Leopoldo Lugones",
-    "ciudad": "CABA",
-    "fecha": "JUE 18/JUN/2026",
-    "idioma": "Sin especificar",
-    "horarios": [
-      "15:00"
-    ],
-    "seccion": "proximos",
-    "poster": "https://image.tmdb.org/t/p/w500/k5dXkYYgjRcWFfgm8dSdYr9abAc.jpg",
-    "sinopsis": "Cleo, una joven cantante, espera impaciente los resultados de un examen médico. Cuando una adivina que lee las cartas le revela que tiene cáncer y que puede morir, su inquietud aumenta. Tratando de ocupar su tiempo a la espera de los resultados, Cleo conoce a un joven soldado, a punto de partir para hacer el servicio militar en Argelia, al que confía su temor a la muerte.",
-    "linkTrailer": "",
-    "anio": "1962"
-  },
-  {
-    "id_funcion": "lugones_AGNÈS_VARDA_X_3_Cléo_de_5_a_7_MIÉ 24-JUN-2026_2100",
-    "titulo": "Cléo de 5 a 7",
-    "director": "Agnès Varda",
-    "duracion": "90",
-    "cine": "Sala Leopoldo Lugones",
-    "ciudad": "CABA",
-    "fecha": "MIÉ 24/JUN/2026",
-    "idioma": "Sin especificar",
-    "horarios": [
-      "21:00"
-    ],
-    "seccion": "proximos",
-    "poster": "https://image.tmdb.org/t/p/w500/k5dXkYYgjRcWFfgm8dSdYr9abAc.jpg",
-    "sinopsis": "Cleo, una joven cantante, espera impaciente los resultados de un examen médico. Cuando una adivina que lee las cartas le revela que tiene cáncer y que puede morir, su inquietud aumenta. Tratando de ocupar su tiempo a la espera de los resultados, Cleo conoce a un joven soldado, a punto de partir para hacer el servicio militar en Argelia, al que confía su temor a la muerte.",
-    "linkTrailer": "",
-    "anio": "1962"
-  },
-  {
-    "id_funcion": "lugones_AGNÈS_VARDA_X_3_Cléo_de_5_a_7_JUE 25-JUN-2026_1800",
-    "titulo": "Cléo de 5 a 7",
-    "director": "Agnès Varda",
-    "duracion": "90",
-    "cine": "Sala Leopoldo Lugones",
-    "ciudad": "CABA",
-    "fecha": "JUE 25/JUN/2026",
-    "idioma": "Sin especificar",
-    "horarios": [
-      "18:00"
-    ],
-    "seccion": "proximos",
-    "poster": "https://image.tmdb.org/t/p/w500/k5dXkYYgjRcWFfgm8dSdYr9abAc.jpg",
-    "sinopsis": "Cleo, una joven cantante, espera impaciente los resultados de un examen médico. Cuando una adivina que lee las cartas le revela que tiene cáncer y que puede morir, su inquietud aumenta. Tratando de ocupar su tiempo a la espera de los resultados, Cleo conoce a un joven soldado, a punto de partir para hacer el servicio militar en Argelia, al que confía su temor a la muerte.",
-    "linkTrailer": "",
-    "anio": "1962"
-  },
-  {
-    "id_funcion": "lugones_AGNÈS_VARDA_X_3_Una_canta,_la_otra_no_DOM 21-JUN-2026_1800",
-    "titulo": "Una canta, la otra no",
-    "director": "Agnès Varda",
-    "duracion": "115",
-    "cine": "Sala Leopoldo Lugones",
-    "ciudad": "CABA",
-    "fecha": "DOM 21/JUN/2026",
-    "idioma": "Sin especificar",
-    "horarios": [
-      "18:00"
-    ],
-    "seccion": "proximos",
-    "poster": "https://image.tmdb.org/t/p/w500/fTe8Fd6I7auRVkTociUxHTiWSdK.jpg",
-    "sinopsis": "Tras nueve años sin estrenar una película, Varda vuelve con un film feminista que narra la histora de dos amigas de vidas diferentes. (FILMAFFINITY)",
-    "linkTrailer": "",
-    "anio": "1977"
-  },
-  {
-    "id_funcion": "lugones_AGNÈS_VARDA_X_3_Una_canta,_la_otra_no_MIÉ 24-JUN-2026_1800",
-    "titulo": "Una canta, la otra no",
-    "director": "Agnès Varda",
-    "duracion": "115",
-    "cine": "Sala Leopoldo Lugones",
-    "ciudad": "CABA",
-    "fecha": "MIÉ 24/JUN/2026",
-    "idioma": "Sin especificar",
-    "horarios": [
-      "18:00"
-    ],
-    "seccion": "proximos",
-    "poster": "https://image.tmdb.org/t/p/w500/fTe8Fd6I7auRVkTociUxHTiWSdK.jpg",
-    "sinopsis": "Tras nueve años sin estrenar una película, Varda vuelve con un film feminista que narra la histora de dos amigas de vidas diferentes. (FILMAFFINITY)",
-    "linkTrailer": "",
-    "anio": "1977"
-  },
-  {
-    "id_funcion": "lugones_AGNÈS_VARDA_X_3_Una_canta,_la_otra_no_JUE 25-JUN-2026_1500",
-    "titulo": "Una canta, la otra no",
-    "director": "Agnès Varda",
-    "duracion": "115",
-    "cine": "Sala Leopoldo Lugones",
-    "ciudad": "CABA",
-    "fecha": "JUE 25/JUN/2026",
-    "idioma": "Sin especificar",
-    "horarios": [
-      "15:00"
-    ],
-    "seccion": "proximos",
-    "poster": "https://image.tmdb.org/t/p/w500/fTe8Fd6I7auRVkTociUxHTiWSdK.jpg",
-    "sinopsis": "Tras nueve años sin estrenar una película, Varda vuelve con un film feminista que narra la histora de dos amigas de vidas diferentes. (FILMAFFINITY)",
-    "linkTrailer": "",
-    "anio": "1977"
-  },
-  {
-    "id_funcion": "lugones_AGNÈS_VARDA_X_3_Las_criaturas_DOM 21-JUN-2026_2100",
-    "titulo": "Las criaturas",
-    "director": "Agnès Varda",
-    "duracion": "92",
-    "cine": "Sala Leopoldo Lugones",
-    "ciudad": "CABA",
-    "fecha": "DOM 21/JUN/2026",
-    "idioma": "Sin especificar",
-    "horarios": [
-      "21:00"
-    ],
-    "seccion": "proximos",
-    "poster": "https://image.tmdb.org/t/p/w500/2CH2vQ0YWEoCaiKhRf6n9HWVyed.jpg",
-    "sinopsis": "Tras un accidente de coche, un novelista termina en una curiosa nave y descubre que ha adquirido el poder de actuar sobre los demás",
-    "linkTrailer": "",
-    "anio": "1966"
-  },
-  {
-    "id_funcion": "lugones_AGNÈS_VARDA_X_3_Las_criaturas_MAR 23-JUN-2026_2100",
-    "titulo": "Las criaturas",
-    "director": "Agnès Varda",
-    "duracion": "92",
-    "cine": "Sala Leopoldo Lugones",
-    "ciudad": "CABA",
-    "fecha": "MAR 23/JUN/2026",
-    "idioma": "Sin especificar",
-    "horarios": [
-      "21:00"
-    ],
-    "seccion": "proximos",
-    "poster": "https://image.tmdb.org/t/p/w500/2CH2vQ0YWEoCaiKhRf6n9HWVyed.jpg",
-    "sinopsis": "Tras un accidente de coche, un novelista termina en una curiosa nave y descubre que ha adquirido el poder de actuar sobre los demás",
-    "linkTrailer": "",
-    "anio": "1966"
   }
 ]
