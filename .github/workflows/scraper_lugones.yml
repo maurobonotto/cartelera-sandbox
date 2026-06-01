@@ -18,10 +18,10 @@ jobs:
         with:
           node-version: '22'
       
-      - name: Install system dependencies (Chrome)
+      - name: Install Chromium
         run: |
           sudo apt-get update
-          sudo apt-get install -y google-chrome-stable
+          sudo apt-get install -y chromium-browser
       
       - run: npm install
         working-directory: backend
@@ -31,7 +31,7 @@ jobs:
         working-directory: backend
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
-          PUPPETEER_EXECUTABLE_PATH: /usr/bin/google-chrome-stable
+          PUPPETEER_EXECUTABLE_PATH: /usr/bin/chromium-browser
       
       - name: Commit changes
         uses: stefanzweifel/git-auto-commit-action@v5

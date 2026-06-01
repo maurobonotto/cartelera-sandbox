@@ -109,10 +109,14 @@ ${html}
     }
 }
 
-// ------------------ Scraper principal ------------------
+// ------------------ Scraper principal (CORREGIDO) ------------------
 async function scrapeLugones() {
     console.log('Iniciando scraping de Sala Lugones');
-    const browser = await puppeteer.launch({ headless: 'new', args: ['--no-sandbox'] });
+    const browser = await puppeteer.launch({
+        headless: 'new',
+        args: ['--no-sandbox'],
+        executablePath: process.env.PUPPETEER_EXECUTABLE_PATH || undefined  // ✅ Corregido
+    });
     const page = await browser.newPage();
 
     try {
