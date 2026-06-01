@@ -1,1 +1,920 @@
-[]
+[
+  {
+    "id_funcion": "lugones_Justa_Justa_JUE 28-MAY-2026_2100",
+    "titulo": "Justa",
+    "director": "Teresa Villaverde",
+    "duracion": "108",
+    "cine": "Sala Leopoldo Lugones",
+    "ciudad": "CABA",
+    "fecha": "JUE 28/MAY/2026",
+    "idioma": "Sin especificar",
+    "horarios": [
+      "21:00"
+    ],
+    "seccion": "cartelera",
+    "poster": null,
+    "sinopsis": "",
+    "linkTrailer": "",
+    "anio": "2025"
+  },
+  {
+    "id_funcion": "lugones_Justa_Justa_VIE 29-MAY-2026_2100",
+    "titulo": "Justa",
+    "director": "Teresa Villaverde",
+    "duracion": "108",
+    "cine": "Sala Leopoldo Lugones",
+    "ciudad": "CABA",
+    "fecha": "VIE 29/MAY/2026",
+    "idioma": "Sin especificar",
+    "horarios": [
+      "21:00"
+    ],
+    "seccion": "cartelera",
+    "poster": null,
+    "sinopsis": "",
+    "linkTrailer": "",
+    "anio": "2025"
+  },
+  {
+    "id_funcion": "lugones_Justa_Justa_SÁB 30-MAY-2026_1800",
+    "titulo": "Justa",
+    "director": "Teresa Villaverde",
+    "duracion": "108",
+    "cine": "Sala Leopoldo Lugones",
+    "ciudad": "CABA",
+    "fecha": "SÁB 30/MAY/2026",
+    "idioma": "Sin especificar",
+    "horarios": [
+      "18:00"
+    ],
+    "seccion": "cartelera",
+    "poster": null,
+    "sinopsis": "",
+    "linkTrailer": "",
+    "anio": "2025"
+  },
+  {
+    "id_funcion": "lugones_Justa_Justa_DOM 31-MAY-2026_1730",
+    "titulo": "Justa",
+    "director": "Teresa Villaverde",
+    "duracion": "108",
+    "cine": "Sala Leopoldo Lugones",
+    "ciudad": "CABA",
+    "fecha": "DOM 31/MAY/2026",
+    "idioma": "Sin especificar",
+    "horarios": [
+      "17:30"
+    ],
+    "seccion": "cartelera",
+    "poster": null,
+    "sinopsis": "",
+    "linkTrailer": "",
+    "anio": "2025"
+  },
+  {
+    "id_funcion": "lugones_Justa_Justa_MAR 02-JUN-2026_2100",
+    "titulo": "Justa",
+    "director": "Teresa Villaverde",
+    "duracion": "108",
+    "cine": "Sala Leopoldo Lugones",
+    "ciudad": "CABA",
+    "fecha": "MAR 02/JUN/2026",
+    "idioma": "Sin especificar",
+    "horarios": [
+      "21:00"
+    ],
+    "seccion": "cartelera",
+    "poster": null,
+    "sinopsis": "",
+    "linkTrailer": "",
+    "anio": "2025"
+  },
+  {
+    "id_funcion": "lugones_Justa_Justa_MIÉ 03-JUN-2026_2100",
+    "titulo": "Justa",
+    "director": "Teresa Villaverde",
+    "duracion": "108",
+    "cine": "Sala Leopoldo Lugones",
+    "ciudad": "CABA",
+    "fecha": "MIÉ 03/JUN/2026",
+    "idioma": "Sin especificar",
+    "horarios": [
+      "21:00"
+    ],
+    "seccion": "cartelera",
+    "poster": null,
+    "sinopsis": "",
+    "linkTrailer": "",
+    "anio": "2025"
+  },
+  {
+    "id_funcion": "lugones_Justa_Justa_JUE 04-JUN-2026_1800",
+    "titulo": "Justa",
+    "director": "Teresa Villaverde",
+    "duracion": "108",
+    "cine": "Sala Leopoldo Lugones",
+    "ciudad": "CABA",
+    "fecha": "JUE 04/JUN/2026",
+    "idioma": "Sin especificar",
+    "horarios": [
+      "18:00"
+    ],
+    "seccion": "cartelera",
+    "poster": null,
+    "sinopsis": "",
+    "linkTrailer": "",
+    "anio": "2025"
+  },
+  {
+    "id_funcion": "lugones_Taxi_Driver_Taxi_Driver_DOM 7-JUN-2026_2100",
+    "titulo": "Taxi Driver",
+    "director": "Martin Scorsese",
+    "duracion": "113",
+    "cine": "Sala Leopoldo Lugones",
+    "ciudad": "CABA",
+    "fecha": "DOM 7/JUN/2026",
+    "idioma": "Sin especificar",
+    "horarios": [
+      "21:00"
+    ],
+    "seccion": "cartelera",
+    "poster": null,
+    "sinopsis": "",
+    "linkTrailer": "",
+    "anio": "1976"
+  },
+  {
+    "id_funcion": "lugones_Taxi_Driver_Taxi_Driver_SÁB 13-JUN-2026_2100",
+    "titulo": "Taxi Driver",
+    "director": "Martin Scorsese",
+    "duracion": "113",
+    "cine": "Sala Leopoldo Lugones",
+    "ciudad": "CABA",
+    "fecha": "SÁB 13/JUN/2026",
+    "idioma": "Sin especificar",
+    "horarios": [
+      "21:00"
+    ],
+    "seccion": "cartelera",
+    "poster": null,
+    "sinopsis": "",
+    "linkTrailer": "",
+    "anio": "1976"
+  },
+  {
+    "id_funcion": "lugones_Taxi_Driver_Taxi_Driver_DOM 14-JUN-2026_1700",
+    "titulo": "Taxi Driver",
+    "director": "Martin Scorsese",
+    "duracion": "113",
+    "cine": "Sala Leopoldo Lugones",
+    "ciudad": "CABA",
+    "fecha": "DOM 14/JUN/2026",
+    "idioma": "Sin especificar",
+    "horarios": [
+      "17:00"
+    ],
+    "seccion": "cartelera",
+    "poster": null,
+    "sinopsis": "",
+    "linkTrailer": "",
+    "anio": "1976"
+  },
+  {
+    "id_funcion": "lugones_Taxi_Driver_Taxi_Driver_VIE 19-JUN-2026_2100",
+    "titulo": "Taxi Driver",
+    "director": "Martin Scorsese",
+    "duracion": "113",
+    "cine": "Sala Leopoldo Lugones",
+    "ciudad": "CABA",
+    "fecha": "VIE 19/JUN/2026",
+    "idioma": "Sin especificar",
+    "horarios": [
+      "21:00"
+    ],
+    "seccion": "cartelera",
+    "poster": null,
+    "sinopsis": "",
+    "linkTrailer": "",
+    "anio": "1976"
+  },
+  {
+    "id_funcion": "lugones_Breve_encuentro_con_Isabelle_Adjani_La_historia_de_Adela_H._JUE 11-JUN-2026_1500",
+    "titulo": "La historia de Adela H.",
+    "director": "François Truffaut",
+    "duracion": "96",
+    "cine": "Sala Leopoldo Lugones",
+    "ciudad": "CABA",
+    "fecha": "JUE 11/JUN/2026",
+    "idioma": "Sin especificar",
+    "horarios": [
+      "15:00"
+    ],
+    "seccion": "cartelera",
+    "poster": null,
+    "sinopsis": "",
+    "linkTrailer": "",
+    "anio": "1975"
+  },
+  {
+    "id_funcion": "lugones_Breve_encuentro_con_Isabelle_Adjani_Possession_VIE 12-JUN-2026_2030",
+    "titulo": "Possession",
+    "director": "Andrzej Zulawski",
+    "duracion": "127",
+    "cine": "Sala Leopoldo Lugones",
+    "ciudad": "CABA",
+    "fecha": "VIE 12/JUN/2026",
+    "idioma": "Sin especificar",
+    "horarios": [
+      "20:30"
+    ],
+    "seccion": "cartelera",
+    "poster": null,
+    "sinopsis": "",
+    "linkTrailer": "",
+    "anio": "1981"
+  },
+  {
+    "id_funcion": "lugones_Breve_encuentro_con_Isabelle_Adjani_Ishtar_SÁB 13-JUN-2026_1500",
+    "titulo": "Ishtar",
+    "director": "Elaine May",
+    "duracion": "107",
+    "cine": "Sala Leopoldo Lugones",
+    "ciudad": "CABA",
+    "fecha": "SÁB 13/JUN/2026",
+    "idioma": "Sin especificar",
+    "horarios": [
+      "15:00"
+    ],
+    "seccion": "cartelera",
+    "poster": null,
+    "sinopsis": "",
+    "linkTrailer": "",
+    "anio": "1987"
+  },
+  {
+    "id_funcion": "lugones_Breve_encuentro_con_Isabelle_Adjani_La_reina_Margot_DOM 14-JUN-2026_1730",
+    "titulo": "La reina Margot",
+    "director": "Patrice Chéreau",
+    "duracion": "159",
+    "cine": "Sala Leopoldo Lugones",
+    "ciudad": "CABA",
+    "fecha": "DOM 14/JUN/2026",
+    "idioma": "Sin especificar",
+    "horarios": [
+      "17:30"
+    ],
+    "seccion": "cartelera",
+    "poster": null,
+    "sinopsis": "",
+    "linkTrailer": "",
+    "anio": "1994"
+  },
+  {
+    "id_funcion": "lugones_Breve_encuentro_con_Isabelle_Adjani_La_historia_de_Adela_H._MAR 16-JUN-2026_1800",
+    "titulo": "La historia de Adela H.",
+    "director": "François Truffaut",
+    "duracion": "96",
+    "cine": "Sala Leopoldo Lugones",
+    "ciudad": "CABA",
+    "fecha": "MAR 16/JUN/2026",
+    "idioma": "Sin especificar",
+    "horarios": [
+      "18:00"
+    ],
+    "seccion": "cartelera",
+    "poster": null,
+    "sinopsis": "",
+    "linkTrailer": "",
+    "anio": "1975"
+  },
+  {
+    "id_funcion": "lugones_Breve_encuentro_con_Isabelle_Adjani_La_historia_de_Adela_H._MIÉ 17-JUN-2026_2100",
+    "titulo": "La historia de Adela H.",
+    "director": "François Truffaut",
+    "duracion": "96",
+    "cine": "Sala Leopoldo Lugones",
+    "ciudad": "CABA",
+    "fecha": "MIÉ 17/JUN/2026",
+    "idioma": "Sin especificar",
+    "horarios": [
+      "21:00"
+    ],
+    "seccion": "cartelera",
+    "poster": null,
+    "sinopsis": "",
+    "linkTrailer": "",
+    "anio": "1975"
+  },
+  {
+    "id_funcion": "lugones_Breve_encuentro_con_Isabelle_Adjani_La_reina_Margot_JUE 18-JUN-2026_2000",
+    "titulo": "La reina Margot",
+    "director": "Patrice Chéreau",
+    "duracion": "159",
+    "cine": "Sala Leopoldo Lugones",
+    "ciudad": "CABA",
+    "fecha": "JUE 18/JUN/2026",
+    "idioma": "Sin especificar",
+    "horarios": [
+      "20:00"
+    ],
+    "seccion": "cartelera",
+    "poster": null,
+    "sinopsis": "",
+    "linkTrailer": "",
+    "anio": "1994"
+  },
+  {
+    "id_funcion": "lugones_Breve_encuentro_con_Isabelle_Adjani_Possession_VIE 19-JUN-2026_1800",
+    "titulo": "Possession",
+    "director": "Andrzej Zulawski",
+    "duracion": "127",
+    "cine": "Sala Leopoldo Lugones",
+    "ciudad": "CABA",
+    "fecha": "VIE 19/JUN/2026",
+    "idioma": "Sin especificar",
+    "horarios": [
+      "18:00"
+    ],
+    "seccion": "cartelera",
+    "poster": null,
+    "sinopsis": "",
+    "linkTrailer": "",
+    "anio": "1981"
+  },
+  {
+    "id_funcion": "lugones_Breve_encuentro_con_Isabelle_Adjani_Ishtar_DOM 21-JUN-2026_1500",
+    "titulo": "Ishtar",
+    "director": "Elaine May",
+    "duracion": "107",
+    "cine": "Sala Leopoldo Lugones",
+    "ciudad": "CABA",
+    "fecha": "DOM 21/JUN/2026",
+    "idioma": "Sin especificar",
+    "horarios": [
+      "15:00"
+    ],
+    "seccion": "cartelera",
+    "poster": null,
+    "sinopsis": "",
+    "linkTrailer": "",
+    "anio": "1987"
+  },
+  {
+    "id_funcion": "lugones_Breve_encuentro_con_Isabelle_Adjani_Ishtar_MAR 23-JUN-2026_1800",
+    "titulo": "Ishtar",
+    "director": "Elaine May",
+    "duracion": "107",
+    "cine": "Sala Leopoldo Lugones",
+    "ciudad": "CABA",
+    "fecha": "MAR 23/JUN/2026",
+    "idioma": "Sin especificar",
+    "horarios": [
+      "18:00"
+    ],
+    "seccion": "cartelera",
+    "poster": null,
+    "sinopsis": "",
+    "linkTrailer": "",
+    "anio": "1987"
+  },
+  {
+    "id_funcion": "lugones_Breve_encuentro_con_Isabelle_Adjani_Possession_MIÉ 24-JUN-2026_1500",
+    "titulo": "Possession",
+    "director": "Andrzej Zulawski",
+    "duracion": "127",
+    "cine": "Sala Leopoldo Lugones",
+    "ciudad": "CABA",
+    "fecha": "MIÉ 24/JUN/2026",
+    "idioma": "Sin especificar",
+    "horarios": [
+      "15:00"
+    ],
+    "seccion": "cartelera",
+    "poster": null,
+    "sinopsis": "",
+    "linkTrailer": "",
+    "anio": "1981"
+  },
+  {
+    "id_funcion": "lugones_Cien_años_atrás:_expresionismo,_comedia,_fantasía_y_drama_Gorriones_MAR 02-JUN-2026_1500",
+    "titulo": "Gorriones",
+    "director": "William Beaudine",
+    "duracion": "84",
+    "cine": "Sala Leopoldo Lugones",
+    "ciudad": "CABA",
+    "fecha": "MAR 02/JUN/2026",
+    "idioma": "Sin especificar",
+    "horarios": [
+      "15:00"
+    ],
+    "seccion": "cartelera",
+    "poster": null,
+    "sinopsis": "",
+    "linkTrailer": "",
+    "anio": "1926"
+  },
+  {
+    "id_funcion": "lugones_Cien_años_atrás:_expresionismo,_comedia,_fantasía_y_drama_El_murciélago_MAR 02-JUN-2026_1800",
+    "titulo": "El murciélago",
+    "director": "Roland West",
+    "duracion": "86",
+    "cine": "Sala Leopoldo Lugones",
+    "ciudad": "CABA",
+    "fecha": "MAR 02/JUN/2026",
+    "idioma": "Sin especificar",
+    "horarios": [
+      "18:00"
+    ],
+    "seccion": "cartelera",
+    "poster": null,
+    "sinopsis": "",
+    "linkTrailer": "",
+    "anio": "1926"
+  },
+  {
+    "id_funcion": "lugones_Cien_años_atrás:_expresionismo,_comedia,_fantasía_y_drama_La_madre_MIÉ 03-JUN-2026_1500",
+    "titulo": "La madre",
+    "director": "Vsevolov Pudovkin",
+    "duracion": "90",
+    "cine": "Sala Leopoldo Lugones",
+    "ciudad": "CABA",
+    "fecha": "MIÉ 03/JUN/2026",
+    "idioma": "Sin especificar",
+    "horarios": [
+      "15:00"
+    ],
+    "seccion": "cartelera",
+    "poster": null,
+    "sinopsis": "",
+    "linkTrailer": "",
+    "anio": "1926"
+  },
+  {
+    "id_funcion": "lugones_Cien_años_atrás:_expresionismo,_comedia,_fantasía_y_drama_El_boxeador_MIÉ 03-JUN-2026_1800",
+    "titulo": "El boxeador",
+    "director": "Buster Keaton",
+    "duracion": "71",
+    "cine": "Sala Leopoldo Lugones",
+    "ciudad": "CABA",
+    "fecha": "MIÉ 03/JUN/2026",
+    "idioma": "Sin especificar",
+    "horarios": [
+      "18:00"
+    ],
+    "seccion": "cartelera",
+    "poster": null,
+    "sinopsis": "",
+    "linkTrailer": "",
+    "anio": "1926"
+  },
+  {
+    "id_funcion": "lugones_Cien_años_atrás:_expresionismo,_comedia,_fantasía_y_drama_El_boxeador_JUE 04-JUN-2026_1500",
+    "titulo": "El boxeador",
+    "director": "Buster Keaton",
+    "duracion": "71",
+    "cine": "Sala Leopoldo Lugones",
+    "ciudad": "CABA",
+    "fecha": "JUE 04/JUN/2026",
+    "idioma": "Sin especificar",
+    "horarios": [
+      "15:00"
+    ],
+    "seccion": "cartelera",
+    "poster": null,
+    "sinopsis": "",
+    "linkTrailer": "",
+    "anio": "1926"
+  },
+  {
+    "id_funcion": "lugones_Cien_años_atrás:_expresionismo,_comedia,_fantasía_y_drama_El_murciélago_VIE 05-JUN-2026_1500",
+    "titulo": "El murciélago",
+    "director": "Roland West",
+    "duracion": "86",
+    "cine": "Sala Leopoldo Lugones",
+    "ciudad": "CABA",
+    "fecha": "VIE 05/JUN/2026",
+    "idioma": "Sin especificar",
+    "horarios": [
+      "15:00"
+    ],
+    "seccion": "cartelera",
+    "poster": null,
+    "sinopsis": "",
+    "linkTrailer": "",
+    "anio": "1926"
+  },
+  {
+    "id_funcion": "lugones_Cien_años_atrás:_expresionismo,_comedia,_fantasía_y_drama_La_madre_VIE 05-JUN-2026_1800",
+    "titulo": "La madre",
+    "director": "Vsevolov Pudovkin",
+    "duracion": "90",
+    "cine": "Sala Leopoldo Lugones",
+    "ciudad": "CABA",
+    "fecha": "VIE 05/JUN/2026",
+    "idioma": "Sin especificar",
+    "horarios": [
+      "18:00"
+    ],
+    "seccion": "cartelera",
+    "poster": null,
+    "sinopsis": "",
+    "linkTrailer": "",
+    "anio": "1926"
+  },
+  {
+    "id_funcion": "lugones_Cien_años_atrás:_expresionismo,_comedia,_fantasía_y_drama_El_boxeador_SÁB 06-JUN-2026_1500",
+    "titulo": "El boxeador",
+    "director": "Buster Keaton",
+    "duracion": "71",
+    "cine": "Sala Leopoldo Lugones",
+    "ciudad": "CABA",
+    "fecha": "SÁB 06/JUN/2026",
+    "idioma": "Sin especificar",
+    "horarios": [
+      "15:00"
+    ],
+    "seccion": "cartelera",
+    "poster": null,
+    "sinopsis": "",
+    "linkTrailer": "",
+    "anio": "1926"
+  },
+  {
+    "id_funcion": "lugones_Cien_años_atrás:_expresionismo,_comedia,_fantasía_y_drama_Fausto_SÁB 06-JUN-2026_1800",
+    "titulo": "Fausto",
+    "director": "F. W. Murnau",
+    "duracion": "107",
+    "cine": "Sala Leopoldo Lugones",
+    "ciudad": "CABA",
+    "fecha": "SÁB 06/JUN/2026",
+    "idioma": "Sin especificar",
+    "horarios": [
+      "18:00"
+    ],
+    "seccion": "cartelera",
+    "poster": null,
+    "sinopsis": "",
+    "linkTrailer": "",
+    "anio": "1926"
+  },
+  {
+    "id_funcion": "lugones_Cien_años_atrás:_expresionismo,_comedia,_fantasía_y_drama_Gorriones_DOM 07-JUN-2026_1500",
+    "titulo": "Gorriones",
+    "director": "William Beaudine",
+    "duracion": "84",
+    "cine": "Sala Leopoldo Lugones",
+    "ciudad": "CABA",
+    "fecha": "DOM 07/JUN/2026",
+    "idioma": "Sin especificar",
+    "horarios": [
+      "15:00"
+    ],
+    "seccion": "cartelera",
+    "poster": null,
+    "sinopsis": "",
+    "linkTrailer": "",
+    "anio": "1926"
+  },
+  {
+    "id_funcion": "lugones_Cien_años_atrás:_expresionismo,_comedia,_fantasía_y_drama_El_payaso_MAR 09-JUN-2026_1500",
+    "titulo": "El payaso",
+    "director": "A. W. Sandberg",
+    "duracion": "139",
+    "cine": "Sala Leopoldo Lugones",
+    "ciudad": "CABA",
+    "fecha": "MAR 09/JUN/2026",
+    "idioma": "Sin especificar",
+    "horarios": [
+      "15:00"
+    ],
+    "seccion": "cartelera",
+    "poster": null,
+    "sinopsis": "",
+    "linkTrailer": "",
+    "anio": "1926"
+  },
+  {
+    "id_funcion": "lugones_Cien_años_atrás:_expresionismo,_comedia,_fantasía_y_drama_El_boxeador_MAR 09-JUN-2026_1800",
+    "titulo": "El boxeador",
+    "director": "Buster Keaton",
+    "duracion": "71",
+    "cine": "Sala Leopoldo Lugones",
+    "ciudad": "CABA",
+    "fecha": "MAR 09/JUN/2026",
+    "idioma": "Sin especificar",
+    "horarios": [
+      "18:00"
+    ],
+    "seccion": "cartelera",
+    "poster": null,
+    "sinopsis": "",
+    "linkTrailer": "",
+    "anio": "1926"
+  },
+  {
+    "id_funcion": "lugones_Cien_años_atrás:_expresionismo,_comedia,_fantasía_y_drama_Fausto_MIÉ 10-JUN-2026_1500",
+    "titulo": "Fausto",
+    "director": "F. W. Murnau",
+    "duracion": "107",
+    "cine": "Sala Leopoldo Lugones",
+    "ciudad": "CABA",
+    "fecha": "MIÉ 10/JUN/2026",
+    "idioma": "Sin especificar",
+    "horarios": [
+      "15:00"
+    ],
+    "seccion": "cartelera",
+    "poster": null,
+    "sinopsis": "",
+    "linkTrailer": "",
+    "anio": "1926"
+  },
+  {
+    "id_funcion": "lugones_Cien_años_atrás:_expresionismo,_comedia,_fantasía_y_drama_La_madre_MIÉ 10-JUN-2026_2100",
+    "titulo": "La madre",
+    "director": "Vsevolov Pudovkin",
+    "duracion": "90",
+    "cine": "Sala Leopoldo Lugones",
+    "ciudad": "CABA",
+    "fecha": "MIÉ 10/JUN/2026",
+    "idioma": "Sin especificar",
+    "horarios": [
+      "21:00"
+    ],
+    "seccion": "cartelera",
+    "poster": null,
+    "sinopsis": "",
+    "linkTrailer": "",
+    "anio": "1926"
+  },
+  {
+    "id_funcion": "lugones_Cien_años_atrás:_expresionismo,_comedia,_fantasía_y_drama_Fausto_JUE 11-JUN-2026_2100",
+    "titulo": "Fausto",
+    "director": "F. W. Murnau",
+    "duracion": "107",
+    "cine": "Sala Leopoldo Lugones",
+    "ciudad": "CABA",
+    "fecha": "JUE 11/JUN/2026",
+    "idioma": "Sin especificar",
+    "horarios": [
+      "21:00"
+    ],
+    "seccion": "cartelera",
+    "poster": null,
+    "sinopsis": "",
+    "linkTrailer": "",
+    "anio": "1926"
+  },
+  {
+    "id_funcion": "lugones_Cien_años_atrás:_expresionismo,_comedia,_fantasía_y_drama_El_payaso_VIE 12-JUN-2026_1500",
+    "titulo": "El payaso",
+    "director": "A. W. Sandberg",
+    "duracion": "139",
+    "cine": "Sala Leopoldo Lugones",
+    "ciudad": "CABA",
+    "fecha": "VIE 12/JUN/2026",
+    "idioma": "Sin especificar",
+    "horarios": [
+      "15:00"
+    ],
+    "seccion": "cartelera",
+    "poster": null,
+    "sinopsis": "",
+    "linkTrailer": "",
+    "anio": "1926"
+  },
+  {
+    "id_funcion": "lugones_Cien_años_atrás:_expresionismo,_comedia,_fantasía_y_drama_Gorriones_VIE 12-JUN-2026_1800",
+    "titulo": "Gorriones",
+    "director": "William Beaudine",
+    "duracion": "84",
+    "cine": "Sala Leopoldo Lugones",
+    "ciudad": "CABA",
+    "fecha": "VIE 12/JUN/2026",
+    "idioma": "Sin especificar",
+    "horarios": [
+      "18:00"
+    ],
+    "seccion": "cartelera",
+    "poster": null,
+    "sinopsis": "",
+    "linkTrailer": "",
+    "anio": "1926"
+  },
+  {
+    "id_funcion": "lugones_Cien_años_atrás:_expresionismo,_comedia,_fantasía_y_drama_El_murciélago_DOM 14-JUN-2026_1500",
+    "titulo": "El murciélago",
+    "director": "Roland West",
+    "duracion": "86",
+    "cine": "Sala Leopoldo Lugones",
+    "ciudad": "CABA",
+    "fecha": "DOM 14/JUN/2026",
+    "idioma": "Sin especificar",
+    "horarios": [
+      "15:00"
+    ],
+    "seccion": "cartelera",
+    "poster": null,
+    "sinopsis": "",
+    "linkTrailer": "",
+    "anio": "1926"
+  },
+  {
+    "id_funcion": "lugones_Cien_años_atrás:_expresionismo,_comedia,_fantasía_y_drama_La_madre_MAR 16-JUN-2026_1500",
+    "titulo": "La madre",
+    "director": "Vsevolov Pudovkin",
+    "duracion": "90",
+    "cine": "Sala Leopoldo Lugones",
+    "ciudad": "CABA",
+    "fecha": "MAR 16/JUN/2026",
+    "idioma": "Sin especificar",
+    "horarios": [
+      "15:00"
+    ],
+    "seccion": "cartelera",
+    "poster": null,
+    "sinopsis": "",
+    "linkTrailer": "",
+    "anio": "1926"
+  },
+  {
+    "id_funcion": "lugones_Cien_años_atrás:_expresionismo,_comedia,_fantasía_y_drama_El_payaso_MIÉ 17-JUN-2026_1800",
+    "titulo": "El payaso",
+    "director": "A. W. Sandberg",
+    "duracion": "139",
+    "cine": "Sala Leopoldo Lugones",
+    "ciudad": "CABA",
+    "fecha": "MIÉ 17/JUN/2026",
+    "idioma": "Sin especificar",
+    "horarios": [
+      "18:00"
+    ],
+    "seccion": "cartelera",
+    "poster": null,
+    "sinopsis": "",
+    "linkTrailer": "",
+    "anio": "1926"
+  },
+  {
+    "id_funcion": "lugones_Agnès_Varda_X_3_Cléo_de_5_a_7_JUE 18-MAY-2026_1500",
+    "titulo": "Cléo de 5 a 7",
+    "director": "Agnès Varda",
+    "duracion": "90",
+    "cine": "Sala Leopoldo Lugones",
+    "ciudad": "CABA",
+    "fecha": "JUE 18/MAY/2026",
+    "idioma": "Sin especificar",
+    "horarios": [
+      "15:00"
+    ],
+    "seccion": "cartelera",
+    "poster": null,
+    "sinopsis": "",
+    "linkTrailer": "",
+    "anio": "1962"
+  },
+  {
+    "id_funcion": "lugones_Agnès_Varda_X_3_Una_canta,_la_otra_no_DOM 21-MAY-2026_1800",
+    "titulo": "Una canta, la otra no",
+    "director": "Agnès Varda",
+    "duracion": "115",
+    "cine": "Sala Leopoldo Lugones",
+    "ciudad": "CABA",
+    "fecha": "DOM 21/MAY/2026",
+    "idioma": "Sin especificar",
+    "horarios": [
+      "18:00"
+    ],
+    "seccion": "cartelera",
+    "poster": null,
+    "sinopsis": "",
+    "linkTrailer": "",
+    "anio": "1977"
+  },
+  {
+    "id_funcion": "lugones_Agnès_Varda_X_3_Las_criaturas_DOM 21-MAY-2026_2100",
+    "titulo": "Las criaturas",
+    "director": "Agnès Varda",
+    "duracion": "92",
+    "cine": "Sala Leopoldo Lugones",
+    "ciudad": "CABA",
+    "fecha": "DOM 21/MAY/2026",
+    "idioma": "Sin especificar",
+    "horarios": [
+      "21:00"
+    ],
+    "seccion": "cartelera",
+    "poster": null,
+    "sinopsis": "",
+    "linkTrailer": "",
+    "anio": "1966"
+  },
+  {
+    "id_funcion": "lugones_Agnès_Varda_X_3_Las_criaturas_MAR 23-MAY-2026_1500",
+    "titulo": "Las criaturas",
+    "director": "Agnès Varda",
+    "duracion": "92",
+    "cine": "Sala Leopoldo Lugones",
+    "ciudad": "CABA",
+    "fecha": "MAR 23/MAY/2026",
+    "idioma": "Sin especificar",
+    "horarios": [
+      "15:00"
+    ],
+    "seccion": "cartelera",
+    "poster": null,
+    "sinopsis": "",
+    "linkTrailer": "",
+    "anio": "1966"
+  },
+  {
+    "id_funcion": "lugones_Agnès_Varda_X_3_Las_criaturas_MAR 23-MAY-2026_2100",
+    "titulo": "Las criaturas",
+    "director": "Agnès Varda",
+    "duracion": "92",
+    "cine": "Sala Leopoldo Lugones",
+    "ciudad": "CABA",
+    "fecha": "MAR 23/MAY/2026",
+    "idioma": "Sin especificar",
+    "horarios": [
+      "21:00"
+    ],
+    "seccion": "cartelera",
+    "poster": null,
+    "sinopsis": "",
+    "linkTrailer": "",
+    "anio": "1966"
+  },
+  {
+    "id_funcion": "lugones_Agnès_Varda_X_3_Una_canta,_la_otra_no_MIÉ 24-MAY-2026_1800",
+    "titulo": "Una canta, la otra no",
+    "director": "Agnès Varda",
+    "duracion": "115",
+    "cine": "Sala Leopoldo Lugones",
+    "ciudad": "CABA",
+    "fecha": "MIÉ 24/MAY/2026",
+    "idioma": "Sin especificar",
+    "horarios": [
+      "18:00"
+    ],
+    "seccion": "cartelera",
+    "poster": null,
+    "sinopsis": "",
+    "linkTrailer": "",
+    "anio": "1977"
+  },
+  {
+    "id_funcion": "lugones_Agnès_Varda_X_3_Cléo_de_5_a_7_MIÉ 24-MAY-2026_2100",
+    "titulo": "Cléo de 5 a 7",
+    "director": "Agnès Varda",
+    "duracion": "90",
+    "cine": "Sala Leopoldo Lugones",
+    "ciudad": "CABA",
+    "fecha": "MIÉ 24/MAY/2026",
+    "idioma": "Sin especificar",
+    "horarios": [
+      "21:00"
+    ],
+    "seccion": "cartelera",
+    "poster": null,
+    "sinopsis": "",
+    "linkTrailer": "",
+    "anio": "1962"
+  },
+  {
+    "id_funcion": "lugones_Agnès_Varda_X_3_Una_canta,_la_otra_no_JUE 25-MAY-2026_1500",
+    "titulo": "Una canta, la otra no",
+    "director": "Agnès Varda",
+    "duracion": "115",
+    "cine": "Sala Leopoldo Lugones",
+    "ciudad": "CABA",
+    "fecha": "JUE 25/MAY/2026",
+    "idioma": "Sin especificar",
+    "horarios": [
+      "15:00"
+    ],
+    "seccion": "cartelera",
+    "poster": null,
+    "sinopsis": "",
+    "linkTrailer": "",
+    "anio": "1977"
+  },
+  {
+    "id_funcion": "lugones_Agnès_Varda_X_3_Cléo_de_5_a_7_JUE 25-MAY-2026_1800",
+    "titulo": "Cléo de 5 a 7",
+    "director": "Agnès Varda",
+    "duracion": "90",
+    "cine": "Sala Leopoldo Lugones",
+    "ciudad": "CABA",
+    "fecha": "JUE 25/MAY/2026",
+    "idioma": "Sin especificar",
+    "horarios": [
+      "18:00"
+    ],
+    "seccion": "cartelera",
+    "poster": null,
+    "sinopsis": "",
+    "linkTrailer": "",
+    "anio": "1962"
+  }
+]
