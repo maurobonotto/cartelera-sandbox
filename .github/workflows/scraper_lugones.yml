@@ -21,11 +21,15 @@ jobs:
       - run: npm install
         working-directory: backend
       
+      - name: Install Chrome for Puppeteer
+        run: npx puppeteer browsers install chrome
+        working-directory: backend
+      
       - name: Run Lugones scraper
         run: node scraper_lugones.js
         working-directory: backend
         env:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}   # Usa tu token personal
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
       
       - name: Commit changes
         uses: stefanzweifel/git-auto-commit-action@v5
