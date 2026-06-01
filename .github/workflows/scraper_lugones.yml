@@ -7,17 +7,16 @@ on:
 
 permissions:
   contents: write
-  models: read
 
 jobs:
   scrape:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v5       # ✅ Cambiado de @v4 a @v5
+      - uses: actions/checkout@v5
       
-      - uses: actions/setup-node@v6     # ✅ Cambiado de @v4 a @v6
+      - uses: actions/setup-node@v6
         with:
-          node-version: '22'            # ✅ Cambiado de '20' a '22'
+          node-version: '22'
           
       - run: npm install
         working-directory: backend
@@ -26,7 +25,7 @@ jobs:
         run: node scraper_lugones.js
         working-directory: backend
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}   # Usa tu token personal
       
       - name: Commit changes
         uses: stefanzweifel/git-auto-commit-action@v5
