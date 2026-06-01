@@ -3,29 +3,12 @@ const StealthPlugin = require('puppeteer-extra-plugin-stealth');
 puppeteer.use(StealthPlugin());
 const fs = require('fs').promises;
 const path = require('path');
-const { GoogleGenerativeAI } = require('@google/generative-ai');
-const OpenAI = require('openai');
 require('dotenv').config();
 
 const OUTPUT_FILE = path.join(__dirname, 'peliculas_lugones.json');
 const BASE_URL = 'https://complejoteatral.gob.ar/cine';
 
-const USE_GITHUB_MODELS = !!process.env.GITHUB_ACTIONS;
-let openai, genAI, modelGemini;
-
-if (USE_GITHUB_MODELS) {
-    openai = new OpenAI({
-        baseURL: "https://models.github.ai/inference/chat/completions",
-        apiKey: process.env.GITHUB_TOKEN,
-    });
-    console.log('Usando GitHub Models (ejecución en GitHub Actions)');
-} else {
-    genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
-    modelGemini = genAI.getGenerativeModel({ model: "gemini-1.5-pro" });
-    console.log('Usando Gemini (ejecución local)');
-}
-
-// ------------------ Validaciones ------------------
+// ------------------ Validaciones (sin cambios) ------------------
 function validarFecha(fecha) {
     const regex = /^(DOM|LUN|MAR|MIÉ|JUE|VIE|SÁB) (\d{1,2})\/(ENE|FEB|MAR|ABR|MAY|JUN|JUL|AGO|SEP|OCT|NOV|DIC)\/(\d{4})$/;
     if (regex.test(fecha)) return fecha;
@@ -62,6 +45,7 @@ function limpiarHTML(html) {
     return html;
 }
 
+// ------------------ Extracción con OpenRouter (modelo gratuito) ------------------
 async function extraerConIA(html, tituloEvento) {
     const prompt = `
 Eres un extractor de cartelera de cine. Del siguiente HTML de la página del evento "${tituloEvento}", extrae TODAS las funciones de cine.
@@ -87,21 +71,37 @@ Reglas estrictas:
 HTML:
 ${html}
 `;
+
+    const OPENROUTER_API_KEY = process.env.OPENROUTER_API_KEY;
+    if (!OPENROUTER_API_KEY) {
+        console.error(`   No se encontró OPENROUTER_API_KEY. Revisa las variables de entorno.`);
+        return [];
+    }
+
     try {
-        let text;
-        if (USE_GITHUB_MODELS) {
-            const response = await openai.chat.completions.create({
-                model: "mistralai/ministral-3b",
+        const response = await fetch('https://openrouter.ai/api/v1/chat/completions', {
+            method: 'POST',
+            headers: {
+                'Authorization': `Bearer ${OPENROUTER_API_KEY}`,
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                model: 'deepseek/deepseek-chat:free',
                 messages: [{ role: 'user', content: prompt }],
                 temperature: 0.1,
-            });
-            text = response.choices[0].message.content;
-        } else {
-            const result = await modelGemini.generateContent(prompt);
-            text = result.response.text();
+            }),
+        });
+
+        if (!response.ok) {
+            const errorText = await response.text();
+            console.error(`Error HTTP ${response.status}: ${errorText}`);
+            return [];
         }
+
+        const data = await response.json();
+        const text = data.choices[0].message.content;
         const jsonMatch = text.match(/\[[\s\S]*\]/);
-        if (!jsonMatch) throw new Error('No se encontró JSON');
+        if (!jsonMatch) throw new Error('No se encontró JSON en la respuesta');
         return JSON.parse(jsonMatch[0]);
     } catch (error) {
         console.error(`Error en IA para ${tituloEvento}:`, error.message);
@@ -109,8 +109,9 @@ ${html}
     }
 }
 
+// ------------------ Scraper principal ------------------
 async function scrapeLugones() {
-    console.log('Iniciando scraping con Puppeteer Stealth');
+    console.log('Iniciando scraping con Puppeteer Stealth + OpenRouter');
     const browser = await puppeteer.launch({
         headless: 'new',
         args: ['--no-sandbox', '--disable-setuid-sandbox'],
@@ -118,10 +119,10 @@ async function scrapeLugones() {
     });
     const page = await browser.newPage();
     await page.setUserAgent('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36');
-    
+
     try {
         await page.goto(BASE_URL, { waitUntil: 'networkidle2', timeout: 60000 });
-        await new Promise(r => setTimeout(r, 5000)); // espera manual
+        await new Promise(r => setTimeout(r, 5000));
         await page.waitForSelector('.list-item', { timeout: 30000 });
 
         const eventos = await page.evaluate(() => {
