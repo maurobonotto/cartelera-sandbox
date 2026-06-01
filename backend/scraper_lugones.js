@@ -2,6 +2,7 @@ const fs = require('fs').promises;
 const path = require('path');
 const axios = require('axios');
 const cheerio = require('cheerio');
+const { jsonrepair } = require('jsonrepair');
 require('dotenv').config();
 
 const OUTPUT_FILE = path.join(__dirname, 'peliculas_lugones.json');
@@ -53,27 +54,27 @@ function limpiarHTML(html) {
     return html;
 }
 
-// ------------------ Extracción con IA (OpenRouter + response-healing) ------------------
+// ------------------ Extracción con IA ------------------
 async function extraerConIA(html, tituloEvento) {
     const prompt = `
 Eres un extractor de cartelera de cine. Del siguiente HTML de la página del evento "${tituloEvento}", extrae TODAS las funciones de cine.
 
-IMPORTANTE: Si el evento tiene múltiples días y horarios, DEBES incluir cada función (cada combinación de día y horario) como un objeto separado en el array. No omitas ninguna. Revisa todo el HTML para asegurarte de que capturas todas las funciones.
+IMPORTANTE: Si el evento tiene múltiples días y horarios, DEBES incluir cada función (cada combinación de día y horario) como un objeto separado en el array. No omitas ninguna.
 
 Devuelve ÚNICAMENTE un array JSON. No incluyas ningún otro texto antes o después del array.
 
 Cada objeto debe tener estos campos exactos:
 {
   "titulo": "nombre de la película",
-  "fecha": "día abreviado en mayúsculas, espacio, número, barra, mes en mayúsculas, barra, año (el año de la función, que suele ser el actual o siguiente). Ejemplo: DOM 29/MAY/2026",
-  "horario": "HH:MM (dos dígitos para hora, dos para minutos)",
+  "fecha": "día abreviado en mayúsculas, espacio, número, barra, mes en mayúsculas, barra, año (el año de la función, ej. 2026). NO USES EL AÑO DE LA PELÍCULA EN ESTE CAMPO.",
+  "horario": "HH:MM",
   "director": "nombre del director o 'No especificado'",
-  "duracion": "número de minutos como string, o 'N/A'",
-  "sinopsis": "texto completo de la sinopsis",
-  "anio": "año de la película (4 dígitos) - este es el año de estreno de la película, no el año de la función"
+  "duracion": "número de minutos o 'N/A'",
+  "sinopsis": "texto completo de la sinopsis (si es muy larga, puedes resumirla ligeramente, pero conserva la información principal)",
+  "anio": "año de la película (4 dígitos)"
 }
 
-Ejemplo de respuesta esperada:
+Ejemplo:
 [
   {
     "titulo": "Ejemplo Película",
@@ -81,7 +82,7 @@ Ejemplo de respuesta esperada:
     "horario": "18:00",
     "director": "Director Ejemplo",
     "duracion": "120",
-    "sinopsis": "Esta es una sinopsis de ejemplo.",
+    "sinopsis": "Sinopsis de ejemplo.",
     "anio": "2025"
   }
 ]
@@ -110,9 +111,10 @@ ${html}
                 'Content-Type': 'application/json',
             },
             body: JSON.stringify({
-                model: 'openrouter/free',
+                model: 'google/gemini-1.5-flash-8b:free',
                 messages: [{ role: 'user', content: prompt }],
                 temperature: 0.1,
+                max_tokens: 8192,
                 plugins: [{ id: "response-healing" }]
             }),
         });
@@ -133,7 +135,19 @@ ${html}
         }
         let jsonStr = jsonMatch[0];
         jsonStr = jsonStr.replace(/[\x00-\x08\x0B\x0C\x0E-\x1F]/g, '');
-        return JSON.parse(jsonStr);
+
+        try {
+            return JSON.parse(jsonStr);
+        } catch (parseError) {
+            console.warn(`JSON malformado, intentando reparar con jsonrepair...`);
+            try {
+                const repaired = jsonrepair(jsonStr);
+                return JSON.parse(repaired);
+            } catch (repairError) {
+                console.error(`No se pudo reparar el JSON.`);
+                return [];
+            }
+        }
     } catch (error) {
         console.error(`Error en IA para ${tituloEvento}:`, error.message);
         return [];
@@ -142,7 +156,7 @@ ${html}
 
 // ------------------ Scraper principal ------------------
 async function scrapeLugones() {
-    console.log('Iniciando scraping con ScrapingAnt + OpenRouter');
+    console.log('Iniciando scraping con ScrapingAnt + OpenRouter (Gemini 1.5 Flash 8B)');
 
     const apiKey = process.env.SCRAPINGANT_API_KEY;
     if (!apiKey) {
@@ -151,7 +165,6 @@ async function scrapeLugones() {
     }
 
     try {
-        // 1. Descargar página principal
         const mainUrl = `https://api.scrapingant.com/v2/general?url=${encodeURIComponent(BASE_URL)}&x-api-key=${apiKey}&browser=true`;
         const mainResponse = await axios.get(mainUrl, { responseType: 'text' });
         let html;
@@ -161,7 +174,6 @@ async function scrapeLugones() {
 
         if (!html || html.trim() === '') throw new Error('HTML vacío');
 
-        // 2. Extraer eventos (excluyendo visitas guiadas, talleres, etc.)
         const $ = cheerio.load(html);
         const eventos = [];
         $('.list-item').each((i, el) => {
@@ -171,7 +183,6 @@ async function scrapeLugones() {
             let url = linkElement.attr('href');
             if (url.startsWith('/')) url = 'https://complejoteatral.gob.ar' + url;
 
-            // Excluir eventos que claramente no son cine (visitas guiadas, talleres, etc.)
             const excluir = ['visita', 'guía', 'taller', 'concierto', 'espectáculo', 'teatro', 'muestra', 'exposición'];
             const esNoCine = excluir.some(p => titulo.toLowerCase().includes(p));
             if (!esNoCine) {
@@ -199,13 +210,6 @@ async function scrapeLugones() {
 
                 const htmlLimpio = limpiarHTML(eventHtml);
                 let funciones = await extraerConIA(htmlLimpio, evento.tituloEvento);
-
-                // Si la IA solo devuelve una función y el evento tiene varias (por ejemplo Justa), reintentar con un prompt más insistente
-                if (funciones.length === 1 && evento.tituloEvento.toLowerCase().includes('justa')) {
-                    console.log(`   Posible omisión: reintentando con prompt más estricto...`);
-                    // Forzar una segunda llamada (podría repetirse con un prompt ligeramente modificado)
-                    // Por simplicidad, aquí solo se registra; se podría implementar un reintento automático.
-                }
 
                 if (!funciones.length) {
                     console.log(`   No se extrajeron funciones.`);
