@@ -8,11 +8,22 @@ require('dotenv').config();
 const OUTPUT_FILE = path.join(__dirname, 'peliculas_lugones.json');
 const BASE_URL = 'https://complejoteatral.gob.ar/cine';
 
-// ------------------ Validaciones ------------------
+// ------------------ Validaciones (corregidas) ------------------
 function validarFecha(fecha) {
+    // Normalizar días: SAB -> SÁB, MIE -> MIÉ, etc.
+    let fechaNorm = fecha
+        .replace(/^SAB/, 'SÁB')
+        .replace(/^MIE/, 'MIÉ')
+        .replace(/^JUE/, 'JUE')
+        .replace(/^VIE/, 'VIE')
+        .replace(/^DOM/, 'DOM')
+        .replace(/^LUN/, 'LUN')
+        .replace(/^MAR/, 'MAR')
+        .replace(/^MI[EÉ]/, 'MIÉ');
+    
     const regex = /^(DOM|LUN|MAR|MIÉ|JUE|VIE|SÁB) (\d{1,2})\/(ENE|FEB|MAR|ABR|MAY|JUN|JUL|AGO|SEP|OCT|NOV|DIC)\/(\d{4})$/;
-    if (regex.test(fecha)) return fecha;
-    console.warn(`Fecha inválida: ${fecha}`);
+    if (regex.test(fechaNorm)) return fechaNorm;
+    console.warn(`Fecha inválida: ${fecha} (normalizada: ${fechaNorm})`);
     return null;
 }
 
@@ -45,7 +56,7 @@ function limpiarHTML(html) {
     return html;
 }
 
-// ------------------ Extracción con OpenRouter (modelo gratuito) ------------------
+// ------------------ Extracción con OpenRouter (corregido) ------------------
 async function extraerConIA(html, tituloEvento) {
     const prompt = `
 Eres un extractor de cartelera de cine. Del siguiente HTML de la página del evento "${tituloEvento}", extrae TODAS las funciones de cine.
@@ -64,7 +75,7 @@ Devuelve ÚNICAMENTE un array JSON. Cada objeto debe tener estos campos exactos:
 Reglas estrictas:
 - Respeta EXACTAMENTE el formato de fecha y horario.
 - Si hay múltiples horarios para un mismo título, crea un objeto por cada horario.
-- No incluyas texto adicional fuera del JSON.
+- No incluyas texto adicional fuera del JSON. Nada de explicaciones, solo el array.
 - Si algún dato no está disponible, usa "" para sinopsis, "No especificado" para director, "N/A" para duración.
 - Para el año, si no está explícito, déjalo vacío ("").
 
@@ -74,7 +85,7 @@ ${html}
 
     const OPENROUTER_API_KEY = process.env.OPENROUTER_API_KEY;
     if (!OPENROUTER_API_KEY) {
-        console.error(`   No se encontró OPENROUTER_API_KEY. Revisa las variables de entorno.`);
+        console.error(`   No se encontró OPENROUTER_API_KEY.`);
         return [];
     }
 
@@ -86,7 +97,7 @@ ${html}
                 'Content-Type': 'application/json',
             },
             body: JSON.stringify({
-                model: 'openrouter/free',   // ✅ Router automático de modelos gratuitos
+                model: 'openrouter/free',
                 messages: [{ role: 'user', content: prompt }],
                 temperature: 0.1,
             }),
@@ -99,9 +110,19 @@ ${html}
         }
 
         const data = await response.json();
-        const text = data.choices[0].message.content;
-        const jsonMatch = text.match(/\[[\s\S]*\]/);
-        if (!jsonMatch) throw new Error('No se encontró JSON en la respuesta');
+        let text = data.choices[0].message.content;
+        
+        // Limpiar posibles respuestas no JSON (extraer el primer array)
+        let jsonMatch = text.match(/\[[\s\S]*\]/);
+        if (!jsonMatch) {
+            // Intento alternativo: buscar un array que comience con [
+            jsonMatch = text.match(/(\[\s*\{[\s\S]*\}\s*\])/);
+            if (!jsonMatch) {
+                console.error(`Respuesta no contiene JSON: ${text.substring(0, 200)}`);
+                return [];
+            }
+        }
+        
         return JSON.parse(jsonMatch[0]);
     } catch (error) {
         console.error(`Error en IA para ${tituloEvento}:`, error.message);
