@@ -1,16 +1,13 @@
-const puppeteer = require('puppeteer-extra');
-const StealthPlugin = require('puppeteer-extra-plugin-stealth');
-puppeteer.use(StealthPlugin());
 const fs = require('fs').promises;
 const path = require('path');
+const axios = require('axios');
 require('dotenv').config();
 
 const OUTPUT_FILE = path.join(__dirname, 'peliculas_lugones.json');
 const BASE_URL = 'https://complejoteatral.gob.ar/cine';
 
-// ------------------ Validaciones (normaliza fechas) ------------------
+// ------------------ Validaciones ------------------
 function validarFecha(fecha) {
-    // Normalizar días sin acento
     let fechaNorm = fecha
         .replace(/^SAB/, 'SÁB')
         .replace(/^MIE/, 'MIÉ')
@@ -20,10 +17,9 @@ function validarFecha(fecha) {
         .replace(/^LUN/, 'LUN')
         .replace(/^MAR/, 'MAR')
         .replace(/^MI[EÉ]/, 'MIÉ');
-    
     const regex = /^(DOM|LUN|MAR|MIÉ|JUE|VIE|SÁB) (\d{1,2})\/(ENE|FEB|MAR|ABR|MAY|JUN|JUL|AGO|SEP|OCT|NOV|DIC)\/(\d{4})$/;
     if (regex.test(fechaNorm)) return fechaNorm;
-    console.warn(`Fecha inválida: ${fecha} (normalizada: ${fechaNorm})`);
+    console.warn(`Fecha inválida: ${fecha}`);
     return null;
 }
 
@@ -56,7 +52,7 @@ function limpiarHTML(html) {
     return html;
 }
 
-// ------------------ Extracción con OpenRouter (con limpieza de JSON y markdown) ------------------
+// ------------------ Extracción con IA (OpenRouter) ------------------
 async function extraerConIA(html, tituloEvento) {
     const prompt = `
 Eres un extractor de cartelera de cine. Del siguiente HTML de la página del evento "${tituloEvento}", extrae TODAS las funciones de cine.
@@ -85,7 +81,7 @@ ${html}
 
     const OPENROUTER_API_KEY = process.env.OPENROUTER_API_KEY;
     if (!OPENROUTER_API_KEY) {
-        console.error(`   No se encontró OPENROUTER_API_KEY.`);
+        console.error(`   No se encontró OPENROUTER_API_KEY. Revisa las variables de entorno.`);
         return [];
     }
 
@@ -112,10 +108,10 @@ ${html}
         const data = await response.json();
         let text = data.choices[0].message.content;
         
-        // 1. Eliminar bloques de código markdown (```json ... ``` o ``` ... ```)
+        // Limpiar bloques de código markdown
         text = text.replace(/```json\s*/g, '').replace(/```\s*/g, '');
         
-        // 2. Extraer el primer array JSON (desde el primer '[' hasta el último ']')
+        // Extraer array JSON
         const jsonMatch = text.match(/\[[\s\S]*\]/);
         if (!jsonMatch) {
             console.error(`No se encontró array JSON en la respuesta. Respuesta: ${text.substring(0, 200)}`);
@@ -123,77 +119,65 @@ ${html}
         }
         
         let jsonStr = jsonMatch[0];
-        
-        // 3. Limpiar caracteres de control no válidos en JSON (excepto tab, LF, CR)
+        // Limpiar caracteres de control no válidos
         jsonStr = jsonStr.replace(/[\x00-\x08\x0B\x0C\x0E-\x1F]/g, '');
         
-        // 4. Intentar parsear
-        try {
-            return JSON.parse(jsonStr);
-        } catch (parseError) {
-            console.warn(`Primer parseo falló: ${parseError.message}. Intentando reparar saltos de línea...`);
-            // Escapar saltos de línea literales dentro de cadenas
-            jsonStr = jsonStr.replace(/[\n\r\t]/g, (match) => {
-                if (match === '\n') return '\\n';
-                if (match === '\r') return '\\r';
-                if (match === '\t') return '\\t';
-                return match;
-            });
-            try {
-                return JSON.parse(jsonStr);
-            } catch (finalError) {
-                console.error(`Error definitivo al parsear JSON: ${finalError.message}`);
-                console.error(`Respuesta original (primeros 300 caracteres): ${text.substring(0, 300)}`);
-                return [];
-            }
-        }
+        return JSON.parse(jsonStr);
     } catch (error) {
         console.error(`Error en IA para ${tituloEvento}:`, error.message);
         return [];
     }
 }
 
-// ------------------ Scraper principal ------------------
+// ------------------ Scraper principal (con ScrapingAnt) ------------------
 async function scrapeLugones() {
-    console.log('Iniciando scraping con Puppeteer Stealth + OpenRouter');
-    const browser = await puppeteer.launch({
-        headless: 'new',
-        args: ['--no-sandbox', '--disable-setuid-sandbox'],
-        executablePath: process.env.PUPPETEER_EXECUTABLE_PATH || undefined
-    });
-    const page = await browser.newPage();
-    await page.setUserAgent('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36');
+    console.log('Iniciando scraping con ScrapingAnt + OpenRouter');
+
+    const apiKey = process.env.SCRAPINGANT_API_KEY;
+    if (!apiKey) {
+        console.error('❌ No se encontró SCRAPINGANT_API_KEY. Revisa los secrets de GitHub.');
+        return;
+    }
 
     try {
-        await page.goto(BASE_URL, { waitUntil: 'networkidle2', timeout: 60000 });
-        await new Promise(r => setTimeout(r, 5000));
-        await page.waitForSelector('.list-item', { timeout: 30000 });
+        // 1. Descargar página principal con ScrapingAnt
+        const mainUrl = `https://api.scrapingant.com/v2/general?url=${encodeURIComponent(BASE_URL)}&x-api-key=${apiKey}&browser=true`;
+        const mainResponse = await axios.get(mainUrl);
+        const html = mainResponse.data;
 
-        const eventos = await page.evaluate(() => {
-            const items = document.querySelectorAll('.list-item');
-            return Array.from(items).map(item => {
-                const tituloEvento = item.querySelector('h2')?.innerText.trim() || '';
-                const link = item.querySelector('.buttons a.button[href*="/ver/"]')?.getAttribute('href');
-                if (!link) return null;
-                let url = link.startsWith('http') ? link : `https://complejoteatral.gob.ar${link}`;
-                return { tituloEvento, url };
-            }).filter(e => e !== null);
-        });
-        console.log(`   ${eventos.length} eventos encontrados.`);
+        // 2. Extraer enlaces de eventos (href que contienen "/ver/")
+        const eventUrls = [];
+        const linkRegex = /<a\s+(?:[^>]*?\s+)?href="([^"]*\/ver\/[^"]*)"[^>]*>/g;
+        let match;
+        while ((match = linkRegex.exec(html)) !== null) {
+            let url = match[1];
+            if (url.startsWith('/')) url = 'https://complejoteatral.gob.ar' + url;
+            if (!eventUrls.includes(url)) eventUrls.push(url);
+        }
+
+        console.log(`   ${eventUrls.length} eventos encontrados.`);
 
         let todasLasFunciones = [];
 
-        for (const evento of eventos) {
-            console.log(`\nProcesando: ${evento.tituloEvento}`);
+        for (let idx = 0; idx < eventUrls.length; idx++) {
+            const eventUrl = eventUrls[idx];
+            console.log(`\nProcesando evento ${idx+1}: ${eventUrl}`);
             try {
-                await page.goto(evento.url, { waitUntil: 'networkidle2', timeout: 60000 });
-                await new Promise(r => setTimeout(r, 2000));
-                const html = await page.content();
-                const htmlLimpio = limpiarHTML(html);
-                let funciones = await extraerConIA(htmlLimpio, evento.tituloEvento);
+                // Descargar HTML del evento con ScrapingAnt
+                const eventApiUrl = `https://api.scrapingant.com/v2/general?url=${encodeURIComponent(eventUrl)}&x-api-key=${apiKey}&browser=true`;
+                const eventResponse = await axios.get(eventApiUrl);
+                const eventHtml = eventResponse.data;
+                const htmlLimpio = limpiarHTML(eventHtml);
+
+                // Extraer título del evento (desde <h2> dentro de .list-item o similar)
+                let tituloEvento = `Evento ${idx+1}`;
+                const tituloMatch = eventHtml.match(/<h2[^>]*>([^<]+)<\/h2>/);
+                if (tituloMatch) tituloEvento = tituloMatch[1].trim();
+
+                let funciones = await extraerConIA(htmlLimpio, tituloEvento);
 
                 if (!funciones.length) {
-                    console.log(`   No se extrajeron funciones para ${evento.tituloEvento}`);
+                    console.log(`   No se extrajeron funciones para ${tituloEvento}`);
                     continue;
                 }
 
@@ -207,7 +191,7 @@ async function scrapeLugones() {
                     if (!f.director || f.director.trim() === '') f.director = 'No especificado';
                     if (!f.sinopsis) f.sinopsis = '';
 
-                    const idBase = `lugones_${evento.tituloEvento.replace(/\s/g, '_')}_${f.titulo.replace(/\s/g, '_')}_${f.fecha.replace(/\//g, '-')}`;
+                    const idBase = `lugones_${tituloEvento.replace(/\s/g, '_')}_${f.titulo.replace(/\s/g, '_')}_${f.fecha.replace(/\//g, '-')}`;
                     const idFuncion = `${idBase}_${f.horario.replace(':', '')}`;
                     todasLasFunciones.push({
                         id_funcion: idFuncion,
@@ -230,19 +214,16 @@ async function scrapeLugones() {
                 }
                 console.log(`      ✅ ${contador} funciones extraídas`);
             } catch (err) {
-                console.error(`      Error en evento ${evento.tituloEvento}: ${err.message}`);
+                console.error(`      Error en evento ${eventUrl}: ${err.message}`);
             }
+            // Pequeña pausa entre eventos para no saturar la API
             await new Promise(r => setTimeout(r, 1000));
         }
 
         await fs.writeFile(OUTPUT_FILE, JSON.stringify(todasLasFunciones, null, 2));
         console.log(`\n✅ Scraping completado. Se guardaron ${todasLasFunciones.length} funciones en ${OUTPUT_FILE}`);
-        return todasLasFunciones;
     } catch (error) {
         console.error('❌ Error general:', error);
-        return [];
-    } finally {
-        await browser.close();
     }
 }
 
