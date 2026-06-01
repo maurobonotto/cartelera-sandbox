@@ -2,22 +2,25 @@ name: Scraper Semanal Lugones
 
 on:
   schedule:
-    - cron: '0 0 * * 0'   # Todos los domingos a las 00:00 UTC
-  workflow_dispatch:       # Permite ejecutarlo manualmente desde GitHub
+    - cron: '0 0 * * 0'
+  workflow_dispatch:
 
 permissions:
   contents: write
   models: read
+  id-token: write      # Necesario para autenticación con GitHub Models
+  issues: read         # Permisos adicionales recomendados
+  pull-requests: read  # Permisos adicionales recomendados
 
 jobs:
   scrape:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v5
         with:
-          node-version: '20'
+          node-version: '22'
           
       - run: npm install
         working-directory: backend
@@ -27,8 +30,11 @@ jobs:
         working-directory: backend
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # Asegurar que se use el token correcto para GitHub Models
+          GITHUB_MODELS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       
-      - uses: stefanzweifel/git-auto-commit-action@v5
+      - name: Commit changes
+        uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "Actualización automática cartelera Lugones"
           file_pattern: backend/peliculas_lugones.json
