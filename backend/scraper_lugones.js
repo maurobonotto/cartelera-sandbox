@@ -8,7 +8,7 @@ require('dotenv').config();
 const OUTPUT_FILE = path.join(__dirname, 'peliculas_lugones.json');
 const BASE_URL = 'https://complejoteatral.gob.ar/cine';
 
-// ------------------ Validaciones (sin cambios) ------------------
+// ------------------ Validaciones ------------------
 function validarFecha(fecha) {
     const regex = /^(DOM|LUN|MAR|MIÉ|JUE|VIE|SÁB) (\d{1,2})\/(ENE|FEB|MAR|ABR|MAY|JUN|JUL|AGO|SEP|OCT|NOV|DIC)\/(\d{4})$/;
     if (regex.test(fecha)) return fecha;
@@ -86,7 +86,7 @@ ${html}
                 'Content-Type': 'application/json',
             },
             body: JSON.stringify({
-                model: 'microsoft/phi-3-mini-128k-instruct:free',
+                model: 'openrouter/free',   // ✅ Router automático de modelos gratuitos
                 messages: [{ role: 'user', content: prompt }],
                 temperature: 0.1,
             }),
